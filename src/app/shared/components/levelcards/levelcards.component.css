@@ -1,0 +1,56 @@
+.container{
+    width:100vw;
+    display:flex;
+    justify-content: space-around;
+    height:auto;
+
+}
+.card{
+    width:auto;
+    border:1px solid black;
+}
+.card-body{
+    font-size: 14px;
+    width:fit-content;
+}
+.card-text{
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .container{
+        height:70vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:auto;
+        position:fixed;
+        top:22%;
+        left:5%;
+    }
+    
+    .col-1, .col-2, .col-3{
+        height:25%;
+        width:100%;
+       
+    }
+    
+    .card{
+        height: 100%;
+        width:100%;      
+    }
+
+    .card-body{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        width:100%;
+        font-weight: bold;
+    }
+}

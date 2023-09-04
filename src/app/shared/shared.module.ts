@@ -8,6 +8,9 @@ import { LevelcardsComponent } from './components/levelcards/levelcards.componen
   declarations: [LevelcardsComponent],
   imports: [
     CommonModule
+  ], 
+  exports: [
+    LevelcardsComponent,
   ]
 })
 export class SharedModule { }

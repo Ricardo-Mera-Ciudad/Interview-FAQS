@@ -6,8 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
-  declarations: [LevelcardsComponent,
-  HeaderComponent],
+  declarations: [
+    LevelcardsComponent,
+    HeaderComponent
+  ],
   imports: [
     CommonModule
   ], 

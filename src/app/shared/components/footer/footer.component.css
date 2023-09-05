@@ -1,0 +1,18 @@
+.footer-container {
+  background-color: #0f213b;
+}
+
+.footer-container__name-title{
+  color: whitesmoke;
+  font-size: small;
+}
+
+.footer-container__info-title{
+  color: whitesmoke;
+  font-size: small;
+}
+
+.footer-container__contact-title{
+  color: whitesmoke;
+  font-size: small;
+}

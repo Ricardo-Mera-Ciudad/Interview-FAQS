@@ -1,0 +1,212 @@
+/* MOBILE FIRST */
+.header-style{
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.custom-navbar {
+  background-color: #0f213B;
+}
+
+.menu{
+  position:fixed;
+  z-index: 50;
+  top: 8%;
+  left:-4%;
+  color:#FCFCFC;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.menu-link{
+  color: #0f213B; 
+  text-decoration: none; 
+  font-family: 'Open Sans', sans-serif; 
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.menu-list{
+  list-style-type: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #FCFCFC;
+  border-radius: 10%;
+  width: 60px;
+  height: 20px;
+}
+
+.custom-navbar-logo {
+  width: 90%;
+  height: auto;
+}
+
+.custom-navbar .nav-link {
+  color: #FCFCFC;
+}
+
+.img-logo-container{
+  display: flex;
+  justify-content: center;
+}
+
+.custom-navbar-user-icon {
+  font-size: 24px;
+  color: #FCFCFC;
+  margin-left: 15%;
+}
+
+.greeting-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #FCFCFC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+}
+
+/* Media query para 768px de ancho */
+@media (min-width: 768px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #FCFCFC;
+    border-radius: 10%;
+    width: 70px;
+    height: 45px;
+  }
+
+  .menu{
+    position:fixed;
+    z-index: 50;
+    top: 10%;
+    left:1%;
+    color:#FCFCFC;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .menu-link{
+    color: #0f213B; 
+    text-decoration: none; 
+    font-family: 'Open Sans', sans-serif; 
+    cursor: pointer;
+  }
+
+  .menu-list{
+    list-style-type: none;
+  }
+
+  .custom-navbar-logo {
+    width: 60%;
+  }
+
+  .custom-navbar-user-icon {
+    font-size: 30px;
+    color: #FCFCFC;
+    margin-left: 20%;
+  }
+
+  .custom-navbar {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .greeting-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #FCFCFC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  }
+
+}
+
+/* Media query para 1280px de ancho */
+@media (min-width: 1280px) {
+  .navbar-container {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: center;
+    width: 100%;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #FCFCFC;
+    border-radius: 10%;
+    width: 80px;
+    height: 70px;
+  }
+
+  .menu{
+    position:fixed;
+    z-index: 50;
+    top: 20%;
+    left:1%;
+    color:#FCFCFC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+  }
+
+  .menu-list{
+    list-style-type: none;
+  }
+
+  .menu-link{
+    color: #0f213B; 
+    text-decoration: none; 
+    font-family: 'Open Sans', sans-serif; 
+    cursor: pointer;
+    
+  }
+
+  .custom-navbar-logo {
+    width: 90%;
+    text-align: center; 
+  }
+
+
+  .greeting-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #FCFCFC;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+  }
+
+  .img-logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+  }
+  .navbar-nav {
+    display: none;
+  }
+
+}

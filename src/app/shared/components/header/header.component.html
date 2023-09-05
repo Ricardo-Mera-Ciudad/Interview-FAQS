@@ -1,0 +1,43 @@
+<header class="header-style">
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="navbar-container">
+            <span class="navbar-toggler-icon" (click)="onShowMenu()"></span>
+            <div class="menu" *ngIf = "isVisible">
+                <ul class="menu-list">
+                    <li >
+                        <a class="menu-link" href="#">HTML5</a>
+                    </li>
+                    <li >
+                        <a class="menu-link" href="#">CSS3</a>
+                    </li>
+                    <li >
+                        <a class="menu-link" href="#">JAVASCRIPT</a>
+                    </li>
+                    <li >
+                        <a class="menu-link" href="#">ANGULAR</a>
+                    </li>
+                    <li >
+                        <a  class="menu-link" href="#">SOFT SKILLS</a>
+                    </li>
+                    <li>
+                        <a  class="menu-link"href="#">WEB METRICS</a>
+                    </li>            
+                    <li >
+                        <a class="menu-link" href="#">WEBPACK</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="img-logo-container">
+                <img
+                src="../../../assets/images/logo.png"
+                alt="Interview FAQS logo"
+                class="custom-navbar-logo"
+                />
+            </div>
+            <div class="greeting-icon-container">
+                <span>{{ greetingUser }}</span>
+                <i class="fas fa-user custom-navbar-user-icon"></i>            
+            </div>
+        </div>
+    </nav>    
+</header>

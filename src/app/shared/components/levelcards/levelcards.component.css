@@ -3,7 +3,10 @@
     display:flex;
     justify-content: space-around;
     height:auto;
-
+    position: fixed;
+    top:8%;
+    z-index:1000;
+    background-color: #E1EFFB;
 }
 .card{
     width:auto;
@@ -12,33 +15,37 @@
 .card-body{
     font-size: 14px;
     width:fit-content;
+    margin:auto;
 }
 .card-text{
     overflow: hidden;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
 @media screen and (min-width: 768px) {
     
     .container{
-        height:70vh;
+        height:85vh;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
         width:auto;
         position:fixed;
-        top:22%;
-        left:5%;
+        top:7%;
     }
     
-    .col-1, .col-2, .col-3{
-        height:25%;
+    .col-3{
+        height:15%;
         width:100%;
        
     }
-    
+    .col-5{
+        height:30%;
+        width:100%;
+    }
     .card{
         height: 100%;
         width:100%;      

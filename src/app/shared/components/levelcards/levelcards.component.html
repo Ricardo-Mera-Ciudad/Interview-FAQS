@@ -1,24 +1,73 @@
-<div class="container">
-
+<!-- Level selected === Middle -->
+<div class="container" *ngIf="levelSelected==='Middle'">
     <div class="col-3">
         <div class="card">
             <div class="card-body">
-                <span class="card-text">Junior</span>    
+                <span (click)="selectLevel('Junior')" class="card-text">Junior</span>    
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
+                <span (click)="selectLevel('Middle')" class="card-text">Middle</span>    
             </div>
         </div>
     </div>
     <div class="col-3">
         <div class="card">
             <div class="card-body">
-                <span class="card-text">Middle</span>    
+                <span (click)="selectLevel('Senior')" class="card-text">Senior</span>    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Level selected === Junior -->
+<div class="container" *ngIf="levelSelected==='Junior'">
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <span (click)="selectLevel('Middle')" class="card-text">Middle</span>    
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
+                <span (click)="selectLevel('Junior')" class="card-text">Junior</span>    
             </div>
         </div>
     </div>
     <div class="col-3">
         <div class="card">
             <div class="card-body">
-                <span class="card-text">Senior</span>    
+                <span (click)="selectLevel('Senior')" class="card-text">Senior</span>    
             </div>
         </div>
     </div>
+</div>
+<!-- Level selected === Senior -->
+<div class="container" *ngIf="levelSelected==='Senior'">
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <span (click)="selectLevel('Junior')" class="card-text">Junior</span>    
+            </div>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
+                <span (click)="selectLevel('Senior')" class="card-text">Senior</span>    
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <span (click)="selectLevel('Middle')" class="card-text">Middle</span>    
+            </div>
+        </div>
+    </div>
+    
 </div>

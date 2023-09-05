@@ -17,9 +17,9 @@ import { PagesModule } from './pages/pages.module';
     AppRoutingModule,
     SharedModule,
     PagesModule,
-    NgModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
+
 })
 export class AppModule {}

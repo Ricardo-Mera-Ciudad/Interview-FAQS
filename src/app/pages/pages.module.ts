@@ -28,5 +28,6 @@ import { MainCircleComponent } from './components/main-circle/main-circle.compon
   exports: [
     HomePageComponent
   ]
+
 })
 export class PagesModule { }

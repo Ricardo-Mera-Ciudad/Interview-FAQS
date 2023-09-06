@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap";
+
 .general-container {
   margin: 0 14px;
 }
@@ -16,4 +17,7 @@
   .general-container {
     margin: 0 auto;
   }
+}
+body{
+  font-family: 'Open Sans', sans-serif;
 }

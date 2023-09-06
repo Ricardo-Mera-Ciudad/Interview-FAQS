@@ -23,6 +23,7 @@
   top: 8%;
   left:-4%;
   color:#FCFCFC;
+  border-radius: 10%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -36,10 +37,13 @@
 
 .menu-list{
   list-style-type: none;
+  background-color: #FCFCFC;
+  position: relative;
+  z-index: 100;
 }
 
 .navbar-toggler-icon {
-  background-color: #FCFCFC;
+  filter:invert();
   border-radius: 10%;
   width: 60px;
   height: 20px;
@@ -75,6 +79,8 @@
   font-size: 0.8em;
 }
 
+
+
 /* Media query para 768px de ancho */
 @media (min-width: 768px) {
   .navbar-container {
@@ -88,7 +94,7 @@
   }
 
   .navbar-toggler-icon {
-    background-color: #FCFCFC;
+    filter:invert();
     border-radius: 10%;
     width: 70px;
     height: 45px;
@@ -97,8 +103,8 @@
   .menu{
     position:fixed;
     z-index: 50;
-    top: 10%;
-    left:1%;
+    top: 11%;
+    left:-1%;
     color:#FCFCFC;
     font-family: 'Open Sans', sans-serif;
   }
@@ -112,6 +118,9 @@
 
   .menu-list{
     list-style-type: none;
+    background-color: #FCFCFC;
+    position: relative;
+    z-index: 100;
   }
 
   .custom-navbar-logo {
@@ -140,6 +149,11 @@
     font-size: 1em;
   }
 
+  .user-icon-style svg{
+    width: 24px;
+    height: 24px;
+  }
+
 }
 
 /* Media query para 1280px de ancho */
@@ -155,7 +169,7 @@
   }
 
   .navbar-toggler-icon {
-    background-color: #FCFCFC;
+    filter:invert();
     border-radius: 10%;
     width: 80px;
     height: 70px;
@@ -165,7 +179,7 @@
     position:fixed;
     z-index: 50;
     top: 20%;
-    left:1%;
+    left:0%;
     color:#FCFCFC;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
@@ -173,6 +187,9 @@
 
   .menu-list{
     list-style-type: none;
+    background-color: #FCFCFC;
+    position: relative;
+    z-index: 100;
   }
 
   .menu-link{
@@ -188,6 +205,13 @@
     text-align: center; 
   }
 
+  .img-logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+  }
+
 
   .greeting-icon-container {
     display: flex;
@@ -199,12 +223,11 @@
     font-size: 1.2em;
   }
 
-  .img-logo-container {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    
+  .user-icon-style{
+    width: 32px;
+    height: 32px;
   }
+
   .navbar-nav {
     display: none;
   }

@@ -8,7 +8,6 @@ import { MainCircleComponent } from './main-circle/main-circle.component';
 
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule, 
     SharedModule,
     PagesModule,
-    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PagesService } from '../../services/pages.service';
 
 @Component({
   selector: 'app-main-circle',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-circle.component.css']
 })
 export class MainCircleComponent {
+
+  private pagesService = inject(PagesService);
+
+  chooseCategory(category: string) {
+    this.pagesService.setCategory(category)
+  }
 
 }

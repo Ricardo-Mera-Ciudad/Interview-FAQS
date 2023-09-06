@@ -1,19 +1,28 @@
 <div class="general-circle-container">
   <div class="circle-container bg-dark">
-    <div class="center-circle bg-dark">
+    <div class="center-circle bg-dark"
+    [routerLink]="['/content-page']"
+    (click)="chooseCategory('Angular')"
+    >
       <img class="img-circle-item" src="../../../../assets/images/angular.png" alt="">
       <div class="label-layer-circle">
         <span class="circle-hover-text">Angular</span>
       </div>
     </div>
     <div class="row">
-      <div class="circle-button circle-html">
+      <div class="circle-button circle-html"
+      [routerLink]="['/content-page']"
+      (click)="chooseCategory('Html')"
+      >
         <img class="img-circle-item" src="../../../../assets/images/html.png" alt="">
         <div class="label-layer-circle">
           <span class="circle-hover-text">HTML</span>
         </div>
       </div>
-      <div class="circle-button circle-css">
+      <div class="circle-button circle-css"
+      [routerLink]="['/content-page']"
+      (click)="chooseCategory('Css')"
+      >
         <img class="img-circle-item" src="../../../../assets/images/css.png" alt="">
         <div class="label-layer-circle">
           <span class="circle-hover-text">CSS</span>
@@ -21,13 +30,19 @@
       </div>
     </div>
     <div class="row">
-      <div class="circle-button circle-typescript">
+      <div class="circle-button circle-typescript"
+      [routerLink]="['/content-page']"
+      (click)="chooseCategory('Typescript')"
+      >
         <img class="img-circle-item" src="../../../../assets/images/typescript.png" alt="">
         <div class="label-layer-circle">
           <span class="circle-hover-text">TypeScript</span>
         </div>
       </div>
-      <div class="circle-button circle-javascript">
+      <div class="circle-button circle-javascript"
+      [routerLink]="['/content-page']"
+      (click)="chooseCategory('Javascript')"
+      >
         <img class="img-circle-item img-circle-js" src="../../../../assets/images/javascript.png" alt="">
         <div class="label-layer-circle">
           <span class="circle-hover-text">JavaScript</span>

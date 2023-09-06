@@ -8,6 +8,9 @@ import { CssQuestionsComponentComponent } from './components/css-questions-compo
 import { JavascriptQuestionsComponentComponent } from './components/javascript-questions-component/javascript-questions-component.component';
 import { AngularQuestionsComponentComponent } from './components/angular-questions-component/angular-questions-component.component';
 import { MainCircleComponent } from './components/main-circle/main-circle.component';
+import { RouterModule } from '@angular/router';
+import { TypescriptQuestionsComponentComponent } from './components/typescript-questions-component/typescript-questions-component.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -20,10 +23,13 @@ import { MainCircleComponent } from './components/main-circle/main-circle.compon
     CssQuestionsComponentComponent,
     JavascriptQuestionsComponentComponent,
     AngularQuestionsComponentComponent,
-    MainCircleComponent
+    MainCircleComponent,
+    TypescriptQuestionsComponentComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    SharedModule
   ],
   exports: [
     HomePageComponent

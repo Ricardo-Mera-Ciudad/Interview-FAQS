@@ -1,1 +1,27 @@
-<p>content-page works!</p>
+<div class="content-container">
+  <div class="angular-questions"
+  *ngIf="selectedCategory === 'Angular'"
+  >
+    <app-angular-questions-component/>
+  </div>
+  <div class="css-questions"
+  *ngIf="selectedCategory === 'Css'"
+  >
+  <app-css-questions-component/>
+  </div>
+  <div class="html-questions"
+  *ngIf="selectedCategory === 'Html'"
+  >
+  <app-html-questions-component/>
+  </div>
+  <div class="javascript-questions"
+  *ngIf="selectedCategory === 'Javascript'"
+  >
+  <app-javascript-questions-component/>
+  </div>
+  <div class="typecript-questions"
+  *ngIf="selectedCategory === 'Typescript'"
+  >
+  <app-typecript-questions-component/>
+  </div>
+</div>

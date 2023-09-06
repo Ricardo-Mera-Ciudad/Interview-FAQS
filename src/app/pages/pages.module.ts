@@ -7,6 +7,7 @@ import { HtmlQuestionsComponentComponent } from './components/html-questions-com
 import { CssQuestionsComponentComponent } from './components/css-questions-component/css-questions-component.component';
 import { JavascriptQuestionsComponentComponent } from './components/javascript-questions-component/javascript-questions-component.component';
 import { AngularQuestionsComponentComponent } from './components/angular-questions-component/angular-questions-component.component';
+import { MainCircleComponent } from './components/main-circle/main-circle.component';
 
 
 
@@ -18,10 +19,15 @@ import { AngularQuestionsComponentComponent } from './components/angular-questio
     HtmlQuestionsComponentComponent,
     CssQuestionsComponentComponent,
     JavascriptQuestionsComponentComponent,
-    AngularQuestionsComponentComponent
+    AngularQuestionsComponentComponent,
+    MainCircleComponent
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HomePageComponent
   ]
+
 })
 export class PagesModule { }

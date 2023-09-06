@@ -11,17 +11,31 @@ import { AnswerQuestionComponent } from './components/answer-question/answer-que
 
   declarations: [LevelcardsComponent,
   HeaderComponent,
+<<<<<<< HEAD
   FooterComponent,
   AnswerQuestionComponent],
 
   imports: [
     CommonModule
+=======
+  FooterComponent],
+
+  imports: [
+    CommonModule,
+
+>>>>>>> main
   ],
   exports: [
     LevelcardsComponent,
     HeaderComponent,
+<<<<<<< HEAD
     FooterComponent,
     AnswerQuestionComponent
   ]
+=======
+    FooterComponent
+  ],
+
+>>>>>>> main
 })
 export class SharedModule { }

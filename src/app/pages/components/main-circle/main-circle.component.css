@@ -18,16 +18,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   background-color: black;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.358),
     8px 8px 6px rgb(0, 0, 0, 0.5);
-  margin-top: 100px;
+  margin: 100px 14px 0 14px;
   @media (min-width: 768px) {
-    width: 450px;
-    height: 450px;
+    width: 480px;
+    height: 480px;
+    margin-top: 100px;
+  }
+  @media (min-width: 1024px) {
+    width: 500px;
+    height: 500px;
     margin-top: 100px;
   }
 }
@@ -45,6 +50,10 @@
   @media (min-width: 768px) {
     width: 160px;
     height: 160px;
+    margin: 11px;
+  }
+  @media (min-width: 1024px) {
+    margin: 15px;
   }
 }
 .center-circle {
@@ -65,9 +74,13 @@
   align-items: center;
   justify-content: center;
   @media (min-width: 768px) {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
   }
+  @media (min-width: 1024px) {
+    width: 150px;
+    height: 150px;
+}
 }
 .img-circle-item {
   width: 50px;
@@ -179,6 +192,8 @@
   }
 }
 .circle-button-item {
+  background-color: #0f213B;
+  color: #FCFCFC;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.358),
     4px 4px 3px rgb(0, 0, 0, 0.5);
   width: 250px;

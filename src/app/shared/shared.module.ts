@@ -3,24 +3,23 @@ import { CommonModule } from '@angular/common';
 import { LevelcardsComponent } from './components/levelcards/levelcards.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-
-
+import { AnswerQuestionComponent } from './components/answer-question/answer-question.component';
 
 @NgModule({
 
   declarations: [LevelcardsComponent,
   HeaderComponent,
-  FooterComponent],
+  FooterComponent,
+  AnswerQuestionComponent],
 
   imports: [
-    CommonModule,
-
+    CommonModule
   ],
   exports: [
     LevelcardsComponent,
     HeaderComponent,
-    FooterComponent
-  ],
-
+    FooterComponent,
+    AnswerQuestionComponent
+  ]
 })
 export class SharedModule { }

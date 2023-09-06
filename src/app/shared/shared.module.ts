@@ -4,8 +4,6 @@ import { LevelcardsComponent } from './components/levelcards/levelcards.componen
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-
-
 @NgModule({
 
   declarations: [LevelcardsComponent,

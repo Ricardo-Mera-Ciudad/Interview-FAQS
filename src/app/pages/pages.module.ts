@@ -32,7 +32,8 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule
   ],
   exports: [
-    HomePageComponent
+    HomePageComponent,
+    LoginPageComponent,
   ]
 
 })

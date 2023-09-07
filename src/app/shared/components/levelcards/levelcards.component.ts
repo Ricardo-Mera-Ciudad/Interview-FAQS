@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PagesService } from 'src/app/pages/services/pages.service';
 
 @Component({
   selector: 'levelcards',
@@ -8,14 +9,12 @@ import { Component } from '@angular/core';
 export class LevelcardsComponent {
 
   public levelSelected : string = 'Middle';
-  public centerWidth: string= '20%';
+  private pagesService = inject(PagesService);
 
   selectLevel(level:string){
     this.levelSelected=level;
-    this.changeSize();
+    this.pagesService.setLevel(level);
+    
   }
-  changeSize(){
-    if (this.centerWidth === '20%') this.centerWidth= '30%';
-    else this.centerWidth= '20%';
-  }
+  
 }

@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+.level{
+    width:100%;
+}
+
+.contentQuestions{
+    margin-top:18%;
+}

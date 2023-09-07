@@ -1,13 +1,38 @@
+<div class="footer-container__contributors-container">
+  <ul class="footer-container__contributors-list">
+    <li
+      class="footer-container__contributors-list-item"
+      *ngFor="let x of selectedArray"
+    >
+      <img [src]="x.image" alt="" class="footer-container__profile-image" />
+      <p class="footer-container__link-title">{{ x.contributor }}</p>
+      <a [href]="x.link">
+        <img
+          src="../../../../assets/images/linkedin-icon.png"
+          class="footer-container__link-image"
+          alt=""
+        />
+      </a>
+    </li>
+  </ul>
+</div>
 <footer>
-    <div class="footer-container d-flex flex-row justify-content-between px-3">
-        <div class="footer-container__name">
-            <p class="footer-container__name-title">Interview FAQS </p>
-        </div>
-        <div class="footer-container__info">
-            <p class="footer-container__info-title">¿Para qué sirve esta página?</p>
-        </div>
-        <div class="footer-container__contact">
-            <p class="footer-container__contact-title">RRSS</p>
-        </div>
+  <div class="footer-container">
+    <div class="footer-container__name">
+      <p class="footer-container__name-button">Interview FAQS</p>
     </div>
+
+    <div class="footer-container__info">
+      <p class="footer-container__info-button">¿En qué consiste el proyecto?</p>
+    </div>
+
+    <div class="footer-container__contact">
+      <p
+        class="footer-container__contact-button"
+        (click)="showContributorsList()"
+      >
+        {{ isContributorListShown ? "CERRAR" : "RRSS" }}
+      </p>
+    </div>
+  </div>
 </footer>

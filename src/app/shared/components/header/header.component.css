@@ -2,8 +2,9 @@
 .header-style{
   position: fixed;
   width: 100%;
-  box-shadow: 0 8px 2px -2px #E1EFFB;
+  box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.5);
   z-index: 9999;
+  margin-bottom: 72px;
 }
 
 .navbar-container {
@@ -14,6 +15,7 @@
   margin-left: 14px;
   margin-right: 14px;
   font-family: 'Open Sans', sans-serif; 
+  height: 55px;
 }
 
 .custom-navbar {
@@ -23,11 +25,12 @@
 .menu{
   position:fixed;
   z-index: 9999;
-  top: 7.5%;
   left:0%;
   color:#FCFCFC;
-  border-radius: 10%;
   font-family: 'Open Sans', sans-serif;
+  top: 71px;
+  border-radius:8px;
+
 }
 
 .menu-link{
@@ -40,22 +43,17 @@
 
 }
 
-.menu-link:hover{
-  color: #FCFCFC; 
-  cursor: pointer;
-}
-
 .menu-list{
   list-style-type: none;
   background-color: #FCFCFC;
   white-space: nowrap;
-  position: relative;
   line-height: 2.5;
   width:150%;
   z-index: 9999;
   transition: background-color 0.3s, text-decoration 0.3s;
   padding: 0px;
   text-align: left;
+  
 }
 
 .menu-item {
@@ -67,21 +65,36 @@
 
 .menu-list .menu-item:hover {
   background-color: #0f213B;
-  color: #FCFCFC !important;
   width:100%;
   padding-left:15px;
 }
 
-.menu-list a:hover { 
+
+.menu-list .menu-item:hover .menu-link {
   text-decoration: none;
+  color: #FCFCFC;
+  cursor: pointer;
+
 }
 
-.navbar-toggler-icon {
-  filter:invert();
-  border-radius: 10%;
-  width: 60px;
-  height: 20px;
-  cursor: pointer;
+.menu-line {
+  width: 25px;
+  height: 2px;
+  background-color: #FCFCFC;
+  margin: 6px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 1px);
+}
+
+.open:nth-child(2) {
+  transform: rotate(-45deg) translate(5px, -1px);
+}
+
+.open:nth-child(3) {
+  opacity: 0;
 }
 
 .custom-navbar-logo {
@@ -96,6 +109,7 @@
 .img-logo-container{
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .custom-navbar-user-icon svg {
@@ -119,6 +133,10 @@
 
 /* Media query para 768px de ancho */
 @media screen and (min-width: 768px) {
+  .header-style{
+    margin-bottom: 72px;
+    box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.5);
+  }
 
   .navbar-container {
     display: flex;
@@ -128,6 +146,7 @@
     vertical-align: center;
     margin-left: 18px;
     margin-right: 18px;
+    height: 80px;
   }
 
   .navbar-toggler-icon {
@@ -141,11 +160,12 @@
 
   .menu{
     position:fixed;
-    top: 11.5%;
     left:-1%;
     color:#FCFCFC;
     font-family: 'Open Sans', sans-serif;
-    
+    top: 96px;
+    border-radius:8px;
+
   }
 
   .menu-link{
@@ -206,7 +226,6 @@
     font-size: 1em;
   }
 
-
   .user-icon-style svg{
     width: 24px;
     height: 24px;
@@ -215,7 +234,12 @@
 }
 
 /* Media query para 1024px de ancho */
-@media screen and  (min-width: 1024px) and (max-width: 1280px) {
+@media screen and  (min-width: 1024px) {
+  .header-style{
+    margin-bottom: 72px;
+    box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.5);
+
+  }
 
   .navbar-container {
     margin-left: 30px;
@@ -225,6 +249,7 @@
     justify-content: space-between;
     vertical-align: center;
     width: 100%;
+    height: 100px; 
   }
 
   .navbar-toggler-icon {
@@ -238,11 +263,12 @@
   .menu{
     position:fixed;
     z-index: 9999;
-    top: 20%;
     left:0%;
     color:#FCFCFC;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    top:116px;
+    border-radius:8px;
   }
 
   .menu-list{
@@ -298,48 +324,4 @@
     display: none;
   }
 
-}
-
-/* Media query para 1280px de ancho */
-@media screen and (min-width: 1280px) {
-  .navbar-container {
-    margin-left: 30px;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    vertical-align: center;
-    width: 100%;
-  }
-
-  .menu{
-    position:fixed;
-    z-index: 9999;
-    top: 12%;
-    left:1%;
-    color:#FCFCFC;
-    font-family: 'Open Sans', sans-serif;
-    
-  }
-
-  .menu-link{
-    color: #0f213B; 
-    text-decoration: none; 
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 1em;
-    cursor: pointer;
-
-  }
-
-  .menu-list{
-    list-style-type: none;
-    background-color: #FCFCFC;
-    white-space: nowrap;
-    position: relative;
-    z-index: 1000;
-    line-height: 3.5;
-    padding-right:20%;
-    z-index: 9999;
-
-  }
 }

@@ -1,50 +1,94 @@
 <header class="header-style">
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-        <div class="navbar-container">
-            <span class="navbar-toggler-icon" (click)="onShowMenu()"></span>
-            <div class="menu" *ngIf = "isVisible">
-                <ul class="menu-list">
-                    <li  class="menu-item">
-                        <a class="menu-link" href="#">Html</a>
-                    </li>
-                    <li  class="menu-item">
-                        <a class="menu-link" href="#">Css</a>
-                    </li>
-                    <li  class="menu-item">
-                        <a class="menu-link" href="#">JavaScript</a>
-                    </li>
-                    <li  class="menu-item">
-                        <a class="menu-link" href="#">TypeScript</a>
-                    </li>
-                    <li  class="menu-item">
-                        <a class="menu-link" href="#">Angular</a>
-                    </li>
-                    <li  class="menu-item">
-                        <a  class="menu-link" href="#">Soft Skills</a>
-                    </li>
-                    <li class="menu-item">
-                        <a  class="menu-link"href="#">Web Metrics</a>
-                    </li>            
-                    <li  class="menu-item">
-                        <a class="menu-link" href="#">Webpacks</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="img-logo-container">
-                <img
-                src="../../../assets/images/logo.png"
-                alt="Interview FAQS logo"
-                class="custom-navbar-logo"
-                />
-            </div>
-            <div class="greeting-icon-container">
-                <span>{{ greetingUser }}</span>
-                <span class="user-icon-container">
-                    <svg  xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="user-icon-style bi bi-person-fill" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                    </svg>
-                </span>
-            </div>
-        </div>
-    </nav>    
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <div class="navbar-container">
+      <span (click)="onShowMenu()">
+        <div class="menu-line" [ngClass]="{'open': isVisible}"></div>
+        <div class="menu-line" [ngClass]="{'open': isVisible}"></div>
+        <div class="menu-line" [ngClass]="{'open': isVisible}"></div>
+      </span>
+      <div class="menu" *ngIf="isVisible">
+        <ul class="menu-list">
+          <li
+            class="menu-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Html')"
+          >
+            <a class="menu-link">Html</a>
+          </li>
+
+          <li
+            class="menu-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Css')"
+          >
+            <a class="menu-link">Css</a>
+          </li>
+
+          <li
+            class="menu-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Javascript')"
+          >
+            <a class="menu-link">JavaScript</a>
+          </li>
+
+          <li
+            class="menu-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Typescript')"
+          >
+            <a class="menu-link">TypeScript</a>
+          </li>
+
+          <li
+            class="menu-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Angular')"
+          >
+            <a class="menu-link">Angular</a>
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-link">Soft Skills</a>
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-link">Web Metrics</a>
+          </li>
+
+          <li class="menu-item">
+            <a class="menu-link">Webpacks</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="img-logo-container">
+        <img
+          [routerLink]="['/home-page']"
+          src="../../../assets/images/logo.png"
+          alt="Interview FAQS logo"
+          class="custom-navbar-logo"
+        />
+      </div>
+
+      <div class="greeting-icon-container">
+        <span>{{ greetingUser }}</span>
+
+        <span class="user-icon-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="user-icon-style bi bi-person-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </nav>
 </header>

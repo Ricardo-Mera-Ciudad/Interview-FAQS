@@ -24,6 +24,7 @@
 .card-level-text{
     overflow: hidden;
     text-align: center;
+    color:#0F213B;
     font-weight: bold;
     cursor: pointer;
 }
@@ -67,6 +68,7 @@
     .card-level-text{
         overflow: hidden;
         text-align: center;
+        color:#0F213B;
         font-weight: bold;        
     }
 }

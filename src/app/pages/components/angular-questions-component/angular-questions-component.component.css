@@ -1,5 +1,8 @@
 .container-main-component{
     width:100%;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
 }
 .level{
     width:100%;
@@ -7,6 +10,8 @@
 
 .contentQuestions{
     margin-top:18%;
-    width:100%;
+    width:85vw;
     height:auto;  
+    
+
 }

@@ -41,23 +41,31 @@ export class AnswerQuestionComponent {
       id: 1,
       level: Level["Middle"],
       category: Category["Angular"],
-      question: "Question 1",
+      question: "This is Question 1 Title",
       answer: "This is the first Answer"
     },
     {
       id: 2,
       level: Level["Middle"],
       category: Category["Angular"],
-      question: "Question 2",
+      question: "This is the Question 2 Title",
       answer: "This is the second Answer"
     }
   ]
+
+  public answerVisibility: { [key: number]: boolean } = {};
+
   private pagesService = inject(PagesService)
   public category : string = 'Angular';
   public level    : string = 'Middle';
   
   private unsubscribe$ = new Subject<void>();
-
+ 
+  constructor() {
+      this.questions.forEach((question) => {
+      this.answerVisibility[question.id] = false;
+    });
+  }
   ngOnInit(): void {
     this.loadCategory();
   }
@@ -70,6 +78,12 @@ export class AnswerQuestionComponent {
     .pipe(takeUntil(this.unsubscribe$))
     .subscribe(levelFromService => this.level = levelFromService);
   }
+
+  showAnswer(id: number) {
+    // Cambiar la visibilidad de la respuesta para la pregunta con el ID proporcionado
+    this.answerVisibility[id] = !this.answerVisibility[id];
+  }
+
   ngOnDestroy(){
     this.unsubscribe$.next();
     this.unsubscribe$.complete();

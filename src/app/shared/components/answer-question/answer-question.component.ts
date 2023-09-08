@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Question, Level, Category } from '../../interfaces/answerQuestion.interface';
+import { PagesService } from 'src/app/pages/services/pages.service';
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'shared-answer-question',
@@ -49,6 +51,31 @@ export class AnswerQuestionComponent {
       question: "Question 2",
       answer: "This is the second Answer"
     }
-]
+  ]
+  private pagesService = inject(PagesService)
+  public category : string = 'Angular';
+  public level    : string = 'Middle';
+  
+  private unsubscribe$ = new Subject<void>();
+
+  ngOnInit(): void {
+    this.loadCategory();
+  }
+
+  loadCategory(){
+    this.pagesService.selectedCategory$
+    .pipe(takeUntil(this.unsubscribe$))
+    .subscribe(categoryFromService => this.category = categoryFromService);
+    this.pagesService.selectedLevel$
+    .pipe(takeUntil(this.unsubscribe$))
+    .subscribe(levelFromService => this.level = levelFromService);
+  }
+  ngOnDestroy(){
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+  
+
+  
 
 }

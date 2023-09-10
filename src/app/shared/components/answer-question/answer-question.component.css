@@ -1,11 +1,17 @@
 .question-selectors{
   color:#0F213B;
+  margin-top:2%;
+}
+.container-answer-questions{
+  margin-top:10%;
+  width: auto;
+  margin-right: 30px;
 }
 .question-card-set{
   width:100%;
   display:flex;
   flex-direction: column;
-  margin-top:2%;
+  margin-top:4%;
   justify-content: center;
   align-items: center;
   height:auto;
@@ -18,30 +24,33 @@
   margin:auto;
   width:85vw;
   justify-content: space-between;
-  border: 2px orange dotted;
 }
 
 @media screen and (min-width: 768px) {
   .question-selectors{
     color:#0F213B;
   }
+  .container-answer-questions{
+    display:flex;
+    margin-top:25%;
+    width: auto;
+    margin-right: 30px;
+  }
   .question-card-set{
-    width:auto;
+    width:max-content;
     display:flex;
     flex-direction: row;
-    margin-top:2%;
+    margin-top:15%;
     height:auto;
-    border: 2px blue dotted;
+    border: 2px #0F213B solid;
   }
   .card-full-question{
-    width:300px;
-    
+    width:300px;    
   }
   .card-question-head{
     display: flex;
     margin:auto;
     width:auto;
     justify-content: space-between;
-    border: 2px orange dotted;
   }
 }

@@ -1,21 +1,21 @@
 <!-- Level selected === Middle -->
 <div class="container-level"  *ngIf="levelSelected==='Middle'">
     <div class="col-3">
-        <div class="card-level" (click)="selectLevel('Junior')">
+        <div class="card-level btn" (click)="selectLevel('Junior')">
             <div class="card-level-body">
                 <span  class="card-level-text">Junior</span>    
             </div>
         </div>
     </div>
     <div class="col-5">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn w-100" (click)="selectLevel('Middle')">
             <div class="card-level-body">
                 <span class="card-level-text"  >Middle</span>    
             </div>
         </div>
     </div>
     <div class="col-3">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn" (click)="selectLevel('Senior')">
             <div class="card-level-body">
                 <span class="card-level-text" >Senior</span>    
             </div>
@@ -25,21 +25,21 @@
 <!-- Level selected === Junior -->
 <div class="container-level" *ngIf="levelSelected==='Junior'">
     <div class="col-3">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn" (click)="selectLevel('Middle')">
             <div class="card-level-body">
                 <span class="card-level-text">Middle</span>    
             </div>
         </div>
     </div>
     <div class="col-5">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn w-100" (click)="selectLevel('Junior')">
             <div class="card-level-body">
                 <span class="card-level-text">Junior</span>    
             </div>
         </div>
     </div>
     <div class="col-3">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn" (click)="selectLevel('Senior')">
             <div class="card-level-body">
                 <span class="card-level-text">Senior</span>    
             </div>
@@ -49,21 +49,21 @@
 <!-- Level selected === Senior -->
 <div class="container-level" *ngIf="levelSelected==='Senior'">
     <div class="col-3">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn" (click)="selectLevel('Junior')">
             <div class="card-level-body">
                 <span class="card-level-text">Junior</span>    
             </div>
         </div>
     </div>
     <div class="col-5">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn w-100" (click)="selectLevel('Senior')">
             <div class="card-level-body">
                 <span class="card-level-text">Senior</span>    
             </div>
         </div>
     </div>
     <div class="col-3">
-        <div class="card-level" (click)="selectLevel('Middle')">
+        <div class="card-level btn" (click)="selectLevel('Middle')">
             <div class="card-level-body">
                 <span class="card-level-text">Middle</span>    
             </div>

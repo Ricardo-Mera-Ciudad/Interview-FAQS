@@ -11,10 +11,12 @@
   width:100%;
   display:flex;
   flex-direction: column;
-  margin-top:4%;
+  margin-top:2%;
   justify-content: center;
   align-items: center;
   height:auto;
+  border: 1px #0F213B solid;
+
 }
 .card-full-question{
   margin:auto;
@@ -42,7 +44,8 @@
     flex-direction: row;
     margin-top:15%;
     height:auto;
-    border: 2px #0F213B solid;
+    border: 1px #0F213B solid;
+    margin-right:1%;
   }
   .card-full-question{
     width:300px;    

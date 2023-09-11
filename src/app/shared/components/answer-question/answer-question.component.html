@@ -1,5 +1,5 @@
-<div *ngFor="let question of questions" class="accordion" id="accordionExample">
-  <div class="accordion-item">
+<div class="accordion" id="accordionExample">
+  <div *ngFor="let question of questions" class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + question.id" aria-expanded="true" [attr.aria-controls]="'collapse' + question.id">
         {{ question.question }}
@@ -15,9 +15,11 @@
         </div>
       </button>
     </h2>
-    <div [attr.id]="'collapse' + question.id" [ngClass]=" hide ? 'accordion-collapse collapse' : 'accordion-collapse collapse show'"
-      [attr.data-bs-parent]="'#accordionExample'">
+    <div [attr.id]="'collapse' + question.id"
+    class="accordion-collapse collapse"
+    [attr.data-bs-parent]="'#accordionExample'">
       <div class="accordion-body">
+        <!-- [ngClass]=" hide ? 'accordion-collapse collapse' : 'accordion-collapse collapse show'" -->
         {{ question.answer }}
       </div>
     </div>

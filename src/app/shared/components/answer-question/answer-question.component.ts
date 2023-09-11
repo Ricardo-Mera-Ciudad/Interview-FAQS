@@ -9,7 +9,7 @@ import { Question, Level, Category } from '../../interfaces/answerQuestion.inter
 export class AnswerQuestionComponent {
 
   // public show: boolean = false;
-  public hide: boolean  = true;
+  public hide: boolean  = false;
 
   // public switchFavorite( question: Question ): void {
 

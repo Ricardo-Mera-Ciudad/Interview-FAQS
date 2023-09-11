@@ -7,20 +7,17 @@
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 72px;
   max-width: 1280px;
+
+  @media (min-width: 1024px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .header-container__navbar {
   background-color: #0f213B;
   display: flex;
   align-items: center;
-
-  @media (min-width: 768px) {
-    padding: 0 18px;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 0 30px;
-  }
 }
 
 .header-container__navbar-items {
@@ -59,7 +56,6 @@
   font-family: 'Open Sans', sans-serif;
   top: 55px;
 
-
   @media (min-width: 768px) {
     top: 80px;
   }
@@ -81,19 +77,16 @@
   padding: 0px;
   text-align: left;
   border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-
+  border-bottom-right-radius: 8px;
 
   @media (min-width: 768px) {   
     position: relative;
-    line-height: 3.5;
- 
+    line-height: 3; 
   }
 
   @media (min-width: 1024px) {
     position: relative;
-    line-height: 4.5;
-  
+    line-height: 3.5;  
   }
 }
 
@@ -119,17 +112,7 @@
   z-index: 9999;
 
   @media (min-width: 768px) {
-    color: #0f213B;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    cursor: pointer;
-  }
-
-  @media (min-width: 1024px) {
-    color: #0f213B;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
   }
 }
@@ -141,15 +124,14 @@
 }
 
 .header-container__navbar-items-logo-img {
-  width: 80%;
-  height: auto;
+  width: 90%;
 
   @media (min-width: 768px) {
-    width: 60%;
+    width: 70%;
   }
 
   @media (min-width: 1024px) {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -160,18 +142,18 @@
   align-items: center;
   color: #FCFCFC;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-}
+  font-size: 0.8em;
 
-.header-container__navbar-items-login-text {
-  font-family: 'Open Sans', sans-serif;
+  @media  (min-width: 768px) {
+    font-size: 1em;    
+  }
 }
 
 .header-container__navbar-items-login-icon {
-  margin-left: 10px;
+  margin-left: 5px;
 
   @media (min-width: 768px) {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   @media (min-width: 1024px) {
@@ -180,7 +162,6 @@
 }
 
 .header-container__navbar-items-login-icon-img {
-  font-size: 24px;
   color: #FCFCFC;
 
   @media (min-width: 768px) {

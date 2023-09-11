@@ -9,10 +9,10 @@ export class PagesService {
 
   private category$: BehaviorSubject<string> = new BehaviorSubject("Angular")
   public selectedCategory$: Observable<string> = this.category$.asObservable();
-  
+
   private level$: BehaviorSubject<string> = new BehaviorSubject("Junior")
   public selectedLevel$: Observable<string> = this.level$.asObservable();
-  
+
   constructor() { }
 
   setCategory(category: string){
@@ -21,5 +21,6 @@ export class PagesService {
   setLevel(level:string){
     this.level$.next(level);
   }
+
 
 }

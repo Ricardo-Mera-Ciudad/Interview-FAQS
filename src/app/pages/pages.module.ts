@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page/home-page.component';
-import { LoginPageComponent } from './login-page/login-page.component';
+import { LoginPageComponent } from './components/login/login-page.component';
 import { ContentPageComponent } from './content-page/content-page.component';
 import { HtmlQuestionsComponentComponent } from './components/html-questions-component/html-questions-component.component';
 import { CssQuestionsComponentComponent } from './components/css-questions-component/css-questions-component.component';
@@ -11,6 +11,10 @@ import { MainCircleComponent } from './components/main-circle/main-circle.compon
 import { RouterModule } from '@angular/router';
 import { TypescriptQuestionsComponentComponent } from './components/typescript-questions-component/typescript-questions-component.component';
 import { SharedModule } from '../shared/shared.module';
+import { SoftskillsQuestionsComponentComponent } from './components/softskills-questions-component/softskills-questions-component.component';
+import { WebpacksQuestionsComponentComponent } from './components/webpacks-questions-component/webpacks-questions-component.component';
+import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-questions-component/webmetrics-questions-component.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 
@@ -24,7 +28,11 @@ import { SharedModule } from '../shared/shared.module';
     JavascriptQuestionsComponentComponent,
     AngularQuestionsComponentComponent,
     MainCircleComponent,
-    TypescriptQuestionsComponentComponent
+    TypescriptQuestionsComponentComponent,
+    SoftskillsQuestionsComponentComponent,
+    WebpacksQuestionsComponentComponent,
+    WebmetricsQuestionsComponentComponent,
+    RegisterComponent
   ],
   imports: [
     CommonModule,

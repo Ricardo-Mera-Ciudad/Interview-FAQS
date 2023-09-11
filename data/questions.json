@@ -1,4 +1,6 @@
 {
+    "users": [],
+    "userFavs": [],
     "questions" : [
         {
             "id" : 1,
@@ -12,7 +14,7 @@
             "category" : "Angular",
             "level" : "Junior",
             "question" : "¿Que es una plantilla?",
-            "answer" : "Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular." 
+            "answer" : "Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular."
         },
         {
             "id" : 3,
@@ -567,4 +569,4 @@
         "question" : "",
         "answer": ""
     }
-]}    
+]}

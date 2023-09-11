@@ -1,86 +1,93 @@
-<header class="header-style">
-  <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-    <div class="navbar-container">
-      <span (click)="onShowMenu()">
-        <div class="menu-line" [ngClass]="{'open': isVisible}"></div>
-        <div class="menu-line" [ngClass]="{'open': isVisible}"></div>
-        <div class="menu-line" [ngClass]="{'open': isVisible}"></div>
+<header class="header-container">
+  <nav class="header-container__navbar general-container">
+    <div class="header-container__navbar-items">
+      <span class="header-container__navbar-items-onShowMenu" (click)="onShowMenu()">
+        <div class="header-container__navbar-items-onShowMenu-menu-line" [ngClass]="{'open': isVisible}"></div>
+        <div class="header-container__navbar-items-onShowMenu-menu-line" [ngClass]="{'open': isVisible}"></div>
+        <div class="header-container__navbar-items-onShowMenu-menu-line" [ngClass]="{'open': isVisible}"></div>
       </span>
-      <div class="menu" *ngIf="isVisible">
-        <ul class="menu-list">
+      <div class="header-container__navbar-items-menu" *ngIf="isVisible">
+        <ul class="header-container__navbar-items-menu-list">
           <li
-            class="menu-item"
+            class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Html')"
           >
-            <a class="menu-link">Html</a>
+            <a class="header-container__navbar-items-menu-list-item-link">Html</a>
           </li>
 
           <li
-            class="menu-item"
+            class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Css')"
           >
-            <a class="menu-link">Css</a>
+            <a class="header-container__navbar-items-menu-list-item-link">Css</a>
           </li>
 
           <li
-            class="menu-item"
+            class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Javascript')"
           >
-            <a class="menu-link">JavaScript</a>
+            <a class="header-container__navbar-items-menu-list-item-link">JavaScript</a>
           </li>
 
           <li
-            class="menu-item"
+            class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Typescript')"
           >
-            <a class="menu-link">TypeScript</a>
+            <a class="header-container__navbar-items-menu-list-item-link">TypeScript</a>
           </li>
 
           <li
-            class="menu-item"
+            class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Angular')"
           >
-            <a class="menu-link">Angular</a>
+            <a class="header-container__navbar-items-menu-list-item-link">Angular</a>
           </li>
 
-          <li class="menu-item">
-            <a class="menu-link">Soft Skills</a>
+          <li 
+            class="header-container__navbar-items-menu-list-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Softskills')">
+            <a class="header-container__navbar-items-menu-list-item-link">Soft Skills</a>
           </li>
 
-          <li class="menu-item">
-            <a class="menu-link">Web Metrics</a>
+          <li class="header-container__navbar-items-menu-list-item" 
+              [routerLink]="['/content-page']"
+              (click)="chooseCategory('Webmetrics')">
+            <a class="header-container__navbar-items-menu-list-item-link">Web Metrics</a>
           </li>
 
-          <li class="menu-item">
-            <a class="menu-link">Webpacks</a>
+          <li class="header-container__navbar-items-menu-list-item"
+              [routerLink]="['/content-page']"
+              (click)="chooseCategory('Webpacks')">
+            <a class="header-container__navbar-items-menu-list-item-link">Webpacks</a>
           </li>
         </ul>
       </div>
 
-      <div class="img-logo-container">
+      <div class="header-container__navbar-items-logo">
         <img
           [routerLink]="['/home-page']"
           src="../../../assets/images/logo.png"
           alt="Interview FAQS logo"
-          class="custom-navbar-logo"
+          class="header-container__navbar-items-logo-img"
         />
       </div>
 
-      <div class="greeting-icon-container">
-        <span>{{ greetingUser }}</span>
+      <div class="header-container__navbar-items-login">
+        <span class="header-container__navbar-items-login-text">{{ greetingUser }}</span>
 
-        <span class="user-icon-container">
+        <span class="header-container__navbar-items-login-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
             height="18"
             fill="currentColor"
-            class="user-icon-style bi bi-person-fill"
+            class="header-container__navbar-items-login-icon-img bi bi-person-fill"
             viewBox="0 0 16 16"
           >
             <path

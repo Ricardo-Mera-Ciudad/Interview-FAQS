@@ -1,4 +1,4 @@
-<div class="general-circle-container">
+<div class="general-circle-container general-container">
   <div class="circle-container">
     <div class="center-circle bg-dark"
     [routerLink]="['/content-page']"
@@ -51,8 +51,17 @@
     </div>
   </div>
   <div class="circle-option-buttons">
-    <button class="btn py-3 circle-button-item">Soft Skills</button>
-    <button class="btn py-3 circle-button-item circle-button-webmetrics">Web Metrics</button>
-    <button class="btn py-3 circle-button-item">Webpacks</button>
+    <button class="btn py-3 circle-button-item"
+    [routerLink]="['/content-page']"
+      (click)="chooseCategory('Softskills')"
+    >Soft Skills</button>
+    <button class="btn py-3 circle-button-item circle-button-webmetrics"
+    [routerLink]="['/content-page']"
+      (click)="chooseCategory('Webmetrics')"
+    >Web Metrics</button>
+    <button class="btn py-3 circle-button-item"
+    [routerLink]="['/content-page']"
+      (click)="chooseCategory('Webpacks')"
+    >Webpacks</button>
   </div>
 </div>

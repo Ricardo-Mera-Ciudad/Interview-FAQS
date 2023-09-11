@@ -24,4 +24,19 @@
   >
   <app-typecript-questions-component/>
   </div>
+  <div class="typecript-questions"
+  *ngIf="selectedCategory === 'Softskills'"
+  >
+  <app-softskills-questions-component/>
+  </div>
+  <div class="typecript-questions"
+  *ngIf="selectedCategory === 'Webmetrics'"
+  >
+  <app-webmetrics-questions-component/>
+  </div>
+  <div class="typecript-questions"
+  *ngIf="selectedCategory === 'Webpacks'"
+  >
+  <app-webpacks-questions-component/>
+  </div>
 </div>

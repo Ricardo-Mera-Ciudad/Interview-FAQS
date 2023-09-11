@@ -22,6 +22,8 @@
   margin:auto;
 }
 .card-question-head{
+  background-color: #0F213B;
+  color:#FFFF;
   display: flex;
   margin:auto;
   width:85vw;
@@ -51,6 +53,8 @@
     width:300px;    
   }
   .card-question-head{
+    background-color: #0F213B;
+    color:#FFFF;
     display: flex;
     margin:auto;
     width:auto;

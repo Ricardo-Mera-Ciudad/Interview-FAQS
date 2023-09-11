@@ -10,12 +10,15 @@ import { Subject, takeUntil } from 'rxjs';
 export class ContentPageComponent implements OnInit, OnDestroy{
 
   private pagesService = inject(PagesService);
+
   public selectedCategory: string = "Angular";
   private unsubscribe$ = new Subject<void>();
 
   ngOnInit(): void {
-   this.loadCategory();
+   this.loadCategory()
   }
+
+
 
   loadCategory(){
     this.pagesService.selectedCategory$

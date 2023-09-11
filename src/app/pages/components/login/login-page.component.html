@@ -1,6 +1,5 @@
-
-<div class="container-login">
-    <h2>Iniciar sesión</h2>
+<!-- <div class="container-login">
+    <h2 class="login-title">Iniciar sesión</h2>
         <form>
             <div class="form-group">
                 <label for="usuario">Usuario:</label>
@@ -14,4 +13,52 @@
                 <input type="submit" class="btn" value="Iniciar sesión">
             </div>
         </form>
+</div> -->
+
+<div class="login-container">
+
+    <h2>Iniciar sesión</h2>
+
+    <form [formGroup]="myForm" class="m-4">
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" placeholder="Introduzca un email válido"
+                    formControlName="email">
+                <span *ngIf="!isEmailValid && this.myForm.get('email')?.touched" class="form-text text-danger">
+                    Ingrese un correo con un formato válido
+                </span>
+            </div>
+        </div>
+
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label class="col-form-label">Contraseña</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" placeholder="Establezca su contraseña"
+                    formControlName="password">
+                <span *ngIf="isFieldValid('password')" class="form-text text-danger">
+                    La contraseña debe de ser mayor o igual a 8 caracteres.
+                </span>
+            </div>
+        </div>
+
+
+
+        <!-- Button -->
+        <div class="row">
+            <div class="col">
+                <button [disabled]="myForm.invalid" class="btn btn-primary" type="submit">
+                    Enviar
+                </button>
+            </div>
+        </div>
+
+    </form>
+
+
+
 </div>

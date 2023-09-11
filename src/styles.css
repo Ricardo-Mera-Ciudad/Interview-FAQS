@@ -6,12 +6,12 @@
     padding: 0 18px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
   .general-container {
     padding: 0 30px;
   }
 }
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   .general-container {
     padding: 0 auto;
     max-width: 1280px;

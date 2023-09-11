@@ -146,142 +146,142 @@
             "id" : 21,
             "category" : "Html",
             "level" : "Junior",
-            "question" : "¿Que son las etiquetas de HTML?",
-            "answer" :"Es el contenido que se coloca entre las etiquetas HTML, con la finalidad de darle formato correctamente. Usa el símbolo menor que (<) y el mayor que (>). Un símbolo de barra oblicua también se utiliza como etiqueta de cierre."
+            "question" : "¿Qué significa HTML y cuál es su función en la web?",
+            "answer": "HTML significa Hypertext Markup Language y se utiliza para estructurar el contenido de una página web, utilizando etiquetas para definir elementos como encabezados, párrafos, enlaces, imágenes, etc."
         },
         {
             "id" : 22,
             "category" : "Html",
             "level" : "Junior",
-            "question" : "¿Como se crean enlaces a secciones dentro de la misma página?",
-            "answer": "Los enlaces se crean usando la etiqueta <a>, con referencia mediante el uso del símbolo del número (#)<a href='#ref'. A continuación, se escribe un comando de etiqueta en algún lugar de la página de la forma <a name='ref'>"
+            "question" : "¿Que son las etiquetas de HTML? Nombra 3",
+            "answer" :"Es el contenido que se coloca entre las etiquetas HTML, con la finalidad de darle formato correctamente. Usa el símbolo menor que (<) y el mayor que (>). Un símbolo de barra oblicua también se utiliza como etiqueta de cierre.Tres etiquetas como ejemplo serían: div, h1, p"
         },
         {
             "id" : 23,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
+            "category" : "Html",
+            "level" : "Junior",
+            "question" : "¿Como se crean enlaces a secciones dentro de la misma página?",
+            "answer": "Los enlaces se crean usando la etiqueta <a>, con referencia mediante el uso del símbolo del número (#)<a href='#ref'. A continuación, se escribe un comando de etiqueta en algún lugar de la página de la forma <a name='ref'>"
+        },        
         {
             "id" :24 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Junior",
+            "question" : "¿Cuál es la diferencia entre OL y UL en listas HTML?",
+            "answer": "Es cómo se muestran los elementos de la lista en la página web: OL es una lista numerada con orden secuencial mientras que UL es una lista desordenada, los elementos de la lista no tienen un orden específico y generalmente se representan con viñetas (puntos, guiones, círculos, etc.) en lugar de números. Ambos comparten la etiqueta LI para listar los elementos"
         },
         {
             "id" :25 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Junior",
+            "question" : "HTML5: explica algunas características esenciales respecto a HTML",
+            "answer": "HTML5 es la quinta versión de HTML y ofrece nuevas características como: 1- HTML5 introdujo etiquetas semánticas para estructurar contenido de manera significativa.2-Ofrece soporte nativo para audio, video y gráficos 2D, sin necesidad de complementos. 3-Incluye formularios mejorados, almacenamiento local y APIs avanzadas, impulsando aplicaciones web interactivas y móviles."
         },
         {
             "id" : 26,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Junior",
+            "question" : "¿Qué significa HTML semántico y por qué es relevante?",
+            "answer": "HTML semántico se refiere al uso de etiquetas que tienen significado específico para describir la estructura del contenido. Esto mejora la accesibilidad y la indexación en motores de búsqueda."
         },
         {
             "id" :27 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Junior",
+            "question" : "¿Qué es el elemento `<meta>` en HTML y cuál es su función?",
+            "answer": "El elemento `<meta>` se utiliza para proporcionar metadatos sobre la página, como la codificación de caracteres, descripciones y palabras clave para motores de búsqueda."
         },
         {
             "id" : 28,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Junior",
+            "question" : "¿Cuál es la etiqueta HTML utilizada para mostrar una imagen en una página web y cómo se especifica la fuente (URL) de la imagen?",
+            "answer": " La etiqueta utilizada es <img> (imagen). Para mostrar una imagen en una página web, se debe utilizar el atributo src y especificar la URL de la imagen dentro de las comillas. La etiqueta también requiere un atributo alt para proporcionar una descripción de la imagen por motivos de accesibilidad."
         },
         {
             "id" : 29,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Junior",
+            "question" : "¿Cuál es la etiqueta HTML utilizada para crear un encabezado de nivel 1 y cómo se usa?",
+            "answer": "La etiqueta utilizada para crear un encabezado de nivel 1 es <h1>. Para utilizarla, simplemente debes rodear el texto del encabezado con las etiquetas <h1> de apertura y cierre,"
         },
         {
             "id" : 30,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Middle",
+            "question" : "¿Qué es un formulario HTML? Nombre algunas de las etiquetas usadas",
+            "answer": "Un formulario HTML es un elemento que se utiliza para recopilar datos e información de los usuarios que visitan una página web. Su propósito principal es permitir la interacción y la entrada de datos por parte de los usuarios en un sitio web. Los formularios son una parte esencial de muchas páginas web, ya que facilitan la comunicación bidireccional entre el usuario y el servidor web.FORM: Esta etiqueta define el contenedor principal del formulario.INPUT: Se utiliza para crear campos de entrada de texto, contraseñas, casillas de verificación, botones de radio.BUTTON: Se utiliza para crear botones dentro del formulario. Puede ser un botón de envío (submit) para enviar el formulario o un botón de restablecimiento (reset) para borrar los valores introducidos."
         },
         {
             "id" : 31,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Middle",
+            "question" : "¿Cuál es la diferencia entre los elementos SPAN y DIV en HTML y cuándo se deben utilizar?",
+            "answer": "SPAN se utiliza para aplicar estilos o manipular partes de texto en línea, mientras que DIV se usa para agrupar y estructurar elementos en bloque. La elección depende de la necesidad de estilo y estructura."
         },
         {
             "id" : 32,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Middle",
+            "question" : "¿Cómo se crea una tabla en HTML y cuáles son las etiquetas clave usadas?",
+            "answer": "Una tabla se crea utilizando las etiquetas `<table>`, `<tr>` (fila), `<th>` (encabezado de tabla) y `<td>` (celda de datos) para definir su estructura y contenido"
         },
         {
             "id" : 33,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Middle",
+            "question" : "¿Qué son las etiquetas de encabezado en HTML y cuál es su propósito?",
+            "answer": "Las etiquetas de encabezado (`<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>`) se utilizan para estructurar el contenido de la página y proporcionar información sobre su organización y jerarquía."
         },
         {
             "id" : 34,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Middle",
+            "question" : "¿Qué es el elemento `<iframe>` en HTML y para qué se utiliza?",
+            "answer": "El elemento `<iframe>` se utiliza para incrustar contenido externo, como otras páginas web o documentos, dentro de una página HTML."
         },
         {
             "id" : 35,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Middle",
+            "question" : "¿Qué es un atributo alt en la etiqueta <img> y por qué es importante?",
+            "answer": ":** El atributo alt proporciona un texto alternativo que se muestra si la imagen no se puede cargar. Es importante para la accesibilidad web y para describir el contenido de la imagen."
         },
         {
             "id" : 36,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Middle",
+            "question" : "Explica la diferencia entre los métodos HTTP GET y POST en el contexto de un formulario HTML.",
+            "answer": "GET se utiliza para enviar datos a través de la URL, mientras que POST envía datos en el cuerpo de la solicitud. GET es adecuado para datos que no son sensibles y se pueden ver en la URL, mientras que POST se usa para datos sensibles o cuando se requiere una mayor cantidad de datos."
         },
         {
             "id" : 37,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Senior",
+            "question" : "¿Qué es el concepto de accesibilidad web y cómo se puede mejorar en HTML?",
+            "answer": "La accesibilidad web se refiere a hacer que las páginas web sean utilizables por personas con discapacidades. Puede mejorarse en HTML mediante el uso de atributos como alt, aria-* y etiquetas semánticas adecuadas."
         },
         {
             "id" : 38,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Senior",
+            "question" : "¿Qué es la etiqueta <label> en HTML y por qué es importante?",
+            "answer": "Se utiliza para proporcionar una etiqueta descriptiva legible por humanos para un campo de entrada. Es importante para la accesibilidad web y mejora la usabilidad al vincularlo con un campo de entrada mediante el atributo for."
         },
         {
             "id" : 39,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
+            "category" : "Html",
+            "level" : "Senior",
+            "question" : "¿Cuál es el propósito de la etiqueta `<canvas>` en HTML y cómo se utiliza para dibujar gráficos en una página web?",
+            "answer": "La etiqueta `<canvas>` se utiliza para crear gráficos y animaciones en la web utilizando JavaScript. Se puede dibujar en el lienzo del `<canvas>` mediante comandos JavaScript."
         },
         {
             "id" : 40,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
+            "category" : "Html",
+            "level" : "Senior",
+            "question" : "¿Qué es la validación de formularios en el lado del cliente en HTML y cómo se logra?",
+            "answer": "La validación de formularios en el lado del cliente es la verificación de datos en el navegador del usuario antes de enviarlos al servidor. Se logra utilizando los atributos required, pattern, min, max, minlength, maxlength, y otros en los campos de entrada, así como la etiqueta <form>."
+        },        
         {
             "id" : 41,
             "category" : "Css",

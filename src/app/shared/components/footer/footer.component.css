@@ -1,18 +1,108 @@
 .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   background-color: #0f213b;
+  height: 50px;
+  max-height: 50px;
 }
 
-.footer-container__name-title{
+.footer-container__name-button {
+  text-align: center;
+  margin: auto;
   color: whitesmoke;
-  font-size: small;
+  font-size: smaller;
 }
 
-.footer-container__info-title{
+.footer-container__info-button {
+  margin: auto;
   color: whitesmoke;
-  font-size: small;
+  font-size: smaller;
 }
 
-.footer-container__contact-title{
+.footer-container__contact-button {
+  margin: auto;
   color: whitesmoke;
-  font-size: small;
+  font-size: smaller;
+  cursor: help;
+}
+
+.footer-container__contributors-container {
+  max-height: 1px;
+}
+
+.footer-container__profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-container__link-image {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+
+.footer-container__link-title {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.footer-container__contributors-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  width: 330px;
+  top: -550px;
+  gap: 15px;
+  z-index: 2;
+}
+
+.footer-container__contributors-list-item {
+  width: 330px;
+  height: 60px;
+  margin: auto;
+  padding: 3px 15px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 20px;
+  background-color: whitesmoke;
+
+  animation: 0.5s alternate slidein;
+
+  box-shadow: 10px 5px 5px black;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-container__contributors-list-item {
+    width: 530px;
+  }
+  .footer-container__contributors-list {
+    width: 530px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

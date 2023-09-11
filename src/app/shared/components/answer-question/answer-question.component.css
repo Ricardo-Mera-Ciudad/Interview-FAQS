@@ -20,14 +20,29 @@
 }
 .card-full-question{
   margin:auto;
+  position: relative;
 }
 .card-question-head{
+  position: sticky;
+  top: 0;
+  background-color: #0F213B;
+  color:#FFFF;
+  height: auto;
   display: flex;
-  margin:auto;
   width:85vw;
   justify-content: space-between;
+  align-items: center;
 }
-
+.card-question-head-text{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+card-question-head-text-title{
+  height:100%;
+  display:flex;
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   .question-selectors{
     color:#0F213B;
@@ -48,12 +63,17 @@
     margin-right:1%;
   }
   .card-full-question{
-    width:300px;    
+    width:300px;   
+    position: relative; 
   }
   .card-question-head{
+    position: sticky;
+    top: 0;
+    background-color: #0F213B;
+    color:#FFFF;
     display: flex;
     margin:auto;
     width:auto;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }

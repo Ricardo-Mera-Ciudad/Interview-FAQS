@@ -54,6 +54,6 @@
     display: flex;
     margin:auto;
     width:auto;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }

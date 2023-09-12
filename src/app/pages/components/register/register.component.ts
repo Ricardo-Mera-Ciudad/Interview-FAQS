@@ -5,7 +5,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
-import { ValidatorsService } from '../../services/validators.service';
+import { ValidatorsService } from '../../services/validators/validators.service';
 import { UsersService } from '../../services/users.service';
 
 @Component({

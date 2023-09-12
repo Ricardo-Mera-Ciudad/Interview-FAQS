@@ -13,10 +13,10 @@ const routes: Routes = [
     path: 'content-page',
     component: ContentPageComponent
   },
-  {
-    path: 'login-page',
-    component: LoginPageComponent
-  },
+  // {
+  //   path: 'login-page',
+  //   component: LoginPageComponent
+  // },
   {
     path: '**',
     redirectTo: 'home-page'

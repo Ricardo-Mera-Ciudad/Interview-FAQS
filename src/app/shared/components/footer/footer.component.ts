@@ -28,15 +28,15 @@ export class FooterComponent {
     {
       image: '../../../../assets/images/ricardo-mera.jpg',
       contributor: 'Ricardo Mera Ciudad',
-      link: 'https://www.linkedin.com/in/ricardo-mera-ciudad-26b58a159/',
+      link: 'https://www.linkedin.com/in/ricardo-mera.jpg/',
     },
     {
-      image: 'asdf1',
+      image: '../../../../assets/images/giovanni.PNG',
       contributor: 'Giovanni Martínez Díaz',
       link: 'asdf3',
     },
     {
-      image: 'asdf1',
+      image: '../../../../assets/images/David.PNG',
       contributor: 'David Galisteo Pujol',
       link: 'asdf3',
     },
@@ -46,7 +46,7 @@ export class FooterComponent {
       link: 'https://www.linkedin.com/in/daniel-s%C3%A1nchez-pinazo-00336a231/',
     },
   ];
-  
+
 
   showContributorsList() {
     if (this.isContributorListShown) {

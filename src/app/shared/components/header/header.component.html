@@ -113,12 +113,15 @@
 
       <!-- registro provisional -->
       <div class="header-container__navbar-items-login">
-          <span
-          [routerLink]="['/content-page']"
-          (click)="chooseCategory('register')"
-        >
-          Sign-up
-        </span>
+        <span
+        [routerLink]="['/content-page']"
+        (click)="chooseCategory('register')"
+        id="signup-link"
+        data-no-menu
+
+      >
+        Sign-up
+      </span>
       </div>    
 
 

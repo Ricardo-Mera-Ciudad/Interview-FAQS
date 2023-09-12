@@ -29,13 +29,18 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  onShowMenu(): void {
+onShowMenu(event?: Event) {
+    if (event) {
+      const clickedElement = event.target as HTMLElement;
+      if (clickedElement.id === 'signup-link') {
+        return;
+      }
+    }
     this.isVisible = !this.isVisible;
   }
 
   chooseCategory(category: string) {
     this.pagesService.setCategory(category);
-    this.onShowMenu();
   }
 
   closeMenu() {

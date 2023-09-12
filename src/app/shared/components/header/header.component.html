@@ -100,11 +100,6 @@
             >
           </li>
 
-          <li class="header-container__navbar-items-menu-list-item"
-              [routerLink]="['/content-page']"
-              (click)="chooseCategory('Login-page')">
-            <a class="header-container__navbar-items-menu-list-item-link">Login</a>
-          </li>
         </ul>
       </div>
 
@@ -119,14 +114,16 @@
 
       <!-- registro provisional -->
       <div class="header-container__navbar-items-login">
-        <span
+        
+
+      <span
         [routerLink]="['/content-page']"
-        (click)="chooseCategory('register')"
+        (click)="chooseCategory('Login-page')"
         id="signup-link"
         data-no-menu
 
       >
-        Sign-up
+        | Login
       </span>
       </div>    
 

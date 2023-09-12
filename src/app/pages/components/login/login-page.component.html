@@ -27,8 +27,20 @@
                     La contraseña debe de ser mayor o igual a 8 caracteres.
                 </span>
             </div>
-        </div>
 
+            <div class="flex justify-content-end mt-5">
+               
+                <a
+        [routerLink]="['/content-page']"
+        (click)="chooseCategory('register')"
+        id="signup-link"
+        data-no-menu
+
+      >
+        ¿Quieres unirte al equipaso front?
+            </a>
+            </div>
+        </div>
 
 
         <!-- Button -->
@@ -44,19 +56,3 @@
 
 </div>
 
-<!-- <div class="container-login">
-    <h2 class="login-title">Iniciar sesión</h2>
-        <form>
-            <div class="form-group">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
-            </div>
-            <div class="form-group">
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn" value="Iniciar sesión">
-            </div>
-        </form>
-</div> -->

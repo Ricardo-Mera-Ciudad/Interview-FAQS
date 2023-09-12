@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ValidatorsService } from '../../services/validators/validators.service';
 import { UsersService } from '../../services/users.service';
 import { Router } from '@angular/router';
+import { PagesService } from '../../services/pages.service';
 
 @Component({
   selector: 'app-login-page',
@@ -25,14 +26,19 @@ export class LoginPageComponent {
     return this.validatorsService.isValidField(this.myForm, field);
   };
 
+
   constructor(
     private fb: FormBuilder,
     private validatorsService: ValidatorsService,
     private usersService: UsersService,
-    private router: Router
+    private router: Router,
+    private pagesService: PagesService
 
   ) { };
 
+  chooseCategory(category: string) {
+    this.pagesService.setCategory(category)
+  }
 
 
   onLogin():void {

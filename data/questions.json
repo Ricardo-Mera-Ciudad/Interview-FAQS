@@ -11,6 +11,13 @@
       "email": "jesus@google.com",
       "password": "12345678",
       "id": 2
+    },
+    {
+      "name": "david",
+      "email": "dagalisteo@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 3
     }
   ],
   "userFavs": [],

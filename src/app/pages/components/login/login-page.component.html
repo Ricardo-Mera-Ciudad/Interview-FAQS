@@ -1,25 +1,8 @@
-<!-- <div class="container-login">
-    <h2 class="login-title">Iniciar sesión</h2>
-        <form>
-            <div class="form-group">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
-            </div>
-            <div class="form-group">
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn" value="Iniciar sesión">
-            </div>
-        </form>
-</div> -->
-
 <div class="login-container">
 
     <h2>Iniciar sesión</h2>
 
-    <form [formGroup]="myForm" class="m-4">
+    <form [formGroup]="myForm" (ngSubmit)="onLogin()" class="m-4">
 
         <!-- Email -->
         <div class="mb-3">
@@ -59,6 +42,21 @@
 
     </form>
 
-
-
 </div>
+
+<!-- <div class="container-login">
+    <h2 class="login-title">Iniciar sesión</h2>
+        <form>
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="Iniciar sesión">
+            </div>
+        </form>
+</div> -->

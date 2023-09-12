@@ -6,6 +6,11 @@
       "password": "12345678",
       "confirmPassword": "12345678",
       "email": "jesus@google.com"
+    },
+    {
+      "email": "jesus@google.com",
+      "password": "12345678",
+      "id": 2
     }
   ],
   "userFavs": [],

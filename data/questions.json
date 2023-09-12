@@ -667,7 +667,7 @@
             "level" : "Middle",
             "question" : "¿Qué son los módulos en TypeScript y cuál es su ventaja?",
             "answer": "Los módulos en TypeScript permiten organizar el código en archivos separados y reutilizables. Esto ayuda a mantener el código ordenado, modular y facilita la colaboración en proyectos grandes."
-        }
+        },
         {
             "id" :95,
             "category" : "Typescript",

@@ -577,10 +577,143 @@
     },
     {
       "id": 81,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es TypeScript y cómo se relaciona con JavaScript?",
+      "answer": "TypeScript es un lenguaje de programación desarrollado por Microsoft que se basa en JavaScript. Se compila a JavaScript y agrega tipos estáticos opcionales, lo que mejora la robustez y la calidad del código JavaScript."
+    },
+    {
+      "id": 82,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Cuál es la extensión de archivo típica para los archivos TypeScript?",
+      "answer": "La extensión de archivo típica para los archivos TypeScript es .ts"
+    },
+    {
+      "id": 83,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué son las interfaces en TypeScript y para qué se utiliza?",
+      "answer": "Las interfaces en TypeScript son estructuras que definen la forma de un objeto, incluyendo sus propiedades,tipos y métodos, pero no su implementación. Se definen usando la palabra clave interface. Por ejemplo: interface Persona { nombre: string; edad: number; }. Con esto se garantiza que los objetos cumplan con ciertas propiedades y métodos"
+    },
+    {
+      "id": 84,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Por qué TypeScript es útil en el desarrollo web y cuáles son sus ventajas clave?",
+      "answer": "TypeScript es útil porque mejora la seguridad y la calidad del código JavaScript al agregar tipos estáticos. Esto facilita la detección temprana de errores y proporciona herramientas de desarrollo más sólidas."
+    },
+    {
+      "id": 85,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito de las enumeraciones (enums) en TypeScript y cómo se declaran?",
+      "answer": "Las enumeraciones en TypeScript permiten definir un conjunto de valores con nombres descriptivos. Se declaran usando enum. Por ejemplo: enum DíasSemana { Lunes, Martes, Miércoles, ... }"
+    },
+    {
+      "id": 86,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es un tipo de dato en TypeScript?",
+      "answer": "Un tipo de dato en TypeScript define el tipo de valor que puede contener una variable, como números, cadenas, objetos, etc."
+    },
+    {
+      "id": 87,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre interface y type en TypeScript?",
+      "answer": "Ambos se utilizan para definir estructuras de datos, pero interface se utiliza principalmente para definir contratos para objetos, mientras que type es más versátil y se puede usar para definir tipos de datos complejos."
+    },
+    {
+      "id": 88,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es la herencia en TypeScript y cómo se implementa?",
+      "answer": "La herencia en TypeScript permite que una clase herede propiedades y métodos de otra clase. Se implementa usando la palabra clave extends, por ejemplo: class ClaseHija extends ClasePadre { } "
+    },
+    {
+      "id": 89,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es la inferencia de tipos en TypeScript y cómo se utiliza?",
+      "answer": "La inferencia de tipos es la capacidad de TypeScript para deducir automáticamente el tipo de una variable según su valor. No es necesario especificar el tipo explícitamente, TypeScript lo infiere automáticamente."
+    },
+    {
+      "id": 90,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué son los decoradores en TypeScript y cuál es su propósito en Angular?",
+      "answer": "Los decoradores son funciones que se utilizan para modificar clases, métodos o propiedades en TypeScript. En Angular, se usan para agregar metadatos a clases y componentes, lo que permite que Angular realice tareas como inyección de dependencias y enrutamiento."
+    },
+    {
+      "id": 91,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué son los genéricos en TypeScript y cómo se utilizan?",
+      "answer": "Los genéricos permiten escribir funciones y clases que funcionen con diferentes tipos de datos sin perder la información de tipo. Se definen utilizando parámetros de tipo, por ejemplo: function ejemplo<T>(valor: T): T { return valor; }"
+    },
+    {
+      "id": 92,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué son los tipos de unión (union types) en TypeScript y cómo se declaran?",
+      "answer": "Los tipos de unión permiten declarar una variable que puede tener varios tipos posibles. Se declaran usando el símbolo | entre los tipos, por ejemplo: let variable: string | number; "
+    },
+    {
+      "id": 93,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué es un transpilador en TypeScript y cuál es su función?",
+      "answer": "Es una herramienta que convierte código TypeScript en código JavaScript, lo que permite que los navegadores y entornos de ejecución de JavaScript lo comprendan y ejecuten.Un ejemplo de transpilador en TypeScript es el propio compilador de TypeScript, que se llama tsc (TypeScript Compiler). "
+    },
+    {
+      "id": 94,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué son los módulos en TypeScript y cuál es su ventaja?",
+      "answer": "Los módulos en TypeScript permiten organizar el código en archivos separados y reutilizables. Esto ayuda a mantener el código ordenado, modular y facilita la colaboración en proyectos grandes."
+    }
+        {
+      "id": 95,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre any y unknown en TypeScript?",
+      "answer": "ANY permite cualquier tipo de valor, mientras que UNKNOWN representa un tipo desconocido y es más seguro de usar que any."
+    },
+    {
+      "id": 96,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Cómo se declara una variable con un tipo específico en TypeScript?",
+      "answer": "Se puede declarar una variable con un tipo específico utilizando la notación de dos puntos después del nombre de la variable, por ejemplo, let miVariable: number = 5;"
+    },
+    {
+      "id": 97,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué es el sistema de módulos en TypeScript y cuáles son los dos formatos de módulos admitidos?",
+      "answer": "El sistema de módulos en TypeScript permite organizar el código en unidades separadas y reutilizables. Los dos formatos de módulos admitidos son CommonJS y ES6 (ECMAScript 2015)."
+    },
+    {
+      "id": 98,
+      "category": "Typescript",
+      "level": "Senior",
+      "question": "¿Qué es un namespace (espacio de nombres) en TypeScript y para qué se utiliza?",
+      "answer": "Es una forma de agrupar y organizar código en un ámbito separado para evitar conflictos de nombres. Se utiliza para estructurar grandes aplicaciones y evitar la contaminación del espacio global."
+    },
+    {
+      "id": 99,
+      "category": "Typescript",
+      "level": "Senior",
+      "question": "¿Qué son los tipos condicionales (conditional types) en TypeScript?",
+      "answer": "Los tipos condicionales son tipos que se basan en condiciones lógicas para determinar su forma. Se utilizan para crear tipos que dependen de otros tipos, como T extends U ? X : Y."
+    },
+    {
+      "id": 100,
+      "category": "Typescript",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de los archivos de declaración (declaration files) en TypeScript y cómo se nombran?",
+      "answer": "Los archivos de declaración se utilizan para proporcionar información de tipo para bibliotecas escritas en JavaScript. Se nombran con la extensión .d.ts y deben coincidir con el nombre del archivo JavaScript correspondiente."
     }
   ]
 }

@@ -11,6 +11,10 @@
   position:fixed;
   top:94%;
   z-index: 1000;
+  @media (min-width: 1024px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .footer-container__name-button {
@@ -39,6 +43,7 @@
   position:fixed;
   top:85%;
   left:20%;
+  z-index: 2;
 }
 
 .footer-container__profile-image {

@@ -18,12 +18,13 @@
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 72px;
+    height: 80px;
+
   }
 }
 
 .header-container__navbar {
   background-color: #0f213B;
-  display: flex;
   align-items: center;
 }
 
@@ -44,7 +45,7 @@
 
   @media (min-width: 1024px) {    
     width: 100%;
-    height: 100px;
+    height: 80px;
   }
 }
 
@@ -132,14 +133,17 @@
 }
 
 .header-container__navbar-items-logo-img {
-  width: 90%;
+  width: 250px;
+  height: auto;
 
   @media (min-width: 768px) {
-    width: 70%;
+    width: 450px;
+    height: auto;
   }
 
   @media (min-width: 1024px) {
-    width: 80%;
+    width: 500px;
+    height: auto;
   }
 }
 

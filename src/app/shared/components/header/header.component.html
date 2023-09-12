@@ -112,16 +112,17 @@
       </div>
 
       <!-- registro provisional -->
-      <h6
-        [routerLink]="['/content-page']"
-        (click)="chooseCategory('register')"
-        style="color: white; cursor: pointer"
-      >
-        Sign-up
-      </h6>
-
-
       <div class="header-container__navbar-items-login">
+          <span
+          [routerLink]="['/content-page']"
+          (click)="chooseCategory('register')"
+        >
+          Sign-up
+        </span>
+      </div>    
+
+
+      <!-- <div class="header-container__navbar-items-login">
         <span class="header-container__navbar-items-login-text">{{
           greetingUser
         }}</span>
@@ -140,7 +141,7 @@
             />
           </svg>
         </span>
-      </div>
+      </div> -->
     </div>
   </nav>
 </header>

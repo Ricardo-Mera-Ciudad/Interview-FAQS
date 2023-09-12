@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, inject } from '@angular/core';
 import { Contributor } from '../../interfaces/contributors.interface';
 
 @Component({
@@ -6,7 +6,8 @@ import { Contributor } from '../../interfaces/contributors.interface';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit{
+
   isContributorListShown: boolean = false;
   selectedArray: Contributor[] = [];
   contributorsArray: Contributor[] = [
@@ -47,6 +48,30 @@ export class FooterComponent {
     },
   ];
 
+  public hideWhat: boolean = false;
+  public whatDo: string = "";
+
+  private el = inject(ElementRef);
+  private renderer = inject(Renderer2);
+
+  ngOnInit(): void {
+    this.renderer.listen('document', 'click', (event: Event) => {
+
+      if (!this.el.nativeElement.contains(event.target)) {
+
+        this.closeMenu();
+
+      }
+
+    });
+  }
+
+  closeMenu() {
+
+    this.isContributorListShown = false;
+    this.selectedArray = [];
+
+  }
 
   showContributorsList() {
     if (this.isContributorListShown) {
@@ -65,4 +90,6 @@ export class FooterComponent {
       }, 100);
     }
   }
+
+
 }

@@ -71,7 +71,7 @@
 
   @media (min-width: 1024px) {
     font-size: 1em;
-    top: 100px;
+    top: 80px;
   }
 }
 
@@ -95,7 +95,7 @@
 
   @media (min-width: 1024px) {
     position: relative;
-    line-height: 3.5;  
+    line-height: 3;  
   }
 }
 
@@ -129,11 +129,12 @@
 .header-container__navbar-items-logo {
   display: flex;
   justify-content: center;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .header-container__navbar-items-logo-img {
   width: 250px;
+  margin-left:10px;
   height: auto;
 
   @media (min-width: 768px) {
@@ -155,6 +156,7 @@
   color: #FCFCFC;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
+  cursor:pointer;
 
   @media  (min-width: 768px) {
     font-size: 1em;    

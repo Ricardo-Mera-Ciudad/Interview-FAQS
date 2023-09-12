@@ -1,48 +1,63 @@
-  <div class="content-container">
-    <div class="css-questions"
-  *ngIf="selectedCategory === 'Css'"
-  >
-    <app-css-questions-component/>
+<div class="content-container">
+
+  <div class="angular-questions" *ngIf="selectedCategory === 'Angular'">
+
+    <app-angular-questions-component />
+
   </div>
-  <div class="html-questions"
-  *ngIf="selectedCategory === 'Html'"
-  >
-    <app-html-questions-component/>
+
+  <div class="css-questions" *ngIf="selectedCategory === 'Css'">
+
+    <app-css-questions-component />
+
   </div>
-  <div class="javascript-questions"
-  *ngIf="selectedCategory === 'Javascript'"
-  >
-    <app-javascript-questions-component/>
+
+  <div class="html-questions" *ngIf="selectedCategory === 'Html'">
+
+    <app-html-questions-component />
+
   </div>
-  <div class="typecript-questions"
-  *ngIf="selectedCategory === 'Typescript'"
-  >
-    <app-typecript-questions-component/>
+
+  <div class="javascript-questions" *ngIf="selectedCategory === 'Javascript'">
+
+    <app-javascript-questions-component />
+
   </div>
-  <div class="typecript-questions"
-  *ngIf="selectedCategory === 'Softskills'"
-  >
-  <app-softskills-questions-component/>
+
+  <div class="typecript-questions" *ngIf="selectedCategory === 'Typescript'">
+
+    <app-typecript-questions-component />
+
   </div>
-  <div class="typecript-questions"
-  *ngIf="selectedCategory === 'Webmetrics'"
-  >
-  <app-webmetrics-questions-component/>
+
+  <div class="typecript-questions" *ngIf="selectedCategory === 'Softskills'">
+
+    <app-softskills-questions-component />
+
   </div>
-  <div class="typecript-questions"
-  *ngIf="selectedCategory === 'Webpacks'"
-  >
-  <app-webpacks-questions-component/>
+
+  <div class="typecript-questions" *ngIf="selectedCategory === 'Webmetrics'">
+
+    <app-webmetrics-questions-component />
+
   </div>
-  <div class="typecript-questions"
-  *ngIf="selectedCategory === 'Login-page'"
-  >
+
+  <div class="typecript-questions" *ngIf="selectedCategory === 'Webpacks'">
+
+    <app-webpacks-questions-component />
+
   </div>
-    <app-login-page/>
-  <div class="register"
-  *ngIf="selectedCategory === 'register'"
-  >
-  <register-component/>
+
+  <div class="register" *ngIf="selectedCategory === 'register'">
+
+    <register-component />
+
   </div>
-  
+
+  <div class="login" *ngIf="selectedCategory === 'Login-page'">
+
+    <app-login-page />
+
+  </div>
+
 </div>

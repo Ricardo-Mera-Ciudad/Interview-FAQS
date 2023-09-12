@@ -16,7 +16,6 @@ import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-q
 import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginPageComponent } from './components/login/login-page.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 

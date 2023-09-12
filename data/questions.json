@@ -1,572 +1,581 @@
 {
-    "users": [],
-    "userFavs": [],
-    "questions" : [
-        {
-            "id" : 1,
-            "category" : "Angular",
-            "level" : "Junior",
-            "question" : "¿Que son los componentes de Angular",
-            "answer" : "Los componentes son los bloques de construcción más básicos para crear la interfaz de usuario de una aplicación de Angular. Estos componentes forman una especie de árbol en la aplicación y siempre tienen una plantilla (o template) con la que podemos formar la vista de nuestra aplicacion."
-        },
-        {
-            "id" : 2,
-            "category" : "Angular",
-            "level" : "Junior",
-            "question" : "¿Que es una plantilla?",
-            "answer" : "Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular."
-        },
-        {
-            "id" : 3,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" :4 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 5,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 6 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 7 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 8 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 9,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 10,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 11,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 12,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 13,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 14,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 15,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 16,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 17,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 18,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 19,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 20,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 21,
-            "category" : "Html",
-            "level" : "Junior",
-            "question" : "¿Que son las etiquetas de HTML?",
-            "answer" :"Es el contenido que se coloca entre las etiquetas HTML, con la finalidad de darle formato correctamente. Usa el símbolo menor que (<) y el mayor que (>). Un símbolo de barra oblicua también se utiliza como etiqueta de cierre."
-        },
-        {
-            "id" : 22,
-            "category" : "Html",
-            "level" : "Junior",
-            "question" : "¿Como se crean enlaces a secciones dentro de la misma página?",
-            "answer": "Los enlaces se crean usando la etiqueta <a>, con referencia mediante el uso del símbolo del número (#)<a href='#ref'. A continuación, se escribe un comando de etiqueta en algún lugar de la página de la forma <a name='ref'>"
-        },
-        {
-            "id" : 23,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" :24 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" :25 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 26,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" :27 ,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 28,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 29,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 30,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 31,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 32,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 33,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 34,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 35,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 36,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 37,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 38,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 39,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 40,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 41,
-            "category" : "Css",
-            "level" : "Junior",
-            "question" : "Explique en qué se diferencia un selector de clase de CSS de un selector id",
-            "answer": "Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu HTML. Múltiples elementos pueden compartir la misma clase y tener estilos similares. Un selector de ID en CSS se denota con un símbolo de almohadilla o numeral (por ejemplo, '#mi-id') y debe ser único en todo tu documento HTML. Solo un elemento puede tener un ID específico, y se utiliza cuando deseas aplicar estilos o manipular ese elemento en particular."
-        },
-        {
-            "id" : 42,
-            "category" : "Css",
-            "level" : "Junior",
-            "question" : "¿Cuál es la diferencia entre las posiciones relative, fixed, absolute y static para un elemento dado?",
-            "answer": "Estas posiciones afectan cómo se ubica un elemento en relación con su posición inicial y otros elementos. Static (Estático):Valor predeterminado para todos los elementos HTML. Los elementos se muestran en el orden en que aparecen en el flujo normal del documento. No se ven afectados por las propiedades top, right, bottom o left. No se pueden superponer a otros elementos ni ajustar su posición en relación con otros elementos. Relative (Relativo):Los elementos se desplazan en relación con su posición normal. Puedes usar las propiedades top, right, bottom o left para mover el elemento desde su posición original. El espacio ocupado por el elemento en su posición original se mantiene, lo que significa que otros elementos no se ven afectados por su movimiento. Absolute (Absoluto): Los elementos se posicionan en relación con el ancestro más cercano que tenga una posición relativa, absoluta o fija. Los elementos absolutos se eliminan del flujo normal del documento, por lo que no ocupan espacio en el diseño original. Puedes usar top, right, bottom o left para ajustar su posición en relación con el ancestro posicionado. Si no hay un ancestro posicionado, se posicionan en relación con el documento HTML.Fixed (Fijo): Los elementos se posicionan de forma fija en relación con la ventana gráfica del navegador, por lo que permanecen en la misma posición incluso si se desplaza la página. Se usan las propiedades top, right, bottom o left para definir su posición en relación con la ventana gráfica. No afectan ni se ven afectados por otros elementos en el documento."
-        },
-        {
-            "id" : 43,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 44,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-            "id" : 45,
-            "category" : "",
-            "level" : "",
-            "question" : "",
-            "answer": ""
-        },
-        {
-        "id" : 46,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
+  "users": [
     {
-        "id" : 47,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 48,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 49,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 50,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 51,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 52,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 53,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 54,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 55,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 56,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 57,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 58,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 59,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 60,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" :61,
-        "category" : "Javascript",
-        "level" : "Junior",
-        "question" : "¿Cuál es la diferencia entre undefined y null?",
-        "answer": "undefined representa una variable que no ha sido declarada o a la que no se le ha asignado un valor, mientras que null representa un valor intencionadamente vacío o ausente."
-    },
-    {
-        "id" : 62,
-        "category" : "Javascript",
-        "level" : "Junior",
-        "question" : "¿Qué es el scope en JavaScript?",
-        "answer": "El scope en JavaScript se refiere al alcance o contexto en el que una variable o función es accesible dentro del código. Puede ser global o local, y determina dónde una variable o función puede ser utilizada dentro de un programa."
-    },
-    {
-        "id" : 63,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 64,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 65,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 66,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 67,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 68,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 69,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 70,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 71,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 72,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 73,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 74,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 75,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 76,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 77,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 78,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 79,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" : 80,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
-    },
-    {
-        "id" :81 ,
-        "category" : "",
-        "level" : "",
-        "question" : "",
-        "answer": ""
+      "id": 1,
+      "name": "Jesús Villalón",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "email": "jesus@google.com"
     }
-]}
+  ],
+  "userFavs": [],
+  "questions": [
+    {
+      "id": 1,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Que son los componentes de Angular",
+      "answer": "Los componentes son los bloques de construcción más básicos para crear la interfaz de usuario de una aplicación de Angular. Estos componentes forman una especie de árbol en la aplicación y siempre tienen una plantilla (o template) con la que podemos formar la vista de nuestra aplicacion."
+    },
+    {
+      "id": 2,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Que es una plantilla?",
+      "answer": "Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular."
+    },
+    {
+      "id": 3,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 4,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 5,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 6,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 7,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 8,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 9,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 10,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 11,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 12,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 13,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 14,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 15,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 16,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 17,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 18,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 19,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 20,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 21,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Que son las etiquetas de HTML?",
+      "answer": "Es el contenido que se coloca entre las etiquetas HTML, con la finalidad de darle formato correctamente. Usa el símbolo menor que (<) y el mayor que (>). Un símbolo de barra oblicua también se utiliza como etiqueta de cierre."
+    },
+    {
+      "id": 22,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Como se crean enlaces a secciones dentro de la misma página?",
+      "answer": "Los enlaces se crean usando la etiqueta <a>, con referencia mediante el uso del símbolo del número (#)<a href='#ref'. A continuación, se escribe un comando de etiqueta en algún lugar de la página de la forma <a name='ref'>"
+    },
+    {
+      "id": 23,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 24,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 25,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 26,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 27,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 28,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 29,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 30,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 31,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 32,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 33,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 34,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 35,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 36,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 37,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 38,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 39,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 40,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 41,
+      "category": "Css",
+      "level": "Junior",
+      "question": "Explique en qué se diferencia un selector de clase de CSS de un selector id",
+      "answer": "Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu HTML. Múltiples elementos pueden compartir la misma clase y tener estilos similares. Un selector de ID en CSS se denota con un símbolo de almohadilla o numeral (por ejemplo, '#mi-id') y debe ser único en todo tu documento HTML. Solo un elemento puede tener un ID específico, y se utiliza cuando deseas aplicar estilos o manipular ese elemento en particular."
+    },
+    {
+      "id": 42,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre las posiciones relative, fixed, absolute y static para un elemento dado?",
+      "answer": "Estas posiciones afectan cómo se ubica un elemento en relación con su posición inicial y otros elementos. Static (Estático):Valor predeterminado para todos los elementos HTML. Los elementos se muestran en el orden en que aparecen en el flujo normal del documento. No se ven afectados por las propiedades top, right, bottom o left. No se pueden superponer a otros elementos ni ajustar su posición en relación con otros elementos. Relative (Relativo):Los elementos se desplazan en relación con su posición normal. Puedes usar las propiedades top, right, bottom o left para mover el elemento desde su posición original. El espacio ocupado por el elemento en su posición original se mantiene, lo que significa que otros elementos no se ven afectados por su movimiento. Absolute (Absoluto): Los elementos se posicionan en relación con el ancestro más cercano que tenga una posición relativa, absoluta o fija. Los elementos absolutos se eliminan del flujo normal del documento, por lo que no ocupan espacio en el diseño original. Puedes usar top, right, bottom o left para ajustar su posición en relación con el ancestro posicionado. Si no hay un ancestro posicionado, se posicionan en relación con el documento HTML.Fixed (Fijo): Los elementos se posicionan de forma fija en relación con la ventana gráfica del navegador, por lo que permanecen en la misma posición incluso si se desplaza la página. Se usan las propiedades top, right, bottom o left para definir su posición en relación con la ventana gráfica. No afectan ni se ven afectados por otros elementos en el documento."
+    },
+    {
+      "id": 43,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 44,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 45,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 46,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 47,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 48,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 49,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 50,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 51,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 52,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 53,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 54,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 55,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 56,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 57,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 58,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 59,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 60,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 61,
+      "category": "Javascript",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre undefined y null?",
+      "answer": "undefined representa una variable que no ha sido declarada o a la que no se le ha asignado un valor, mientras que null representa un valor intencionadamente vacío o ausente."
+    },
+    {
+      "id": 62,
+      "category": "Javascript",
+      "level": "Junior",
+      "question": "¿Qué es el scope en JavaScript?",
+      "answer": "El scope en JavaScript se refiere al alcance o contexto en el que una variable o función es accesible dentro del código. Puede ser global o local, y determina dónde una variable o función puede ser utilizada dentro de un programa."
+    },
+    {
+      "id": 63,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 64,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 65,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 66,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 67,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 68,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 69,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 70,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 71,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 72,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 73,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 74,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 75,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 76,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 77,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 78,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 79,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 80,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 81,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    }
+  ]
+}

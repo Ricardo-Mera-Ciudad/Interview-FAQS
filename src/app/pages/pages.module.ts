@@ -14,6 +14,7 @@ import { SoftskillsQuestionsComponentComponent } from './components/softskills-q
 import { WebpacksQuestionsComponentComponent } from './components/webpacks-questions-component/webpacks-questions-component.component';
 import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-questions-component/webmetrics-questions-component.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { LoginPageComponent } from './components/login/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -44,6 +45,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   exports: [
     HomePageComponent,
     LoginPageComponent,
+    RegisterComponent
   ]
 
 })

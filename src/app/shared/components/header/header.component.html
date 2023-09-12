@@ -1,10 +1,22 @@
 <header class="header-container">
   <nav class="header-container__navbar general-container">
     <div class="header-container__navbar-items">
-      <span class="header-container__navbar-items-onShowMenu" (click)="onShowMenu()">
-        <div class="header-container__navbar-items-onShowMenu-menu-line" [ngClass]="{'open': isVisible}"></div>
-        <div class="header-container__navbar-items-onShowMenu-menu-line" [ngClass]="{'open': isVisible}"></div>
-        <div class="header-container__navbar-items-onShowMenu-menu-line" [ngClass]="{'open': isVisible}"></div>
+      <span
+        class="header-container__navbar-items-onShowMenu"
+        (click)="onShowMenu()"
+      >
+        <div
+          class="header-container__navbar-items-onShowMenu-menu-line"
+          [ngClass]="{ open: isVisible }"
+        ></div>
+        <div
+          class="header-container__navbar-items-onShowMenu-menu-line"
+          [ngClass]="{ open: isVisible }"
+        ></div>
+        <div
+          class="header-container__navbar-items-onShowMenu-menu-line"
+          [ngClass]="{ open: isVisible }"
+        ></div>
       </span>
       <div class="header-container__navbar-items-menu" *ngIf="isVisible">
         <ul class="header-container__navbar-items-menu-list">
@@ -13,7 +25,9 @@
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Html')"
           >
-            <a class="header-container__navbar-items-menu-list-item-link">Html</a>
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >Html</a
+            >
           </li>
 
           <li
@@ -21,7 +35,9 @@
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Css')"
           >
-            <a class="header-container__navbar-items-menu-list-item-link">Css</a>
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >Css</a
+            >
           </li>
 
           <li
@@ -29,7 +45,9 @@
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Javascript')"
           >
-            <a class="header-container__navbar-items-menu-list-item-link">JavaScript</a>
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >JavaScript</a
+            >
           </li>
 
           <li
@@ -37,7 +55,9 @@
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Typescript')"
           >
-            <a class="header-container__navbar-items-menu-list-item-link">TypeScript</a>
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >TypeScript</a
+            >
           </li>
 
           <li
@@ -45,26 +65,39 @@
             [routerLink]="['/content-page']"
             (click)="chooseCategory('Angular')"
           >
-            <a class="header-container__navbar-items-menu-list-item-link">Angular</a>
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >Angular</a
+            >
           </li>
 
-          <li 
+          <li
             class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
-            (click)="chooseCategory('Softskills')">
-            <a class="header-container__navbar-items-menu-list-item-link">Soft Skills</a>
+            (click)="chooseCategory('Softskills')"
+          >
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >Soft Skills</a
+            >
           </li>
 
-          <li class="header-container__navbar-items-menu-list-item" 
-              [routerLink]="['/content-page']"
-              (click)="chooseCategory('Webmetrics')">
-            <a class="header-container__navbar-items-menu-list-item-link">Web Metrics</a>
+          <li
+            class="header-container__navbar-items-menu-list-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Webmetrics')"
+          >
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >Web Metrics</a
+            >
           </li>
 
-          <li class="header-container__navbar-items-menu-list-item"
-              [routerLink]="['/content-page']"
-              (click)="chooseCategory('Webpacks')">
-            <a class="header-container__navbar-items-menu-list-item-link">Webpacks</a>
+          <li
+            class="header-container__navbar-items-menu-list-item"
+            [routerLink]="['/content-page']"
+            (click)="chooseCategory('Webpacks')"
+          >
+            <a class="header-container__navbar-items-menu-list-item-link"
+              >Webpacks</a
+            >
           </li>
 
           <li class="header-container__navbar-items-menu-list-item"
@@ -84,8 +117,20 @@
         />
       </div>
 
+      <!-- registro provisional -->
+      <h6
+        [routerLink]="['/content-page']"
+        (click)="chooseCategory('register')"
+        style="color: white; cursor: pointer"
+      >
+        Sign-up
+      </h6>
+
+
       <div class="header-container__navbar-items-login">
-        <span class="header-container__navbar-items-login-text">{{ greetingUser }}</span>
+        <span class="header-container__navbar-items-login-text">{{
+          greetingUser
+        }}</span>
 
         <span class="header-container__navbar-items-login-icon">
           <svg

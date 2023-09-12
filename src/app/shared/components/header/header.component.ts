@@ -10,12 +10,12 @@ import { PagesService } from 'src/app/pages/services/pages.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  
+
   public greetingUser: string = 'Hola,';
 
   public isVisible: boolean = false;
 
-  private pagesService = inject(PagesService);  
+  private pagesService = inject(PagesService);
 
   onShowMenu(): void {
     this.isVisible = !this.isVisible;

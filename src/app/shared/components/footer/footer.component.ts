@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, inject } from '@angular/core';
 import { Contributor } from '../../interfaces/contributors.interface';
 
 @Component({
@@ -6,7 +6,8 @@ import { Contributor } from '../../interfaces/contributors.interface';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit{
+
   isContributorListShown: boolean = false;
   selectedArray: Contributor[] = [];
   contributorsArray: Contributor[] = [
@@ -28,15 +29,15 @@ export class FooterComponent {
     {
       image: '../../../../assets/images/ricardo-mera.jpg',
       contributor: 'Ricardo Mera Ciudad',
-      link: 'https://www.linkedin.com/in/ricardo-mera-ciudad-26b58a159/',
+      link: 'https://www.linkedin.com/in/ricardo-mera.jpg/',
     },
     {
-      image: 'asdf1',
+      image: '../../../../assets/images/giovanni.PNG',
       contributor: 'Giovanni Martínez Díaz',
       link: 'asdf3',
     },
     {
-      image: 'asdf1',
+      image: '../../../../assets/images/David.PNG',
       contributor: 'David Galisteo Pujol',
       link: 'asdf3',
     },
@@ -46,7 +47,31 @@ export class FooterComponent {
       link: 'https://www.linkedin.com/in/daniel-s%C3%A1nchez-pinazo-00336a231/',
     },
   ];
-  
+
+  public hideWhat: boolean = false;
+  public whatDo: string = "";
+
+  private el = inject(ElementRef);
+  private renderer = inject(Renderer2);
+
+  ngOnInit(): void {
+    this.renderer.listen('document', 'click', (event: Event) => {
+
+      if (!this.el.nativeElement.contains(event.target)) {
+
+        this.closeMenu();
+
+      }
+
+    });
+  }
+
+  closeMenu() {
+
+    this.isContributorListShown = false;
+    this.selectedArray = [];
+
+  }
 
   showContributorsList() {
     if (this.isContributorListShown) {
@@ -65,4 +90,6 @@ export class FooterComponent {
       }, 100);
     }
   }
+
+
 }

@@ -16,10 +16,10 @@
     width: auto;
   }
   @media screen and (min-width: 1024px) {
-
     flex-direction: row;
     height: 80vh;
     width: auto;
-    left: 8%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

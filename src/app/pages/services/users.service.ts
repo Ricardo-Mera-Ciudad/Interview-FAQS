@@ -54,14 +54,6 @@ export class UsersService {
   }
 
 
-//   login(email: string, password: string): Observable<UserData> {
-//     return this.http.get<UserData>(`${this.baseUrl}/users/1`)
-//     .pipe(
-//         tap(user => this.user = user),
-//         tap(user => localStorage.setItem('token', 'asdadadasd.adaddasd.adasdasdas'))
-//     )
-//  }
-
 login(email: string, password: string): Observable<UserData | null> {
   return this.http.get<UserData[]>(`${this.baseUrl}/users`).pipe(
     switchMap(users => {
@@ -77,7 +69,6 @@ login(email: string, password: string): Observable<UserData | null> {
     })
   );
 }
-
 
 
 }

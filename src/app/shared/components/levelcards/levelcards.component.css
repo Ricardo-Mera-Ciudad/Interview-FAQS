@@ -141,3 +141,16 @@
         font-weight: bold;        
     }
 }
+@media screen and (min-width: 1024px){
+    .container-level{
+        height:85vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:15%;
+        position:fixed;
+        top:15%;
+        left:18%;
+        
+    }
+}

@@ -16,6 +16,7 @@ import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-q
 import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginPageComponent } from './components/login/login-page.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
 
@@ -33,7 +34,8 @@ import { LoginPageComponent } from './components/login/login-page.component';
     SoftskillsQuestionsComponentComponent,
     WebpacksQuestionsComponentComponent,
     WebmetricsQuestionsComponentComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfilePageComponent
   ],
   imports: [
     CommonModule,

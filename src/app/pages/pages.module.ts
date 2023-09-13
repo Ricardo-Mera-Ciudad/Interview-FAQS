@@ -13,9 +13,8 @@ import { SharedModule } from '../shared/shared.module';
 import { SoftskillsQuestionsComponentComponent } from './components/softskills-questions-component/softskills-questions-component.component';
 import { WebpacksQuestionsComponentComponent } from './components/webpacks-questions-component/webpacks-questions-component.component';
 import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-questions-component/webmetrics-questions-component.component';
-import { RegisterComponent } from '../auth/pages/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginPageComponent } from '../auth/pages/login/login-page.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
 
@@ -33,6 +32,7 @@ import { LoginPageComponent } from '../auth/pages/login/login-page.component';
     SoftskillsQuestionsComponentComponent,
     WebpacksQuestionsComponentComponent,
     WebmetricsQuestionsComponentComponent,
+    ProfilePageComponent
   
   ],
   imports: [

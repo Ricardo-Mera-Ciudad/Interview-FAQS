@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, Renderer2, inject } from '@angular/core'
 
 import { PagesService } from 'src/app/pages/services/pages.service';
 import { UsersService } from '../../../auth/services/users.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -27,6 +28,11 @@ export class HeaderComponent implements OnInit {
   private el = inject(ElementRef);
 
   private renderer = inject(Renderer2);
+
+  private usersService = inject(UsersService);
+
+  private router = inject(Router);
+  
 
   ngOnInit(): void {
     this.renderer.listen('document', 'click', (event: Event) => {

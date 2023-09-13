@@ -16,6 +16,7 @@ export class UsersService {
   private user?: UserData;
   public userAdded = new Subject<UserData>();
   public userToUpdate = new Subject<UserData>();
+  public token = "";
   
 
   constructor(private http: HttpClient) {}
@@ -53,13 +54,23 @@ export class UsersService {
           )
   }
 
+  createJwtToken(payload:any) {
+    const base64Url = btoa(JSON.stringify(payload));
+    return base64Url;
+  }
+
 
 login(email: string, password: string): Observable<UserData | null> {
   return this.http.get<UserData[]>(`${this.baseUrl}/users`).pipe(
     switchMap(users => {
       const user = users.find(u => u.email === email && u.password === password);
       if (user) {
-        localStorage.setItem('authToken', 'asdadadasd.adaddasd.adasdasdas');
+        const tokenPayload = {
+          sub: user.id,
+          email: user.email,
+        };
+        this.token = this.createJwtToken(tokenPayload);
+        localStorage.setItem('authToken', this.token);
       }
       return of(user || null); // Devuelve el usuario o null
     }),
@@ -69,6 +80,12 @@ login(email: string, password: string): Observable<UserData | null> {
     })
   );
 }
+
+logout() {
+  this.user = undefined;
+  localStorage.removeItem('authToken');
+}
+
 
 
 }

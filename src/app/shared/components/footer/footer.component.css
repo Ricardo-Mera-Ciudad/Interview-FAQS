@@ -15,35 +15,44 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  @media (min-width: 1280px) {
+    top: 95%;
+  }
 }
+
 
 .footer-container__name-button {
   text-align: center;
   margin: auto;
-  color: whitesmoke;
+  color: #FCFCFC;
   font-size: smaller;
 }
 
 .footer-container__info-button {
   margin: auto;
-  color: whitesmoke;
+  color: #FCFCFC;
   font-size: smaller;
 }
 
 .footer-container__contact-button {
   margin: auto;
-  color: whitesmoke;
+  color: #FCFCFC;
   font-size: smaller;
-  cursor: help;
+  cursor: pointer;
 }
 
 .footer-container__contributors-container {
   margin:auto;
   max-height: 1px;
-  position:fixed;
-  top:85%;
-  left:20%;
+  position:absolute;
+  top:82%;
+  left:50%;
   z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.footer-container__contributors-container.active {
+  display: block;
 }
 
 .footer-container__profile-image {
@@ -69,16 +78,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: auto;
-  padding: 0;
-  width: 300px;
+  padding: 15px;
   top: -550px;
   gap: 15px;
   z-index: 2;
 }
 
+
 .footer-container__contributors-list-item {
-  width: 250px;
+  width: 320px;
   height: 60px;
   margin: auto;
   padding: 3px 15px;
@@ -87,36 +97,10 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
-  border-radius: 20px;
+  border-radius: 8px;
   background-color: whitesmoke;
-
   animation: 0.5s alternate slidein;
-
-  box-shadow: 10px 5px 5px black;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-container {
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #0f213b;
-    height: 50px;
-    max-height: 50px;
-    position:fixed;
-    top:96%;
-    z-index: 1000;
-  }
-  .footer-container__contributors-container {
-    margin:auto;
-    max-height: 1px;
-    position:fixed;
-    top:85%;
-  }
+  box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 1024px) {
@@ -130,12 +114,10 @@
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 300%;
+    margin-left: 50%;
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
   }
 }

@@ -1,0 +1,4 @@
+.blur-content {
+  filter: blur(20px);
+  opacity: 0.3;
+}

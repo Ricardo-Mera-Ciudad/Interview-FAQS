@@ -7,6 +7,7 @@ import {
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 import { ValidatorsService } from '../../services/validators/validators.service';
 import { UsersService } from '../../services/users.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'register-component',
@@ -35,6 +36,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
+    private router: Router,
     private validatorsService: ValidatorsService,
     private usersService: UsersService
   ) {}

@@ -1,4 +1,12 @@
-import { Component, ElementRef, OnInit, Renderer2, inject } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  OnInit,
+  Output,
+  Renderer2,
+  inject,
+} from '@angular/core';
 import { Contributor } from '../../interfaces/contributors.interface';
 
 @Component({
@@ -6,14 +14,16 @@ import { Contributor } from '../../interfaces/contributors.interface';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent implements OnInit{
+export class FooterComponent implements OnInit {
+  @Output() blurEffectToggled = new EventEmitter<boolean>()
+  isBlurred: boolean = false;
 
   isContributorListShown: boolean = false;
   selectedArray: Contributor[] = [];
   contributorsArray: Contributor[] = [
     {
       image: '../../../../assets/images/lola-garcia.jpg',
-      contributor: 'María Dolores García Morcillo',
+      contributor: 'Lola García Morcillo',
       link: 'https://es.linkedin.com/in/lola-garcia-morcillo',
     },
     {
@@ -49,31 +59,31 @@ export class FooterComponent implements OnInit{
   ];
 
   public hideWhat: boolean = false;
-  public whatDo: string = "";
+  public whatDo: string = '';
 
   private el = inject(ElementRef);
   private renderer = inject(Renderer2);
 
   ngOnInit(): void {
     this.renderer.listen('document', 'click', (event: Event) => {
-
       if (!this.el.nativeElement.contains(event.target)) {
-
         this.closeMenu();
-
       }
-
     });
   }
 
-  closeMenu() {
+  toggledBlurEffect() {
+    this.isBlurred = !this.isBlurred
+    this.blurEffectToggled.emit(this.isBlurred);
+  }
 
+  closeMenu() {
     this.isContributorListShown = false;
     this.selectedArray = [];
-
   }
 
   showContributorsList() {
+    this.toggledBlurEffect()
     if (this.isContributorListShown) {
       this.selectedArray = [];
       this.isContributorListShown = false;
@@ -87,9 +97,7 @@ export class FooterComponent implements OnInit{
           this.selectedArray.push(this.contributorsArray[index]);
           index++;
         }
-      }, 100);
+      }, 200);
     }
   }
-
-
 }

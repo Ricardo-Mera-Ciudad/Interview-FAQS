@@ -13,9 +13,7 @@ import { SharedModule } from '../shared/shared.module';
 import { SoftskillsQuestionsComponentComponent } from './components/softskills-questions-component/softskills-questions-component.component';
 import { WebpacksQuestionsComponentComponent } from './components/webpacks-questions-component/webpacks-questions-component.component';
 import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-questions-component/webmetrics-questions-component.component';
-import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginPageComponent } from './components/login/login-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
@@ -23,7 +21,7 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 @NgModule({
   declarations: [
     HomePageComponent,
-    LoginPageComponent,
+    
     ContentPageComponent,
     HtmlQuestionsComponentComponent,
     CssQuestionsComponentComponent,
@@ -34,8 +32,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     SoftskillsQuestionsComponentComponent,
     WebpacksQuestionsComponentComponent,
     WebmetricsQuestionsComponentComponent,
-    RegisterComponent,
     ProfilePageComponent
+  
   ],
   imports: [
     CommonModule,
@@ -45,8 +43,8 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
   ],
   exports: [
     HomePageComponent,
-    LoginPageComponent,
-    RegisterComponent
+    
+  
   ]
 
 })

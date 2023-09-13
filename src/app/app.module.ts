@@ -7,18 +7,18 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { HttpClientModule } from '@angular/common/http';
-import { UserDataComponent } from './pages/components/user-data/user-data.component';
-import { FavoritesComponent } from './pages/components/favorites/favorites.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
-  declarations: [AppComponent, UserDataComponent, FavoritesComponent],
+  declarations: [AppComponent],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     PagesModule,
-    HttpClientModule
+    HttpClientModule,
+    AuthModule
   ],
 
   providers: [],

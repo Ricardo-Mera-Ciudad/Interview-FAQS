@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ValidatorsService } from '../../services/validators/validators.service';
 import { UsersService } from '../../services/users.service';
 import { Router } from '@angular/router';
-import { PagesService } from '../../services/pages.service';
+import { PagesService } from '../../../pages/services/pages.service';
 
 @Component({
   selector: 'app-login-page',

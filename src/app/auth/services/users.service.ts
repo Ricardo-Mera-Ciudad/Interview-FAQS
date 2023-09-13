@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environments } from 'src/environment/environment';
-import { Observable, Subject, tap, map, catchError, of } from 'rxjs';
+import { Observable, Subject, tap, map, catchError, of, switchMap } from 'rxjs';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
+
 
 
 
@@ -12,8 +13,10 @@ import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 export class UsersService {
 
   private baseUrl: string = environments.baseUrl;
+  private user?: UserData;
   public userAdded = new Subject<UserData>();
   public userToUpdate = new Subject<UserData>();
+  
 
   constructor(private http: HttpClient) {}
 
@@ -49,5 +52,23 @@ export class UsersService {
             catchError(() => of(false))
           )
   }
+
+
+login(email: string, password: string): Observable<UserData | null> {
+  return this.http.get<UserData[]>(`${this.baseUrl}/users`).pipe(
+    switchMap(users => {
+      const user = users.find(u => u.email === email && u.password === password);
+      if (user) {
+        localStorage.setItem('authToken', 'asdadadasd.adaddasd.adasdasdas');
+      }
+      return of(user || null); // Devuelve el usuario o null
+    }),
+    catchError(() => {
+      // Manejar errores de autenticación aquí
+      return of(null);
+    })
+  );
+}
+
 
 }

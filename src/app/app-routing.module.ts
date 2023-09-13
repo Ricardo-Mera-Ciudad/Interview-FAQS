@@ -39,3 +39,10 @@ const routes: Routes = [
     redirectTo: 'home-page'
   }
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+
+export class AppRoutingModule { }

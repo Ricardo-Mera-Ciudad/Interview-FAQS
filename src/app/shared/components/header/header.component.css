@@ -235,6 +235,48 @@
   transform: scaleX(1);
 }
 
+.header-container__navbar-items-user-menu{
+  position: fixed;
+  z-index: 9999;
+  right: 0%;
+  color: #FCFCFC;
+  font-family: 'Open Sans', sans-serif;
+  top: 55px;
+
+  @media (min-width: 768px) {
+    top: 80px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1em;
+    top: 80px;
+  }
+}
+
+.header-container__navbar-items-user-menu-list {
+  list-style-type: none;
+  background-color: #FCFCFC;
+  white-space: nowrap;
+  line-height: 2.5;
+  width: 150%;
+  z-index: 9999;
+  transition: background-color 0.3s, text-decoration 0.3s;
+  padding: 0px;
+  text-align: left;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  @media (min-width: 768px) {   
+    position: relative;
+    line-height: 3; 
+  }
+
+  @media (min-width: 1024px) {
+    position: relative;
+    line-height: 3;  
+  }
+}
+
 /*ngClass*/
 .open:nth-child(1) {
   transform: rotate(45deg) translate(5px, 1px);

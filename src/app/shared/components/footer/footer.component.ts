@@ -68,6 +68,8 @@ export class FooterComponent implements OnInit {
     this.renderer.listen('document', 'click', (event: Event) => {
       if (!this.el.nativeElement.contains(event.target)) {
         this.closeMenu();
+        this.isBlurred = false;
+        this.blurEffectToggled.emit(this.isBlurred);
       }
     });
   }

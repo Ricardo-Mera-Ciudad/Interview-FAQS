@@ -1,24 +1,13 @@
-.container-main-component{
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    margin:auto;
-}
-.level{
-    width:100%;
-}
-.contentQuestions{
-    height:auto;  
-    display:flex;
-    margin-top:5%;
+.container-main-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* @media screen and (min-width: 768px) {
-    .contentQuestions{
-        width:auto;
-        height:auto;  
-        display:flex;
-        margin-left:30%;
-    
-    }
-} */
+.level-container{
+ margin-top: 100px;
+ @media (min-width: 768px){
+  margin-top: 150px;
+ }
+}

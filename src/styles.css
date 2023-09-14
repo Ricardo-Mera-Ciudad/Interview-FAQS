@@ -1,6 +1,8 @@
 .general-container {
   padding: 0 14px;
   background-color: #778899;
+  flex: 1;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -24,4 +26,5 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
 }

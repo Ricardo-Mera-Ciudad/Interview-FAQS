@@ -68,9 +68,9 @@ export class RegisterComponent implements OnInit {
     for (const key of Object.keys(errors)) {
       switch (key) {
         case 'required':
-          return 'Este campo es requerido';
+          return 'Este campo es requerido.';
         case 'emailTaken':
-          return 'el email ya existe;';
+          return 'El email ya existe.';
       }
     }
     return null;
@@ -93,6 +93,7 @@ export class RegisterComponent implements OnInit {
       return;
     }
     this.usersService.addUser(this.currentUser).subscribe((user) => {
+      this.router.navigate(['/login']);
       console.log(user);
     });
     this.userForm.reset();

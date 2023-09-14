@@ -1,69 +1,98 @@
 import { Component, inject } from '@angular/core';
-import { Question, Level, Category } from '../../interfaces/answerQuestion.interface';
+import {
+  Question,
+  Level,
+  Category,
+} from '../../interfaces/answerQuestion.interface';
 import { PagesService } from 'src/app/pages/services/pages.service';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'shared-answer-question',
   templateUrl: './answer-question.component.html',
-  styleUrls: ['./answer-question.component.css']
+  styleUrls: ['./answer-question.component.css'],
 })
 export class AnswerQuestionComponent {
-  
   public questions: Question[] = [
     {
       id: 1,
-      level: Level["Middle"],
-      category: Category["Angular"],
-      question: "This is Question 1 Title",
-      answer: "This is the first Answer"
+      level: Level['Middle'],
+      category: Category['Angular'],
+      question: ' This is Question 1 Title',
+      answer: 'This is the first Answer',
     },
     {
       id: 2,
-      level: Level["Middle"],
-      category: Category["Angular"],
-      question: "This is the Question 2 Title",
-      answer: "This is the second Answer"
-    }
-  ]
+      level: Level['Middle'],
+      category: Category['Angular'],
+      question: ' This is the Question 2 Title',
+      answer: 'This is the second Answer',
+    },
+  ];
+
 
   public answerVisibility: { [key: number]: boolean } = {};
+  public borderRadiusState: { [key: number]: boolean } = {};
 
-  private pagesService = inject(PagesService)
-  public category : string = 'Angular';
-  public level    : string = 'Middle';
-  
+  private pagesService = inject(PagesService);
+  public category: string = 'Angular';
+  public level: string = 'Middle';
+
+
   private unsubscribe$ = new Subject<void>();
- 
+
   constructor() {
-      this.questions.forEach((question) => {
+    this.questions.forEach((question) => {
       this.answerVisibility[question.id] = false;
+      this.borderRadiusState[question.id] = false;
     });
   }
   ngOnInit(): void {
     this.loadCategory();
   }
 
-  loadCategory(){
+  loadCategory() {
     this.pagesService.selectedCategory$
-    .pipe(takeUntil(this.unsubscribe$))
-    .subscribe(categoryFromService => this.category = categoryFromService);
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(
+        (categoryFromService) => (this.category = categoryFromService)
+      );
     this.pagesService.selectedLevel$
-    .pipe(takeUntil(this.unsubscribe$))
-    .subscribe(levelFromService => this.level = levelFromService);
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe((levelFromService) => (this.level = levelFromService));
   }
 
   showAnswer(id: number) {
-    // Cambiar la visibilidad de la respuesta para la pregunta con el ID proporcionado
     this.answerVisibility[id] = !this.answerVisibility[id];
+    this.borderRadiusState[id] = this.answerVisibility[id];
   }
 
-  ngOnDestroy(){
+  getCategoryImage(category: string): string {
+    let imgUrl: string = "";
+
+    switch(category) {
+      case 'Angular':
+        imgUrl = "../../../../assets/images/angular.png";
+        break;
+      case 'Html':
+        imgUrl = "../../../../assets/images/html.png";
+        break;
+      case 'Css':
+        imgUrl = "../../../../assets/images/css.png";
+        break;
+      case 'Javascript':
+        imgUrl = "../../../../assets/images/javascript.png";
+        break;
+      case 'Typescript':
+        imgUrl = "../../../../assets/images/typescript.png";
+        break;
+    }
+    return imgUrl;
+
+  }
+
+  ngOnDestroy() {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
   }
-  
-
-  
-
 }

@@ -23,8 +23,6 @@ export class HeaderComponent implements OnInit {
 
   private pagesService = inject(PagesService);
 
-  private userService = inject(UsersService);
-
   private el = inject(ElementRef);
 
   private renderer = inject(Renderer2);
@@ -38,23 +36,17 @@ export class HeaderComponent implements OnInit {
     this.renderer.listen('document', 'click', (event: Event) => {
       if (!this.el.nativeElement.contains(event.target)) {
         this.closeMenu();
+        this.closeUserMenu();
       }
     });
   }
 
-  onShowMenu(event?: Event) {
-    if (event) {
-      const clickedElement = event.target as HTMLElement;
-      if (clickedElement.id === 'signup-link') {
-        return;
-      }
-    }
+  onShowMenu() {    
     this.isVisible = !this.isVisible;
   }
 
   onClickUser(){
     this.isUserLoggedIn = !this.isUserLoggedIn;
-
   }
 
   chooseCategory(category: string) {
@@ -65,12 +57,15 @@ export class HeaderComponent implements OnInit {
     this.isVisible = false;
   }
 
+  closeUserMenu() {
+    this.isUserLoggedIn = false;
+  }
+
   logout() {
     this.usersService.logout();
     localStorage.clear();
     this.router.navigate(['/login']);
     this.isUserAuthenticated = false;
   }
-
 
 }

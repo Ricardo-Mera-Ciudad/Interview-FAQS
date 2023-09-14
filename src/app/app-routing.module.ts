@@ -31,7 +31,7 @@ const routes: Routes = [
     children: [
       { path: 'data', component: UserDataComponent },
       { path: 'favorites', component: FavoritesComponent },
-      { path: '', redirectTo: 'datos', pathMatch: 'full' } // Ruta por defecto dentro del perfil
+      { path: '', redirectTo: 'data', pathMatch: 'full' } 
     ]
   },
   {

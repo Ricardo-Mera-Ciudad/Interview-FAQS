@@ -5,7 +5,6 @@ import { RegisterComponent } from './pages/register/register.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CookieService } from 'ngx-cookie-service';
 
 
 
@@ -20,6 +19,6 @@ import { CookieService } from 'ngx-cookie-service';
     RouterModule,
     HttpClientModule,
     ],
-    providers: [CookieService],
+    providers: [],
 })
 export class AuthModule { }

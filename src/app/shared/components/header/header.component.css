@@ -235,7 +235,7 @@
   transform: scaleX(1);
 }
 
-.header-container__navbar-items-user-menu{
+.header-container__navbar-items-login-user-menu{
   position: fixed;
   z-index: 9999;
   right: 0%;
@@ -253,7 +253,7 @@
   }
 }
 
-.header-container__navbar-items-user-menu-list {
+.header-container__navbar-items-login-user-menu-list{
   list-style-type: none;
   background-color: #FCFCFC;
   white-space: nowrap;
@@ -275,6 +275,40 @@
     position: relative;
     line-height: 3;  
   }
+}
+
+.header-container__navbar-items-login-user-menu-list-item:hover{
+  background-color: #0f213B;
+  width: 100%;
+  padding-left: 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  @media (min-width: 768px) {
+    padding-left: 35px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 40px;
+  }
+}
+
+
+.header-container__navbar-items-login-user-menu .header-container__navbar-items-login-user-menu-list-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #FCFCFC;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-container__navbar-items-menu-list-item .header-container__navbar-items-menu-list-item-link:hover::after {
+  transform: scaleX(1);
 }
 
 /*ngClass*/

@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     RouterModule,
     HttpClientModule,
-    ]
+    ],
+    providers: [],
 })
 export class AuthModule { }

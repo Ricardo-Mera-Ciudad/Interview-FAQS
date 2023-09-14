@@ -5,7 +5,8 @@ import {
   Category,
 } from '../../interfaces/answerQuestion.interface';
 import { PagesService } from 'src/app/pages/services/pages.service';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject, switchMap, takeUntil } from 'rxjs';
+import { DataService } from 'src/app/pages/services/data.service';
 
 @Component({
   selector: 'shared-answer-question',
@@ -13,22 +14,7 @@ import { Subject, takeUntil } from 'rxjs';
   styleUrls: ['./answer-question.component.css'],
 })
 export class AnswerQuestionComponent {
-  public questions: Question[] = [
-    {
-      id: 1,
-      level: Level['Middle'],
-      category: Category['Angular'],
-      question: ' This is Question 1 Title',
-      answer: 'This is the first Answer',
-    },
-    {
-      id: 2,
-      level: Level['Middle'],
-      category: Category['Angular'],
-      question: ' This is the Question 2 Title',
-      answer: 'This is the second Answer',
-    },
-  ];
+  public questions: Question[] = [];
 
 
   public answerVisibility: { [key: number]: boolean } = {};
@@ -40,6 +26,7 @@ export class AnswerQuestionComponent {
 
 
   private unsubscribe$ = new Subject<void>();
+  private dataService = inject(DataService);
 
   constructor() {
     this.questions.forEach((question) => {
@@ -48,7 +35,18 @@ export class AnswerQuestionComponent {
     });
   }
   ngOnInit(): void {
+    this.getFaqs()
     this.loadCategory();
+  }
+
+  getFaqs() {
+    this.pagesService.selectedCategory$
+      .pipe(
+        switchMap((selectedCategory) =>
+        this.dataService.getQuestionsAndAnswers(selectedCategory))
+    ).subscribe((questions: Question[]) => {
+      this.questions = questions;
+    })
   }
 
   loadCategory() {
@@ -85,6 +83,15 @@ export class AnswerQuestionComponent {
         break;
       case 'Typescript':
         imgUrl = "../../../../assets/images/typescript.png";
+        break;
+      case 'Softskills':
+        imgUrl = "";
+        break;
+      case 'Webmetrics':
+        imgUrl = "";
+        break;
+      case 'Webpacks':
+        imgUrl = "";
         break;
     }
     return imgUrl;

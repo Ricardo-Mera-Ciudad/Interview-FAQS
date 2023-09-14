@@ -8,6 +8,9 @@
 }
 .center-button-container {
   margin: 0 30px;
+  @media (min-width: 768px){
+    margin: 0 50px
+  }
 }
 .selected-level .card-level {
   transform: scale(1.3);

@@ -15,12 +15,19 @@ export class ContentPageComponent implements OnInit, OnDestroy{
   private unsubscribe$ = new Subject<void>();
 
   ngOnInit(): void {
-   this.loadCategory()
+   this.getStoredCategory();
+   this.loadCategory();
   }
 
-
+  getStoredCategory() {
+    const storedCategory = localStorage.getItem('selectedCategory');
+    if(storedCategory){
+      this.selectedCategory = storedCategory;
+    }
+  }
 
   loadCategory(){
+    this.pagesService.setCategory(this.selectedCategory);
     this.pagesService.selectedCategory$
     .pipe(takeUntil(this.unsubscribe$))
     .subscribe(content =>

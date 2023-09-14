@@ -1,21 +1,40 @@
-.crud{
+.register-container{
   display: flex;
   justify-content: center;
-  height: 100vh; /* Provisional!!! */
+  align-items: center;
+  height: 100vh;
+  color: #FCFCFC;
 }
-.marginProvisional{ /* Provisional!!! */
-  margin-top: 150px;
+.register-title{
+  text-align: center;
 }
+
 .registerForm{
-  border: 1px solid black;
+  background-color: #0f213B;
+  border-radius: 8px !important;
+  width: 300px;
+  height: 50%;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 2px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  @media(min-width: 768px) {
+    width: 500px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 600px;
+  }
+
 }
-.custom-select {
-  color: #999;
-}
-.custom-select option {
-  color: #000;
+
+.register-submit-button{
+  border: 1px solid #778899;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  background-color: #E1EFFB;
+  color: #0f213B;
+  padding: 5px 15px;
+  @media(min-width: 768px) {
+    padding: 10px 30px;
+  }
 }

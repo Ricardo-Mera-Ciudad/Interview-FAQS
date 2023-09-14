@@ -10,11 +10,12 @@ export class LevelcardsComponent {
 
   public levelSelected : string = 'Middle';
   private pagesService = inject(PagesService);
+  public centerButtonSelected: boolean = false;
 
   selectLevel(level:string){
-    this.levelSelected=level;
+    this.levelSelected = level;
     this.pagesService.setLevel(level);
-    
+    this.centerButtonSelected = true;
   }
-  
+
 }

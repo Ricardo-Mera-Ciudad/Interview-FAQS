@@ -8,10 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'interview-faqs';
 
-  isBlurred: boolean = false;
+  public isBlurred: boolean = false;
 
   toggleBlurEffect(blur: boolean) {
     this.isBlurred = blur;
   }
-
 }

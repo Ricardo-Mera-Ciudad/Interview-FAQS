@@ -18,6 +18,7 @@ export class PagesService {
   setCategory(category: string){
     this.category$.next(category);
   }
+
   setLevel(level:string){
     this.level$.next(level);
   }

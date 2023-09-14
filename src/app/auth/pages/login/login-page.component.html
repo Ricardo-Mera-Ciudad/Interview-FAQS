@@ -1,57 +1,59 @@
-<div class="login-container">
+<div class="login-container general-container">
+  <div [formGroup]="myForm" (ngSubmit)="onLogin()">
+    <h2 class="login-title">Iniciar sesión</h2>
+    <form class="loginForm m-4" autocomplete="off">
+      <!-- Email -->
+      <div class="mb-4">
+        <label class="col-sm-3 col-form-label">Email</label>
+        <div class="">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Introduzca un email válido"
+            formControlName="email"
+          />
+          <span
+            *ngIf="!isEmailValid && this.myForm.get('email')?.touched"
+            class="form-text text-danger"
+          >
+            Ingrese un correo con un formato válido
+          </span>
+        </div>
+      </div>
 
-    <h2>Iniciar sesión</h2>
-
-    <form [formGroup]="myForm" (ngSubmit)="onLogin()" class="m-4">
-
-        <!-- Email -->
-        <div class="mb-3">
-            <label class="col-sm-3 col-form-label">Email</label>
-            <div class="col-sm-9">
-                <input type="email" class="form-control" placeholder="Introduzca un email válido"
-                    formControlName="email">
-                <span *ngIf="!isEmailValid && this.myForm.get('email')?.touched" class="form-text text-danger">
-                    Ingrese un correo con un formato válido
-                </span>
-            </div>
+      <!-- Password -->
+      <div class="mb-4">
+        <label class="col-form-label">Contraseña</label>
+        <div class="">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Introduzca su contraseña"
+            formControlName="password"
+          />
+          <span *ngIf="isFieldValid('password')" class="form-text text-danger">
+            La contraseña debe de ser mayor o igual a 8 caracteres.
+          </span>
         </div>
 
+      </div>
+      <div class="d-flex justify-content-center my-4">
+        <a class="register-link-question" [routerLink]="['/register']" id="signup-link" data-no-menu>
+          ¿Aún no estás registrado?
+        </a>
+      </div>
 
-        <!-- Password -->
-        <div class="mb-3">
-            <label class="col-form-label">Contraseña</label>
-            <div class="col-sm-9">
-                <input type="password" class="form-control" placeholder="Establezca su contraseña"
-                    formControlName="password">
-                <span *ngIf="isFieldValid('password')" class="form-text text-danger">
-                    La contraseña debe de ser mayor o igual a 8 caracteres.
-                </span>
-            </div>
-
-            <div class="flex justify-content-end mt-5">
-               
-                <a
-        [routerLink]="['/register']"
-        id="signup-link"
-        data-no-menu
-
-      >
-        ¿Quieres unirte al equipaso front?
-            </a>
-            </div>
+      <!-- Button -->
+      <div class="row">
+        <div class="col login-submit-button-container">
+          <button
+            class="btn login-submit-button mt-2"
+            type="submit"
+          >
+            Enviar
+          </button>
         </div>
-
-
-        <!-- Button -->
-        <div class="row">
-            <div class="col">
-                <button [disabled]="myForm.invalid" class="btn btn-primary" type="submit">
-                    Enviar
-                </button>
-            </div>
-        </div>
-
+      </div>
     </form>
-
+  </div>
 </div>
-

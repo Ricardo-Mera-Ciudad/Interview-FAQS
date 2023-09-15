@@ -178,143 +178,143 @@
     },
     {
       "id": 21,
-      "category": "Html",
+      "category": "HTML",
       "level": "Junior",
-      "question": "¿Que son las etiquetas de HTML?",
-      "answer": "Es el contenido que se coloca entre las etiquetas HTML, con la finalidad de darle formato correctamente. Usa el símbolo menor que (<) y el mayor que (>). Un símbolo de barra oblicua también se utiliza como etiqueta de cierre."
+      "question": "¿Cuál es la diferencia entre una etiqueta HTML y un elemento HTML?",
+      "answer": "Una etiqueta HTML es un marcador que define el inicio o el final de un elemento en un documento HTML, mientras que un elemento HTML es un conjunto completo que consta de una etiqueta de inicio, contenido y una etiqueta de cierre (si es necesario)."
     },
     {
-      "id": 22,
-      "category": "Html",
-      "level": "Junior",
-      "question": "¿Como se crean enlaces a secciones dentro de la misma página?",
-      "answer": "Los enlaces se crean usando la etiqueta <a>, con referencia mediante el uso del símbolo del número (#)<a href='#ref'. A continuación, se escribe un comando de etiqueta en algún lugar de la página de la forma <a name='ref'>"
+        "id": 22,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Qué es un atributo en HTML y cómo se utiliza?",
+        "answer": "Un atributo en HTML proporciona información adicional sobre un elemento y se especifica dentro de la etiqueta de inicio. Por ejemplo, en <img src='imagen.jpg'>, 'src' es un atributo que especifica la fuente de la imagen."
     },
     {
-      "id": 23,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 23,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Qué significa la sigla DOCTYPE en HTML y cuál es su propósito?",
+        "answer": "DOCTYPE significa Document Type Declaration. Se utiliza para especificar la versión de HTML que se está utilizando en el documento y asegura que el navegador interprete la página correctamente."
     },
     {
-      "id": 24,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 24,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Cómo se crea una lista desordenada en HTML?",
+        "answer": "Una lista desordenada se crea utilizando la etiqueta <ul>, y los elementos de la lista se especifican con la etiqueta <li> dentro de <ul>."
     },
     {
-      "id": 25,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 25,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Qué es una entidad HTML y cuál es su uso?",
+        "answer": "Una entidad HTML es una secuencia de caracteres predefinida que representa un carácter especial en HTML, como '&lt;' para '<' y '&amp;' para '&'. Se utilizan para evitar conflictos con la sintaxis HTML."
     },
     {
-      "id": 26,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 26,
+        "category": "HTML",
+        "level": "Middle",
+        "question": "¿Qué es un enlace relativo en HTML y cómo se diferencia de un enlace absoluto?",
+        "answer": "Un enlace relativo en HTML especifica la ubicación de un recurso en relación con la ubicación actual del documento, mientras que un enlace absoluto proporciona una URL completa. Los enlaces relativos son útiles cuando se trabaja en un sitio web local o se desea flexibilidad en las rutas de archivo."
     },
     {
-      "id": 27,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 27,
+        "category": "HTML",
+        "level": "Middle",
+        "question": "¿Cómo se crea una tabla con bordes visibles en HTML?",
+        "answer": "Para crear una tabla con bordes visibles en HTML, puedes agregar el atributo 'border' a la etiqueta <table> y establecerlo en un valor mayor que cero, por ejemplo, <table border='1'>."
     },
     {
-      "id": 28,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 28,
+        "category": "HTML",
+        "level": "Middle",
+        "question": "¿Qué es un formulario HTML y cuál es su propósito?",
+        "answer": "Un formulario HTML es un conjunto de elementos que permiten a los usuarios ingresar datos y enviarlos a un servidor web. Se utiliza para interactuar con los usuarios y recopilar información."
     },
     {
-      "id": 29,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 29,
+        "category": "HTML",
+        "level": "Middle",
+        "question": "¿Cuál es la etiqueta de encabezado más importante en HTML y por qué?",
+        "answer": "La etiqueta de encabezado más importante es <h1>. Es importante porque define el encabezado principal de la página y tiene un gran impacto en la optimización para motores de búsqueda (SEO) y la estructura del contenido."
     },
     {
-      "id": 30,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 30,
+        "category": "HTML",
+        "level": "Middle",
+        "question": "¿Qué es la validación en HTML y por qué es importante?",
+        "answer": "La validación en HTML se refiere a asegurarse de que el código HTML cumple con los estándares definidos por el W3C. Es importante porque ayuda a garantizar la consistencia y la compatibilidad entre navegadores, lo que mejora la calidad de la página web."
     },
     {
-      "id": 31,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 31,
+        "category": "HTML",
+        "level": "Senior",
+        "question": "¿Qué son las etiquetas de encabezado en HTML y cuál es su jerarquía?",
+        "answer": "Las etiquetas de encabezado en HTML, como <h1>, <h2>, ..., <h6>, se utilizan para definir la estructura jerárquica del contenido de la página. <h1> es el encabezado principal y <h6> el menos importante."
     },
     {
-      "id": 32,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 32,
+        "category": "HTML",
+        "level": "Senior",
+        "question": "¿Cuál es la diferencia entre HTML y XHTML?",
+        "answer": "XHTML es una versión más estricta y XML-compatible de HTML. Requiere que el código esté bien formado y se adhiera a reglas más estrictas de sintaxis. HTML es más flexible en términos de estructura y validación."
     },
     {
-      "id": 33,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 33,
+        "category": "HTML",
+        "level": "Senior",
+        "question": "¿Qué son las hojas de estilo en cascada (CSS) y cómo se relacionan con HTML?",
+        "answer": "Las hojas de estilo en cascada (CSS) se utilizan para aplicar estilos y diseños a elementos HTML. Permiten separar la estructura del contenido (HTML) de su presentación visual, lo que facilita la gestión y el mantenimiento del diseño de un sitio web."
     },
     {
-      "id": 34,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 34,
+        "category": "HTML",
+        "level": "Senior",
+        "question": "¿Cuál es la función de la etiqueta <iframe> en HTML?",
+        "answer": "La etiqueta <iframe> se utiliza para incrustar contenido de otra página web dentro de la página actual. Puede ser útil para mostrar mapas, videos u otros elementos externos."
     },
     {
-      "id": 35,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 35,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Cuál es la diferencia entre una etiqueta HTML y un elemento HTML?",
+        "answer": "Una etiqueta HTML es un marcador que define el inicio o el final de un elemento en un"
     },
     {
-      "id": 36,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 36,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Qué es un atributo en HTML y cómo se utiliza?",
+        "answer": "Un atributo en HTML proporciona información adicional sobre un elemento y se especifica dentro de la etiqueta de inicio. Por ejemplo, en <img src='imagen.jpg'>, 'src' es un atributo que especifica la fuente de la imagen."
     },
     {
-      "id": 37,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 37,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Qué significa la sigla DOCTYPE en HTML y cuál es su propósito?",
+        "answer": "DOCTYPE significa Document Type Declaration. Se utiliza para especificar la versión de HTML que se está utilizando en el documento y asegura que el navegador interprete la página correctamente."
     },
     {
-      "id": 38,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 38,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Cómo se crea una lista desordenada en HTML?",
+        "answer": "Una lista desordenada se crea utilizando la etiqueta <ul>, y los elementos de la lista se especifican con la etiqueta <li> dentro de <ul>."
     },
     {
-      "id": 39,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 39,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Qué es una entidad HTML y cuál es su uso?",
+        "answer": "Una entidad HTML es una secuencia de caracteres predefinida que representa un carácter especial en HTML, como '&lt;' para '<' y '&amp;' para '&'. Se utilizan para evitar conflictos con la sintaxis HTML."
     },
     {
-      "id": 40,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+        "id": 40,
+        "category": "HTML",
+        "level": "Junior",
+        "question": "¿Qué es una etiqueta de anclaje en HTML y cómo se utiliza?",
+        "answer": "Una etiqueta de anclaje, <a>, se utiliza para crear hipervínculos a otras páginas web o recursos. Se especifica el destino del enlace mediante el atributo 'href'. Por ejemplo, <a href='https://www.ejemplo.com'>Enlace a Ejemplo</a>."
     },
     {
       "id": 41,

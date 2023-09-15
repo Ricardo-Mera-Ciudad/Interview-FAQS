@@ -13,9 +13,13 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  public greetingUser: string = 'Hola,';
+  public userName!: string;
 
   public isVisible: boolean = false;
+
+  public isUserLoggedIn: boolean = false;
+
+  public isUserAuthenticated: boolean = false;
 
   private pagesService = inject(PagesService);
 
@@ -32,18 +36,17 @@ export class HeaderComponent implements OnInit {
     this.renderer.listen('document', 'click', (event: Event) => {
       if (!this.el.nativeElement.contains(event.target)) {
         this.closeMenu();
+        this.closeUserMenu();
       }
     });
   }
 
-onShowMenu(event?: Event) {
-    if (event) {
-      const clickedElement = event.target as HTMLElement;
-      if (clickedElement.id === 'signup-link') {
-        return;
-      }
-    }
+  onShowMenu() {    
     this.isVisible = !this.isVisible;
+  }
+
+  onClickUser(){
+    this.isUserLoggedIn = !this.isUserLoggedIn;
   }
 
   chooseCategory(category: string) {
@@ -54,8 +57,15 @@ onShowMenu(event?: Event) {
     this.isVisible = false;
   }
 
-  logout(){
-    this.usersService.logout();
-    this.router.navigate(['/login']);
+  closeUserMenu() {
+    this.isUserLoggedIn = false;
   }
+
+  logout() {
+    this.usersService.logout();
+    localStorage.clear();
+    this.router.navigate(['/login']);
+    this.isUserAuthenticated = false;
+  }
+
 }

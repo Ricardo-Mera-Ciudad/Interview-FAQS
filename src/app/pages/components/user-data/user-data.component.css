@@ -1,0 +1,28 @@
+.user-data-card{
+    margin-top: 20px;
+    width: 250px !important;
+    background-color: #0f213B;
+    color:#fcfcfc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.user-data-card-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.user-data-card-buttons-edit{
+    background-color: #778899;
+    border:#fcfcfc;
+}
+
+.user-data-card-buttons-delete{
+    border:#fcfcfc;
+}

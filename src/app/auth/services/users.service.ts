@@ -4,14 +4,10 @@ import { environments } from 'src/environment/environment';
 import { Observable, Subject, tap, map, catchError, of, switchMap } from 'rxjs';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 
-
-
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UsersService {
-
   private baseUrl: string = environments.baseUrl;
   private user?: UserData | null
   public userAdded = new Subject<UserData>();
@@ -32,7 +28,7 @@ export class UsersService {
   }
 
   getAddedUser(): Observable<UserData> {
-    return this.userAdded.asObservable()
+    return this.userAdded.asObservable();
   }
 
   updateUser(user: UserData): Observable<UserData> {

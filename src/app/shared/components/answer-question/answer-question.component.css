@@ -34,7 +34,7 @@
   color: #0f213b;
   height: auto;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   gap: 10px;
   align-items: center;
   border-radius: 6px;
@@ -60,7 +60,7 @@
   margin-bottom: 8px;
 }
 .row-icon {
-  position: fixed;
+  /* position: fixed; */
   margin: 3px 5px 0 5px;
 }
 .card-question-answer {

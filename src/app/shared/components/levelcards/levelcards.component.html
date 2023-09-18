@@ -1,17 +1,30 @@
 <div class="main-level-container">
   <!-- Level selected === Middle -->
-  <div class="container-level" *ngIf="levelSelected === 'Middle'" >
+  <div class="container-level" *ngIf="levelSelected === 'Middle'">
     <div class="left-button-container">
       <div class="card-level btn" (click)="selectLevel('Junior')">
         <div class="card-level-body">
           <span class="card-level-text">Junior</span>
         </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two"></div>
+          <div class="graphic-level-container-three"></div>
+        </div>
       </div>
     </div>
-    <div class="center-button-container" [ngClass]="{'selected-level': centerButtonSelected}">
+    <div
+      class="center-button-container"
+      [ngClass]="{ 'selected-level': centerButtonSelected }"
+    >
       <div class="card-level btn w-100" (click)="selectLevel('Middle')">
         <div class="card-level-body">
           <span class="card-level-text">Middle</span>
+        </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two-middle"></div>
+          <div class="graphic-level-container-three"></div>
         </div>
       </div>
     </div>
@@ -19,23 +32,41 @@
       <div class="card-level btn" (click)="selectLevel('Senior')">
         <div class="card-level-body">
           <span class="card-level-text">Senior</span>
+        </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two-middle"></div>
+          <div class="graphic-level-container-three-senior"></div>
         </div>
       </div>
     </div>
   </div>
   <!-- Level selected === Junior -->
-  <div class="container-level" *ngIf="levelSelected === 'Junior'" >
+  <div class="container-level" *ngIf="levelSelected === 'Junior'">
     <div class="left-button-container">
       <div class="card-level btn" (click)="selectLevel('Middle')">
         <div class="card-level-body">
           <span class="card-level-text">Middle</span>
         </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two-middle"></div>
+          <div class="graphic-level-container-three"></div>
+        </div>
       </div>
     </div>
-    <div class="center-button-container" [ngClass]="{'selected-level': centerButtonSelected}">
+    <div
+      class="center-button-container"
+      [ngClass]="{ 'selected-level': centerButtonSelected }"
+    >
       <div class="card-level btn w-100" (click)="selectLevel('Junior')">
         <div class="card-level-body">
           <span class="card-level-text">Junior</span>
+        </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two"></div>
+          <div class="graphic-level-container-three"></div>
         </div>
       </div>
     </div>
@@ -44,22 +75,40 @@
         <div class="card-level-body">
           <span class="card-level-text">Senior</span>
         </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two-middle"></div>
+          <div class="graphic-level-container-three-senior"></div>
+        </div>
       </div>
     </div>
   </div>
   <!-- Level selected === Senior -->
-  <div class="container-level" *ngIf="levelSelected === 'Senior'" >
+  <div class="container-level" *ngIf="levelSelected === 'Senior'">
     <div class="left-button-container">
       <div class="card-level btn" (click)="selectLevel('Junior')">
         <div class="card-level-body">
           <span class="card-level-text">Junior</span>
         </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two"></div>
+          <div class="graphic-level-container-three"></div>
+        </div>
       </div>
     </div>
-    <div class="center-button-container" [ngClass]="{'selected-level': centerButtonSelected}">
+    <div
+      class="center-button-container"
+      [ngClass]="{ 'selected-level': centerButtonSelected }"
+    >
       <div class="card-level btn w-100" (click)="selectLevel('Senior')">
         <div class="card-level-body">
           <span class="card-level-text">Senior</span>
+        </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two-middle"></div>
+          <div class="graphic-level-container-three-senior"></div>
         </div>
       </div>
     </div>
@@ -67,6 +116,11 @@
       <div class="card-level btn" (click)="selectLevel('Middle')">
         <div class="card-level-body">
           <span class="card-level-text">Middle</span>
+        </div>
+        <div class="graphic-main-level-container">
+          <div class="graphic-level-container-one"></div>
+          <div class="graphic-level-container-two-middle"></div>
+          <div class="graphic-level-container-three"></div>
         </div>
       </div>
     </div>

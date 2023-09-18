@@ -17,7 +17,10 @@
         </div>
         <div class="card-question-head-icons">
           <!-- STAR -->
-          <span class="star-icon-container">
+          <span class="star-icon-container"
+          (click)="favouriteStatus()"
+          [ngClass]="{'isSelected': favouriteStatus}"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

@@ -10,7 +10,7 @@ import { Question } from '../../interfaces/answerQuestion.interface';
   styleUrls: ['./levelcards.component.css'],
 })
 export class LevelcardsComponent implements OnInit {
-  public levelSelected: string = 'Middle';
+  public levelSelected: string = "Middle";
   public questionsLevel: Question[] = [];
   private pagesService = inject(PagesService);
   private dataService = inject(DataService);
@@ -23,11 +23,10 @@ export class LevelcardsComponent implements OnInit {
   loadQuestions() {
     this.pagesService.selectedCategory$.pipe(
       switchMap((selectedCategory) => {
-        return this.dataService.getQuestions(selectedCategory, this.levelSelected);
+          return this.dataService.getQuestions(selectedCategory);
       })
     ).subscribe((questions: Question[]) => {
       this.questionsLevel = questions;
-
     });
   }
 

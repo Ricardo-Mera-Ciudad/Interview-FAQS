@@ -7,6 +7,8 @@ import {
 import { PagesService } from 'src/app/pages/services/pages.service';
 import { Subject, combineLatest, switchMap, takeUntil } from 'rxjs';
 import { DataService } from 'src/app/pages/services/data.service';
+import { UserFavs } from '../../interfaces/user-data.interface';
+import { UsersService } from 'src/app/auth/services/users.service';
 
 @Component({
   selector: 'shared-answer-question',
@@ -24,13 +26,22 @@ export class AnswerQuestionComponent {
   public category: string = 'Angular';
   public level: string | null = null;
 
+  public favouriteQuestion: UserFavs[] = [];
+  public isFavouritedSelected: boolean = false;
 
   private unsubscribe$ = new Subject<void>();
   private dataService = inject(DataService);
+  private usersService = inject(UsersService);
 
   constructor() {}
   ngOnInit(): void {
     this.loadCategory();
+  }
+
+  favouriteStatus() {
+    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
+     const userId = user!.id
+    })
   }
 
   getFaqs() {
@@ -46,7 +57,7 @@ export class AnswerQuestionComponent {
           this.answerVisibility[question.id] = false;
           this.borderRadiusState[question.id] = false;
         });
-
+        console.log(this.questions)
       });
   }
 
@@ -101,6 +112,8 @@ export class AnswerQuestionComponent {
     return imgUrl;
 
   }
+
+
 
   ngOnDestroy() {
     this.unsubscribe$.next();

@@ -79,3 +79,7 @@
   width: 30px;
   height: 30px;
 }
+
+.isSelected .star-icon-container{
+  background-color: yellows;
+}

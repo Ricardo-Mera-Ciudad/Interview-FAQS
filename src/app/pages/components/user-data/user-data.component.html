@@ -1,12 +1,11 @@
-<div class="user-data-card card" style="width: 18rem;">
+<div  class="user-data-card card" style="width: 18rem;">
     <img class="user-data-img card-img-top" src="../../../../assets/images/no-image-user.png" alt="Imagen usuario">
     <div class="card-body">
-        <h5 class="card-title">User name</h5>
-        <p class="card-text">Email</p>
+        <h5 class="card-title">{{ userData?.name | titlecase }}</h5>
+        <p class="card-text">{{ userData?.email | lowercase}}</p>
     </div>
     <div class="user-data-card-buttons">
         <a href="#" class="user-data-card-buttons-edit btn btn-primary">✏ Editar</a>
         <a href="#" class="user-data-card-buttons-delete btn btn-danger">🗑 Eliminar</a>
     </div>
 </div>
-

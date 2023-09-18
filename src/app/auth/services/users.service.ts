@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environments } from 'src/environment/environment';
-import { Observable, Subject, tap, map, catchError, of, switchMap } from 'rxjs';
+import { Observable, Subject, tap, map, catchError, of, switchMap, BehaviorSubject } from 'rxjs';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 
 @Injectable({
@@ -13,7 +13,7 @@ export class UsersService {
   public userAdded = new Subject<UserData>();
   public userToUpdate = new Subject<UserData>();
   public token = "";
-  private authenticatedUserSubject = new Subject<UserData | null>();
+  private authenticatedUserSubject = new BehaviorSubject<UserData |null>(null);
 
 
   constructor(private http: HttpClient) { }

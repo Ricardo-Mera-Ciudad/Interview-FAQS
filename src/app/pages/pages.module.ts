@@ -15,6 +15,8 @@ import { WebpacksQuestionsComponentComponent } from './components/webpacks-quest
 import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-questions-component/webmetrics-questions-component.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { UserDataComponent } from './components/user-data/user-data.component';
+import { FavoritesComponent } from './components/favorites/favorites.component';
 
 
 
@@ -32,7 +34,9 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     SoftskillsQuestionsComponentComponent,
     WebpacksQuestionsComponentComponent,
     WebmetricsQuestionsComponentComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    UserDataComponent,
+    FavoritesComponent
   
   ],
   imports: [

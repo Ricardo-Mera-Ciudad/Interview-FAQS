@@ -1,8 +1,10 @@
-import { Component, ElementRef, OnInit, Renderer2, inject } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, Renderer2, inject } from '@angular/core';
 
 import { PagesService } from 'src/app/pages/services/pages.service';
 import { UsersService } from '../../../auth/services/users.service';
 import { Router } from '@angular/router';
+import { UserData } from '../../interfaces/user-data.interface';
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -11,9 +13,8 @@ import { Router } from '@angular/router';
 
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
 
-  public userName!: string;
 
   public isVisible: boolean = false;
 
@@ -30,7 +31,11 @@ export class HeaderComponent implements OnInit {
   private usersService = inject(UsersService);
 
   private router = inject(Router);
-  
+
+  public userData!: string;
+
+  private unsubscribe$ = new Subject<void>();
+
 
   ngOnInit(): void {
     this.renderer.listen('document', 'click', (event: Event) => {
@@ -39,13 +44,17 @@ export class HeaderComponent implements OnInit {
         this.closeUserMenu();
       }
     });
+
+    this.getUserLogged();
+
+    console.log(this.userData)
   }
 
-  onShowMenu() {    
+  onShowMenu() {
     this.isVisible = !this.isVisible;
   }
 
-  onClickUser(){
+  onClickUser() {
     this.isUserLoggedIn = !this.isUserLoggedIn;
   }
 
@@ -67,5 +76,27 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/login']);
     this.isUserAuthenticated = false;
   }
+
+  getUserLogged() {
+    this.usersService.getAuthenticatedUserSubject()
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((user) => {
+        if (user) {
+          this.userData = user.name;
+          this.isUserAuthenticated = true;
+        } else {
+          this.userData = "";
+          this.isUserAuthenticated = false;
+        }
+      })
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  };
+
 
 }

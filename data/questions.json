@@ -56,134 +56,134 @@
       "id": 2,
       "category": "Angular",
       "level": "Junior",
-      "question": "¿Que es una plantilla?",
-      "answer": "Una plantilla o template es una vista Html donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular."
+      "question": "Indica al menos 3 formas en las que puedan comunicarse los componentes en Angular",
+      "answer": "Binding (vinculación de entrada INPUT y vinculación de salida OUTPUT), Servicios (servicios compartidos inyectado en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL),LocalStorage y SessionStorage (para la comunicación persistente entre sesiones o pestañas del navegador),Navegación con parámetros de ruta (a través de los parámetros de ruta en la URL cuando se navega entre diferentes vistas de la aplicación),Inyección de Dependencia (DI - Dependency Injection),  Directivas personalizadas..."
     },
     {
       "id": 3,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
-    },
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Que es una plantilla?",
+      "answer": "Una plantilla o template es una vista Html donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular."
+    },    
     {
       "id": 4,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Junio",
+      "question": "¿Qué es el Data Binding o vinculación de datos?",
+      "answer": "Es un concepto clave en Angular y permite definir la comunicación entre un componente y el DOM, lo que hace que sea muy fácil definir aplicaciones interactivas sin preocuparse por enviar y extraer datos"
     },
     {
       "id": 5,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es Angular CLI y para qué se usa?",
+      "answer": "Es una interfaz de línea de comandos (Command Line Interface) para desarrollar y crear aplicaciones angulares utilizando módulos de estilo nodejs (commonJs). Se instala usando el siguiente comando: npm install @angular/cli@latest"
     },
     {
       "id": 6,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es la inyección de dependencia en Angular?",
+      "answer": "Es un patrón de diseño de aplicaciones importante en el que una clase solicita dependencias de fuentes externas en lugar de crearlas ella misma. Angular viene con su propio marco de inyección de dependencias para resolver dependencias (servicios u objetos que una clase necesita para realizar su función), por lo que puede hacer que sus servicios dependan de otros servicios en toda su aplicació"
     },
     {
       "id": 7,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué son las directivas? Tipos de directivas en Angular",
+      "answer": "En Angular, las directivas son marcadores en el DOM (Documento de Objetos del Modelo) que le indican al framework qué hacer con un elemento del DOM o cómo debe comportarse (se usan para agregar funcionalidad adicional a los elementos HTML o modificar su comportamiento). Existen ESTRUCTURALES que modifican la estructura del DOM al agregar o eliminar elementos del mismo (ngIf, ngFor y ngSwitch), las de ATRIBUTO (ngModel,ngClass, ngStyle, ngFor) y las de COMPONENTE que se refieren al uso de componentes personalizados como directivas en la construcción de la interfaz de usuario."
     },
     {
       "id": 8,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué son los formularios reactivos? Explica FormBuilder",
+      "answer": "Estos formularios se basan en programación reactiva y permiten un mayor control y flexibilidad en la manipulación y validación de datos de entrada del usuario.Son un enfoque basado en modelos para crear formularios en un estilo reactivo (las entradas del formulario cambian con el tiempo). Estos se construyen alrededor de flujos observables, donde las entradas de formularios y los valores se proporcionan como flujos de valores de entrada.Los formularios reactivos son especialmente útiles cuando necesitas gestionar formularios complejos con reglas de validación personalizadas, dependencias entre campos o cuando deseas tener un control más preciso sobre la manipulación de datos de entrada en tiempo real. También facilitan las pruebas unitarias de la lógica del formulario, ya que puedes simular fácilmente eventos y cambios en los campos.FormBuilder es una utilidad proporcionada por Angular que simplifica la creación de formularios reactivos al proporcionar métodos para crear instancias de FormGroup y FormControl de manera más sencilla y legible."
     },
     {
       "id": 9,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Junior",
+      "question": "Lazy loading: ¿qué es?",
+      "answer": "La carga diferida es uno de los conceptos más útiles de Angular Routing. Nos ayuda a descargar las páginas web en trozos en lugar de descargar todo en un paquete grande. Se utiliza para la carga diferida al cargar de forma asincrónica el módulo de funciones para el enrutamiento cuando sea necesario usando la propiedad loadChildren"
     },
     {
       "id": 10,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Junior",
+      "question": "Pipes.¿Qué son en Angular?",
+      "answer": "Las tuberías o canalizaciones llamadas pipes en Angular son funciones simples que utilizan expresiones de plantilla para aceptar datos como entrada y transformarlos en la salida deseada en la interfaz de usuario.Son una característica esencial para la presentación de datos en Angular y se utilizan para realizar tareas comunes de formateo, filtrado y transformación de datos de manera declarativa en las plantillas. Ejemplo: ({{ userName | uppercase}})"
     },
     {
       "id": 11,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la interpolación?",
+      "answer": "Es una técnica que se utiliza en las plantillas para mostrar dinámicamente valores de variables y expresiones en la interfaz de usuario. Permite incrustar valores de variables y expresiones directamente en el contenido HTML de una plantilla. La interpolación se realiza mediante la sintaxis de doble llave {{ }} y es una de las formas más simples y comunes de vincular datos en Angular. El texto entre llaves suele ser el nombre de una propiedad de componente. Angular reemplaza ese nombre con el valor de cadena de la propiedad del componente correspondiente."
     },
     {
       "id": 12,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son los Observables?¿Cómo se crean?",
+      "answer": "Son una parte fundamental de la programación reactiva y se utilizan en Angular (y en otros contextos) para manejar secuencias de eventos asíncronos y streams de datos. Los observables permiten la gestión de flujos de datos en tiempo real, lo que es especialmente útil en aplicaciones web para manejar eventos, solicitudes HTTP, actualizaciones en tiempo real y otras operaciones asíncronas.  Angular proporciona una implementación de observables basada en la biblioteca RxJS, que es una de las bibliotecas más populares para la programación reactiva en JavaScript. 1- Crearlo desde cero con OBSERVABLE y el método NEXT. 2- A partir de una promesa usando FROM. 3- Con el método FROMEVENT creamos observable que emite eventos del DOM. 4- Con INTERVAL creamos observables que emite valores en intervalos de tiempo."
     },
     {
       "id": 13,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es el Http Client en Angular?",
+      "answer": "Es un módulo proporcionado por Angular para realizar solicitudes HTTP a servidores o recursos externos desde una aplicación Angular. Se utiliza para interactuar con servicios web, recuperar datos JSON, realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) y más."
     },
     {
       "id": 14,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Middle",
+      "question": "Explica el Angular Router",
+      "answer": "El enrutador de Angular es una característica clave que permite la navegación entre diferentes vistas o componentes en una aplicación web Angular de una página (SPA, por sus siglas en inglés). El enrutador de Angular proporciona una forma estructurada de definir las rutas y gestionar la navegación del usuario en la aplicación."
     },
     {
       "id": 15,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es un módulo compartido (Shared Module) en Angular y cuál es su propósito en una aplicación?",
+      "answer": "Un módulo compartido (Shared Module) en Angular es un módulo que se utiliza para agrupar y exportar componentes, directivas, pipes y otros elementos que deben ser compartidos entre diferentes partes de una aplicación. Su propósito es promover la reutilización de código y evitar la duplicación de componentes y funcionalidades comunes en toda la aplicación. Un módulo compartido puede importarse en otros módulos de la aplicación para que los componentes y recursos compartidos estén disponibles en toda la aplicación."
     },
     {
       "id": 16,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre el enlace de datos unidireccional y el enlace de datos bidireccional en Angular y cuándo utilizarías uno u otro?",
+      "answer": "El enlace de datos unidireccional y el enlace de datos bidireccional son dos enfoques para gestionar la comunicación entre componentes y la actualización de datos en Angular. El unidireccional es generalmente preferido para mantener un flujo de datos más predecible y evitar problemas potenciales, mientras que el enlace de datos bidireccional es útil en situaciones específicas donde la comunicación bidireccional es esencial, como en formularios interactivos."
     },
     {
       "id": 17,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Signals en Angular",
+      "answer": "Son espacios en memoria que apunta en todo momento dónde se está usando el elemento señalado, y actualiza su información en todo momento. Si no lo usáramos Angular debe disparar todos sus métodos de detección de cambios a lo largo de toda la aplicación."
     },
     {
       "id": 18,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Senior",
+      "question": "RXJS",
+      "answer": "RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva en JavaScript que se utiliza ampliamente en el desarrollo de aplicaciones Angular. Angular utiliza RxJS para manejar flujos de datos asincrónicos, como observables, y facilita la gestión de eventos, llamadas HTTP y otros flujos de datos en aplicaciones web."
     },
     {
       "id": 19,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre el enrutamiento con carga diferida (Lazy Loading) y la carga convencional de módulos en Angular?",
+      "answer": "El enrutamiento con carga diferida (Lazy Loading) es una técnica que retrasa la carga de módulos de Angular hasta que se necesitan, lo que mejora significativamente el rendimiento inicial de la aplicación. En contraste, la carga convencional de módulos carga todos los módulos de la aplicación al inicio. Lazy Loading se configura en las rutas del enrutador utilizando el método loadChildren, mientras que la carga convencional se realiza mediante el método import en los módulos principales. Lazy Loading es particularmente útil en aplicaciones grandes para reducir el tiempo de carga inicial."
     },
     {
       "id": 20,
-      "category": "",
-      "level": "",
-      "question": "",
-      "answer": ""
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es AOT (Ahead-of-Time) en Angular y cuáles son sus ventajas sobre JIT (Just-in-Time) en la compilación de plantillas?",
+      "answer": " AOT (Ahead-of-Time) es una técnica de compilación utilizada en Angular que compila las plantillas y los componentes en código JavaScript antes de que la aplicación se ejecute en el navegador. Las ventajas de AOT sobre JIT (Just-in-Time) incluyen 1- Mejor rendimiento: La compilación AOT reduce el tiempo de inicio de la aplicación y mejora la velocidad de carga, ya que no es necesario compilar plantillas en el navegador en tiempo de ejecución. 2- Errores de plantillas en tiempo de compilación: AOT detecta errores de plantillas en tiempo de compilación, lo que permite identificar y solucionar problemas antes de que la aplicación se ejecute. 3- Tamaño de archivo más pequeño: AOT elimina el compilador de plantillas de la carga útil del cliente, lo que reduce el tamaño del paquete JavaScript que se envía al navegador."
     },
     {
       "id": 21,
@@ -744,6 +744,287 @@
       "level": "Senior",
       "question": "¿Cuál es el propósito de los archivos de declaración (declaration files) en TypeScript y cómo se nombran?",
       "answer": "Los archivos de declaración se utilizan para proporcionar información de tipo para bibliotecas escritas en JavaScript. Se nombran con la extensión .d.ts y deben coincidir con el nombre del archivo JavaScript correspondiente."
-    }
+    },
+    {
+      "id": 101,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te mantienes actualizado/a en las últimas tendencias y tecnologías de desarrollo web?",
+      "answer": "Me mantengo actualizado/a a través de blogs técnicos, conferencias en línea y cursos en plataformas como Coursera y Udemy. También me gusta unirme a comunidades en línea y participar en grupos de desarrollo web para estar al tanto de las últimas tendencias y discutir ideas con otros profesionales"
+      },      
+      {
+      "id": 102,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Describe una situación en la que tuviste que colaborar estrechamente con un diseñador o un miembro no técnico del equipo. ¿Cómo manejaste la comunicación y los desafíos?",
+      "answer": "Trabajé en un proyecto donde colaboré estrechamente con un diseñador de UX/UI. Mantuvimos una comunicación abierta a lo largo del proyecto, programando reuniones regulares para discutir ideas y cambios. Para superar los desafíos de comunicación, utilizamos herramientas de diseño compartido como Figma, lo que facilitó la colaboración y la comprensión mutua de los requisitos del proyecto."
+      },      
+      {
+      "id": 103,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te aseguras de que el código que escribes sea claro y comprensible para otros miembros del equipo?",
+      "answer": "Para asegurarme de que mi código sea claro y comprensible, sigo convenciones de nomenclatura consistentes, agrego comentarios explicativos cuando sea necesario y divido el código en funciones y módulos lógicos. También realizo revisiones de código regulares con mis colegas para obtener retroalimentación y garantizar que el código sea fácil de entender"
+      },
+      {
+      "id": 104,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Háblame de una vez en la que tuviste que lidiar con una retroalimentación negativa sobre tu trabajo. ¿Cómo manejaste la situación?",
+      "answer": "Recibí retroalimentación negativa en un proyecto pasado, y en lugar de tomarlo de manera personal, lo vi como una oportunidad de aprendizaje. Solicité más detalles sobre los problemas específicos, trabajé en mejorar esas áreas y mantuve una comunicación abierta con el cliente o el equipo para asegurarme de que estaban satisfechos con las mejoras"
+      },
+      {
+      "id": 105,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo priorizas y gestionas tus tareas cuando tienes múltiples proyectos o plazos apretados?",
+      "answer": "Utilizo metodologías ágiles como Scrum para priorizar tareas y establecer plazos realistas. También uso herramientas de gestión de proyectos como Trello o Jira para realizar un seguimiento de las tareas y garantizar que se cumplan los plazos. La comunicación constante con el equipo es clave para asegurarse de que todos estén alineados en cuanto a las prioridades."
+      },
+      {
+      "id": 106,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te mantienes motivado/a cuando enfrentas desafíos técnicos complejos o tareas repetitivas?",
+      "answer": "Mantener la motivación en situaciones difíciles es fundamental. Lo hago estableciendo metas claras y dividiendo tareas complejas en pasos más pequeños. También busco inspiración en proyectos pasados exitosos y me doy tiempo para descansar y recargar energías cuando sea necesario."
+      },      
+      {
+      "id": 107,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Cuéntame sobre una vez en la que tuviste que comunicar un problema técnico a un cliente o a un miembro no técnico de la empresa. ¿Cómo lo hiciste?",
+      "answer": "En una ocasión, tuve que explicar un problema técnico a un cliente no técnico. Utilicé un lenguaje claro y evité tecnicismos. Además, utilicé ejemplos visuales o comparaciones simples para que el cliente comprendiera la situación. La empatía y la paciencia son clave en estas situaciones."
+      },      
+      {
+      "id": 108,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te aseguras de que tus proyectos de desarrollo web sean accesibles para personas con discapacidades?",
+      "answer": "Para garantizar la accesibilidad en mis proyectos de desarrollo web, sigo prácticas como cumplir con las pautas WCAG, realizar pruebas de accesibilidad, colaborar en diseños inclusivos, permitir navegación con teclado, asegurar compatibilidad con lectores de pantalla y usar atributos ARIA cuando sea necesario. También fomento la concienciación sobre accesibilidad y, en casos críticos, considero auditorías de terceros."
+      },      
+      {
+      "id": 109,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Háblame de una situación en la que tuviste que resolver un conflicto con un colega. ¿Cómo lo manejaste?",
+      "answer": "Cuando surgió un conflicto con un colega, primero escuché sus preocupaciones con empatía. Luego, traté de encontrar un terreno común y propuse soluciones constructivas. La comunicación abierta y la disposición para comprometerse son esenciales para resolver conflictos de manera efectiva."
+      },      
+      {
+      "id": 110,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te mantienes organizado/a en tu trabajo diario como Front-End Developer?",
+      "answer": "Utilizo herramientas de gestión de tareas como Asana o Trello para llevar un registro de las actividades diarias. También establezco un horario de trabajo estructurado y priorizo las tareas según su importancia y plazos. La organización personal y la gestión del tiempo son fundamentales."
+      },      
+      {
+      "id": 111,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo te aseguras de que el código que escribes sea eficiente en términos de rendimiento?",
+      "answer": "Para garantizar un código eficiente en rendimiento, realizo pruebas exhaustivas y utilizo herramientas de perfilamiento para identificar cuellos de botella. También sigo las mejores prácticas de optimización, como minimizar solicitudes de red y reducir la carga de recursos. La colaboración con el equipo de operaciones también es esencial"
+      },      
+      {
+      "id": 112,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo manejas las críticas constructivas y las oportunidades de aprendizaje en tu carrera?",
+      "answer": "Aprecio las críticas constructivas como oportunidades de crecimiento. Las considero como consejos para mejorar y no como ataques personales. Actúo sobre ellas, busco oportunidades de capacitación y no tengo miedo de admitir cuando no sé algo. Creo que la humildad y el aprendizaje constante son fundamentales en mi carrera."
+      },      
+      {
+      "id": 113,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "Háblame de un proyecto en el que lideraste un equipo de desarrollo. ¿Cómo gestionaste y motivaste a tu equipo?",
+      "answer": "Lideré un proyecto en el que formé un equipo de desarrolladores. Para motivarlos, les brindé claridad en los objetivos, escuché sus ideas y preocupaciones, y les proporcioné autonomía para tomar decisiones. También establecimos un sistema de comunicación efectiva y celebramos los logros del equipo."
+      },      
+      {
+      "id": 114,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo te aseguras de que tus proyectos de desarrollo web cumplan con los estándares de seguridad?",
+      "answer": "La seguridad es una prioridad en mis proyectos. Utilizo técnicas de desarrollo seguro, como la validación de entrada, el uso de HTTPS y la protección contra ataques de inyección. Además, realizo pruebas de seguridad regulares y colaboro con expertos en seguridad cuando es necesario"
+      },      
+      {
+      "id": 115,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo manejas el estrés en situaciones de alta presión, como un lanzamiento importante o una caída del sitio?",
+      "answer": "En situaciones de alta presión, mantengo la calma y me centro en la resolución de problemas. Utilizo la planificación anticipada y la comunicación efectiva para evitar crisis. Además, me aseguro de tener un plan de contingencia en caso de problemas inesperados. El autocontrol y la preparación son clave para manejar el estrés."
+      },      
+      {
+      "id": 116,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "Háblame de un momento en el que lideraste un esfuerzo para mejorar la calidad del código en tu equipo. ¿Qué enfoque tomaste?",
+      "answer": "En situaciones de alta presión, mantengo la calma y me centro en la resolución de problemas. Utilizo la planificación anticipada y la comunicación efectiva para evitar crisis. Además, me aseguro de tener un plan de contingencia en caso de problemas inesperados. El autocontrol y la preparación son clave para manejar el estrés."
+      },
+      
+      {
+      "id": 117,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo te aseguras de que estás siguiendo las mejores prácticas de desarrollo web y no adoptando malos hábitos?",
+      "answer": "Para asegurarme de seguir las mejores prácticas, dedico tiempo a la investigación y la educación continua. Leo libros y artículos técnicos, participo en conferencias y cursos en línea, y me mantengo al tanto de las actualizaciones en la industria. También realizo revisiones de código y busco retroalimentación de mis colegas para identificar áreas de mejora."
+      },      
+      {
+      "id": 118,
+      "category": "Softskills",
+      "level": "Senior",
+      "question": "Cuéntame sobre una vez en la que tuviste que aprender una nueva tecnología o lenguaje de programación rápidamente. ¿Cómo lo hiciste?",
+      "answer": "En una ocasión, tuve que aprender un nuevo marco de trabajo en poco tiempo para un proyecto. Para hacerlo, comencé con la documentación oficial y tutoriales en línea. También colaboré con colegas más experimentados y practiqué con proyectos pequeños. La clave fue la dedicación y la disposición para aprender de forma constante."
+      },      
+      {
+      "id": 119,
+      "category": "Softskills",
+      "level": "Senior",
+      "question": "¿Cómo te comunicas con los miembros no técnicos del equipo para explicar conceptos técnicos de manera comprensible?",
+      "answer": "Cuando necesito comunicar conceptos técnicos a miembros no técnicos, evito el jerga técnico y utilizo ejemplos y analogías simples. Además, me aseguro de escuchar sus preguntas y preocupaciones para aclarar cualquier confusión. La empatía y la paciencia son esenciales para garantizar una comunicación efectiva."
+      },      
+      {
+      "id": 120,
+      "category": "Softskills",
+      "level": "Senior",
+      "question": "Háblame de un proyecto en el que enfrentaste un desafío técnico importante. ¿Cómo lo abordaste y qué aprendiste de esa experiencia?",
+      "answer": "En un proyecto anterior, enfrenté un desafío técnico complejo relacionado con la escalabilidad. Lo abordé realizando una investigación exhaustiva, consultando con expertos y probando diferentes enfoques. Aprendí la importancia de la perseverancia y la colaboración en equipo, y finalmente, logramos superar el desafío con éxito."
+      },
+      {
+        "id": 121,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Qué es Git y para qué se utiliza en el desarrollo web?",
+        "answer": "Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo."
+      },
+      {
+        "id": 122,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Cuál es la diferencia entre Git y GitHub?",
+        "answer": "Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores."
+      },
+      {
+        "id": 123,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Qué comando se utiliza para iniciar un nuevo repositorio Git en un proyecto?",
+        "answer": "El comando utilizado para iniciar un nuevo repositorio Git en un proyecto es 'git init'."
+      },
+      {
+        "id": 124,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Cómo se realiza un commit en Git y por qué es importante?",
+        "answer": "Para realizar un commit en Git, se utiliza el comando 'git commit'. Un commit es importante porque registra un conjunto de cambios en el repositorio, lo que permite realizar un seguimiento de la historia del proyecto y facilita la colaboración en equipo."
+      },
+      {
+        "id": 125,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Qué es un conflicto de merge en Git y cómo se resuelve?",
+        "answer": "Un conflicto de merge en Git ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Para resolverlo, se debe realizar una revisión manual del conflicto, editar el código para resolver las diferencias y luego realizar un nuevo commit para completar el merge."
+      },
+      {
+        "id": 126,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
+        "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
+      },
+      {
+        "id": 127,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Qué es un commit en Git y por qué es importante?",
+        "answer": "Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos."
+      },
+      {
+        "id": 128,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Cuál es el propósito del archivo '.gitignore' en un repositorio Git?",
+        "answer": "El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio."
+      },   
+      {
+        "id": 129,
+        "category": "Git",
+        "level": "Middle",
+        "question": "Explica la diferencia entre 'git pull' y 'git fetch'.",
+        "answer": "'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario."
+      },
+      {
+        "id": 130,
+        "category": "Git",
+        "level": "Middle",
+        "question": "¿Qué es una rama (branch) en Git y cuál es su propósito?",
+        "answer": "Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración."
+      },
+      {
+        "id": 131,
+        "category": "Git",
+        "level": "Middle",
+        "question": "¿Cómo se fusiona una rama en Git y cuál es el comando utilizado?",
+        "answer": "Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios."
+      },
+      {
+        "id": 132,
+        "category": "Git",
+        "level": "Middle",
+        "question": "¿Qué es un conflicto de resolución de merge y cómo se soluciona?",
+        "answer": "Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión."
+      },
+      {
+        "id": 133,
+        "category": "Git",
+        "level": "Junior",
+        "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
+        "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
+      },      
+      {
+        "id": 134,
+        "category": "Git",
+        "level": "Middle",
+        "question": "¿Qué es un repositorio remoto en Git?",
+        "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio."
+      },  
+      {
+        "id": 135,
+        "category": "Git",
+        "level": "Middle",
+        "question": "¿Qué es un conflicto de fusión (merge conflict) en Git y cómo se resuelve?",
+        "answer": "Un conflicto de fusión ocurre cuando dos ramas tienen cambios en las mismas líneas de código. Para resolverlo, debes abrir el archivo en conflicto, editar manualmente las secciones en conflicto para que queden como desees y luego hacer un commit para finalizar la fusión."
+      },
+      {
+        "id": 136,
+        "category": "Git",
+        "level": "Middle",
+        "question": "Explica el flujo de trabajo típico de Git para colaborar en un proyecto con otros desarrolladores.",
+        "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos."
+      },      
+      {
+        "id": 137,
+        "category": "Git",
+        "level": "Senior",
+        "question": "¿Qué es Git rebase y cuál es su propósito?",
+        "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra."
+      },
+      {
+        "id": 138,
+        "category": "Git",
+        "level": "Senior",
+        "question": "¿Qué es un submódulo Git?",
+        "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos."
+      },
+      {
+        "id": 139,
+        "category": "Git",
+        "level": "Senior",
+        "question": "¿Qué es 'git stash' y cuándo se utiliza?",
+        "answer": "'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales."
+      },
+      {
+        "id": 140,
+        "category": "Git",
+        "level": "Senior",
+        "question": "¿Qué es Git bisect y cómo se utiliza para depurar problemas en el código?",
+        "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático."
+      }      
   ]
 }

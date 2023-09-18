@@ -1,9 +1,10 @@
-import { Component, ElementRef, OnInit, Renderer2, inject } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, Renderer2, inject } from '@angular/core';
 
 import { PagesService } from 'src/app/pages/services/pages.service';
 import { UsersService } from '../../../auth/services/users.service';
 import { Router } from '@angular/router';
 import { UserData } from '../../interfaces/user-data.interface';
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,8 @@ import { UserData } from '../../interfaces/user-data.interface';
 
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
+
 
   public isVisible: boolean = false;
 
@@ -30,9 +32,9 @@ export class HeaderComponent implements OnInit {
 
   private router = inject(Router);
 
-  public userData!:string;
+  public userData!: string;
 
-  public sinNombre = "";
+  private unsubscribe$ = new Subject<void>();
 
 
   ngOnInit(): void {
@@ -77,17 +79,24 @@ export class HeaderComponent implements OnInit {
 
   getUserLogged() {
     this.usersService.getAuthenticatedUserSubject()
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
       .subscribe((user) => {
-        if(user) {
+        if (user) {
           this.userData = user.name;
           this.isUserAuthenticated = true;
-        }else {
-         this.userData = "";
-         this.isUserAuthenticated = false;
+        } else {
+          this.userData = "";
+          this.isUserAuthenticated = false;
         }
-        
       })
   }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  };
 
 
 }

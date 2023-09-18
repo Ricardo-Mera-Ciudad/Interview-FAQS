@@ -13,11 +13,17 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
 
-  getQuestionsAndAnswers(category: string): Observable<Question[]> {
+
+
+  getQuestions(category: string, level?: string): Observable<Question[]> {
     return this.http.get<Question[]>(`${this.apiUrl}/questions`)
       .pipe(
         map((questions: Question[]) => {
-          return questions.filter((question) => question.category === category);
+          return questions.filter((question) => {
+            const matchCategory = question.category === category;
+            const matchLevel = level ? question.level === level : true;
+            return matchCategory && matchLevel;
+          });
         })
       )
   }

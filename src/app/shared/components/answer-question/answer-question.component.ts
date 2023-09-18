@@ -5,7 +5,7 @@ import {
   Category,
 } from '../../interfaces/answerQuestion.interface';
 import { PagesService } from 'src/app/pages/services/pages.service';
-import { Subject, switchMap, takeUntil } from 'rxjs';
+import { Subject, combineLatest, switchMap, takeUntil } from 'rxjs';
 import { DataService } from 'src/app/pages/services/data.service';
 
 @Component({
@@ -22,42 +22,46 @@ export class AnswerQuestionComponent {
 
   private pagesService = inject(PagesService);
   public category: string = 'Angular';
-  public level: string = 'Middle';
+  public level: string | null = null;
 
 
   private unsubscribe$ = new Subject<void>();
   private dataService = inject(DataService);
 
-  constructor() {
-    this.questions.forEach((question) => {
-      this.answerVisibility[question.id] = false;
-      this.borderRadiusState[question.id] = false;
-    });
-  }
+  constructor() {}
   ngOnInit(): void {
-    this.getFaqs()
     this.loadCategory();
   }
 
   getFaqs() {
     this.pagesService.selectedCategory$
       .pipe(
-        switchMap((selectedCategory) =>
-        this.dataService.getQuestionsAndAnswers(selectedCategory))
-    ).subscribe((questions: Question[]) => {
-      this.questions = questions;
-    })
+        switchMap((selectedCategory) => {
+            return this.dataService.getQuestions(selectedCategory, this.level!);
+        })
+      )
+      .subscribe((questions: Question[]) => {
+        this.questions = questions;
+        this.questions.forEach((question) => {
+          this.answerVisibility[question.id] = false;
+          this.borderRadiusState[question.id] = false;
+        });
+
+      });
   }
 
+
   loadCategory() {
-    this.pagesService.selectedCategory$
+    combineLatest([
+      this.pagesService.selectedCategory$,
+      this.pagesService.selectedLevel$,
+    ])
       .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(
-        (categoryFromService) => (this.category = categoryFromService)
-      );
-    this.pagesService.selectedLevel$
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe((levelFromService) => (this.level = levelFromService));
+      .subscribe(([categoryFromService, levelFromService]) => {
+        this.category = categoryFromService;
+        this.level = levelFromService;
+        this.getFaqs();
+      });
   }
 
   showAnswer(id: number) {

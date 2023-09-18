@@ -34,7 +34,14 @@
       "password": "87654321",
       "confirmPassword": "87654321",
       "id": 5
-    }   
+    },
+    {
+      "name": "Manolito",
+      "email": "manolito@google.com",
+      "password": "manolito",
+      "confirmPassword": "manolito",
+      "id": 6
+    }
   ],
   "userFavs": [],
   "questions": [

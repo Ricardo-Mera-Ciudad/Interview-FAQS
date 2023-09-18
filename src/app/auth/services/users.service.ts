@@ -9,14 +9,21 @@ import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 })
 export class UsersService {
   private baseUrl: string = environments.baseUrl;
-  private user?: UserData | null
+  private user?: UserData | null;
   public userAdded = new Subject<UserData>();
   public userToUpdate = new Subject<UserData>();
-  public token = "";
-  private authenticatedUserSubject = new BehaviorSubject<UserData |null>(null);
+  private authenticatedUserSubject = new BehaviorSubject<UserData | null>(null);
 
 
   constructor(private http: HttpClient) { }
+
+  setAuthenticatedUserSubject(user: UserData): void {
+    this.authenticatedUserSubject.next(user)
+  }
+
+  getAuthenticatedUserSubject(): Observable<UserData | null> {
+    return this.authenticatedUserSubject.asObservable();
+  }
 
   addUser(user: UserData): Observable<UserData> {
     return this.http.post<UserData>(`${this.baseUrl}/users`, user)
@@ -51,11 +58,14 @@ export class UsersService {
       )
   }
 
+  getUserById(id: number) {
+    return this.http.get(`${this.baseUrl}/users/${id}`)
+  }
+
   createJwtToken(payload: any) {
     const base64Url = btoa(JSON.stringify(payload));
     return base64Url;
   }
-
 
   login(email: string, password: string): Observable<UserData | null> {
     return this.http.get<UserData[]>(`${this.baseUrl}/users`).pipe(
@@ -63,13 +73,12 @@ export class UsersService {
         const user = users.find(u => u.email === email && u.password === password);
         if (user) {
           this.user = user;
-          const tokenPayload = {
-            sub: user.id,
-            email: user.email,
-          };
-          this.token = this.createJwtToken(tokenPayload);
-          localStorage.setItem('authToken', this.token);
-          this.authenticatedUserSubject.next(user);
+          const authData = {
+            token: this.createJwtToken({ sub: user.id, email: user.email }),
+            userId: user.id
+          }
+          localStorage.setItem('authToken', JSON.stringify(authData));
+          this.setAuthenticatedUserSubject(user)
         }
         return of(user || null);
       }),
@@ -85,8 +94,5 @@ export class UsersService {
     this.authenticatedUserSubject.next(null);
   }
 
-  getAuthenticatedUserSubject(): Observable<UserData | null> { 
-    return this.authenticatedUserSubject.asObservable(); 
-  }
 
 }

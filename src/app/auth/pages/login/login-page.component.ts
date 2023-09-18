@@ -45,11 +45,8 @@ export class LoginPageComponent {
     this.usersService.login(this.myForm.value.email, this.myForm.value.password)
     .subscribe(user => {
       if (user) {
-        // Login exitoso, redirige a la página de inicio o a donde sea necesario.
-        console.log(user)
         this.router.navigate(['/']);
       } else {
-        // Manejar error de autenticación, por ejemplo, mostrar un mensaje de error.
         console.log('Error de autenticación');
       }
     });

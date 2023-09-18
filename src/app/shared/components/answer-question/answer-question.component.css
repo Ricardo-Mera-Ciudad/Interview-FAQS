@@ -57,6 +57,7 @@
   font-weight: bold;
 }
 .card-question-head-icons {
+  display: flex;
   margin-bottom: 8px;
 }
 .row-icon {
@@ -66,7 +67,7 @@
 .card-question-answer {
   background-color: #0f213b;
   color: #fcfcfc;
-  padding: 5px;
+  padding: 12px;
 }
 .category-container {
   display: flex;

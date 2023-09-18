@@ -36,6 +36,12 @@
     padding: 15px 25px;
   }
 }
+.card-level:hover {
+  transform: scale(1.1);
+  background-color: #0f213b;
+  color: #e1effb;
+  transition: transform 0.3s ease;
+}
 .card-level-body {
   font-size: 14px;
   width: fit-content;

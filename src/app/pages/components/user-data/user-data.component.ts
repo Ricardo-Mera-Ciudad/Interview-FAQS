@@ -9,9 +9,12 @@ import { Subject, takeUntil } from 'rxjs';
   styleUrls: ['./user-data.component.css'],
 })
 export class UserDataComponent implements OnInit, OnDestroy {
+
   public userData: UserData | null = null;
 
   private unsubscribe$ = new Subject<void>();
+
+  public showEditModal:boolean = false;
 
   constructor(private usersService: UsersService) {}
 
@@ -29,6 +32,15 @@ export class UserDataComponent implements OnInit, OnDestroy {
       this.userData = user;
     });
   }
+
+  openEditModal(){
+    this.showEditModal = true;
+  }
+
+  closeEditModal(){
+    this.showEditModal = false;
+  }
+
 
   ngOnDestroy(): void {
     this.unsubscribe$.next();

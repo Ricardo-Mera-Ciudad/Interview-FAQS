@@ -83,20 +83,20 @@
           <li
             class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
-            (click)="chooseCategory('Webmetrics')"
+            (click)="chooseCategory('Git')"
           >
             <a class="header-container__navbar-items-menu-list-item-link"
-              >Web Metrics</a
+              >Git</a
             >
           </li>
 
           <li
             class="header-container__navbar-items-menu-list-item"
             [routerLink]="['/content-page']"
-            (click)="chooseCategory('Webpacks')"
+            (click)="chooseCategory('Weblinks')"
           >
             <a class="header-container__navbar-items-menu-list-item-link"
-              >Webpacks</a
+              >Weblinks</a
             >
           </li>
         </ul>
@@ -105,26 +105,31 @@
       <div class="header-container__navbar-items-logo">
         <img
           [routerLink]="['/home-page']"
+          src="../../../assets/images/logo-faqs.png"
+          alt="Interview FAQS logo"
+          class="header-container__navbar-items-logo-img-faqs"
+        />
+        <img
+          [routerLink]="['/home-page']"
           src="../../../assets/images/logo.png"
           alt="Interview FAQS logo"
-          class="header-container__navbar-items-logo-img"
+          class="header-container__navbar-items-logo-img-full"
         />
       </div>
 
-      
-
-      <div *ngIf="!isUserAuthenticated; else logged" class="header-container__navbar-items-login">       
-      <span
-        [routerLink]="['/login']"
+      <div
+        *ngIf="!isUserAuthenticated; else logged"
+        class="header-container__navbar-items-login"
       >
-      Login
-      </span>
-      </div>    
-
+        <span [routerLink]="['/login']"> Login </span>
+      </div>
 
       <ng-template #logged>
         <div class="header-container__navbar-items-login">
-          <span class="mr-2" >Hola, {{ userData | titlecase }}</span>
+          <div class="header-container__navbar-items-login-text">
+            <span>Hola, {{ userData | titlecase }}</span>
+          </div>
+          
           <span
             class="header-container__navbar-items-login-icon"
             (click)="onClickUser()"
@@ -149,7 +154,9 @@
             <ul class="header-container__navbar-items-login-user-menu-list">
               <li
                 class="header-container__navbar-items-login-user-menu-list-item"
-                [routerLink]="['/profile-page/data']"            >
+                [routerLink]="['/profile-page/data']"
+                (click)="closeUserMenu()"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -165,13 +172,17 @@
                     d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"
                   />
                 </svg>
-                <a class="header-container__navbar-items-login-user-menu-list-item-link"
-                  >Mis Datos</a>
+                <a
+                  class="header-container__navbar-items-login-user-menu-list-item-link"
+                  >Mis Datos</a
+                >
               </li>
-  
+
               <li
                 class="header-container__navbar-items-login-user-menu-list-item"
-                [routerLink]="['/profile-page/favorites']"            >
+                [routerLink]="['/profile-page/favorites']"
+                (click)="closeUserMenu()"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -220,8 +231,6 @@
           </div>
         </div>
       </ng-template>
-
-      
     </div>
   </nav>
 </header>

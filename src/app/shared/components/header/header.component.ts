@@ -60,6 +60,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   chooseCategory(category: string) {
     this.pagesService.setCategory(category);
+    this.closeMenu();
   }
 
   closeMenu() {

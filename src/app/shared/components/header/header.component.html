@@ -105,9 +105,15 @@
       <div class="header-container__navbar-items-logo">
         <img
           [routerLink]="['/home-page']"
+          src="../../../assets/images/logo-faqs.png"
+          alt="Interview FAQS logo"
+          class="header-container__navbar-items-logo-img-faqs"
+        />
+        <img
+          [routerLink]="['/home-page']"
           src="../../../assets/images/logo.png"
           alt="Interview FAQS logo"
-          class="header-container__navbar-items-logo-img"
+          class="header-container__navbar-items-logo-img-full"
         />
       </div>
 
@@ -120,7 +126,10 @@
 
       <ng-template #logged>
         <div class="header-container__navbar-items-login">
-          <span class="mr-2">Hola, {{ userData | titlecase }}</span>
+          <div class="header-container__navbar-items-login-text">
+            <span>Hola, {{ userData | titlecase }}</span>
+          </div>
+          
           <span
             class="header-container__navbar-items-login-icon"
             (click)="onClickUser()"

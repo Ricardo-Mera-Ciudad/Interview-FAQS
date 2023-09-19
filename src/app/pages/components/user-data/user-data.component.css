@@ -1,5 +1,4 @@
 .user-data-card{
-    margin-top: 10px;
     width: 250px !important;
     background-color: #0f213B;
     color:#fcfcfc;
@@ -7,6 +6,30 @@
     flex-direction: column;
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 350px !important;
+
+    }
+}
+
+.user-data-img{
+    width: 250px;
+    background-color: #778899!important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center; 
+    border-radius: 8px;
+
+
+
+    @media (min-width: 768px) {
+        width: 350px;
+        align-items: center !important;
+    }
+
 }
 
 .user-data-card-buttons{

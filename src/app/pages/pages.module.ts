@@ -11,12 +11,12 @@ import { RouterModule } from '@angular/router';
 import { TypescriptQuestionsComponentComponent } from './components/typescript-questions-component/typescript-questions-component.component';
 import { SharedModule } from '../shared/shared.module';
 import { SoftskillsQuestionsComponentComponent } from './components/softskills-questions-component/softskills-questions-component.component';
-import { WebpacksQuestionsComponentComponent } from './components/webpacks-questions-component/webpacks-questions-component.component';
-import { WebmetricsQuestionsComponentComponent } from './components/webmetrics-questions-component/webmetrics-questions-component.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { UserDataComponent } from './components/user-data/user-data.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
+import { GitQuestionsComponentComponent } from './components/git-questions-component/git-questions-component.component';
+import { WeblinksQuestionsComponentComponent } from './components/weblinks-questions-component/weblinks-questions-component.component';
 
 
 
@@ -32,8 +32,8 @@ import { FavoritesComponent } from './components/favorites/favorites.component';
     MainCircleComponent,
     TypescriptQuestionsComponentComponent,
     SoftskillsQuestionsComponentComponent,
-    WebpacksQuestionsComponentComponent,
-    WebmetricsQuestionsComponentComponent,
+    WeblinksQuestionsComponentComponent,
+    GitQuestionsComponentComponent,
     ProfilePageComponent,
     UserDataComponent,
     FavoritesComponent

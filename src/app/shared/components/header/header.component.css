@@ -129,40 +129,78 @@
 
 .header-container__navbar-items-logo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   cursor: pointer;  
+  margin-left: 10px;
 }
 
-.header-container__navbar-items-logo-img {
-  width: 250px;
-  margin-left:10px;
-  height: auto;
+.header-container__navbar-items-logo-img-faqs{
+  cursor: pointer; 
+  width: 150px;
+  height: 45px;
 
   @media (min-width: 768px) {
-    width: 450px;
-    height: auto;
+    display: none;
   }
 
   @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.header-container__navbar-items-logo-img-full{
+  display:none;
+
+  @media (min-width: 768px) {  
+    display: block;
+    margin-left: 90px;
+    width: 400px;
+    height: auto; 
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
+    margin-left: 90px;
     width: 500px;
-    height: auto;
+    height: auto; 
   }
 }
 
 .header-container__navbar-items-login {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   color: #FCFCFC;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
   cursor:pointer;
+  display: flex;
+  vertical-align: center;  
+  align-items: center;
 
   @media  (min-width: 768px) {
-    font-size: 1em;    
+    font-size: 0.8em;    
+  }
+
+  @media  (min-width: 1024px) {
+    font-size: 0.9em;    
+  }
+  
+}
+
+.header-container__navbar-items-login-text{
+  display: flex;
+  flex-direction: column;
+  display:none;
+
+  @media  (min-width: 768px) {
+    display:contents;  
+  }
+
+  @media (min-width: 1024px) {
+    display:contents;  
   }
 }
+
 
 .header-container__navbar-items-login-icon {
   margin-left: 5px;

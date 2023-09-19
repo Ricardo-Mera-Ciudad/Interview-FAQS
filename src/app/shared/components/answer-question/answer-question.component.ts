@@ -23,12 +23,13 @@ export class AnswerQuestionComponent {
   private pagesService = inject(PagesService);
   public category: string = 'Angular';
   public level: string | null = null;
+  public isLoading: boolean = true;
 
 
   private unsubscribe$ = new Subject<void>();
   private dataService = inject(DataService);
 
-  constructor() {}
+  constructor() { }
   ngOnInit(): void {
     this.loadCategory();
   }
@@ -37,11 +38,12 @@ export class AnswerQuestionComponent {
     this.pagesService.selectedCategory$
       .pipe(
         switchMap((selectedCategory) => {
-            return this.dataService.getQuestions(selectedCategory, this.level!);
+          return this.dataService.getQuestions(selectedCategory, this.level!);
         })
       )
       .subscribe((questions: Question[]) => {
         this.questions = questions;
+        this.isLoading = false;
         this.questions.forEach((question) => {
           this.answerVisibility[question.id] = false;
           this.borderRadiusState[question.id] = false;
@@ -72,7 +74,7 @@ export class AnswerQuestionComponent {
   getCategoryImage(category: string): string {
     let imgUrl: string = "";
 
-    switch(category) {
+    switch (category) {
       case 'Angular':
         imgUrl = "../../../../assets/images/angular.png";
         break;

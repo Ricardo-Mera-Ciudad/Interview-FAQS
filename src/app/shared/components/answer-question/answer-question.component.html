@@ -3,10 +3,18 @@
     <img class="questions-icon" [src]="getCategoryImage(category)" alt="">
     <h2 class="question-selectors">{{ category }}</h2>
   </div>
+  
+  <div class="text-center m-5" *ngIf="isLoading">
+    <div class="spinner-border text-light" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+  
 
   <div class="question-card-set"
   *ngFor="let question of questions">
-    <div class="card-full-question"
+  
+    <div *ngIf="!isLoading" class="card-full-question"
      [id]="'question-' + question.id">
       <div class="card-question-head"
       [ngClass]="{'apply-border-radius': borderRadiusState[question.id]}">

@@ -89,13 +89,13 @@ export class AnswerQuestionComponent {
         imgUrl = "../../../../assets/images/typescript.png";
         break;
       case 'Softskills':
-        imgUrl = "";
+        imgUrl = "../../../../assets/images/softskills-icon.png";
         break;
-      case 'Webmetrics':
-        imgUrl = "";
+      case 'Git':
+        imgUrl = "../../../../assets/images/git-icon.png";
         break;
-      case 'Webpacks':
-        imgUrl = "";
+      case 'Weblinks':
+        imgUrl = "../../../../assets/images/weblinks-icon.png";
         break;
     }
     return imgUrl;

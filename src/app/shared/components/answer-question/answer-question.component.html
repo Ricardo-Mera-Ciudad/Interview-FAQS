@@ -18,8 +18,8 @@
         <div class="card-question-head-icons">
           <!-- STAR -->
           <span class="star-icon-container"
-          (click)="favouriteStatus()"
-          [ngClass]="{'isSelected': favouriteStatus}"
+          (click)="favouriteStatus(question)"
+          [ngClass]="{'isSelected': favouriteStatusColor[question.id]}"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

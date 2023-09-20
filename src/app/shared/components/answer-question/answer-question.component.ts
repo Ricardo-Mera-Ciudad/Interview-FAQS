@@ -22,11 +22,12 @@ export class AnswerQuestionComponent {
   public category: string = 'Angular';
   public level: string | null = null;
   public isLoading: boolean = true;
-
+  public isLink: boolean = false;
 
   private unsubscribe$ = new Subject<void>();
   private dataService = inject(DataService);
   private usersService = inject(UsersService);
+
 
   constructor() { }
   ngOnInit(): void {
@@ -45,16 +46,25 @@ export class AnswerQuestionComponent {
         this.questions = questions.map((question) => ({
           ...question,
           favorite: false,
+          
         }));
 
         this.questions = questions;
+
         this.isLoading = false;
         this.questions.forEach((question) => {
+          if(question.answer.startsWith('https://')){
+            this.isLink = true;
+            console.log(this.isLink)
+          }else {
+            this.isLink = false;
+            console.log(this.isLink)
+          }
           this.answerVisibility[question.id] = false;
           this.borderRadiusState[question.id] = false;
           this.favouriteStatusColor[question.id] = false;
         });
-        console.log(this.questions);
+       
       });
   }
 

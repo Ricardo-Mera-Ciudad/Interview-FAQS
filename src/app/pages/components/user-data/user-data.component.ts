@@ -14,8 +14,6 @@ export class UserDataComponent implements OnInit, OnDestroy {
 
   private unsubscribe$ = new Subject<void>();
 
-  public showEditModal:boolean = false;
-
   constructor(private usersService: UsersService) {}
 
   ngOnInit(): void {
@@ -31,14 +29,6 @@ export class UserDataComponent implements OnInit, OnDestroy {
       console.log(user);
       this.userData = user;
     });
-  }
-
-  openEditModal(){
-    this.showEditModal = true;
-  }
-
-  closeEditModal(){
-    this.showEditModal = false;
   }
 
 

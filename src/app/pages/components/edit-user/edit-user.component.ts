@@ -4,13 +4,12 @@ import { UsersService } from 'src/app/auth/services/users.service';
 
 
 @Component({
-  selector: 'app-edit-user-modal',
-  templateUrl: './edit-user-modal.component.html',
-  styleUrls: ['./edit-user-modal.component.css']
+  selector: 'app-edit-user',
+  templateUrl: './edit-user.component.html',
+  styleUrls: ['./edit-user.component.css']
 })
-export class EditUserModalComponent {
+export class EditUserComponent {
   @Input() user?: UserData | null;
-  @Output() closeModalEvent = new EventEmitter<void>();
 
   constructor(private usersService: UsersService) { }
 
@@ -19,11 +18,6 @@ export class EditUserModalComponent {
     .subscribe((user) => {
       console.log(user);
       this.user = user;
-      this.closeModal();
     });
-  }
-
-  closeModal() {
-    this.closeModalEvent.emit();
   }
 }

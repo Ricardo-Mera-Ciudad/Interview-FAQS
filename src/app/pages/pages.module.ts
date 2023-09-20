@@ -17,8 +17,7 @@ import { UserDataComponent } from './components/user-data/user-data.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { GitQuestionsComponentComponent } from './components/git-questions-component/git-questions-component.component';
 import { WeblinksQuestionsComponentComponent } from './components/weblinks-questions-component/weblinks-questions-component.component';
-import { EditUserModalComponent } from './components/edit-user-modal/edit-user-modal.component';
-
+import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 
 @NgModule({
@@ -37,7 +36,7 @@ import { EditUserModalComponent } from './components/edit-user-modal/edit-user-m
     ProfilePageComponent,
     UserDataComponent,
     FavoritesComponent,
-    EditUserModalComponent  
+    EditUserComponent
   ],
   imports: [
     CommonModule,

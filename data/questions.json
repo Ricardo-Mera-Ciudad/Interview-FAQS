@@ -1025,6 +1025,14 @@
         "level": "Senior",
         "question": "¿Qué es Git bisect y cómo se utiliza para depurar problemas en el código?",
         "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático."
-      }      
+      },
+      {
+        "id": 141,
+        "category": "Weblinks",
+        "level": "Senior",
+        "question": "Prueba técnica MIDUDEV",
+        "answer": "https://github.com/midudev/pruebas-tecnicas"
+      }    
+
   ]
 }

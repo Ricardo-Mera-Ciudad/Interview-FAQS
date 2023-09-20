@@ -63,9 +63,14 @@
         </div>
       </div>
       <div class="card-question-answer" *ngIf="answerVisibility[question.id]">
-        <p>
-          {{ question.answer }}
-        </p>
+        
+        <ng-template #notLink>
+          <p >{{ question.answer }}</p>
+        </ng-template>
+        
+
+          <a [href]="question.answer" *ngIf="isLink; else notLink" target="_blank">{{question.answer}}</a>
+        
       </div>
     </div>
   </div>

@@ -38,7 +38,7 @@ export class UsersService {
     return this.userAdded.asObservable();
   }
 
-  updateUser(user: UserData): Observable<UserData> {
+  updateUser(user: any): Observable<UserData> {
     if (!user.id) throw Error('User id is required');
     return this.http.patch<UserData>(`${this.baseUrl}/users/${user.id}`, user)
       .pipe(

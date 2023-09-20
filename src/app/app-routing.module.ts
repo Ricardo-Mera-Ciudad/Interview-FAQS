@@ -7,6 +7,7 @@ import { UserDataComponent } from './pages/components/user-data/user-data.compon
 import { FavoritesComponent } from './pages/components/favorites/favorites.component';
 import { RegisterComponent } from './auth/pages/register/register.component';
 import { LoginPageComponent } from './auth/pages/login/login-page.component';
+import { EditUserComponent } from './pages/components/edit-user/edit-user.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,7 @@ const routes: Routes = [
     component: ProfilePageComponent,
     children: [
       { path: 'data', component: UserDataComponent },
+      { path: 'data/edit/:id', component: EditUserComponent },
       { path: 'favorites', component: FavoritesComponent },
       { path: '', redirectTo: 'data', pathMatch: 'full' } 
     ]

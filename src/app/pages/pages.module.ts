@@ -11,19 +11,18 @@ import { RouterModule } from '@angular/router';
 import { TypescriptQuestionsComponentComponent } from './components/typescript-questions-component/typescript-questions-component.component';
 import { SharedModule } from '../shared/shared.module';
 import { SoftskillsQuestionsComponentComponent } from './components/softskills-questions-component/softskills-questions-component.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { UserDataComponent } from './components/user-data/user-data.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { GitQuestionsComponentComponent } from './components/git-questions-component/git-questions-component.component';
 import { WeblinksQuestionsComponentComponent } from './components/weblinks-questions-component/weblinks-questions-component.component';
-
+import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 
 @NgModule({
   declarations: [
-    HomePageComponent,
-    
+    HomePageComponent,    
     ContentPageComponent,
     HtmlQuestionsComponentComponent,
     CssQuestionsComponentComponent,
@@ -36,14 +35,15 @@ import { WeblinksQuestionsComponentComponent } from './components/weblinks-quest
     GitQuestionsComponentComponent,
     ProfilePageComponent,
     UserDataComponent,
-    FavoritesComponent
-  
+    FavoritesComponent,
+    EditUserComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     HomePageComponent,

@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './auth/auth.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { AuthModule } from './auth/auth.module';
     SharedModule,
     PagesModule,
     HttpClientModule,
-    AuthModule
+    AuthModule,
+    FormsModule
   ],
 
   providers: [],

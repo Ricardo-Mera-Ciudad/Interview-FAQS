@@ -9,6 +9,7 @@ import { Subject, takeUntil } from 'rxjs';
   styleUrls: ['./user-data.component.css'],
 })
 export class UserDataComponent implements OnInit, OnDestroy {
+
   public userData: UserData | null = null;
 
   private unsubscribe$ = new Subject<void>();
@@ -29,6 +30,7 @@ export class UserDataComponent implements OnInit, OnDestroy {
       this.userData = user;
     });
   }
+
 
   ngOnDestroy(): void {
     this.unsubscribe$.next();

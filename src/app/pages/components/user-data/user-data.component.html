@@ -5,11 +5,7 @@
         <p class="card-text"> {{ userData?.email | lowercase}}</p>
     </div>
     <div class="user-data-card-buttons">
-        <a [routerLink]="['/data/edit', userData?.id]" class="user-data-card-buttons-edit btn btn-primary">🖊 Editar</a>
+        <a [routerLink]="['/profile-page/data/edit', userData?.id]" class="user-data-card-buttons-edit btn btn-primary">🖊 Editar</a>
         <a href="#" class="user-data-card-buttons-delete btn btn-danger">🗑 Eliminar</a>
     </div>
-</div>
-<div>
-    <p>URL generada:</p>
-    <pre>{{ ['/profile-page/data/edit', userData?.id] | json }}</pre>
 </div>

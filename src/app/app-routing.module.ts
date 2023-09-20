@@ -30,14 +30,8 @@ const routes: Routes = [
     path: 'profile-page',
     component: ProfilePageComponent,
     children: [
-      { path: 'data', 
-        component: UserDataComponent,
-        children:[
-          { path: 'edit/:id', 
-            component: EditUserComponent
-          }
-        ] 
-      },
+      { path: 'data', component: UserDataComponent },
+      { path: 'data/edit/:id', component: EditUserComponent },
       { path: 'favorites', component: FavoritesComponent },
       { path: '', redirectTo: 'data', pathMatch: 'full' } 
     ]

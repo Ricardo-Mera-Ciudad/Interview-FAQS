@@ -102,4 +102,10 @@ export class FooterComponent implements OnInit {
       }, 200);
     }
   }
+
+  showWhat() {
+
+    this.hideWhat = !this.hideWhat;
+  }
+
 }

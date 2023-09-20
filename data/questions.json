@@ -1013,168 +1013,287 @@
       "category": "Softskills",
       "level": "Senior",
       "question": "Háblame de un proyecto en el que enfrentaste un desafío técnico importante. ¿Cómo lo abordaste y qué aprendiste de esa experiencia?",
-      "answer": "En un proyecto anterior, enfrenté un desafío técnico complejo relacionado con la escalabilidad. Lo abordé realizando una investigación exhaustiva, consultando con expertos y probando diferentes enfoques. Aprendí la importancia de la perseverancia y la colaboración en equipo, y finalmente, logramos superar el desafío con éxito.",
-      "favorite": false
+      "answer": "En un proyecto anterior, enfrenté un desafío técnico complejo relacionado con la escalabilidad. Lo abordé realizando una investigación exhaustiva, consultando con expertos y probando diferentes enfoques. Aprendí la importancia de la perseverancia y la colaboración en equipo, y finalmente, logramos superar el desafío con éxito."
     },
     {
       "id": 121,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es Git y para qué se utiliza en el desarrollo web?",
-      "answer": "Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo.",
-      "favorite": false
+      "answer": "Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo."
     },
     {
       "id": 122,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre Git y GitHub?",
-      "answer": "Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores.",
-      "favorite": false
+      "answer": "Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores."
     },
     {
       "id": 123,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué comando se utiliza para iniciar un nuevo repositorio Git en un proyecto?",
-      "answer": "El comando utilizado para iniciar un nuevo repositorio Git en un proyecto es 'git init'.",
-      "favorite": false
+      "answer": "El comando utilizado para iniciar un nuevo repositorio Git en un proyecto es 'git init'."
     },
     {
       "id": 124,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cómo se realiza un commit en Git y por qué es importante?",
-      "answer": "Para realizar un commit en Git, se utiliza el comando 'git commit'. Un commit es importante porque registra un conjunto de cambios en el repositorio, lo que permite realizar un seguimiento de la historia del proyecto y facilita la colaboración en equipo.",
-      "favorite": false
+      "answer": "Para realizar un commit en Git, se utiliza el comando 'git commit'. Un commit es importante porque registra un conjunto de cambios en el repositorio, lo que permite realizar un seguimiento de la historia del proyecto y facilita la colaboración en equipo."
     },
     {
       "id": 125,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es un conflicto de merge en Git y cómo se resuelve?",
-      "answer": "Un conflicto de merge en Git ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Para resolverlo, se debe realizar una revisión manual del conflicto, editar el código para resolver las diferencias y luego realizar un nuevo commit para completar el merge.",
-      "favorite": false
+      "answer": "Un conflicto de merge en Git ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Para resolverlo, se debe realizar una revisión manual del conflicto, editar el código para resolver las diferencias y luego realizar un nuevo commit para completar el merge."
     },
     {
       "id": 126,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
-      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina.",
-      "favorite": false
+      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
     },
     {
       "id": 127,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es un commit en Git y por qué es importante?",
-      "answer": "Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos.",
-      "favorite": false
+      "answer": "Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos."
     },
     {
       "id": 128,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el propósito del archivo '.gitignore' en un repositorio Git?",
-      "answer": "El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio.",
-      "favorite": false
+      "answer": "El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio."
     },
     {
       "id": 129,
       "category": "Git",
       "level": "Middle",
       "question": "Explica la diferencia entre 'git pull' y 'git fetch'.",
-      "answer": "'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario.",
-      "favorite": false
+      "answer": "'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario."
     },
     {
       "id": 130,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es una rama (branch) en Git y cuál es su propósito?",
-      "answer": "Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración.",
-      "favorite": false
+      "answer": "Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración."
     },
     {
       "id": 131,
       "category": "Git",
       "level": "Middle",
       "question": "¿Cómo se fusiona una rama en Git y cuál es el comando utilizado?",
-      "answer": "Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios.",
-      "favorite": false
+      "answer": "Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios."
     },
     {
       "id": 132,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un conflicto de resolución de merge y cómo se soluciona?",
-      "answer": "Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión.",
-      "favorite": false
+      "answer": "Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión."
     },
     {
       "id": 133,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
-      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina.",
-      "favorite": false
+      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
     },
     {
       "id": 134,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un repositorio remoto en Git?",
-      "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio.",
-      "favorite": false
+      "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio."
     },
     {
       "id": 135,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un conflicto de fusión (merge conflict) en Git y cómo se resuelve?",
-      "answer": "Un conflicto de fusión ocurre cuando dos ramas tienen cambios en las mismas líneas de código. Para resolverlo, debes abrir el archivo en conflicto, editar manualmente las secciones en conflicto para que queden como desees y luego hacer un commit para finalizar la fusión.",
-      "favorite": false
+      "answer": "Un conflicto de fusión ocurre cuando dos ramas tienen cambios en las mismas líneas de código. Para resolverlo, debes abrir el archivo en conflicto, editar manualmente las secciones en conflicto para que queden como desees y luego hacer un commit para finalizar la fusión."
     },
     {
       "id": 136,
       "category": "Git",
       "level": "Middle",
       "question": "Explica el flujo de trabajo típico de Git para colaborar en un proyecto con otros desarrolladores.",
-      "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos.",
-      "favorite": false
+      "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos."
     },
     {
       "id": 137,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es Git rebase y cuál es su propósito?",
-      "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra.",
-      "favorite": false
+      "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra."
     },
     {
       "id": 138,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es un submódulo Git?",
-      "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos.",
-      "favorite": false
+      "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos."
     },
     {
       "id": 139,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es 'git stash' y cuándo se utiliza?",
-      "answer": "'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales.",
-      "favorite": false
+      "answer": "'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales."
     },
     {
       "id": 140,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es Git bisect y cómo se utiliza para depurar problemas en el código?",
-      "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático.",
-      "favorite": false
+      "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático."
+    },
+    {
+      "id": 141,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Chrome DevTools - Crash Course",
+      "answer": "https://www.youtube.com/watch?v=gTVpBbFWry8"
+    },
+    {
+      "id": 142,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Fundamentos de testing",
+      "answer": "https://www.testim.io/blog/jasmine-js-a-from-scratch-tutorial-to-start-testing/"
+    },
+    {
+      "id": 143,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Parcel vs Webpack",
+      "answer": "https://www.youtube.com/watch?v=gTVpBbFWry8"
+    },
+    {
+      "id": 144,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Repositorio con lista de pruebas técnicas",
+      "answer": "https://github.com/midudev/pruebas-tecnicas"
+    },
+    {
+      "id": 145,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "¿Cómo crear tu perfil de Github?",
+      "answer": "https://midu.dev/como-crear-tu-perfil-de-github-con-readme/"
+    },
+    {
+      "id": 146,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Web para practicar código",
+      "answer": "https://www.codewars.com/"
+    },
+    {
+      "id":147,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":148,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":149,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":150,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":151,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":152,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":153,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":154,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":155,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":156,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":157,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":158,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":159,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id":160,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "",
+      "answer": ""
     }
   ]
 }

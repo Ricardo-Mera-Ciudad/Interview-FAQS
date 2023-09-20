@@ -63,6 +63,7 @@ export class FooterComponent implements OnInit {
 
   private el = inject(ElementRef);
   private renderer = inject(Renderer2);
+  public isModalShown:boolean = true;
 
   ngOnInit(): void {
     this.renderer.listen('document', 'click', (event: Event) => {

@@ -104,7 +104,9 @@ export class FooterComponent implements OnInit {
     }
   }
 
-  showModalContent(){
-    console.log("hola")
+  showWhat() {
+
+    this.hideWhat = !this.hideWhat;
   }
+
 }

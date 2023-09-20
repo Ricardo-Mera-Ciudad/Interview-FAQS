@@ -16,6 +16,16 @@
     </li>
   </ul>
 </div>
+
+<div *ngIf="hideWhat" class="footer-container__info-hide">
+  <div class="row mb-2">
+    <h2 class="col-9 footer-container__info-hide-title">¿Qué es esto?</h2>
+    <img id="aspa" src="../../../../assets/images/icon-aspa-x.png" alt="aspa" (click)="showWhat()" >
+  </div>
+    <p class="footer-container__info-hide-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum non quibusdam commodi ipsum deserunt, molestias eius laudantium cumque, ullam numquam repellat aspernatur ipsam minus maiores amet aliquam, minima facere magni.</p>
+
+</div>
+
 <footer>
   <div class="footer-container general-container">
     <div class="footer-container__name">
@@ -23,7 +33,10 @@
       <p class="footer-container__name-button">FAQS</p>
     </div>
     <div class="footer-container__info">
-      <p class="footer-container__info-button" (click)="showModalContent()">¿Qué es esto?</p>
+      <p
+        class="footer-container__info-button"
+        (click)="showWhat()"
+      >¿Qué es esto?</p>
     </div>
     <div class="footer-container__contact">
       <p

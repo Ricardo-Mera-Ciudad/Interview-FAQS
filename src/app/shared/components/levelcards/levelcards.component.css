@@ -17,10 +17,8 @@
   transition: transform 0.3s ease;
   background-color: #0f213b;
   color: #FCFCFC;
-  @media (min-width: 768px){
-
-  }
 }
+
 
 .card-level {
   width: auto;
@@ -55,4 +53,45 @@
   @media (min-width: 768px){
     font-size: 18px;
   }
+}
+.graphic-main-level-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.graphic-level-container-one{
+  height: 10px;
+  width: 5px;
+  border: 1px solid #e1effb;
+  border-radius: 1px;
+  background-color: green;
+}
+.graphic-level-container-two{
+  height: 12px;
+  width: 5px;
+  border: 1px solid #e1effb;
+  border-radius: 1px;
+  background-color: transparent;
+}
+.graphic-level-container-two-middle{
+  height: 12px;
+  width: 5px;
+  border: 1px solid #e1effb;
+  border-radius: 1px;
+  background-color: green;
+}
+
+.graphic-level-container-three{
+  height: 15px;
+  width: 5px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  background-color: transparent;
+}
+.graphic-level-container-three-senior{
+  height: 15px;
+  width: 5px;
+  border: 1px solid #e1effb;
+  border-radius: 1px;
+  background-color: green;
 }

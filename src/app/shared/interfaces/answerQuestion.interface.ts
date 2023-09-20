@@ -9,7 +9,9 @@ export interface Question {
 
   question: string,
 
-  answer: string
+  answer: string,
+
+  favorite: boolean
 }
 
 export enum Level {

@@ -6,12 +6,18 @@
   height: 100vh;
   color: #fcfcfc;
 }
+
+
 .login-title {
   text-align: center;
 }
-.register-link-question{
+
+
+.register-link-question {
   color: #fcfcfc;
 }
+
+
 .loginForm {
   display: flex;
   flex-direction: column;
@@ -24,16 +30,16 @@
   margin-bottom: 20px;
   border-radius: 2px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
   @media (min-width: 768px) {
     width: 500px;
-
   }
 
   @media (min-width: 1024px) {
     width: 600px;
-
   }
 }
+
 
 .login-submit-button {
   border: 1px solid #778899;
@@ -41,6 +47,7 @@
   background-color: #e1effb;
   color: #0f213b;
   padding: 5px 15px;
+
   @media(min-width: 768px) {
     padding: 10px 30px;
   }

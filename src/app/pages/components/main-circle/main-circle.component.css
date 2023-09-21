@@ -4,15 +4,19 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+
   @media (min-width: 768px) {
     align-items: center;
     justify-content: center;
   }
+
   @media (min-width: 1024px) {
     flex-direction: row;
     gap: 70px;
-  }
+  };
 }
+
+
 .circle-container {
   display: flex;
   flex-direction: column;
@@ -25,16 +29,20 @@
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.358),
     8px 8px 6px rgb(0, 0, 0, 0.5);
   margin: 0px 14px;
+
   @media (min-width: 768px) {
     width: 480px;
     height: 480px;
     margin-top: 50px;
   }
+
   @media (min-width: 1024px) {
     width: 500px;
     height: 500px;
   }
 }
+
+
 .circle-button {
   position: relative;
   width: 110px;
@@ -46,15 +54,19 @@
   cursor: pointer;
   overflow: hidden;
   transition: transform 0.1s ease;
+
   @media (min-width: 768px) {
     width: 160px;
     height: 160px;
     margin: 11px;
   }
+
   @media (min-width: 1024px) {
     margin: 15px;
   }
 }
+
+
 .center-circle {
   border-radius: 50%;
   width: 100px;
@@ -72,27 +84,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (min-width: 768px) {
     width: 140px;
     height: 140px;
   }
+
   @media (min-width: 1024px) {
     width: 150px;
     height: 150px;
+  }
 }
-}
+
+
 .img-circle-item {
   width: 50px;
+
   @media (min-width: 768px) {
     width: 70px;
   }
 }
+
+
 .img-circle-js {
   width: 40px;
+
   @media (min-width: 768px) {
     width: 60px;
   }
 }
+
+
 .circle-html {
   background-color: rgba(255, 109, 0);
   background-image: radial-gradient(rgba(255, 0, 0, 0.496), transparent);
@@ -104,6 +126,8 @@
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+
 .circle-css {
   background-color: green;
   background-image: radial-gradient(rgba(54, 158, 54, 0.808), transparent);
@@ -115,6 +139,8 @@
   border-top-right-radius: 70px;
   border-bottom-right-radius: 5px;
 }
+
+
 .circle-typescript {
   background-color: rgb(3, 155, 229);
   background-image: radial-gradient(rgba(7, 7, 171, 0.745), transparent);
@@ -126,6 +152,8 @@
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 5px;
 }
+
+
 .circle-javascript {
   background: yellow;
   background-image: radial-gradient(orange, transparent);
@@ -137,6 +165,8 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 70px;
 }
+
+
 .label-layer-circle {
   position: absolute;
   width: 100%;
@@ -148,65 +178,90 @@
   transition: opacity 0.1s ease;
   background-color: rgba(255, 255, 255, 0.358);
 }
+
+
 .circle-hover-text {
   font-size: 16px;
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
+
+
 .circle-button:hover,
 .center-circle:hover {
   transform: scale(1.1);
 }
+
+
 .circle-button:hover .label-layer-circle {
   opacity: 1;
 }
+
+
 .center-circle:hover .label-layer-circle {
   opacity: 1;
 }
+
+
 .circle-button:hover .img-circle-item {
   display: none;
 }
+
+
 .circle-button:not(:hover) .img-circle-item {
   display: block;
 }
+
 
 .center-circle:hover .img-circle-item {
   display: none;
 }
 
+
 .center-circle:not(:hover) .img-circle-item {
   display: block;
 }
+
 
 .circle-option-buttons {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+
   @media (min-width: 768px) {
     flex-direction: row;
   }
+
   @media (min-width: 1024px) {
     flex-direction: column;
   }
 }
+
+
 .circle-button-item {
   background-color: #0f213B;
   color: #FCFCFC;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.358),
     4px 4px 3px rgb(0, 0, 0, 0.5);
   width: 250px;
+
   @media (min-width: 768px) {
     width: 200px;
   }
+
   @media (min-width: 1024px) {
     width: 400px;
   }
 }
+
+
 .circle-button-git {
   margin: 20px 0;
+
   @media (min-width: 768px) {
     margin: 0 20px;
   }
+
   @media (min-width: 1024px) {
     margin: 20px 0;
   }

@@ -1,12 +1,4 @@
-import {
-  Component,
-  ElementRef,
-  EventEmitter,
-  OnInit,
-  Output,
-  Renderer2,
-  inject,
-} from '@angular/core';
+import {Component,ElementRef,EventEmitter,OnInit,Output,Renderer2,inject} from '@angular/core';
 import { Contributor } from '../../interfaces/contributors.interface';
 
 @Component({
@@ -15,12 +7,17 @@ import { Contributor } from '../../interfaces/contributors.interface';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  @Output() blurEffectToggled = new EventEmitter<boolean>()
-  isBlurred: boolean = false;
 
-  isContributorListShown: boolean = false;
-  selectedArray: Contributor[] = [];
-  contributorsArray: Contributor[] = [
+  private renderer = inject(Renderer2);
+  private elementRef = inject(ElementRef);
+
+  public hideWhat: boolean = false;
+  public whatDo: string = '';
+  public isModalShown:boolean = true;
+  public isBlurred: boolean = false;
+  public isContributorListShown: boolean = false;
+  public selectedArray: Contributor[] = [];
+  public contributorsArray: Contributor[] = [
     {
       image: '../../../../assets/images/lola-garcia.jpg',
       contributor: 'Lola García Morcillo',
@@ -57,17 +54,13 @@ export class FooterComponent implements OnInit {
       link: 'https://www.linkedin.com/in/daniel-s%C3%A1nchez-pinazo-00336a231/',
     },
   ];
-
-  public hideWhat: boolean = false;
-  public whatDo: string = '';
-
-  private el = inject(ElementRef);
-  private renderer = inject(Renderer2);
-  public isModalShown:boolean = true;
+  
+  @Output() blurEffectToggled = new EventEmitter<boolean>()
+  
 
   ngOnInit(): void {
     this.renderer.listen('document', 'click', (event: Event) => {
-      if (!this.el.nativeElement.contains(event.target)) {
+      if (!this.elementRef.nativeElement.contains(event.target)) {
         this.closeMenu();
         this.isBlurred = false;
         this.blurEffectToggled.emit(this.isBlurred);
@@ -105,7 +98,6 @@ export class FooterComponent implements OnInit {
   }
 
   showWhat() {
-
     this.hideWhat = !this.hideWhat;
   }
 

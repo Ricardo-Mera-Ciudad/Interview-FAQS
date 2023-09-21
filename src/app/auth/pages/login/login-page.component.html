@@ -1,21 +1,15 @@
 <div class="login-container general-container">
+  
   <div [formGroup]="myForm" (ngSubmit)="onLogin()">
     <h2 class="login-title">Iniciar sesión</h2>
     <form class="loginForm m-4" autocomplete="off">
+
       <!-- Email -->
       <div class="mb-4">
         <label class="col-sm-3 col-form-label">Email</label>
         <div class="">
-          <input
-            type="email"
-            class="form-control"
-            placeholder="Introduzca un email válido"
-            formControlName="email"
-          />
-          <span
-            *ngIf="!isEmailValid && this.myForm.get('email')?.touched"
-            class="form-text text-danger"
-          >
+          <input type="email" class="form-control" placeholder="Introduzca un email válido" formControlName="email" />
+          <span *ngIf="!isEmailValid && this.myForm.get('email')?.touched" class="form-text text-danger">
             Ingrese un correo con un formato válido
           </span>
         </div>
@@ -25,12 +19,8 @@
       <div class="mb-4">
         <label class="col-form-label">Contraseña</label>
         <div class="">
-          <input
-            type="password"
-            class="form-control"
-            placeholder="Introduzca su contraseña"
-            formControlName="password"
-          />
+          <input type="password" class="form-control" placeholder="Introduzca su contraseña"
+            formControlName="password" />
           <span *ngIf="isFieldValid('password')" class="form-text text-danger">
             La contraseña debe de ser mayor o igual a 8 caracteres.
           </span>
@@ -46,14 +36,12 @@
       <!-- Button -->
       <div class="row">
         <div class="col login-submit-button-container">
-          <button
-            class="btn login-submit-button mt-2"
-            type="submit"
-          >
+          <button class="btn login-submit-button mt-2" type="submit">
             Enviar
           </button>
         </div>
       </div>
     </form>
   </div>
+
 </div>

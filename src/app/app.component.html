@@ -1,10 +1,7 @@
+<app-header />
 
-<app-header></app-header>
 <div class="main-content" [ngClass]="{'blur-content': isBlurred}">
   <router-outlet></router-outlet>
 </div>
 
-  <app-footer (blurEffectToggled)="toggleBlurEffect($event)"></app-footer>
-
-
-
+<app-footer (blurEffectToggled)="toggleBlurEffect($event)" />

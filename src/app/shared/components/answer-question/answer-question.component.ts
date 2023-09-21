@@ -12,24 +12,24 @@ import { UsersService } from 'src/app/auth/services/users.service';
   styleUrls: ['./answer-question.component.css'],
 })
 export class AnswerQuestionComponent {
-  public questions: Question[] = [];
 
+  private pagesService = inject(PagesService);
+  private usersService = inject(UsersService);
+  private dataService = inject(DataService);
+  
   public answerVisibility: { [key: number]: boolean } = {};
   public borderRadiusState: { [key: number]: boolean } = {};
   public favouriteStatusColor: { [key: number]: boolean } = {};
-
-  private pagesService = inject(PagesService);
+  
+  public questions: Question[] = [];
   public category: string = 'Angular';
   public level: string | null = null;
   public isLoading: boolean = true;
   public isLink: { [key: number]: boolean } = {};
 
   private unsubscribe$ = new Subject<void>();
-  private dataService = inject(DataService);
-  private usersService = inject(UsersService);
 
 
-  constructor() { }
   ngOnInit(): void {
     this.loadCategory();
   }
@@ -56,7 +56,8 @@ export class AnswerQuestionComponent {
       .pipe(
         switchMap((selectedCategory) => {
           return this.dataService.getQuestions(selectedCategory, this.level!);
-        })
+        }),
+        takeUntil(this.unsubscribe$)
       )
       .subscribe((questions: Question[]) => {
         this.questions = questions.map((question) => ({
@@ -82,6 +83,9 @@ export class AnswerQuestionComponent {
     const isFavorite = this.favouriteStatusColor[question.id];
     this.favouriteStatusColor[question.id] = !isFavorite;
     this.usersService.getAuthenticatedUserSubject()
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
       .subscribe((user) => {
         if (user && user.id) {
           const userId = user.id;
@@ -93,13 +97,18 @@ export class AnswerQuestionComponent {
           if (isFavorite) {
             this.dataService
               .removeFavoriteQuestion(userFav)
+              .pipe(
+                takeUntil(this.unsubscribe$)
+              )
               .subscribe((response) => {
                 console.log('Pregunta eliminada de favoritas:', response);
                 question.favorite = false;
               });
           } else {
-            this.dataService
-              .addFavoriteQuestion(userFav)
+            this.dataService.addFavoriteQuestion(userFav)
+              .pipe(
+                takeUntil(this.unsubscribe$)
+              )
               .subscribe((response) => {
                 console.log('Pregunta agregada a favoritas:', response);
                 question.favorite = true;

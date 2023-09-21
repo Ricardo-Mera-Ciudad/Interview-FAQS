@@ -29,18 +29,18 @@
       "id": 4
     },
     {
-      "name": "María",
-      "email": "maria@google.com",
-      "password": "87654321",
-      "confirmPassword": "87654321",
-      "id": 5
-    },
-    {
       "name": "Manolito",
       "email": "manolito@google.com",
       "password": "manolito",
       "confirmPassword": "manolito",
       "id": 6
+    },
+    {
+      "name": "Raquel",
+      "email": "raquel@google.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 7
     }
   ],
   "userFavs": [

@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page/home-page.component';
+
 import { ContentPageComponent } from './pages/content-page/content-page.component';
-import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
-import { UserDataComponent } from './pages/components/user-data/user-data.component';
-import { FavoritesComponent } from './pages/components/favorites/favorites.component';
-import { RegisterComponent } from './auth/pages/register/register.component';
-import { LoginPageComponent } from './auth/pages/login/login-page.component';
 import { EditUserComponent } from './pages/components/edit-user/edit-user.component';
+import { FavoritesComponent } from './pages/components/favorites/favorites.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { LoginPageComponent } from './auth/pages/login/login-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { RegisterComponent } from './auth/pages/register/register.component';
+import { UserDataComponent } from './pages/components/user-data/user-data.component';
 
 const routes: Routes = [
   {
@@ -33,7 +34,7 @@ const routes: Routes = [
       { path: 'data', component: UserDataComponent },
       { path: 'data/edit/:id', component: EditUserComponent },
       { path: 'favorites', component: FavoritesComponent },
-      { path: '', redirectTo: 'data', pathMatch: 'full' } 
+      { path: '', redirectTo: 'data', pathMatch: 'full' }
     ]
   },
   {

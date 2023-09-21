@@ -58,9 +58,10 @@ export class UsersService {
       )
   }
 
-  getUserById(id: number) {
-    return this.http.get(`${this.baseUrl}/users/${id}`)
+  getUserById(id: number): Observable<UserData> {
+    return this.http.get<UserData>(`${this.baseUrl}/users/${id}`);
   }
+  
 
   createJwtToken(payload: any) {
     const base64Url = btoa(JSON.stringify(payload));

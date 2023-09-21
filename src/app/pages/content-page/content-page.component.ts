@@ -13,10 +13,12 @@ export class ContentPageComponent implements OnInit, OnDestroy {
   public selectedCategory: string = "Angular";
   private unsubscribe$ = new Subject<void>();
 
+
   ngOnInit(): void {
     this.getStoredCategory();
     this.loadCategory();
   };
+
 
   getStoredCategory() {
     const storedCategory = localStorage.getItem('selectedCategory');

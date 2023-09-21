@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component, OnDestroy, OnInit, inject } from '@angula
 import { UsersService } from 'src/app/auth/services/users.service';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 import { Subject, takeUntil } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-data',
@@ -15,6 +16,8 @@ export class UserDataComponent implements OnInit, OnDestroy {
   private unsubscribe$ = new Subject<void>();
 
   private usersService = inject(UsersService);
+
+  private router = inject(Router);
   
   ngOnInit(): void {
     this.getUserLogged();
@@ -54,6 +57,30 @@ export class UserDataComponent implements OnInit, OnDestroy {
       }
     });
   }  
+
+  onConfirmDelete() {
+    if (this.userData) {
+      const confirmacion = confirm(`¿Estás seguro de que deseas eliminar tu cuenta ${this.userData.name}? Esta acción no se puede deshacer.`);
+
+      if (confirmacion) {
+        this.onDeleteUser();
+      }
+      else {
+        this.router.navigate(['/profile-page/data']);
+      }
+    }
+  }
+
+  onDeleteUser() {
+    if (this.userData) {
+      this.usersService.deleteUserById(this.userData.id).subscribe((deletedUser) => {
+        if (deletedUser) {
+          this.usersService.logout();
+          this.router.navigate(['/login']);
+        }
+      });
+    }
+  }
 
 
   ngOnDestroy(): void {

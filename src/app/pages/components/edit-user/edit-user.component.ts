@@ -30,7 +30,7 @@ export class EditUserComponent implements OnInit {
     });
   }
 
-  onSubmit() {
+  onSaveChanges() {
     if (this.user) {
       this.usersService.updateUser(this.user)
         .subscribe((updatedUser) => {

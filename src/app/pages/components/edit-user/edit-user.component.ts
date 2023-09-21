@@ -40,29 +40,30 @@ export class EditUserComponent implements OnInit, OnDestroy {
 
 
   onSaveChanges() {
-  onSubmit(): void {
     if (this.user) {
       this.usersService.updateUser(this.user)
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((updatedUser) => {
+        console.log('Usuario actualizado:', updatedUser);
+        this.user = updatedUser;
+        this.usersService.setAuthenticatedUserSubject(this.user)
+        this.router.navigate(['/profile-page/data']);
+      });
+  } else {
+    console.error('No se puede enviar el formulario porque "user" es nulo o indefinido.');
+  }
+};
 
-        .subscribe((updatedUser) => {
-          console.log('Usuario actualizado:', updatedUser);
-          this.user = updatedUser; 
-          this.usersService.setAuthenticatedUserSubject(this.user)
-          this.router.navigate(['/profile-page/data']);
-        });
-    } else {
-      console.error('No se puede enviar el formulario porque "user" es nulo o indefinido.');
-    }
-  };
 
-  
   ngOnDestroy(): void {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
   };
 
+  
   onCancelEdit(){
     this.router.navigate(['/profile-page/data']);
   }
 }
-

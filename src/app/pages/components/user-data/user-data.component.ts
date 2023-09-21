@@ -17,8 +17,6 @@ export class UserDataComponent implements OnInit, OnDestroy {
 
   private unsubscribe$ = new Subject<void>();
 
-  private usersService = inject(UsersService);
-
   private router = inject(Router);
   
   ngOnInit(): void {
@@ -54,11 +52,15 @@ export class UserDataComponent implements OnInit, OnDestroy {
   };
 
   loadUserData() {
-    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
-      if (user) {
-        this.userData = user;
-      }
-    });
+    this.usersService.getAuthenticatedUserSubject()
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((user) => {
+        if (user) {
+          this.userData = user;
+        }
+      });
   }  
 
   onConfirmDelete() {

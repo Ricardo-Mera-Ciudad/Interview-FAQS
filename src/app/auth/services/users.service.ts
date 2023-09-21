@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environments } from 'src/environment/environment';
 import { Observable, Subject, tap, map, catchError, of, switchMap, BehaviorSubject } from 'rxjs';
@@ -15,8 +15,7 @@ export class UsersService {
   public userToUpdate = new Subject<UserData>();
   private authenticatedUserSubject = new BehaviorSubject<UserData | null>(null);
 
-
-  constructor(private http: HttpClient) { }
+  private http = inject(HttpClient);
 
   setAuthenticatedUserSubject(user: UserData): void {
     this.authenticatedUserSubject.next(user)

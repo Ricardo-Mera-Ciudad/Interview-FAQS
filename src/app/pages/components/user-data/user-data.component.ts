@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { UsersService } from 'src/app/auth/services/users.service';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 import { Subject, takeUntil } from 'rxjs';
@@ -14,17 +14,15 @@ export class UserDataComponent implements OnInit, OnDestroy {
 
   private unsubscribe$ = new Subject<void>();
 
-  constructor(
-      private usersService: UsersService,
-      private cdr: ChangeDetectorRef 
-      ) {}
-
+  private usersService = inject(UsersService);
+  
   ngOnInit(): void {
-    this.userLogged();
-    this.updatedUser();
+    this.getUserLogged();
+    this.getUpdatedUser();
+    this.loadUserData();
   }
 
-  userLogged(){
+  getUserLogged(){
     this.usersService.getAuthenticatedUserSubject()
     .pipe(
       takeUntil(this.unsubscribe$)
@@ -35,7 +33,7 @@ export class UserDataComponent implements OnInit, OnDestroy {
     });
   }
 
-  updatedUser(): void {
+  getUpdatedUser(): void {
     this.usersService.getUpdatedUser()
       .pipe(
         takeUntil(this.unsubscribe$)
@@ -45,7 +43,6 @@ export class UserDataComponent implements OnInit, OnDestroy {
 
         if (updatedUser) {
           this.userData = updatedUser;
-          this.cdr.detectChanges(); 
         }
       });
   }

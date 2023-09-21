@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
 
   loadUser() {
-    this.usersService.getUpdatedUser()
+    this.usersService.getUpdatedUserSubject()
       .pipe(
         takeUntil(this.unsubscribe$)
       )

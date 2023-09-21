@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { Subject, takeUntil } from 'rxjs';
 import { UsersService } from 'src/app/auth/services/users.service';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
-import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-user-data',
@@ -10,50 +10,56 @@ import { Subject, takeUntil } from 'rxjs';
 })
 export class UserDataComponent implements OnInit, OnDestroy {
 
+  private usersService = inject(UsersService);
+
   public userData: UserData | null = null;
 
   private unsubscribe$ = new Subject<void>();
 
-  private usersService = inject(UsersService);
-  
+
   ngOnInit(): void {
     this.getUserLogged();
     this.getUpdatedUser();
     this.loadUserData();
-  }
+  };
 
-  getUserLogged(){
+
+  getUserLogged() {
     this.usersService.getAuthenticatedUserSubject()
-    .pipe(
-      takeUntil(this.unsubscribe$)
-    )
-    .subscribe((user) => {
-      console.log(user);
-      this.userData = user;
-    });
-  }
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((user) => {
+        console.log(user);
+        this.userData = user;
+      });
+  };
 
   getUpdatedUser(): void {
-    this.usersService.getUpdatedUser()
+    this.usersService.getUpdatedUserSubject()
       .pipe(
         takeUntil(this.unsubscribe$)
       )
       .subscribe((updatedUser) => {
-        console.log('Usuario actualizado:', updatedUser); 
+        console.log('Usuario actualizado:', updatedUser);
 
         if (updatedUser) {
           this.userData = updatedUser;
         }
       });
-  }
+  };
 
   loadUserData() {
-    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
-      if (user) {
-        this.userData = user;
-      }
-    });
-  }  
+    this.usersService.getAuthenticatedUserSubject()
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((user) => {
+        if (user) {
+          this.userData = user;
+        }
+      });
+  };
 
 
   ngOnDestroy(): void {

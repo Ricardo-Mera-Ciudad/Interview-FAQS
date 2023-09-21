@@ -22,7 +22,7 @@ export class AnswerQuestionComponent {
   public category: string = 'Angular';
   public level: string | null = null;
   public isLoading: boolean = true;
-  public isLink: boolean = false;
+  public isLink: { [key: number]: boolean } = {};
 
   private unsubscribe$ = new Subject<void>();
   private dataService = inject(DataService);
@@ -34,80 +34,15 @@ export class AnswerQuestionComponent {
     this.loadCategory();
   }
 
-  getFaqs() {
-    this.pagesService.selectedCategory$
-      .pipe(
-        switchMap((selectedCategory) => {
-          return this.dataService.getQuestions(selectedCategory, this.level!);
-          return this.dataService.getQuestions(selectedCategory, this.level!);
-        })
-      )
-      .subscribe((questions: Question[]) => {
-        this.questions = questions.map((question) => ({
-          ...question,
-          favorite: false,
-          
-        }));
-
-        this.questions = questions;
-
-        this.isLoading = false;
-        this.questions.forEach((question) => {
-          if(question.answer.startsWith('https://')){
-            this.isLink = true;
-            console.log(this.isLink)
-          }else {
-            this.isLink = false;
-            console.log(this.isLink)
-          }
-          this.answerVisibility[question.id] = false;
-          this.borderRadiusState[question.id] = false;
-          this.favouriteStatusColor[question.id] = false;
-        });
-       
-      });
-  }
-
-  favouriteStatus(question: Question) {
-    const isFavorite = this.favouriteStatusColor[question.id];
-    this.favouriteStatusColor[question.id] = !isFavorite;
-
-    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
-      if (user && user.id) {
-        const userId = user.id;
-
-        const userFav: UserFavs = {
-          userId: userId,
-          questionId: question.id,
-        };
-
-        if (isFavorite) {
-          this.dataService
-            .removeFavoriteQuestion(userFav)
-            .subscribe((response) => {
-              console.log('Pregunta eliminada de favoritas:', response);
-              question.favorite = false;
-            });
-        } else {
-          this.dataService
-            .addFavoriteQuestion(userFav)
-            .subscribe((response) => {
-              console.log('Pregunta agregada a favoritas:', response);
-              question.favorite = true;
-            });
-        }
-      } else {
-        alert('Por favor, inicia sesión para agregar preguntas a favoritas.');
-      }
-    });
-  }
 
   loadCategory() {
     combineLatest([
       this.pagesService.selectedCategory$,
       this.pagesService.selectedLevel$,
     ])
-      .pipe(takeUntil(this.unsubscribe$))
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
       .subscribe(([categoryFromService, levelFromService]) => {
         this.category = categoryFromService;
         this.level = levelFromService;
@@ -115,14 +50,76 @@ export class AnswerQuestionComponent {
       });
   }
 
+
+  getFaqs() {
+    this.pagesService.selectedCategory$
+      .pipe(
+        switchMap((selectedCategory) => {
+          return this.dataService.getQuestions(selectedCategory, this.level!);
+        })
+      )
+      .subscribe((questions: Question[]) => {
+        this.questions = questions.map((question) => ({
+          ...question,
+          favorite: false,
+        })
+        );
+
+        this.questions = questions;
+        this.isLoading = false;
+
+        this.questions.forEach((question) => {
+          this.isLink[question.id] = question.answer.startsWith('https://');
+          this.answerVisibility[question.id] = false;
+          this.borderRadiusState[question.id] = false;
+          this.favouriteStatusColor[question.id] = false;
+        });
+      });
+  }
+
+
+  favouriteStatus(question: Question) {
+    const isFavorite = this.favouriteStatusColor[question.id];
+    this.favouriteStatusColor[question.id] = !isFavorite;
+    this.usersService.getAuthenticatedUserSubject()
+      .subscribe((user) => {
+        if (user && user.id) {
+          const userId = user.id;
+          const userFav: UserFavs = {
+            userId: userId,
+            questionId: question.id,
+          };
+
+          if (isFavorite) {
+            this.dataService
+              .removeFavoriteQuestion(userFav)
+              .subscribe((response) => {
+                console.log('Pregunta eliminada de favoritas:', response);
+                question.favorite = false;
+              });
+          } else {
+            this.dataService
+              .addFavoriteQuestion(userFav)
+              .subscribe((response) => {
+                console.log('Pregunta agregada a favoritas:', response);
+                question.favorite = true;
+              });
+          }
+        } else {
+          alert('Por favor, inicia sesión para agregar preguntas a favoritas.');
+        }
+      });
+  }
+
+
   showAnswer(id: number) {
     this.answerVisibility[id] = !this.answerVisibility[id];
     this.borderRadiusState[id] = this.answerVisibility[id];
   }
 
+
   getCategoryImage(category: string): string {
     let imgUrl: string = '';
-
     switch (category) {
       case 'Angular':
         imgUrl = '../../../../assets/images/angular.png';
@@ -151,6 +148,7 @@ export class AnswerQuestionComponent {
     }
     return imgUrl;
   }
+
 
   ngOnDestroy() {
     this.unsubscribe$.next();

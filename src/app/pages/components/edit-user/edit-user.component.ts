@@ -32,12 +32,13 @@ export class EditUserComponent implements OnInit {
 
   onSubmit() {
     if (this.user) {
-      this.usersService.updateUser(this.user).subscribe((updatedUser) => {
-        console.log('Usuario actualizado:', updatedUser);
-        this.user = updatedUser; 
-        this.usersService.setAuthenticatedUserSubject(this.user)
-        this.router.navigate(['/profile-page/data']);
-      });
+      this.usersService.updateUser(this.user)
+        .subscribe((updatedUser) => {
+          console.log('Usuario actualizado:', updatedUser);
+          this.user = updatedUser; 
+          this.usersService.setAuthenticatedUserSubject(this.user)
+          this.router.navigate(['/profile-page/data']);
+        });
     } else {
       console.error('No se puede enviar el formulario porque "user" es nulo o indefinido.');
     }
@@ -46,6 +47,4 @@ export class EditUserComponent implements OnInit {
   onCancelEdit(){
     this.router.navigate(['/profile-page/data']);
   }
-
 }
-

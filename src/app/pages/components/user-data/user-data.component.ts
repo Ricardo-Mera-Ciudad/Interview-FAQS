@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { UsersService } from 'src/app/auth/services/users.service';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 import { Subject, takeUntil } from 'rxjs';
@@ -14,13 +14,15 @@ export class UserDataComponent implements OnInit, OnDestroy {
 
   private unsubscribe$ = new Subject<void>();
 
-  constructor(private usersService: UsersService) {}
-
+  private usersService = inject(UsersService);
+  
   ngOnInit(): void {
-    this.userLogged();
+    this.getUserLogged();
+    this.getUpdatedUser();
+    this.loadUserData();
   }
 
-  userLogged(){
+  getUserLogged(){
     this.usersService.getAuthenticatedUserSubject()
     .pipe(
       takeUntil(this.unsubscribe$)
@@ -30,6 +32,28 @@ export class UserDataComponent implements OnInit, OnDestroy {
       this.userData = user;
     });
   }
+
+  getUpdatedUser(): void {
+    this.usersService.getUpdatedUser()
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((updatedUser) => {
+        console.log('Usuario actualizado:', updatedUser); 
+
+        if (updatedUser) {
+          this.userData = updatedUser;
+        }
+      });
+  }
+
+  loadUserData() {
+    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
+      if (user) {
+        this.userData = user;
+      }
+    });
+  }  
 
 
   ngOnDestroy(): void {

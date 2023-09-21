@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environments } from 'src/environment/environment';
 import { Observable, Subject, tap, map, catchError, of, switchMap, BehaviorSubject } from 'rxjs';
@@ -8,14 +8,14 @@ import { UserData } from 'src/app/shared/interfaces/user-data.interface';
   providedIn: 'root',
 })
 export class UsersService {
+
   private baseUrl: string = environments.baseUrl;
   private user?: UserData | null;
   public userAdded = new Subject<UserData>();
   public userToUpdate = new Subject<UserData>();
   private authenticatedUserSubject = new BehaviorSubject<UserData | null>(null);
 
-
-  constructor(private http: HttpClient) { }
+  private http = inject(HttpClient);
 
   setAuthenticatedUserSubject(user: UserData): void {
     this.authenticatedUserSubject.next(user)
@@ -38,14 +38,20 @@ export class UsersService {
     return this.userAdded.asObservable();
   }
 
-  updateUser(user: any): Observable<UserData> {
+  updateUser(user: UserData): Observable<UserData> {
     if (!user.id) throw Error('User id is required');
+  
+    console.log('Datos que se envían para actualizar:', user);
+  
     return this.http.patch<UserData>(`${this.baseUrl}/users/${user.id}`, user)
       .pipe(
-        tap(updatedUser => this.userToUpdate.next(updatedUser))
-      )
+        tap(updatedUser => {
+          console.log('Respuesta del servidor después de la actualización:', updatedUser);
+          this.userToUpdate.next(updatedUser);
+        })
+      );
   }
-
+  
   getUpdatedUser(): Observable<UserData> {
     return this.userToUpdate.asObservable();
   }

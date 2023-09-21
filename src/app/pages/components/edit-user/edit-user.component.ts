@@ -43,5 +43,9 @@ export class EditUserComponent implements OnInit {
     }
   }
 
+  onCancelEdit(){
+    this.router.navigate(['/profile-page/data']);
+  }
+
 }
 

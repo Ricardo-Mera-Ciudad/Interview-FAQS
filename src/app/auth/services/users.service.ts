@@ -8,6 +8,7 @@ import { UserData } from 'src/app/shared/interfaces/user-data.interface';
   providedIn: 'root',
 })
 export class UsersService {
+
   private baseUrl: string = environments.baseUrl;
   private user?: UserData | null;
   public userAdded = new Subject<UserData>();
@@ -38,14 +39,20 @@ export class UsersService {
     return this.userAdded.asObservable();
   }
 
-  updateUser(user: any): Observable<UserData> {
+  updateUser(user: UserData): Observable<UserData> {
     if (!user.id) throw Error('User id is required');
+  
+    console.log('Datos que se envían para actualizar:', user);
+  
     return this.http.patch<UserData>(`${this.baseUrl}/users/${user.id}`, user)
       .pipe(
-        tap(updatedUser => this.userToUpdate.next(updatedUser))
-      )
+        tap(updatedUser => {
+          console.log('Respuesta del servidor después de la actualización:', updatedUser);
+          this.userToUpdate.next(updatedUser);
+        })
+      );
   }
-
+  
   getUpdatedUser(): Observable<UserData> {
     return this.userToUpdate.asObservable();
   }

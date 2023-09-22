@@ -1,8 +1,8 @@
-import { ChangeDetectorRef, Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
+import { Router } from '@angular/router';
 import { UsersService } from 'src/app/auth/services/users.service';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-data',
@@ -12,13 +12,13 @@ import { Router } from '@angular/router';
 export class UserDataComponent implements OnInit, OnDestroy {
 
   private usersService = inject(UsersService);
+  private router = inject(Router);
 
   public userData: UserData | null = null;
 
   private unsubscribe$ = new Subject<void>();
 
-  private router = inject(Router);
-  
+
   ngOnInit(): void {
     this.getUserLogged();
     this.getUpdatedUser();
@@ -36,6 +36,7 @@ export class UserDataComponent implements OnInit, OnDestroy {
         this.userData = user;
       });
   };
+  
 
   getUpdatedUser(): void {
     this.usersService.getUpdatedUserSubject()
@@ -51,6 +52,7 @@ export class UserDataComponent implements OnInit, OnDestroy {
       });
   };
 
+
   loadUserData() {
     this.usersService.getAuthenticatedUserSubject()
       .pipe(
@@ -61,31 +63,33 @@ export class UserDataComponent implements OnInit, OnDestroy {
           this.userData = user;
         }
       });
-  }  
+  };
+
 
   onConfirmDelete() {
     if (this.userData) {
-      const confirmacion = confirm(`¿Estás seguro de que deseas eliminar tu cuenta ${this.userData.name}? Esta acción no se puede deshacer.`);
+      const confirmation = confirm(`¿Estás seguro de que deseas eliminar tu cuenta ${this.userData.name}? Esta acción no se puede deshacer.`);
 
-      if (confirmacion) {
-        this.onDeleteUser();
+      if (confirmation) {
+        localStorage.removeItem('authToken');
+        this.onDeleteUser(this.userData);
       }
       else {
         this.router.navigate(['/profile-page/data']);
       }
     }
-  }
+  };
 
-  onDeleteUser() {
-    if (this.userData) {
-      this.usersService.deleteUserById(this.userData.id).subscribe((deletedUser) => {
-        if (deletedUser) {
-          this.usersService.logout();
-          this.router.navigate(['/login']);
-        }
+
+  onDeleteUser(userData: UserData) {
+    this.usersService.deleteUserById(userData.id)
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((_) => {
+        this.router.navigate(['/login']);
       });
-    }
-  }
+  };
 
 
   ngOnDestroy(): void {

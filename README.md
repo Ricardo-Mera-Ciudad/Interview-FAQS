@@ -1,6 +1,12 @@
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+   <img style="width:1000px; height:500px; margin:12px" src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/assets/116545851/a435e806-7b0d-49b8-af01-98dc0b59f0a2">
+</div>
+
 # INTERVIEW FAQs
 
 Welcome to INTERVIEW FAQs! This project stems from our eagerness to share the Angular knowledge we've gained during our frontend developer internships at Bosonit. Our primary goal has always been to solidify our own understanding and assist other junior developers in preparing for the theoretical aspects of job interviews.
+
+**We hope INTERVIEW FAQs helps you prepare for your future frontend developer job interviews!**
 
 ## Description
 
@@ -12,13 +18,20 @@ The project's design is inspired by the "Simon memory game," making it both fun 
 
 This project has been developed using the following technologies:
 
-- Angular
 - TypeScript
 - JavaScript
 - HTML
 - CSS
-- GIT
-- Visual Studio Code
+- Google Chrome dev tools
+
+<p align="left">    
+   <img src="https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white"></img>
+   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"></img>
+   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"></img>
+   <img src="https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white"></img>
+   <img src="https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white"></img>
+   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></img>   
+</p>
 
 ## Installation
 
@@ -33,19 +46,14 @@ Ensure that the JSON server is running for data persistence.
 
 ## Contributors
 
--María Dolores García Morcillo
-
--Carlos Ortiz Sánchez
-
--Jesús Villalón Gallardo
-
--Ricardo Mera Ciudad
-
--Giovanni Martínez Díaz
-
--David Galisteo Pujol
-
--Daniel Sánchez Pinazo
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/lola-garcia.jpg" alt="Foto de Lola García" width="50px" height="50px" style="border-radius: 50%;"> | [María Dolores García Morcillo](https://github.com/LolaGM) |
+|---|---|
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/carlos-photo.jpg" alt="Foto de Carlos Ortiz Sánchez" width="50px" height="50px" style="border-radius: 50%;"> | [Carlos Ortiz Sánchez](https://github.com/Solracort) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/jesus-villalon.jpg" alt="Foto de Jesús Villalón Gallardo" width="50px" height="50px" style="border-radius: 50%;"> | [Jesús Villalón Gallardo](https://github.com/jesusvillalon) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/ricardo-mera.jpg" alt="Foto de Ricardo Mera Ciudad" width="50px" height="50px" style="border-radius: 50%;"> | [Ricardo Mera Ciudad](https://github.com/Ricardo-Mera-Ciudad) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/david-photo.jpg" alt="Foto de David Galisteo Pujol" width="50px" height="50px" style="border-radius: 50%;"> | [David Galisteo Pujol](https://github.com/davidgalisteopujol) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/daniel-sanchez.jpg" alt="Foto de Daniel Sánchez Pinazo" width="50px" height="50px" style="border-radius: 50%;"> | [Daniel Sánchez Pinazo](https://github.com/DanielSanchezPinazo) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/gio-photo.jpg" alt="Foto de Giovanni Martínez Díaz" width="50px" height="50px" style="border-radius: 50%;"> | Giovanni Martínez Díaz |
 
 ## Next Steps
 
@@ -55,9 +63,6 @@ Our future plans for INTERVIEW FAQs include:
 - Implementing random tests to assess acquired knowledge.
 - Including technical tests related
 - Testing code 
-
-
-**We hope INTERVIEW FAQs helps you prepare for your future frontend developer job interviews!**
 
 ## Steps followed when installing the project and recommendations 
 
@@ -80,6 +85,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # INTERVIEW FAQs
 
 ¡Bienvenido a INTERVIEW FAQs! Este proyecto nace de la pasión por compartir el aprendizaje de Angular adquirido durante las prácticas como frontend developer en la empresa Bosonit. Nuestro objetivo principal es consolidar nuestros conocimientos y ayudar a otros juniors como nosotros a prepararse para la parte teórica de las entrevistas en procesos de selección.
+
+**¡Esperamos que INTERVIEW FAQs te ayude a prepararte para tus futuras entrevistas de trabajo como desarrollador frontend!**
 
 ## Descripción
 
@@ -112,19 +119,14 @@ Para instalar y ejecutar el proyecto en tu entorno local, sigue estos pasos:
 
 ## Colaboradores
 
--María Dolores García Morcillo
-
--Carlos Ortiz Sánchez
-
--Jesús Villalón Gallardo
-
--Ricardo Mera Ciudad
-
--Giovanni Martínez Díaz
-
--David Galisteo Pujol
-
--Daniel Sánchez Pinazo
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/lola-garcia.jpg" alt="Foto de Lola García" width="50px" height="50px" style="border-radius: 50%;"> | [María Dolores García Morcillo](https://github.com/LolaGM) |
+|---|---|
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/carlos-photo.jpg" alt="Foto de Carlos Ortiz Sánchez" width="50px" height="50px" style="border-radius: 50%;"> | [Carlos Ortiz Sánchez](https://github.com/Solracort) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/jesus-villalon.jpg" alt="Foto de Jesús Villalón Gallardo" width="50px" height="50px" style="border-radius: 50%;"> | [Jesús Villalón Gallardo](https://github.com/jesusvillalon) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/ricardo-mera.jpg" alt="Foto de Ricardo Mera Ciudad" width="50px" height="50px" style="border-radius: 50%;"> | [Ricardo Mera Ciudad](https://github.com/Ricardo-Mera-Ciudad) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/david-photo.jpg" alt="Foto de David Galisteo Pujol" width="50px" height="50px" style="border-radius: 50%;"> | [David Galisteo Pujol](https://github.com/davidgalisteopujol) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/daniel-sanchez.jpg" alt="Foto de Daniel Sánchez Pinazo" width="50px" height="50px" style="border-radius: 50%;"> | [Daniel Sánchez Pinazo](https://github.com/DanielSanchezPinazo) |
+| <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/blob/main/src/assets/images/gio-photo.jpg" alt="Foto de Giovanni Martínez Díaz" width="50px" height="50px" style="border-radius: 50%;"> | Giovanni Martínez Díaz |
 
 ## Próximos Pasos
 
@@ -133,8 +135,6 @@ Nuestros planes futuros para INTERVIEW FAQs incluyen:
 - Agregar más preguntas relacionadas con otros frameworks como React y Vue.
 - Implementar pruebas aleatorias para evaluar los conocimientos adquiridos.
 - Incluir pruebas técnicas
-
-**¡Esperamos que INTERVIEW FAQs te ayude a prepararte para tus futuras entrevistas de trabajo como desarrollador frontend!**
 
 ## Pasos seguidos al instalar el proyecto y recomendaciones
 

@@ -21,7 +21,7 @@ export class FooterComponent implements OnInit {
     {
       image: '../../../../assets/images/lola-garcia.jpg',
       contributor: 'Lola García Morcillo',
-      link: 'https://es.linkedin.com/in/lola-garcia-morcillo',
+      link: 'https://www.linkedin.com/in/lola-garcia-morcillo',
     },
     {
       image: '../../../../assets/images/carlos-ortiz.png',
@@ -36,17 +36,17 @@ export class FooterComponent implements OnInit {
     {
       image: '../../../../assets/images/ricardo-mera.jpg',
       contributor: 'Ricardo Mera Ciudad',
-      link: 'https://www.linkedin.com/in/ricardo-mera.jpg/',
+      link: 'https://es.linkedin.com/in/ricardo-mera-ciudad-26b58a159/',
     },
     {
       image: '../../../../assets/images/giovanni.PNG',
       contributor: 'Giovanni Martínez Díaz',
-      link: 'asdf3',
+      link: 'https://es.linkedin.com/in/giovanni-jose-mart%C3%ADnez-d%C3%ADaz-',
     },
     {
       image: '../../../../assets/images/David.PNG',
       contributor: 'David Galisteo Pujol',
-      link: 'asdf3',
+      link: 'https://es.linkedin.com/in/davidgalisteopujol',
     },
     {
       image: '../../../../assets/images/daniel-sanchez.jpg',

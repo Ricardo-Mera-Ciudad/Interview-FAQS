@@ -1,12 +1,4 @@
-import {
-  Component,
-  ElementRef,
-  EventEmitter,
-  OnInit,
-  Output,
-  Renderer2,
-  inject,
-} from '@angular/core';
+import {Component,ElementRef,EventEmitter,OnInit,Output,Renderer2,inject} from '@angular/core';
 import { Contributor } from '../../interfaces/contributors.interface';
 
 @Component({
@@ -15,16 +7,21 @@ import { Contributor } from '../../interfaces/contributors.interface';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  @Output() blurEffectToggled = new EventEmitter<boolean>()
-  isBlurred: boolean = false;
 
-  isContributorListShown: boolean = false;
-  selectedArray: Contributor[] = [];
-  contributorsArray: Contributor[] = [
+  private renderer = inject(Renderer2);
+  private elementRef = inject(ElementRef);
+
+  public hideWhat: boolean = false;
+  public whatDo: string = '';
+  public isModalShown:boolean = true;
+  public isBlurred: boolean = false;
+  public isContributorListShown: boolean = false;
+  public selectedArray: Contributor[] = [];
+  public contributorsArray: Contributor[] = [
     {
       image: '../../../../assets/images/lola-garcia.jpg',
       contributor: 'Lola García Morcillo',
-      link: 'https://es.linkedin.com/in/lola-garcia-morcillo',
+      link: 'https://www.linkedin.com/in/lola-garcia-morcillo',
     },
     {
       image: '../../../../assets/images/carlos-ortiz.png',
@@ -39,17 +36,17 @@ export class FooterComponent implements OnInit {
     {
       image: '../../../../assets/images/ricardo-mera.jpg',
       contributor: 'Ricardo Mera Ciudad',
-      link: 'https://www.linkedin.com/in/ricardo-mera.jpg/',
+      link: 'https://es.linkedin.com/in/ricardo-mera-ciudad-26b58a159/',
     },
     {
       image: '../../../../assets/images/giovanni.PNG',
       contributor: 'Giovanni Martínez Díaz',
-      link: 'asdf3',
+      link: 'https://es.linkedin.com/in/giovanni-jose-mart%C3%ADnez-d%C3%ADaz-',
     },
     {
       image: '../../../../assets/images/David.PNG',
       contributor: 'David Galisteo Pujol',
-      link: 'asdf3',
+      link: 'https://es.linkedin.com/in/davidgalisteopujol',
     },
     {
       image: '../../../../assets/images/daniel-sanchez.jpg',
@@ -57,16 +54,13 @@ export class FooterComponent implements OnInit {
       link: 'https://www.linkedin.com/in/daniel-s%C3%A1nchez-pinazo-00336a231/',
     },
   ];
-
-  public hideWhat: boolean = false;
-  public whatDo: string = '';
-
-  private el = inject(ElementRef);
-  private renderer = inject(Renderer2);
+  
+  @Output() blurEffectToggled = new EventEmitter<boolean>()
+  
 
   ngOnInit(): void {
     this.renderer.listen('document', 'click', (event: Event) => {
-      if (!this.el.nativeElement.contains(event.target)) {
+      if (!this.elementRef.nativeElement.contains(event.target)) {
         this.closeMenu();
         this.isBlurred = false;
         this.blurEffectToggled.emit(this.isBlurred);
@@ -102,4 +96,9 @@ export class FooterComponent implements OnInit {
       }, 200);
     }
   }
+
+  showWhat() {
+    this.hideWhat = !this.hideWhat;
+  }
+
 }

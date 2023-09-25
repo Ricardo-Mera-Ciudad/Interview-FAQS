@@ -11,7 +11,7 @@ export class MainCircleComponent {
   private pagesService = inject(PagesService);
 
   chooseCategory(category: string) {
-    this.pagesService.setCategory(category)
-  }
+    this.pagesService.setCategory(category);
+  };
 
 }

@@ -7,36 +7,41 @@ import { Subject, takeUntil } from 'rxjs';
   templateUrl: './content-page.component.html',
   styleUrls: ['./content-page.component.css']
 })
-export class ContentPageComponent implements OnInit, OnDestroy{
+export class ContentPageComponent implements OnInit, OnDestroy {
 
   private pagesService = inject(PagesService);
-
   public selectedCategory: string = "Angular";
   private unsubscribe$ = new Subject<void>();
 
+
   ngOnInit(): void {
-   this.getStoredCategory();
-   this.loadCategory();
-  }
+    this.getStoredCategory();
+    this.loadCategory();
+  };
+
 
   getStoredCategory() {
     const storedCategory = localStorage.getItem('selectedCategory');
-    if(storedCategory){
+    if (storedCategory) {
       this.selectedCategory = storedCategory;
     }
-  }
+  };
 
-  loadCategory(){
+
+  loadCategory() {
     this.pagesService.setCategory(this.selectedCategory);
     this.pagesService.selectedCategory$
-    .pipe(takeUntil(this.unsubscribe$))
-    .subscribe(content =>
-      this.selectedCategory = content)
-  }
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe(content =>
+        this.selectedCategory = content);
+  };
+
 
   ngOnDestroy(): void {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
-  }
+  };
 
 }

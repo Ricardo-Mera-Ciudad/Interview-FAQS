@@ -1,6 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { PagesService } from '../../services/pages.service';
-import { Subject, takeUntil } from 'rxjs';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-angular-questions-component',

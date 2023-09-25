@@ -120,6 +120,47 @@
   }
 }
 
+.footer-container__info-hide {
+  width: 80%;
+  background-color: #0f213b;
+  border-radius: 8px;
+  padding: 10px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.footer-container__info-hide-title {
+  color: white;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: auto; */
+  z-index: 2;
+}
+
+.footer-container__info-hide-text {
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  z-index: 2;
+}
+
+#aspa {
+  width: 45px;
+  height: 20px;
+  position: fixed;
+  top: 10px;
+  right: 0px;
+}
+
 @media screen and (min-width: 1024px) {
   .footer-container__contributors-list-item {
     width: 530px;

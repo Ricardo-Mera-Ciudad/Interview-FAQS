@@ -13,8 +13,6 @@ export class PagesService {
   private level$: BehaviorSubject<string> = new BehaviorSubject("Junior")
   public selectedLevel$: Observable<string> = this.level$.asObservable();
 
-  constructor() { }
-
   setCategory(category: string){
     this.category$.next(category);
     localStorage.setItem('selectedCategory', category);

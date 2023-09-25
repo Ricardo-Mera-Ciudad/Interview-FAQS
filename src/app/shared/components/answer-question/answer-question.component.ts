@@ -10,6 +10,9 @@ import { DataService } from 'src/app/pages/services/data.service';
   styleUrls: ['./answer-question.component.css'],
 })
 export class AnswerQuestionComponent {
+  private pagesService = inject(PagesService);
+  private dataService = inject(DataService);
+
   public questions: Question[] = [];
   public favoriteQuestions: Question[] = [];
   public answerVisibility: { [key: number]: boolean } = {};
@@ -19,12 +22,10 @@ export class AnswerQuestionComponent {
   public category: string = 'Angular';
   public level: string | null = null;
   public isLoading: boolean = true;
+  public isLink: { [key: number]: boolean } = {};
   private unsubscribe$ = new Subject<void>();
 
-  private pagesService = inject(PagesService);
-  private dataService = inject(DataService);
 
-  constructor() {}
   ngOnInit(): void {
     this.favoriteEventChanged()
     this.loadCategory();
@@ -40,7 +41,8 @@ export class AnswerQuestionComponent {
       .pipe(
         switchMap((selectedCategory) => {
           return this.dataService.getQuestions(selectedCategory, this.level!);
-        })
+        }),
+        takeUntil(this.unsubscribe$)
       )
       .subscribe((questions: Question[]) => {
         this.questions = questions.map((question) => ({
@@ -51,6 +53,7 @@ export class AnswerQuestionComponent {
         this.questions = questions;
         this.isLoading = false;
         this.questions.forEach((question) => {
+          this.isLink[question.id] = question.answer.startsWith('https://');
           this.answerVisibility[question.id] = false;
           this.borderRadiusState[question.id] = false;
         });

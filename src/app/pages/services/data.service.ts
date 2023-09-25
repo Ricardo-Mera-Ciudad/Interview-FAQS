@@ -9,6 +9,7 @@ import { environments } from 'src/environment/environment';
   providedIn: 'root',
 })
 export class DataService {
+
   private apiUrl = environments.baseUrl;
   private favoriteChanged = new Subject<number>();
 

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environments } from 'src/environment/environment';
 import { Observable, Subject, tap, map, catchError, of, switchMap, BehaviorSubject } from 'rxjs';
@@ -8,36 +8,59 @@ import { UserData } from 'src/app/shared/interfaces/user-data.interface';
   providedIn: 'root',
 })
 export class UsersService {
+
+  // private http = inject(HttpClient);
+
   private baseUrl: string = environments.baseUrl;
   private user?: UserData | null;
-  public userAdded = new Subject<UserData>();
-  public userToUpdate = new Subject<UserData>();
-  private authenticatedUserSubject = new BehaviorSubject<UserData | null>(null);
-  private isLoggedInSubject = new BehaviorSubject<boolean>(false);
+
+  public userAddedSubject$ = new Subject<UserData>();
+  public userToUpdateSubject$ = new Subject<UserData>();
+  private authenticatedUserSubject$ = new BehaviorSubject<UserData | null>(null);
+  private isLoggedInSubject$ = new BehaviorSubject<boolean>(false);
 
   constructor(private http: HttpClient) {
     this.checkLoginStatus();
   }
 
-  setAuthenticatedUserSubject(user: UserData): void {
-    this.authenticatedUserSubject.next(user)
-  }
+
+  setUserAddedSubject(user: UserData): void {
+    this.userAddedSubject$.next(user);
+  };
+
+  getAddedUserSubject(): Observable<UserData> {
+    return this.userAddedSubject$.asObservable();
+  };
+
+
+  setUserToUpdateSubject(user: UserData): void {
+    this.userToUpdateSubject$.next(user);
+  };
+
+  getUpdatedUserSubject(): Observable<UserData> {
+    return this.userToUpdateSubject$.asObservable();
+  };
+
+
+  setAuthenticatedUserSubject(user: UserData | null): void {
+    this.authenticatedUserSubject$.next(user)
+  };
 
   getAuthenticatedUserSubject(): Observable<UserData | null> {
-    return this.authenticatedUserSubject.asObservable();
+    return this.authenticatedUserSubject$.asObservable();
   }
 
   checkLoginStatus(){
     const authToken = localStorage.getItem('authToken');
     if(authToken) {
-      this.isLoggedInSubject.next(true)
+      this.isLoggedInSubject$.next(true)
     } else {
-      this.isLoggedInSubject.next(false);
+      this.isLoggedInSubject$.next(false);
     }
   }
 
   get isLoggedIn$(): Observable<boolean> {
-    return this.isLoggedInSubject.asObservable();
+    return this.isLoggedInSubject$.asObservable();
   }
 
 
@@ -45,26 +68,24 @@ export class UsersService {
     return this.http.post<UserData>(`${this.baseUrl}/users`, user)
       .pipe(
         tap((addedUser) => {
-          this.userAdded.next(addedUser)
+          this.setUserAddedSubject(addedUser);
         })
       )
-  }
+  };
 
-  getAddedUser(): Observable<UserData> {
-    return this.userAdded.asObservable();
-  }
 
   updateUser(user: UserData): Observable<UserData> {
     if (!user.id) throw Error('User id is required');
+
     return this.http.patch<UserData>(`${this.baseUrl}/users/${user.id}`, user)
       .pipe(
-        tap(updatedUser => this.userToUpdate.next(updatedUser))
-      )
-  }
+        tap(updatedUser => {
+          console.log('Respuesta del servidor después de la actualización:', updatedUser);
+          this.setUserToUpdateSubject(updatedUser);
+        })
+      );
+  };
 
-  getUpdatedUser(): Observable<UserData> {
-    return this.userToUpdate.asObservable();
-  }
 
   deleteUserById(id: number): Observable<boolean> {
     return this.http.delete(`${this.baseUrl}/users/${id}`)
@@ -72,16 +93,19 @@ export class UsersService {
         map(() => true),
         catchError(() => of(false))
       )
-  }
+  };
+
 
   getUserById(id: number): Observable<UserData> {
-    return this.http.get<UserData>(`${this.baseUrl}/users/${id}`)
-  }
+    return this.http.get<UserData>(`${this.baseUrl}/users/${id}`);
+  };
+
 
   createJwtToken(payload: any) {
     const base64Url = btoa(JSON.stringify(payload));
     return base64Url;
-  }
+  };
+
 
   login(email: string, password: string): Observable<UserData | null> {
     return this.http.get<UserData[]>(`${this.baseUrl}/users`).pipe(
@@ -102,13 +126,13 @@ export class UsersService {
         return of(null);
       })
     );
-  }
+  };
 
-  logout() {
+
+  logout():void {
     this.user = null;
     localStorage.removeItem('authToken');
-    this.authenticatedUserSubject.next(null);
-  }
-
+    this.setAuthenticatedUserSubject(null);
+  };
 
 }

@@ -9,7 +9,6 @@ import { Subject, takeUntil } from 'rxjs';
 })
 export class AppComponent implements OnInit, OnDestroy {
 
-
   title = 'interview-faqs';
 
   public isBlurred: boolean = false;
@@ -18,7 +17,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.checkUserLogin();
-  }
+  };
+
 
   checkUserLogin() {
     const authDataString = localStorage.getItem('authToken');
@@ -35,9 +35,11 @@ export class AppComponent implements OnInit, OnDestroy {
     };
   };
 
+
   toggleBlurEffect(blur: boolean) {
     this.isBlurred = blur;
   };
+  
 
   ngOnDestroy(): void {
     this.unsubscribe$.next();

@@ -1,0 +1,67 @@
+<div *ngIf="user" class="edit-form-container">
+    <div>
+        <h2 class="edit-form-container__title">Editar datos</h2>
+        <form class="edit-form-container__form" (submit)="onSaveChanges()">
+            <div class="mb-3">
+                <label class="col-form-label">Nombre</label>
+                <div class="mb3">
+                <input
+                    type="text"
+                    id="name"
+                    [(ngModel)]="user.name"
+                    name="name"
+                    class="form-control"
+                    required
+                />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="col-form-label">Email</label>
+                <div class="mb-3">
+                <input
+                    type="email"
+                    id="email"
+                    [(ngModel)]="user.email"
+                    name="email"
+                    class="form-control"
+                    required
+                />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="col-form-label">Contraseña</label>
+                <div class="mb-3">
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    [(ngModel)]="user.password"
+                    class="form-control"
+                    required
+                />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="edit-form-container__button-container">
+                <button
+                    type="submit"
+                    class="edit-form-container__button-container-save-button btn btn-primary"
+                >
+                    Guardar
+                </button>
+                <button
+                    type="button"
+                    class="edit-form-container__button-container-cancel-button btn btn-secondary"
+                    (click)="onCancelEdit()"
+
+                >
+                    Cancelar
+                </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,29 +1,35 @@
+<div class="content-container">
 
-  <div class="content-container">
-    <div class="angular-questions" *ngIf="selectedCategory === 'Angular'">
-      <app-angular-questions-component />
-    </div>
-    <div class="css-questions" *ngIf="selectedCategory === 'Css'">
-      <app-css-questions-component />
-    </div>
-    <div class="html-questions" *ngIf="selectedCategory === 'Html'">
-      <app-html-questions-component />
-    </div>
-    <div class="javascript-questions" *ngIf="selectedCategory === 'Javascript'">
-      <app-javascript-questions-component />
-    </div>
-    <div class="typecript-questions" *ngIf="selectedCategory === 'Typescript'">
-      <app-typecript-questions-component />
-    </div>
-    <div class="softskills-questions" *ngIf="selectedCategory === 'Softskills'">
-      <app-softskills-questions-component />
-    </div>
-    <div class="git-questions" *ngIf="selectedCategory === 'Git'">
-      <app-git-questions-component />
-    </div>
-    <div class="weblinks-questions" *ngIf="selectedCategory === 'Weblinks'">
-      <app-weblinks-questions-component />
-    </div>
+  <div class="angular-questions" *ngIf="selectedCategory === 'Angular'">
+    <app-angular-questions-component />
   </div>
 
+  <div class="css-questions" *ngIf="selectedCategory === 'Css'">
+    <app-css-questions-component />
+  </div>
 
+  <div class="html-questions" *ngIf="selectedCategory === 'Html'">
+    <app-html-questions-component />
+  </div>
+
+  <div class="javascript-questions" *ngIf="selectedCategory === 'Javascript'">
+    <app-javascript-questions-component />
+  </div>
+
+  <div class="typecript-questions" *ngIf="selectedCategory === 'Typescript'">
+    <app-typecript-questions-component />
+  </div>
+
+  <div class="softskills-questions" *ngIf="selectedCategory === 'Softskills'">
+    <app-softskills-questions-component />
+  </div>
+
+  <div class="git-questions" *ngIf="selectedCategory === 'Git'">
+    <app-git-questions-component />
+  </div>
+
+  <div class="weblinks-questions" *ngIf="selectedCategory === 'Weblinks'">
+    <app-weblinks-questions-component />
+  </div>
+  
+</div>

@@ -1117,7 +1117,7 @@
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
-      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina." ,
+      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina.",
       "favorite": false
     },
     {
@@ -1125,7 +1125,7 @@
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un repositorio remoto en Git?",
-      "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio." ,
+      "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio.",
       "favorite": false
     },
     {
@@ -1141,7 +1141,7 @@
       "category": "Git",
       "level": "Middle",
       "question": "Explica el flujo de trabajo típico de Git para colaborar en un proyecto con otros desarrolladores.",
-      "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos." ,
+      "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos.",
       "favorite": false
     },
     {
@@ -1149,7 +1149,7 @@
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es Git rebase y cuál es su propósito?",
-      "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra." ,
+      "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra.",
       "favorite": false
     },
     {
@@ -1157,7 +1157,7 @@
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es un submódulo Git?",
-      "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos." ,
+      "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos.",
       "favorite": false
     },
     {
@@ -1215,8 +1215,8 @@
       "id": 146,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "Web para practicar código",
-      "answer": "https://www.codewars.com/"
+      "question": "Generar opiniones en retrospectiva en equipo",
+      "answer": "https://retroteam.app/"
     },
     {
       "id": 147,
@@ -1229,92 +1229,92 @@
       "id": 148,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Cursos y certificaciones de distintos lenguajes",
+      "answer": "https://www.freecodecamp.org/"
     },
     {
       "id": 149,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Lista de API's públicas ",
+      "answer": "https://publicapi.dev/"
     },
     {
       "id": 150,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Web para practicar código",
+      "answer": "https://www.codewars.com/"
     },
     {
       "id": 151,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Desafíos de programación y ejercicios",
+      "answer": "https://www.hackerrank.com/"
     },
     {
       "id": 152,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Practica tu habilidad de resolución de problemas",
+      "answer": "https://leetcode.com/"
     },
     {
       "id": 153,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Retos de programación para practicar",
+      "answer": "https://retosdeprogramacion.com/"
     },
     {
       "id": 154,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Más de 200 retos de código",
+      "answer": "https://www.coderbyte.com/challenges?utm_campaign=NewHomepage"
     },
     {
       "id": 155,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Retos algorítmicos para mejorar tu lógica",
+      "answer": "https://www.topcoder.com/"
     },
     {
       "id": 156,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Retos y programación competitiva",
+      "answer": "https://www.codechef.com/"
     },
     {
       "id": 157,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Practica código jugando",
+      "answer": "https://www.codingame.com/training"
     },
     {
       "id": 158,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Juego de ranas para practicar CSS de manera visual",
+      "answer": "http://flexboxfroggy.com/#es"
     },
     {
       "id": 159,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Practica CSS con este juego de 'tower defense'",
+      "answer": "http://www.flexboxdefense.com/"
     },
     {
       "id": 160,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Aprende los selectores de CSS en este juego de comida",
+      "answer": "https://flukeout.github.io/"
     },
     {
       "id": 161,
@@ -1323,7 +1323,7 @@
       "question": "¿Cuál es el propósito del servicio en Angular?",
       "answer": "En Angular, un servicio es una clase que se utiliza para organizar y compartir la lógica y los datos comunes entre diferentes componentes. Los servicios se utilizan para separar la lógica de negocio de los componentes y permiten la reutilización de código en toda la aplicación.",
       "favorite": false
-    },  
+    },
     {
       "id": 162,
       "category": "Angular",
@@ -1636,6 +1636,5 @@
       "answer": "Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP.",
       "favorite": false
     }
-    
   ]
 }

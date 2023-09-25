@@ -11,7 +11,7 @@
 
 ## Description
 
-INTERVIEW FAQs is a platform designed to address the most common theoretical questions in frontend developer job interviews. We have organized the questions into three levels: junior, middle, and senior, to make it easy to find relevant content. Additionally, we have included external links to learning resources for the technical part of interviews.
+INTERVIEW FAQs is a responsive platform (mobile, tablet and desktop version) designed to address the most common theoretical questions in frontend developer job interviews. We have organized the questions into three levels: junior, middle, and senior, to make it easy to find relevant content. Additionally, we have included external links to learning resources for the technical part of interviews.
 
 The project's design is inspired by the "Simon memory game," making it both fun and educational.
 
@@ -107,7 +107,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Descripción
 
-INTERVIEW FAQs es una plataforma diseñada para abordar las preguntas teóricas más comunes en las entrevistas de trabajo para desarrolladores frontend. Hemos organizado las preguntas en tres niveles: junior, middle y senior, para facilitar la búsqueda de contenido relevante. Además, hemos incluido enlaces externos a recursos de aprendizaje para la parte técnica de las entrevistas.
+INTERVIEW FAQs es una plataforma adaptada a varios dispositivos (móvil, tablet y escritorio) diseñada para abordar las preguntas teóricas más comunes en las entrevistas de trabajo para desarrolladores frontend. Hemos organizado las preguntas en tres niveles: junior, middle y senior, para facilitar la búsqueda de contenido relevante. Además, hemos incluido enlaces externos a recursos de aprendizaje para la parte técnica de las entrevistas.
 
 El diseño del proyecto está inspirado en el juego "Simón de memoria", lo que lo hace divertido y educativo al mismo tiempo.
 

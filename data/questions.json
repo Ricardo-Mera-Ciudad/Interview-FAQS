@@ -1635,6 +1635,326 @@
       "question": "Explique el concepto de 'Interceptors' en Angular y cómo se utilizan para manejar solicitudes HTTP de manera global.",
       "answer": "Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP.",
       "favorite": false
+    },
+    {
+      "id": 201,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la función de la etiqueta <br> en Html?",
+      "answer": "La etiqueta <br> en Html se utiliza para insertar un salto de línea o un salto de línea forzado en el texto. No requiere una etiqueta de cierre y se usa para separar elementos en diferentes líneas.",
+      "favorite": false
+    },
+    {
+      "id": 202,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un comentario en Html y cómo se inserta?",
+      "answer": "Un comentario en Html es un texto que no se muestra en la página web y se utiliza para agregar notas o aclaraciones en el código. Se inserta entre <!-- y -->. Por ejemplo, <!-- Este es un comentario -->.",
+      "favorite": false
+    },
+    {
+      "id": 203,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué son las etiquetas de formulario en Html y cuál es su uso principal?",
+      "answer": "Las etiquetas de formulario en Html, como <form>, se utilizan para crear formularios que permiten a los usuarios ingresar datos. Son fundamentales para la interacción y recopilación de información en una página web.",
+      "favorite": false
+    },
+    {
+      "id": 204,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es un enlace absoluto en Html y cómo se diferencia de un enlace relativo?",
+      "answer": "Un enlace absoluto en Html proporciona una URL completa que incluye el protocolo, el dominio y la ruta completa al recurso. Se diferencia de un enlace relativo que especifica la ubicación del recurso en relación con la ubicación actual del documento.",
+      "favorite": false
+    },
+    {
+      "id": 205,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es la etiqueta de encabezado más importante en Html y por qué?",
+      "answer": "La etiqueta de encabezado más importante es <h1>. Es crucial porque define el encabezado principal de la página y tiene un gran impacto en la optimización para motores de búsqueda (SEO) y la estructura del contenido.",
+      "favorite": false
+    },
+    {
+      "id": 206,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la validación de formularios en Html y por qué es importante?",
+      "answer": "La validación de formularios en Html se refiere a asegurarse de que los datos ingresados en un formulario cumplan con ciertos criterios. Es importante para garantizar la calidad de los datos y mejorar la experiencia del usuario al proporcionar retroalimentación sobre la entrada incorrecta.",
+      "favorite": false
+    },
+    {
+      "id": 207,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre Html y XHtml?",
+      "answer": "XHtml es una versión más estricta y XML-compatible de Html. Requiere que el código esté bien formado y se adhiera a reglas más estrictas de sintaxis. Html es más flexible en términos de estructura y validación.",
+      "favorite": false
+    },
+    {
+      "id": 208,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre HTML y XHTML?",
+      "answer": "HTML (HyperText Markup Language) es un lenguaje de marcado que se utiliza para crear páginas web. XHTML (eXtensible HyperText Markup Language) es una versión más estricta y basada en XML de HTML. XHTML requiere una sintaxis más rigurosa y está diseñado para ser compatible con XML.",
+      "favorite": false
+    },
+    {
+      "id": 209,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un elemento de bloque en HTML?",
+      "answer": "Un elemento de bloque en HTML es un elemento que crea un bloque rectangular en la página y generalmente comienza en una nueva línea. Ejemplos de elementos de bloque incluyen <div>, <p>, <h1> hasta <h6>, <ul>, <ol>, entre otros.",
+      "favorite": false
+    },
+    {
+      "id": 210,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un atributo 'alt' en una etiqueta de imagen (img) y por qué es importante?",
+      "answer": "El atributo 'alt' en una etiqueta de imagen (img) se utiliza para proporcionar un texto alternativo que se muestra si la imagen no se carga correctamente o si el usuario tiene discapacidades visuales. Es importante para la accesibilidad web y la descripción de la imagen.",
+      "favorite": false
+    },
+    {
+      "id": 211,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la etiqueta HTML para crear un enlace de correo electrónico?",
+      "answer": "La etiqueta HTML para crear un enlace de correo electrónico es <a>. Debes especificar el atributo 'href' con 'mailto:' seguido de la dirección de correo electrónico. Por ejemplo, <a href='mailto:correo@example.com'>Enviar correo</a>.",
+      "favorite": false
+    },
+    {
+      "id": 212,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es el elemento HTML <em> y cuál es su propósito?",
+      "answer": "El elemento HTML <em> se utiliza para enfatizar el texto dentro de él, generalmente haciendo que aparezca en cursiva. Su propósito es dar énfasis semántico al contenido, no necesariamente aplicar estilo visual.",
+      "favorite": false
+    },
+    {
+      "id": 213,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es una lista de descripción en HTML y cómo se crea?",
+      "answer": "Una lista de descripción en HTML se crea utilizando las etiquetas <dl> (lista de descripción), <dt> (término) y <dd> (definición). <dt> se usa para los términos y <dd> para las definiciones. Por ejemplo: <dl><dt>HTML</dt><dd>Lenguaje de marcado de hipertexto</dd></dl>.",
+      "favorite": false
+    },
+    {
+      "id": 214,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <meta> y cuál es su propósito?",
+      "answer": "El elemento HTML <meta> se utiliza para proporcionar metadatos sobre la página web. Los metadatos incluyen información como el conjunto de caracteres, la descripción de la página y palabras clave. Ayuda a los motores de búsqueda y navegadores a comprender y mostrar la página correctamente.",
+      "favorite": false
+    },
+    {
+      "id": 215,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cómo afecta el modelo de caja a los elementos HTML?",
+      "answer": "El modelo de caja en CSS describe cómo se representan y dimensionan los elementos HTML. Incluye propiedades como margen, borde, relleno y contenido. Estas propiedades afectan el espacio que ocupa un elemento y su aspecto visual.",
+      "favorite": false
+    },
+    {
+      "id": 216,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cómo se usa la propiedad 'display' en CSS para controlar el diseño de los elementos HTML?",
+      "answer": "La propiedad 'display' en CSS se utiliza para controlar cómo se muestra un elemento HTML en el diseño. Puede tomar valores como 'block', 'inline', 'inline-block', entre otros, para definir su comportamiento en el flujo del documento.",
+      "favorite": false
+    },
+    {
+      "id": 217,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <link> en HTML?",
+      "answer": "La etiqueta <link> en HTML se utiliza para vincular un documento HTML con recursos externos, como hojas de estilo CSS. Permite la separación de la estructura del documento HTML de su estilo, lo que facilita la gestión y el mantenimiento.",
+      "favorite": false
+    },
+    {
+      "id": 218,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'srcset' en la etiqueta <img> de HTML y cuál es su función?",
+      "answer": "El atributo 'srcset' en la etiqueta <img> de HTML se utiliza para especificar múltiples fuentes de imágenes y sus tamaños correspondientes. Ayuda a los navegadores a seleccionar la imagen más adecuada según la resolución de la pantalla del dispositivo, mejorando así la eficiencia y la calidad de la carga de imágenes.",
+      "favorite": false
+    },
+    {
+      "id": 219,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la etiqueta <canvas> en HTML y para qué se utiliza?",
+      "answer": "La etiqueta <canvas> en HTML se utiliza para dibujar gráficos, imágenes y animaciones en la página web utilizando JavaScript. Proporciona un lienzo en blanco donde se pueden renderizar elementos gráficos dinámicos.",
+      "favorite": false
+    },
+    {
+      "id": 220,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué significa 'DRY' en el contexto de HTML y CSS?",
+      "answer": "'DRY' significa 'Don't Repeat Yourself' (No te repitas) y es un principio de desarrollo web que promueve la reutilización de código y la eliminación de duplicación. Ayuda a mantener el código más limpio y fácil de mantener.",
+      "favorite": false
+    },
+    {
+      "id": 221,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <footer> en HTML?",
+      "answer": "La etiqueta <footer> en HTML se utiliza para definir el pie de página de un documento o una sección. Contiene información como derechos de autor, enlaces a páginas relacionadas o información de contacto.",
+      "favorite": false
+    },
+    {
+      "id": 222,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'target' en la etiqueta <a> de HTML y cómo se utiliza?",
+      "answer": "El atributo 'target' en la etiqueta <a> se utiliza para especificar dónde se abrirá el enlace cuando un usuario haga clic en él. Puede tomar valores como '_blank' (abrir en una nueva ventana) o '_self' (abrir en la misma ventana).",
+      "favorite": false
+    },
+    {
+      "id": 223,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <nav> en HTML?",
+      "answer": "La etiqueta <nav> en HTML se utiliza para definir una sección de navegación en un documento web. Contiene enlaces o elementos de navegación que dirigen a otras partes del sitio web.",
+      "favorite": false
+    },
+    {
+      "id": 224,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'role' en HTML y cuál es su importancia en la accesibilidad web?",
+      "answer": "El atributo 'role' en HTML se utiliza para especificar la función de un elemento en una página web. Juega un papel crucial en la accesibilidad web al ayudar a los lectores de pantalla y otras tecnologías a comprender la estructura y el propósito de los elementos.",
+      "favorite": false
+    },
+    {
+      "id": 225,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <head> y cuál es su propósito?",
+      "answer": "El elemento HTML <head> se utiliza para contener metadatos sobre el documento, como el título de la página, enlaces a hojas de estilo y otros elementos que no se muestran directamente en la página. Es esencial para la configuración y el rendimiento del sitio web.",
+      "favorite": false
+    },
+    {
+      "id": 226,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'alt' en la etiqueta <area> de HTML y cuál es su propósito?",
+      "answer": "El atributo 'alt' en la etiqueta <area> de HTML se utiliza para proporcionar un texto alternativo que describe la función de una área activa en un mapa de imágenes. Ayuda a la accesibilidad web al describir el área en caso de que la imagen no se cargue o el usuario tenga discapacidades visuales.",
+      "favorite": false
+    },
+    {
+      "id": 227,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <aside> y cuál es su propósito?",
+      "answer": "El elemento HTML <aside> se utiliza para marcar contenido que es tangencial o relacionado pero se puede separar del contenido principal de la página. Puede contener elementos como anuncios, notas, enlaces relacionados y más.",
+      "favorite": false
+    },
+    {
+      "id": 228,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <time> en HTML?",
+      "answer": "La etiqueta <time> en HTML se utiliza para marcar contenido relacionado con fechas y horas. Puede incluir atributos como 'datetime' para proporcionar una fecha y hora en un formato estándar y 'pubdate' para indicar la fecha de publicación.",
+      "favorite": false
+    },
+    {
+      "id": 229,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <figure> en HTML?",
+      "answer": "La etiqueta <figure> en HTML se utiliza para encapsular contenido, como imágenes y gráficos, junto con su descripción utilizando la etiqueta <figcaption>. Es especialmente útil para representar gráficos o imágenes con sus leyendas asociadas.",
+      "favorite": false
+    },
+    {
+      "id": 230,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la etiqueta <video> en HTML y cuál es su propósito?",
+      "answer": "La etiqueta <video> en HTML se utiliza para incrustar videos en una página web. Permite a los desarrolladores web reproducir videos directamente en el navegador sin necesidad de complementos externos, mejorando la experiencia del usuario.",
+      "favorite": false
+    },
+    {
+      "id": 231,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'src' en la etiqueta <script> de HTML y cuál es su función?",
+      "answer": "El atributo 'src' en la etiqueta <script> de HTML se utiliza para especificar la fuente (URL) de un archivo JavaScript externo que se debe cargar y ejecutar en la página. Permite modularizar el código y mejorar la reutilización.",
+      "favorite": false
+    },
+    {
+      "id": 232,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <mark> en HTML?",
+      "answer": "La etiqueta <mark> en HTML se utiliza para resaltar o marcar porciones de texto dentro de un documento. Es útil para señalar términos clave o partes destacadas en el contenido.",
+      "favorite": false
+    },
+    {
+      "id": 233,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es el atributo 'contenteditable' en HTML y cuál es su uso?",
+      "answer": "El atributo 'contenteditable' en HTML se utiliza para hacer que un elemento HTML, como un div o un párrafo, sea editable por el usuario. Permite la edición de contenido directamente en la página web, lo que es útil en aplicaciones web colaborativas y editores en línea.",
+      "favorite": false
+    },
+    {
+      "id": 234,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre una cookie y un almacenamiento web local (localStorage) en HTML?",
+      "answer": "Una cookie es un pequeño archivo de texto que se almacena en el navegador del usuario y se envía con cada solicitud al servidor. El almacenamiento web local (localStorage) es un espacio de almacenamiento en el navegador para datos clave-valor más grandes y se almacena localmente en el dispositivo del usuario. Las cookies tienen un límite de tamaño y se envían al servidor con cada solicitud, mientras que el localStorage es puramente local y tiene más capacidad de almacenamiento.",
+      "favorite": false
+    },
+    {
+      "id": 235,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es la especificación WAI-ARIA y cuál es su importancia en la accesibilidad web?",
+      "answer": "WAI-ARIA (Accessible Rich Internet Applications) es una especificación que proporciona atributos y roles adicionales para hacer que aplicaciones web y contenido interactivo sean más accesibles para personas con discapacidades. Ayuda a las tecnologías de asistencia a comprender y navegar por el contenido web de manera más efectiva.",
+      "favorite": false
+    },
+    {
+      "id": 236,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <details> en HTML?",
+      "answer": "La etiqueta <details> en HTML se utiliza para crear un elemento desplegable que muestra u oculta contenido adicional cuando el usuario hace clic en él. Es útil para presentar información adicional sin abrumar la página con demasiado contenido visible.",
+      "favorite": false
+    },
+    {
+      "id": 237,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué son los elementos HTML semánticos y por qué son importantes?",
+      "answer": "Los elementos HTML semánticos son etiquetas que describen claramente el significado y la estructura del contenido, como <header>, <nav>, <article> y <footer>. Son importantes para la accesibilidad, el SEO y la comprensión del contenido por parte de los motores de búsqueda, ya que proporcionan una estructura clara y significativa.",
+      "favorite": false
+    },
+    {
+      "id": 238,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es la API Fetch en HTML y cuál es su función?",
+      "answer": "La API Fetch en HTML es una interfaz para realizar solicitudes HTTP y recuperar recursos de la red, como datos JSON o archivos. Reemplaza en gran medida el uso de XMLHttpRequest y facilita la interacción con servidores web desde JavaScript en aplicaciones web modernas.",
+      "favorite": false
+    },
+    {
+      "id": 239,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es el atributo 'defer' en la etiqueta <script> de HTML y cómo afecta la carga de scripts?",
+      "answer": "El atributo 'defer' en la etiqueta <script> de HTML se utiliza para indicar que el script se ejecutará después de que la página se haya analizado. Esto evita que los scripts bloqueen la carga y el procesamiento de la página, lo que puede mejorar el rendimiento.",
+      "favorite": false
+    },
+    {
+      "id": 240,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <picture> en HTML?",
+      "answer": "La etiqueta <picture> en HTML se utiliza para proporcionar múltiples fuentes de imágenes y permitir la selección de la imagen más adecuada según la resolución y el tamaño de la pantalla del dispositivo. Ayuda a mejorar la calidad visual y la velocidad de carga de las imágenes.",
+      "favorite": false
     }
   ]
 }

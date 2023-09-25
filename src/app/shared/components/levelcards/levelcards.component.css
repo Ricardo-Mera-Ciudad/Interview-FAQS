@@ -84,7 +84,7 @@
 .graphic-level-container-three{
   height: 15px;
   width: 5px;
-  border: 1px solid transparent;
+  border: 1px solid #e1effb;
   border-radius: 1px;
   background-color: transparent;
 }

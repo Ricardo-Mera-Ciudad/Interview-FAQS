@@ -17,17 +17,27 @@ export class LevelcardsComponent implements OnInit {
   public centerButtonSelected: boolean = false;
 
   ngOnInit(): void {
+    this.getLevelFromStorage();
     this.loadQuestions();
   }
 
   loadQuestions() {
     this.pagesService.selectedCategory$.pipe(
       switchMap((selectedCategory) => {
-          return this.dataService.getQuestions(selectedCategory);
+        return this.dataService.getQuestions(selectedCategory);
       })
     ).subscribe((questions: Question[]) => {
       this.questionsLevel = questions;
     });
+  }
+
+  getLevelFromStorage() {
+    const selectedLevel = localStorage.getItem('selectedLevel');
+    if(selectedLevel){
+      this.levelSelected = selectedLevel;
+      this.centerButtonSelected = true;
+      this.pagesService.setLevel(selectedLevel);
+    }
   }
 
 
@@ -36,5 +46,6 @@ export class LevelcardsComponent implements OnInit {
     this.pagesService.setLevel(level);
     this.centerButtonSelected = true;
     this.loadQuestions();
+    localStorage.setItem('selectedLevel', level);
   }
 }

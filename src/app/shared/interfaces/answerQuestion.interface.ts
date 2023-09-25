@@ -11,7 +11,6 @@ export interface Question {
 
   answer: string,
 
-  favorite: boolean
 }
 
 export enum Level {

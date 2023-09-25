@@ -13,9 +13,11 @@ export class UsersService {
   public userAdded = new Subject<UserData>();
   public userToUpdate = new Subject<UserData>();
   private authenticatedUserSubject = new BehaviorSubject<UserData | null>(null);
+  private isLoggedInSubject = new BehaviorSubject<boolean>(false);
 
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.checkLoginStatus();
+  }
 
   setAuthenticatedUserSubject(user: UserData): void {
     this.authenticatedUserSubject.next(user)
@@ -24,6 +26,20 @@ export class UsersService {
   getAuthenticatedUserSubject(): Observable<UserData | null> {
     return this.authenticatedUserSubject.asObservable();
   }
+
+  checkLoginStatus(){
+    const authToken = localStorage.getItem('authToken');
+    if(authToken) {
+      this.isLoggedInSubject.next(true)
+    } else {
+      this.isLoggedInSubject.next(false);
+    }
+  }
+
+  get isLoggedIn$(): Observable<boolean> {
+    return this.isLoggedInSubject.asObservable();
+  }
+
 
   addUser(user: UserData): Observable<UserData> {
     return this.http.post<UserData>(`${this.baseUrl}/users`, user)
@@ -58,8 +74,8 @@ export class UsersService {
       )
   }
 
-  getUserById(id: number) {
-    return this.http.get(`${this.baseUrl}/users/${id}`)
+  getUserById(id: number): Observable<UserData> {
+    return this.http.get<UserData>(`${this.baseUrl}/users/${id}`)
   }
 
   createJwtToken(payload: any) {

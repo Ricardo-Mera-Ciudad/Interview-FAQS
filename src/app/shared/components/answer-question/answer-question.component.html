@@ -1,23 +1,25 @@
 <div class="container-answer-questions">
   <div class="category-container">
-    <img class="questions-icon" [src]="getCategoryImage(category)" alt="">
+    <img class="questions-icon" [src]="getCategoryImage(category)" alt="" />
     <h2 class="question-selectors">{{ category }}</h2>
   </div>
-  
+
   <div class="text-center m-5" *ngIf="isLoading">
     <div class="spinner-border text-light" role="status">
       <span class="sr-only"></span>
     </div>
   </div>
-  
 
-  <div class="question-card-set"
-  *ngFor="let question of questions">
-  
-    <div *ngIf="!isLoading" class="card-full-question"
-     [id]="'question-' + question.id">
-      <div class="card-question-head"
-      [ngClass]="{'apply-border-radius': borderRadiusState[question.id]}">
+  <div class="question-card-set" *ngFor="let question of questions">
+    <div
+      *ngIf="!isLoading"
+      class="card-full-question"
+      [id]="'question-' + question.id"
+    >
+      <div
+        class="card-question-head"
+        [ngClass]="{ 'apply-border-radius': borderRadiusState[question.id] }"
+      >
         <div class="card-question-head-text">
           <h6 class="card-question-head-text-title">
             {{ question.id }}.{{ question.question }}
@@ -25,11 +27,16 @@
         </div>
         <div class="card-question-head-icons">
           <!-- STAR -->
-          <span class="star-icon-container"
-          (click)="favouriteStatus(question)"
-          [ngClass]="{'isSelected': favouriteStatusColor[question.id]}"
+          <span
+            class="star-icon-container"
+            (click)="favoriteStatus(question.id)"
           >
             <svg
+              [ngClass]="{
+                'star-icon': !isFavorite(question.id),
+                'star-icon-favorite': isFavorite(question.id)
+              }"
+              fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"

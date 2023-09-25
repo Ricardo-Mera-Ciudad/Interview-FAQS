@@ -1,10 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { Question } from '../../interfaces/answerQuestion.interface';
 import { PagesService } from 'src/app/pages/services/pages.service';
-import { Subject, combineLatest, switchMap, takeUntil } from 'rxjs';
+import { Subject, combineLatest, of, switchMap, takeUntil } from 'rxjs';
 import { DataService } from 'src/app/pages/services/data.service';
-import { UserFavs } from '../../interfaces/user-data.interface';
-import { UsersService } from 'src/app/auth/services/users.service';
 
 @Component({
   selector: 'shared-answer-question',
@@ -13,31 +11,34 @@ import { UsersService } from 'src/app/auth/services/users.service';
 })
 export class AnswerQuestionComponent {
   public questions: Question[] = [];
-
+  public favoriteQuestions: Question[] = [];
   public answerVisibility: { [key: number]: boolean } = {};
   public borderRadiusState: { [key: number]: boolean } = {};
-  public favouriteStatusColor: { [key: number]: boolean } = {};
 
-  private pagesService = inject(PagesService);
+  public isFavoriteSelected: boolean = false;
   public category: string = 'Angular';
   public level: string | null = null;
   public isLoading: boolean = true;
-
-
   private unsubscribe$ = new Subject<void>();
-  private dataService = inject(DataService);
-  private usersService = inject(UsersService);
 
-  constructor() { }
+  private pagesService = inject(PagesService);
+  private dataService = inject(DataService);
+
+  constructor() {}
   ngOnInit(): void {
+    this.favoriteEventChanged()
     this.loadCategory();
+    this.loadFavoriteQuestions();
+  }
+
+  favoriteEventChanged() {
+    this.dataService.onFavoriteChanged().subscribe((questionId) => {})
   }
 
   getFaqs() {
     this.pagesService.selectedCategory$
       .pipe(
         switchMap((selectedCategory) => {
-          return this.dataService.getQuestions(selectedCategory, this.level!);
           return this.dataService.getQuestions(selectedCategory, this.level!);
         })
       )
@@ -52,44 +53,8 @@ export class AnswerQuestionComponent {
         this.questions.forEach((question) => {
           this.answerVisibility[question.id] = false;
           this.borderRadiusState[question.id] = false;
-          this.favouriteStatusColor[question.id] = false;
         });
-        console.log(this.questions);
       });
-  }
-
-  favouriteStatus(question: Question) {
-    const isFavorite = this.favouriteStatusColor[question.id];
-    this.favouriteStatusColor[question.id] = !isFavorite;
-
-    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
-      if (user && user.id) {
-        const userId = user.id;
-
-        const userFav: UserFavs = {
-          userId: userId,
-          questionId: question.id,
-        };
-
-        if (isFavorite) {
-          this.dataService
-            .removeFavoriteQuestion(userFav)
-            .subscribe((response) => {
-              console.log('Pregunta eliminada de favoritas:', response);
-              question.favorite = false;
-            });
-        } else {
-          this.dataService
-            .addFavoriteQuestion(userFav)
-            .subscribe((response) => {
-              console.log('Pregunta agregada a favoritas:', response);
-              question.favorite = true;
-            });
-        }
-      } else {
-        alert('Por favor, inicia sesión para agregar preguntas a favoritas.');
-      }
-    });
   }
 
   loadCategory() {
@@ -103,6 +68,50 @@ export class AnswerQuestionComponent {
         this.level = levelFromService;
         this.getFaqs();
       });
+  }
+
+  favoriteStatus(questionId: number) {
+    const isFavorited = this.isFavorite(questionId);
+
+    if (isFavorited) {
+      this.unmarkAsFavorite(questionId);
+      this.removeFromLocalFavorites(questionId);
+      console.log("ha sido eliminada", questionId)
+    } else {
+      this.markAsFavorite(questionId);
+      this.addToLocalFavorites(questionId);
+      console.log("ha sido agregada", questionId)
+    }
+  }
+
+  addToLocalFavorites(questionId: number) {
+    const questionToAdd = this.questions.find((question) => question.id === questionId);
+
+    if (questionToAdd) {
+      this.favoriteQuestions.push(questionToAdd);
+    }
+  }
+
+  removeFromLocalFavorites(questionId: number) {
+    this.favoriteQuestions = this.favoriteQuestions.filter((question) => question.id !== questionId); // Elimina la pregunta de la lista local de favoritos
+  }
+
+  markAsFavorite(questionId: number) {
+    this.dataService.markQuestionAsFavorite(questionId);
+  }
+
+  unmarkAsFavorite(questionId: number) {
+    this.dataService.unmarkQuestionAsFavorite(questionId);
+  }
+
+  loadFavoriteQuestions() {
+    this.dataService.getFavoriteQuestions().subscribe((favoriteQuestions: Question[]) => {
+      this.favoriteQuestions = favoriteQuestions;
+    });
+  }
+
+  isFavorite(questionId: number): boolean {
+    return this.favoriteQuestions.some((question) => question.id === questionId);
   }
 
   showAnswer(id: number) {
@@ -130,13 +139,13 @@ export class AnswerQuestionComponent {
         imgUrl = '../../../../assets/images/typescript.png';
         break;
       case 'Softskills':
-        imgUrl = "../../../../assets/images/softskills-icon.png";
+        imgUrl = '../../../../assets/images/softskills-icon.png';
         break;
       case 'Git':
-        imgUrl = "../../../../assets/images/git-icon.png";
+        imgUrl = '../../../../assets/images/git-icon.png';
         break;
       case 'Weblinks':
-        imgUrl = "../../../../assets/images/weblinks-icon.png";
+        imgUrl = '../../../../assets/images/weblinks-icon.png';
         break;
     }
     return imgUrl;

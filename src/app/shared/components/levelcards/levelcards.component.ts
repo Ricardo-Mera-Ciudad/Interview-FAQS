@@ -20,6 +20,7 @@ export class LevelcardsComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
+    this.getLevelFromStorage();
     this.loadQuestions();
   }
 
@@ -37,12 +38,22 @@ export class LevelcardsComponent implements OnInit, OnDestroy {
       });
   }
 
+  getLevelFromStorage() {
+    const selectedLevel = localStorage.getItem('selectedLevel');
+    if(selectedLevel){
+      this.levelSelected = selectedLevel;
+      this.centerButtonSelected = true;
+      this.pagesService.setLevel(selectedLevel);
+    }
+  }
+
 
   selectLevel(level: string) {
     this.levelSelected = level;
     this.pagesService.setLevel(level);
     this.centerButtonSelected = true;
     this.loadQuestions();
+    localStorage.setItem('selectedLevel', level);
   }
 
 

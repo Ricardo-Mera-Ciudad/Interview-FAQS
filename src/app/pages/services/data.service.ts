@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, inject } from '@angular/core';
-import { Observable, map } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Observable, Subject, map, of, switchMap } from 'rxjs';
+import { UsersService } from 'src/app/auth/services/users.service';
 import { Question } from 'src/app/shared/interfaces/answerQuestion.interface';
-import { UserFavs } from 'src/app/shared/interfaces/user-data.interface';
 import { environments } from 'src/environment/environment';
 
 @Injectable({
@@ -11,37 +11,74 @@ import { environments } from 'src/environment/environment';
 export class DataService {
 
   private apiUrl = environments.baseUrl;
-  private http = inject(HttpClient);
+  private favoriteChanged = new Subject<number>();
 
+  constructor(private http: HttpClient, private usersService: UsersService) {}
 
-  getFavoriteQuestions(userId: number): Observable<Question[]> {
-    return this.http.get<Question[]>(`${this.apiUrl}/userFavs/${userId}`);
-  };
+  notifyFavoriteChanged(questionId: number) {
+    this.favoriteChanged.next(questionId);
+  }
 
-
-  addFavoriteQuestion(userFav: UserFavs): Observable<any> {
-    return this.http.post(`${this.apiUrl}/userFavs`, userFav);
-  };
-
-
-  removeFavoriteQuestion(userFav: UserFavs): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/userFavs`);
-  };
-
+  onFavoriteChanged(): Observable<number> {
+    return this.favoriteChanged.asObservable();
+  }
 
   getQuestions(category: string, level?: string): Observable<Question[]> {
-    return this.http.get<Question[]>(`${this.apiUrl}/questions`)
-      .pipe(
-        map((questions: Question[]) => {
-          if (level) {
-            return questions
-              .filter((question) => question.category === category && question.level === level);
-          } else {
-            return questions
-              .filter((question) => question.category === category);
-          }
-        })
-      );
-  };
+    return this.http.get<Question[]>(`${this.apiUrl}/questions`).pipe(
+      map((questions: Question[]) => {
+        if (level) {
+          return questions.filter(
+            (question) =>
+              question.category === category && question.level === level
+          );
+        } else {
+          return questions.filter((question) => question.category === category);
+        }
+      })
+    );
+  }
+
+  markQuestionAsFavorite(questionId: number) {
+    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
+      if (!user) {
+        return null;
+      }
+      user.favoriteQuestions.push(questionId);
+
+      return this.http.put(`${this.apiUrl}/users/${user.id}`, user)
+        .subscribe(() => {});
+    });
+  }
+
+  unmarkQuestionAsFavorite(questionId: number) {
+    this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
+      if (!user) {
+        return null;
+      }
+      user.favoriteQuestions = user.favoriteQuestions.filter((id) => id !== questionId);
+
+      return this.http.put(`${this.apiUrl}/users/${user.id}`, user).subscribe(() => {
+      });
+    });
+  }
+
+
+
+  getFavoriteQuestions(): Observable<Question[]> {
+    return this.usersService.getAuthenticatedUserSubject().pipe(
+      switchMap((user) => {
+        if (!user) {
+          return of([]);
+        }
+
+        return this.http.get<Question[]>(`${this.apiUrl}/questions`).pipe(
+          map((questions) =>
+            questions.filter((question) => user.favoriteQuestions.includes(question.id))
+          )
+        );
+      })
+    );
+  }
+
 
 }

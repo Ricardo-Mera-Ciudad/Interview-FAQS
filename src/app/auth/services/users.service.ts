@@ -9,7 +9,7 @@ import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 })
 export class UsersService {
 
-  private http = inject(HttpClient);
+  // private http = inject(HttpClient);
 
   private baseUrl: string = environments.baseUrl;
   private user?: UserData | null;
@@ -17,6 +17,11 @@ export class UsersService {
   public userAddedSubject$ = new Subject<UserData>();
   public userToUpdateSubject$ = new Subject<UserData>();
   private authenticatedUserSubject$ = new BehaviorSubject<UserData | null>(null);
+  private isLoggedInSubject$ = new BehaviorSubject<boolean>(false);
+
+  constructor(private http: HttpClient) {
+    this.checkLoginStatus();
+  }
 
 
   setUserAddedSubject(user: UserData): void {
@@ -43,7 +48,20 @@ export class UsersService {
 
   getAuthenticatedUserSubject(): Observable<UserData | null> {
     return this.authenticatedUserSubject$.asObservable();
-  };
+  }
+
+  checkLoginStatus(){
+    const authToken = localStorage.getItem('authToken');
+    if(authToken) {
+      this.isLoggedInSubject$.next(true)
+    } else {
+      this.isLoggedInSubject$.next(false);
+    }
+  }
+
+  get isLoggedIn$(): Observable<boolean> {
+    return this.isLoggedInSubject$.asObservable();
+  }
 
 
   addUser(user: UserData): Observable<UserData> {

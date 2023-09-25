@@ -4,11 +4,6 @@ export interface Question {
   category: Category,
   question: string,
   answer: string,
-<<<<<<< HEAD
-
-=======
-  favorite: boolean
->>>>>>> main
 }
 
 export enum Level {

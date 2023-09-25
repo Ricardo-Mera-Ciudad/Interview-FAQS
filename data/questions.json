@@ -1215,8 +1215,8 @@
       "id": 146,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "Web para practicar código",
-      "answer": "https://www.codewars.com/"
+      "question": "Generar opiniones en retrospectiva en equipo",
+      "answer": "https://retroteam.app/"
     },
     {
       "id": 147,
@@ -1229,92 +1229,92 @@
       "id": 148,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Cursos y certificaciones de distintos lenguajes",
+      "answer": "https://www.freecodecamp.org/"
     },
     {
       "id": 149,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Lista de API's públicas ",
+      "answer": "https://publicapi.dev/"
     },
     {
       "id": 150,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Web para practicar código",
+      "answer": "https://www.codewars.com/"
     },
     {
       "id": 151,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Desafíos de programación y ejercicios",
+      "answer": "https://www.hackerrank.com/"
     },
     {
       "id": 152,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Practica tu habilidad de resolución de problemas",
+      "answer": "https://leetcode.com/"
     },
     {
       "id": 153,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Retos de programación para practicar",
+      "answer": "https://retosdeprogramacion.com/"
     },
     {
       "id": 154,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Más de 200 retos de código",
+      "answer": "https://www.coderbyte.com/challenges?utm_campaign=NewHomepage"
     },
     {
       "id": 155,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Retos algorítmicos para mejorar tu lógica",
+      "answer": "https://www.topcoder.com/"
     },
     {
       "id": 156,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Retos y programación competitiva",
+      "answer": "https://www.codechef.com/"
     },
     {
       "id": 157,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Practica código jugando",
+      "answer": "https://www.codingame.com/training"
     },
     {
       "id": 158,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Juego de ranas para practicar CSS de manera visual",
+      "answer": "http://flexboxfroggy.com/#es"
     },
     {
       "id": 159,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Practica CSS con este juego de 'tower defense'",
+      "answer": "http://www.flexboxdefense.com/"
     },
     {
       "id": 160,
       "category": "Weblinks",
       "level": "Junior",
-      "question": "",
-      "answer": ""
+      "question": "Aprende los selectores de CSS en este juego de comida",
+      "answer": "https://flukeout.github.io/"
     },
     {
       "id": 161,

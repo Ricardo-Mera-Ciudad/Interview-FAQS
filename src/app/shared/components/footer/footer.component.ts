@@ -1,5 +1,7 @@
-import {Component,ElementRef,EventEmitter,OnInit,Output,Renderer2,inject} from '@angular/core';
+import {Component,ElementRef,EventEmitter,OnInit,Output,Renderer2,TemplateRef,inject} from '@angular/core';
 import { Contributor } from '../../interfaces/contributors.interface';
+
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-footer',
@@ -54,9 +56,10 @@ export class FooterComponent implements OnInit {
       link: 'https://www.linkedin.com/in/daniel-s%C3%A1nchez-pinazo-00336a231/',
     },
   ];
-  
-  @Output() blurEffectToggled = new EventEmitter<boolean>()
-  
+
+  @Output() blurEffectToggled = new EventEmitter<boolean>();
+
+  constructor(private modalService: NgbModal) {}
 
   ngOnInit(): void {
     this.renderer.listen('document', 'click', (event: Event) => {
@@ -97,8 +100,8 @@ export class FooterComponent implements OnInit {
     }
   }
 
-  showWhat() {
-    this.hideWhat = !this.hideWhat;
-  }
+  openVerticallyCentered(content: TemplateRef<any>) {
+		this.modalService.open(content, { centered: true });
+	}
 
 }

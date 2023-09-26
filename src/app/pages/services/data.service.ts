@@ -11,17 +11,8 @@ import { environments } from 'src/environment/environment';
 export class DataService {
 
   private apiUrl = environments.baseUrl;
-  private favoriteChanged = new Subject<number>();
 
   constructor(private http: HttpClient, private usersService: UsersService) {}
-
-  notifyFavoriteChanged(questionId: number) {
-    this.favoriteChanged.next(questionId);
-  }
-
-  onFavoriteChanged(): Observable<number> {
-    return this.favoriteChanged.asObservable();
-  }
 
   getQuestions(category: string, level?: string): Observable<Question[]> {
     return this.http.get<Question[]>(`${this.apiUrl}/questions`).pipe(

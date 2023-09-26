@@ -3,6 +3,7 @@ import { Question } from '../../interfaces/answerQuestion.interface';
 import { PagesService } from 'src/app/pages/services/pages.service';
 import { Subject, combineLatest, of, switchMap, takeUntil } from 'rxjs';
 import { DataService } from 'src/app/pages/services/data.service';
+import { UsersService } from 'src/app/auth/services/users.service';
 
 @Component({
   selector: 'shared-answer-question',
@@ -12,28 +13,30 @@ import { DataService } from 'src/app/pages/services/data.service';
 export class AnswerQuestionComponent {
   private pagesService = inject(PagesService);
   private dataService = inject(DataService);
+  private userService = inject(UsersService);
 
   public questions: Question[] = [];
   public favoriteQuestions: Question[] = [];
   public answerVisibility: { [key: number]: boolean } = {};
   public borderRadiusState: { [key: number]: boolean } = {};
 
-  public isFavoriteSelected: boolean = false;
   public category: string = 'Angular';
   public level: string | null = null;
   public isLoading: boolean = true;
+  public isLoggedIn: boolean = false;
   public isLink: { [key: number]: boolean } = {};
   private unsubscribe$ = new Subject<void>();
 
-
   ngOnInit(): void {
-    this.favoriteEventChanged()
     this.loadCategory();
     this.loadFavoriteQuestions();
+    this.checkLoginStatus()
   }
 
-  favoriteEventChanged() {
-    this.dataService.onFavoriteChanged().subscribe((questionId) => {})
+  checkLoginStatus(){
+    this.userService.isLoggedIn$.subscribe((loggedIn) => {
+      this.isLoggedIn = loggedIn;
+    })
   }
 
   getFaqs() {
@@ -75,20 +78,19 @@ export class AnswerQuestionComponent {
 
   favoriteStatus(questionId: number) {
     const isFavorited = this.isFavorite(questionId);
-
     if (isFavorited) {
       this.unmarkAsFavorite(questionId);
       this.removeFromLocalFavorites(questionId);
-      console.log("ha sido eliminada", questionId)
     } else {
       this.markAsFavorite(questionId);
       this.addToLocalFavorites(questionId);
-      console.log("ha sido agregada", questionId)
     }
   }
 
   addToLocalFavorites(questionId: number) {
-    const questionToAdd = this.questions.find((question) => question.id === questionId);
+    const questionToAdd = this.questions.find(
+      (question) => question.id === questionId
+    );
 
     if (questionToAdd) {
       this.favoriteQuestions.push(questionToAdd);
@@ -96,7 +98,9 @@ export class AnswerQuestionComponent {
   }
 
   removeFromLocalFavorites(questionId: number) {
-    this.favoriteQuestions = this.favoriteQuestions.filter((question) => question.id !== questionId); // Elimina la pregunta de la lista local de favoritos
+    this.favoriteQuestions = this.favoriteQuestions.filter(
+      (question) => question.id !== questionId
+    );
   }
 
   markAsFavorite(questionId: number) {
@@ -108,13 +112,17 @@ export class AnswerQuestionComponent {
   }
 
   loadFavoriteQuestions() {
-    this.dataService.getFavoriteQuestions().subscribe((favoriteQuestions: Question[]) => {
-      this.favoriteQuestions = favoriteQuestions;
-    });
+    this.dataService
+      .getFavoriteQuestions()
+      .subscribe((favoriteQuestions: Question[]) => {
+        this.favoriteQuestions = favoriteQuestions;
+      });
   }
 
   isFavorite(questionId: number): boolean {
-    return this.favoriteQuestions.some((question) => question.id === questionId);
+    return this.favoriteQuestions.some(
+      (question) => question.id === questionId
+    );
   }
 
   showAnswer(id: number) {

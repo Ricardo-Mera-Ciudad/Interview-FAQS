@@ -175,7 +175,6 @@
       "level": "Senior",
       "question": "Explique RXJS",
       "answer": "RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva en JavaScript que se utiliza ampliamente en el desarrollo de aplicaciones Angular. Angular utiliza RxJS para manejar flujos de datos asincrónicos, como observables, y facilita la gestión de eventos, llamadas HTTP y otros flujos de datos en aplicaciones web."
-
     },
     {
       "id": 19,
@@ -1029,7 +1028,6 @@
       "level": "Senior",
       "question": "¿Qué es Git bisect y cómo se utiliza para depurar problemas en el código?",
       "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático."
-
     },
     {
       "id": 141,
@@ -1177,7 +1175,6 @@
       "level": "Junior",
       "question": "¿Cuál es el propósito del servicio en Angular?",
       "answer": "En Angular, un servicio es una clase que se utiliza para organizar y compartir la lógica y los datos comunes entre diferentes componentes. Los servicios se utilizan para separar la lógica de negocio de los componentes y permiten la reutilización de código en toda la aplicación."
-
     },
     {
       "id": 162,
@@ -1185,7 +1182,6 @@
       "level": "Senior",
       "question": "¿Qué es un servicio compartido en Angular y cómo se crea?",
       "answer": "Un servicio compartido en Angular es una clase que se utiliza para compartir datos y lógica entre componentes de toda la aplicación. Se crea mediante el comando 'ng generate service' o manualmente como una clase TypeScript con el decorador '@Injectable'. Los servicios compartidos son inyectables y se registran en el módulo raíz para estar disponibles en toda la aplicación."
-
     },
     {
       "id": 163,
@@ -1193,7 +1189,6 @@
       "level": "Junior",
       "question": "¿Qué es Angular?",
       "answer": "Angular es un framework de desarrollo de aplicaciones web desarrollado por Google. Se utiliza para crear aplicaciones web dinámicas y de una sola página (SPA) y facilita la creación de interfaces de usuario interactivas y reactivas."
-
     },
     {
       "id": 164,
@@ -1201,7 +1196,6 @@
       "level": "Junior",
       "question": "¿Cuáles son las ventajas de usar Angular?",
       "answer": "Algunas de las ventajas de usar Angular incluyen una estructura de proyecto organizada, vinculación de datos bidireccional, inyección de dependencias, y una amplia comunidad de desarrollo que proporciona herramientas y bibliotecas adicionales."
-
     },
     {
       "id": 165,
@@ -1209,7 +1203,6 @@
       "level": "Junior",
       "question": "¿Qué es TypeScript y por qué se utiliza en Angular?",
       "answer": "TypeScript es un lenguaje de programación desarrollado por Microsoft que se utiliza en Angular porque añade tipos estáticos y otras características a JavaScript, lo que facilita la detección de errores y el desarrollo de aplicaciones más robustas."
-
     },
     {
       "id": 166,
@@ -1217,7 +1210,6 @@
       "level": "Junior",
       "question": "¿Qué es una directiva en Angular?",
       "answer": "En Angular, una directiva es una instrucción en el DOM (Document Object Model) que le dice al framework Angular cómo manipular el comportamiento de un elemento HTML o cambiar su apariencia."
-
     },
     {
       "id": 167,
@@ -1225,7 +1217,6 @@
       "level": "Junior",
       "question": "¿Cómo se realiza la inyección de dependencias en Angular?",
       "answer": "La inyección de dependencias en Angular se realiza mediante la creación de una instancia de una clase y su inyección en el constructor de otro componente, servicio o clase que la necesite. Angular utiliza el sistema de inyección de dependencias para administrar las dependencias y proporcionarlas de manera eficiente.Podemos hacerlo mediante el constructor o usando inject()"
-
     },
     {
       "id": 168,
@@ -1233,7 +1224,6 @@
       "level": "Junior",
       "question": "¿Qué es un módulo en Angular?",
       "answer": "Un módulo en Angular es un mecanismo para organizar la aplicación en bloques funcionales. Contiene componentes, servicios y otras características relacionadas, y se utiliza para definir cómo se ensamblan estas partes en la aplicación."
-
     },
     {
       "id": 169,
@@ -1241,7 +1231,6 @@
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre ngOnChanges y ngOnInit?",
       "answer": "ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian. ngOnInit se dispara una vez después de que se haya inicializado el componente."
-
     },
     {
       "id": 170,
@@ -1249,7 +1238,6 @@
       "level": "Junior",
       "question": "¿Qué son las rutas en Angular?",
       "answer": "En Angular, las rutas son un mecanismo para definir la navegación y las vistas de una aplicación. Permiten que diferentes URL se correspondan con diferentes componentes y vistas."
-
     },
     {
       "id": 171,
@@ -1257,7 +1245,6 @@
       "level": "Middle",
       "question": "¿Qué es un interceptor HTTP en Angular?",
       "answer": "Un interceptor HTTP en Angular es un servicio que permite interceptar y modificar las solicitudes HTTP y las respuestas antes de que lleguen al servidor o después de que vuelvan del servidor. Se utiliza para realizar tareas comunes, como agregar encabezados o manejar errores de manera centralizada."
-
     },
     {
       "id": 172,
@@ -1265,7 +1252,6 @@
       "level": "Middle",
       "question": "¿Cómo se realiza la validación de formularios en Angular?",
       "answer": "En Angular, la validación de formularios se realiza mediante la creación de directivas personalizadas y el uso de clases y métodos proporcionados por el módulo '@angular/forms'. Esto permite validar campos de entrada y formularios de manera efectiva."
-
     },
     {
       "id": 173,
@@ -1273,7 +1259,6 @@
       "level": "Middle",
       "question": "¿Qué es la detección de cambios en Angular?",
       "answer": "La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Angular utiliza una estrategia de detección de cambios para mejorar el rendimiento y la eficiencia de las actualizaciones de la interfaz de usuario."
-
     },
     {
       "id": 174,
@@ -1281,7 +1266,6 @@
       "level": "Middle",
       "question": "¿Qué son las pruebas unitarias en Angular?",
       "answer": "Las pruebas unitarias en Angular son pruebas que se realizan en unidades individuales de código, como componentes o servicios, para garantizar que funcionen correctamente de manera aislada. Angular proporciona herramientas y bibliotecas para escribir y ejecutar pruebas unitarias eficaces."
-
     },
     {
       "id": 175,
@@ -1289,7 +1273,6 @@
       "level": "Senior",
       "question": "¿Qué es la optimización de rendimiento en aplicaciones Angular?",
       "answer": "La optimización de rendimiento en aplicaciones Angular implica una serie de prácticas y técnicas destinadas a mejorar la velocidad de carga, la velocidad de ejecución y la eficiencia general de una aplicación Angular. Esto incluye técnicas de carga diferida, compresión de recursos y optimización de renderizado."
-
     },
     {
       "id": 176,
@@ -1297,7 +1280,6 @@
       "level": "Middle",
       "question": "¿Qué es la internacionalización (i18n) en Angular?",
       "answer": "La internacionalización (i18n) en Angular es el proceso de adaptar una aplicación para que sea compatible con múltiples idiomas y regiones. Angular proporciona herramientas y directivas para facilitar la traducción de textos y la adaptación de formatos de fecha, hora y números en la aplicación."
-
     },
     {
       "id": 177,
@@ -1305,7 +1287,6 @@
       "level": "Middle",
       "question": "¿Qué es el modo Standalone en Angular y cuál es su propósito?",
       "answer": "El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional. Su propósito es proporcionar a los desarrolladores una forma de crear aplicaciones Angular que se puedan ejecutar localmente o empaquetar como aplicaciones de escritorio sin depender de un servidor backend."
-
     },
     {
       "id": 178,
@@ -1313,7 +1294,6 @@
       "level": "Middle",
       "question": "¿Cuál es el flujo típico de un Observable en Angular y cómo funciona?",
       "answer": "Un Observable en Angular sigue un flujo típico de emisión, suscripción y manejo de eventos asíncronos. Comienza con la creación de un Observable que puede emitir datos o eventos en el futuro. Luego, se suscribe un observador para escuchar esas emisiones. Cuando ocurre un evento, el observador recibe y maneja los datos. El flujo puede incluir operaciones de transformación, filtrado o combinación de datos antes de que lleguen al observador."
-
     },
     {
       "id": 179,
@@ -1321,7 +1301,6 @@
       "level": "Middle",
       "question": "¿Qué es la detección de cambios OnPush en Angular y cuándo se debe utilizar?",
       "answer": "La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las referencias de entrada y eventos de salida. Se debe utilizar cuando se desea mejorar el rendimiento de la aplicación al reducir la frecuencia de las verificaciones de cambio. Al configurar un componente con OnPush, Angular solo volverá a renderizar el componente cuando las entradas cambien o se dispare un evento de salida, en lugar de verificar continuamente las propiedades internas."
-
     },
     {
       "id": 180,
@@ -1329,7 +1308,6 @@
       "level": "Senior",
       "question": "¿Qué son los efectos (Effects) en la gestión de estado de Angular (por ejemplo, con NgRx) y cuál es su propósito?",
       "answer": "Los efectos (Effects) en la gestión de estado de Angular, como NgRx, son funciones que manejan efectos secundarios en una aplicación, como llamadas a APIs o tareas asíncronas. Su propósito es aislar la lógica de efectos secundarios y garantizar que la gestión de estado sea predecible y consistente. Los efectos reciben acciones y pueden despachar nuevas acciones en función de los resultados de las tareas asíncronas."
-
     },
     {
       "id": 181,
@@ -1337,7 +1315,6 @@
       "level": "Middle",
       "question": "¿Qué es la interpolación de atributos (Attribute Interpolation) en Angular y cuándo se utiliza?",
       "answer": "La interpolación de atributos en Angular es una técnica que permite asignar valores dinámicos a atributos de elementos HTML. Se utiliza cuando se necesita cambiar dinámicamente el valor de un atributo, como un atributo de 'src' de una imagen o 'href' de un enlace, utilizando expresiones del componente."
-
     },
     {
       "id": 182,
@@ -1345,7 +1322,6 @@
       "level": "Middle",
       "question": "¿Cuál es la diferencia entre 'ViewChild' y 'ContentChild' en Angular y cuándo se utilizan?",
       "answer": "ViewChild y ContentChild son decoradores utilizados para acceder a elementos o componentes hijos en Angular. La diferencia clave radica en dónde se busca el elemento o componente: ViewChild se utiliza para elementos o componentes que están dentro del componente actual, mientras que ContentChild se utiliza para elementos o componentes proyectados en el contenido de un componente."
-
     },
     {
       "id": 183,
@@ -1353,7 +1329,6 @@
       "level": "Senior",
       "question": "¿Cuál es el propósito de la detección de cambios en Angular y cómo se optimiza para aplicaciones de gran escala?",
       "answer": "La detección de cambios en Angular permite actualizar la vista cuando los datos cambian en el componente. Para aplicaciones de gran escala, la optimización se logra utilizando estrategias como ChangeDetectionStrategy.OnPush, empleando bibliotecas de administración de estado (como NgRx), y minimizando las operaciones costosas en el ciclo de detección de cambios."
-
     },
     {
       "id": 184,
@@ -1361,7 +1336,6 @@
       "level": "Senior",
       "question": "¿Cómo se puede mejorar el rendimiento de una aplicación Angular y cuáles son las mejores prácticas en este sentido?",
       "answer": "Para mejorar el rendimiento en Angular, se pueden aplicar técnicas como la carga diferida de módulos, la compresión de recursos, la reducción del tamaño del paquete, el uso de ChangeDetectionStrategy.OnPush, la optimización de imágenes y la implementación de estrategias de almacenamiento en caché."
-
     },
     {
       "id": 185,
@@ -1369,7 +1343,6 @@
       "level": "Senior",
       "question": "Explique la arquitectura de una aplicación Angular escalable y cómo se organizan los módulos, componentes y servicios en ella.",
       "answer": "Una aplicación Angular escalable se organiza en módulos funcionales que contienen componentes relacionados y servicios compartidos. Se siguen patrones como 'Smart vs. Dumb Components', se utiliza inyección de dependencias para la comunicación entre componentes y se centraliza la gestión de estado mediante bibliotecas como NgRx o Redux."
-
     },
     {
       "id": 186,
@@ -1377,7 +1350,6 @@
       "level": "Senior",
       "question": "¿Cómo se realiza la optimización de rendimiento en una aplicación Angular y cuáles son las estrategias clave para lograrlo?",
       "answer": "La optimización de rendimiento en Angular involucra prácticas como la carga diferida de módulos, la reducción del tamaño del paquete, la eliminación de código no utilizado, la compresión de recursos y la implementación de técnicas de renderizado eficiente, como el pre-renderizado y el lazy loading."
-
     },
     {
       "id": 187,
@@ -1385,7 +1357,6 @@
       "level": "Senior",
       "question": "Explique el concepto de 'Change Detection' en Angular y cómo se puede personalizar o desactivar para aplicaciones específicas.",
       "answer": "El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se puede personalizar mediante la estrategia ChangeDetectionStrategy y desactivar selectivamente utilizando el método markForCheck en combinación con ChangeDetectorRef para mejorar el rendimiento en aplicaciones complejas."
-
     },
     {
       "id": 188,
@@ -1393,7 +1364,6 @@
       "level": "Senior",
       "question": "¿Cuál es el papel de los 'Pipes' en Angular y cuáles son ejemplos comunes de su uso?",
       "answer": "Los 'Pipes' en Angular son funciones que transforman datos en la plantilla HTML. Se utilizan para formatear fechas, números, cadenas, y aplicar filtros y transformaciones personalizadas a los datos que se muestran en la vista. Ejemplos comunes incluyen 'DatePipe', 'CurrencyPipe' y 'CustomPipe' para transformaciones específicas."
-
     },
     {
       "id": 189,
@@ -1401,7 +1371,6 @@
       "level": "Senior",
       "question": "¿Cómo se abordan los problemas de seguridad en una aplicación Angular y cuáles son las mejores prácticas para protegerla contra amenazas comunes?",
       "answer": "Para abordar problemas de seguridad en Angular, se deben implementar medidas como la prevención de ataques XSS y CSRF, la autenticación y autorización robustas, la validación de entrada y el uso de bibliotecas de seguridad de confianza. Se recomienda seguir las mejores prácticas de seguridad web y mantener las dependencias actualizadas."
-
     },
     {
       "id": 190,
@@ -1409,7 +1378,6 @@
       "level": "Senior",
       "question": "¿Qué es el servidor de renderizado (Server-Side Rendering - SSR) en Angular y cuáles son sus beneficios y desafíos?",
       "answer": "El servidor de renderizado en Angular permite renderizar la aplicación en el servidor antes de enviarla al navegador del cliente. Sus beneficios incluyen una carga inicial más rápida y una mejor indexación por parte de motores de búsqueda. Sin embargo, presenta desafíos como la configuración y el manejo de estado."
-
     },
     {
       "id": 191,
@@ -1417,7 +1385,6 @@
       "level": "Senior",
       "question": "Explique cómo se implementa la autenticación y autorización en una aplicación Angular y mencione las técnicas y bibliotecas recomendadas.",
       "answer": "La autenticación y autorización en Angular se implementa mediante técnicas como el uso de tokens JWT, el almacenamiento seguro de credenciales, la protección de rutas y el uso de bibliotecas como Angular AuthGuard y AngularFire para Firebase. Además, se deben seguir las prácticas recomendadas para proteger recursos y datos sensibles."
-
     },
     {
       "id": 192,
@@ -1425,7 +1392,6 @@
       "level": "Senior",
       "question": "Explique la gestión de estado en aplicaciones Angular y mencione las bibliotecas y patrones comunes utilizados para implementarla.",
       "answer": "La gestión de estado en aplicaciones Angular se refiere a cómo se almacenan y gestionan los datos de la aplicación. Se implementa utilizando bibliotecas como NgRx, Redux y MobX, así como patrones como el patrón Redux. La gestión de estado es crucial para aplicaciones escalables y complejas."
-
     },
     {
       "id": 193,
@@ -1643,7 +1609,6 @@
       "level": "Middle",
       "question": "¿Cuál es el propósito de la etiqueta <nav> en HTML?",
       "answer": "La etiqueta <nav> en HTML se utiliza para definir una sección de navegación en un documento web. Contiene enlaces o elementos de navegación que dirigen a otras partes del sitio web."
-
     },
     {
       "id": 224,

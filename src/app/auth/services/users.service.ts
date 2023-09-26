@@ -118,7 +118,8 @@ export class UsersService {
             userId: user.id
           }
           localStorage.setItem('authToken', JSON.stringify(authData));
-          this.setAuthenticatedUserSubject(user)
+          this.setAuthenticatedUserSubject(user);
+          this.isLoggedInSubject$.next(true);
         }
         return of(user || null);
       }),
@@ -133,6 +134,7 @@ export class UsersService {
     this.user = null;
     localStorage.removeItem('authToken');
     this.setAuthenticatedUserSubject(null);
+    this.isLoggedInSubject$.next(false);
   };
 
 }

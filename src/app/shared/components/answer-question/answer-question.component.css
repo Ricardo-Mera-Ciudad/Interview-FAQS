@@ -79,14 +79,15 @@
   width: 30px;
   height: 30px;
 }
-.star-icon{
+.star-icon-container{
+  background-color: transparent;
+  border: none;
+  color: #0f213b;
   cursor: pointer;
 }
-/* PROVISONAL */
 .star-icon-favorite{
   width: 16px;
   height: 16px;
-  cursor: pointer;
   background-color: yellow;
   clip-path: polygon(
     50% 0%,

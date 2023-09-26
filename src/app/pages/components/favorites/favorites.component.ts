@@ -1,86 +1,139 @@
 import { Component, inject } from '@angular/core';
-import { PagesService } from '../../services/pages.service';
-import { DataService } from '../../services/data.service';
-import { UsersService } from 'src/app/auth/services/users.service';
-import { of, switchMap } from 'rxjs';
 import { Question } from 'src/app/shared/interfaces/answerQuestion.interface';
-// import { UserFavs } from 'src/app/shared/interfaces/user-data.interface';
+import { DataService } from '../../services/data.service';
+import { PagesService } from '../../services/pages.service';
+import { UsersService } from 'src/app/auth/services/users.service';
+import { Subject, combineLatest, switchMap, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-favorites',
   templateUrl: './favorites.component.html',
-  styleUrls: ['./favorites.component.css']
+  styleUrls: ['./favorites.component.css'],
 })
 export class FavoritesComponent {
-  // public questions: Question[] = [];
-  // public category: string = 'Angular';
-  // public level: string | null = null;
-  // public isLoading: boolean = true;
+  private dataService = inject(DataService);
+  private pagesService = inject(PagesService);
+  private userService = inject(UsersService);
 
-  // public answerVisibility: { [key: number]: boolean } = {};
-  // public borderRadiusState: { [key: number]: boolean } = {};
-  // public favouriteStatusColor: { [key: number]: boolean } = {};
+  public questions: Question[] = [];
+  public favoriteQuestions: Question[] = [];
 
-  // private pagesService = inject(PagesService);
-  // private dataService  = inject(DataService);
-  // private usersService = inject(UsersService);
+  public answerVisibility: { [key: number]: boolean } = {};
+  public borderRadiusState: { [key: number]: boolean } = {};
+  public isLink: { [key: number]: boolean } = {};
 
+  public category: string = 'Angular';
+  public level: string | null = null;
+  public isLoading: boolean = true;
+  public isLoggedIn: boolean = false;
 
-  // ngOnInit(): void {
-  //   this.getFavoritesFaqs();
-  // }
+  private unsubscribe$ = new Subject<void>();
 
-  // getFavoritesFaqs() {
-  //   this.usersService.getAuthenticatedUserSubject().pipe(
-  //     switchMap((user) => {
-  //       if (user && user.id) {
-  //         return this.dataService.getFavoriteQuestions(user.id);
-  //       } else {
-  //         return of([]);
-  //       }
-  //     })
-  //   ).subscribe((favoriteQuestions: Question[]) => {
-  //     this.questions = favoriteQuestions;
-  //     this.isLoading = false;
-  //   });
-  // }
+  ngOnInit(): void {
+    this.loadCategory();
+    this.loadFavoriteQuestions();
+    this.checkLoginStatus();
+  }
 
+  checkLoginStatus() {
+    this.userService.isLoggedIn$.subscribe((loggedIn) => {
+      this.isLoggedIn = loggedIn;
+    });
+  }
 
-  // removeFromFavorites(question: Question) {
-  //   const favoriteQuestions = this.dataService.getSavedFavoriteQuestionsFromStorage();
-  //   const index = favoriteQuestions.findIndex((favQuestion) => favQuestion.id === question.id);
+  getFaqs() {
+    this.pagesService.selectedCategory$
+      .pipe(
+        switchMap((selectedCategory) => {
+          return this.dataService.getQuestions(selectedCategory, this.level!);
+        }),
+        takeUntil(this.unsubscribe$)
+      )
+      .subscribe((questions: Question[]) => {
+        this.questions = questions.map((question) => ({
+          ...question,
+          favorite: false,
+        }));
 
-  //   if (index !== -1) {
-  //     favoriteQuestions.splice(index, 1);
-  //     this.dataService.saveFavoriteQuestions(favoriteQuestions);
+        this.questions = questions;
+        this.isLoading = false;
+        this.questions.forEach((question) => {
+          this.isLink[question.id] = question.answer.startsWith('https://');
+          this.answerVisibility[question.id] = false;
+          this.borderRadiusState[question.id] = false;
+        });
+      });
+  }
 
-  //     this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
-  //       if (user && user.id) {
-  //         const userId = user.id;
-  //         const userFav: UserFavs = {
-  //           userId: userId,
-  //           questionId: question.id,
-  //         };
+  loadCategory() {
+    combineLatest([
+      this.pagesService.selectedCategory$,
+      this.pagesService.selectedLevel$,
+    ])
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(([categoryFromService, levelFromService]) => {
+        this.category = categoryFromService;
+        this.level = levelFromService;
+        this.getFaqs();
+      });
+  }
 
-  //         this.dataService.removeFavoriteQuestion(userFav).subscribe(() => {
-  //           const currentQuestion = this.questions.find((q) => q.id === question.id);
-  //           if (currentQuestion) {
-  //             currentQuestion.favorite = false;
-  //             console.log('currentQuestion.favorite:', currentQuestion.favorite);
-  //           }
-  //           this.favouriteStatusColor[question.id] = false;
-  //         });
-  //       } else {
-  //         this.favouriteStatusColor[question.id] = false;
-  //       }
-  //     });
-  //   }
-  // }
+  favoriteStatus(questionId: number) {
+    const isFavorited = this.isFavorite(questionId);
+    if (isFavorited) {
+      this.unmarkAsFavorite(questionId);
+      this.removeFromLocalFavorites(questionId);
+    } else {
+      this.markAsFavorite(questionId);
+      this.addToLocalFavorites(questionId);
+    }
+  }
 
+  addToLocalFavorites(questionId: number) {
+    const questionToAdd = this.questions.find(
+      (question) => question.id === questionId
+    );
 
-  // showAnswer(id: number) {
-  //   this.answerVisibility[id] = !this.answerVisibility[id];
-  //   this.borderRadiusState[id] = this.answerVisibility[id];
-  // }
+    if (questionToAdd) {
+      this.favoriteQuestions.push(questionToAdd);
+    }
+  }
 
+  removeFromLocalFavorites(questionId: number) {
+    this.favoriteQuestions = this.favoriteQuestions.filter(
+      (question) => question.id !== questionId
+    );
+  }
+
+  markAsFavorite(questionId: number) {
+    this.dataService.markQuestionAsFavorite(questionId);
+  }
+
+  unmarkAsFavorite(questionId: number) {
+    this.dataService.unmarkQuestionAsFavorite(questionId);
+  }
+
+  loadFavoriteQuestions() {
+    this.dataService
+      .getFavoriteQuestions()
+      .subscribe((favoriteQuestions: Question[]) => {
+        this.favoriteQuestions = favoriteQuestions;
+      });
+  }
+
+  isFavorite(questionId: number): boolean {
+    return this.favoriteQuestions.some(
+      (question) => question.id === questionId
+    );
+  }
+
+  showAnswer(id: number) {
+    this.answerVisibility[id] = !this.answerVisibility[id];
+    this.borderRadiusState[id] = this.answerVisibility[id];
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
 }

@@ -86,7 +86,7 @@
   width: 150px;
   z-index: 9999;
   transition: background-color 0.3s, text-decoration 0.3s;
-  padding: 0px;
+  padding: 0 5px;
   text-align: left;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -106,6 +106,7 @@
 .header-container__navbar-items-menu-list-item {
   cursor: pointer;
   padding-left: 15px;
+
 
   @media (min-width: 768px) {
     padding-left: 35px;
@@ -256,8 +257,8 @@
 }
 
 
-.header-container__navbar-items-menu-list 
-.header-container__navbar-items-menu-list-item:hover 
+.header-container__navbar-items-menu-list
+.header-container__navbar-items-menu-list-item:hover
 .header-container__navbar-items-menu-list-item-link {
   text-decoration: none;
   color: #FCFCFC;
@@ -266,7 +267,7 @@
 }
 
 
-.header-container__navbar-items-menu-list-item 
+.header-container__navbar-items-menu-list-item
 .header-container__navbar-items-menu-list-item-link {
   position: relative;
   text-decoration: none;
@@ -274,7 +275,7 @@
 }
 
 
-.header-container__navbar-items-menu-list-item 
+.header-container__navbar-items-menu-list-item
 .header-container__navbar-items-menu-list-item-link::after {
   content: "";
   position: absolute;
@@ -289,7 +290,7 @@
 }
 
 
-.header-container__navbar-items-menu-list-item 
+.header-container__navbar-items-menu-list-item
 .header-container__navbar-items-menu-list-item-link:hover::after {
   transform: scaleX(1);
 }
@@ -407,7 +408,7 @@
 }
 
 
-.header-container__navbar-items-login-user-menu-list-item 
+.header-container__navbar-items-login-user-menu-list-item
 .header-container__navbar-items-login-user-menu-list-item-link {
   position: relative;
   text-decoration: none;
@@ -415,7 +416,7 @@
 }
 
 
-.header-container__navbar-items-login-user-menu-list-item 
+.header-container__navbar-items-login-user-menu-list-item
 .header-container__navbar-items-login-user-menu-list-item-link::after {
   content: "";
   position: absolute;
@@ -430,7 +431,7 @@
 }
 
 
-.header-container__navbar-items-login-user-menu-list-item 
+.header-container__navbar-items-login-user-menu-list-item
 .header-container__navbar-items-login-user-menu-list-item-link:hover::after {
   transform: scaleX(1);
 }

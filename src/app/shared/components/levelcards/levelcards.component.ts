@@ -3,6 +3,7 @@ import { Subject, switchMap, takeUntil } from 'rxjs';
 import { DataService } from 'src/app/pages/services/data.service';
 import { PagesService } from 'src/app/pages/services/pages.service';
 import { Question } from '../../interfaces/answerQuestion.interface';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'levelcards',
@@ -13,8 +14,11 @@ export class LevelcardsComponent implements OnInit, OnDestroy {
 
   public levelSelected: string = "Middle";
   public questionsLevel: Question[] = [];
+  public showLevels = false;
   private pagesService = inject(PagesService);
   private dataService = inject(DataService);
+
+
   public centerButtonSelected: boolean = false;
   private unsubscribe$ = new Subject<void>();
 
@@ -23,8 +27,6 @@ export class LevelcardsComponent implements OnInit, OnDestroy {
     this.getLevelFromStorage();
     this.loadQuestions();
   }
-
-
   loadQuestions() {
     this.pagesService.selectedCategory$
       .pipe(

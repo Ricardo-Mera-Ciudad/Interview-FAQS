@@ -29,6 +29,19 @@ export class DataService {
     );
   }
 
+  getRandomQuestions(category: string, count: number): Observable<Question[]>{
+    return this.getQuestions(category).pipe(
+      map((questions) => {
+        if(questions.length <= count){
+          return questions;
+        } else {
+          const shuffledQuestions = questions.slice().sort(() => 0.5 - Math.random());
+          return shuffledQuestions.slice(0, count);
+        }
+      })
+    )
+  }
+
   markQuestionAsFavorite(questionId: number) {
     this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
       if (!user) {

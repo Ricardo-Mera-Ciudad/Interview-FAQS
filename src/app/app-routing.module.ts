@@ -10,6 +10,7 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { RegisterComponent } from './auth/pages/register/register.component';
 import { UserDataComponent } from './pages/components/user-data/user-data.component';
 import { WeblinksComponent } from './pages/weblinks/weblinks.component';
+import { QuizComponent } from './pages/quiz/quiz.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'weblinks',
     component:WeblinksComponent
+  },
+  {
+    path:'quiz',
+    component:QuizComponent
   },
   {
     path: '**',

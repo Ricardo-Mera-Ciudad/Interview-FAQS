@@ -20,6 +20,7 @@ import { TypescriptQuestionsComponentComponent } from './components/typescript-q
 import { UserDataComponent } from './components/user-data/user-data.component';
 import { WeblinksQuestionsComponentComponent } from './components/weblinks-questions-component/weblinks-questions-component.component';
 import { WeblinksComponent } from './weblinks/weblinks.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { WeblinksComponent } from './weblinks/weblinks.component';
     UserDataComponent,
     WeblinksQuestionsComponentComponent,
     WeblinksComponent,
+    QuizComponent
   ],
   imports: [
     CommonModule,
@@ -50,6 +52,7 @@ import { WeblinksComponent } from './weblinks/weblinks.component';
   ],
   exports: [
     HomePageComponent,
+    QuizComponent
   ]
 
 })

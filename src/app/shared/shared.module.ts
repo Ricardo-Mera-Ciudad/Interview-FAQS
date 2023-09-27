@@ -8,23 +8,24 @@ import { HeaderComponent } from './components/header/header.component';
 import { LevelcardsComponent } from './components/levelcards/levelcards.component';
 
 
+
+
 @NgModule({
-  declarations: [
-    AnswerQuestionComponent,
-    FooterComponent,
-    HeaderComponent,
-    LevelcardsComponent,
-  ],
-
-  imports: [
-    CommonModule,
-    RouterModule],
-
-  exports: [
-    AnswerQuestionComponent,
-    FooterComponent,
-    HeaderComponent,
-    LevelcardsComponent,
-  ],
+    declarations: [
+        AnswerQuestionComponent,
+        FooterComponent,
+        HeaderComponent,
+        LevelcardsComponent,
+    ],
+    exports: [
+        AnswerQuestionComponent,
+        FooterComponent,
+        HeaderComponent,
+        LevelcardsComponent,
+    ],
+    imports: [
+        CommonModule,
+        RouterModule,
+    ]
 })
 export class SharedModule { }

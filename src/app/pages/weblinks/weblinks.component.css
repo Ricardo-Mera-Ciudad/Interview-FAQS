@@ -1,0 +1,14 @@
+.container-main-component{
+    display: flex;
+
+    flex-direction: column;
+  
+    align-items: center;
+  
+    min-height: 100vh;
+}
+
+
+.prueba{
+    margin-top:150px
+}

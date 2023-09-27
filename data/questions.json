@@ -2036,118 +2036,240 @@
       "level": "Middle",
       "question": "¿Qué es el 'flexbox' en CSS y cuál es su propósito?",
       "answer": "El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores."
-      },
-      {
-        "id": 285,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es el 'grid layout' en CSS y cuál es su ventaja?",
-        "answer": "El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables(responsivos) y equilibrados."
-      },
-      {
-        "id": 286,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué son las animaciones CSS y cómo se definen?",
-        "answer": "Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
-      },
-      {
-        "id": 287,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es el 'gradients' en CSS y cómo se crea un fondo degradado?",
-        "answer": "Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto."
-      },
-      {
-        "id": 288,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es 'transform' en CSS y cuál es su función?",
-        "answer": "El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."
-      },
-      {
-        "id": 289,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es 'viewport' en CSS y cómo se relaciona con el diseño web responsivo?",
-        "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos."
-      },
-      {
-        "id": 290,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué son las variables CSS (variables personalizadas) y cómo se declaran?",
-        "answer": "Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable."
-      },
-      {
-        "id": 291,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué son las transiciones CSS y cómo se utilizan?",
-        "answer": "Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript."
-      },
-      {
-        "id": 292,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es la 'transformación 3D' en CSS y cuáles son sus aplicaciones?",
-        "answer": "La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado."
-      },
-      {
-        "id": 293,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es el 'aspect ratio' en CSS y cómo se controla?",
-        "answer": "El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador."
-      },
-      {
-        "id": 294,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es el 'object-fit' en CSS y para qué se utiliza?",
-        "answer": "El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño."
-      },
-      {
-        "id": 295,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es la 'customización de elementos' (Shadow DOM) en CSS y cuál es su propósito?",
-        "answer": "La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
-      },
-      {
-        "id": 296,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es el 'mix-blend-mode' en CSS y cuál es su función?",
-        "answer": "El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes."
-      },
-      {
-        "id": 297,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es la 'función calc()' en CSS y cuándo se utiliza?",
-        "answer": "La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible."
-      },
-      {
-        "id": 298,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es la 'propiedad clip-path' en CSS y cuál es su propósito?",
-        "answer": "La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos."
-      },
-      {
-        "id": 299,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es 'object-position' en CSS y cuál es su función?",
-        "answer": "'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño."
-      },
-      {
-        "id": 300,
-        "category": "Css",
-        "level": "Senior",
-        "question": "¿Qué es la 'variable de entorno' (env-var) en CSS y cómo se utiliza?",
-        "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
-        }
+    },
+    {
+      "id": 285,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'grid layout' en CSS y cuál es su ventaja?",
+      "answer": "El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables(responsivos) y equilibrados."
+    },
+    {
+      "id": 286,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las animaciones CSS y cómo se definen?",
+      "answer": "Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
+    },
+    {
+      "id": 287,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'gradients' en CSS y cómo se crea un fondo degradado?",
+      "answer": "Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto."
+    },
+    {
+      "id": 288,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'transform' en CSS y cuál es su función?",
+      "answer": "El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."
+    },
+    {
+      "id": 289,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'viewport' en CSS y cómo se relaciona con el diseño web responsivo?",
+      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos."
+    },
+    {
+      "id": 290,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las variables CSS (variables personalizadas) y cómo se declaran?",
+      "answer": "Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable."
+    },
+    {
+      "id": 291,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las transiciones CSS y cómo se utilizan?",
+      "answer": "Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript."
+    },
+    {
+      "id": 292,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'transformación 3D' en CSS y cuáles son sus aplicaciones?",
+      "answer": "La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado."
+    },
+    {
+      "id": 293,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'aspect ratio' en CSS y cómo se controla?",
+      "answer": "El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador."
+    },
+    {
+      "id": 294,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'object-fit' en CSS y para qué se utiliza?",
+      "answer": "El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño."
+    },
+    {
+      "id": 295,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'customización de elementos' (Shadow DOM) en CSS y cuál es su propósito?",
+      "answer": "La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
+    },
+    {
+      "id": 296,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'mix-blend-mode' en CSS y cuál es su función?",
+      "answer": "El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes."
+    },
+    {
+      "id": 297,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'función calc()' en CSS y cuándo se utiliza?",
+      "answer": "La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible."
+    },
+    {
+      "id": 298,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'propiedad clip-path' en CSS y cuál es su propósito?",
+      "answer": "La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos."
+    },
+    {
+      "id": 299,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'object-position' en CSS y cuál es su función?",
+      "answer": "'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño."
+    },
+    {
+      "id": 300,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'variable de entorno' (env-var) en CSS y cómo se utiliza?",
+      "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
+    }
+  ],
+  "weblinks": [
+    {
+      "id": 1,
+      "name": "Angular Official Page",
+      "link": "https://angular.io/docs",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 2,
+      "name": "Bootstrap",
+      "link": "https://getbootstrap.com/",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 3,
+      "name": "",
+      "link": "",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 4,
+      "name": "",
+      "link": "",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 5,
+      "name": "",
+      "link": "",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 6,
+      "name": "Repositorio con listas de pruebas técnicas",
+      "link": "https://github.com/midudev/pruebas-tecnicas",
+      "category": "challenges"
+    },
+    {
+      "id": 7,
+      "name": "Web para practicar código",
+      "link": "https://www.codewars.com/",
+      "category": "challenges"
+    },
+    {
+      "id": 8,
+      "name": "Desafíos de programación y ejercicios",
+      "link": "https://retosdeprogramacion.com/",
+      "category": "challenges"
+    },
+    {
+      "id": 9,
+      "name": "Practica tu habilidad de resolución de problemas",
+      "link": "https://leetcode.com/",
+      "category": "challenges"
+    },
+    {
+      "id": 10,
+      "name": "Mejora tu habilidad en CSS jugando",
+      "link": "http://flexboxfroggy.com/#es",
+      "category": "challenges"
+    },
+    {
+      "id": 11,
+      "name": "Cursos y certificaciones de distintos lenguajes",
+      "link": "https://www.freecodecamp.org/",
+      "category": "courses"
+    },
+    {
+      "id": 12,
+      "name": "Chrome DevTools - Crash Course",
+      "link": "https://www.youtube.com/watch?v=gTVpBbFWry8",
+      "category": "courses"
+    },
+    {
+      "id": 13,
+      "name": "Fundamentos de testing",
+      "link": "https://www.testim.io/blog/jasmine-js-a-from-scratch-tutorial-to-start-testing/",
+      "category": "courses"
+    },
+    {
+      "id": 14,
+      "name": "Parcel vs Webpack",
+      "link": "https://www.youtube.com/watch?v=gTVpBbFWry8",
+      "category": "courses"
+    },
+    {
+      "id": 15,
+      "name": "Conventional Commits - Qué es y por qué deberías empezar a utilizarlo",
+      "link": "https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an",
+      "category": "courses"
+    },
+    {
+      "id": 16,
+      "name": "¿Cómo crear tu perfil de Github",
+      "link": "https://midu.dev/como-crear-tu-perfil-de-github-con-readme/",
+      "category": "resources"
+    },
+    {
+      "id": 17,
+      "name": "Repositorio con lista de pruebas técnicas",
+      "link": "https://github.com/midudev/pruebas-tecnicas",
+      "category": "resources"
+    },
+    {
+      "id": 18,
+      "name": "Generar opiniones en retrospectiva en equipo",
+      "link": "https://retroteam.app/",
+      "category": "resources"
+    },
+    {
+      "id": 19,
+      "name": "",
+      "link": "",
+      "category": "resources"
+    },
+    {
+      "id": 20,
+      "name": "Lista de API's públicas",
+      "link": "https://publicapi.dev/",
+      "category": "resources"
+    }
   ]
 }

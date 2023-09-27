@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Weblinks } from 'src/app/shared/interfaces/weblinks.interface';
 import { environments } from 'src/environment/environment';
 
 @Injectable({
@@ -12,7 +14,7 @@ export class WeblinksService {
 
 
 
-  getAllWeblinks(){
-    return this.http.get(`${this.apiUrl}/weblinks`)
+  getAllWeblinks():Observable<Weblinks[]>{
+    return this.http.get<Weblinks[]>(`${this.apiUrl}/weblinks`)
   }
 }

@@ -4,6 +4,8 @@ import { PagesService } from 'src/app/pages/services/pages.service';
 import { Subject, combineLatest, of, switchMap, takeUntil } from 'rxjs';
 import { DataService } from 'src/app/pages/services/data.service';
 import { UsersService } from 'src/app/auth/services/users.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'shared-answer-question',
@@ -14,6 +16,7 @@ export class AnswerQuestionComponent {
   private pagesService = inject(PagesService);
   private dataService = inject(DataService);
   private userService = inject(UsersService);
+  private router = inject(Router);
 
   public questions: Question[] = [];
   public favoriteQuestions: Question[] = [];
@@ -27,10 +30,15 @@ export class AnswerQuestionComponent {
   public isLink: { [key: number]: boolean } = {};
   private unsubscribe$ = new Subject<void>();
 
+
   ngOnInit(): void {
     this.loadCategory();
     this.loadFavoriteQuestions();
     this.checkLoginStatus()
+  }
+
+  playQuiz(){
+    this.router.navigate(['/quiz']);
   }
 
   checkLoginStatus(){

@@ -9,6 +9,30 @@
     width: 1100px;
   }
 }
+.quiz-button{
+    width: auto;
+    border: 1px solid #778899;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    background-color: #e1effb;
+    color: #0f213b;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 100%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.quiz-button:hover{
+  transform: scale(1.1);
+  background-color: #0f213b;
+  color: #e1effb;
+  transition: transform 0.3s ease;
+}
+.quiz-button-text{
+  margin-right: 5px;
+}
+
 .question-selectors {
   color: #0f213b;
   margin-top: 10px;

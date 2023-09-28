@@ -1,6 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { WeblinksService } from '../services/weblinks.service';
 import { Weblinks } from 'src/app/shared/interfaces/weblinks.interface';
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-weblinks',

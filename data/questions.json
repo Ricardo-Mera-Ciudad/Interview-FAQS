@@ -54,141 +54,282 @@
       "id": 1,
       "category": "Angular",
       "level": "Junior",
-      "question": "¿Que son los componentes de Angular",
-      "answer": "Los componentes son los bloques de construcción más básicos para crear la interfaz de usuario de una aplicación de Angular. Estos componentes forman una especie de árbol en la aplicación y siempre tienen una plantilla (o template) con la que podemos formar la vista de nuestra aplicacion."
+      "question": "¿Que son los componentes de Angular?",
+      "answer": "Los componentes son los bloques de construcción más básicos para crear la interfaz de usuario de una aplicación de Angular. Estos componentes forman una especie de árbol en la aplicación y siempre tienen una plantilla (o template) con la que podemos formar la vista de nuestra aplicacion.",
+      "correctAnswer": "b) Bloques de construcción más básicos para la interfaz de usuario de una aplicación Angular.",
+      "allAnswers": [
+
+          "a) Elementos para representar datos en Angular.",
+          "b) Bloques de construcción más básicos para la interfaz de usuario de una aplicación Angular.",
+          "c) Módulos de enrutamiento en Angular.",
+          "d) Bibliotecas de terceros para mejorar el rendimiento de Angular."
+      ]
     },
     {
       "id": 2,
       "category": "Angular",
       "level": "Junior",
       "question": "Indica al menos 3 formas en las que puedan comunicarse los componentes en Angular",
-      "answer": "Binding (vinculación de entrada INPUT y vinculación de salida OUTPUT), Servicios (servicios compartidos inyectado en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL),LocalStorage y SessionStorage (para la comunicación persistente entre sesiones o pestañas del navegador),Navegación con parámetros de ruta (a través de los parámetros de ruta en la URL cuando se navega entre diferentes vistas de la aplicación),Inyección de Dependencia (DI - Dependency Injection),  Directivas personalizadas..."
+      "answer": "Binding (vinculación de entrada INPUT y vinculación de salida OUTPUT), Servicios (servicios compartidos inyectado en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL),LocalStorage y SessionStorage (para la comunicación persistente entre sesiones o pestañas del navegador),Navegación con parámetros de ruta (a través de los parámetros de ruta en la URL cuando se navega entre diferentes vistas de la aplicación),Inyección de Dependencia (DI - Dependency Injection),  Directivas personalizadas...",
+      "correctAnswer": "Servicios (servicios compartidos inyectados en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL), Inyección de Dependencia (DI - Dependency Injection)",
+      "allAnswers": [
+        "a) Binding (vinculación de entrada INPUT y vinculación de salida OUTPUT)",
+        "b) LocalStorage y SessionStorage (para la comunicación persistente entre sesiones o pestañas del navegador)",
+        "c) Navegación con parámetros de ruta (a través de los parámetros de ruta en la URL cuando se navega entre diferentes vistas de la aplicación)",
+        "d) Servicios (servicios compartidos inyectados en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL), Inyección de Dependencia (DI - Dependency Injection)"
+      ]
     },
     {
       "id": 3,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Que es una plantilla?",
-      "answer": "Una plantilla o template es una vista Html donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular."
+      "answer": "Una plantilla o template es una vista Html donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular.",
+      "correctAnswer": "Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular.",
+      "allAnswers": [
+        "a) Es una hoja de estilo CSS utilizada en Angular.",
+        "b) Es un archivo JavaScript que define la lógica de un componente Angular.",
+        "c) Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular.",
+        "d) Es un archivo JSON utilizado para almacenar datos en una aplicación Angular."
+      ]
     },
     {
       "id": 4,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué es el Data Binding o vinculación de datos?",
-      "answer": "Es un concepto clave en Angular y permite definir la comunicación entre un componente y el DOM, lo que hace que sea muy fácil definir aplicaciones interactivas sin preocuparse por enviar y extraer datos"
+      "answer": "Es un concepto clave en Angular y permite definir la comunicación entre un componente y el DOM, lo que hace que sea muy fácil definir aplicaciones interactivas sin preocuparse por enviar y extraer datos",
+      "correctAnswer": "d) Un concepto clave en Angular que permite definir la comunicación entre un componente y el DOM, facilitando la creación de aplicaciones interactivas.",
+      "allAnswers": [
+        "a) Una técnica para compilar el código fuente de Angular.",
+        "b) Una biblioteca de gráficos en Angular.",
+        "c) Un lenguaje de programación para Angular.",
+        "d) Un concepto clave en Angular que permite definir la comunicación entre un componente y el DOM, facilitando la creación de aplicaciones interactivas."
+      ]
     },
     {
       "id": 5,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué es Angular CLI y para qué se usa?",
-      "answer": "Es una interfaz de línea de comandos (Command Line Interface) para desarrollar y crear aplicaciones angulares utilizando módulos de estilo nodejs (commonJs). Se instala usando el siguiente comando: npm install @angular/cli@latest"
+      "answer": "Es una interfaz de línea de comandos (Command Line Interface) para desarrollar y crear aplicaciones angulares utilizando módulos de estilo nodejs (commonJs). Se instala usando el siguiente comando: npm install @angular/cli@latest",
+      "correctAnswer": "b) Una interfaz de línea de comandos (Command Line Interface) para desarrollar y crear aplicaciones Angular utilizando módulos de estilo nodejs (commonJs).",
+      "allAnswers": [
+        "a) Una interfaz gráfica de usuario para Angular.",
+        "b) Una interfaz de línea de comandos (Command Line Interface) para desarrollar y crear aplicaciones Angular utilizando módulos de estilo nodejs (commonJs).",
+        "c) Un servicio web para compilar aplicaciones Angular.",
+        "d) Un editor de texto para programadores."
+      ]
     },
     {
       "id": 6,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué es la inyección de dependencia en Angular?",
-      "answer": "Es un patrón de diseño de aplicaciones importante en el que una clase solicita dependencias de fuentes externas en lugar de crearlas ella misma. Angular viene con su propio marco de inyección de dependencias para resolver dependencias (servicios u objetos que una clase necesita para realizar su función), por lo que puede hacer que sus servicios dependan de otros servicios en toda su aplicació"
+      "answer": "Es un patrón de diseño de aplicaciones importante en el que una clase solicita dependencias de fuentes externas en lugar de crearlas ella misma. Angular viene con su propio marco de inyección de dependencias para resolver dependencias (servicios u objetos que una clase necesita para realizar su función), por lo que puede hacer que sus servicios dependan de otros servicios en toda su aplicación",
+      "correctAnswer": "b) Un patrón de diseño de aplicaciones importante en el que una clase solicita dependencias de fuentes externas en lugar de crearlas ella misma.",
+      "allAnswers": [
+        "a) Un enfoque para compilar aplicaciones Angular.",
+        "b) Un patrón de diseño de aplicaciones importante en el que una clase solicita dependencias de fuentes externas en lugar de crearlas ella misma.",
+        "c) Una biblioteca de gráficos en Angular.",
+        "d) Una técnica para modificar la apariencia de elementos HTML."
+      ]
     },
     {
       "id": 7,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué son las directivas? Tipos de directivas en Angular",
-      "answer": "En Angular, las directivas son marcadores en el DOM (Documento de Objetos del Modelo) que le indican al framework qué hacer con un elemento del DOM o cómo debe comportarse (se usan para agregar funcionalidad adicional a los elementos HTML o modificar su comportamiento). Existen ESTRUCTURALES que modifican la estructura del DOM al agregar o eliminar elementos del mismo (ngIf, ngFor y ngSwitch), las de ATRIBUTO (ngModel,ngClass, ngStyle, ngFor) y las de COMPONENTE que se refieren al uso de componentes personalizados como directivas en la construcción de la interfaz de usuario."
+      "answer": "En Angular, las directivas son marcadores en el DOM (Documento de Objetos del Modelo) que le indican al framework qué hacer con un elemento del DOM o cómo debe comportarse (se usan para agregar funcionalidad adicional a los elementos HTML o modificar su comportamiento). Existen ESTRUCTURALES que modifican la estructura del DOM al agregar o eliminar elementos del mismo (ngIf, ngFor y ngSwitch), las de ATRIBUTO (ngModel,ngClass, ngStyle, ngFor) y las de COMPONENTE que se refieren al uso de componentes personalizados como directivas en la construcción de la interfaz de usuario.",
+      "correctAnswer": "d) En Angular, las directivas son marcadores en el DOM que indican al framework qué hacer con un elemento del DOM o cómo debe comportarse; existen ESTRUCTURALES, de ATRIBUTO y de COMPONENTE.",
+      "allAnswers": [
+        "a) Son funciones de Angular para compilar el código HTML.",
+        "b) Son herramientas para la gestión de rutas en una aplicación Angular.",
+        "c) Son bloques de construcción básicos en el desarrollo web.",
+        "d) En Angular, las directivas son marcadores en el DOM que indican al framework qué hacer con un elemento del DOM o cómo debe comportarse; existen ESTRUCTURALES, de ATRIBUTO y de COMPONENTE."
+      ]
     },
     {
       "id": 8,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué son los formularios reactivos? Explica FormBuilder",
-      "answer": "Estos formularios se basan en programación reactiva y permiten un mayor control y flexibilidad en la manipulación y validación de datos de entrada del usuario.Son un enfoque basado en modelos para crear formularios en un estilo reactivo (las entradas del formulario cambian con el tiempo). Estos se construyen alrededor de flujos observables, donde las entradas de formularios y los valores se proporcionan como flujos de valores de entrada.Los formularios reactivos son especialmente útiles cuando necesitas gestionar formularios complejos con reglas de validación personalizadas, dependencias entre campos o cuando deseas tener un control más preciso sobre la manipulación de datos de entrada en tiempo real. También facilitan las pruebas unitarias de la lógica del formulario, ya que puedes simular fácilmente eventos y cambios en los campos.FormBuilder es una utilidad proporcionada por Angular que simplifica la creación de formularios reactivos al proporcionar métodos para crear instancias de FormGroup y FormControl de manera más sencilla y legible."
+      "answer": "Estos formularios se basan en programación reactiva y permiten un mayor control y flexibilidad en la manipulación y validación de datos de entrada del usuario.Son un enfoque basado en modelos para crear formularios en un estilo reactivo (las entradas del formulario cambian con el tiempo). Estos se construyen alrededor de flujos observables, donde las entradas de formularios y los valores se proporcionan como flujos de valores de entrada.Los formularios reactivos son especialmente útiles cuando necesitas gestionar formularios complejos con reglas de validación personalizadas, dependencias entre campos o cuando deseas tener un control más preciso sobre la manipulación de datos de entrada en tiempo real. También facilitan las pruebas unitarias de la lógica del formulario, ya que puedes simular fácilmente eventos y cambios en los campos.FormBuilder es una utilidad proporcionada por Angular que simplifica la creación de formularios reactivos al proporcionar métodos para crear instancias de FormGroup y FormControl de manera más sencilla y legible.",
+      "correctAnswer": "a) Son formularios basados en programación reactiva que permiten un mayor control y flexibilidad en la manipulación y validación de datos de entrada del usuario.",
+      "allAnswers": [
+        "a) Son formularios basados en programación reactiva que permiten un mayor control y flexibilidad en la manipulación y validación de datos de entrada del usuario.",
+        "b) Son formularios creados utilizando flujos observables para gestionar eventos de usuario.",
+        "c) Son formularios diseñados para aplicaciones en tiempo real.",
+        "d) Son formularios que simplifican la creación de flujos observables para gestionar eventos de usuario."
+      ]
     },
     {
       "id": 9,
       "category": "Angular",
       "level": "Junior",
       "question": "Lazy loading: ¿qué es?",
-      "answer": "La carga diferida es uno de los conceptos más útiles de Angular Routing. Nos ayuda a descargar las páginas web en trozos en lugar de descargar todo en un paquete grande. Se utiliza para la carga diferida al cargar de forma asincrónica el módulo de funciones para el enrutamiento cuando sea necesario usando la propiedad loadChildren"
+      "answer": "La carga diferida es uno de los conceptos más útiles de Angular Routing. Nos ayuda a descargar las páginas web en trozos en lugar de descargar todo en un paquete grande. Se utiliza para la carga diferida al cargar de forma asincrónica el módulo de funciones para el enrutamiento cuando sea necesario usando la propiedad loadChildren",
+      "correctAnswer": "d) La carga diferida es uno de los conceptos más útiles de Angular Routing que ayuda a descargar las páginas web en trozos cuando sea necesario.",
+      "allAnswers": [
+        "a) Una técnica para cargar páginas web de manera síncrona y completa.",
+        "b) La carga de todas las páginas de una aplicación Angular de una vez.",
+        "c) La carga diferida es un concepto clave en la administración de bases de datos.",
+        "d) La carga diferida es uno de los conceptos más útiles de Angular Routing que ayuda a descargar las páginas web en trozos cuando sea necesario."
+      ]
     },
     {
       "id": 10,
       "category": "Angular",
       "level": "Junior",
       "question": "Pipes.¿Qué son en Angular?",
-      "answer": "Las tuberías o canalizaciones llamadas pipes en Angular son funciones simples que utilizan expresiones de plantilla para aceptar datos como entrada y transformarlos en la salida deseada en la interfaz de usuario.Son una característica esencial para la presentación de datos en Angular y se utilizan para realizar tareas comunes de formateo, filtrado y transformación de datos de manera declarativa en las plantillas. Ejemplo: ({{ userName | uppercase}})"
+      "answer": "Las tuberías o canalizaciones llamadas pipes en Angular son funciones simples que utilizan expresiones de plantilla para aceptar datos como entrada y transformarlos en la salida deseada en la interfaz de usuario. Son una característica esencial para la presentación de datos en Angular y se utilizan para realizar tareas comunes de formateo, filtrado y transformación de datos de manera declarativa en las plantillas. Ejemplo: ({{ userName | uppercase}})",
+      "correctAnswer": "d) Las tuberías o canalizaciones llamadas pipes en Angular son funciones simples que utilizan expresiones de plantilla para aceptar datos como entrada y transformarlos en la salida deseada en la interfaz de usuario.",
+      "allAnswers": [
+        "a) Son conductos para transmitir datos en Angular.",
+        "b) Son una característica para crear bases de datos en Angular.",
+        "c) Son funciones avanzadas de manipulación de archivos en Angular.",
+        "d) Las tuberías o canalizaciones llamadas pipes en Angular son funciones simples que utilizan expresiones de plantilla para aceptar datos como entrada y transformarlos en la salida deseada en la interfaz de usuario."
+      ]
     },
     {
       "id": 11,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué es la interpolación?",
-      "answer": "Es una técnica que se utiliza en las plantillas para mostrar dinámicamente valores de variables y expresiones en la interfaz de usuario. Permite incrustar valores de variables y expresiones directamente en el contenido HTML de una plantilla. La interpolación se realiza mediante la sintaxis de doble llave {{ }} y es una de las formas más simples y comunes de vincular datos en Angular. El texto entre llaves suele ser el nombre de una propiedad de componente. Angular reemplaza ese nombre con el valor de cadena de la propiedad del componente correspondiente."
+      "answer": "Es una técnica que se utiliza en las plantillas para mostrar dinámicamente valores de variables y expresiones en la interfaz de usuario. Permite incrustar valores de variables y expresiones directamente en el contenido HTML de una plantilla. La interpolación se realiza mediante la sintaxis de doble llave {{ }} y es una de las formas más simples y comunes de vincular datos en Angular. El texto entre llaves suele ser el nombre de una propiedad de componente. Angular reemplaza ese nombre con el valor de cadena de la propiedad del componente correspondiente.",
+      "correctAnswer": "b) La interpolación es una técnica que se utiliza en las plantillas para mostrar dinámicamente valores de variables y expresiones en la interfaz de usuario.",
+      "allAnswers": [
+        "a) Un patrón de diseño para la administración de bases de datos en Angular.",
+        "b) La interpolación es una técnica que se utiliza en las plantillas para mostrar dinámicamente valores de variables y expresiones en la interfaz de usuario.",
+        "c) Un tipo de animación en Angular.",
+        "d) Una técnica para cargar módulos en Angular."
+      ]
     },
     {
       "id": 12,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué son los Observables?¿Cómo se crean?",
-      "answer": "Son una parte fundamental de la programación reactiva y se utilizan en Angular (y en otros contextos) para manejar secuencias de eventos asíncronos y streams de datos. Los observables permiten la gestión de flujos de datos en tiempo real, lo que es especialmente útil en aplicaciones web para manejar eventos, solicitudes HTTP, actualizaciones en tiempo real y otras operaciones asíncronas.  Angular proporciona una implementación de observables basada en la biblioteca RxJS, que es una de las bibliotecas más populares para la programación reactiva en JavaScript. 1- Crearlo desde cero con OBSERVABLE y el método NEXT. 2- A partir de una promesa usando FROM. 3- Con el método FROMEVENT creamos observable que emite eventos del DOM. 4- Con INTERVAL creamos observables que emite valores en intervalos de tiempo."
+      "answer": "Son una parte fundamental de la programación reactiva y se utilizan en Angular (y en otros contextos) para manejar secuencias de eventos asíncronos y streams de datos. Los observables permiten la gestión de flujos de datos en tiempo real, lo que es especialmente útil en aplicaciones web para manejar eventos, solicitudes HTTP, actualizaciones en tiempo real y otras operaciones asíncronas.  Angular proporciona una implementación de observables basada en la biblioteca RxJS, que es una de las bibliotecas más populares para la programación reactiva en JavaScript. 1- Crearlo desde cero con OBSERVABLE y el método NEXT. 2- A partir de una promesa usando FROM. 3- Con el método FROMEVENT creamos observable que emite eventos del DOM. 4- Con INTERVAL creamos observables que emite valores en intervalos de tiempo.",
+      "correctAnswer": "c) Son una parte fundamental de la programación reactiva y se utilizan en Angular para manejar eventos asíncronos y streams de datos.",
+      "allAnswers": [
+        "a) Son una característica específica de Angular para el manejo de rutas.",
+        "b) Son una forma de almacenar datos en Angular.",
+        "c) Son una parte fundamental de la programación reactiva y se utilizan en Angular para manejar eventos asíncronos y streams de datos.",
+        "d) Los observables son una parte fundamental de la programación reactiva y se utilizan en Angular para compilar plantillas HTML."
+      ]
     },
     {
       "id": 13,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué es el Http Client en Angular?",
-      "answer": "Es un módulo proporcionado por Angular para realizar solicitudes HTTP a servidores o recursos externos desde una aplicación Angular. Se utiliza para interactuar con servicios web, recuperar datos JSON, realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) y más."
+      "answer": "Es un módulo proporcionado por Angular para realizar solicitudes HTTP a servidores o recursos externos desde una aplicación Angular. Se utiliza para interactuar con servicios web, recuperar datos JSON, realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) y más.",
+      "correctAnswer": "d) El Http Client es un módulo proporcionado por Angular para realizar solicitudes HTTP a servidores o recursos externos desde una aplicación Angular.",
+      "allAnswers": [
+        "a) Una interfaz de usuario para la administración de servidores en Angular.",
+        "b) Un editor de texto para programadores en Angular.",
+        "c) Un módulo que permite la comunicación con dispositivos móviles en Angular.",
+        "d) El Http Client es un módulo proporcionado por Angular para realizar solicitudes HTTP a servidores o recursos externos desde una aplicación Angular."
+      ]
     },
     {
       "id": 14,
       "category": "Angular",
       "level": "Middle",
       "question": "Explica el Angular Router",
-      "answer": "El enrutador de Angular es una característica clave que permite la navegación entre diferentes vistas o componentes en una aplicación web Angular de una página (SPA, por sus siglas en inglés). El enrutador de Angular proporciona una forma estructurada de definir las rutas y gestionar la navegación del usuario en la aplicación."
+      "answer": "El enrutador de Angular es una característica clave que permite la navegación entre diferentes vistas o componentes en una aplicación web Angular de una página (SPA, por sus siglas en inglés). El enrutador de Angular proporciona una forma estructurada de definir las rutas y gestionar la navegación del usuario en la aplicación.",
+      "correctAnswer": "a) El enrutador de Angular es una característica clave que permite la navegación entre diferentes vistas o componentes en una aplicación web Angular de una página (SPA, por sus siglas en inglés).",
+      "allAnswers": [
+        "a) El enrutador de Angular es una característica clave que permite la navegación entre diferentes vistas o componentes en una aplicación web Angular de una página (SPA, por sus siglas en inglés).",
+        "b) Una función que optimiza el rendimiento de las aplicaciones en Angular.",
+        "c) Una característica que permite la comunicación con bases de datos en Angular.",
+        "d) Una herramienta de diseño gráfico en Angular."
+      ]
     },
     {
       "id": 15,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Qué es un módulo compartido (Shared Module) en Angular y cuál es su propósito en una aplicación?",
-      "answer": "Un módulo compartido (Shared Module) en Angular es un módulo que se utiliza para agrupar y exportar componentes, directivas, pipes y otros elementos que deben ser compartidos entre diferentes partes de una aplicación. Su propósito es promover la reutilización de código y evitar la duplicación de componentes y funcionalidades comunes en toda la aplicación. Un módulo compartido puede importarse en otros módulos de la aplicación para que los componentes y recursos compartidos estén disponibles en toda la aplicación."
+      "answer": "Un módulo compartido (Shared Module) en Angular es un módulo que se utiliza para agrupar y exportar componentes, directivas, pipes y otros elementos que deben ser compartidos entre diferentes partes de una aplicación. Su propósito es promover la reutilización de código y evitar la duplicación de componentes y funcionalidades comunes en toda la aplicación. Un módulo compartido puede importarse en otros módulos de la aplicación para que los componentes y recursos compartidos estén disponibles en toda la aplicación.",
+      "correctAnswer": "c) Un módulo compartido (Shared Module) en Angular es un módulo que se utiliza para agrupar y exportar componentes, directivas, pipes y otros elementos que deben ser compartidos entre diferentes partes de una aplicación.",
+      "allAnswers": [
+        "a) Un módulo que se utiliza para almacenar contraseñas en Angular.",
+        "b) Un módulo que permite la comunicación con bases de datos en Angular.",
+        "c) Un módulo compartido (Shared Module) en Angular es un módulo que se utiliza para agrupar y exportar componentes, directivas, pipes y otros elementos que deben ser compartidos entre diferentes partes de una aplicación.",
+        "d) Un módulo que se utiliza para la administración de servidores en Angular."
+      ]
     },
     {
       "id": 16,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cuál es la diferencia entre el enlace de datos unidireccional y el enlace de datos bidireccional en Angular y cuándo utilizarías uno u otro?",
-      "answer": "El enlace de datos unidireccional y el enlace de datos bidireccional son dos enfoques para gestionar la comunicación entre componentes y la actualización de datos en Angular. El unidireccional es generalmente preferido para mantener un flujo de datos más predecible y evitar problemas potenciales, mientras que el enlace de datos bidireccional es útil en situaciones específicas donde la comunicación bidireccional es esencial, como en formularios interactivos."
+      "answer": "El enlace de datos unidireccional y el enlace de datos bidireccional son dos enfoques para gestionar la comunicación entre componentes y la actualización de datos en Angular. El unidireccional es generalmente preferido para mantener un flujo de datos más predecible y evitar problemas potenciales, mientras que el enlace de datos bidireccional es útil en situaciones específicas donde la comunicación bidireccional es esencial, como en formularios interactivos.",
+      "correctAnswer": "a) El enlace de datos unidireccional permite la comunicación desde el componente al DOM, mientras que el enlace de datos bidireccional permite la comunicación en ambas direcciones, desde el componente al DOM y viceversa.",
+      "allAnswers": [
+        "a) El enlace de datos unidireccional permite la comunicación desde el componente al DOM, mientras que el enlace de datos bidireccional permite la comunicación en ambas direcciones, desde el componente al DOM y viceversa.",
+        "b) El enlace de datos unidireccional es preferible en todas las situaciones, independientemente de los requisitos del proyecto.",
+        "c) El enlace de datos bidireccional es siempre la mejor opción para la comunicación entre componentes en Angular.",
+        "d) El enlace de datos unidireccional y el enlace de datos bidireccional son dos enfoques equivalentes y se pueden utilizar indistintamente."
+      ]
     },
     {
       "id": 17,
       "category": "Angular",
       "level": "Senior",
       "question": "Signals en Angular",
-      "answer": "Son espacios en memoria que apunta en todo momento dónde se está usando el elemento señalado, y actualiza su información en todo momento. Si no lo usáramos Angular debe disparar todos sus métodos de detección de cambios a lo largo de toda la aplicación."
+      "answer": "Son espacios en memoria que apunta en todo momento dónde se está usando el elemento señalado, y actualiza su información en todo momento. Si no lo usáramos Angular debe disparar todos sus métodos de detección de cambios a lo largo de toda la aplicación.",
+      "correctAnswer": "c) Son espacios en memoria que apuntan en todo momento dónde se está usando el elemento señalado, y actualizan su información en todo momento. Si no lo usáramos Angular debe disparar todos sus métodos de detección de cambios a lo largo de toda la aplicación.",
+      "allAnswers": [
+        "a) Elementos visuales que indican eventos en una aplicación Angular.",
+        "b) Variables utilizadas para el almacenamiento de datos en Angular.",
+        "c) Son espacios en memoria que apuntan en todo momento dónde se está usando el elemento señalado, y actualizan su información en todo momento. Si no lo usáramos Angular debe disparar todos sus métodos de detección de cambios a lo largo de toda la aplicación.",
+        "d) Mensajes de error generados por el sistema en Angular."
+      ]
     },
     {
       "id": 18,
       "category": "Angular",
       "level": "Senior",
       "question": "Explique RXJS",
-      "answer": "RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva en JavaScript que se utiliza ampliamente en el desarrollo de aplicaciones Angular. Angular utiliza RxJS para manejar flujos de datos asincrónicos, como observables, y facilita la gestión de eventos, llamadas HTTP y otros flujos de datos en aplicaciones web."
+      "answer": "RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva en JavaScript que se utiliza ampliamente en el desarrollo de aplicaciones Angular. Angular utiliza RxJS para manejar flujos de datos asincrónicos, como observables, y facilita la gestión de eventos, llamadas HTTP y otros flujos de datos en aplicaciones web.",
+      "correctAnswer": "c) RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva en JavaScript que se utiliza ampliamente en el desarrollo de aplicaciones Angular.",
+      "allAnswers": [
+        "a) RxJS es un lenguaje de programación utilizado en Angular para crear interfaces de usuario.",
+        "b) RxJS es una herramienta para la creación de gráficos en Angular.",
+        "c) RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva en JavaScript que se utiliza ampliamente en el desarrollo de aplicaciones Angular.",
+        "d) RxJS es un servidor web utilizado en Angular para alojar aplicaciones en línea."
+      ]
     },
     {
       "id": 19,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cuál es la diferencia entre el enrutamiento con carga diferida (Lazy Loading) y la carga convencional de módulos en Angular?",
-      "answer": "El enrutamiento con carga diferida (Lazy Loading) es una técnica que retrasa la carga de módulos de Angular hasta que se necesitan, lo que mejora significativamente el rendimiento inicial de la aplicación. En contraste, la carga convencional de módulos carga todos los módulos de la aplicación al inicio. Lazy Loading se configura en las rutas del enrutador utilizando el método loadChildren, mientras que la carga convencional se realiza mediante el método import en los módulos principales. Lazy Loading es particularmente útil en aplicaciones grandes para reducir el tiempo de carga inicial."
+      "answer": "El enrutamiento con carga diferida (Lazy Loading) es una técnica que retrasa la carga de módulos de Angular hasta que se necesitan, lo que mejora significativamente el rendimiento inicial de la aplicación. En contraste, la carga convencional de módulos carga todos los módulos de la aplicación al inicio. Lazy Loading se configura en las rutas del enrutador utilizando el método loadChildren, mientras que la carga convencional se realiza mediante el método import en los módulos principales. Lazy Loading es particularmente útil en aplicaciones grandes para reducir el tiempo de carga inicial.",
+      "correctAnswer": "c) Lazy Loading se configura en las rutas del enrutador utilizando el método loadChildren, mientras que la carga convencional se realiza mediante el método import en los módulos principales.",
+      "allAnswers": [
+        "a) El enrutamiento con carga diferida (Lazy Loading) carga todos los módulos de la aplicación al inicio, mientras que la carga convencional de módulos retrasa la carga hasta que se necesiten.",
+        "b) Lazy Loading no se utiliza en Angular, en su lugar, todos los módulos se cargan al inicio de la aplicación.",
+        "c) Lazy Loading se configura en las rutas del enrutador utilizando el método loadChildren, mientras que la carga convencional se realiza mediante el método import en los módulos principales.",
+        "d) No hay diferencia entre Lazy Loading y la carga convencional de módulos en Angular."
+      ]
     },
     {
       "id": 20,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Qué es AOT (Ahead-of-Time) en Angular y cuáles son sus ventajas sobre JIT (Just-in-Time) en la compilación de plantillas?",
-      "answer": " AOT (Ahead-of-Time) es una técnica de compilación utilizada en Angular que compila las plantillas y los componentes en código JavaScript antes de que la aplicación se ejecute en el navegador. Las ventajas de AOT sobre JIT (Just-in-Time) incluyen 1- Mejor rendimiento: La compilación AOT reduce el tiempo de inicio de la aplicación y mejora la velocidad de carga, ya que no es necesario compilar plantillas en el navegador en tiempo de ejecución. 2- Errores de plantillas en tiempo de compilación: AOT detecta errores de plantillas en tiempo de compilación, lo que permite identificar y solucionar problemas antes de que la aplicación se ejecute. 3- Tamaño de archivo más pequeño: AOT elimina el compilador de plantillas de la carga útil del cliente, lo que reduce el tamaño del paquete JavaScript que se envía al navegador."
+      "answer": " AOT (Ahead-of-Time) es una técnica de compilación utilizada en Angular que compila las plantillas y los componentes en código JavaScript antes de que la aplicación se ejecute en el navegador. Las ventajas de AOT sobre JIT (Just-in-Time) incluyen 1- Mejor rendimiento: La compilación AOT reduce el tiempo de inicio de la aplicación y mejora la velocidad de carga, ya que no es necesario compilar plantillas en el navegador en tiempo de ejecución. 2- Errores de plantillas en tiempo de compilación: AOT detecta errores de plantillas en tiempo de compilación, lo que permite identificar y solucionar problemas antes de que la aplicación se ejecute. 3- Tamaño de archivo más pequeño: AOT elimina el compilador de plantillas de la carga útil del cliente, lo que reduce el tamaño del paquete JavaScript que se envía al navegador.",
+      "correctAnswer": "b) La carga diferida retrasa la carga de módulos hasta que se necesitan, mientras que la carga convencional carga todos los módulos al inicio.",
+      "allAnswers": [
+        "a) La carga convencional es más eficiente que la carga diferida en Angular.",
+        "b) La carga diferida retrasa la carga de módulos hasta que se necesitan, mientras que la carga convencional carga todos los módulos al inicio.",
+        "c) La carga diferida y la carga convencional son técnicas idénticas en Angular.",
+        "d) La carga convencional se configura en las rutas del enrutador utilizando el método loadChildren."
+      ]
     },
     {
       "id": 21,
@@ -1174,280 +1315,560 @@
       "category": "Angular",
       "level": "Junior",
       "question": "¿Cuál es el propósito del servicio en Angular?",
-      "answer": "En Angular, un servicio es una clase que se utiliza para organizar y compartir la lógica y los datos comunes entre diferentes componentes. Los servicios se utilizan para separar la lógica de negocio de los componentes y permiten la reutilización de código en toda la aplicación."
+      "answer": "En Angular, un servicio es una clase que se utiliza para organizar y compartir la lógica y los datos comunes entre diferentes componentes. Los servicios se utilizan para separar la lógica de negocio de los componentes y permiten la reutilización de código en toda la aplicación.",
+      "correctAnswer": "d) Los servicios en Angular se utilizan para organizar y compartir la lógica y los datos comunes entre diferentes componentes y permiten la reutilización de código en toda la aplicación.",
+      "allAnswers": [
+        "a) Los servicios en Angular solo se utilizan para definir la interfaz de usuario.",
+        "b) Los servicios en Angular se utilizan para encapsular componentes individuales.",
+        "c) Los servicios en Angular son exclusivamente para manejar la interfaz de usuario de la aplicación.",
+        "d) Los servicios en Angular se utilizan para organizar y compartir la lógica y los datos comunes entre diferentes componentes y permiten la reutilización de código en toda la aplicación."
+      ]
     },
     {
       "id": 162,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Qué es un servicio compartido en Angular y cómo se crea?",
-      "answer": "Un servicio compartido en Angular es una clase que se utiliza para compartir datos y lógica entre componentes de toda la aplicación. Se crea mediante el comando 'ng generate service' o manualmente como una clase TypeScript con el decorador '@Injectable'. Los servicios compartidos son inyectables y se registran en el módulo raíz para estar disponibles en toda la aplicación."
+      "answer": "Un servicio compartido en Angular es una clase que se utiliza para compartir datos y lógica entre componentes de toda la aplicación. Se crea mediante el comando 'ng generate service' o manualmente como una clase TypeScript con el decorador '@Injectable'. Los servicios compartidos son inyectables y se registran en el módulo raíz para estar disponibles en toda la aplicación.",
+      "correctAnswer": "d) Un servicio compartido en Angular es una clase que facilita el intercambio de datos y lógica entre componentes de toda la aplicación. Se crea con el comando 'ng generate service' o manualmente con el decorador '@Injectable'. Estos servicios se registran en el módulo principal para su disponibilidad en toda la aplicación.",
+      "allAnswers": [
+        "a) Un servicio compartido en Angular es un componente especial que solo puede usarse en el módulo raíz.",
+        "b) Un servicio compartido en Angular es un componente que solo puede utilizarse en el módulo en el que se crea.",
+        "c) Un servicio compartido en Angular es una característica de Angular que no permite compartir datos y lógica entre componentes.",
+        "d) Un servicio compartido en Angular es una clase que facilita el intercambio de datos y lógica entre componentes de toda la aplicación. Se crea con el comando 'ng generate service' o manualmente con el decorador '@Injectable'. Estos servicios se registran en el módulo principal para su disponibilidad en toda la aplicación."
+      ]
     },
     {
       "id": 163,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué es Angular?",
-      "answer": "Angular es un framework de desarrollo de aplicaciones web desarrollado por Google. Se utiliza para crear aplicaciones web dinámicas y de una sola página (SPA) y facilita la creación de interfaces de usuario interactivas y reactivas."
+      "answer": "Angular es un framework de desarrollo de aplicaciones web desarrollado por Google. Se utiliza para crear aplicaciones web dinámicas y de una sola página (SPA) y facilita la creación de interfaces de usuario interactivas y reactivas.",
+      "correctAnswer": "c) Angular es un framework de desarrollo de aplicaciones web desarrollado por Google",
+      "allAnswers": [
+        "a) Angular es un lenguaje de programación",
+        "b) Angular es un sistema operativo",
+        "c) Angular es un framework de desarrollo de aplicaciones web desarrollado por Google",
+        "d) Angular es un servicio de música en streaming"
+      ]
     },
     {
       "id": 164,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Cuáles son las ventajas de usar Angular?",
-      "answer": "Algunas de las ventajas de usar Angular incluyen una estructura de proyecto organizada, vinculación de datos bidireccional, inyección de dependencias, y una amplia comunidad de desarrollo que proporciona herramientas y bibliotecas adicionales."
+      "answer": "Algunas de las ventajas de usar Angular incluyen una estructura de proyecto organizada, vinculación de datos bidireccional, inyección de dependencias, y una amplia comunidad de desarrollo que proporciona herramientas y bibliotecas adicionales.",
+      "correctAnswer": "b) Vinculación de datos bidireccional,",
+      "allAnswers": [
+        "a) Estructura de proyecto organizada,",
+        "b) Vinculación de datos bidireccional,",
+        "c) Inyección de dependencias,",
+        "d) Amplia comunidad de desarrollo y herramientas adicionales,"
+      ]
     },
     {
       "id": 165,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué es TypeScript y por qué se utiliza en Angular?",
-      "answer": "TypeScript es un lenguaje de programación desarrollado por Microsoft que se utiliza en Angular porque añade tipos estáticos y otras características a JavaScript, lo que facilita la detección de errores y el desarrollo de aplicaciones más robustas."
+      "answer": "TypeScript es un lenguaje de programación desarrollado por Microsoft que se utiliza en Angular porque añade tipos estáticos y otras características a JavaScript, lo que facilita la detección de errores y el desarrollo de aplicaciones más robustas.",
+      "correctAnswer": "a) Un lenguaje de programación desarrollado por Microsoft que añade tipos estáticos y otras características a JavaScript,",
+      "allAnswers": [
+        "a) Un lenguaje de programación desarrollado por Microsoft que añade tipos estáticos y otras características a JavaScript,",
+        "b) Un framework de desarrollo de aplicaciones web desarrollado por Google,",
+        "c) Una base de datos no relacional utilizada en Angular,",
+        "d) Un preprocesador de CSS utilizado en Angular."
+      ]
     },
     {
       "id": 166,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué es una directiva en Angular?",
-      "answer": "En Angular, una directiva es una instrucción en el DOM (Document Object Model) que le dice al framework Angular cómo manipular el comportamiento de un elemento HTML o cambiar su apariencia."
+      "answer": "En Angular, una directiva es una instrucción en el DOM (Document Object Model) que le dice al framework Angular cómo manipular el comportamiento de un elemento HTML o cambiar su apariencia.",
+      "correctAnswer": "a) Una instrucción en el DOM (Document Object Model) que le dice al framework Angular cómo manipular el comportamiento de un elemento HTML o cambiar su apariencia,",
+      "allAnswers": [
+        "a) Una instrucción en el DOM (Document Object Model) que le dice al framework Angular cómo manipular el comportamiento de un elemento HTML o cambiar su apariencia,",
+        "b) Un módulo de Angular que gestiona la lógica de enrutamiento de una aplicación,",
+        "c) Una función en JavaScript utilizada para consultar bases de datos en Angular,",
+        "d) Un lenguaje de marcado para la creación de interfaces gráficas en Angular."
+      ]
     },
     {
       "id": 167,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Cómo se realiza la inyección de dependencias en Angular?",
-      "answer": "La inyección de dependencias en Angular se realiza mediante la creación de una instancia de una clase y su inyección en el constructor de otro componente, servicio o clase que la necesite. Angular utiliza el sistema de inyección de dependencias para administrar las dependencias y proporcionarlas de manera eficiente.Podemos hacerlo mediante el constructor o usando inject()"
+      "answer": "La inyección de dependencias en Angular se realiza mediante la creación de una instancia de una clase y su inyección en el constructor de otro componente, servicio o clase que la necesite. Angular utiliza el sistema de inyección de dependencias para administrar las dependencias y proporcionarlas de manera eficiente.Podemos hacerlo mediante el constructor o usando inject()",
+      "correctAnswer": "b) Mediante la creación de una instancia de una clase y su inyección en el constructor de otro componente, servicio o clase que la necesite,",
+      "allAnswers": [
+        "a) Al importar manualmente las dependencias en el archivo 'app.module' de Angular,",
+        "b) Mediante la creación de una instancia de una clase y su inyección en el constructor de otro componente, servicio o clase que la necesite,",
+        "c) Utilizando el sistema de importación de TypeScript para agregar dependencias,",
+        "d) Al llamar explícitamente a las funciones de dependencia en los componentes."
+      ]
     },
     {
       "id": 168,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué es un módulo en Angular?",
-      "answer": "Un módulo en Angular es un mecanismo para organizar la aplicación en bloques funcionales. Contiene componentes, servicios y otras características relacionadas, y se utiliza para definir cómo se ensamblan estas partes en la aplicación."
+      "answer": "Un módulo en Angular es un mecanismo para organizar la aplicación en bloques funcionales. Contiene componentes, servicios y otras características relacionadas, y se utiliza para definir cómo se ensamblan estas partes en la aplicación.",
+      "correctAnswer": "b) Contiene componentes, servicios y otras características relacionadas, y se utiliza para definir cómo se ensamblan estas partes en la aplicación,",
+      "allAnswers": [
+        "a) Es una biblioteca de JavaScript utilizada en Angular,",
+        "b) Contiene componentes, servicios y otras características relacionadas, y se utiliza para definir cómo se ensamblan estas partes en la aplicación,",
+        "c) Es una extensión de TypeScript creada por Microsoft,",
+        "d) Se utiliza para diseñar la interfaz de usuario en Angular."
+      ]
     },
     {
       "id": 169,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre ngOnChanges y ngOnInit?",
-      "answer": "ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian. ngOnInit se dispara una vez después de que se haya inicializado el componente."
+      "answer": "ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian. ngOnInit se dispara una vez después de que se haya inicializado el componente.",
+      "correctAnswer": "c) ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian. ngOnInit se dispara una vez después de que se haya inicializado el componente.",
+      "allAnswers": [
+        "a) ngOnChanges se dispara una vez después de que se haya inicializado el componente. ngOnInit se dispara cuando las propiedades de entrada cambian.",
+        "b) ngOnChanges se utiliza para inicializar las propiedades de entrada de un componente, mientras que ngOnInit se dispara cuando el componente se destruye.",
+        "c) ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian. ngOnInit se dispara una vez después de que se haya inicializado el componente.",
+        "d) ngOnChanges se utiliza para realizar cambios en las plantillas HTML, mientras que ngOnInit se utiliza para gestionar eventos de usuario."
+      ]
     },
     {
       "id": 170,
       "category": "Angular",
       "level": "Junior",
       "question": "¿Qué son las rutas en Angular?",
-      "answer": "En Angular, las rutas son un mecanismo para definir la navegación y las vistas de una aplicación. Permiten que diferentes URL se correspondan con diferentes componentes y vistas."
+      "answer": "En Angular, las rutas son un mecanismo para definir la navegación y las vistas de una aplicación. Permiten que diferentes URL se correspondan con diferentes componentes y vistas.",
+      "correctAnswer": "a) ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian,",
+      "allAnswers": [
+        "a) ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian,",
+        "b) ngOnInit se dispara una vez después de que se haya inicializado el componente,",
+        "c) ngOnChanges se utiliza para realizar solicitudes HTTP en Angular,",
+        "d) ngOnInit es un método que se llama antes de que se inicie cualquier componente en Angular."
+      ]
     },
     {
       "id": 171,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué es un interceptor HTTP en Angular?",
-      "answer": "Un interceptor HTTP en Angular es un servicio que permite interceptar y modificar las solicitudes HTTP y las respuestas antes de que lleguen al servidor o después de que vuelvan del servidor. Se utiliza para realizar tareas comunes, como agregar encabezados o manejar errores de manera centralizada."
+      "answer": "Un interceptor HTTP en Angular es un servicio que permite interceptar y modificar las solicitudes HTTP y las respuestas antes de que lleguen al servidor o después de que vuelvan del servidor. Se utiliza para realizar tareas comunes, como agregar encabezados o manejar errores de manera centralizada.",
+      "correctAnswer": "b) Un interceptor HTTP en Angular es un servicio que permite interceptar y modificar las solicitudes HTTP y las respuestas antes de que lleguen al servidor o después de que vuelvan del servidor,",
+      "allAnswers": [
+        "a) Un interceptor HTTP en Angular es una directiva que se aplica a elementos HTML,",
+        "b) Un interceptor HTTP en Angular es un servicio que permite interceptar y modificar las solicitudes HTTP y las respuestas antes de que lleguen al servidor o después de que vuelvan del servidor,",
+        "c) Un interceptor HTTP en Angular es un componente que se utiliza para crear formularios reactivos,",
+        "d) Un interceptor HTTP en Angular es una característica de Angular que permite cargar módulos de manera diferida."
+      ]
     },
     {
       "id": 172,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Cómo se realiza la validación de formularios en Angular?",
-      "answer": "En Angular, la validación de formularios se realiza mediante la creación de directivas personalizadas y el uso de clases y métodos proporcionados por el módulo '@angular/forms'. Esto permite validar campos de entrada y formularios de manera efectiva."
+      "answer": "En Angular, la validación de formularios se realiza mediante la creación de directivas personalizadas y el uso de clases y métodos proporcionados por el módulo '@angular/forms'. Esto permite validar campos de entrada y formularios de manera efectiva.",
+      "correctAnswer": "c) En Angular, la validación de formularios se realiza mediante la creación de directivas personalizadas y el uso de clases y métodos proporcionados por el módulo '@angular/forms'. Esto permite validar campos de entrada y formularios de manera efectiva.",
+      "allAnswers": [
+        "a) En Angular, la validación de formularios se realiza automáticamente y no requiere ninguna configuración adicional.",
+        "b) En Angular, la validación de formularios se realiza mediante el uso de JavaScript puro sin necesidad de módulos adicionales.",
+        "c) En Angular, la validación de formularios se realiza mediante la creación de directivas personalizadas y el uso de clases y métodos proporcionados por el módulo '@angular/forms'. Esto permite validar campos de entrada y formularios de manera efectiva.",
+        "d) En Angular, la validación de formularios se realiza únicamente en el lado del servidor y no se puede realizar en el lado del cliente."
+      ]
     },
     {
       "id": 173,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué es la detección de cambios en Angular?",
-      "answer": "La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Angular utiliza una estrategia de detección de cambios para mejorar el rendimiento y la eficiencia de las actualizaciones de la interfaz de usuario."
+      "answer": "La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Angular utiliza una estrategia de detección de cambios para mejorar el rendimiento y la eficiencia de las actualizaciones de la interfaz de usuario.",
+      "correctAnswer": "b) La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente.",
+      "allAnswers": [
+        "a) La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza los datos en el componente cuando cambia la vista.",
+        "b) La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente.",
+        "c) La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza tanto la vista como los datos en el componente de forma independiente.",
+        "d) La detección de cambios en Angular es el proceso por el cual el framework compila y ejecuta el código del componente para garantizar que la vista y los datos estén sincronizados."
+      ]
     },
     {
       "id": 174,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué son las pruebas unitarias en Angular?",
-      "answer": "Las pruebas unitarias en Angular son pruebas que se realizan en unidades individuales de código, como componentes o servicios, para garantizar que funcionen correctamente de manera aislada. Angular proporciona herramientas y bibliotecas para escribir y ejecutar pruebas unitarias eficaces."
+      "answer": "Las pruebas unitarias en Angular son pruebas que se realizan en unidades individuales de código, como componentes o servicios, para garantizar que funcionen correctamente de manera aislada. Angular proporciona herramientas y bibliotecas para escribir y ejecutar pruebas unitarias eficaces.",
+      "correctAnswer": "a) Las pruebas unitarias en Angular son pruebas que se realizan en unidades individuales de código, como componentes o servicios, para garantizar que funcionen correctamente de manera aislada.",
+      "allAnswers": [
+        "a) Las pruebas unitarias en Angular son pruebas que se realizan en unidades individuales de código, como componentes o servicios, para garantizar que funcionen correctamente de manera aislada.",
+        "b) Las pruebas unitarias en Angular son pruebas que se realizan en la aplicación completa para garantizar su funcionalidad global.",
+        "c) Las pruebas unitarias en Angular son pruebas de rendimiento para medir la velocidad de la aplicación.",
+        "d) Las pruebas unitarias en Angular son pruebas manuales realizadas por usuarios finales."
+      ]
     },
     {
       "id": 175,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Qué es la optimización de rendimiento en aplicaciones Angular?",
-      "answer": "La optimización de rendimiento en aplicaciones Angular implica una serie de prácticas y técnicas destinadas a mejorar la velocidad de carga, la velocidad de ejecución y la eficiencia general de una aplicación Angular. Esto incluye técnicas de carga diferida, compresión de recursos y optimización de renderizado."
+      "answer": "La optimización de rendimiento en aplicaciones Angular implica una serie de prácticas y técnicas destinadas a mejorar la velocidad de carga, la velocidad de ejecución y la eficiencia general de una aplicación Angular. Esto incluye técnicas de carga diferida, compresión de recursos y optimización de renderizado.",
+      "correctAnswer": "a) La optimización de rendimiento en aplicaciones Angular implica una serie de prácticas y técnicas destinadas a mejorar la velocidad de carga, la velocidad de ejecución y la eficiencia general de una aplicación Angular.",
+      "allAnswers": [
+        "a) La optimización de rendimiento en aplicaciones Angular implica una serie de prácticas y técnicas destinadas a mejorar la velocidad de carga, la velocidad de ejecución y la eficiencia general de una aplicación Angular.",
+        "b) La optimización de rendimiento en aplicaciones Angular se refiere a la mejora de la interfaz de usuario sin afectar la velocidad de carga.",
+        "c) La optimización de rendimiento en aplicaciones Angular se enfoca en aumentar la seguridad de la aplicación.",
+        "d) La optimización de rendimiento en aplicaciones Angular solo se aplica a aplicaciones móviles."
+      ]
     },
     {
       "id": 176,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué es la internacionalización (i18n) en Angular?",
-      "answer": "La internacionalización (i18n) en Angular es el proceso de adaptar una aplicación para que sea compatible con múltiples idiomas y regiones. Angular proporciona herramientas y directivas para facilitar la traducción de textos y la adaptación de formatos de fecha, hora y números en la aplicación."
+      "answer": "La internacionalización (i18n) en Angular es el proceso de adaptar una aplicación para que sea compatible con múltiples idiomas y regiones. Angular proporciona herramientas y directivas para facilitar la traducción de textos y la adaptación de formatos de fecha, hora y números en la aplicación.",
+      "correctAnswer": "c) La internacionalización (i18n) en Angular es el proceso de adaptar una aplicación para que sea compatible con múltiples idiomas y regiones. Angular proporciona herramientas y directivas para facilitar la traducción de textos y la adaptación de formatos de fecha, hora y números en la aplicación.",
+      "allAnswers": [
+        "a) La internacionalización (i18n) en Angular se refiere a la optimización del rendimiento de la aplicación en diferentes regiones.",
+        "b) La internacionalización (i18n) en Angular se enfoca en la adaptación de la interfaz de usuario solo para un idioma.",
+        "c) La internacionalización (i18n) en Angular es el proceso de adaptar una aplicación para que sea compatible con múltiples idiomas y regiones. Angular proporciona herramientas y directivas para facilitar la traducción de textos y la adaptación de formatos de fecha, hora y números en la aplicación.",
+        "d) La internacionalización (i18n) en Angular se refiere a la internacionalización de empresas que utilizan esta tecnología."
+      ]
     },
     {
       "id": 177,
       "category": "Angular Standalone",
       "level": "Middle",
       "question": "¿Qué es el modo Standalone en Angular y cuál es su propósito?",
-      "answer": "El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional. Su propósito es proporcionar a los desarrolladores una forma de crear aplicaciones Angular que se puedan ejecutar localmente o empaquetar como aplicaciones de escritorio sin depender de un servidor backend."
+      "answer": "El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional. Su propósito es proporcionar a los desarrolladores una forma de crear aplicaciones Angular que se puedan ejecutar localmente o empaquetar como aplicaciones de escritorio sin depender de un servidor backend.",
+      "correctAnswer": "b) El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional.",
+      "allAnswers": [
+        "a) El modo Standalone en Angular es una característica que permite ejecutar aplicaciones web sin conexión a Internet.",
+        "b) El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional.",
+        "c) El modo Standalone en Angular es una característica que solo está disponible en aplicaciones de servidor, no en aplicaciones independientes.",
+        "d) El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular en un servidor dedicado."
+      ]
     },
     {
       "id": 178,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Cuál es el flujo típico de un Observable en Angular y cómo funciona?",
-      "answer": "Un Observable en Angular sigue un flujo típico de emisión, suscripción y manejo de eventos asíncronos. Comienza con la creación de un Observable que puede emitir datos o eventos en el futuro. Luego, se suscribe un observador para escuchar esas emisiones. Cuando ocurre un evento, el observador recibe y maneja los datos. El flujo puede incluir operaciones de transformación, filtrado o combinación de datos antes de que lleguen al observador."
+      "answer": "Un Observable en Angular sigue un flujo típico de emisión, suscripción y manejo de eventos asíncronos. Comienza con la creación de un Observable que puede emitir datos o eventos en el futuro. Luego, se suscribe un observador para escuchar esas emisiones. Cuando ocurre un evento, el observador recibe y maneja los datos. El flujo puede incluir operaciones de transformación, filtrado o combinación de datos antes de que lleguen al observador.",
+      "correctAnswer": "c) El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional. Su propósito es proporcionar a los desarrolladores una forma de crear aplicaciones Angular que se puedan ejecutar localmente o empaquetar como aplicaciones de escritorio sin depender de un servidor backend.",
+      "allAnswers": [
+        "a) El modo Standalone en Angular se refiere a la ejecución de aplicaciones Angular en servidores tradicionales.",
+        "b) El modo Standalone en Angular es una característica que permite la ejecución de aplicaciones Angular únicamente en servidores de nube.",
+        "c) El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional. Su propósito es proporcionar a los desarrolladores una forma de crear aplicaciones Angular que se puedan ejecutar localmente o empaquetar como aplicaciones de escritorio sin depender de un servidor backend.",
+        "d) El modo Standalone en Angular se refiere a la ejecución de aplicaciones Angular únicamente en servidores frontend."
+      ]
     },
     {
       "id": 179,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué es la detección de cambios OnPush en Angular y cuándo se debe utilizar?",
-      "answer": "La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las referencias de entrada y eventos de salida. Se debe utilizar cuando se desea mejorar el rendimiento de la aplicación al reducir la frecuencia de las verificaciones de cambio. Al configurar un componente con OnPush, Angular solo volverá a renderizar el componente cuando las entradas cambien o se dispare un evento de salida, en lugar de verificar continuamente las propiedades internas."
+      "answer": "La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las referencias de entrada y eventos de salida. Se debe utilizar cuando se desea mejorar el rendimiento de la aplicación al reducir la frecuencia de las verificaciones de cambio. Al configurar un componente con OnPush, Angular solo volverá a renderizar el componente cuando las entradas cambien o se dispare un evento de salida, en lugar de verificar continuamente las propiedades internas.",
+      "correctAnswer": "c) La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las referencias de entrada y eventos de salida. Se debe utilizar cuando se desea mejorar el rendimiento de la aplicación al reducir la frecuencia de las verificaciones de cambio. Al configurar un componente con OnPush, Angular solo volverá a renderizar el componente cuando las entradas cambien o se dispare un evento de salida, en lugar de verificar continuamente las propiedades internas.",
+      "allAnswers": [
+        "a) La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las propiedades internas de un componente.",
+        "b) La detección de cambios OnPush es una estrategia de detección de cambios en Angular que siempre vuelve a renderizar el componente independientemente de los cambios.",
+        "c) La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las referencias de entrada y eventos de salida. Se debe utilizar cuando se desea mejorar el rendimiento de la aplicación al reducir la frecuencia de las verificaciones de cambio. Al configurar un componente con OnPush, Angular solo volverá a renderizar el componente cuando las entradas cambien o se dispare un evento de salida, en lugar de verificar continuamente las propiedades internas.",
+        "d) La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se usa solo para componentes de nivel superior."
+      ]
     },
     {
       "id": 180,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Qué son los efectos (Effects) en la gestión de estado de Angular (por ejemplo, con NgRx) y cuál es su propósito?",
-      "answer": "Los efectos (Effects) en la gestión de estado de Angular, como NgRx, son funciones que manejan efectos secundarios en una aplicación, como llamadas a APIs o tareas asíncronas. Su propósito es aislar la lógica de efectos secundarios y garantizar que la gestión de estado sea predecible y consistente. Los efectos reciben acciones y pueden despachar nuevas acciones en función de los resultados de las tareas asíncronas."
+      "answer": "Los efectos (Effects) en la gestión de estado de Angular, como NgRx, son funciones que manejan efectos secundarios en una aplicación, como llamadas a APIs o tareas asíncronas. Su propósito es aislar la lógica de efectos secundarios y garantizar que la gestión de estado sea predecible y consistente. Los efectos reciben acciones y pueden despachar nuevas acciones en función de los resultados de las tareas asíncronas.",
+      "correctAnswer": "a) Los efectos (Effects) en la gestión de estado de Angular, como NgRx, son funciones que manejan efectos secundarios en una aplicación, como llamadas a APIs o tareas asíncronas. Su propósito es aislar la lógica de efectos secundarios y garantizar que la gestión de estado sea predecible y consistente. Los efectos reciben acciones y pueden despachar nuevas acciones en función de los resultados de las tareas asíncronas.",
+      "allAnswers": [
+        "a) Los efectos (Effects) en la gestión de estado de Angular, como NgRx, son funciones que manejan efectos secundarios en una aplicación, como llamadas a APIs o tareas asíncronas. Su propósito es aislar la lógica de efectos secundarios y garantizar que la gestión de estado sea predecible y consistente. Los efectos reciben acciones y pueden despachar nuevas acciones en función de los resultados de las tareas asíncronas.",
+        "b) Los efectos (Effects) en la gestión de estado de Angular son componentes visuales en la interfaz de usuario de la aplicación.",
+        "c) Los efectos (Effects) en Angular se utilizan para aplicar efectos visuales en los elementos de la interfaz de usuario.",
+        "d) Los efectos (Effects) en la gestión de estado de Angular se utilizan para realizar cálculos matemáticos en los datos de la aplicación."
+      ]
     },
     {
       "id": 181,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué es la interpolación de atributos (Attribute Interpolation) en Angular y cuándo se utiliza?",
-      "answer": "La interpolación de atributos en Angular es una técnica que permite asignar valores dinámicos a atributos de elementos HTML. Se utiliza cuando se necesita cambiar dinámicamente el valor de un atributo, como un atributo de 'src' de una imagen o 'href' de un enlace, utilizando expresiones del componente."
+      "answer": "La interpolación de atributos en Angular es una técnica que permite asignar valores dinámicos a atributos de elementos HTML. Se utiliza cuando se necesita cambiar dinámicamente el valor de un atributo, como un atributo de 'src' de una imagen o 'href' de un enlace, utilizando expresiones del componente.",
+      "correctAnswer": "a) La interpolación de atributos en Angular es una técnica que permite asignar valores dinámicos a atributos de elementos HTML. Se utiliza cuando se necesita cambiar dinámicamente el valor de un atributo, como un atributo de 'src' de una imagen o 'href' de un enlace, utilizando expresiones del componente.",
+      "allAnswers": [
+        "a) La interpolación de atributos en Angular es una técnica que permite asignar valores dinámicos a atributos de elementos HTML. Se utiliza cuando se necesita cambiar dinámicamente el valor de un atributo, como un atributo de 'src' de una imagen o 'href' de un enlace, utilizando expresiones del componente.",
+        "b) La interpolación de atributos en Angular se utiliza para aplicar efectos visuales en la interfaz de usuario.",
+        "c) La interpolación de atributos en Angular es una técnica para declarar variables en los componentes.",
+        "d) La interpolación de atributos en Angular se utiliza para gestionar rutas de navegación en la aplicación."
+      ]
     },
     {
       "id": 182,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Cuál es la diferencia entre 'ViewChild' y 'ContentChild' en Angular y cuándo se utilizan?",
-      "answer": "ViewChild y ContentChild son decoradores utilizados para acceder a elementos o componentes hijos en Angular. La diferencia clave radica en dónde se busca el elemento o componente: ViewChild se utiliza para elementos o componentes que están dentro del componente actual, mientras que ContentChild se utiliza para elementos o componentes proyectados en el contenido de un componente."
+      "answer": "ViewChild y ContentChild son decoradores utilizados para acceder a elementos o componentes hijos en Angular. La diferencia clave radica en dónde se busca el elemento o componente: ViewChild se utiliza para elementos o componentes que están dentro del componente actual, mientras que ContentChild se utiliza para elementos o componentes proyectados en el contenido de un componente.",
+      "correctAnswer": "a) ViewChild y ContentChild son decoradores utilizados para acceder a elementos o componentes hijos en Angular. La diferencia clave radica en dónde se busca el elemento o componente: ViewChild se utiliza para elementos o componentes que están dentro del componente actual, mientras que ContentChild se utiliza para elementos o componentes proyectados en el contenido de un componente.",
+      "allAnswers": [
+        "a) ViewChild y ContentChild son decoradores utilizados para acceder a elementos o componentes hijos en Angular. La diferencia clave radica en dónde se busca el elemento o componente: ViewChild se utiliza para elementos o componentes que están dentro del componente actual, mientras que ContentChild se utiliza para elementos o componentes proyectados en el contenido de un componente.",
+        "b) ViewChild y ContentChild son dos formas de acceder a elementos del DOM en Angular.",
+        "c) ViewChild se utiliza para acceder a elementos hijos directos, mientras que ContentChild se utiliza para acceder a elementos en el contenido proyectado.",
+        "d) ViewChild y ContentChild son sinónimos y se pueden utilizar indistintamente."
+      ]
     },
     {
       "id": 183,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cuál es el propósito de la detección de cambios en Angular y cómo se optimiza para aplicaciones de gran escala?",
-      "answer": "La detección de cambios en Angular permite actualizar la vista cuando los datos cambian en el componente. Para aplicaciones de gran escala, la optimización se logra utilizando estrategias como ChangeDetectionStrategy.OnPush, empleando bibliotecas de administración de estado (como NgRx), y minimizando las operaciones costosas en el ciclo de detección de cambios."
+      "answer": "La detección de cambios en Angular permite actualizar la vista cuando los datos cambian en el componente. Para aplicaciones de gran escala, la optimización se logra utilizando estrategias como ChangeDetectionStrategy.OnPush, empleando bibliotecas de administración de estado (como NgRx), y minimizando las operaciones costosas en el ciclo de detección de cambios.",
+      "correctAnswer": "b) La detección de cambios en Angular permite actualizar la vista cuando los datos cambian en el componente. Para aplicaciones de gran escala, la optimización se logra utilizando estrategias como ChangeDetectionStrategy.OnPush, empleando bibliotecas de administración de estado (como NgRx), y minimizando las operaciones costosas en el ciclo de detección de cambios.",
+      "allAnswers": [
+        "a) La detección de cambios en Angular es un proceso automático y no se puede optimizar.",
+        "b) La detección de cambios en Angular permite actualizar la vista cuando los datos cambian en el componente. Para aplicaciones de gran escala, la optimización se logra utilizando estrategias como ChangeDetectionStrategy.OnPush, empleando bibliotecas de administración de estado (como NgRx), y minimizando las operaciones costosas en el ciclo de detección de cambios.",
+        "c) La detección de cambios en Angular es exclusivamente para aplicaciones pequeñas y no es adecuada para aplicaciones de gran escala.",
+        "d) La detección de cambios en Angular solo se utiliza para el manejo de formularios y entradas de usuario."
+      ]
     },
     {
       "id": 184,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cómo se puede mejorar el rendimiento de una aplicación Angular y cuáles son las mejores prácticas en este sentido?",
-      "answer": "Para mejorar el rendimiento en Angular, se pueden aplicar técnicas como la carga diferida de módulos, la compresión de recursos, la reducción del tamaño del paquete, el uso de ChangeDetectionStrategy.OnPush, la optimización de imágenes y la implementación de estrategias de almacenamiento en caché."
+      "answer": "Para mejorar el rendimiento en Angular, se pueden aplicar técnicas como la carga diferida de módulos, la compresión de recursos, la reducción del tamaño del paquete, el uso de ChangeDetectionStrategy.OnPush, la optimización de imágenes y la implementación de estrategias de almacenamiento en caché.",
+      "correctAnswer": "a) Para mejorar el rendimiento en Angular, se pueden aplicar técnicas como la carga diferida de módulos, la compresión de recursos, la reducción del tamaño del paquete, el uso de ChangeDetectionStrategy.OnPush, la optimización de imágenes y la implementación de estrategias de almacenamiento en caché.",
+      "allAnswers": [
+        "a) Para mejorar el rendimiento en Angular, se pueden aplicar técnicas como la carga diferida de módulos, la compresión de recursos, la reducción del tamaño del paquete, el uso de ChangeDetectionStrategy.OnPush, la optimización de imágenes y la implementación de estrategias de almacenamiento en caché.",
+        "b) No es posible mejorar el rendimiento de las aplicaciones Angular.",
+        "c) Solo se necesita mejorar el rendimiento en aplicaciones muy pequeñas.",
+        "d) La única forma de mejorar el rendimiento en Angular es mediante el uso de hardware más rápido."
+      ]
     },
     {
       "id": 185,
       "category": "Angular",
       "level": "Senior",
       "question": "Explique la arquitectura de una aplicación Angular escalable y cómo se organizan los módulos, componentes y servicios en ella.",
-      "answer": "Una aplicación Angular escalable se organiza en módulos funcionales que contienen componentes relacionados y servicios compartidos. Se siguen patrones como 'Smart vs. Dumb Components', se utiliza inyección de dependencias para la comunicación entre componentes y se centraliza la gestión de estado mediante bibliotecas como NgRx o Redux."
+      "answer": "Una aplicación Angular escalable se organiza en módulos funcionales que contienen componentes relacionados y servicios compartidos. Se siguen patrones como 'Smart vs. Dumb Components', se utiliza inyección de dependencias para la comunicación entre componentes y se centraliza la gestión de estado mediante bibliotecas como NgRx o Redux.",
+      "correctAnswer": "a) Una aplicación Angular escalable se organiza en módulos funcionales que contienen componentes relacionados y servicios compartidos. Se siguen patrones como 'Smart vs. Dumb Components', se utiliza inyección de dependencias para la comunicación entre componentes y se centraliza la gestión de estado mediante bibliotecas como NgRx o Redux.",
+      "allAnswers": [
+        "a) Una aplicación Angular escalable se organiza en módulos funcionales que contienen componentes relacionados y servicios compartidos. Se siguen patrones como 'Smart vs. Dumb Components', se utiliza inyección de dependencias para la comunicación entre componentes y se centraliza la gestión de estado mediante bibliotecas como NgRx o Redux.",
+        "b) Una aplicación Angular escalable debe colocar todos los componentes en un único módulo para facilitar la gestión.",
+        "c) No es necesario organizar una aplicación Angular escalable, ya que Angular se encargará de ello automáticamente.",
+        "d) En una aplicación Angular escalable, los componentes deben comunicarse directamente sin utilizar inyección de dependencias."
+      ]
     },
     {
       "id": 186,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cómo se realiza la optimización de rendimiento en una aplicación Angular y cuáles son las estrategias clave para lograrlo?",
-      "answer": "La optimización de rendimiento en Angular involucra prácticas como la carga diferida de módulos, la reducción del tamaño del paquete, la eliminación de código no utilizado, la compresión de recursos y la implementación de técnicas de renderizado eficiente, como el pre-renderizado y el lazy loading."
+      "answer": "La optimización de rendimiento en Angular involucra prácticas como la carga diferida de módulos, la reducción del tamaño del paquete, la eliminación de código no utilizado, la compresión de recursos y la implementación de técnicas de renderizado eficiente, como el pre-renderizado y el lazy loading.",
+      "correctAnswer": "a) La optimización de rendimiento en Angular involucra prácticas como la carga diferida de módulos, la reducción del tamaño del paquete, la eliminación de código no utilizado, la compresión de recursos y la implementación de técnicas de renderizado eficiente, como el pre-renderizado y el lazy loading.",
+      "allAnswers": [
+        "a) La optimización de rendimiento en Angular involucra prácticas como la carga diferida de módulos, la reducción del tamaño del paquete, la eliminación de código no utilizado, la compresión de recursos y la implementación de técnicas de renderizado eficiente, como el pre-renderizado y el lazy loading.",
+        "b) La optimización de rendimiento en Angular se logra principalmente mediante la mejora de los algoritmos de clasificación de datos en las consultas.",
+        "c) La optimización de rendimiento en Angular no es posible y no es necesario preocuparse por ella.",
+        "d) La optimización de rendimiento en Angular implica solo la compresión de recursos estáticos."
+      ]
     },
     {
       "id": 187,
       "category": "Angular",
       "level": "Senior",
       "question": "Explique el concepto de 'Change Detection' en Angular y cómo se puede personalizar o desactivar para aplicaciones específicas.",
-      "answer": "El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se puede personalizar mediante la estrategia ChangeDetectionStrategy y desactivar selectivamente utilizando el método markForCheck en combinación con ChangeDetectorRef para mejorar el rendimiento en aplicaciones complejas."
+      "answer": "El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se puede personalizar mediante la estrategia ChangeDetectionStrategy y desactivar selectivamente utilizando el método markForCheck en combinación con ChangeDetectorRef para mejorar el rendimiento en aplicaciones complejas.",
+      "correctAnswer": "c) El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se puede personalizar mediante la estrategia ChangeDetectionStrategy y desactivar selectivamente utilizando el método markForCheck en combinación con ChangeDetectorRef para mejorar el rendimiento en aplicaciones complejas.",
+      "allAnswers": [
+        "a) El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se personaliza mediante el ajuste manual de las propiedades internas del componente.",
+        "b) El 'Change Detection' en Angular es un proceso de transformación de imágenes en la vista del componente.",
+        "c) El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se puede personalizar mediante la estrategia ChangeDetectionStrategy y desactivar selectivamente utilizando el método markForCheck en combinación con ChangeDetectorRef para mejorar el rendimiento en aplicaciones complejas.",
+        "d) El 'Change Detection' en Angular es un proceso de seguridad utilizado para detectar cambios en la configuración de la aplicación y prevenir posibles vulnerabilidades."
+      ]
     },
     {
       "id": 188,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cuál es el papel de los 'Pipes' en Angular y cuáles son ejemplos comunes de su uso?",
-      "answer": "Los 'Pipes' en Angular son funciones que transforman datos en la plantilla HTML. Se utilizan para formatear fechas, números, cadenas, y aplicar filtros y transformaciones personalizadas a los datos que se muestran en la vista. Ejemplos comunes incluyen 'DatePipe', 'CurrencyPipe' y 'CustomPipe' para transformaciones específicas."
+      "answer": "Los 'Pipes' en Angular son funciones que transforman datos en la plantilla HTML. Se utilizan para formatear fechas, números, cadenas, y aplicar filtros y transformaciones personalizadas a los datos que se muestran en la vista. Ejemplos comunes incluyen 'DatePipe', 'CurrencyPipe' y 'CustomPipe' para transformaciones específicas.",
+      "correctAnswer": "b) Los 'Pipes' en Angular son funciones que transforman datos en la plantilla HTML. Se utilizan para formatear fechas, números, cadenas, y aplicar filtros y transformaciones personalizadas a los datos que se muestran en la vista. Ejemplos comunes incluyen 'DatePipe', 'CurrencyPipe' y 'CustomPipe' para transformaciones específicas.",
+      "allAnswers": [
+        "a) Los 'Pipes' en Angular son conductos que conectan componentes entre sí y permiten el flujo de datos.",
+        "b) Los 'Pipes' en Angular son funciones que transforman datos en la plantilla HTML. Se utilizan para formatear fechas, números, cadenas, y aplicar filtros y transformaciones personalizadas a los datos que se muestran en la vista. Ejemplos comunes incluyen 'DatePipe', 'CurrencyPipe' y 'CustomPipe' para transformaciones específicas.",
+        "c) Los 'Pipes' en Angular son tuberías utilizadas en la construcción de redes de agua.",
+        "d) Los 'Pipes' en Angular son dispositivos de entrada y salida utilizados en la programación de aplicaciones."
+      ]
     },
     {
       "id": 189,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cómo se abordan los problemas de seguridad en una aplicación Angular y cuáles son las mejores prácticas para protegerla contra amenazas comunes?",
-      "answer": "Para abordar problemas de seguridad en Angular, se deben implementar medidas como la prevención de ataques XSS y CSRF, la autenticación y autorización robustas, la validación de entrada y el uso de bibliotecas de seguridad de confianza. Se recomienda seguir las mejores prácticas de seguridad web y mantener las dependencias actualizadas."
+      "answer": "Para abordar problemas de seguridad en Angular, se deben implementar medidas como la prevención de ataques XSS y CSRF, la autenticación y autorización robustas, la validación de entrada y el uso de bibliotecas de seguridad de confianza. Se recomienda seguir las mejores prácticas de seguridad web y mantener las dependencias actualizadas.",
+      "correctAnswer": "b) Para abordar problemas de seguridad en Angular, se deben implementar medidas como la prevención de ataques XSS y CSRF, la autenticación y autorización robustas, la validación de entrada y el uso de bibliotecas de seguridad de confianza. Mantener las mejores prácticas de seguridad web y las dependencias actualizadas.",
+      "allAnswers": [
+        "a) Para abordar problemas de seguridad en Angular, se deben instalar antivirus en los servidores.",
+        "b) Para abordar problemas de seguridad en Angular, se deben implementar medidas como la prevención de ataques XSS y CSRF, la autenticación y autorización robustas, la validación de entrada y el uso de bibliotecas de seguridad de confianza. Mantener las mejores prácticas de seguridad web y las dependencias actualizadas.",
+        "c) Para abordar problemas de seguridad en Angular, se deben ignorar las actualizaciones de seguridad y confiar en la seguridad por defecto.",
+        "d) Para abordar problemas de seguridad en Angular, se debe proporcionar acceso irrestricto a todos los usuarios sin autenticación."
+      ]
     },
     {
       "id": 190,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Qué es el servidor de renderizado (Server-Side Rendering - SSR) en Angular y cuáles son sus beneficios y desafíos?",
-      "answer": "El servidor de renderizado en Angular permite renderizar la aplicación en el servidor antes de enviarla al navegador del cliente. Sus beneficios incluyen una carga inicial más rápida y una mejor indexación por parte de motores de búsqueda. Sin embargo, presenta desafíos como la configuración y el manejo de estado."
+      "answer": "El servidor de renderizado en Angular permite renderizar la aplicación en el servidor antes de enviarla al navegador del cliente. Sus beneficios incluyen una carga inicial más rápida y una mejor indexación por parte de motores de búsqueda. Sin embargo, presenta desafíos como la configuración y el manejo de estado.",
+      "correctAnswer": "b) El servidor de renderizado en Angular permite renderizar la aplicación en el servidor antes de enviarla al navegador del cliente. Sus beneficios incluyen una carga inicial más rápida y una mejor indexación por parte de motores de búsqueda. Sin embargo, presenta desafíos como la configuración y el manejo de estado.",
+      "allAnswers": [
+        "a) El servidor de renderizado en Angular se utiliza para renderizar la aplicación únicamente en el lado del cliente.",
+        "b) El servidor de renderizado en Angular permite renderizar la aplicación en el servidor antes de enviarla al navegador del cliente. Sus beneficios incluyen una carga inicial más rápida y una mejor indexación por parte de motores de búsqueda. Sin embargo, presenta desafíos como la configuración y el manejo de estado.",
+        "c) El servidor de renderizado en Angular solo se utiliza en aplicaciones pequeñas.",
+        "d) El servidor de renderizado en Angular es una técnica obsoleta y no tiene beneficios significativos."
+      ]
     },
     {
       "id": 191,
       "category": "Angular",
       "level": "Senior",
       "question": "Explique cómo se implementa la autenticación y autorización en una aplicación Angular y mencione las técnicas y bibliotecas recomendadas.",
-      "answer": "La autenticación y autorización en Angular se implementa mediante técnicas como el uso de tokens JWT, el almacenamiento seguro de credenciales, la protección de rutas y el uso de bibliotecas como Angular AuthGuard y AngularFire para Firebase. Además, se deben seguir las prácticas recomendadas para proteger recursos y datos sensibles."
+      "answer": "La autenticación y autorización en Angular se implementa mediante técnicas como el uso de tokens JWT, el almacenamiento seguro de credenciales, la protección de rutas y el uso de bibliotecas como Angular AuthGuard y AngularFire para Firebase. Además, se deben seguir las prácticas recomendadas para proteger recursos y datos sensibles.",
+      "correctAnswer": "c) La autenticación y autorización en Angular se implementa mediante técnicas como el uso de tokens JWT, el almacenamiento seguro de credenciales, la protección de rutas y el uso de bibliotecas como Angular AuthGuard y AngularFire para Firebase.",
+      "allAnswers": [
+        "a) La autenticación en Angular se logra únicamente mediante el uso de cookies.",
+        "b) La autenticación en Angular se basa en el almacenamiento inseguro de credenciales y no es necesario proteger rutas.",
+        "c) La autenticación y autorización en Angular se implementa mediante técnicas como el uso de tokens JWT, el almacenamiento seguro de credenciales, la protección de rutas y el uso de bibliotecas como Angular AuthGuard y AngularFire para Firebase.",
+        "d) Angular no admite técnicas de autenticación y autorización."
+      ]
     },
     {
       "id": 192,
       "category": "Angular",
       "level": "Senior",
       "question": "Explique la gestión de estado en aplicaciones Angular y mencione las bibliotecas y patrones comunes utilizados para implementarla.",
-      "answer": "La gestión de estado en aplicaciones Angular se refiere a cómo se almacenan y gestionan los datos de la aplicación. Se implementa utilizando bibliotecas como NgRx, Redux y MobX, así como patrones como el patrón Redux. La gestión de estado es crucial para aplicaciones escalables y complejas."
+      "answer": "La gestión de estado en aplicaciones Angular se refiere a cómo se almacenan y gestionan los datos de la aplicación. Se implementa utilizando bibliotecas como NgRx, Redux y MobX, así como patrones como el patrón Redux. La gestión de estado es crucial para aplicaciones escalables y complejas.",
+      "correctAnswer": "a) La gestión de estado en aplicaciones Angular se refiere a cómo se almacenan y gestionan los datos de la aplicación. Se implementa utilizando bibliotecas como NgRx, Redux y MobX, así como patrones como el patrón Redux. La gestión de estado es crucial para aplicaciones escalables y complejas.",
+      "allAnswers": [
+        "a) La gestión de estado en aplicaciones Angular se refiere a cómo se almacenan y gestionan los datos de la aplicación. Se implementa utilizando bibliotecas como NgRx, Redux y MobX, así como patrones como el patrón Redux. La gestión de estado es crucial para aplicaciones escalables y complejas.",
+        "b) La gestión de estado en Angular se realiza únicamente a través de servicios y no requiere el uso de bibliotecas adicionales.",
+        "c) Angular no admite la gestión de estado en aplicaciones.",
+        "d) La gestión de estado en Angular se basa en el almacenamiento de datos en variables globales."
+      ]
     },
     {
       "id": 193,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cuáles son las consideraciones clave al diseñar una arquitectura de microfrontend en Angular y cómo se logra la integración entre múltiples microfrontends?",
-      "answer": "Al diseñar una arquitectura de microfrontend en Angular, es importante considerar la compartimentalización, la comunicación entre microfrontends y la carga dinámica de módulos. La integración se logra a través de técnicas como iframes, Web Components y la coordinación de eventos y datos entre microfrontends."
+      "answer": "Al diseñar una arquitectura de microfrontend en Angular, es importante considerar la compartimentalización, la comunicación entre microfrontends y la carga dinámica de módulos. La integración se logra a través de técnicas como iframes, Web Components y la coordinación de eventos y datos entre microfrontends.",
+      "correctAnswer": "a) Al diseñar una arquitectura de microfrontend en Angular, es importante considerar la compartimentalización, la comunicación entre microfrontends y la carga dinámica de módulos. La integración se logra a través de técnicas como iframes, Web Components y la coordinación de eventos y datos entre microfrontends.",
+      "allAnswers": [
+        "a) Al diseñar una arquitectura de microfrontend en Angular, es importante considerar la compartimentalización, la comunicación entre microfrontends y la carga dinámica de módulos. La integración se logra a través de técnicas como iframes, Web Components y la coordinación de eventos y datos entre microfrontends.",
+        "b) En una arquitectura de microfrontend en Angular, todos los microfrontends deben compartir un único y gran módulo raíz.",
+        "c) La comunicación entre microfrontends no es necesaria en una arquitectura de microfrontend en Angular.",
+        "d) La integración en una arquitectura de microfrontend en Angular se logra únicamente a través del uso de bibliotecas compartidas."
+      ]
     },
     {
       "id": 194,
       "category": "Angular",
       "level": "Senior",
       "question": "Explique cómo se pueden realizar pruebas unitarias y de integración efectivas en una aplicación Angular y mencione las herramientas y enfoques comunes utilizados.",
-      "answer": "Las pruebas unitarias y de integración en Angular se realizan utilizando herramientas como Jasmine, Karma y Protractor. Se deben escribir pruebas para componentes, servicios y rutas, y se pueden simular servicios y eventos para probar el comportamiento. Las pruebas efectivas son esenciales para garantizar la calidad y estabilidad de la aplicación."
+      "answer": "Las pruebas unitarias y de integración en Angular se realizan utilizando herramientas como Jasmine, Karma y Protractor. Se deben escribir pruebas para componentes, servicios y rutas, y se pueden simular servicios y eventos para probar el comportamiento. Las pruebas efectivas son esenciales para garantizar la calidad y estabilidad de la aplicación.",
+      "correctAnswer": "a) Las pruebas unitarias y de integración en Angular se realizan utilizando herramientas como Jasmine, Karma y Protractor. Se deben escribir pruebas para componentes, servicios y rutas, y se pueden simular servicios y eventos para probar el comportamiento. Las pruebas efectivas son esenciales para garantizar la calidad y estabilidad de la aplicación.",
+      "allAnswers": [
+        "a) Las pruebas unitarias y de integración en Angular se realizan utilizando herramientas como Jasmine, Karma y Protractor. Se deben escribir pruebas para componentes, servicios y rutas, y se pueden simular servicios y eventos para probar el comportamiento. Las pruebas efectivas son esenciales para garantizar la calidad y estabilidad de la aplicación.",
+        "b) Las pruebas unitarias en Angular solo se aplican a componentes, mientras que las pruebas de integración se aplican solo a servicios.",
+        "c) No es necesario realizar pruebas en una aplicación Angular, ya que el framework garantiza automáticamente la calidad del código.",
+        "d) Las pruebas en Angular solo se realizan de forma manual y no se pueden automatizar."
+      ]
     },
     {
       "id": 195,
       "category": "Angular",
       "level": "Senior",
       "question": "¿Cómo se puede mejorar la experiencia del usuario (UX) en una aplicación Angular y cuáles son las estrategias comunes para lograrlo?",
-      "answer": "Mejorar la experiencia del usuario en una aplicación Angular implica la optimización del rendimiento, la usabilidad, la accesibilidad y el diseño. Estrategias comunes incluyen la carga progresiva, la navegación rápida, la respuesta táctil, el diseño receptivo, la accesibilidad y la retroalimentación visual para acciones del usuario."
+      "answer": "Mejorar la experiencia del usuario en una aplicación Angular implica la optimización del rendimiento, la usabilidad, la accesibilidad y el diseño. Estrategias comunes incluyen la carga progresiva, la navegación rápida, la respuesta táctil, el diseño receptivo, la accesibilidad y la retroalimentación visual para acciones del usuario.",
+      "correctAnswer": "b) Para mejorar la experiencia del usuario en una aplicación Angular implica la optimización del rendimiento, la usabilidad, la accesibilidad y el diseño. Estrategias comunes incluyen la carga progresiva, la navegación rápida, la respuesta táctil, el diseño receptivo, la accesibilidad y la retroalimentación visual para acciones del usuario.",
+      "allAnswers": [
+        "a) No es posible mejorar la experiencia del usuario en una aplicación Angular.",
+        "b) Para mejorar la experiencia del usuario en una aplicación Angular implica la optimización del rendimiento, la usabilidad, la accesibilidad y el diseño. Estrategias comunes incluyen la carga progresiva, la navegación rápida, la respuesta táctil, el diseño receptivo, la accesibilidad y la retroalimentación visual para acciones del usuario.",
+        "c) Una estrategia común para mejorar la experiencia del usuario en Angular es la implementación de animaciones llamativas.",
+        "d) La única forma de mejorar la experiencia del usuario en Angular es aumentar el uso de bibliotecas de terceros."
+      ]
     },
     {
       "id": 196,
       "category": "Angular",
       "level": "Middle",
       "question": "Explique el ciclo de vida de un componente en Angular y mencione los principales ganchos de ciclo de vida.",
-      "answer": "El ciclo de vida de un componente en Angular se compone de varios ganchos que se ejecutan en diferentes etapas, como 'ngOnInit', 'ngOnChanges', 'ngAfterViewInit' y 'ngOnDestroy'. Estos ganchos permiten realizar acciones específicas en momentos clave durante la vida de un componente."
+      "answer": "El ciclo de vida de un componente en Angular se compone de varios ganchos que se ejecutan en diferentes etapas, como 'ngOnInit', 'ngOnChanges', 'ngAfterViewInit' y 'ngOnDestroy'. Estos ganchos permiten realizar acciones específicas en momentos clave durante la vida de un componente.",
+      "correctAnswer": "c) El ciclo de vida de un componente en Angular se compone de varios ganchos que se ejecutan en diferentes etapas, como 'ngOnInit', 'ngOnChanges', 'ngAfterViewInit' y 'ngOnDestroy'. Estos ganchos permiten realizar acciones específicas en momentos clave durante la vida de un componente.",
+      "allAnswers": [
+        "a) No existen ganchos de ciclo de vida en Angular.",
+        "b) El ciclo de vida de un componente en Angular solo incluye el gancho 'ngOnChanges'.",
+        "c) El ciclo de vida de un componente en Angular se compone de varios ganchos que se ejecutan en diferentes etapas, como 'ngOnInit', 'ngOnChanges', 'ngAfterViewInit' y 'ngOnDestroy'. Estos ganchos permiten realizar acciones específicas en momentos clave durante la vida de un componente.",
+        "d) Angular no utiliza un ciclo de vida para sus componentes."
+      ]
     },
     {
       "id": 197,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué son las animaciones en Angular y cómo se pueden aplicar a elementos HTML?",
-      "answer": "Las animaciones en Angular son una forma de agregar transiciones y animaciones a elementos HTML en una aplicación. Se pueden aplicar mediante el uso de directivas como 'ngIf', 'ngFor' y 'ngStyle', así como mediante la creación de animaciones personalizadas con Angular's Animation DSL (lenguaje específico de dominio para animaciones)."
+      "answer": "Las animaciones en Angular son una forma de agregar transiciones y animaciones a elementos HTML en una aplicación. Se pueden aplicar mediante el uso de directivas como 'ngIf', 'ngFor' y 'ngStyle', así como mediante la creación de animaciones personalizadas con Angular's Animation DSL (lenguaje específico de dominio para animaciones).",
+      "correctAnswer": "c) Las animaciones en Angular son una forma de agregar transiciones y animaciones a elementos HTML en una aplicación. Se pueden aplicar mediante el uso de directivas como 'ngIf', 'ngFor' y 'ngStyle', así como mediante la creación de animaciones personalizadas con Angular's Animation DSL (lenguaje específico de dominio para animaciones).",
+      "allAnswers": [
+        "a) Las animaciones en Angular solo se pueden aplicar a través de JavaScript personalizado.",
+        "b) Las animaciones en Angular se aplican solo a elementos SVG.",
+        "c) Las animaciones en Angular son una forma de agregar transiciones y animaciones a elementos HTML en una aplicación. Se pueden aplicar mediante el uso de directivas como 'ngIf', 'ngFor' y 'ngStyle', así como mediante la creación de animaciones personalizadas con Angular's Animation DSL (lenguaje específico de dominio para animaciones).",
+        "d) Angular no admite animaciones en elementos HTML."
+      ]
     },
     {
       "id": 198,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Qué son las pruebas end-to-end (E2E) en Angular y cómo se pueden realizar utilizando herramientas como Protractor?",
-      "answer": "Las pruebas end-to-end (E2E) en Angular son pruebas que verifican el flujo de una aplicación desde la perspectiva del usuario, simulando acciones y eventos en la interfaz. Se pueden realizar utilizando herramientas como Protractor, que automatiza la interacción con la aplicación y realiza comprobaciones en la interfaz de usuario."
+      "answer": "Las pruebas end-to-end (E2E) en Angular son pruebas que verifican el flujo de una aplicación desde la perspectiva del usuario, simulando acciones y eventos en la interfaz. Se pueden realizar utilizando herramientas como Protractor, que automatiza la interacción con la aplicación y realiza comprobaciones en la interfaz de usuario.",
+      "correctAnswer": "a) Las pruebas end-to-end (E2E) en Angular son pruebas que verifican el flujo de una aplicación desde la perspectiva del usuario, simulando acciones y eventos en la interfaz. Se pueden realizar utilizando herramientas como Protractor, que automatiza la interacción con la aplicación y realiza comprobaciones en la interfaz de usuario.",
+      "allAnswers": [
+        "a) Las pruebas end-to-end (E2E) en Angular son pruebas que verifican el flujo de una aplicación desde la perspectiva del usuario, simulando acciones y eventos en la interfaz. Se pueden realizar utilizando herramientas como Protractor, que automatiza la interacción con la aplicación y realiza comprobaciones en la interfaz de usuario.",
+        "b) Las pruebas end-to-end (E2E) en Angular son pruebas de unidad que verifican componentes individuales de la aplicación.",
+        "c) Las pruebas end-to-end (E2E) en Angular son pruebas que se realizan al final del desarrollo para verificar la estabilidad del código fuente.",
+        "d) Las pruebas end-to-end (E2E) en Angular son pruebas que se realizan manualmente para detectar errores en la interfaz de usuario."
+      ]
     },
     {
       "id": 199,
       "category": "Angular",
       "level": "Middle",
       "question": "¿Cuál es el papel de las promesas (Promises) en Angular y cómo se utilizan para manejar operaciones asíncronas?",
-      "answer": "Las promesas en Angular se utilizan para manejar operaciones asíncronas y devolver resultados en el futuro. Se crean con el constructor 'Promise' y se resuelven o rechazan cuando la operación se completa o falla. Las promesas son útiles para simplificar el manejo de solicitudes HTTP y otras tareas asíncronas en la aplicación."
+      "answer": "Las promesas en Angular se utilizan para manejar operaciones asíncronas y devolver resultados en el futuro. Se crean con el constructor 'Promise' y se resuelven o rechazan cuando la operación se completa o falla. Las promesas son útiles para simplificar el manejo de solicitudes HTTP y otras tareas asíncronas en la aplicación.",
+      "correctAnswer": "c) Las promesas en Angular se utilizan para manejar operaciones asíncronas y devolver resultados en el futuro. Se crean con el constructor 'Promise' y se resuelven o rechazan cuando la operación se completa o falla. Las promesas son útiles para simplificar el manejo de solicitudes HTTP y otras tareas asíncronas en la aplicación.",
+      "allAnswers": [
+        "a) Las promesas en Angular se utilizan para ejecutar código sincrónico.",
+        "b) Las promesas en Angular se utilizan para gestionar operaciones de entrada y salida en tiempo real.",
+        "c) Las promesas en Angular se utilizan para manejar operaciones asíncronas y devolver resultados en el futuro. Se crean con el constructor 'Promise' y se resuelven o rechazan cuando la operación se completa o falla. Las promesas son útiles para simplificar el manejo de solicitudes HTTP y otras tareas asíncronas en la aplicación.",
+        "d) Las promesas en Angular se utilizan para generar documentación y comentarios en el código."
+      ]
     },
     {
       "id": 200,
       "category": "Angular",
       "level": "Middle",
       "question": "Explique el concepto de 'Interceptors' en Angular y cómo se utilizan para manejar solicitudes HTTP de manera global.",
-      "answer": "Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP."
+      "answer": "Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP.",
+      "correctAnswer": "b) Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP.",
+      "allAnswers": [
+        "a) Los 'Interceptors' en Angular son componentes gráficos utilizados para crear interfaces de usuario interactivas.",
+        "b) Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP.",
+        "c) Los 'Interceptors' en Angular son bibliotecas de terceros utilizadas para generar gráficos y visualizaciones de datos.",
+        "d) Los 'Interceptors' en Angular son componentes de animación utilizados para crear efectos visuales en una aplicación."
+      ]
     },
     {
       "id": 201,

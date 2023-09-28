@@ -19,69 +19,63 @@
     </div>
   </div>
 
-<!-- Quiz questions -->
+  <!-- Quiz questions -->
   <div class="main-quiz-questions-container">
-    <div class="quiz-questions-container" *ngFor="let question of questions">
-      <h6 class="quiz-question">P. {{question.question}}</h6>
+    <div
+      class="quiz-questions-container"
+      *ngFor="let question of questions; let i = index"
+    >
+      <h6 class="quiz-question">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="quiz-question-logo bi bi-chat-left-text-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"
+          />
+        </svg>
+        {{ question.question }}
+      </h6>
       <div class="quiz-answer">
-        <div class="form-check">
+        <div
+          class="form-check"
+          *ngFor="let answer of question.allAnswers; let j = index"
+        >
           <input
             class="form-check-input"
             type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
+            name="question-{{ i }}"
+            [value]="answer"
+            [(ngModel)]="question.selectedAnswer"
+            id="answer-{{ i }}-{{ j }}"
           />
-          <label class="form-check-label" for="flexRadioDefault1">
-            a. Primera posible respuesta.
-          </label>
-        </div>
-      </div>
-      <div class="quiz-answer">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            b. Segunda posible respuesta.
-          </label>
-        </div>
-      </div>
-      <div class="quiz-answer">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            c. Tercera posible respuesta.
-          </label>
-        </div>
-      </div>
-      <div class="quiz-answer">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-          />
-          <label class="form-check-label" for="flexRadioDefault1">
-            d. Cuarta posible respuesta.
+          <label
+          [ngClass]="{
+            'quiz-correct-answer': isCorrect(question) && answer === question.correctAnswer,
+            'quiz-wrong-answer': this.isSubmitted && answer === question.selectedAnswer && answer !== question.correctAnswer
+          }"
+            class="form-check-label"
+            for="answer-{{ i }}-{{ j }}"
+          >
+            {{ answer }}
           </label>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- Quiz result -->
+  <div class="quiz-result-container" *ngIf="isSubmitted">
+    <p class="quiz-result">{{ result }} preguntas acertadas.</p>
   </div>
 
   <!-- Confirm button -->
   <div class="quiz-confirm-button-container">
-    <div class="quiz-confirm-button btn" (click)="onSubmit()">
+    <button class="quiz-confirm-button btn" (click)="onSubmit()" [disabled]="!areAllQuestionsAnswered()">
       <span class="quiz-confirm-button-text">Confirmar </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -98,6 +92,6 @@
           d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
         />
       </svg>
-    </div>
+    </button>
   </div>
 </div>

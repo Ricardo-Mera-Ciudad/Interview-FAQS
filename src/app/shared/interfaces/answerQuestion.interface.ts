@@ -4,6 +4,11 @@ export interface Question {
   category: Category,
   question: string,
   answer: string,
+  correctAnswer: string,
+  allAnswers: []
+}
+export interface QuestionWithAnswer extends Question {
+  selectedAnswer: string | null;
 }
 
 export enum Level {

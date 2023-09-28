@@ -1,0 +1,2275 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jesús",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "email": "jesus@google.com",
+      "favoriteQuestions": []
+    },
+    {
+      "name": "Lola",
+      "email": "lola@google.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 2,
+      "favoriteQuestions": []
+    },
+    {
+      "name": "david",
+      "email": "dagalisteo@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 3,
+      "favoriteQuestions": []
+    },
+    {
+      "name": "dani",
+      "email": "dani@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 4,
+      "favoriteQuestions": []
+    },
+    {
+      "name": "María",
+      "email": "maria@google.com",
+      "password": "87654321",
+      "confirmPassword": "87654321",
+      "id": 5,
+      "favoriteQuestions": []
+    },
+    {
+      "name": "Manolito",
+      "email": "manolito@google.com",
+      "password": "manolito",
+      "confirmPassword": "manolito",
+      "id": 6,
+      "favoriteQuestions": []
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Que son los componentes de Angular",
+      "answer": "Los componentes son los bloques de construcción más básicos para crear la interfaz de usuario de una aplicación de Angular. Estos componentes forman una especie de árbol en la aplicación y siempre tienen una plantilla (o template) con la que podemos formar la vista de nuestra aplicacion."
+    },
+    {
+      "id": 2,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "Indica al menos 3 formas en las que puedan comunicarse los componentes en Angular",
+      "answer": "Binding (vinculación de entrada INPUT y vinculación de salida OUTPUT), Servicios (servicios compartidos inyectado en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL),LocalStorage y SessionStorage (para la comunicación persistente entre sesiones o pestañas del navegador),Navegación con parámetros de ruta (a través de los parámetros de ruta en la URL cuando se navega entre diferentes vistas de la aplicación),Inyección de Dependencia (DI - Dependency Injection),  Directivas personalizadas..."
+    },
+    {
+      "id": 3,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Que es una plantilla?",
+      "answer": "Una plantilla o template es una vista Html donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular."
+    },
+    {
+      "id": 4,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es el Data Binding o vinculación de datos?",
+      "answer": "Es un concepto clave en Angular y permite definir la comunicación entre un componente y el DOM, lo que hace que sea muy fácil definir aplicaciones interactivas sin preocuparse por enviar y extraer datos"
+    },
+    {
+      "id": 5,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es Angular CLI y para qué se usa?",
+      "answer": "Es una interfaz de línea de comandos (Command Line Interface) para desarrollar y crear aplicaciones angulares utilizando módulos de estilo nodejs (commonJs). Se instala usando el siguiente comando: npm install @angular/cli@latest"
+    },
+    {
+      "id": 6,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es la inyección de dependencia en Angular?",
+      "answer": "Es un patrón de diseño de aplicaciones importante en el que una clase solicita dependencias de fuentes externas en lugar de crearlas ella misma. Angular viene con su propio marco de inyección de dependencias para resolver dependencias (servicios u objetos que una clase necesita para realizar su función), por lo que puede hacer que sus servicios dependan de otros servicios en toda su aplicació"
+    },
+    {
+      "id": 7,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué son las directivas? Tipos de directivas en Angular",
+      "answer": "En Angular, las directivas son marcadores en el DOM (Documento de Objetos del Modelo) que le indican al framework qué hacer con un elemento del DOM o cómo debe comportarse (se usan para agregar funcionalidad adicional a los elementos HTML o modificar su comportamiento). Existen ESTRUCTURALES que modifican la estructura del DOM al agregar o eliminar elementos del mismo (ngIf, ngFor y ngSwitch), las de ATRIBUTO (ngModel,ngClass, ngStyle, ngFor) y las de COMPONENTE que se refieren al uso de componentes personalizados como directivas en la construcción de la interfaz de usuario."
+    },
+    {
+      "id": 8,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué son los formularios reactivos? Explica FormBuilder",
+      "answer": "Estos formularios se basan en programación reactiva y permiten un mayor control y flexibilidad en la manipulación y validación de datos de entrada del usuario.Son un enfoque basado en modelos para crear formularios en un estilo reactivo (las entradas del formulario cambian con el tiempo). Estos se construyen alrededor de flujos observables, donde las entradas de formularios y los valores se proporcionan como flujos de valores de entrada.Los formularios reactivos son especialmente útiles cuando necesitas gestionar formularios complejos con reglas de validación personalizadas, dependencias entre campos o cuando deseas tener un control más preciso sobre la manipulación de datos de entrada en tiempo real. También facilitan las pruebas unitarias de la lógica del formulario, ya que puedes simular fácilmente eventos y cambios en los campos.FormBuilder es una utilidad proporcionada por Angular que simplifica la creación de formularios reactivos al proporcionar métodos para crear instancias de FormGroup y FormControl de manera más sencilla y legible."
+    },
+    {
+      "id": 9,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "Lazy loading: ¿qué es?",
+      "answer": "La carga diferida es uno de los conceptos más útiles de Angular Routing. Nos ayuda a descargar las páginas web en trozos en lugar de descargar todo en un paquete grande. Se utiliza para la carga diferida al cargar de forma asincrónica el módulo de funciones para el enrutamiento cuando sea necesario usando la propiedad loadChildren"
+    },
+    {
+      "id": 10,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "Pipes.¿Qué son en Angular?",
+      "answer": "Las tuberías o canalizaciones llamadas pipes en Angular son funciones simples que utilizan expresiones de plantilla para aceptar datos como entrada y transformarlos en la salida deseada en la interfaz de usuario.Son una característica esencial para la presentación de datos en Angular y se utilizan para realizar tareas comunes de formateo, filtrado y transformación de datos de manera declarativa en las plantillas. Ejemplo: ({{ userName | uppercase}})"
+    },
+    {
+      "id": 11,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la interpolación?",
+      "answer": "Es una técnica que se utiliza en las plantillas para mostrar dinámicamente valores de variables y expresiones en la interfaz de usuario. Permite incrustar valores de variables y expresiones directamente en el contenido HTML de una plantilla. La interpolación se realiza mediante la sintaxis de doble llave {{ }} y es una de las formas más simples y comunes de vincular datos en Angular. El texto entre llaves suele ser el nombre de una propiedad de componente. Angular reemplaza ese nombre con el valor de cadena de la propiedad del componente correspondiente."
+    },
+    {
+      "id": 12,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son los Observables?¿Cómo se crean?",
+      "answer": "Son una parte fundamental de la programación reactiva y se utilizan en Angular (y en otros contextos) para manejar secuencias de eventos asíncronos y streams de datos. Los observables permiten la gestión de flujos de datos en tiempo real, lo que es especialmente útil en aplicaciones web para manejar eventos, solicitudes HTTP, actualizaciones en tiempo real y otras operaciones asíncronas.  Angular proporciona una implementación de observables basada en la biblioteca RxJS, que es una de las bibliotecas más populares para la programación reactiva en JavaScript. 1- Crearlo desde cero con OBSERVABLE y el método NEXT. 2- A partir de una promesa usando FROM. 3- Con el método FROMEVENT creamos observable que emite eventos del DOM. 4- Con INTERVAL creamos observables que emite valores en intervalos de tiempo."
+    },
+    {
+      "id": 13,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es el Http Client en Angular?",
+      "answer": "Es un módulo proporcionado por Angular para realizar solicitudes HTTP a servidores o recursos externos desde una aplicación Angular. Se utiliza para interactuar con servicios web, recuperar datos JSON, realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) y más."
+    },
+    {
+      "id": 14,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "Explica el Angular Router",
+      "answer": "El enrutador de Angular es una característica clave que permite la navegación entre diferentes vistas o componentes en una aplicación web Angular de una página (SPA, por sus siglas en inglés). El enrutador de Angular proporciona una forma estructurada de definir las rutas y gestionar la navegación del usuario en la aplicación."
+    },
+    {
+      "id": 15,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es un módulo compartido (Shared Module) en Angular y cuál es su propósito en una aplicación?",
+      "answer": "Un módulo compartido (Shared Module) en Angular es un módulo que se utiliza para agrupar y exportar componentes, directivas, pipes y otros elementos que deben ser compartidos entre diferentes partes de una aplicación. Su propósito es promover la reutilización de código y evitar la duplicación de componentes y funcionalidades comunes en toda la aplicación. Un módulo compartido puede importarse en otros módulos de la aplicación para que los componentes y recursos compartidos estén disponibles en toda la aplicación."
+    },
+    {
+      "id": 16,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre el enlace de datos unidireccional y el enlace de datos bidireccional en Angular y cuándo utilizarías uno u otro?",
+      "answer": "El enlace de datos unidireccional y el enlace de datos bidireccional son dos enfoques para gestionar la comunicación entre componentes y la actualización de datos en Angular. El unidireccional es generalmente preferido para mantener un flujo de datos más predecible y evitar problemas potenciales, mientras que el enlace de datos bidireccional es útil en situaciones específicas donde la comunicación bidireccional es esencial, como en formularios interactivos."
+    },
+    {
+      "id": 17,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Signals en Angular",
+      "answer": "Son espacios en memoria que apunta en todo momento dónde se está usando el elemento señalado, y actualiza su información en todo momento. Si no lo usáramos Angular debe disparar todos sus métodos de detección de cambios a lo largo de toda la aplicación."
+    },
+    {
+      "id": 18,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique RXJS",
+      "answer": "RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva en JavaScript que se utiliza ampliamente en el desarrollo de aplicaciones Angular. Angular utiliza RxJS para manejar flujos de datos asincrónicos, como observables, y facilita la gestión de eventos, llamadas HTTP y otros flujos de datos en aplicaciones web."
+    },
+    {
+      "id": 19,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre el enrutamiento con carga diferida (Lazy Loading) y la carga convencional de módulos en Angular?",
+      "answer": "El enrutamiento con carga diferida (Lazy Loading) es una técnica que retrasa la carga de módulos de Angular hasta que se necesitan, lo que mejora significativamente el rendimiento inicial de la aplicación. En contraste, la carga convencional de módulos carga todos los módulos de la aplicación al inicio. Lazy Loading se configura en las rutas del enrutador utilizando el método loadChildren, mientras que la carga convencional se realiza mediante el método import en los módulos principales. Lazy Loading es particularmente útil en aplicaciones grandes para reducir el tiempo de carga inicial."
+    },
+    {
+      "id": 20,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es AOT (Ahead-of-Time) en Angular y cuáles son sus ventajas sobre JIT (Just-in-Time) en la compilación de plantillas?",
+      "answer": " AOT (Ahead-of-Time) es una técnica de compilación utilizada en Angular que compila las plantillas y los componentes en código JavaScript antes de que la aplicación se ejecute en el navegador. Las ventajas de AOT sobre JIT (Just-in-Time) incluyen 1- Mejor rendimiento: La compilación AOT reduce el tiempo de inicio de la aplicación y mejora la velocidad de carga, ya que no es necesario compilar plantillas en el navegador en tiempo de ejecución. 2- Errores de plantillas en tiempo de compilación: AOT detecta errores de plantillas en tiempo de compilación, lo que permite identificar y solucionar problemas antes de que la aplicación se ejecute. 3- Tamaño de archivo más pequeño: AOT elimina el compilador de plantillas de la carga útil del cliente, lo que reduce el tamaño del paquete JavaScript que se envía al navegador."
+    },
+    {
+      "id": 21,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre una etiqueta Html y un elemento Html?",
+      "answer": "Una etiqueta Html es un marcador que define el inicio o el final de un elemento en un documento Html, mientras que un elemento Html es un conjunto completo que consta de una etiqueta de inicio, contenido y una etiqueta de cierre (si es necesario)."
+    },
+    {
+      "id": 22,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un atributo en Html y cómo se utiliza?",
+      "answer": "Un atributo en Html proporciona información adicional sobre un elemento y se especifica dentro de la etiqueta de inicio. Por ejemplo, en <img src='imagen.jpg'>, 'src' es un atributo que especifica la fuente de la imagen."
+    },
+    {
+      "id": 23,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué significa la sigla DOCTYPE en Html y cuál es su propósito?",
+      "answer": "DOCTYPE significa Document Type Declaration. Se utiliza para especificar la versión de Html que se está utilizando en el documento y asegura que el navegador interprete la página correctamente."
+    },
+    {
+      "id": 24,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cómo se crea una lista desordenada en Html?",
+      "answer": "Una lista desordenada se crea utilizando la etiqueta <ul>, y los elementos de la lista se especifican con la etiqueta <li> dentro de <ul>."
+    },
+    {
+      "id": 25,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es una entidad Html y cuál es su uso?",
+      "answer": "Una entidad Html es una secuencia de caracteres predefinida que representa un carácter especial en Html, como '&lt;' para '<' y '&amp;' para '&'. Se utilizan para evitar conflictos con la sintaxis Html."
+    },
+    {
+      "id": 26,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es un enlace relativo en Html y cómo se diferencia de un enlace absoluto?",
+      "answer": "Un enlace relativo en Html especifica la ubicación de un recurso en relación con la ubicación actual del documento, mientras que un enlace absoluto proporciona una URL completa. Los enlaces relativos son útiles cuando se trabaja en un sitio web local o se desea flexibilidad en las rutas de archivo."
+    },
+    {
+      "id": 27,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cómo se crea una tabla con bordes visibles en Html?",
+      "answer": "Para crear una tabla con bordes visibles en Html, puedes agregar el atributo 'border' a la etiqueta <table> y establecerlo en un valor mayor que cero, por ejemplo, <table border='1'>."
+    },
+    {
+      "id": 28,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es un formulario Html y cuál es su propósito?",
+      "answer": "Un formulario Html es un conjunto de elementos que permiten a los usuarios ingresar datos y enviarlos a un servidor web. Se utiliza para interactuar con los usuarios y recopilar información."
+    },
+    {
+      "id": 29,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es la etiqueta de encabezado más importante en Html y por qué?",
+      "answer": "La etiqueta de encabezado más importante es <h1>. Es importante porque define el encabezado principal de la página y tiene un gran impacto en la optimización para motores de búsqueda (SEO) y la estructura del contenido."
+    },
+    {
+      "id": 30,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la validación en Html y por qué es importante?",
+      "answer": "La validación en Html se refiere a asegurarse de que el código Html cumple con los estándares definidos por el W3C. Es importante porque ayuda a garantizar la consistencia y la compatibilidad entre navegadores, lo que mejora la calidad de la página web."
+    },
+    {
+      "id": 31,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué son las etiquetas de encabezado en Html y cuál es su jerarquía?",
+      "answer": "Las etiquetas de encabezado en Html, como <h1>, <h2>, ..., <h6>, se utilizan para definir la estructura jerárquica del contenido de la página. <h1> es el encabezado principal y <h6> el menos importante."
+    },
+    {
+      "id": 32,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre Html y XHtml?",
+      "answer": "XHtml es una versión más estricta y XML-compatible de Html. Requiere que el código esté bien formado y se adhiera a reglas más estrictas de sintaxis. Html es más flexible en términos de estructura y validación."
+    },
+    {
+      "id": 33,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué son las hojas de estilo en cascada (CSS) y cómo se relacionan con Html?",
+      "answer": "Las hojas de estilo en cascada (CSS) se utilizan para aplicar estilos y diseños a elementos Html. Permiten separar la estructura del contenido (Html) de su presentación visual, lo que facilita la gestión y el mantenimiento del diseño de un sitio web."
+    },
+    {
+      "id": 34,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la función de la etiqueta <iframe> en Html?",
+      "answer": "La etiqueta <iframe> se utiliza para incrustar contenido de otra página web dentro de la página actual. Puede ser útil para mostrar mapas, videos u otros elementos externos."
+    },
+    {
+      "id": 35,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre una etiqueta Html y un elemento Html?",
+      "answer": "Una etiqueta Html es un marcador que define el inicio o el final de un elemento en un"
+    },
+    {
+      "id": 36,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un atributo en Html y cómo se utiliza?",
+      "answer": "Un atributo en Html proporciona información adicional sobre un elemento y se especifica dentro de la etiqueta de inicio. Por ejemplo, en <img src='imagen.jpg'>, 'src' es un atributo que especifica la fuente de la imagen."
+    },
+    {
+      "id": 37,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué significa la sigla DOCTYPE en Html y cuál es su propósito?",
+      "answer": "DOCTYPE significa Document Type Declaration. Se utiliza para especificar la versión de Html que se está utilizando en el documento y asegura que el navegador interprete la página correctamente."
+    },
+    {
+      "id": 38,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cómo se crea una lista desordenada en Html?",
+      "answer": "Una lista desordenada se crea utilizando la etiqueta <ul>, y los elementos de la lista se especifican con la etiqueta <li> dentro de <ul>."
+    },
+    {
+      "id": 39,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es una entidad Html y cuál es su uso?",
+      "answer": "Una entidad Html es una secuencia de caracteres predefinida que representa un carácter especial en Html, como '&lt;' para '<' y '&amp;' para '&'. Se utilizan para evitar conflictos con la sintaxis Html."
+    },
+    {
+      "id": 40,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es una etiqueta de anclaje en Html y cómo se utiliza?",
+      "answer": "Una etiqueta de anclaje, <a>, se utiliza para crear hipervínculos a otras páginas web o recursos. Se especifica el destino del enlace mediante el atributo 'href'. Por ejemplo, <a href='https://www.ejemplo.com'>Enlace a Ejemplo</a>."
+    },
+    {
+      "id": 41,
+      "category": "Css",
+      "level": "Junior",
+      "question": "Explique en qué se diferencia un selector de clase de CSS de un selector id",
+      "answer": "Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu Html. Múltiples elementos pueden compartir la misma clase y tener estilos similares. Un selector de ID en CSS se denota con un símbolo de almohadilla o numeral (por ejemplo, '#mi-id') y debe ser único en todo tu documento Html. Solo un elemento puede tener un ID específico, y se utiliza cuando deseas aplicar estilos o manipular ese elemento en particular."
+    },
+    {
+      "id": 42,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre las posiciones relative, fixed, absolute y static para un elemento dado?",
+      "answer": "Estas posiciones afectan cómo se ubica un elemento en relación con su posición inicial y otros elementos. Static (Estático):Valor predeterminado para todos los elementos Html. Los elementos se muestran en el orden en que aparecen en el flujo normal del documento. No se ven afectados por las propiedades top, right, bottom o left. No se pueden superponer a otros elementos ni ajustar su posición en relación con otros elementos. Relative (Relativo):Los elementos se desplazan en relación con su posición normal. Puedes usar las propiedades top, right, bottom o left para mover el elemento desde su posición original. El espacio ocupado por el elemento en su posición original se mantiene, lo que significa que otros elementos no se ven afectados por su movimiento. Absolute (Absoluto): Los elementos se posicionan en relación con el ancestro más cercano que tenga una posición relativa, absoluta o fija. Los elementos absolutos se eliminan del flujo normal del documento, por lo que no ocupan espacio en el diseño original. Puedes usar top, right, bottom o left para ajustar su posición en relación con el ancestro posicionado. Si no hay un ancestro posicionado, se posicionan en relación con el documento Html.Fixed (Fijo): Los elementos se posicionan de forma fija en relación con la ventana gráfica del navegador, por lo que permanecen en la misma posición incluso si se desplaza la página. Se usan las propiedades top, right, bottom o left para definir su posición en relación con la ventana gráfica. No afectan ni se ven afectados por otros elementos en el documento."
+    },
+    {
+      "id": 43,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es un selector de tipo en CSS?",
+      "answer": "Un selector de tipo en CSS selecciona todos los elementos de un tipo específico en tu HTML. Por ejemplo, 'p' seleccionaría todos los párrafos en tu página y les aplicaría estilos."
+    },
+    {
+      "id": 44,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué significa 'cascading' en 'Cascading Style Sheets' (CSS) y cómo funciona?",
+      "answer": "La palabra 'cascading' en CSS se refiere a la forma en que se aplican y priorizan los estilos. Los estilos pueden provenir de diferentes fuentes, como el propio estilo del elemento, hojas de estilo externas y hojas de estilo internas. La cascada determina la prioridad de estos estilos y cómo se aplican en el documento, siguiendo un conjunto de reglas y especificidad."
+    },
+    {
+      "id": 45,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es un selector de atributo en CSS y cuál es su uso común?",
+      "answer": "Un selector de atributo en CSS permite seleccionar elementos HTML en función de los valores de sus atributos. Se denota utilizando corchetes (por ejemplo, 'a[href='https://www.ejemplo.com'] seleccionaría todos los enlaces con el atributo 'href' que tenga el valor 'https://www.ejemplo.com'). Es útil para aplicar estilos a elementos específicos basados en sus atributos."
+    },
+    {
+      "id": 46,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué significa el modelo de caja o 'box model' en CSS y cuáles son sus componentes?",
+      "answer": "El 'box model' en CSS es un concepto fundamental que describe cómo se representa un elemento en una página web. Tiene cuatro componentes principales: el contenido (content), el padding, el borde (border) y el margen (margin). Cada uno de estos componentes afecta el tamaño y el diseño de un elemento en la página."
+    },
+    {
+      "id": 47,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es la propiedad 'color' en CSS y cuál es su propósito?",
+      "answer": "La propiedad 'color' en CSS se utiliza para especificar el color del texto en un elemento HTML. Puedes definirlo utilizando nombres de colores, códigos hexadecimales o valores RGB para personalizar la apariencia del texto."
+    },
+    {
+      "id": 48,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es el 'box-sizing' en CSS y cómo afecta al modelo de caja?",
+      "answer": "El 'box-sizing' en CSS es una propiedad que determina cómo se calcula el tamaño total de un elemento, incluyendo su contenido, padding y borde. Puede tener dos valores principales: 'content-box' (el tamaño se calcula excluyendo el padding y el borde) y 'border-box' (el tamaño incluye el padding y el borde en el cálculo). Esta propiedad afecta directamente al modelo de caja y cómo se representan los elementos en la página."
+    },
+    {
+      "id": 49,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es el 'float' en CSS y cuál es su propósito?",
+      "answer": "El 'float' en CSS es una propiedad que se utiliza para colocar elementos en una página web a la izquierda o la derecha de su contenedor. Esto permite que otros elementos fluyan alrededor de él. Es comúnmente utilizado para crear diseños de columnas y diseños de página más complejos."
+    },
+    {
+      "id": 50,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es un pseudo-elemento en CSS y cuál es su sintaxis?",
+      "answer": "Un pseudo-elemento en CSS es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after'). Los pseudo-elementos se utilizan para crear contenido adicional, como elementos de lista o decoraciones, mediante CSS."
+    },
+    {
+      "id": 51,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es el 'display' en CSS y cuáles son algunos valores comunes para esta propiedad?",
+      "answer": "El 'display' en CSS determina cómo se muestra un elemento en la página. Algunos valores comunes para esta propiedad son 'block' (el elemento ocupa todo el ancho disponible y comienza en una nueva línea), 'inline' (el elemento se muestra en la misma línea que el contenido circundante) y 'none' (el elemento no se muestra en absoluto). Esta propiedad es fundamental para controlar el diseño y la estructura de una página web."
+    },
+    {
+      "id": 52,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Cómo se comenta un bloque de código CSS?",
+      "answer": "Para comentar un bloque de código CSS, puedes encerrar el comentario entre '/' y '/'. Todo lo que esté dentro de estos delimitadores será tratado como comentario y no afectará el estilo de la página. Esto es útil para incluir notas y explicaciones en tu código CSS."
+    },
+    {
+      "id": 53,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es la propiedad 'background' en CSS y cuál es su función?",
+      "answer": "La propiedad 'background' en CSS se utiliza para definir el fondo de un elemento HTML. Puedes establecer valores como colores de fondo, imágenes de fondo y repetición del fondo. Esta propiedad es esencial para diseñar la apariencia visual de un elemento y su entorno."
+    },
+    {
+      "id": 54,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre 'margin' y 'padding' en CSS?",
+      "answer": "La diferencia principal entre 'margin' y 'padding' en CSS es su función y ubicación relativa en el modelo de caja. 'Margin' es el espacio exterior al borde de un elemento y afecta la distancia entre elementos adyacentes. 'Padding' es el espacio interior al borde y afecta la distancia entre el contenido del elemento y el borde. Ambos se utilizan para controlar el diseño y el espacio en una página web, pero tienen propósitos diferentes."
+    },
+    {
+      "id": 55,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es un 'media query' en CSS y cuál es su propósito?",
+      "answer": "Un 'media query' en CSS es una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
+    },
+    {
+      "id": 56,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Cómo se centra un div usando CSS?",
+      "answer": "Puedes centrar un 'div' horizontalmente y verticalmente utilizando CSS de varias maneras. Aquí te muestro algunas de las técnicas más comunes:\n\n1. Centrado horizontal y vertical con Flexbox (Recomendado):\n\ncss\n.contenedor {\n display: flex;\n justify-content: center; /* Centrado horizontal */\n align-items: center; /* Centrado vertical */\n height: 100vh; /* Ajusta la altura del contenedor según la ventana */\n}\n\n\nEn este ejemplo, '.contenedor' será centrado tanto horizontal como verticalmente dentro de su elemento contenedor. La propiedad 'height: 100vh' asegura que el contenedor tenga al menos el 100% de la altura de la ventana del navegador.\n\n2. Centrado horizontal y vertical con Grid:\n\ncss\n.contenedor {\n display: grid;\n place-items: center; /* Centrado horizontal y vertical */\n height: 100vh;\n}\n\n\nAl igual que con Flexbox, esta técnica también utiliza 'height: 100vh' para asegurarse de que el contenedor ocupe al menos toda la altura de la ventana.\n\n3. Centrado horizontal con margen automático:\n\ncss\n.contenedor {\n margin: 0 auto; /* Centrado horizontal */\n width: fit-content; /* Opcional: ajusta el ancho al contenido */\n}\n\n\nEsto centrará horizontalmente el 'div' dentro de su elemento contenedor, pero no lo centrará verticalmente.\n\nElige la técnica que mejor se adapte a tus necesidades y al diseño de tu sitio web. Las técnicas con Flexbox y Grid son muy versátiles y se utilizan comúnmente para diseños modernos y responsivos."
+    },
+    {
+      "id": 57,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es un 'media query' en CSS y cuál es su propósito?",
+      "answer": "Un 'media query' en CSS es una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
+    },
+    {
+      "id": 58,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es la especificidad en CSS y cómo se resuelven los conflictos de estilos?",
+      "answer": "La especificidad en CSS es un sistema que determina qué estilo se aplicará cuando existan conflictos entre reglas de estilo. Se basa en cuatro niveles de especificidad: elementos, clases y atributos, IDs y pseudo-clases/pseudo-elementos. Cuando hay conflictos, se aplica la regla con la mayor especificidad. Si la especificidad es igual, se utiliza la regla que aparece más tarde en el código CSS."
+    },
+    {
+      "id": 59,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es un selector de descendiente en CSS y cuál es su sintaxis?",
+      "answer": "Un selector de descendiente en CSS permite seleccionar un elemento que es descendiente de otro elemento específico. Su sintaxis implica escribir el nombre del elemento padre seguido de un espacio y luego el nombre del elemento descendiente. Por ejemplo, 'div p' seleccionaría todos los elementos 'p' que son descendientes de un elemento 'div'."
+    },
+    {
+      "id": 60,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es la propiedad 'position' en CSS y cuáles son sus valores principales?",
+      "answer": "La propiedad 'position' en CSS se utiliza para controlar la posición de un elemento en la página. Algunos valores principales son 'static' (posición normal de flujo), 'relative' (posición relativa al lugar que ocuparía en el flujo normal), 'absolute' (posición relativa al elemento posicionado más cercano) y 'fixed' (posición fija en relación con la ventana del navegador). Esta propiedad es fundamental para el diseño de diseño y la ubicación de elementos en la página."
+    },
+    {
+      "id": 61,
+      "category": "Javascript",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre undefined y null?",
+      "answer": "undefined representa una variable que no ha sido declarada o a la que no se le ha asignado un valor, mientras que null representa un valor intencionadamente vacío o ausente."
+    },
+    {
+      "id": 62,
+      "category": "Javascript",
+      "level": "Junior",
+      "question": "¿Qué es el scope en JavaScript?",
+      "answer": "El scope en JavaScript se refiere al alcance o contexto en el que una variable o función es accesible dentro del código. Puede ser global o local, y determina dónde una variable o función puede ser utilizada dentro de un programa."
+    },
+    {
+      "id": 63,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 64,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 65,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 66,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 67,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 68,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 69,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 70,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 71,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 72,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 73,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 74,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 75,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 76,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 77,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 78,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 79,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 80,
+      "category": "",
+      "level": "",
+      "question": "",
+      "answer": ""
+    },
+    {
+      "id": 81,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es TypeScript y cómo se relaciona con JavaScript?",
+      "answer": "TypeScript es un lenguaje de programación desarrollado por Microsoft que se basa en JavaScript. Se compila a JavaScript y agrega tipos estáticos opcionales, lo que mejora la robustez y la calidad del código JavaScript."
+    },
+    {
+      "id": 82,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Cuál es la extensión de archivo típica para los archivos TypeScript?",
+      "answer": "La extensión de archivo típica para los archivos TypeScript es .ts"
+    },
+    {
+      "id": 83,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué son las interfaces en TypeScript y para qué se utiliza?",
+      "answer": "Las interfaces en TypeScript son estructuras que definen la forma de un objeto, incluyendo sus propiedades,tipos y métodos, pero no su implementación. Se definen usando la palabra clave interface. Por ejemplo: interface Persona { nombre: string; edad: number; }. Con esto se garantiza que los objetos cumplan con ciertas propiedades y métodos"
+    },
+    {
+      "id": 84,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Por qué TypeScript es útil en el desarrollo web y cuáles son sus ventajas clave?",
+      "answer": "TypeScript es útil porque mejora la seguridad y la calidad del código JavaScript al agregar tipos estáticos. Esto facilita la detección temprana de errores y proporciona herramientas de desarrollo más sólidas."
+    },
+    {
+      "id": 85,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito de las enumeraciones (enums) en TypeScript y cómo se declaran?",
+      "answer": "Las enumeraciones en TypeScript permiten definir un conjunto de valores con nombres descriptivos. Se declaran usando enum. Por ejemplo: enum DíasSemana { Lunes, Martes, Miércoles, ... }"
+    },
+    {
+      "id": 86,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es un tipo de dato en TypeScript?",
+      "answer": "Un tipo de dato en TypeScript define el tipo de valor que puede contener una variable, como números, cadenas, objetos, etc."
+    },
+    {
+      "id": 87,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre interface y type en TypeScript?",
+      "answer": "Ambos se utilizan para definir estructuras de datos, pero interface se utiliza principalmente para definir contratos para objetos, mientras que type es más versátil y se puede usar para definir tipos de datos complejos."
+    },
+    {
+      "id": 88,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es la herencia en TypeScript y cómo se implementa?",
+      "answer": "La herencia en TypeScript permite que una clase herede propiedades y métodos de otra clase. Se implementa usando la palabra clave extends, por ejemplo: class ClaseHija extends ClasePadre { } "
+    },
+    {
+      "id": 89,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué es la inferencia de tipos en TypeScript y cómo se utiliza?",
+      "answer": "La inferencia de tipos es la capacidad de TypeScript para deducir automáticamente el tipo de una variable según su valor. No es necesario especificar el tipo explícitamente, TypeScript lo infiere automáticamente."
+    },
+    {
+      "id": 90,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué son los decoradores en TypeScript y cuál es su propósito en Angular?"
+    },
+    {
+      "id": 91,
+      "category": "Typescript",
+      "level": "Junior",
+      "question": "¿Qué son los genéricos en TypeScript y cómo se utilizan?",
+      "answer": "Los genéricos permiten escribir funciones y clases que funcionen con diferentes tipos de datos sin perder la información de tipo. Se definen utilizando parámetros de tipo, por ejemplo: function ejemplo<T>(valor: T): T { return valor; }"
+    },
+    {
+      "id": 92,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué son los tipos de unión (union types) en TypeScript y cómo se declaran?",
+      "answer": "Los tipos de unión permiten declarar una variable que puede tener varios tipos posibles. Se declaran usando el símbolo | entre los tipos, por ejemplo: let variable: string | number; "
+    },
+    {
+      "id": 93,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué es un transpilador en TypeScript y cuál es su función?",
+      "answer": "Es una herramienta que convierte código TypeScript en código JavaScript, lo que permite que los navegadores y entornos de ejecución de JavaScript lo comprendan y ejecuten.Un ejemplo de transpilador en TypeScript es el propio compilador de TypeScript, que se llama tsc (TypeScript Compiler). "
+    },
+    {
+      "id": 94,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué son los módulos en TypeScript y cuál es su ventaja?",
+      "answer": "Los módulos en TypeScript permiten organizar el código en archivos separados y reutilizables. Esto ayuda a mantener el código ordenado, modular y facilita la colaboración en proyectos grandes."
+    },
+    {
+      "id": 95,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre any y unknown en TypeScript?",
+      "answer": "ANY permite cualquier tipo de valor, mientras que UNKNOWN representa un tipo desconocido y es más seguro de usar que any."
+    },
+    {
+      "id": 96,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Cómo se declara una variable con un tipo específico en TypeScript?",
+      "answer": "Se puede declarar una variable con un tipo específico utilizando la notación de dos puntos después del nombre de la variable, por ejemplo, let miVariable: number = 5;"
+    },
+    {
+      "id": 97,
+      "category": "Typescript",
+      "level": "Middle",
+      "question": "¿Qué es el sistema de módulos en TypeScript y cuáles son los dos formatos de módulos admitidos?",
+      "answer": "El sistema de módulos en TypeScript permite organizar el código en unidades separadas y reutilizables. Los dos formatos de módulos admitidos son CommonJS y ES6 (ECMAScript 2015)."
+    },
+    {
+      "id": 98,
+      "category": "Typescript",
+      "level": "Senior",
+      "question": "¿Qué es un namespace (espacio de nombres) en TypeScript y para qué se utiliza?",
+      "answer": "Es una forma de agrupar y organizar código en un ámbito separado para evitar conflictos de nombres. Se utiliza para estructurar grandes aplicaciones y evitar la contaminación del espacio global."
+    },
+    {
+      "id": 99,
+      "category": "Typescript",
+      "level": "Senior",
+      "question": "¿Qué son los tipos condicionales (conditional types) en TypeScript?",
+      "answer": "Los tipos condicionales son tipos que se basan en condiciones lógicas para determinar su forma. Se utilizan para crear tipos que dependen de otros tipos, como T extends U ? X : Y."
+    },
+    {
+      "id": 100,
+      "category": "Typescript",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de los archivos de declaración (declaration files) en TypeScript y cómo se nombran?",
+      "answer": "Los archivos de declaración se utilizan para proporcionar información de tipo para bibliotecas escritas en JavaScript. Se nombran con la extensión .d.ts y deben coincidir con el nombre del archivo JavaScript correspondiente."
+    },
+    {
+      "id": 101,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te mantienes actualizado/a en las últimas tendencias y tecnologías de desarrollo web?",
+      "answer": "Me mantengo actualizado/a a través de blogs técnicos, conferencias en línea y cursos en plataformas como Coursera y Udemy. También me gusta unirme a comunidades en línea y participar en grupos de desarrollo web para estar al tanto de las últimas tendencias y discutir ideas con otros profesionales"
+    },
+    {
+      "id": 102,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Describe una situación en la que tuviste que colaborar estrechamente con un diseñador o un miembro no técnico del equipo. ¿Cómo manejaste la comunicación y los desafíos?",
+      "answer": "Trabajé en un proyecto donde colaboré estrechamente con un diseñador de UX/UI. Mantuvimos una comunicación abierta a lo largo del proyecto, programando reuniones regulares para discutir ideas y cambios. Para superar los desafíos de comunicación, utilizamos herramientas de diseño compartido como Figma, lo que facilitó la colaboración y la comprensión mutua de los requisitos del proyecto."
+    },
+    {
+      "id": 103,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te aseguras de que el código que escribes sea claro y comprensible para otros miembros del equipo?",
+      "answer": "Para asegurarme de que mi código sea claro y comprensible, sigo convenciones de nomenclatura consistentes, agrego comentarios explicativos cuando sea necesario y divido el código en funciones y módulos lógicos. También realizo revisiones de código regulares con mis colegas para obtener retroalimentación y garantizar que el código sea fácil de entender"
+    },
+    {
+      "id": 104,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Háblame de una vez en la que tuviste que lidiar con una retroalimentación negativa sobre tu trabajo. ¿Cómo manejaste la situación?",
+      "answer": "Recibí retroalimentación negativa en un proyecto pasado, y en lugar de tomarlo de manera personal, lo vi como una oportunidad de aprendizaje. Solicité más detalles sobre los problemas específicos, trabajé en mejorar esas áreas y mantuve una comunicación abierta con el cliente o el equipo para asegurarme de que estaban satisfechos con las mejoras"
+    },
+    {
+      "id": 105,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo priorizas y gestionas tus tareas cuando tienes múltiples proyectos o plazos apretados?",
+      "answer": "Utilizo metodologías ágiles como Scrum para priorizar tareas y establecer plazos realistas. También uso herramientas de gestión de proyectos como Trello o Jira para realizar un seguimiento de las tareas y garantizar que se cumplan los plazos. La comunicación constante con el equipo es clave para asegurarse de que todos estén alineados en cuanto a las prioridades."
+    },
+    {
+      "id": 106,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te mantienes motivado/a cuando enfrentas desafíos técnicos complejos o tareas repetitivas?",
+      "answer": "Mantener la motivación en situaciones difíciles es fundamental. Lo hago estableciendo metas claras y dividiendo tareas complejas en pasos más pequeños. También busco inspiración en proyectos pasados exitosos y me doy tiempo para descansar y recargar energías cuando sea necesario."
+    },
+    {
+      "id": 107,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Cuéntame sobre una vez en la que tuviste que comunicar un problema técnico a un cliente o a un miembro no técnico de la empresa. ¿Cómo lo hiciste?",
+      "answer": "En una ocasión, tuve que explicar un problema técnico a un cliente no técnico. Utilicé un lenguaje claro y evité tecnicismos. Además, utilicé ejemplos visuales o comparaciones simples para que el cliente comprendiera la situación. La empatía y la paciencia son clave en estas situaciones."
+    },
+    {
+      "id": 108,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te aseguras de que tus proyectos de desarrollo web sean accesibles para personas con discapacidades?",
+      "answer": "Para garantizar la accesibilidad en mis proyectos de desarrollo web, sigo prácticas como cumplir con las pautas WCAG, realizar pruebas de accesibilidad, colaborar en diseños inclusivos, permitir navegación con teclado, asegurar compatibilidad con lectores de pantalla y usar atributos ARIA cuando sea necesario. También fomento la concienciación sobre accesibilidad y, en casos críticos, considero auditorías de terceros."
+    },
+    {
+      "id": 109,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "Háblame de una situación en la que tuviste que resolver un conflicto con un colega. ¿Cómo lo manejaste?",
+      "answer": "Cuando surgió un conflicto con un colega, primero escuché sus preocupaciones con empatía. Luego, traté de encontrar un terreno común y propuse soluciones constructivas. La comunicación abierta y la disposición para comprometerse son esenciales para resolver conflictos de manera efectiva."
+    },
+    {
+      "id": 110,
+      "category": "Softskills",
+      "level": "Junior",
+      "question": "¿Cómo te mantienes organizado/a en tu trabajo diario como Front-End Developer?",
+      "answer": "Utilizo herramientas de gestión de tareas como Asana o Trello para llevar un registro de las actividades diarias. También establezco un horario de trabajo estructurado y priorizo las tareas según su importancia y plazos. La organización personal y la gestión del tiempo son fundamentales."
+    },
+    {
+      "id": 111,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo te aseguras de que el código que escribes sea eficiente en términos de rendimiento?",
+      "answer": "Para garantizar un código eficiente en rendimiento, realizo pruebas exhaustivas y utilizo herramientas de perfilamiento para identificar cuellos de botella. También sigo las mejores prácticas de optimización, como minimizar solicitudes de red y reducir la carga de recursos. La colaboración con el equipo de operaciones también es esencial"
+    },
+    {
+      "id": 112,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo manejas las críticas constructivas y las oportunidades de aprendizaje en tu carrera?",
+      "answer": "Aprecio las críticas constructivas como oportunidades de crecimiento. Las considero como consejos para mejorar y no como ataques personales. Actúo sobre ellas, busco oportunidades de capacitación y no tengo miedo de admitir cuando no sé algo. Creo que la humildad y el aprendizaje constante son fundamentales en mi carrera."
+    },
+    {
+      "id": 113,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "Háblame de un proyecto en el que lideraste un equipo de desarrollo. ¿Cómo gestionaste y motivaste a tu equipo?",
+      "answer": "Lideré un proyecto en el que formé un equipo de desarrolladores. Para motivarlos, les brindé claridad en los objetivos, escuché sus ideas y preocupaciones, y les proporcioné autonomía para tomar decisiones. También establecimos un sistema de comunicación efectiva y celebramos los logros del equipo."
+    },
+    {
+      "id": 114,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo te aseguras de que tus proyectos de desarrollo web cumplan con los estándares de seguridad?",
+      "answer": "La seguridad es una prioridad en mis proyectos. Utilizo técnicas de desarrollo seguro, como la validación de entrada, el uso de HTTPS y la protección contra ataques de inyección. Además, realizo pruebas de seguridad regulares y colaboro con expertos en seguridad cuando es necesario"
+    },
+    {
+      "id": 115,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo manejas el estrés en situaciones de alta presión, como un lanzamiento importante o una caída del sitio?",
+      "answer": "En situaciones de alta presión, mantengo la calma y me centro en la resolución de problemas. Utilizo la planificación anticipada y la comunicación efectiva para evitar crisis. Además, me aseguro de tener un plan de contingencia en caso de problemas inesperados. El autocontrol y la preparación son clave para manejar el estrés."
+    },
+    {
+      "id": 116,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "Háblame de un momento en el que lideraste un esfuerzo para mejorar la calidad del código en tu equipo. ¿Qué enfoque tomaste?",
+      "answer": "En situaciones de alta presión, mantengo la calma y me centro en la resolución de problemas. Utilizo la planificación anticipada y la comunicación efectiva para evitar crisis. Además, me aseguro de tener un plan de contingencia en caso de problemas inesperados. El autocontrol y la preparación son clave para manejar el estrés."
+    },
+    {
+      "id": 117,
+      "category": "Softskills",
+      "level": "Middle",
+      "question": "¿Cómo te aseguras de que estás siguiendo las mejores prácticas de desarrollo web y no adoptando malos hábitos?",
+      "answer": "Para asegurarme de seguir las mejores prácticas, dedico tiempo a la investigación y la educación continua. Leo libros y artículos técnicos, participo en conferencias y cursos en línea, y me mantengo al tanto de las actualizaciones en la industria. También realizo revisiones de código y busco retroalimentación de mis colegas para identificar áreas de mejora."
+    },
+    {
+      "id": 118,
+      "category": "Softskills",
+      "level": "Senior",
+      "question": "Cuéntame sobre una vez en la que tuviste que aprender una nueva tecnología o lenguaje de programación rápidamente. ¿Cómo lo hiciste?",
+      "answer": "En una ocasión, tuve que aprender un nuevo marco de trabajo en poco tiempo para un proyecto. Para hacerlo, comencé con la documentación oficial y tutoriales en línea. También colaboré con colegas más experimentados y practiqué con proyectos pequeños. La clave fue la dedicación y la disposición para aprender de forma constante."
+    },
+    {
+      "id": 119,
+      "category": "Softskills",
+      "level": "Senior",
+      "question": "¿Cómo te comunicas con los miembros no técnicos del equipo para explicar conceptos técnicos de manera comprensible?",
+      "answer": "Cuando necesito comunicar conceptos técnicos a miembros no técnicos, evito el jerga técnico y utilizo ejemplos y analogías simples. Además, me aseguro de escuchar sus preguntas y preocupaciones para aclarar cualquier confusión. La empatía y la paciencia son esenciales para garantizar una comunicación efectiva."
+    },
+    {
+      "id": 120,
+      "category": "Softskills",
+      "level": "Senior",
+      "question": "Háblame de un proyecto en el que enfrentaste un desafío técnico importante. ¿Cómo lo abordaste y qué aprendiste de esa experiencia?",
+      "answer": "En un proyecto anterior, enfrenté un desafío técnico complejo relacionado con la escalabilidad. Lo abordé realizando una investigación exhaustiva, consultando con expertos y probando diferentes enfoques. Aprendí la importancia de la perseverancia y la colaboración en equipo, y finalmente, logramos superar el desafío con éxito."
+    },
+    {
+      "id": 121,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué es Git y para qué se utiliza en el desarrollo web?",
+      "answer": "Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo."
+    },
+    {
+      "id": 122,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre Git y GitHub?",
+      "answer": "Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores."
+    },
+    {
+      "id": 123,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué comando se utiliza para iniciar un nuevo repositorio Git en un proyecto?",
+      "answer": "El comando utilizado para iniciar un nuevo repositorio Git en un proyecto es 'git init'."
+    },
+    {
+      "id": 124,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cómo se realiza un commit en Git y por qué es importante?",
+      "answer": "Para realizar un commit en Git, se utiliza el comando 'git commit'. Un commit es importante porque registra un conjunto de cambios en el repositorio, lo que permite realizar un seguimiento de la historia del proyecto y facilita la colaboración en equipo."
+    },
+    {
+      "id": 125,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué es un conflicto de merge en Git y cómo se resuelve?",
+      "answer": "Un conflicto de merge en Git ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Para resolverlo, se debe realizar una revisión manual del conflicto, editar el código para resolver las diferencias y luego realizar un nuevo commit para completar el merge."
+    },
+    {
+      "id": 126,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
+      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
+    },
+    {
+      "id": 127,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué es un commit en Git y por qué es importante?",
+      "answer": "Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos."
+    },
+    {
+      "id": 128,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito del archivo '.gitignore' en un repositorio Git?",
+      "answer": "El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio."
+    },
+    {
+      "id": 129,
+      "category": "Git",
+      "level": "Middle",
+      "question": "Explica la diferencia entre 'git pull' y 'git fetch'.",
+      "answer": "'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario."
+    },
+    {
+      "id": 130,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es una rama (branch) en Git y cuál es su propósito?",
+      "answer": "Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración."
+    },
+    {
+      "id": 131,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Cómo se fusiona una rama en Git y cuál es el comando utilizado?",
+      "answer": "Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios."
+    },
+    {
+      "id": 132,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es un conflicto de resolución de merge y cómo se soluciona?",
+      "answer": "Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión."
+    },
+    {
+      "id": 133,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
+      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
+    },
+    {
+      "id": 134,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es un repositorio remoto en Git?",
+      "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio."
+    },
+    {
+      "id": 135,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es un conflicto de fusión (merge conflict) en Git y cómo se resuelve?",
+      "answer": "Un conflicto de fusión ocurre cuando dos ramas tienen cambios en las mismas líneas de código. Para resolverlo, debes abrir el archivo en conflicto, editar manualmente las secciones en conflicto para que queden como desees y luego hacer un commit para finalizar la fusión."
+    },
+    {
+      "id": 136,
+      "category": "Git",
+      "level": "Middle",
+      "question": "Explica el flujo de trabajo típico de Git para colaborar en un proyecto con otros desarrolladores.",
+      "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos."
+    },
+    {
+      "id": 137,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es Git rebase y cuál es su propósito?",
+      "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra."
+    },
+    {
+      "id": 138,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es un submódulo Git?",
+      "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos."
+    },
+    {
+      "id": 139,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es 'git stash' y cuándo se utiliza?",
+      "answer": "'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales."
+    },
+    {
+      "id": 140,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es Git bisect y cómo se utiliza para depurar problemas en el código?",
+      "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático."
+    },
+    {
+      "id": 141,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Chrome DevTools - Crash Course",
+      "answer": "https://www.youtube.com/watch?v=gTVpBbFWry8"
+    },
+    {
+      "id": 142,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Fundamentos de testing",
+      "answer": "https://www.testim.io/blog/jasmine-js-a-from-scratch-tutorial-to-start-testing/"
+    },
+    {
+      "id": 143,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Parcel vs Webpack",
+      "answer": "https://www.youtube.com/watch?v=gTVpBbFWry8"
+    },
+    {
+      "id": 144,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Repositorio con lista de pruebas técnicas",
+      "answer": "https://github.com/midudev/pruebas-tecnicas"
+    },
+    {
+      "id": 145,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "¿Cómo crear tu perfil de Github?",
+      "answer": "https://midu.dev/como-crear-tu-perfil-de-github-con-readme/"
+    },
+    {
+      "id": 146,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Generar opiniones en retrospectiva en equipo",
+      "answer": "https://retroteam.app/"
+    },
+    {
+      "id": 147,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Conventional Commits - Qué es y por qué deberías empezar a utilizarlo",
+      "answer": "https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an"
+    },
+    {
+      "id": 148,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Cursos y certificaciones de distintos lenguajes",
+      "answer": "https://www.freecodecamp.org/"
+    },
+    {
+      "id": 149,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Lista de API's públicas ",
+      "answer": "https://publicapi.dev/"
+    },
+    {
+      "id": 150,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Web para practicar código",
+      "answer": "https://www.codewars.com/"
+    },
+    {
+      "id": 151,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Desafíos de programación y ejercicios",
+      "answer": "https://www.hackerrank.com/"
+    },
+    {
+      "id": 152,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Practica tu habilidad de resolución de problemas",
+      "answer": "https://leetcode.com/"
+    },
+    {
+      "id": 153,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Retos de programación para practicar",
+      "answer": "https://retosdeprogramacion.com/"
+    },
+    {
+      "id": 154,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Más de 200 retos de código",
+      "answer": "https://www.coderbyte.com/challenges?utm_campaign=NewHomepage"
+    },
+    {
+      "id": 155,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Retos algorítmicos para mejorar tu lógica",
+      "answer": "https://www.topcoder.com/"
+    },
+    {
+      "id": 156,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Retos y programación competitiva",
+      "answer": "https://www.codechef.com/"
+    },
+    {
+      "id": 157,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Practica código jugando",
+      "answer": "https://www.codingame.com/training"
+    },
+    {
+      "id": 158,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Juego de ranas para practicar CSS de manera visual",
+      "answer": "http://flexboxfroggy.com/#es"
+    },
+    {
+      "id": 159,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Practica CSS con este juego de 'tower defense'",
+      "answer": "http://www.flexboxdefense.com/"
+    },
+    {
+      "id": 160,
+      "category": "Weblinks",
+      "level": "Junior",
+      "question": "Aprende los selectores de CSS en este juego de comida",
+      "answer": "https://flukeout.github.io/"
+    },
+    {
+      "id": 161,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito del servicio en Angular?",
+      "answer": "En Angular, un servicio es una clase que se utiliza para organizar y compartir la lógica y los datos comunes entre diferentes componentes. Los servicios se utilizan para separar la lógica de negocio de los componentes y permiten la reutilización de código en toda la aplicación."
+    },
+    {
+      "id": 162,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es un servicio compartido en Angular y cómo se crea?",
+      "answer": "Un servicio compartido en Angular es una clase que se utiliza para compartir datos y lógica entre componentes de toda la aplicación. Se crea mediante el comando 'ng generate service' o manualmente como una clase TypeScript con el decorador '@Injectable'. Los servicios compartidos son inyectables y se registran en el módulo raíz para estar disponibles en toda la aplicación."
+    },
+    {
+      "id": 163,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es Angular?",
+      "answer": "Angular es un framework de desarrollo de aplicaciones web desarrollado por Google. Se utiliza para crear aplicaciones web dinámicas y de una sola página (SPA) y facilita la creación de interfaces de usuario interactivas y reactivas."
+    },
+    {
+      "id": 164,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cuáles son las ventajas de usar Angular?",
+      "answer": "Algunas de las ventajas de usar Angular incluyen una estructura de proyecto organizada, vinculación de datos bidireccional, inyección de dependencias, y una amplia comunidad de desarrollo que proporciona herramientas y bibliotecas adicionales."
+    },
+    {
+      "id": 165,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es TypeScript y por qué se utiliza en Angular?",
+      "answer": "TypeScript es un lenguaje de programación desarrollado por Microsoft que se utiliza en Angular porque añade tipos estáticos y otras características a JavaScript, lo que facilita la detección de errores y el desarrollo de aplicaciones más robustas."
+    },
+    {
+      "id": 166,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es una directiva en Angular?",
+      "answer": "En Angular, una directiva es una instrucción en el DOM (Document Object Model) que le dice al framework Angular cómo manipular el comportamiento de un elemento HTML o cambiar su apariencia."
+    },
+    {
+      "id": 167,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cómo se realiza la inyección de dependencias en Angular?",
+      "answer": "La inyección de dependencias en Angular se realiza mediante la creación de una instancia de una clase y su inyección en el constructor de otro componente, servicio o clase que la necesite. Angular utiliza el sistema de inyección de dependencias para administrar las dependencias y proporcionarlas de manera eficiente.Podemos hacerlo mediante el constructor o usando inject()"
+    },
+    {
+      "id": 168,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es un módulo en Angular?",
+      "answer": "Un módulo en Angular es un mecanismo para organizar la aplicación en bloques funcionales. Contiene componentes, servicios y otras características relacionadas, y se utiliza para definir cómo se ensamblan estas partes en la aplicación."
+    },
+    {
+      "id": 169,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre ngOnChanges y ngOnInit?",
+      "answer": "ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian. ngOnInit se dispara una vez después de que se haya inicializado el componente."
+    },
+    {
+      "id": 170,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué son las rutas en Angular?",
+      "answer": "En Angular, las rutas son un mecanismo para definir la navegación y las vistas de una aplicación. Permiten que diferentes URL se correspondan con diferentes componentes y vistas."
+    },
+    {
+      "id": 171,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es un interceptor HTTP en Angular?",
+      "answer": "Un interceptor HTTP en Angular es un servicio que permite interceptar y modificar las solicitudes HTTP y las respuestas antes de que lleguen al servidor o después de que vuelvan del servidor. Se utiliza para realizar tareas comunes, como agregar encabezados o manejar errores de manera centralizada."
+    },
+    {
+      "id": 172,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cómo se realiza la validación de formularios en Angular?",
+      "answer": "En Angular, la validación de formularios se realiza mediante la creación de directivas personalizadas y el uso de clases y métodos proporcionados por el módulo '@angular/forms'. Esto permite validar campos de entrada y formularios de manera efectiva."
+    },
+    {
+      "id": 173,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la detección de cambios en Angular?",
+      "answer": "La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Angular utiliza una estrategia de detección de cambios para mejorar el rendimiento y la eficiencia de las actualizaciones de la interfaz de usuario."
+    },
+    {
+      "id": 174,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son las pruebas unitarias en Angular?",
+      "answer": "Las pruebas unitarias en Angular son pruebas que se realizan en unidades individuales de código, como componentes o servicios, para garantizar que funcionen correctamente de manera aislada. Angular proporciona herramientas y bibliotecas para escribir y ejecutar pruebas unitarias eficaces."
+    },
+    {
+      "id": 175,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es la optimización de rendimiento en aplicaciones Angular?",
+      "answer": "La optimización de rendimiento en aplicaciones Angular implica una serie de prácticas y técnicas destinadas a mejorar la velocidad de carga, la velocidad de ejecución y la eficiencia general de una aplicación Angular. Esto incluye técnicas de carga diferida, compresión de recursos y optimización de renderizado."
+    },
+    {
+      "id": 176,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la internacionalización (i18n) en Angular?",
+      "answer": "La internacionalización (i18n) en Angular es el proceso de adaptar una aplicación para que sea compatible con múltiples idiomas y regiones. Angular proporciona herramientas y directivas para facilitar la traducción de textos y la adaptación de formatos de fecha, hora y números en la aplicación."
+    },
+    {
+      "id": 177,
+      "category": "Angular Standalone",
+      "level": "Middle",
+      "question": "¿Qué es el modo Standalone en Angular y cuál es su propósito?",
+      "answer": "El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional. Su propósito es proporcionar a los desarrolladores una forma de crear aplicaciones Angular que se puedan ejecutar localmente o empaquetar como aplicaciones de escritorio sin depender de un servidor backend."
+    },
+    {
+      "id": 178,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cuál es el flujo típico de un Observable en Angular y cómo funciona?",
+      "answer": "Un Observable en Angular sigue un flujo típico de emisión, suscripción y manejo de eventos asíncronos. Comienza con la creación de un Observable que puede emitir datos o eventos en el futuro. Luego, se suscribe un observador para escuchar esas emisiones. Cuando ocurre un evento, el observador recibe y maneja los datos. El flujo puede incluir operaciones de transformación, filtrado o combinación de datos antes de que lleguen al observador."
+    },
+    {
+      "id": 179,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la detección de cambios OnPush en Angular y cuándo se debe utilizar?",
+      "answer": "La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las referencias de entrada y eventos de salida. Se debe utilizar cuando se desea mejorar el rendimiento de la aplicación al reducir la frecuencia de las verificaciones de cambio. Al configurar un componente con OnPush, Angular solo volverá a renderizar el componente cuando las entradas cambien o se dispare un evento de salida, en lugar de verificar continuamente las propiedades internas."
+    },
+    {
+      "id": 180,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué son los efectos (Effects) en la gestión de estado de Angular (por ejemplo, con NgRx) y cuál es su propósito?",
+      "answer": "Los efectos (Effects) en la gestión de estado de Angular, como NgRx, son funciones que manejan efectos secundarios en una aplicación, como llamadas a APIs o tareas asíncronas. Su propósito es aislar la lógica de efectos secundarios y garantizar que la gestión de estado sea predecible y consistente. Los efectos reciben acciones y pueden despachar nuevas acciones en función de los resultados de las tareas asíncronas."
+    },
+    {
+      "id": 181,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la interpolación de atributos (Attribute Interpolation) en Angular y cuándo se utiliza?",
+      "answer": "La interpolación de atributos en Angular es una técnica que permite asignar valores dinámicos a atributos de elementos HTML. Se utiliza cuando se necesita cambiar dinámicamente el valor de un atributo, como un atributo de 'src' de una imagen o 'href' de un enlace, utilizando expresiones del componente."
+    },
+    {
+      "id": 182,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre 'ViewChild' y 'ContentChild' en Angular y cuándo se utilizan?",
+      "answer": "ViewChild y ContentChild son decoradores utilizados para acceder a elementos o componentes hijos en Angular. La diferencia clave radica en dónde se busca el elemento o componente: ViewChild se utiliza para elementos o componentes que están dentro del componente actual, mientras que ContentChild se utiliza para elementos o componentes proyectados en el contenido de un componente."
+    },
+    {
+      "id": 183,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la detección de cambios en Angular y cómo se optimiza para aplicaciones de gran escala?",
+      "answer": "La detección de cambios en Angular permite actualizar la vista cuando los datos cambian en el componente. Para aplicaciones de gran escala, la optimización se logra utilizando estrategias como ChangeDetectionStrategy.OnPush, empleando bibliotecas de administración de estado (como NgRx), y minimizando las operaciones costosas en el ciclo de detección de cambios."
+    },
+    {
+      "id": 184,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se puede mejorar el rendimiento de una aplicación Angular y cuáles son las mejores prácticas en este sentido?",
+      "answer": "Para mejorar el rendimiento en Angular, se pueden aplicar técnicas como la carga diferida de módulos, la compresión de recursos, la reducción del tamaño del paquete, el uso de ChangeDetectionStrategy.OnPush, la optimización de imágenes y la implementación de estrategias de almacenamiento en caché."
+    },
+    {
+      "id": 185,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique la arquitectura de una aplicación Angular escalable y cómo se organizan los módulos, componentes y servicios en ella.",
+      "answer": "Una aplicación Angular escalable se organiza en módulos funcionales que contienen componentes relacionados y servicios compartidos. Se siguen patrones como 'Smart vs. Dumb Components', se utiliza inyección de dependencias para la comunicación entre componentes y se centraliza la gestión de estado mediante bibliotecas como NgRx o Redux."
+    },
+    {
+      "id": 186,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se realiza la optimización de rendimiento en una aplicación Angular y cuáles son las estrategias clave para lograrlo?",
+      "answer": "La optimización de rendimiento en Angular involucra prácticas como la carga diferida de módulos, la reducción del tamaño del paquete, la eliminación de código no utilizado, la compresión de recursos y la implementación de técnicas de renderizado eficiente, como el pre-renderizado y el lazy loading."
+    },
+    {
+      "id": 187,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique el concepto de 'Change Detection' en Angular y cómo se puede personalizar o desactivar para aplicaciones específicas.",
+      "answer": "El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se puede personalizar mediante la estrategia ChangeDetectionStrategy y desactivar selectivamente utilizando el método markForCheck en combinación con ChangeDetectorRef para mejorar el rendimiento en aplicaciones complejas."
+    },
+    {
+      "id": 188,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es el papel de los 'Pipes' en Angular y cuáles son ejemplos comunes de su uso?",
+      "answer": "Los 'Pipes' en Angular son funciones que transforman datos en la plantilla HTML. Se utilizan para formatear fechas, números, cadenas, y aplicar filtros y transformaciones personalizadas a los datos que se muestran en la vista. Ejemplos comunes incluyen 'DatePipe', 'CurrencyPipe' y 'CustomPipe' para transformaciones específicas."
+    },
+    {
+      "id": 189,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se abordan los problemas de seguridad en una aplicación Angular y cuáles son las mejores prácticas para protegerla contra amenazas comunes?",
+      "answer": "Para abordar problemas de seguridad en Angular, se deben implementar medidas como la prevención de ataques XSS y CSRF, la autenticación y autorización robustas, la validación de entrada y el uso de bibliotecas de seguridad de confianza. Se recomienda seguir las mejores prácticas de seguridad web y mantener las dependencias actualizadas."
+    },
+    {
+      "id": 190,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es el servidor de renderizado (Server-Side Rendering - SSR) en Angular y cuáles son sus beneficios y desafíos?",
+      "answer": "El servidor de renderizado en Angular permite renderizar la aplicación en el servidor antes de enviarla al navegador del cliente. Sus beneficios incluyen una carga inicial más rápida y una mejor indexación por parte de motores de búsqueda. Sin embargo, presenta desafíos como la configuración y el manejo de estado."
+    },
+    {
+      "id": 191,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique cómo se implementa la autenticación y autorización en una aplicación Angular y mencione las técnicas y bibliotecas recomendadas.",
+      "answer": "La autenticación y autorización en Angular se implementa mediante técnicas como el uso de tokens JWT, el almacenamiento seguro de credenciales, la protección de rutas y el uso de bibliotecas como Angular AuthGuard y AngularFire para Firebase. Además, se deben seguir las prácticas recomendadas para proteger recursos y datos sensibles."
+    },
+    {
+      "id": 192,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique la gestión de estado en aplicaciones Angular y mencione las bibliotecas y patrones comunes utilizados para implementarla.",
+      "answer": "La gestión de estado en aplicaciones Angular se refiere a cómo se almacenan y gestionan los datos de la aplicación. Se implementa utilizando bibliotecas como NgRx, Redux y MobX, así como patrones como el patrón Redux. La gestión de estado es crucial para aplicaciones escalables y complejas."
+    },
+    {
+      "id": 193,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuáles son las consideraciones clave al diseñar una arquitectura de microfrontend en Angular y cómo se logra la integración entre múltiples microfrontends?",
+      "answer": "Al diseñar una arquitectura de microfrontend en Angular, es importante considerar la compartimentalización, la comunicación entre microfrontends y la carga dinámica de módulos. La integración se logra a través de técnicas como iframes, Web Components y la coordinación de eventos y datos entre microfrontends."
+    },
+    {
+      "id": 194,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique cómo se pueden realizar pruebas unitarias y de integración efectivas en una aplicación Angular y mencione las herramientas y enfoques comunes utilizados.",
+      "answer": "Las pruebas unitarias y de integración en Angular se realizan utilizando herramientas como Jasmine, Karma y Protractor. Se deben escribir pruebas para componentes, servicios y rutas, y se pueden simular servicios y eventos para probar el comportamiento. Las pruebas efectivas son esenciales para garantizar la calidad y estabilidad de la aplicación."
+    },
+    {
+      "id": 195,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se puede mejorar la experiencia del usuario (UX) en una aplicación Angular y cuáles son las estrategias comunes para lograrlo?",
+      "answer": "Mejorar la experiencia del usuario en una aplicación Angular implica la optimización del rendimiento, la usabilidad, la accesibilidad y el diseño. Estrategias comunes incluyen la carga progresiva, la navegación rápida, la respuesta táctil, el diseño receptivo, la accesibilidad y la retroalimentación visual para acciones del usuario."
+    },
+    {
+      "id": 196,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "Explique el ciclo de vida de un componente en Angular y mencione los principales ganchos de ciclo de vida.",
+      "answer": "El ciclo de vida de un componente en Angular se compone de varios ganchos que se ejecutan en diferentes etapas, como 'ngOnInit', 'ngOnChanges', 'ngAfterViewInit' y 'ngOnDestroy'. Estos ganchos permiten realizar acciones específicas en momentos clave durante la vida de un componente."
+    },
+    {
+      "id": 197,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son las animaciones en Angular y cómo se pueden aplicar a elementos HTML?",
+      "answer": "Las animaciones en Angular son una forma de agregar transiciones y animaciones a elementos HTML en una aplicación. Se pueden aplicar mediante el uso de directivas como 'ngIf', 'ngFor' y 'ngStyle', así como mediante la creación de animaciones personalizadas con Angular's Animation DSL (lenguaje específico de dominio para animaciones)."
+    },
+    {
+      "id": 198,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son las pruebas end-to-end (E2E) en Angular y cómo se pueden realizar utilizando herramientas como Protractor?",
+      "answer": "Las pruebas end-to-end (E2E) en Angular son pruebas que verifican el flujo de una aplicación desde la perspectiva del usuario, simulando acciones y eventos en la interfaz. Se pueden realizar utilizando herramientas como Protractor, que automatiza la interacción con la aplicación y realiza comprobaciones en la interfaz de usuario."
+    },
+    {
+      "id": 199,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cuál es el papel de las promesas (Promises) en Angular y cómo se utilizan para manejar operaciones asíncronas?",
+      "answer": "Las promesas en Angular se utilizan para manejar operaciones asíncronas y devolver resultados en el futuro. Se crean con el constructor 'Promise' y se resuelven o rechazan cuando la operación se completa o falla. Las promesas son útiles para simplificar el manejo de solicitudes HTTP y otras tareas asíncronas en la aplicación."
+    },
+    {
+      "id": 200,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "Explique el concepto de 'Interceptors' en Angular y cómo se utilizan para manejar solicitudes HTTP de manera global.",
+      "answer": "Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP."
+    },
+    {
+      "id": 201,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la función de la etiqueta <br> en Html?",
+      "answer": "La etiqueta <br> en Html se utiliza para insertar un salto de línea o un salto de línea forzado en el texto. No requiere una etiqueta de cierre y se usa para separar elementos en diferentes líneas."
+    },
+    {
+      "id": 202,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un comentario en Html y cómo se inserta?",
+      "answer": "Un comentario en Html es un texto que no se muestra en la página web y se utiliza para agregar notas o aclaraciones en el código. Se inserta entre <!-- y -->. Por ejemplo, <!-- Este es un comentario -->."
+    },
+    {
+      "id": 203,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué son las etiquetas de formulario en Html y cuál es su uso principal?",
+      "answer": "Las etiquetas de formulario en Html, como <form>, se utilizan para crear formularios que permiten a los usuarios ingresar datos. Son fundamentales para la interacción y recopilación de información en una página web."
+    },
+    {
+      "id": 204,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es un enlace absoluto en Html y cómo se diferencia de un enlace relativo?",
+      "answer": "Un enlace absoluto en Html proporciona una URL completa que incluye el protocolo, el dominio y la ruta completa al recurso. Se diferencia de un enlace relativo que especifica la ubicación del recurso en relación con la ubicación actual del documento."
+    },
+    {
+      "id": 205,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es la etiqueta de encabezado más importante en Html y por qué?",
+      "answer": "La etiqueta de encabezado más importante es <h1>. Es crucial porque define el encabezado principal de la página y tiene un gran impacto en la optimización para motores de búsqueda (SEO) y la estructura del contenido."
+    },
+    {
+      "id": 206,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la validación de formularios en Html y por qué es importante?",
+      "answer": "La validación de formularios en Html se refiere a asegurarse de que los datos ingresados en un formulario cumplan con ciertos criterios. Es importante para garantizar la calidad de los datos y mejorar la experiencia del usuario al proporcionar retroalimentación sobre la entrada incorrecta."
+    },
+    {
+      "id": 207,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre Html y XHtml?",
+      "answer": "XHtml es una versión más estricta y XML-compatible de Html. Requiere que el código esté bien formado y se adhiera a reglas más estrictas de sintaxis. Html es más flexible en términos de estructura y validación."
+    },
+    {
+      "id": 208,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre HTML y XHTML?",
+      "answer": "HTML (HyperText Markup Language) es un lenguaje de marcado que se utiliza para crear páginas web. XHTML (eXtensible HyperText Markup Language) es una versión más estricta y basada en XML de HTML. XHTML requiere una sintaxis más rigurosa y está diseñado para ser compatible con XML."
+    },
+    {
+      "id": 209,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un elemento de bloque en HTML?",
+      "answer": "Un elemento de bloque en HTML es un elemento que crea un bloque rectangular en la página y generalmente comienza en una nueva línea. Ejemplos de elementos de bloque incluyen <div>, <p>, <h1> hasta <h6>, <ul>, <ol>, entre otros."
+    },
+    {
+      "id": 210,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un atributo 'alt' en una etiqueta de imagen (img) y por qué es importante?",
+      "answer": "El atributo 'alt' en una etiqueta de imagen (img) se utiliza para proporcionar un texto alternativo que se muestra si la imagen no se carga correctamente o si el usuario tiene discapacidades visuales. Es importante para la accesibilidad web y la descripción de la imagen."
+    },
+    {
+      "id": 211,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la etiqueta HTML para crear un enlace de correo electrónico?",
+      "answer": "La etiqueta HTML para crear un enlace de correo electrónico es <a>. Debes especificar el atributo 'href' con 'mailto:' seguido de la dirección de correo electrónico. Por ejemplo, <a href='mailto:correo@example.com'>Enviar correo</a>."
+    },
+    {
+      "id": 212,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es el elemento HTML <em> y cuál es su propósito?",
+      "answer": "El elemento HTML <em> se utiliza para enfatizar el texto dentro de él, generalmente haciendo que aparezca en cursiva. Su propósito es dar énfasis semántico al contenido, no necesariamente aplicar estilo visual."
+    },
+    {
+      "id": 213,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es una lista de descripción en HTML y cómo se crea?",
+      "answer": "Una lista de descripción en HTML se crea utilizando las etiquetas <dl> (lista de descripción), <dt> (término) y <dd> (definición). <dt> se usa para los términos y <dd> para las definiciones. Por ejemplo: <dl><dt>HTML</dt><dd>Lenguaje de marcado de hipertexto</dd></dl>."
+    },
+    {
+      "id": 214,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <meta> y cuál es su propósito?",
+      "answer": "El elemento HTML <meta> se utiliza para proporcionar metadatos sobre la página web. Los metadatos incluyen información como el conjunto de caracteres, la descripción de la página y palabras clave. Ayuda a los motores de búsqueda y navegadores a comprender y mostrar la página correctamente."
+    },
+    {
+      "id": 215,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cómo afecta el modelo de caja a los elementos HTML?",
+      "answer": "El modelo de caja en CSS describe cómo se representan y dimensionan los elementos HTML. Incluye propiedades como margen, borde, relleno y contenido. Estas propiedades afectan el espacio que ocupa un elemento y su aspecto visual."
+    },
+    {
+      "id": 216,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cómo se usa la propiedad 'display' en CSS para controlar el diseño de los elementos HTML?",
+      "answer": "La propiedad 'display' en CSS se utiliza para controlar cómo se muestra un elemento HTML en el diseño. Puede tomar valores como 'block', 'inline', 'inline-block', entre otros, para definir su comportamiento en el flujo del documento."
+    },
+    {
+      "id": 217,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <link> en HTML?",
+      "answer": "La etiqueta <link> en HTML se utiliza para vincular un documento HTML con recursos externos, como hojas de estilo CSS. Permite la separación de la estructura del documento HTML de su estilo, lo que facilita la gestión y el mantenimiento."
+    },
+    {
+      "id": 218,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'srcset' en la etiqueta <img> de HTML y cuál es su función?",
+      "answer": "El atributo 'srcset' en la etiqueta <img> de HTML se utiliza para especificar múltiples fuentes de imágenes y sus tamaños correspondientes. Ayuda a los navegadores a seleccionar la imagen más adecuada según la resolución de la pantalla del dispositivo, mejorando así la eficiencia y la calidad de la carga de imágenes."
+    },
+    {
+      "id": 219,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la etiqueta <canvas> en HTML y para qué se utiliza?",
+      "answer": "La etiqueta <canvas> en HTML se utiliza para dibujar gráficos, imágenes y animaciones en la página web utilizando JavaScript. Proporciona un lienzo en blanco donde se pueden renderizar elementos gráficos dinámicos."
+    },
+    {
+      "id": 220,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué significa 'DRY' en el contexto de HTML y CSS?",
+      "answer": "'DRY' significa 'Don't Repeat Yourself' (No te repitas) y es un principio de desarrollo web que promueve la reutilización de código y la eliminación de duplicación. Ayuda a mantener el código más limpio y fácil de mantener."
+    },
+    {
+      "id": 221,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <footer> en HTML?",
+      "answer": "La etiqueta <footer> en HTML se utiliza para definir el pie de página de un documento o una sección. Contiene información como derechos de autor, enlaces a páginas relacionadas o información de contacto."
+    },
+    {
+      "id": 222,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'target' en la etiqueta <a> de HTML y cómo se utiliza?",
+      "answer": "El atributo 'target' en la etiqueta <a> se utiliza para especificar dónde se abrirá el enlace cuando un usuario haga clic en él. Puede tomar valores como '_blank' (abrir en una nueva ventana) o '_self' (abrir en la misma ventana)."
+    },
+    {
+      "id": 223,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <nav> en HTML?",
+      "answer": "La etiqueta <nav> en HTML se utiliza para definir una sección de navegación en un documento web. Contiene enlaces o elementos de navegación que dirigen a otras partes del sitio web."
+    },
+    {
+      "id": 224,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'role' en HTML y cuál es su importancia en la accesibilidad web?",
+      "answer": "El atributo 'role' en HTML se utiliza para especificar la función de un elemento en una página web. Juega un papel crucial en la accesibilidad web al ayudar a los lectores de pantalla y otras tecnologías a comprender la estructura y el propósito de los elementos."
+    },
+    {
+      "id": 225,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <head> y cuál es su propósito?",
+      "answer": "El elemento HTML <head> se utiliza para contener metadatos sobre el documento, como el título de la página, enlaces a hojas de estilo y otros elementos que no se muestran directamente en la página. Es esencial para la configuración y el rendimiento del sitio web."
+    },
+    {
+      "id": 226,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'alt' en la etiqueta <area> de HTML y cuál es su propósito?",
+      "answer": "El atributo 'alt' en la etiqueta <area> de HTML se utiliza para proporcionar un texto alternativo que describe la función de una área activa en un mapa de imágenes. Ayuda a la accesibilidad web al describir el área en caso de que la imagen no se cargue o el usuario tenga discapacidades visuales."
+    },
+    {
+      "id": 227,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <aside> y cuál es su propósito?",
+      "answer": "El elemento HTML <aside> se utiliza para marcar contenido que es tangencial o relacionado pero se puede separar del contenido principal de la página. Puede contener elementos como anuncios, notas, enlaces relacionados y más."
+    },
+    {
+      "id": 228,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <time> en HTML?",
+      "answer": "La etiqueta <time> en HTML se utiliza para marcar contenido relacionado con fechas y horas. Puede incluir atributos como 'datetime' para proporcionar una fecha y hora en un formato estándar y 'pubdate' para indicar la fecha de publicación."
+    },
+    {
+      "id": 229,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <figure> en HTML?",
+      "answer": "La etiqueta <figure> en HTML se utiliza para encapsular contenido, como imágenes y gráficos, junto con su descripción utilizando la etiqueta <figcaption>. Es especialmente útil para representar gráficos o imágenes con sus leyendas asociadas."
+    },
+    {
+      "id": 230,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la etiqueta <video> en HTML y cuál es su propósito?",
+      "answer": "La etiqueta <video> en HTML se utiliza para incrustar videos en una página web. Permite a los desarrolladores web reproducir videos directamente en el navegador sin necesidad de complementos externos, mejorando la experiencia del usuario."
+    },
+    {
+      "id": 231,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'src' en la etiqueta <script> de HTML y cuál es su función?",
+      "answer": "El atributo 'src' en la etiqueta <script> de HTML se utiliza para especificar la fuente (URL) de un archivo JavaScript externo que se debe cargar y ejecutar en la página. Permite modularizar el código y mejorar la reutilización."
+    },
+    {
+      "id": 232,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <mark> en HTML?",
+      "answer": "La etiqueta <mark> en HTML se utiliza para resaltar o marcar porciones de texto dentro de un documento. Es útil para señalar términos clave o partes destacadas en el contenido."
+    },
+    {
+      "id": 233,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es el atributo 'contenteditable' en HTML y cuál es su uso?",
+      "answer": "El atributo 'contenteditable' en HTML se utiliza para hacer que un elemento HTML, como un div o un párrafo, sea editable por el usuario. Permite la edición de contenido directamente en la página web, lo que es útil en aplicaciones web colaborativas y editores en línea."
+    },
+    {
+      "id": 234,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre una cookie y un almacenamiento web local (localStorage) en HTML?",
+      "answer": "Una cookie es un pequeño archivo de texto que se almacena en el navegador del usuario y se envía con cada solicitud al servidor. El almacenamiento web local (localStorage) es un espacio de almacenamiento en el navegador para datos clave-valor más grandes y se almacena localmente en el dispositivo del usuario. Las cookies tienen un límite de tamaño y se envían al servidor con cada solicitud, mientras que el localStorage es puramente local y tiene más capacidad de almacenamiento."
+    },
+    {
+      "id": 235,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es la especificación WAI-ARIA y cuál es su importancia en la accesibilidad web?",
+      "answer": "WAI-ARIA (Accessible Rich Internet Applications) es una especificación que proporciona atributos y roles adicionales para hacer que aplicaciones web y contenido interactivo sean más accesibles para personas con discapacidades. Ayuda a las tecnologías de asistencia a comprender y navegar por el contenido web de manera más efectiva."
+    },
+    {
+      "id": 236,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <details> en HTML?",
+      "answer": "La etiqueta <details> en HTML se utiliza para crear un elemento desplegable que muestra u oculta contenido adicional cuando el usuario hace clic en él. Es útil para presentar información adicional sin abrumar la página con demasiado contenido visible."
+    },
+    {
+      "id": 237,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué son los elementos HTML semánticos y por qué son importantes?",
+      "answer": "Los elementos HTML semánticos son etiquetas que describen claramente el significado y la estructura del contenido, como <header>, <nav>, <article> y <footer>. Son importantes para la accesibilidad, el SEO y la comprensión del contenido por parte de los motores de búsqueda, ya que proporcionan una estructura clara y significativa."
+    },
+    {
+      "id": 238,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es la API Fetch en HTML y cuál es su función?",
+      "answer": "La API Fetch en HTML es una interfaz para realizar solicitudes HTTP y recuperar recursos de la red, como datos JSON o archivos. Reemplaza en gran medida el uso de XMLHttpRequest y facilita la interacción con servidores web desde JavaScript en aplicaciones web modernas."
+    },
+    {
+      "id": 239,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es el atributo 'defer' en la etiqueta <script> de HTML y cómo afecta la carga de scripts?",
+      "answer": "El atributo 'defer' en la etiqueta <script> de HTML se utiliza para indicar que el script se ejecutará después de que la página se haya analizado. Esto evita que los scripts bloqueen la carga y el procesamiento de la página, lo que puede mejorar el rendimiento."
+    },
+    {
+      "id": 240,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <picture> en HTML?",
+      "answer": "La etiqueta <picture> en HTML se utiliza para proporcionar múltiples fuentes de imágenes y permitir la selección de la imagen más adecuada según la resolución y el tamaño de la pantalla del dispositivo. Ayuda a mejorar la calidad visual y la velocidad de carga de las imágenes."
+    },
+    {
+      "id": 241,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre un repositorio Git local y un repositorio Git remoto?",
+      "answer": "Un repositorio Git local se encuentra en la máquina del desarrollador y contiene una copia completa del proyecto. Un repositorio Git remoto está alojado en un servidor y permite la colaboración entre varios desarrolladores al compartir y sincronizar cambios."
+    },
+    {
+      "id": 242,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cómo se crea una rama (branch) en Git y cuál es su propósito?",
+      "answer": "Para crear una rama en Git, se utiliza el comando 'git branch <nombre_de_la_rama>'. El propósito de una rama es permitir el desarrollo paralelo de características o correcciones sin afectar la rama principal, lo que facilita la colaboración y la organización del trabajo."
+    },
+    {
+      "id": 243,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito de la herramienta GitKraken?",
+      "answer": "GitKraken es una herramienta de interfaz gráfica para Git que facilita la gestión de repositorios Git. Se utiliza para realizar operaciones Git de manera visual y simplificada."
+    },
+    {
+      "id": 244,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cómo se elimina una rama (branch) en Git?",
+      "answer": "Para eliminar una rama en Git, se utiliza el comando 'git branch -d <nombre_de_la_rama>' si la rama ha sido fusionada o 'git branch -D <nombre_de_la_rama>' para forzar la eliminación."
+    },
+    {
+      "id": 245,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es un pull request en Git y cuál es su función?",
+      "answer": "Un pull request en Git es una solicitud que un desarrollador envía para fusionar sus cambios en una rama con otra, generalmente de una rama de características a una rama principal. Su función es permitir la revisión y aprobación de los cambios antes de la fusión."
+    },
+    {
+      "id": 246,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es un 'squash commit' en Git y cómo se realiza?",
+      "answer": "Un 'squash commit' en Git es la combinación de varios commits en uno solo para mantener un historial de cambios más ordenado. Se realiza durante un rebase interactivo al especificar 'squash' o 'fixup' en los commits que se desean combinar."
+    },
+    {
+      "id": 247,
+      "category": "Git",
+      "level": "Senior",
+      "question": "Explica el flujo de trabajo de 'git cherry-pick' y cuándo se utiliza.",
+      "answer": "'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama."
+    },
+    {
+      "id": 248,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es la 'staging area' en Git y cuál es su función?",
+      "answer": "La 'staging area' en Git es una zona intermedia donde se preparan los cambios antes de realizar un commit. Permite revisar y seleccionar los cambios que se incluirán en el próximo commit, lo que brinda mayor control sobre el historial de versiones."
+    },
+    {
+      "id": 249,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es el comando para ver el historial de commits en Git?",
+      "answer": "El comando para ver el historial de commits en Git es 'git log'."
+    },
+    {
+      "id": 250,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre 'git push' y 'git pull'?",
+      "answer": "'Git push' se utiliza para enviar cambios locales a un repositorio remoto. 'Git pull' se utiliza para obtener cambios del repositorio remoto y fusionarlos en la rama local."
+    },
+    {
+      "id": 251,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué es un 'fork' en Git?",
+      "answer": "Un 'fork' en Git es una copia de un repositorio ajeno en tu propia cuenta de GitHub o GitLab. Se utiliza para contribuir a proyectos de código abierto o trabajar en una copia personal del proyecto original."
+    },
+    {
+      "id": 252,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito de la rama 'master' en Git?",
+      "answer": "La rama 'master' en Git suele ser la rama principal que contiene la versión estable del proyecto. Es común utilizarla como base para otras ramas de desarrollo."
+    },
+    {
+      "id": 253,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de las etiquetas (tags) en Git?",
+      "answer": "Las etiquetas (tags) en Git se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de lanzamiento. Proporcionan un punto de referencia fijo para facilitar la referencia y la recuperación de versiones específicas."
+    },
+    {
+      "id": 254,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es una 'pre-commit hook' en Git y cuál es su función?",
+      "answer": "Una 'pre-commit hook' en Git es un script personalizado que se ejecuta antes de realizar un commit. Su función es realizar comprobaciones o tareas automatizadas, como pruebas, para garantizar que los commits cumplan con los estándares establecidos."
+    },
+    {
+      "id": 255,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre 'git rebase' y 'git merge'?",
+      "answer": "'Git rebase' cambia la base de una rama al aplicar los cambios de otra rama, lo que puede mantener un historial más limpio y lineal. 'Git merge' fusiona los cambios de una rama en otra sin cambiar la base, lo que puede crear un historial más ramificado."
+    },
+    {
+      "id": 256,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es 'git reflog' y cuál es su propósito?",
+      "answer": "'Git reflog' es un registro que almacena un historial de referencias y acciones realizadas en un repositorio Git. Su propósito es proporcionar una forma de recuperar cambios o referencias perdidas, incluso después de operaciones delicadas."
+    },
+    {
+      "id": 257,
+      "category": "Git",
+      "level": "Senior",
+      "question": "Explica la diferencia entre 'git cherry-pick' y 'git rebase'.",
+      "answer": "'Git cherry-pick' se utiliza para aplicar un commit específico de una rama a otra, mientras que 'git rebase' permite cambiar la base de una rama aplicando cambios de otra rama. 'Cherry-pick' es selectivo, mientras que 'rebase' cambia la historia completa de una rama."
+    },
+    {
+      "id": 258,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es 'git worktree' y cómo se utiliza?",
+      "answer": "'Git worktree' permite trabajar en múltiples ramas simultáneamente en el mismo repositorio. Se utiliza para crear directorios de trabajo adicionales para diferentes ramas o commits, lo que facilita la colaboración en proyectos paralelos."
+    },
+    {
+      "id": 259,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué son los 'hooks' en Git y cuáles son algunos ejemplos de ellos?",
+      "answer": "Los 'hooks' en Git son scripts personalizables que se ejecutan automáticamente en ciertos eventos, como antes o después de realizar un commit o recibir un 'push'. Algunos ejemplos incluyen 'pre-commit', 'post-commit', 'pre-receive' y 'post-receive' hooks."
+    },
+    {
+      "id": 260,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre 'git revert' y 'git reset'?",
+      "answer": "'Git revert' crea un nuevo commit que deshace los cambios de un commit anterior, mientras que 'git reset' modifica la historia del repositorio eliminando commits. 'Revert' es más seguro para colaboraciones, mientras que 'reset' es más drástico y se usa localmente."
+    },
+    {
+      "id": 261,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cómo se crea una etiqueta (tag) en Git?",
+      "answer": "Para crear una etiqueta en Git, puedes utilizar el comando 'git tag <nombre_de_la_etiqueta>'. Luego, puedes asociar la etiqueta con un commit específico."
+    },
+    {
+      "id": 262,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué es un repositorio Git bare?",
+      "answer": "Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo."
+    },
+    {
+      "id": 263,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es 'git squash' y cuál es su utilidad?",
+      "answer": "'Git squash' es una operación que combina múltiples commits en uno solo. Se utiliza para mantener un historial de commits más limpio y comprensible al agrupar cambios relacionados en un solo commit."
+    },
+    {
+      "id": 264,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es 'git blame' y cómo se utiliza?",
+      "answer": "'Git blame' es un comando que muestra quién modificó cada línea de un archivo y en qué commit se realizó la modificación. Se utiliza para rastrear la autoría de cambios en un archivo."
+    },
+    {
+      "id": 265,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es 'git filter-branch' y cuándo se utiliza?",
+      "answer": "'Git filter-branch' es una herramienta avanzada para reescribir la historia de un repositorio. Se utiliza en situaciones específicas, como eliminar archivos confidenciales de la historia o cambiar nombres de archivos en commits antiguos."
+    },
+    {
+      "id": 266,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cómo se revierten cambios en Git?",
+      "answer": "Los cambios en Git se pueden revertir de diferentes maneras, pero una común es utilizando 'git revert' para crear un nuevo commit que deshaga los cambios de un commit anterior: se utiliza el comando 'git revert <hash_del_commit>'. Esto crea un nuevo commit que deshace los cambios introducidos por el commit especificado"
+    },
+    {
+      "id": 267,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito de 'git checkout' en Git?",
+      "answer": "'Git checkout' se utiliza para cambiar entre ramas y commits en un repositorio Git. También se utiliza para crear ramas nuevas: puedes utilizar el comando 'git checkout -b <nombre_de_la_rama>'. Con esto la creas y también te mueves a ella sin usar otro comando de git"
+    },
+    {
+      "id": 268,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es la rama (branch) 'master' en Git y cómo ha evolucionado su uso?",
+      "answer": "La rama 'master' solía ser la rama principal en Git, pero su uso está evolucionando hacia nombres como 'main' o 'mainline' para evitar connotaciones negativas asociadas con 'master'."
+    },
+    {
+      "id": 269,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es 'git rebase -i' y cómo se utiliza?",
+      "answer": "'Git rebase -i' permite realizar una reescritura interactiva del historial de commits. Se utiliza para editar, combinar o reordenar commits en un proceso interactivo antes de aplicarlos."
+    },
+    {
+      "id": 270,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué son los hooks de cliente en Git?",
+      "answer": "Los hooks de cliente en Git son scripts personalizados que se ejecutan en las máquinas locales de los desarrolladores en respuesta a eventos de Git. Se utilizan para implementar acciones personalizadas en el lado del cliente, como comprobaciones de pre-commit."
+    },
+    {
+      "id": 271,
+      "category": "Git",
+      "level": "Middle",
+      "question": "Explica el concepto de 'rebasing' en Git y cuándo es útil.",
+      "answer": "'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión."
+    },
+    {
+      "id": 272,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de 'git submodules' en Git?",
+      "answer": "'Git submodules' permite incluir un repositorio Git dentro de otro repositorio Git como una dependencia. Esto es útil para gestionar proyectos grandes o incorporar bibliotecas externas."
+    },
+    {
+      "id": 273,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre un 'pull request' y un 'push' en Git?",
+      "answer": "Un 'pull request' es una solicitud para fusionar cambios de una rama a otra en un repositorio remoto, generalmente en una plataforma como GitHub. Un 'push' es una acción que envía cambios locales a un repositorio remoto sin solicitar una fusión."
+    },
+    {
+      "id": 274,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Cómo se cambia el mensaje de un commit en Git?",
+      "answer": "Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente."
+    },
+    {
+      "id": 275,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es 'git rebase' interactivo y cuándo se utiliza?",
+      "answer": "'Git rebase' interactivo es una forma avanzada de reorganizar y modificar la historia de los commits en una rama. Se utiliza para combinar, editar y eliminar commits, y es útil para mantener un historial limpio y ordenado."
+    },
+    {
+      "id": 276,
+      "category": "Git",
+      "level": "Senior",
+      "question": "¿Qué es el 'gitflow workflow' y cuál es su utilidad?",
+      "answer": "El 'gitflow workflow' es un modelo de colaboración y gestión de ramas en Git que define reglas claras para el uso de diferentes tipos de ramas (por ejemplo, 'feature', 'release', 'hotfix'). Su utilidad radica en mantener un flujo de trabajo organizado y escalable."
+    },
+    {
+      "id": 277,
+      "category": "Git",
+      "level": "Senior",
+      "question": "Explica 'git restore' y cómo se utiliza para deshacer cambios en Git.",
+      "answer": "'Git restore' es un comando que se utiliza para deshacer cambios en Git al restaurar un archivo o una rama a un estado anterior. Puedes usar 'git restore' con opciones específicas para revertir cambios no deseados en archivos o para restaurar una rama a una revisión anterior."
+    },
+    {
+      "id": 278,
+      "category": "Git",
+      "level": "Middle",
+      "question": "¿Qué es un flujo de trabajo 'fork and pull' en Git y cuándo se utiliza?",
+      "answer": "El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales."
+    },
+    {
+      "id": 279,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué es Git Bash y cuál es su función en Git?",
+      "answer": "Git Bash es una interfaz de línea de comandos que proporciona una terminal interactiva para ejecutar comandos Git en sistemas Windows. Facilita el uso de Git en entornos que no son nativos de Unix."
+    },
+    {
+      "id": 280,
+      "category": "Git",
+      "level": "Junior",
+      "question": "¿Qué es Git Pull y cuál es su propósito?",
+      "answer": "Git Pull es un comando que se utiliza para descargar cambios desde un repositorio remoto y fusionarlos automáticamente en la rama actual. Su propósito es mantener tu copia local actualizada con los cambios remotos."
+    },
+    {
+      "id": 281,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es el concepto de 'z-index' en CSS y cómo se utiliza?",
+      "answer": "El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables."
+    },
+    {
+      "id": 282,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es un 'sprite' en CSS y cuál es su ventaja?",
+      "answer": "Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página."
+    },
+    {
+      "id": 283,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es el 'box-shadow' en CSS y cómo se utiliza para agregar sombras a elementos?",
+      "answer": "El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones."
+    },
+    {
+      "id": 284,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es el 'flexbox' en CSS y cuál es su propósito?",
+      "answer": "El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores."
+    },
+    {
+      "id": 285,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'grid layout' en CSS y cuál es su ventaja?",
+      "answer": "El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables(responsivos) y equilibrados."
+    },
+    {
+      "id": 286,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las animaciones CSS y cómo se definen?",
+      "answer": "Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
+    },
+    {
+      "id": 287,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'gradients' en CSS y cómo se crea un fondo degradado?",
+      "answer": "Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto."
+    },
+    {
+      "id": 288,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'transform' en CSS y cuál es su función?",
+      "answer": "El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."
+    },
+    {
+      "id": 289,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'viewport' en CSS y cómo se relaciona con el diseño web responsivo?",
+      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos."
+    },
+    {
+      "id": 290,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las variables CSS (variables personalizadas) y cómo se declaran?",
+      "answer": "Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable."
+    },
+    {
+      "id": 291,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las transiciones CSS y cómo se utilizan?",
+      "answer": "Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript."
+    },
+    {
+      "id": 292,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'transformación 3D' en CSS y cuáles son sus aplicaciones?",
+      "answer": "La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado."
+    },
+    {
+      "id": 293,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'aspect ratio' en CSS y cómo se controla?",
+      "answer": "El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador."
+    },
+    {
+      "id": 294,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'object-fit' en CSS y para qué se utiliza?",
+      "answer": "El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño."
+    },
+    {
+      "id": 295,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'customización de elementos' (Shadow DOM) en CSS y cuál es su propósito?",
+      "answer": "La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
+    },
+    {
+      "id": 296,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'mix-blend-mode' en CSS y cuál es su función?",
+      "answer": "El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes."
+    },
+    {
+      "id": 297,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'función calc()' en CSS y cuándo se utiliza?",
+      "answer": "La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible."
+    },
+    {
+      "id": 298,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'propiedad clip-path' en CSS y cuál es su propósito?",
+      "answer": "La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos."
+    },
+    {
+      "id": 299,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'object-position' en CSS y cuál es su función?",
+      "answer": "'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño."
+    },
+    {
+      "id": 300,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'variable de entorno' (env-var) en CSS y cómo se utiliza?",
+      "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
+    }
+  ],
+  "weblinks": [
+    {
+      "id": 1,
+      "name": "Angular Official Page",
+      "link": "https://angular.io/docs",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 2,
+      "name": "Bootstrap",
+      "link": "https://getbootstrap.com/",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 3,
+      "name": "",
+      "link": "",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 4,
+      "name": "",
+      "link": "",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 5,
+      "name": "",
+      "link": "",
+      "category": "oficialDoc"
+    },
+    {
+      "id": 6,
+      "name": "Repositorio con listas de pruebas técnicas",
+      "link": "https://github.com/midudev/pruebas-tecnicas",
+      "category": "challenges"
+    },
+    {
+      "id": 7,
+      "name": "Web para practicar código",
+      "link": "https://www.codewars.com/",
+      "category": "challenges"
+    },
+    {
+      "id": 8,
+      "name": "Desafíos de programación y ejercicios",
+      "link": "https://retosdeprogramacion.com/",
+      "category": "challenges"
+    },
+    {
+      "id": 9,
+      "name": "Practica tu habilidad de resolución de problemas",
+      "link": "https://leetcode.com/",
+      "category": "challenges"
+    },
+    {
+      "id": 10,
+      "name": "Mejora tu habilidad en CSS jugando",
+      "link": "http://flexboxfroggy.com/#es",
+      "category": "challenges"
+    },
+    {
+      "id": 11,
+      "name": "Cursos y certificaciones de distintos lenguajes",
+      "link": "https://www.freecodecamp.org/",
+      "category": "courses"
+    },
+    {
+      "id": 12,
+      "name": "Chrome DevTools - Crash Course",
+      "link": "https://www.youtube.com/watch?v=gTVpBbFWry8",
+      "category": "courses"
+    },
+    {
+      "id": 13,
+      "name": "Fundamentos de testing",
+      "link": "https://www.testim.io/blog/jasmine-js-a-from-scratch-tutorial-to-start-testing/",
+      "category": "courses"
+    },
+    {
+      "id": 14,
+      "name": "Parcel vs Webpack",
+      "link": "https://www.youtube.com/watch?v=gTVpBbFWry8",
+      "category": "courses"
+    },
+    {
+      "id": 15,
+      "name": "Conventional Commits - Qué es y por qué deberías empezar a utilizarlo",
+      "link": "https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an",
+      "category": "courses"
+    },
+    {
+      "id": 16,
+      "name": "¿Cómo crear tu perfil de Github",
+      "link": "https://midu.dev/como-crear-tu-perfil-de-github-con-readme/",
+      "category": "resources"
+    },
+    {
+      "id": 17,
+      "name": "Repositorio con lista de pruebas técnicas",
+      "link": "https://github.com/midudev/pruebas-tecnicas",
+      "category": "resources"
+    },
+    {
+      "id": 18,
+      "name": "Generar opiniones en retrospectiva en equipo",
+      "link": "https://retroteam.app/",
+      "category": "resources"
+    },
+    {
+      "id": 19,
+      "name": "",
+      "link": "",
+      "category": "resources"
+    },
+    {
+      "id": 20,
+      "name": "Lista de API's públicas",
+      "link": "https://publicapi.dev/",
+      "category": "resources"
+    }
+  ]
+}

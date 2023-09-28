@@ -333,300 +333,1140 @@
     },
     {
       "id": 21,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cuál es el propósito del servicio en Angular?",
+      "answer": "En Angular, un servicio es una clase que se utiliza para organizar y compartir la lógica y los datos comunes entre diferentes componentes. Los servicios se utilizan para separar la lógica de negocio de los componentes y permiten la reutilización de código en toda la aplicación."
+    },
+    {
+      "id": 22,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es un servicio compartido en Angular y cómo se crea?",
+      "answer": "Un servicio compartido en Angular es una clase que se utiliza para compartir datos y lógica entre componentes de toda la aplicación. Se crea mediante el comando 'ng generate service' o manualmente como una clase TypeScript con el decorador '@Injectable'. Los servicios compartidos son inyectables y se registran en el módulo raíz para estar disponibles en toda la aplicación."
+    },
+    {
+      "id": 23,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es Angular?",
+      "answer": "Angular es un framework de desarrollo de aplicaciones web desarrollado por Google. Se utiliza para crear aplicaciones web dinámicas y de una sola página (SPA) y facilita la creación de interfaces de usuario interactivas y reactivas."
+    },
+    {
+      "id": 24,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cuáles son las ventajas de usar Angular?",
+      "answer": "Algunas de las ventajas de usar Angular incluyen una estructura de proyecto organizada, vinculación de datos bidireccional, inyección de dependencias, y una amplia comunidad de desarrollo que proporciona herramientas y bibliotecas adicionales."
+    },
+    {
+      "id": 25,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es TypeScript y por qué se utiliza en Angular?",
+      "answer": "TypeScript es un lenguaje de programación desarrollado por Microsoft que se utiliza en Angular porque añade tipos estáticos y otras características a JavaScript, lo que facilita la detección de errores y el desarrollo de aplicaciones más robustas."
+    },
+    {
+      "id": 26,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es una directiva en Angular?",
+      "answer": "En Angular, una directiva es una instrucción en el DOM (Document Object Model) que le dice al framework Angular cómo manipular el comportamiento de un elemento HTML o cambiar su apariencia."
+    },
+    {
+      "id": 27,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cómo se realiza la inyección de dependencias en Angular?",
+      "answer": "La inyección de dependencias en Angular se realiza mediante la creación de una instancia de una clase y su inyección en el constructor de otro componente, servicio o clase que la necesite. Angular utiliza el sistema de inyección de dependencias para administrar las dependencias y proporcionarlas de manera eficiente.Podemos hacerlo mediante el constructor o usando inject()"
+    },
+    {
+      "id": 28,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué es un módulo en Angular?",
+      "answer": "Un módulo en Angular es un mecanismo para organizar la aplicación en bloques funcionales. Contiene componentes, servicios y otras características relacionadas, y se utiliza para definir cómo se ensamblan estas partes en la aplicación."
+    },
+    {
+      "id": 29,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre ngOnChanges y ngOnInit?",
+      "answer": "ngOnChanges es un gancho de ciclo de vida en Angular que se dispara cuando las propiedades de entrada de un componente cambian. ngOnInit se dispara una vez después de que se haya inicializado el componente."
+    },
+    {
+      "id": 30,
+      "category": "Angular",
+      "level": "Junior",
+      "question": "¿Qué son las rutas en Angular?",
+      "answer": "En Angular, las rutas son un mecanismo para definir la navegación y las vistas de una aplicación. Permiten que diferentes URL se correspondan con diferentes componentes y vistas."
+    },
+    {
+      "id": 31,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es un interceptor HTTP en Angular?",
+      "answer": "Un interceptor HTTP en Angular es un servicio que permite interceptar y modificar las solicitudes HTTP y las respuestas antes de que lleguen al servidor o después de que vuelvan del servidor. Se utiliza para realizar tareas comunes, como agregar encabezados o manejar errores de manera centralizada."
+    },
+    {
+      "id": 32,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cómo se realiza la validación de formularios en Angular?",
+      "answer": "En Angular, la validación de formularios se realiza mediante la creación de directivas personalizadas y el uso de clases y métodos proporcionados por el módulo '@angular/forms'. Esto permite validar campos de entrada y formularios de manera efectiva."
+    },
+    {
+      "id": 33,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la detección de cambios en Angular?",
+      "answer": "La detección de cambios en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Angular utiliza una estrategia de detección de cambios para mejorar el rendimiento y la eficiencia de las actualizaciones de la interfaz de usuario."
+    },
+    {
+      "id": 34,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son las pruebas unitarias en Angular?",
+      "answer": "Las pruebas unitarias en Angular son pruebas que se realizan en unidades individuales de código, como componentes o servicios, para garantizar que funcionen correctamente de manera aislada. Angular proporciona herramientas y bibliotecas para escribir y ejecutar pruebas unitarias eficaces."
+    },
+    {
+      "id": 35,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es la optimización de rendimiento en aplicaciones Angular?",
+      "answer": "La optimización de rendimiento en aplicaciones Angular implica una serie de prácticas y técnicas destinadas a mejorar la velocidad de carga, la velocidad de ejecución y la eficiencia general de una aplicación Angular. Esto incluye técnicas de carga diferida, compresión de recursos y optimización de renderizado."
+    },
+    {
+      "id": 36,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la internacionalización (i18n) en Angular?",
+      "answer": "La internacionalización (i18n) en Angular es el proceso de adaptar una aplicación para que sea compatible con múltiples idiomas y regiones. Angular proporciona herramientas y directivas para facilitar la traducción de textos y la adaptación de formatos de fecha, hora y números en la aplicación."
+    },
+    {
+      "id": 37,
+      "category": "Angular Standalone",
+      "level": "Middle",
+      "question": "¿Qué es el modo Standalone en Angular y cuál es su propósito?",
+      "answer": "El modo Standalone en Angular es una característica que permite compilar y ejecutar una aplicación Angular independiente de un servidor web tradicional. Su propósito es proporcionar a los desarrolladores una forma de crear aplicaciones Angular que se puedan ejecutar localmente o empaquetar como aplicaciones de escritorio sin depender de un servidor backend."
+    },
+    {
+      "id": 38,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cuál es el flujo típico de un Observable en Angular y cómo funciona?",
+      "answer": "Un Observable en Angular sigue un flujo típico de emisión, suscripción y manejo de eventos asíncronos. Comienza con la creación de un Observable que puede emitir datos o eventos en el futuro. Luego, se suscribe un observador para escuchar esas emisiones. Cuando ocurre un evento, el observador recibe y maneja los datos. El flujo puede incluir operaciones de transformación, filtrado o combinación de datos antes de que lleguen al observador."
+    },
+    {
+      "id": 39,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la detección de cambios OnPush en Angular y cuándo se debe utilizar?",
+      "answer": "La detección de cambios OnPush es una estrategia de detección de cambios en Angular que se basa en cambios en las referencias de entrada y eventos de salida. Se debe utilizar cuando se desea mejorar el rendimiento de la aplicación al reducir la frecuencia de las verificaciones de cambio. Al configurar un componente con OnPush, Angular solo volverá a renderizar el componente cuando las entradas cambien o se dispare un evento de salida, en lugar de verificar continuamente las propiedades internas."
+    },
+    {
+      "id": 40,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué son los efectos (Effects) en la gestión de estado de Angular (por ejemplo, con NgRx) y cuál es su propósito?",
+      "answer": "Los efectos (Effects) en la gestión de estado de Angular, como NgRx, son funciones que manejan efectos secundarios en una aplicación, como llamadas a APIs o tareas asíncronas. Su propósito es aislar la lógica de efectos secundarios y garantizar que la gestión de estado sea predecible y consistente. Los efectos reciben acciones y pueden despachar nuevas acciones en función de los resultados de las tareas asíncronas."
+    },
+    {
+      "id": 41,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué es la interpolación de atributos (Attribute Interpolation) en Angular y cuándo se utiliza?",
+      "answer": "La interpolación de atributos en Angular es una técnica que permite asignar valores dinámicos a atributos de elementos HTML. Se utiliza cuando se necesita cambiar dinámicamente el valor de un atributo, como un atributo de 'src' de una imagen o 'href' de un enlace, utilizando expresiones del componente."
+    },
+    {
+      "id": 42,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre 'ViewChild' y 'ContentChild' en Angular y cuándo se utilizan?",
+      "answer": "ViewChild y ContentChild son decoradores utilizados para acceder a elementos o componentes hijos en Angular. La diferencia clave radica en dónde se busca el elemento o componente: ViewChild se utiliza para elementos o componentes que están dentro del componente actual, mientras que ContentChild se utiliza para elementos o componentes proyectados en el contenido de un componente."
+    },
+    {
+      "id": 43,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la detección de cambios en Angular y cómo se optimiza para aplicaciones de gran escala?",
+      "answer": "La detección de cambios en Angular permite actualizar la vista cuando los datos cambian en el componente. Para aplicaciones de gran escala, la optimización se logra utilizando estrategias como ChangeDetectionStrategy.OnPush, empleando bibliotecas de administración de estado (como NgRx), y minimizando las operaciones costosas en el ciclo de detección de cambios."
+    },
+    {
+      "id": 44,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se puede mejorar el rendimiento de una aplicación Angular y cuáles son las mejores prácticas en este sentido?",
+      "answer": "Para mejorar el rendimiento en Angular, se pueden aplicar técnicas como la carga diferida de módulos, la compresión de recursos, la reducción del tamaño del paquete, el uso de ChangeDetectionStrategy.OnPush, la optimización de imágenes y la implementación de estrategias de almacenamiento en caché."
+    },
+    {
+      "id": 45,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique la arquitectura de una aplicación Angular escalable y cómo se organizan los módulos, componentes y servicios en ella.",
+      "answer": "Una aplicación Angular escalable se organiza en módulos funcionales que contienen componentes relacionados y servicios compartidos. Se siguen patrones como 'Smart vs. Dumb Components', se utiliza inyección de dependencias para la comunicación entre componentes y se centraliza la gestión de estado mediante bibliotecas como NgRx o Redux."
+    },
+    {
+      "id": 46,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se realiza la optimización de rendimiento en una aplicación Angular y cuáles son las estrategias clave para lograrlo?",
+      "answer": "La optimización de rendimiento en Angular involucra prácticas como la carga diferida de módulos, la reducción del tamaño del paquete, la eliminación de código no utilizado, la compresión de recursos y la implementación de técnicas de renderizado eficiente, como el pre-renderizado y el lazy loading."
+    },
+    {
+      "id": 47,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique el concepto de 'Change Detection' en Angular y cómo se puede personalizar o desactivar para aplicaciones específicas.",
+      "answer": "El 'Change Detection' en Angular es el proceso por el cual el framework verifica y actualiza la vista cuando cambian los datos en el componente. Se puede personalizar mediante la estrategia ChangeDetectionStrategy y desactivar selectivamente utilizando el método markForCheck en combinación con ChangeDetectorRef para mejorar el rendimiento en aplicaciones complejas."
+    },
+    {
+      "id": 48,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuál es el papel de los 'Pipes' en Angular y cuáles son ejemplos comunes de su uso?",
+      "answer": "Los 'Pipes' en Angular son funciones que transforman datos en la plantilla HTML. Se utilizan para formatear fechas, números, cadenas, y aplicar filtros y transformaciones personalizadas a los datos que se muestran en la vista. Ejemplos comunes incluyen 'DatePipe', 'CurrencyPipe' y 'CustomPipe' para transformaciones específicas."
+    },
+    {
+      "id": 49,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se abordan los problemas de seguridad en una aplicación Angular y cuáles son las mejores prácticas para protegerla contra amenazas comunes?",
+      "answer": "Para abordar problemas de seguridad en Angular, se deben implementar medidas como la prevención de ataques XSS y CSRF, la autenticación y autorización robustas, la validación de entrada y el uso de bibliotecas de seguridad de confianza. Se recomienda seguir las mejores prácticas de seguridad web y mantener las dependencias actualizadas."
+    },
+    {
+      "id": 50,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Qué es el servidor de renderizado (Server-Side Rendering - SSR) en Angular y cuáles son sus beneficios y desafíos?",
+      "answer": "El servidor de renderizado en Angular permite renderizar la aplicación en el servidor antes de enviarla al navegador del cliente. Sus beneficios incluyen una carga inicial más rápida y una mejor indexación por parte de motores de búsqueda. Sin embargo, presenta desafíos como la configuración y el manejo de estado."
+    },
+    {
+      "id": 51,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique cómo se implementa la autenticación y autorización en una aplicación Angular y mencione las técnicas y bibliotecas recomendadas.",
+      "answer": "La autenticación y autorización en Angular se implementa mediante técnicas como el uso de tokens JWT, el almacenamiento seguro de credenciales, la protección de rutas y el uso de bibliotecas como Angular AuthGuard y AngularFire para Firebase. Además, se deben seguir las prácticas recomendadas para proteger recursos y datos sensibles."
+    },
+    {
+      "id": 52,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique la gestión de estado en aplicaciones Angular y mencione las bibliotecas y patrones comunes utilizados para implementarla.",
+      "answer": "La gestión de estado en aplicaciones Angular se refiere a cómo se almacenan y gestionan los datos de la aplicación. Se implementa utilizando bibliotecas como NgRx, Redux y MobX, así como patrones como el patrón Redux. La gestión de estado es crucial para aplicaciones escalables y complejas."
+    },
+    {
+      "id": 53,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cuáles son las consideraciones clave al diseñar una arquitectura de microfrontend en Angular y cómo se logra la integración entre múltiples microfrontends?",
+      "answer": "Al diseñar una arquitectura de microfrontend en Angular, es importante considerar la compartimentalización, la comunicación entre microfrontends y la carga dinámica de módulos. La integración se logra a través de técnicas como iframes, Web Components y la coordinación de eventos y datos entre microfrontends."
+    },
+    {
+      "id": 54,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "Explique cómo se pueden realizar pruebas unitarias y de integración efectivas en una aplicación Angular y mencione las herramientas y enfoques comunes utilizados.",
+      "answer": "Las pruebas unitarias y de integración en Angular se realizan utilizando herramientas como Jasmine, Karma y Protractor. Se deben escribir pruebas para componentes, servicios y rutas, y se pueden simular servicios y eventos para probar el comportamiento. Las pruebas efectivas son esenciales para garantizar la calidad y estabilidad de la aplicación."
+    },
+    {
+      "id": 55,
+      "category": "Angular",
+      "level": "Senior",
+      "question": "¿Cómo se puede mejorar la experiencia del usuario (UX) en una aplicación Angular y cuáles son las estrategias comunes para lograrlo?",
+      "answer": "Mejorar la experiencia del usuario en una aplicación Angular implica la optimización del rendimiento, la usabilidad, la accesibilidad y el diseño. Estrategias comunes incluyen la carga progresiva, la navegación rápida, la respuesta táctil, el diseño receptivo, la accesibilidad y la retroalimentación visual para acciones del usuario."
+    },
+    {
+      "id": 56,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "Explique el ciclo de vida de un componente en Angular y mencione los principales ganchos de ciclo de vida.",
+      "answer": "El ciclo de vida de un componente en Angular se compone de varios ganchos que se ejecutan en diferentes etapas, como 'ngOnInit', 'ngOnChanges', 'ngAfterViewInit' y 'ngOnDestroy'. Estos ganchos permiten realizar acciones específicas en momentos clave durante la vida de un componente."
+    },
+    {
+      "id": 57,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son las animaciones en Angular y cómo se pueden aplicar a elementos HTML?",
+      "answer": "Las animaciones en Angular son una forma de agregar transiciones y animaciones a elementos HTML en una aplicación. Se pueden aplicar mediante el uso de directivas como 'ngIf', 'ngFor' y 'ngStyle', así como mediante la creación de animaciones personalizadas con Angular's Animation DSL (lenguaje específico de dominio para animaciones)."
+    },
+    {
+      "id": 58,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Qué son las pruebas end-to-end (E2E) en Angular y cómo se pueden realizar utilizando herramientas como Protractor?",
+      "answer": "Las pruebas end-to-end (E2E) en Angular son pruebas que verifican el flujo de una aplicación desde la perspectiva del usuario, simulando acciones y eventos en la interfaz. Se pueden realizar utilizando herramientas como Protractor, que automatiza la interacción con la aplicación y realiza comprobaciones en la interfaz de usuario."
+    },
+    {
+      "id": 59,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "¿Cuál es el papel de las promesas (Promises) en Angular y cómo se utilizan para manejar operaciones asíncronas?",
+      "answer": "Las promesas en Angular se utilizan para manejar operaciones asíncronas y devolver resultados en el futuro. Se crean con el constructor 'Promise' y se resuelven o rechazan cuando la operación se completa o falla. Las promesas son útiles para simplificar el manejo de solicitudes HTTP y otras tareas asíncronas en la aplicación."
+    },
+    {
+      "id": 60,
+      "category": "Angular",
+      "level": "Middle",
+      "question": "Explique el concepto de 'Interceptors' en Angular y cómo se utilizan para manejar solicitudes HTTP de manera global.",
+      "answer": "Los 'Interceptors' en Angular son clases que permiten interceptar y manipular solicitudes HTTP y respuestas de manera global en una aplicación. Se utilizan para agregar encabezados, manejar errores comunes, autenticar solicitudes y realizar otras tareas de pre y post procesamiento. Los Interceptors se configuran mediante el uso del servicio 'HttpClientModule' y se pueden utilizar para aplicar lógica común en todas las solicitudes HTTP."
+    },
+    {
+      "id": 61,
       "category": "Html",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre una etiqueta Html y un elemento Html?",
       "answer": "Una etiqueta Html es un marcador que define el inicio o el final de un elemento en un documento Html, mientras que un elemento Html es un conjunto completo que consta de una etiqueta de inicio, contenido y una etiqueta de cierre (si es necesario)."
     },
     {
-      "id": 22,
+      "id": 62,
       "category": "Html",
       "level": "Junior",
       "question": "¿Qué es un atributo en Html y cómo se utiliza?",
       "answer": "Un atributo en Html proporciona información adicional sobre un elemento y se especifica dentro de la etiqueta de inicio. Por ejemplo, en <img src='imagen.jpg'>, 'src' es un atributo que especifica la fuente de la imagen."
     },
     {
-      "id": 23,
+      "id": 63,
       "category": "Html",
       "level": "Junior",
       "question": "¿Qué significa la sigla DOCTYPE en Html y cuál es su propósito?",
       "answer": "DOCTYPE significa Document Type Declaration. Se utiliza para especificar la versión de Html que se está utilizando en el documento y asegura que el navegador interprete la página correctamente."
     },
     {
-      "id": 24,
+      "id": 64,
       "category": "Html",
       "level": "Junior",
       "question": "¿Cómo se crea una lista desordenada en Html?",
       "answer": "Una lista desordenada se crea utilizando la etiqueta <ul>, y los elementos de la lista se especifican con la etiqueta <li> dentro de <ul>."
     },
     {
-      "id": 25,
+      "id": 65,
       "category": "Html",
       "level": "Junior",
       "question": "¿Qué es una entidad Html y cuál es su uso?",
       "answer": "Una entidad Html es una secuencia de caracteres predefinida que representa un carácter especial en Html, como '&lt;' para '<' y '&amp;' para '&'. Se utilizan para evitar conflictos con la sintaxis Html."
     },
     {
-      "id": 26,
+      "id": 66,
       "category": "Html",
       "level": "Middle",
       "question": "¿Qué es un enlace relativo en Html y cómo se diferencia de un enlace absoluto?",
       "answer": "Un enlace relativo en Html especifica la ubicación de un recurso en relación con la ubicación actual del documento, mientras que un enlace absoluto proporciona una URL completa. Los enlaces relativos son útiles cuando se trabaja en un sitio web local o se desea flexibilidad en las rutas de archivo."
     },
     {
-      "id": 27,
+      "id": 67,
       "category": "Html",
       "level": "Middle",
       "question": "¿Cómo se crea una tabla con bordes visibles en Html?",
       "answer": "Para crear una tabla con bordes visibles en Html, puedes agregar el atributo 'border' a la etiqueta <table> y establecerlo en un valor mayor que cero, por ejemplo, <table border='1'>."
     },
     {
-      "id": 28,
+      "id": 68,
       "category": "Html",
       "level": "Middle",
       "question": "¿Qué es un formulario Html y cuál es su propósito?",
       "answer": "Un formulario Html es un conjunto de elementos que permiten a los usuarios ingresar datos y enviarlos a un servidor web. Se utiliza para interactuar con los usuarios y recopilar información."
     },
     {
-      "id": 29,
+      "id": 69,
       "category": "Html",
       "level": "Middle",
       "question": "¿Cuál es la etiqueta de encabezado más importante en Html y por qué?",
       "answer": "La etiqueta de encabezado más importante es <h1>. Es importante porque define el encabezado principal de la página y tiene un gran impacto en la optimización para motores de búsqueda (SEO) y la estructura del contenido."
     },
     {
-      "id": 30,
+      "id": 70,
       "category": "Html",
       "level": "Middle",
       "question": "¿Qué es la validación en Html y por qué es importante?",
       "answer": "La validación en Html se refiere a asegurarse de que el código Html cumple con los estándares definidos por el W3C. Es importante porque ayuda a garantizar la consistencia y la compatibilidad entre navegadores, lo que mejora la calidad de la página web."
     },
     {
-      "id": 31,
+      "id": 71,
       "category": "Html",
       "level": "Senior",
       "question": "¿Qué son las etiquetas de encabezado en Html y cuál es su jerarquía?",
       "answer": "Las etiquetas de encabezado en Html, como <h1>, <h2>, ..., <h6>, se utilizan para definir la estructura jerárquica del contenido de la página. <h1> es el encabezado principal y <h6> el menos importante."
     },
     {
-      "id": 32,
+      "id": 72,
       "category": "Html",
       "level": "Senior",
       "question": "¿Cuál es la diferencia entre Html y XHtml?",
       "answer": "XHtml es una versión más estricta y XML-compatible de Html. Requiere que el código esté bien formado y se adhiera a reglas más estrictas de sintaxis. Html es más flexible en términos de estructura y validación."
     },
     {
-      "id": 33,
+      "id": 73,
       "category": "Html",
       "level": "Senior",
       "question": "¿Qué son las hojas de estilo en cascada (CSS) y cómo se relacionan con Html?",
       "answer": "Las hojas de estilo en cascada (CSS) se utilizan para aplicar estilos y diseños a elementos Html. Permiten separar la estructura del contenido (Html) de su presentación visual, lo que facilita la gestión y el mantenimiento del diseño de un sitio web."
     },
     {
-      "id": 34,
+      "id": 74,
       "category": "Html",
       "level": "Senior",
       "question": "¿Cuál es la función de la etiqueta <iframe> en Html?",
       "answer": "La etiqueta <iframe> se utiliza para incrustar contenido de otra página web dentro de la página actual. Puede ser útil para mostrar mapas, videos u otros elementos externos."
     },
     {
-      "id": 35,
+      "id": 75,
       "category": "Html",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre una etiqueta Html y un elemento Html?",
       "answer": "Una etiqueta Html es un marcador que define el inicio o el final de un elemento en un"
     },
     {
-      "id": 36,
+      "id": 76,
       "category": "Html",
       "level": "Junior",
       "question": "¿Qué es un atributo en Html y cómo se utiliza?",
       "answer": "Un atributo en Html proporciona información adicional sobre un elemento y se especifica dentro de la etiqueta de inicio. Por ejemplo, en <img src='imagen.jpg'>, 'src' es un atributo que especifica la fuente de la imagen."
     },
     {
-      "id": 37,
+      "id": 77,
       "category": "Html",
       "level": "Junior",
       "question": "¿Qué significa la sigla DOCTYPE en Html y cuál es su propósito?",
       "answer": "DOCTYPE significa Document Type Declaration. Se utiliza para especificar la versión de Html que se está utilizando en el documento y asegura que el navegador interprete la página correctamente."
     },
     {
-      "id": 38,
+      "id": 78,
       "category": "Html",
       "level": "Junior",
       "question": "¿Cómo se crea una lista desordenada en Html?",
       "answer": "Una lista desordenada se crea utilizando la etiqueta <ul>, y los elementos de la lista se especifican con la etiqueta <li> dentro de <ul>."
     },
     {
-      "id": 39,
+      "id": 79,
       "category": "Html",
       "level": "Junior",
       "question": "¿Qué es una entidad Html y cuál es su uso?",
       "answer": "Una entidad Html es una secuencia de caracteres predefinida que representa un carácter especial en Html, como '&lt;' para '<' y '&amp;' para '&'. Se utilizan para evitar conflictos con la sintaxis Html."
     },
     {
-      "id": 40,
+      "id": 80,
       "category": "Html",
       "level": "Junior",
       "question": "¿Qué es una etiqueta de anclaje en Html y cómo se utiliza?",
       "answer": "Una etiqueta de anclaje, <a>, se utiliza para crear hipervínculos a otras páginas web o recursos. Se especifica el destino del enlace mediante el atributo 'href'. Por ejemplo, <a href='https://www.ejemplo.com'>Enlace a Ejemplo</a>."
     },
     {
-      "id": 41,
+      "id": 81,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la función de la etiqueta <br> en Html?",
+      "answer": "La etiqueta <br> en Html se utiliza para insertar un salto de línea o un salto de línea forzado en el texto. No requiere una etiqueta de cierre y se usa para separar elementos en diferentes líneas."
+    },
+    {
+      "id": 82,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un comentario en Html y cómo se inserta?",
+      "answer": "Un comentario en Html es un texto que no se muestra en la página web y se utiliza para agregar notas o aclaraciones en el código. Se inserta entre <!-- y -->. Por ejemplo, <!-- Este es un comentario -->."
+    },
+    {
+      "id": 83,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué son las etiquetas de formulario en Html y cuál es su uso principal?",
+      "answer": "Las etiquetas de formulario en Html, como <form>, se utilizan para crear formularios que permiten a los usuarios ingresar datos. Son fundamentales para la interacción y recopilación de información en una página web."
+    },
+    {
+      "id": 84,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es un enlace absoluto en Html y cómo se diferencia de un enlace relativo?",
+      "answer": "Un enlace absoluto en Html proporciona una URL completa que incluye el protocolo, el dominio y la ruta completa al recurso. Se diferencia de un enlace relativo que especifica la ubicación del recurso en relación con la ubicación actual del documento."
+    },
+    {
+      "id": 85,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es la etiqueta de encabezado más importante en Html y por qué?",
+      "answer": "La etiqueta de encabezado más importante es <h1>. Es crucial porque define el encabezado principal de la página y tiene un gran impacto en la optimización para motores de búsqueda (SEO) y la estructura del contenido."
+    },
+    {
+      "id": 86,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la validación de formularios en Html y por qué es importante?",
+      "answer": "La validación de formularios en Html se refiere a asegurarse de que los datos ingresados en un formulario cumplan con ciertos criterios. Es importante para garantizar la calidad de los datos y mejorar la experiencia del usuario al proporcionar retroalimentación sobre la entrada incorrecta."
+    },
+    {
+      "id": 87,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre Html y XHtml?",
+      "answer": "XHtml es una versión más estricta y XML-compatible de Html. Requiere que el código esté bien formado y se adhiera a reglas más estrictas de sintaxis. Html es más flexible en términos de estructura y validación."
+    },
+    {
+      "id": 88,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la diferencia entre HTML y XHTML?",
+      "answer": "HTML (HyperText Markup Language) es un lenguaje de marcado que se utiliza para crear páginas web. XHTML (eXtensible HyperText Markup Language) es una versión más estricta y basada en XML de HTML. XHTML requiere una sintaxis más rigurosa y está diseñado para ser compatible con XML."
+    },
+    {
+      "id": 89,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un elemento de bloque en HTML?",
+      "answer": "Un elemento de bloque en HTML es un elemento que crea un bloque rectangular en la página y generalmente comienza en una nueva línea. Ejemplos de elementos de bloque incluyen <div>, <p>, <h1> hasta <h6>, <ul>, <ol>, entre otros."
+    },
+    {
+      "id": 90,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es un atributo 'alt' en una etiqueta de imagen (img) y por qué es importante?",
+      "answer": "El atributo 'alt' en una etiqueta de imagen (img) se utiliza para proporcionar un texto alternativo que se muestra si la imagen no se carga correctamente o si el usuario tiene discapacidades visuales. Es importante para la accesibilidad web y la descripción de la imagen."
+    },
+    {
+      "id": 91,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Cuál es la etiqueta HTML para crear un enlace de correo electrónico?",
+      "answer": "La etiqueta HTML para crear un enlace de correo electrónico es <a>. Debes especificar el atributo 'href' con 'mailto:' seguido de la dirección de correo electrónico. Por ejemplo, <a href='mailto:correo@example.com'>Enviar correo</a>."
+    },
+    {
+      "id": 92,
+      "category": "Html",
+      "level": "Junior",
+      "question": "¿Qué es el elemento HTML <em> y cuál es su propósito?",
+      "answer": "El elemento HTML <em> se utiliza para enfatizar el texto dentro de él, generalmente haciendo que aparezca en cursiva. Su propósito es dar énfasis semántico al contenido, no necesariamente aplicar estilo visual."
+    },
+    {
+      "id": 93,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es una lista de descripción en HTML y cómo se crea?",
+      "answer": "Una lista de descripción en HTML se crea utilizando las etiquetas <dl> (lista de descripción), <dt> (término) y <dd> (definición). <dt> se usa para los términos y <dd> para las definiciones. Por ejemplo: <dl><dt>HTML</dt><dd>Lenguaje de marcado de hipertexto</dd></dl>."
+    },
+    {
+      "id": 94,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <meta> y cuál es su propósito?",
+      "answer": "El elemento HTML <meta> se utiliza para proporcionar metadatos sobre la página web. Los metadatos incluyen información como el conjunto de caracteres, la descripción de la página y palabras clave. Ayuda a los motores de búsqueda y navegadores a comprender y mostrar la página correctamente."
+    },
+    {
+      "id": 95,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cómo afecta el modelo de caja a los elementos HTML?",
+      "answer": "El modelo de caja en CSS describe cómo se representan y dimensionan los elementos HTML. Incluye propiedades como margen, borde, relleno y contenido. Estas propiedades afectan el espacio que ocupa un elemento y su aspecto visual."
+    },
+    {
+      "id": 96,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cómo se usa la propiedad 'display' en CSS para controlar el diseño de los elementos HTML?",
+      "answer": "La propiedad 'display' en CSS se utiliza para controlar cómo se muestra un elemento HTML en el diseño. Puede tomar valores como 'block', 'inline', 'inline-block', entre otros, para definir su comportamiento en el flujo del documento."
+    },
+    {
+      "id": 97,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <link> en HTML?",
+      "answer": "La etiqueta <link> en HTML se utiliza para vincular un documento HTML con recursos externos, como hojas de estilo CSS. Permite la separación de la estructura del documento HTML de su estilo, lo que facilita la gestión y el mantenimiento."
+    },
+    {
+      "id": 98,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'srcset' en la etiqueta <img> de HTML y cuál es su función?",
+      "answer": "El atributo 'srcset' en la etiqueta <img> de HTML se utiliza para especificar múltiples fuentes de imágenes y sus tamaños correspondientes. Ayuda a los navegadores a seleccionar la imagen más adecuada según la resolución de la pantalla del dispositivo, mejorando así la eficiencia y la calidad de la carga de imágenes."
+    },
+    {
+      "id": 99,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la etiqueta <canvas> en HTML y para qué se utiliza?",
+      "answer": "La etiqueta <canvas> en HTML se utiliza para dibujar gráficos, imágenes y animaciones en la página web utilizando JavaScript. Proporciona un lienzo en blanco donde se pueden renderizar elementos gráficos dinámicos."
+    },
+    {
+      "id": 100,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué significa 'DRY' en el contexto de HTML y CSS?",
+      "answer": "'DRY' significa 'Don't Repeat Yourself' (No te repitas) y es un principio de desarrollo web que promueve la reutilización de código y la eliminación de duplicación. Ayuda a mantener el código más limpio y fácil de mantener."
+    },
+    {
+      "id": 101,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <footer> en HTML?",
+      "answer": "La etiqueta <footer> en HTML se utiliza para definir el pie de página de un documento o una sección. Contiene información como derechos de autor, enlaces a páginas relacionadas o información de contacto."
+    },
+    {
+      "id": 102,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'target' en la etiqueta <a> de HTML y cómo se utiliza?",
+      "answer": "El atributo 'target' en la etiqueta <a> se utiliza para especificar dónde se abrirá el enlace cuando un usuario haga clic en él. Puede tomar valores como '_blank' (abrir en una nueva ventana) o '_self' (abrir en la misma ventana)."
+    },
+    {
+      "id": 103,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <nav> en HTML?",
+      "answer": "La etiqueta <nav> en HTML se utiliza para definir una sección de navegación en un documento web. Contiene enlaces o elementos de navegación que dirigen a otras partes del sitio web."
+    },
+    {
+      "id": 104,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'role' en HTML y cuál es su importancia en la accesibilidad web?",
+      "answer": "El atributo 'role' en HTML se utiliza para especificar la función de un elemento en una página web. Juega un papel crucial en la accesibilidad web al ayudar a los lectores de pantalla y otras tecnologías a comprender la estructura y el propósito de los elementos."
+    },
+    {
+      "id": 105,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <head> y cuál es su propósito?",
+      "answer": "El elemento HTML <head> se utiliza para contener metadatos sobre el documento, como el título de la página, enlaces a hojas de estilo y otros elementos que no se muestran directamente en la página. Es esencial para la configuración y el rendimiento del sitio web."
+    },
+    {
+      "id": 106,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'alt' en la etiqueta <area> de HTML y cuál es su propósito?",
+      "answer": "El atributo 'alt' en la etiqueta <area> de HTML se utiliza para proporcionar un texto alternativo que describe la función de una área activa en un mapa de imágenes. Ayuda a la accesibilidad web al describir el área en caso de que la imagen no se cargue o el usuario tenga discapacidades visuales."
+    },
+    {
+      "id": 107,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el elemento HTML <aside> y cuál es su propósito?",
+      "answer": "El elemento HTML <aside> se utiliza para marcar contenido que es tangencial o relacionado pero se puede separar del contenido principal de la página. Puede contener elementos como anuncios, notas, enlaces relacionados y más."
+    },
+    {
+      "id": 108,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <time> en HTML?",
+      "answer": "La etiqueta <time> en HTML se utiliza para marcar contenido relacionado con fechas y horas. Puede incluir atributos como 'datetime' para proporcionar una fecha y hora en un formato estándar y 'pubdate' para indicar la fecha de publicación."
+    },
+    {
+      "id": 109,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Cuál es el propósito de la etiqueta <figure> en HTML?",
+      "answer": "La etiqueta <figure> en HTML se utiliza para encapsular contenido, como imágenes y gráficos, junto con su descripción utilizando la etiqueta <figcaption>. Es especialmente útil para representar gráficos o imágenes con sus leyendas asociadas."
+    },
+    {
+      "id": 110,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es la etiqueta <video> en HTML y cuál es su propósito?",
+      "answer": "La etiqueta <video> en HTML se utiliza para incrustar videos en una página web. Permite a los desarrolladores web reproducir videos directamente en el navegador sin necesidad de complementos externos, mejorando la experiencia del usuario."
+    },
+    {
+      "id": 111,
+      "category": "Html",
+      "level": "Middle",
+      "question": "¿Qué es el atributo 'src' en la etiqueta <script> de HTML y cuál es su función?",
+      "answer": "El atributo 'src' en la etiqueta <script> de HTML se utiliza para especificar la fuente (URL) de un archivo JavaScript externo que se debe cargar y ejecutar en la página. Permite modularizar el código y mejorar la reutilización."
+    },
+    {
+      "id": 112,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <mark> en HTML?",
+      "answer": "La etiqueta <mark> en HTML se utiliza para resaltar o marcar porciones de texto dentro de un documento. Es útil para señalar términos clave o partes destacadas en el contenido."
+    },
+    {
+      "id": 113,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es el atributo 'contenteditable' en HTML y cuál es su uso?",
+      "answer": "El atributo 'contenteditable' en HTML se utiliza para hacer que un elemento HTML, como un div o un párrafo, sea editable por el usuario. Permite la edición de contenido directamente en la página web, lo que es útil en aplicaciones web colaborativas y editores en línea."
+    },
+    {
+      "id": 114,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre una cookie y un almacenamiento web local (localStorage) en HTML?",
+      "answer": "Una cookie es un pequeño archivo de texto que se almacena en el navegador del usuario y se envía con cada solicitud al servidor. El almacenamiento web local (localStorage) es un espacio de almacenamiento en el navegador para datos clave-valor más grandes y se almacena localmente en el dispositivo del usuario. Las cookies tienen un límite de tamaño y se envían al servidor con cada solicitud, mientras que el localStorage es puramente local y tiene más capacidad de almacenamiento."
+    },
+    {
+      "id": 115,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es la especificación WAI-ARIA y cuál es su importancia en la accesibilidad web?",
+      "answer": "WAI-ARIA (Accessible Rich Internet Applications) es una especificación que proporciona atributos y roles adicionales para hacer que aplicaciones web y contenido interactivo sean más accesibles para personas con discapacidades. Ayuda a las tecnologías de asistencia a comprender y navegar por el contenido web de manera más efectiva."
+    },
+    {
+      "id": 116,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <details> en HTML?",
+      "answer": "La etiqueta <details> en HTML se utiliza para crear un elemento desplegable que muestra u oculta contenido adicional cuando el usuario hace clic en él. Es útil para presentar información adicional sin abrumar la página con demasiado contenido visible."
+    },
+    {
+      "id": 117,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué son los elementos HTML semánticos y por qué son importantes?",
+      "answer": "Los elementos HTML semánticos son etiquetas que describen claramente el significado y la estructura del contenido, como <header>, <nav>, <article> y <footer>. Son importantes para la accesibilidad, el SEO y la comprensión del contenido por parte de los motores de búsqueda, ya que proporcionan una estructura clara y significativa."
+    },
+    {
+      "id": 118,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es la API Fetch en HTML y cuál es su función?",
+      "answer": "La API Fetch en HTML es una interfaz para realizar solicitudes HTTP y recuperar recursos de la red, como datos JSON o archivos. Reemplaza en gran medida el uso de XMLHttpRequest y facilita la interacción con servidores web desde JavaScript en aplicaciones web modernas."
+    },
+    {
+      "id": 119,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Qué es el atributo 'defer' en la etiqueta <script> de HTML y cómo afecta la carga de scripts?",
+      "answer": "El atributo 'defer' en la etiqueta <script> de HTML se utiliza para indicar que el script se ejecutará después de que la página se haya analizado. Esto evita que los scripts bloqueen la carga y el procesamiento de la página, lo que puede mejorar el rendimiento."
+    },
+    {
+      "id": 120,
+      "category": "Html",
+      "level": "Senior",
+      "question": "¿Cuál es el propósito de la etiqueta <picture> en HTML?",
+      "answer": "La etiqueta <picture> en HTML se utiliza para proporcionar múltiples fuentes de imágenes y permitir la selección de la imagen más adecuada según la resolución y el tamaño de la pantalla del dispositivo. Ayuda a mejorar la calidad visual y la velocidad de carga de las imágenes."
+    },
+    {
+      "id": 121,
       "category": "Css",
       "level": "Junior",
       "question": "Explique en qué se diferencia un selector de clase de CSS de un selector id",
       "answer": "Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu Html. Múltiples elementos pueden compartir la misma clase y tener estilos similares. Un selector de ID en CSS se denota con un símbolo de almohadilla o numeral (por ejemplo, '#mi-id') y debe ser único en todo tu documento Html. Solo un elemento puede tener un ID específico, y se utiliza cuando deseas aplicar estilos o manipular ese elemento en particular."
     },
     {
-      "id": 42,
+      "id": 122,
       "category": "Css",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre las posiciones relative, fixed, absolute y static para un elemento dado?",
       "answer": "Estas posiciones afectan cómo se ubica un elemento en relación con su posición inicial y otros elementos. Static (Estático):Valor predeterminado para todos los elementos Html. Los elementos se muestran en el orden en que aparecen en el flujo normal del documento. No se ven afectados por las propiedades top, right, bottom o left. No se pueden superponer a otros elementos ni ajustar su posición en relación con otros elementos. Relative (Relativo):Los elementos se desplazan en relación con su posición normal. Puedes usar las propiedades top, right, bottom o left para mover el elemento desde su posición original. El espacio ocupado por el elemento en su posición original se mantiene, lo que significa que otros elementos no se ven afectados por su movimiento. Absolute (Absoluto): Los elementos se posicionan en relación con el ancestro más cercano que tenga una posición relativa, absoluta o fija. Los elementos absolutos se eliminan del flujo normal del documento, por lo que no ocupan espacio en el diseño original. Puedes usar top, right, bottom o left para ajustar su posición en relación con el ancestro posicionado. Si no hay un ancestro posicionado, se posicionan en relación con el documento Html.Fixed (Fijo): Los elementos se posicionan de forma fija en relación con la ventana gráfica del navegador, por lo que permanecen en la misma posición incluso si se desplaza la página. Se usan las propiedades top, right, bottom o left para definir su posición en relación con la ventana gráfica. No afectan ni se ven afectados por otros elementos en el documento."
     },
     {
-      "id": 43,
+      "id": 123,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un selector de tipo en CSS?",
       "answer": "Un selector de tipo en CSS selecciona todos los elementos de un tipo específico en tu HTML. Por ejemplo, 'p' seleccionaría todos los párrafos en tu página y les aplicaría estilos."
     },
     {
-      "id": 44,
+      "id": 124,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué significa 'cascading' en 'Cascading Style Sheets' (CSS) y cómo funciona?",
       "answer": "La palabra 'cascading' en CSS se refiere a la forma en que se aplican y priorizan los estilos. Los estilos pueden provenir de diferentes fuentes, como el propio estilo del elemento, hojas de estilo externas y hojas de estilo internas. La cascada determina la prioridad de estos estilos y cómo se aplican en el documento, siguiendo un conjunto de reglas y especificidad."
     },
     {
-      "id": 45,
+      "id": 125,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un selector de atributo en CSS y cuál es su uso común?",
       "answer": "Un selector de atributo en CSS permite seleccionar elementos HTML en función de los valores de sus atributos. Se denota utilizando corchetes (por ejemplo, 'a[href='https://www.ejemplo.com'] seleccionaría todos los enlaces con el atributo 'href' que tenga el valor 'https://www.ejemplo.com'). Es útil para aplicar estilos a elementos específicos basados en sus atributos."
     },
     {
-      "id": 46,
+      "id": 126,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué significa el modelo de caja o 'box model' en CSS y cuáles son sus componentes?",
       "answer": "El 'box model' en CSS es un concepto fundamental que describe cómo se representa un elemento en una página web. Tiene cuatro componentes principales: el contenido (content), el padding, el borde (border) y el margen (margin). Cada uno de estos componentes afecta el tamaño y el diseño de un elemento en la página."
     },
     {
-      "id": 47,
+      "id": 127,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es la propiedad 'color' en CSS y cuál es su propósito?",
       "answer": "La propiedad 'color' en CSS se utiliza para especificar el color del texto en un elemento HTML. Puedes definirlo utilizando nombres de colores, códigos hexadecimales o valores RGB para personalizar la apariencia del texto."
     },
     {
-      "id": 48,
+      "id": 128,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es el 'box-sizing' en CSS y cómo afecta al modelo de caja?",
       "answer": "El 'box-sizing' en CSS es una propiedad que determina cómo se calcula el tamaño total de un elemento, incluyendo su contenido, padding y borde. Puede tener dos valores principales: 'content-box' (el tamaño se calcula excluyendo el padding y el borde) y 'border-box' (el tamaño incluye el padding y el borde en el cálculo). Esta propiedad afecta directamente al modelo de caja y cómo se representan los elementos en la página."
     },
     {
-      "id": 49,
+      "id": 129,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es el 'float' en CSS y cuál es su propósito?",
       "answer": "El 'float' en CSS es una propiedad que se utiliza para colocar elementos en una página web a la izquierda o la derecha de su contenedor. Esto permite que otros elementos fluyan alrededor de él. Es comúnmente utilizado para crear diseños de columnas y diseños de página más complejos."
     },
     {
-      "id": 50,
+      "id": 130,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un pseudo-elemento en CSS y cuál es su sintaxis?",
       "answer": "Un pseudo-elemento en CSS es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after'). Los pseudo-elementos se utilizan para crear contenido adicional, como elementos de lista o decoraciones, mediante CSS."
     },
     {
-      "id": 51,
+      "id": 131,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es el 'display' en CSS y cuáles son algunos valores comunes para esta propiedad?",
       "answer": "El 'display' en CSS determina cómo se muestra un elemento en la página. Algunos valores comunes para esta propiedad son 'block' (el elemento ocupa todo el ancho disponible y comienza en una nueva línea), 'inline' (el elemento se muestra en la misma línea que el contenido circundante) y 'none' (el elemento no se muestra en absoluto). Esta propiedad es fundamental para controlar el diseño y la estructura de una página web."
     },
     {
-      "id": 52,
+      "id": 132,
       "category": "Css",
       "level": "Junior",
       "question": "¿Cómo se comenta un bloque de código CSS?",
       "answer": "Para comentar un bloque de código CSS, puedes encerrar el comentario entre '/' y '/'. Todo lo que esté dentro de estos delimitadores será tratado como comentario y no afectará el estilo de la página. Esto es útil para incluir notas y explicaciones en tu código CSS."
     },
     {
-      "id": 53,
+      "id": 133,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es la propiedad 'background' en CSS y cuál es su función?",
       "answer": "La propiedad 'background' en CSS se utiliza para definir el fondo de un elemento HTML. Puedes establecer valores como colores de fondo, imágenes de fondo y repetición del fondo. Esta propiedad es esencial para diseñar la apariencia visual de un elemento y su entorno."
     },
     {
-      "id": 54,
+      "id": 134,
       "category": "Css",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre 'margin' y 'padding' en CSS?",
       "answer": "La diferencia principal entre 'margin' y 'padding' en CSS es su función y ubicación relativa en el modelo de caja. 'Margin' es el espacio exterior al borde de un elemento y afecta la distancia entre elementos adyacentes. 'Padding' es el espacio interior al borde y afecta la distancia entre el contenido del elemento y el borde. Ambos se utilizan para controlar el diseño y el espacio en una página web, pero tienen propósitos diferentes."
     },
     {
-      "id": 55,
+      "id": 135,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un 'media query' en CSS y cuál es su propósito?",
       "answer": "Un 'media query' en CSS es una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
     },
     {
-      "id": 56,
+      "id": 136,
       "category": "Css",
       "level": "Junior",
       "question": "¿Cómo se centra un div usando CSS?",
       "answer": "Puedes centrar un 'div' horizontalmente y verticalmente utilizando CSS de varias maneras. Aquí te muestro algunas de las técnicas más comunes:\n\n1. Centrado horizontal y vertical con Flexbox (Recomendado):\n\ncss\n.contenedor {\n display: flex;\n justify-content: center; /* Centrado horizontal */\n align-items: center; /* Centrado vertical */\n height: 100vh; /* Ajusta la altura del contenedor según la ventana */\n}\n\n\nEn este ejemplo, '.contenedor' será centrado tanto horizontal como verticalmente dentro de su elemento contenedor. La propiedad 'height: 100vh' asegura que el contenedor tenga al menos el 100% de la altura de la ventana del navegador.\n\n2. Centrado horizontal y vertical con Grid:\n\ncss\n.contenedor {\n display: grid;\n place-items: center; /* Centrado horizontal y vertical */\n height: 100vh;\n}\n\n\nAl igual que con Flexbox, esta técnica también utiliza 'height: 100vh' para asegurarse de que el contenedor ocupe al menos toda la altura de la ventana.\n\n3. Centrado horizontal con margen automático:\n\ncss\n.contenedor {\n margin: 0 auto; /* Centrado horizontal */\n width: fit-content; /* Opcional: ajusta el ancho al contenido */\n}\n\n\nEsto centrará horizontalmente el 'div' dentro de su elemento contenedor, pero no lo centrará verticalmente.\n\nElige la técnica que mejor se adapte a tus necesidades y al diseño de tu sitio web. Las técnicas con Flexbox y Grid son muy versátiles y se utilizan comúnmente para diseños modernos y responsivos."
     },
     {
-      "id": 57,
+      "id": 137,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un 'media query' en CSS y cuál es su propósito?",
       "answer": "Un 'media query' en CSS es una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
     },
     {
-      "id": 58,
+      "id": 138,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es la especificidad en CSS y cómo se resuelven los conflictos de estilos?",
       "answer": "La especificidad en CSS es un sistema que determina qué estilo se aplicará cuando existan conflictos entre reglas de estilo. Se basa en cuatro niveles de especificidad: elementos, clases y atributos, IDs y pseudo-clases/pseudo-elementos. Cuando hay conflictos, se aplica la regla con la mayor especificidad. Si la especificidad es igual, se utiliza la regla que aparece más tarde en el código CSS."
     },
     {
-      "id": 59,
+      "id": 139,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es un selector de descendiente en CSS y cuál es su sintaxis?",
       "answer": "Un selector de descendiente en CSS permite seleccionar un elemento que es descendiente de otro elemento específico. Su sintaxis implica escribir el nombre del elemento padre seguido de un espacio y luego el nombre del elemento descendiente. Por ejemplo, 'div p' seleccionaría todos los elementos 'p' que son descendientes de un elemento 'div'."
     },
     {
-      "id": 60,
+      "id": 140,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es la propiedad 'position' en CSS y cuáles son sus valores principales?",
       "answer": "La propiedad 'position' en CSS se utiliza para controlar la posición de un elemento en la página. Algunos valores principales son 'static' (posición normal de flujo), 'relative' (posición relativa al lugar que ocuparía en el flujo normal), 'absolute' (posición relativa al elemento posicionado más cercano) y 'fixed' (posición fija en relación con la ventana del navegador). Esta propiedad es fundamental para el diseño de diseño y la ubicación de elementos en la página."
     },
     {
-      "id": 61,
+      "id": 141,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es el concepto de 'z-index' en CSS y cómo se utiliza?",
+      "answer": "El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables."
+    },
+    {
+      "id": 142,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es un 'sprite' en CSS y cuál es su ventaja?",
+      "answer": "Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página."
+    },
+    {
+      "id": 143,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es el 'box-shadow' en CSS y cómo se utiliza para agregar sombras a elementos?",
+      "answer": "El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones."
+    },
+    {
+      "id": 144,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es el 'flexbox' en CSS y cuál es su propósito?",
+      "answer": "El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores."
+    },
+    {
+      "id": 145,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'grid layout' en CSS y cuál es su ventaja?",
+      "answer": "El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables(responsivos) y equilibrados."
+    },
+    {
+      "id": 146,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las animaciones CSS y cómo se definen?",
+      "answer": "Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
+    },
+    {
+      "id": 147,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'gradients' en CSS y cómo se crea un fondo degradado?",
+      "answer": "Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto."
+    },
+    {
+      "id": 148,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'transform' en CSS y cuál es su función?",
+      "answer": "El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."
+    },
+    {
+      "id": 149,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'viewport' en CSS y cómo se relaciona con el diseño web responsivo?",
+      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos."
+    },
+    {
+      "id": 150,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las variables CSS (variables personalizadas) y cómo se declaran?",
+      "answer": "Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable."
+    },
+    {
+      "id": 151,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las transiciones CSS y cómo se utilizan?",
+      "answer": "Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript."
+    },
+    {
+      "id": 152,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'transformación 3D' en CSS y cuáles son sus aplicaciones?",
+      "answer": "La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado."
+    },
+    {
+      "id": 153,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'aspect ratio' en CSS y cómo se controla?",
+      "answer": "El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador."
+    },
+    {
+      "id": 154,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'object-fit' en CSS y para qué se utiliza?",
+      "answer": "El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño."
+    },
+    {
+      "id": 155,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'customización de elementos' (Shadow DOM) en CSS y cuál es su propósito?",
+      "answer": "La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
+    },
+    {
+      "id": 156,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es el 'mix-blend-mode' en CSS y cuál es su función?",
+      "answer": "El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes."
+    },
+    {
+      "id": 157,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'función calc()' en CSS y cuándo se utiliza?",
+      "answer": "La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible."
+    },
+    {
+      "id": 158,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'propiedad clip-path' en CSS y cuál es su propósito?",
+      "answer": "La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos."
+    },
+    {
+      "id": 159,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'object-position' en CSS y cuál es su función?",
+      "answer": "'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño."
+    },
+    {
+      "id": 160,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es la 'variable de entorno' (env-var) en CSS y cómo se utiliza?",
+      "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
+    },
+    {
+      "id": 161,
+      "category": "Css",
+      "level": "Junior",
+      "question": "Explique la diferencia entre 'display: block;' y 'display: inline;' en CSS.",
+      "answer": "'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos."
+    },
+    {
+      "id": 162,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué significa 'responsive design' en CSS?",
+      "answer": "'Responsive design' en CSS se refiere a la creación de sitios web que se adaptan y responden de manera eficiente a diferentes tamaños de pantalla y dispositivos, utilizando técnicas como 'media queries' y un diseño fluido."
+    },
+    {
+      "id": 163,
+      "category": "Css",
+      "level": "Junior",
+      "question": "Explica cómo se seleccionan todos los elementos p del documento en CSS.",
+      "answer": "Para seleccionar todos los elementos 'p' del documento en CSS, puedes usar el selector de tipo: 'p { /* estilos */ }'. Esto aplicará los estilos a todos los elementos 'p'."
+    },
+    {
+      "id": 164,
+      "category": "Css",
+      "level": "Junior",
+      "question": "¿Qué es la pseudo-clase :hover en CSS y cómo se utiliza?",
+      "answer": "La pseudo-clase ':hover' en CSS se utiliza para seleccionar y aplicar estilos a un elemento cuando el usuario pasa el cursor sobre él. Por ejemplo, 'a:hover { color: red; }' cambiará el color del texto a rojo cuando el usuario pase el cursor sobre un enlace."
+    },
+    {
+      "id": 165,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre 'position: relative;' y 'position: fixed;' en CSS?",
+      "answer": "'Position: relative;' posiciona un elemento con respecto a su posición original en el flujo del documento, mientras que 'position: fixed;' lo posiciona en relación con la ventana del navegador, haciendo que permanezca fijo incluso al desplazarse."
+    },
+    {
+      "id": 166,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es 'BEM' en CSS y cuál es su propósito?",
+      "answer": "'BEM' (Block, Element, Modifier) es una convención de nomenclatura para clases en CSS que ayuda a organizar y estructurar el código CSS de manera más mantenible y modular. Divide el código en bloques (componentes), elementos y modificadores, facilitando el entendimiento y la colaboración en proyectos grandes."
+    },
+    {
+      "id": 167,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué es 'Sass' y cuál es su ventaja sobre CSS?",
+      "answer": "'Sass' es un preprocesador de CSS que agrega características como variables, anidamiento, y mixins, facilitando la escritura y el mantenimiento del código CSS. Su ventaja radica en la capacidad de usar funciones y estructuras más avanzadas, lo que mejora la eficiencia y organización del código."
+    },
+    {
+      "id": 168,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Qué significa 'mobile-first' en el diseño web y cómo se implementa en CSS?",
+      "answer": "'Mobile-first' en el diseño web significa diseñar y desarrollar primero para dispositivos móviles y luego expandirse a pantallas más grandes. Se implementa utilizando 'media queries' para aplicar estilos específicos a dispositivos más grandes, asegurando una experiencia móvil optimizada como base."
+    },
+    {
+      "id": 169,
+      "category": "Css",
+      "level": "Middle",
+      "question": "Explique la propiedad 'position: sticky;' en CSS y su uso.",
+      "answer": "'Position: sticky;' en CSS es una propiedad que combina características de 'position: relative;' y 'position: fixed;'. El elemento se comporta como 'relative' hasta que alcanza un punto de desplazamiento específico, momento en el cual se vuelve 'fixed'. Es útil para encabezados que se adhieren en la parte superior de la página al hacer scroll."
+    },
+    {
+      "id": 170,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Cuál es la diferencia entre 'em' y 'rem' en CSS?",
+      "answer": "'Em' y 'rem' son unidades de medida en CSS. 'Em' se basa en el tamaño de fuente del elemento padre, mientras que 'rem' se basa en el tamaño de fuente del elemento raíz (generalmente el elemento 'html'). 'Rem' proporciona una forma más predecible de especificar tamaños relativos en relación con el tamaño de fuente de la página."
+    },
+    {
+      "id": 171,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'CSS-in-JS' y cuál es su propósito en el desarrollo web?",
+      "answer": "'CSS-in-JS' es una técnica en la que se escriben estilos CSS directamente en archivos JavaScript. Su propósito es mejorar la modularidad y la portabilidad del código, ya que los estilos están acoplados con los componentes de JavaScript. Bibliotecas como 'Styled-components' son ejemplos de implementación de 'CSS-in-JS'."
+    },
+    {
+      "id": 172,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Cómo funciona la especificidad en CSS y cómo se calcula?",
+      "answer": "La especificidad en CSS determina qué estilo se aplicará cuando haya conflictos. Se calcula asignando valores a los selectores: 1 punto para un tipo de elemento, 10 puntos para un selector de clase, 100 puntos para un selector de ID y se acumulan para formar la especificidad completa. El estilo con la especificidad más alta prevalecerá en caso de conflictos."
+    },
+    {
+      "id": 173,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'critical CSS' y por qué es importante para el rendimiento web?",
+      "answer": "'Critical CSS' se refiere a los estilos necesarios para renderizar la parte visible de una página web inicialmente. Es importante para el rendimiento web porque acelera la carga de la página al proporcionar los estilos esenciales primero, permitiendo que la página sea utilizable más rápidamente."
+    },
+    {
+      "id": 174,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'CSS normalization' y cuál es su propósito?",
+      "answer": "'CSS normalization' es el proceso de establecer estilos consistentes en diferentes navegadores. Su propósito es crear una base uniforme para el diseño web, asegurando que los elementos HTML tengan estilos predeterminados consistentes en todos los navegadores, evitando problemas de rendimiento y presentación."
+    },
+    {
+      "id": 175,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre 'normalize.css' y 'reset.css'?",
+      "answer": "'Normalize.css' y 'reset.css' son ambos estilos utilizados para establecer estilos predeterminados consistentes en diferentes navegadores. La diferencia radica en la filosofía de cada uno: 'reset.css' establece estilos más agresivos para reiniciar completamente los estilos, mientras que 'normalize.css' mantiene algunos estilos predeterminados para elementos comunes y solo normaliza diferencias entre navegadores."
+    },
+    {
+      "id": 176,
+      "category": "Css",
+      "level": "Middle",
+      "question": "¿Cuál es la diferencia entre 'justify-content' y 'align-items' en flexbox?",
+      "answer": "'justify-content' en flexbox se utiliza para alinear elementos a lo largo del eje principal (horizontal en el caso de una fila, vertical en el caso de una columna). 'align-items' se utiliza para alinear elementos a lo largo del eje transversal. En una fila, 'align-items' afecta la alineación vertical, y en una columna, afecta la alineación horizontal."
+    },
+    {
+      "id": 177,
+      "category": "Css",
+      "level": "Middle",
+      "question": "Explique el concepto de 'viewport' en CSS y su importancia en el diseño web móvil.",
+      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. Es especialmente importante en el diseño web móvil, donde el tamaño de la pantalla varía. Puedes controlar el 'viewport' con la etiqueta meta viewport en HTML, especificando el ancho, la escala y otros atributos para garantizar una presentación adecuada en dispositivos móviles."
+    },
+    {
+      "id": 178,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué son las 'CSS Custom Properties' y cuál es su ventaja?",
+      "answer": "Las 'CSS Custom Properties', también conocidas como variables CSS, son variables definidas por el usuario que contienen valores específicos. Su ventaja radica en la capacidad de reutilizar valores en todo el documento y cambiarlos dinámicamente mediante JavaScript. Esto mejora la consistencia y facilita la actualización de estilos en toda la aplicación."
+    },
+    {
+      "id": 179,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Qué es 'CSS Houdini' y cuál es su papel en el desarrollo web?",
+      "answer": "'CSS Houdini' es un conjunto de API que permiten a los desarrolladores extender y mejorar el motor de renderizado CSS del navegador. Su objetivo es dar a los desarrolladores más control sobre el flujo de trabajo de estilo, permitiendo la creación de funciones y mejorando la capacidad de rendimiento del navegador."
+    },
+    {
+      "id": 180,
+      "category": "Css",
+      "level": "Senior",
+      "question": "¿Cuándo es apropiado utilizar 'important' en CSS y cuáles son las consideraciones?",
+      "answer": "La regla '!important' en CSS se utiliza para dar prioridad a una regla específica y anular otras reglas. Se debe usar con precaución, ya que puede dificultar el mantenimiento y la resolución de conflictos. Es apropiado utilizarlo en casos excepcionales donde se necesita asegurar que una regla prevalezca, pero su uso excesivo puede causar problemas de mantenimiento."
+    },
+    {
+      "id": 181,
       "category": "Javascript",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre undefined y null?",
       "answer": "undefined representa una variable que no ha sido declarada o a la que no se le ha asignado un valor, mientras que null representa un valor intencionadamente vacío o ausente."
     },
     {
-      "id": 62,
+      "id": 182,
       "category": "Javascript",
       "level": "Junior",
       "question": "¿Qué es el scope en JavaScript?",
       "answer": "El scope en JavaScript se refiere al alcance o contexto en el que una variable o función es accesible dentro del código. Puede ser global o local, y determina dónde una variable o función puede ser utilizada dentro de un programa."
     },
     {
-      "id": 63,
+      "id": 183,
       "category": "",
       "level": "",
       "question": "",
@@ -2429,146 +3269,6 @@
       "level": "Junior",
       "question": "¿Qué es Git Pull y cuál es su propósito?",
       "answer": "Git Pull es un comando que se utiliza para descargar cambios desde un repositorio remoto y fusionarlos automáticamente en la rama actual. Su propósito es mantener tu copia local actualizada con los cambios remotos."
-    },
-    {
-      "id": 281,
-      "category": "Css",
-      "level": "Middle",
-      "question": "¿Qué es el concepto de 'z-index' en CSS y cómo se utiliza?",
-      "answer": "El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables."
-    },
-    {
-      "id": 282,
-      "category": "Css",
-      "level": "Middle",
-      "question": "¿Qué es un 'sprite' en CSS y cuál es su ventaja?",
-      "answer": "Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página."
-    },
-    {
-      "id": 283,
-      "category": "Css",
-      "level": "Middle",
-      "question": "¿Qué es el 'box-shadow' en CSS y cómo se utiliza para agregar sombras a elementos?",
-      "answer": "El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones."
-    },
-    {
-      "id": 284,
-      "category": "Css",
-      "level": "Middle",
-      "question": "¿Qué es el 'flexbox' en CSS y cuál es su propósito?",
-      "answer": "El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores."
-    },
-    {
-      "id": 285,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es el 'grid layout' en CSS y cuál es su ventaja?",
-      "answer": "El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables(responsivos) y equilibrados."
-    },
-    {
-      "id": 286,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué son las animaciones CSS y cómo se definen?",
-      "answer": "Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
-    },
-    {
-      "id": 287,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es el 'gradients' en CSS y cómo se crea un fondo degradado?",
-      "answer": "Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto."
-    },
-    {
-      "id": 288,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es 'transform' en CSS y cuál es su función?",
-      "answer": "El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."
-    },
-    {
-      "id": 289,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es 'viewport' en CSS y cómo se relaciona con el diseño web responsivo?",
-      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos."
-    },
-    {
-      "id": 290,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué son las variables CSS (variables personalizadas) y cómo se declaran?",
-      "answer": "Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable."
-    },
-    {
-      "id": 291,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué son las transiciones CSS y cómo se utilizan?",
-      "answer": "Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript."
-    },
-    {
-      "id": 292,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es la 'transformación 3D' en CSS y cuáles son sus aplicaciones?",
-      "answer": "La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado."
-    },
-    {
-      "id": 293,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es el 'aspect ratio' en CSS y cómo se controla?",
-      "answer": "El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador."
-    },
-    {
-      "id": 294,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es el 'object-fit' en CSS y para qué se utiliza?",
-      "answer": "El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño."
-    },
-    {
-      "id": 295,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es la 'customización de elementos' (Shadow DOM) en CSS y cuál es su propósito?",
-      "answer": "La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
-    },
-    {
-      "id": 296,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es el 'mix-blend-mode' en CSS y cuál es su función?",
-      "answer": "El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes."
-    },
-    {
-      "id": 297,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es la 'función calc()' en CSS y cuándo se utiliza?",
-      "answer": "La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible."
-    },
-    {
-      "id": 298,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es la 'propiedad clip-path' en CSS y cuál es su propósito?",
-      "answer": "La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos."
-    },
-    {
-      "id": 299,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es 'object-position' en CSS y cuál es su función?",
-      "answer": "'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño."
-    },
-    {
-      "id": 300,
-      "category": "Css",
-      "level": "Senior",
-      "question": "¿Qué es la 'variable de entorno' (env-var) en CSS y cómo se utiliza?",
-      "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
     }
   ],
   "weblinks": [
@@ -2586,20 +3286,20 @@
     },
     {
       "id": 3,
-      "name": "",
-      "link": "",
+      "name": "RXJS",
+      "link": "https://rxjs-dev.firebaseapp.com/",
       "category": "oficialDoc"
     },
     {
       "id": 4,
-      "name": "",
-      "link": "",
+      "name": "DevDocs",
+      "link": "https://devdocs.io/",
       "category": "oficialDoc"
     },
     {
       "id": 5,
-      "name": "",
-      "link": "",
+      "name": "MDN Web Docs",
+      "link": "https://developer.mozilla.org/",
       "category": "oficialDoc"
     },
     {

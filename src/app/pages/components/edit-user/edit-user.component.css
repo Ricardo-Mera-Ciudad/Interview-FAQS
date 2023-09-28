@@ -42,6 +42,7 @@
     background-color: #E1EFFB;
     color: #0f213B;
     padding: 5px 15px;
+    font-size: 16px;
     @media(min-width: 768px) {
       padding: 10px 30px;
     }

@@ -9,6 +9,8 @@ import { LoginPageComponent } from './auth/pages/login/login-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { RegisterComponent } from './auth/pages/register/register.component';
 import { UserDataComponent } from './pages/components/user-data/user-data.component';
+import { WeblinksComponent } from './pages/weblinks/weblinks.component';
+import { QuizComponent } from './pages/quiz/quiz.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,14 @@ const routes: Routes = [
       { path: 'favorites', component: FavoritesComponent },
       { path: '', redirectTo: 'data', pathMatch: 'full' }
     ]
+  },
+  {
+    path:'weblinks',
+    component:WeblinksComponent
+  },
+  {
+    path:'quiz',
+    component:QuizComponent
   },
   {
     path: '**',

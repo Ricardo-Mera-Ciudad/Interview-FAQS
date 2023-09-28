@@ -4,6 +4,8 @@ export interface Question {
   category: Category,
   question: string,
   answer: string,
+  correctAnswer: string,
+  allAnswers: []
 }
 
 export enum Level {

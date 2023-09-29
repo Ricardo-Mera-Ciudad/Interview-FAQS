@@ -1,24 +1,38 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from '../services/data.service';
-import { Question } from 'src/app/shared/interfaces/answerQuestion.interface';
+import { Question, QuestionWithAnswer } from 'src/app/shared/interfaces/answerQuestion.interface';
+import { PagesService } from '../services/pages.service';
 
 @Component({
-  selector: 'shared-quiz',
+  selector: 'app-quiz',
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit{
 
-  public questions: Question[] = []
+  public questions: QuestionWithAnswer[] = [];
+  public selectedAnswer: string | null = null;
+  public result: number = 0;
+  public isSubmitted: boolean = false;
 
   private router = inject(Router);
   private dataService = inject(DataService);
+  private pagesService = inject(PagesService);
 
   ngOnInit(): void {
-    this.dataService.getRandomQuestions('Angular', 10).subscribe((questions) => {
-      this.questions = questions;
+    this.loadCategoryRandomQuestions();
+  }
 
+  loadCategoryRandomQuestions() {
+    this.pagesService.selectedCategory$.subscribe((selectedCategory) => {
+      this.getRandomQuestions(selectedCategory)
+    })
+  }
+
+  getRandomQuestions(selectedCategory: string){
+    this.dataService.getRandomQuestions(selectedCategory, 10).subscribe((questions) => {
+      this.questions = questions.map((question) => ({...question, selectedAnswer: null}));
     });
   }
 
@@ -26,5 +40,29 @@ export class QuizComponent implements OnInit{
     this.router.navigate(['/content-page']);
   }
 
-  onSubmit(){}
+  isCorrect(question: QuestionWithAnswer): boolean {
+    return this.isSubmitted && question.selectedAnswer === question.correctAnswer;
+  }
+
+  areAllQuestionsAnswered(): boolean {
+    return this.questions.every((question) => question.selectedAnswer !== null);
+  }
+
+  calculateResult(): number {
+    let correctAnswers = 0;
+    for (const question of this.questions) {
+      if (question.selectedAnswer === question.correctAnswer) {
+        correctAnswers++;
+      }
+    }
+    return correctAnswers;
+  }
+
+  onSubmit(){
+    this.isSubmitted = true;
+    this.result = this.calculateResult();
+  }
+
 }
+
+

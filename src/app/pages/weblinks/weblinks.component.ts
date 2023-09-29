@@ -1,7 +1,8 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, TemplateRef } from '@angular/core';
 import { WeblinksService } from '../services/weblinks.service';
 import { Weblinks } from 'src/app/shared/interfaces/weblinks.interface';
-import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-weblinks',
@@ -10,42 +11,47 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class WeblinksComponent implements OnInit {
 
-
   private weblinksService = inject(WeblinksService);
-  public links!:Weblinks[];
-  public officialDoc!:Weblinks[]
-  public challenges!:Weblinks[]
-  public courses!:Weblinks[]
-  public resources!:Weblinks[]
+  private modalService = inject(NgbModal);
+  public links!: Weblinks[];
+  public officialDoc!: Weblinks[]
+  public challenges!: Weblinks[]
+  public courses!: Weblinks[]
+  public resources!: Weblinks[]
+
 
   ngOnInit(): void {
     this.getAllLinks()
   }
 
+
   getAllLinks() {
     return this.weblinksService.getAllWeblinks()
       .subscribe(data => {
-        // Crear un objeto que contendrá las categorías como propiedades y sus elementos como arrays
-      const categorizedLinks:any = {};
+    
+        const categorizedLinks: any = {};
 
-      // Iterar a través de los datos y organizarlos por categoría
-      data.forEach(link => {
-        const category = link.category;
+        data.forEach(link => {
+          const category = link.category;
 
-        // Si aún no existe un array para la categoría actual, créalo
-        if (!categorizedLinks[category]) {
-          categorizedLinks[category] = [];
-        }
+          if (!categorizedLinks[category]) {
+            categorizedLinks[category] = [];
+          }
 
-        // Agrega el objeto actual al array correspondiente a su categoría
-        categorizedLinks[category].push(link);
-        
-        this.officialDoc = categorizedLinks.officialDoc;
-        this.challenges = categorizedLinks.challenges;
-        this.courses = categorizedLinks.courses;
-        this.resources = categorizedLinks.resources;
-      });
-     
+          categorizedLinks[category].push(link);
+
+          this.officialDoc = categorizedLinks.officialDoc;
+          this.challenges = categorizedLinks.challenges;
+          this.courses = categorizedLinks.courses;
+          this.resources = categorizedLinks.resources;
+        });
       })
   }
+
+
+  openVerticallyCentered(content: TemplateRef<Weblinks[]>):void {
+		this.modalService.open(content, { centered: true });
+	}
+
+
 }

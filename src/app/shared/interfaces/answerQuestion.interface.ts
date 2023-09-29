@@ -7,6 +7,9 @@ export interface Question {
   correctAnswer: string,
   allAnswers: []
 }
+export interface QuestionWithAnswer extends Question {
+  selectedAnswer: string | null;
+}
 
 export enum Level {
   Junior = "Junior",

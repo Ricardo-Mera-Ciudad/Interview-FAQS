@@ -9,6 +9,19 @@
 }
 
 
-.prueba{
-    margin-top:150px
+.accordeon-container-principal{
+    
+    margin-top:120px
+}
+
+.accordion-container{
+
+    @media(width:360px){
+        margin-bottom: 300px;
+        height: 200px;
+    }
+
+    margin-bottom: 100px;
+    height: 300px;
+    
 }

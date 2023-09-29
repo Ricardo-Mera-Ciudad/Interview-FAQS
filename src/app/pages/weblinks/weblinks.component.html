@@ -1,7 +1,7 @@
 <div class="container-main-component general-container">
 
   <div class="container text-center accordeon-container-principal">
-    <div class="row col-6 col-md-8">
+    <div class="row row-cols-2">
 
       <div class="col accordion-container">
         <div class="accordion accordion-flush" id="officialDoc">
@@ -15,7 +15,7 @@
             <div *ngFor="let documentation of officialDoc" id="officialDocOne" class="accordion-collapse collapse"
               data-bs-parent="#officialDoc">
               <div class="accordion-body">
-                <a href=documentation.link>{{documentation.name}}</a>
+                <a [href]=documentation.link>{{documentation.name}}</a>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@
             <div *ngFor="let challenge of challenges, let i = index" id="challengesOne"
               class="accordion-collapse collapse" data-bs-parent="#challenges">
               <div class="accordion-body">
-                <a href=challenge.link>{{challenge.name}}</a>
+                <a [href]=challenge.link>{{challenge.name}}</a>
 
               </div>
             </div>
@@ -56,7 +56,7 @@
             <div *ngFor="let course of courses" id="coursesOne" class="accordion-collapse collapse"
               data-bs-parent="#courses">
               <div class="accordion-body">
-                <a href=course.link>{{course.name}}</a>
+                <a [href]=course.link>{{course.name}}</a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
             <div *ngFor="let resource of resources" id="resourcesOne" class="accordion-collapse collapse"
               data-bs-parent="#resources">
               <div class="accordion-body">
-                <a href=resource.link>{{resource.name}}</a>
+                <a [href]=resource.link>{{resource.name}}</a>
               </div>
             </div>
           </div>

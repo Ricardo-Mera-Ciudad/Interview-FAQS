@@ -71,7 +71,7 @@
       "level": "Junior",
       "question": "Indica al menos 3 formas en las que puedan comunicarse los componentes en Angular",
       "answer": "Binding (vinculación de entrada INPUT y vinculación de salida OUTPUT), Servicios (servicios compartidos inyectado en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL),LocalStorage y SessionStorage (para la comunicación persistente entre sesiones o pestañas del navegador),Navegación con parámetros de ruta (a través de los parámetros de ruta en la URL cuando se navega entre diferentes vistas de la aplicación),Inyección de Dependencia (DI - Dependency Injection),  Directivas personalizadas...",
-      "correctAnswer": "Servicios (servicios compartidos inyectados en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL), Inyección de Dependencia (DI - Dependency Injection)",
+      "correctAnswer": "d) Servicios (servicios compartidos inyectados en componentes), Router y rutas anidadas (Los datos pueden transmitirse a través de la URL), Inyección de Dependencia (DI - Dependency Injection)",
       "allAnswers": [
         "a) Binding (vinculación de entrada INPUT y vinculación de salida OUTPUT)",
         "b) LocalStorage y SessionStorage (para la comunicación persistente entre sesiones o pestañas del navegador)",
@@ -85,7 +85,7 @@
       "level": "Junior",
       "question": "¿Que es una plantilla?",
       "answer": "Una plantilla o template es una vista Html donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular.",
-      "correctAnswer": "Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular.",
+      "correctAnswer": "c) Una plantilla o template es una vista HTML donde puedes mostrar datos al conectar sus elementos con las propiedades o métodos de un componente Angular.",
       "allAnswers": [
         "a) Es una hoja de estilo CSS utilizada en Angular.",
         "b) Es un archivo JavaScript que define la lógica de un componente Angular.",
@@ -1736,420 +1736,840 @@
       "category": "Css",
       "level": "Junior",
       "question": "Explique en qué se diferencia un selector de clase de CSS de un selector id",
-      "answer": "Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu Html. Múltiples elementos pueden compartir la misma clase y tener estilos similares. Un selector de ID en CSS se denota con un símbolo de almohadilla o numeral (por ejemplo, '#mi-id') y debe ser único en todo tu documento Html. Solo un elemento puede tener un ID específico, y se utiliza cuando deseas aplicar estilos o manipular ese elemento en particular."
+      "answer": "Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu HTML. Múltiples elementos pueden compartir la misma clase y tener estilos similares. Un selector de ID en CSS se denota con un símbolo de almohadilla o numeral (por ejemplo, '#mi-id') y debe ser único en todo tu documento HTML. Solo un elemento puede tener un ID específico, y se utiliza cuando deseas aplicar estilos o manipular ese elemento en particular.",
+      "correctAnswer": "a) Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu HTML. Múltiples elementos pueden compartir la misma clase y tener estilos similares. Un selector de ID en CSS se denota con un símbolo de almohadilla o numeral (por ejemplo, '#mi-id') y debe ser único en todo tu documento HTML. Solo un elemento puede tener un ID específico, y se utiliza cuando deseas aplicar estilos o manipular ese elemento en particular.",
+      "allAnswers": [
+        "a) Un selector de clase en CSS se denota con un punto (por ejemplo, '.mi-clase') y puede aplicarse a múltiples elementos en tu HTML. Múltiples elementos pueden compartir la misma clase y tener estilos similares.",
+        "b) Un selector de clase en CSS se denota con un símbolo de almohadilla (por ejemplo, '#mi-clase') y puede aplicarse a múltiples elementos.",
+        "c) Los selectores de clase y ID son lo mismo en CSS.",
+        "d) Un selector de ID en CSS se denota con un punto (por ejemplo, '.mi-id') y puede aplicarse a múltiples elementos en tu HTML. Múltiples elementos pueden compartir el mismo ID y tener estilos similares."
+      ]
     },
     {
       "id": 122,
       "category": "Css",
       "level": "Junior",
-      "question": "¿Cuál es la diferencia entre las posiciones relative, fixed, absolute y static para un elemento dado?",
-      "answer": "Estas posiciones afectan cómo se ubica un elemento en relación con su posición inicial y otros elementos. Static (Estático):Valor predeterminado para todos los elementos Html. Los elementos se muestran en el orden en que aparecen en el flujo normal del documento. No se ven afectados por las propiedades top, right, bottom o left. No se pueden superponer a otros elementos ni ajustar su posición en relación con otros elementos. Relative (Relativo):Los elementos se desplazan en relación con su posición normal. Puedes usar las propiedades top, right, bottom o left para mover el elemento desde su posición original. El espacio ocupado por el elemento en su posición original se mantiene, lo que significa que otros elementos no se ven afectados por su movimiento. Absolute (Absoluto): Los elementos se posicionan en relación con el ancestro más cercano que tenga una posición relativa, absoluta o fija. Los elementos absolutos se eliminan del flujo normal del documento, por lo que no ocupan espacio en el diseño original. Puedes usar top, right, bottom o left para ajustar su posición en relación con el ancestro posicionado. Si no hay un ancestro posicionado, se posicionan en relación con el documento Html.Fixed (Fijo): Los elementos se posicionan de forma fija en relación con la ventana gráfica del navegador, por lo que permanecen en la misma posición incluso si se desplaza la página. Se usan las propiedades top, right, bottom o left para definir su posición en relación con la ventana gráfica. No afectan ni se ven afectados por otros elementos en el documento."
-    },
+      "question": "Explica la diferencia entre 'position: relative' y 'position: absolute' en CSS.",
+      "answer": "La propiedad 'position: relative' en CSS posiciona un elemento en relación con su posición normal. Puedes desplazar el elemento utilizando las propiedades top, right, bottom, y left. Importante destacar que, a pesar de moverse, el espacio ocupado por el elemento en el flujo normal del documento se mantiene. Por otro lado, 'position: absolute' posiciona un elemento en relación con el primer ancestro posicionado (con 'position: relative', 'position: absolute', o 'position: fixed'). Si no hay un ancestro posicionado, se posicionará en relación con el documento HTML. Los elementos con 'position: absolute' son eliminados del flujo normal del documento, por lo que no afectan al diseño original y pueden superponerse a otros elementos.",
+      "correctAnswer": "c) La propiedad 'position: relative' en CSS posiciona un elemento en relación con su posición normal. Puedes desplazar el elemento utilizando las propiedades top, right, bottom, y left. Importante destacar que, a pesar de moverse, el espacio ocupado por el elemento en el flujo normal del documento se mantiene. Por otro lado, 'position: absolute' posiciona un elemento en relación con el primer ancestro posicionado (con 'position: relative', 'position: absolute', o 'position: fixed'). Si no hay un ancestro posicionado, se posicionará en relación con el documento HTML. Los elementos con 'position: absolute' son eliminados del flujo normal del documento, por lo que no afectan al diseño original y pueden superponerse a otros elementos.",
+      "allAnswers": [
+        "a) 'position: relative' y 'position: absolute' son idénticos y pueden usarse de manera intercambiable en cualquier contexto.",
+        "b) 'position: relative' y 'position: absolute' no tienen diferencias; ambos colocan un elemento en la misma posición en la página.",
+        "c) 'position: relative' en CSS posiciona un elemento en relación con su posición normal. 'position: absolute' posiciona un elemento en relación con el primer ancestro posicionado (con 'position: relative', 'position: absolute', o 'position: fixed'). Si no hay un ancestro posicionado, se posicionará en relación con el documento HTML. Los elementos con 'position: absolute' son eliminados del flujo normal del documento, por lo que no afectan al diseño original y pueden superponerse a otros elementos.",
+        "d) 'position: relative' solo puede usarse en elementos inline, mientras que 'position: absolute' solo puede usarse en elementos block."
+      ]
+    },    
     {
       "id": 123,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un selector de tipo en CSS?",
-      "answer": "Un selector de tipo en CSS selecciona todos los elementos de un tipo específico en tu HTML. Por ejemplo, 'p' seleccionaría todos los párrafos en tu página y les aplicaría estilos."
+      "answer": "Un selector de tipo en CSS selecciona todos los elementos de un tipo específico en tu HTML. Por ejemplo, 'p' seleccionaría todos los párrafos en tu página y les aplicaría estilos.",
+      "correctAnswer": "b) Un selector de tipo en CSS selecciona todos los elementos de un tipo específico en tu HTML. Por ejemplo, 'p' seleccionaría todos los párrafos en tu página y les aplicaría estilos.",
+      "allAnswers": [
+        "a) Para solicitar recursos adicionales en una página web.",
+        "b) Un selector de tipo en CSS selecciona todos los elementos de un tipo específico en tu HTML. Por ejemplo, 'p' seleccionaría todos los párrafos en tu página y les aplicaría estilos.",
+        "c) Una técnica para almacenar datos en el cliente de manera persistente.",        
+        "d) Un protocolo de transferencia de archivos en el servidor web."
+      ]
     },
     {
       "id": 124,
       "category": "Css",
       "level": "Junior",
-      "question": "¿Qué significa 'cascading' en 'Cascading Style Sheets' (CSS) y cómo funciona?",
-      "answer": "La palabra 'cascading' en CSS se refiere a la forma en que se aplican y priorizan los estilos. Los estilos pueden provenir de diferentes fuentes, como el propio estilo del elemento, hojas de estilo externas y hojas de estilo internas. La cascada determina la prioridad de estos estilos y cómo se aplican en el documento, siguiendo un conjunto de reglas y especificidad."
-    },
+      "question": "En CSS, ¿qué significa el término 'cascading' y cómo influye en la aplicación de estilos?",
+      "answer": "En CSS, 'cascading' se refiere a la forma en que se aplican y priorizan los estilos. La cascada determina cómo los estilos se heredan y sobrescriben entre los diferentes niveles, como el estilo del elemento, las hojas de estilo externas e internas, así como los estilos del usuario. Los estilos más específicos y cercanos al elemento tienen mayor prioridad en la cascada.",
+      "correctAnswer": "c) En CSS, 'cascading' se refiere a la forma en que se aplican y priorizan los estilos. La cascada determina cómo los estilos se heredan y sobrescriben entre los diferentes niveles, como el estilo del elemento, las hojas de estilo externas e internas, así como los estilos del usuario. Los estilos más específicos y cercanos al elemento tienen mayor prioridad en la cascada.",
+      "allAnswers": [
+        "a) 'Cascading' en CSS describe la animación fluida de elementos en una página web.",
+        "b) Se refiere a un método para definir estructuras de datos en CSS.",
+        "c) En CSS, 'cascading' se refiere a la forma en que se aplican y priorizan los estilos. La cascada determina cómo los estilos se heredan y sobrescriben entre los diferentes niveles, como el estilo del elemento, las hojas de estilo externas e internas, así como los estilos del usuario. Los estilos más específicos y cercanos al elemento tienen mayor prioridad en la cascada.",
+        "d) Es un protocolo para la transmisión segura de datos en la web."
+      ]
+    },    
     {
       "id": 125,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un selector de atributo en CSS y cuál es su uso común?",
-      "answer": "Un selector de atributo en CSS permite seleccionar elementos HTML en función de los valores de sus atributos. Se denota utilizando corchetes (por ejemplo, 'a[href='https://www.ejemplo.com'] seleccionaría todos los enlaces con el atributo 'href' que tenga el valor 'https://www.ejemplo.com'). Es útil para aplicar estilos a elementos específicos basados en sus atributos."
-    },
+      "answer": "Un selector de atributo en CSS permite seleccionar elementos HTML en función de los valores de sus atributos. Se denota utilizando corchetes (por ejemplo, 'a[href='https://www.ejemplo.com'] seleccionaría todos los enlaces con el atributo 'href' que tenga el valor 'https://www.ejemplo.com'). Es útil para aplicar estilos a elementos específicos basados en sus atributos.",
+      "correctAnswer": "a) Permite seleccionar elementos HTML en función de los valores de sus atributos. Se denota utilizando corchetes.",
+      "allAnswers": [
+        "a) Permite seleccionar elementos HTML en función de los valores de sus atributos. Se denota utilizando corchetes.",
+        "b) Se utiliza para aplicar estilos a todos los elementos de la página web.",
+        "c) Solo se puede aplicar a elementos con el atributo 'id'.",
+        "d) Sirve para seleccionar elementos basados en su posición en el documento."
+      ]
+    },    
     {
       "id": 126,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué significa el modelo de caja o 'box model' en CSS y cuáles son sus componentes?",
-      "answer": "El 'box model' en CSS es un concepto fundamental que describe cómo se representa un elemento en una página web. Tiene cuatro componentes principales: el contenido (content), el padding, el borde (border) y el margen (margin). Cada uno de estos componentes afecta el tamaño y el diseño de un elemento en la página."
-    },
+      "answer": "El 'box model' en CSS es un concepto fundamental que describe cómo se representa un elemento en una página web. Tiene cuatro componentes principales: el contenido (content), el padding, el borde (border) y el margen (margin). Cada uno de estos componentes afecta el tamaño y el diseño de un elemento en la página.",
+      "correctAnswer": "d) Es un concepto fundamental que describe cómo se representa un elemento en una página web. Tiene cuatro componentes principales: el contenido, el padding, el borde y el margen.",
+      "allAnswers": [
+        "a) Define la estructura de una caja en una página web.",
+        "b) Solo se aplica a elementos de tipo 'div'.",
+        "c) Se utiliza exclusivamente para crear efectos de animación en CSS.",
+        "d) Es un concepto fundamental que describe cómo se representa un elemento en una página web. Tiene cuatro componentes principales: el contenido, el padding, el borde y el margen."
+      ]
+    },    
     {
       "id": 127,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es la propiedad 'color' en CSS y cuál es su propósito?",
-      "answer": "La propiedad 'color' en CSS se utiliza para especificar el color del texto en un elemento HTML. Puedes definirlo utilizando nombres de colores, códigos hexadecimales o valores RGB para personalizar la apariencia del texto."
-    },
+      "answer": "La propiedad 'color' en CSS se utiliza para especificar el color del texto en un elemento HTML. Puedes definirlo utilizando nombres de colores, códigos hexadecimales o valores RGB para personalizar la apariencia del texto.",
+      "correctAnswer": "a) Es utilizada para especificar el color del texto en un elemento HTML. Puedes definirlo utilizando nombres de colores, códigos hexadecimales o valores RGB para personalizar la apariencia del texto.",
+      "allAnswers": [
+        "a) Es utilizada para especificar el color del texto en un elemento HTML. Puedes definirlo utilizando nombres de colores, códigos hexadecimales o valores RGB para personalizar la apariencia del texto.",
+        "b) Controla el tamaño del texto en un elemento HTML.",
+        "c) Define la fuente del texto en una página web.",
+        "d) Determina el espaciado entre las letras de un texto."
+      ]
+    },    
     {
       "id": 128,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es el 'box-sizing' en CSS y cómo afecta al modelo de caja?",
-      "answer": "El 'box-sizing' en CSS es una propiedad que determina cómo se calcula el tamaño total de un elemento, incluyendo su contenido, padding y borde. Puede tener dos valores principales: 'content-box' (el tamaño se calcula excluyendo el padding y el borde) y 'border-box' (el tamaño incluye el padding y el borde en el cálculo). Esta propiedad afecta directamente al modelo de caja y cómo se representan los elementos en la página."
-    },
+      "answer": "El 'box-sizing' en CSS es una propiedad que determina cómo se calcula el tamaño total de un elemento, incluyendo su contenido, padding y borde. Puede tener dos valores principales: 'content-box' (el tamaño se calcula excluyendo el padding y el borde) y 'border-box' (el tamaño incluye el padding y el borde en el cálculo). Esta propiedad afecta directamente al modelo de caja y cómo se representan los elementos en la página.",
+      "correctAnswer": "c) Determina cómo se calcula el tamaño total de un elemento, incluyendo su contenido, padding y borde. Puede tener dos valores principales: 'content-box' y 'border-box'.",
+      "allAnswers": [
+        "a) Es una propiedad que define el color del borde de un elemento.",
+        "b) Se utiliza para establecer el espaciado interno de un elemento.",
+        "c) Determina cómo se calcula el tamaño total de un elemento, incluyendo su contenido, padding y borde. Puede tener dos valores principales: 'content-box' y 'border-box'.",
+        "d) Controla el tamaño del elemento en la página."
+      ]
+    },    
     {
       "id": 129,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es el 'float' en CSS y cuál es su propósito?",
-      "answer": "El 'float' en CSS es una propiedad que se utiliza para colocar elementos en una página web a la izquierda o la derecha de su contenedor. Esto permite que otros elementos fluyan alrededor de él. Es comúnmente utilizado para crear diseños de columnas y diseños de página más complejos."
-    },
+      "answer": "El 'float' en CSS es una propiedad que se utiliza para colocar elementos en una página web a la izquierda o la derecha de su contenedor. Esto permite que otros elementos fluyan alrededor de él. Es comúnmente utilizado para crear diseños de columnas y diseños de página más complejos.",
+      "correctAnswer": "b) Se utiliza para colocar elementos en una página web a la izquierda o la derecha de su contenedor, permitiendo que otros elementos fluyan alrededor de él. Es comúnmente utilizado para crear diseños de columnas y diseños de página más complejos.",
+      "allAnswers": [
+        "a) Define el tamaño del texto en un elemento HTML.",
+        "b) Se utiliza para colocar elementos en una página web a la izquierda o la derecha de su contenedor, permitiendo que otros elementos fluyan alrededor de él. Es comúnmente utilizado para crear diseños de columnas y diseños de página más complejos.",
+        "c) Controla el espaciado interno de un elemento.",        
+        "d) Determina la transparencia de un elemento en la página."
+      ]
+    },    
     {
       "id": 130,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un pseudo-elemento en CSS y cuál es su sintaxis?",
-      "answer": "Un pseudo-elemento en CSS es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after'). Los pseudo-elementos se utilizan para crear contenido adicional, como elementos de lista o decoraciones, mediante CSS."
-    },
+      "answer": "Un pseudo-elemento en CSS es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after'). Los pseudo-elementos se utilizan para crear contenido adicional, como elementos de lista o decoraciones, mediante CSS.",
+      "correctAnswer": "d) Es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after').",
+      "allAnswers": [
+        "a) Define el color de fondo de un elemento HTML.",       
+        "b) Controla el espaciado interno de un elemento.",
+        "c) Se utiliza para posicionar un elemento en la página.",
+        "d) Es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after')."
+      ]
+    },    
     {
       "id": 131,
       "category": "Css",
       "level": "Junior",
-      "question": "¿Qué es el 'display' en CSS y cuáles son algunos valores comunes para esta propiedad?",
-      "answer": "El 'display' en CSS determina cómo se muestra un elemento en la página. Algunos valores comunes para esta propiedad son 'block' (el elemento ocupa todo el ancho disponible y comienza en una nueva línea), 'inline' (el elemento se muestra en la misma línea que el contenido circundante) y 'none' (el elemento no se muestra en absoluto). Esta propiedad es fundamental para controlar el diseño y la estructura de una página web."
-    },
+      "question": "En CSS, ¿qué hace la propiedad 'display' y cuáles son algunos de sus posibles valores?",
+      "answer": "La propiedad 'display' en CSS se utiliza para controlar cómo se muestra un elemento en la página. Algunos de sus valores posibles son 'block', 'inline', 'inline-block', 'flex' y 'grid'. Cada valor afecta la disposición y el comportamiento del elemento en el diseño.",
+      "correctAnswer": "b) Se utiliza para controlar cómo se muestra un elemento en la página. Algunos de sus valores posibles son 'block', 'inline', 'inline-block', 'flex' y 'grid'. Cada valor afecta la disposición y el comportamiento del elemento en el diseño.",
+      "allAnswers": [
+        "a) Define el tamaño del elemento en la página.",
+        "b) Se utiliza para controlar cómo se muestra un elemento en la página. Algunos de sus valores posibles son 'block', 'inline', 'inline-block', 'flex' y 'grid'. Cada valor afecta la disposición y el comportamiento del elemento en el diseño.",
+        "c) Determina el espaciado interno del elemento.",
+        "d) Es utilizado para establecer la transparencia del elemento."
+      ]
+    },    
     {
       "id": 132,
       "category": "Css",
       "level": "Junior",
       "question": "¿Cómo se comenta un bloque de código CSS?",
-      "answer": "Para comentar un bloque de código CSS, puedes encerrar el comentario entre '/' y '/'. Todo lo que esté dentro de estos delimitadores será tratado como comentario y no afectará el estilo de la página. Esto es útil para incluir notas y explicaciones en tu código CSS."
-    },
+      "answer": "Para comentar un bloque de código CSS, puedes encerrar el comentario entre '/*' y '*/'. Todo lo que esté dentro de estos delimitadores será tratado como comentario y no afectará el estilo de la página. Esto es útil para incluir notas y explicaciones en tu código CSS.",
+      "correctAnswer": "a) Encerrando el comentario entre '/*' y '*/'. Todo lo que esté dentro de estos delimitadores será tratado como comentario y no afectará el estilo de la página.",
+      "allAnswers": [
+        "a) Encerrando el comentario entre '/*' y '*/'. Todo lo que esté dentro de estos delimitadores será tratado como comentario y no afectará el estilo de la página.",
+        "b) Utilizando el símbolo '#' al inicio de la línea.",
+        "c) Colocando el comentario entre paréntesis '(' y ')'.",
+        "d) Incluyendo el comentario entre corchetes '{' y '}'."
+      ]
+    },    
     {
       "id": 133,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es la propiedad 'background' en CSS y cuál es su función?",
-      "answer": "La propiedad 'background' en CSS se utiliza para definir el fondo de un elemento HTML. Puedes establecer valores como colores de fondo, imágenes de fondo y repetición del fondo. Esta propiedad es esencial para diseñar la apariencia visual de un elemento y su entorno."
-    },
+      "answer": "La propiedad 'background' en CSS se utiliza para definir el fondo de un elemento HTML. Puedes establecer valores como colores de fondo, imágenes de fondo y repetición del fondo. Esta propiedad es esencial para diseñar la apariencia visual de un elemento y su entorno.",
+      "correctAnswer": "b) Se utiliza para definir el fondo de un elemento HTML. Puedes establecer valores como colores de fondo, imágenes de fondo y repetición del fondo. Esta propiedad es esencial para diseñar la apariencia visual de un elemento y su entorno.",
+      "allAnswers": [
+        "a) Controla el tamaño del texto en un elemento HTML.",
+        "b) Se utiliza para definir el fondo de un elemento HTML. Puedes establecer valores como colores de fondo, imágenes de fondo y repetición del fondo. Esta propiedad es esencial para diseñar la apariencia visual de un elemento y su entorno.",
+        "c) Determina la transparencia de un elemento en la página.",
+        "d) Es utilizada para posicionar un elemento en la página."
+      ]
+    },    
     {
       "id": 134,
       "category": "Css",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre 'margin' y 'padding' en CSS?",
-      "answer": "La diferencia principal entre 'margin' y 'padding' en CSS es su función y ubicación relativa en el modelo de caja. 'Margin' es el espacio exterior al borde de un elemento y afecta la distancia entre elementos adyacentes. 'Padding' es el espacio interior al borde y afecta la distancia entre el contenido del elemento y el borde. Ambos se utilizan para controlar el diseño y el espacio en una página web, pero tienen propósitos diferentes."
-    },
+      "answer": "La diferencia principal entre 'margin' y 'padding' en CSS es su función y ubicación relativa en el modelo de caja. 'Margin' es el espacio exterior al borde de un elemento y afecta la distancia entre elementos adyacentes. 'Padding' es el espacio interior al borde y afecta la distancia entre el contenido del elemento y el borde. Ambos se utilizan para controlar el diseño y el espacio en una página web, pero tienen propósitos diferentes.",
+      "correctAnswer": "c) 'Margin' es el espacio exterior al borde de un elemento y afecta la distancia entre elementos adyacentes. 'Padding' es el espacio interior al borde y afecta la distancia entre el contenido del elemento y el borde.",
+      "allAnswers": [
+        "a) 'Margin' y 'padding' son sinónimos y pueden usarse indistintamente.",
+        "b) 'Margin' y 'padding' son intercambiables y se utilizan para la misma función.",
+        "c) 'Margin' es el espacio exterior al borde de un elemento y afecta la distancia entre elementos adyacentes. 'Padding' es el espacio interior al borde y afecta la distancia entre el contenido del elemento y el borde.",
+        "d) 'Margin' afecta el espaciado interno de un elemento, mientras que 'padding' afecta el espaciado externo."
+      ]
+    },    
     {
       "id": 135,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es un 'media query' en CSS y cuál es su propósito?",
-      "answer": "Un 'media query' en CSS es una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
-    },
+      "answer": "Un 'media query' en CSS es una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas.",
+      "correctAnswer": "d) Una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas.",
+      "allAnswers": [
+        "a) Un elemento HTML utilizado para organizar el contenido de una página.",
+        "b) Una propiedad que define el tamaño de un elemento en la página.",
+        "c) Un tipo de selector que aplica estilos a elementos específicos.",
+        "d) Una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
+      ]
+    },    
     {
       "id": 136,
       "category": "Css",
       "level": "Junior",
       "question": "¿Cómo se centra un div usando CSS?",
-      "answer": "Puedes centrar un 'div' horizontalmente y verticalmente utilizando CSS de varias maneras. Aquí te muestro algunas de las técnicas más comunes:\n\n1. Centrado horizontal y vertical con Flexbox (Recomendado):\n\ncss\n.contenedor {\n display: flex;\n justify-content: center; /* Centrado horizontal */\n align-items: center; /* Centrado vertical */\n height: 100vh; /* Ajusta la altura del contenedor según la ventana */\n}\n\n\nEn este ejemplo, '.contenedor' será centrado tanto horizontal como verticalmente dentro de su elemento contenedor. La propiedad 'height: 100vh' asegura que el contenedor tenga al menos el 100% de la altura de la ventana del navegador.\n\n2. Centrado horizontal y vertical con Grid:\n\ncss\n.contenedor {\n display: grid;\n place-items: center; /* Centrado horizontal y vertical */\n height: 100vh;\n}\n\n\nAl igual que con Flexbox, esta técnica también utiliza 'height: 100vh' para asegurarse de que el contenedor ocupe al menos toda la altura de la ventana.\n\n3. Centrado horizontal con margen automático:\n\ncss\n.contenedor {\n margin: 0 auto; /* Centrado horizontal */\n width: fit-content; /* Opcional: ajusta el ancho al contenido */\n}\n\n\nEsto centrará horizontalmente el 'div' dentro de su elemento contenedor, pero no lo centrará verticalmente.\n\nElige la técnica que mejor se adapte a tus necesidades y al diseño de tu sitio web. Las técnicas con Flexbox y Grid son muy versátiles y se utilizan comúnmente para diseños modernos y responsivos."
-    },
+      "answer": "Puedes centrar un 'div' horizontalmente y verticalmente utilizando CSS de varias maneras. Aquí te muestro algunas de las técnicas más comunes:\n\n1. Centrado horizontal y vertical con Flexbox (Recomendado):\n\ncss\n.contenedor {\n display: flex;\n justify-content: center; /* Centrado horizontal */\n align-items: center; /* Centrado vertical */\n height: 100vh; /* Ajusta la altura del contenedor según la ventana */\n}\n\n\nEn este ejemplo, '.contenedor' será centrado tanto horizontal como verticalmente dentro de su elemento contenedor. La propiedad 'height: 100vh' asegura que el contenedor tenga al menos el 100% de la altura de la ventana del navegador.\n\n2. Centrado horizontal y vertical con Grid:\n\ncss\n.contenedor {\n display: grid;\n place-items: center; /* Centrado horizontal y vertical */\n height: 100vh;\n}\n\n\nAl igual que con Flexbox, esta técnica también utiliza 'height: 100vh' para asegurarse de que el contenedor ocupe al menos toda la altura de la ventana.\n\n3. Centrado horizontal con margen automático:\n\ncss\n.contenedor {\n margin: 0 auto; /* Centrado horizontal */\n width: fit-content; /* Opcional: ajusta el ancho al contenido */\n}\n\n\nEsto centrará horizontalmente el 'div' dentro de su elemento contenedor, pero no lo centrará verticalmente.\n\nElige la técnica que mejor se adapte a tus necesidades y al diseño de tu sitio web. Las técnicas con Flexbox y Grid son muy versátiles y se utilizan comúnmente para diseños modernos y responsivos.",
+      "correctAnswer": "d) Todas las anteriores son formas válidas de centrar un 'div' en CSS pero el recomendado es FLEXBOX:\n\n```css\n.contenedor {\n display: flex;\n justify-content: center; /* Centrado horizontal */\n align-items: center; /* Centrado vertical */\n height: 100vh; /* Ajusta la altura del contenedor según la ventana */\n}```",
+      "allAnswers": [
+        "a) Centrado horizontal y vertical con Flexbox (Recomendado):\n\n```css\n.contenedor {\n display: flex;\n justify-content: center; /* Centrado horizontal */\n align-items: center; /* Centrado vertical */\n height: 100vh; /* Ajusta la altura del contenedor según la ventana */\n}```",
+        "b) Centrado horizontal y vertical con Grid:\n\n```css\n.contenedor {\n display: grid;\n place-items: center; /* Centrado horizontal y vertical */\n height: 100vh;\n}```",
+        "c) Centrado horizontal con margen automático:\n\n```css\n.contenedor {\n margin: 0 auto; /* Centrado horizontal */\n width: fit-content; /* Opcional: ajusta el ancho al contenido */\n}```",
+        "d) Todas las anteriores son formas válidas de centrar un 'div' en CSS."
+      ]
+    },    
     {
       "id": 137,
       "category": "Css",
       "level": "Junior",
-      "question": "¿Qué es un 'media query' en CSS y cuál es su propósito?",
-      "answer": "Un 'media query' en CSS es una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
-    },
+      "question": "¿Cómo se enlazan el CSS con HTML?",
+      "answer": "Agregando una etiqueta <link> en la sección <head> del documento HTML con el atributo 'href' que apunta al archivo CSS.",
+      "correctAnswer": "d) Todas las anteriores son formas válidas de aplicar estilos CSS en un documento HTML pero se recomienda la opción b",
+      "allAnswers": [
+        "a) Agregando estilos directamente en la sección <style> del documento HTML.",
+        "b) Agregando una etiqueta <link> en la sección <head> del documento HTML con el atributo 'href' que apunta al archivo CSS.",
+        "c) Incluyendo estilos en línea utilizando el atributo 'style' en las etiquetas HTML.",
+        "d) Todas las anteriores son formas válidas de aplicar estilos CSS en un documento HTML."
+      ]
+    },    
     {
       "id": 138,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es la especificidad en CSS y cómo se resuelven los conflictos de estilos?",
-      "answer": "La especificidad en CSS es un sistema que determina qué estilo se aplicará cuando existan conflictos entre reglas de estilo. Se basa en cuatro niveles de especificidad: elementos, clases y atributos, IDs y pseudo-clases/pseudo-elementos. Cuando hay conflictos, se aplica la regla con la mayor especificidad. Si la especificidad es igual, se utiliza la regla que aparece más tarde en el código CSS."
-    },
+      "answer": "La especificidad en CSS es un sistema que determina qué estilo se aplicará cuando existan conflictos entre reglas de estilo. Se basa en cuatro niveles de especificidad: elementos, clases y atributos, IDs y pseudo-clases/pseudo-elementos. Cuando hay conflictos, se aplica la regla con la mayor especificidad. Si la especificidad es igual, se utiliza la regla que aparece más tarde en el código CSS.",
+      "correctAnswer": "c) La especificidad en CSS es un sistema que determina qué estilo se aplicará cuando existan conflictos entre reglas de estilo. Se basa en cuatro niveles de especificidad: elementos, clases y atributos, IDs y pseudo-clases/pseudo-elementos. Cuando hay conflictos, se aplica la regla con la mayor especificidad. Si la especificidad es igual, se utiliza la regla que aparece más tarde en el código CSS.",
+      "allAnswers": [
+        "a) La especificidad en CSS se refiere a la cantidad de estilos aplicados a un elemento.",
+        "b) La especificidad en CSS es el orden en que se declaran las propiedades en una regla de estilo.",
+        "c) La especificidad en CSS es un sistema que determina qué estilo se aplicará cuando existan conflictos entre reglas de estilo. Se basa en cuatro niveles de especificidad: elementos, clases y atributos, IDs y pseudo-clases/pseudo-elementos. Cuando hay conflictos, se aplica la regla con la mayor especificidad. Si la especificidad es igual, se utiliza la regla que aparece más tarde en el código CSS.",
+        "d) La especificidad en CSS no afecta la resolución de conflictos entre reglas de estilo."
+      ]
+    },    
     {
       "id": 139,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es un selector de descendiente en CSS y cuál es su sintaxis?",
-      "answer": "Un selector de descendiente en CSS permite seleccionar un elemento que es descendiente de otro elemento específico. Su sintaxis implica escribir el nombre del elemento padre seguido de un espacio y luego el nombre del elemento descendiente. Por ejemplo, 'div p' seleccionaría todos los elementos 'p' que son descendientes de un elemento 'div'."
-    },
+      "answer": "Un selector de descendiente en CSS permite seleccionar un elemento que es descendiente de otro elemento específico. Su sintaxis implica escribir el nombre del elemento padre seguido de un espacio y luego el nombre del elemento descendiente. Por ejemplo, 'div p' seleccionaría todos los elementos 'p' que son descendientes de un elemento 'div'.",
+      "correctAnswer": "d) Un selector de descendiente en CSS permite seleccionar un elemento que es descendiente de otro elemento específico. Su sintaxis implica escribir el nombre del elemento padre seguido de un espacio y luego el nombre del elemento descendiente. Por ejemplo, 'div p' seleccionaría todos los elementos 'p' que son descendientes de un elemento 'div'.",
+      "allAnswers": [
+        "a) Un selector de descendiente en CSS es una forma de seleccionar elementos descendientes utilizando el operador '>' entre el elemento padre y el descendiente.",
+        "b) Un selector de descendiente en CSS se utiliza para seleccionar elementos que son hijos directos de otro elemento.",
+        "c) Un selector de descendiente en CSS solo se puede aplicar a elementos con la misma etiqueta.",
+        "d) Un selector de descendiente en CSS permite seleccionar un elemento que es descendiente de otro elemento específico. Su sintaxis implica escribir el nombre del elemento padre seguido de un espacio y luego el nombre del elemento descendiente. Por ejemplo, 'div p' seleccionaría todos los elementos 'p' que son descendientes de un elemento 'div'."
+      ]
+    },    
     {
       "id": 140,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es la propiedad 'position' en CSS y cuáles son sus valores principales?",
-      "answer": "La propiedad 'position' en CSS se utiliza para controlar la posición de un elemento en la página. Algunos valores principales son 'static' (posición normal de flujo), 'relative' (posición relativa al lugar que ocuparía en el flujo normal), 'absolute' (posición relativa al elemento posicionado más cercano) y 'fixed' (posición fija en relación con la ventana del navegador). Esta propiedad es fundamental para el diseño de diseño y la ubicación de elementos en la página."
-    },
+      "answer": "La propiedad 'position' en CSS se utiliza para controlar la posición de un elemento en la página. Algunos valores principales son 'static' (posición normal de flujo), 'relative' (posición relativa al lugar que ocuparía en el flujo normal), 'absolute' (posición relativa al elemento posicionado más cercano) y 'fixed' (posición fija en relación con la ventana del navegador). Esta propiedad es fundamental para el diseño de diseño y la ubicación de elementos en la página.",
+      "correctAnswer": "c) La propiedad 'position' en CSS se utiliza para controlar la posición de un elemento en la página. Algunos valores principales son 'static' (posición normal de flujo), 'relative' (posición relativa al lugar que ocuparía en el flujo normal), 'absolute' (posición relativa al elemento posicionado más cercano) y 'fixed' (posición fija en relación con la ventana del navegador). Esta propiedad es fundamental para el diseño de diseño y la ubicación de elementos en la página.",
+      "allAnswers": [
+        "a) La propiedad 'position' en CSS solo tiene dos valores: 'relative' y 'absolute'.",
+        "b) La propiedad 'position' en CSS se utiliza solo para elementos flotantes.",
+        "c) La propiedad 'position' en CSS se utiliza para controlar la posición de un elemento en la página. Algunos valores principales son 'static' (posición normal de flujo), 'relative' (posición relativa al lugar que ocuparía en el flujo normal), 'absolute' (posición relativa al elemento posicionado más cercano) y 'fixed' (posición fija en relación con la ventana del navegador). Esta propiedad es fundamental para el diseño de diseño y la ubicación de elementos en la página.",
+        "d) La propiedad 'position' en CSS solo se aplica a elementos con una clase específica."
+      ]
+    },    
     {
       "id": 141,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es el concepto de 'z-index' en CSS y cómo se utiliza?",
-      "answer": "El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables."
-    },
+      "answer": "El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables.",
+      "correctAnswer": "c) El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables.",
+      "allAnswers": [
+        "a) 'z-index' en CSS solo se utiliza para cambiar el tamaño de texto en una página.",
+        "b) 'z-index' en CSS solo se aplica a elementos con posición 'absolute'.",
+        "c) El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables.",
+        "d) 'z-index' en CSS solo afecta la transparencia de los elementos."
+      ]
+    },    
     {
       "id": 142,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es un 'sprite' en CSS y cuál es su ventaja?",
-      "answer": "Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página."
-    },
+      "answer": "Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página.",
+      "correctAnswer": "c) Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página.",
+      "allAnswers": [
+        "a) Un 'sprite' en CSS es un tipo de posición que se aplica a elementos de página.",
+        "b) Un 'sprite' en CSS es un efecto de animación aplicado a texto.",
+        "c) Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página.",
+        "d) Un 'sprite' en CSS es una técnica para aplicar sombras a elementos de la página."
+      ]
+    },    
     {
       "id": 143,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es el 'box-shadow' en CSS y cómo se utiliza para agregar sombras a elementos?",
-      "answer": "El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones."
-    },
+      "answer": "El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones.",
+      "correctAnswer": "d) El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones.",
+      "allAnswers": [
+        "a) 'box-shadow' en CSS es una propiedad para cambiar el tamaño de las cajas en la página.",
+        "b) 'box-shadow' en CSS es una propiedad para aplicar bordes redondeados a elementos.",
+        "c) 'box-shadow' en CSS es una propiedad para cambiar el color de fondo de un elemento.",
+        "d) El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones."       
+      ]
+    },    
     {
       "id": 144,
       "category": "Css",
       "level": "Middle",
-      "question": "¿Qué es el 'flexbox' en CSS y cuál es su propósito?",
-      "answer": "El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores."
-    },
+      "question": "¿Qué es 'flexbox' en CSS y cuál es su propósito?",
+      "answer": "El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores.",
+      "correctAnswer": "a) El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores.",
+      "allAnswers": [
+        "a) El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores.",
+        "b) 'Flexbox' en CSS es una propiedad para cambiar el tamaño de las cajas en la página.",
+        "c) 'Flexbox' en CSS es una propiedad para aplicar bordes redondeados a elementos.",        
+        "d) 'Flexbox' en CSS es una propiedad para cambiar el color de fondo de un elemento."
+      ]
+    },    
     {
       "id": 145,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es el 'grid layout' en CSS y cuál es su ventaja?",
-      "answer": "El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables(responsivos) y equilibrados."
-    },
+      "answer": "El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables (responsivos) y equilibrados.",
+      "correctAnswer": "c) El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables (responsivos) y equilibrados.",
+      "allAnswers": [
+        "a) 'Grid layout' en CSS es una propiedad para cambiar el tamaño de las cajas en la página.",
+        "b) 'Grid layout' en CSS es una propiedad para aplicar bordes redondeados a elementos.",
+        "c) El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables (responsivos) y equilibrados.",
+        "d) 'Grid layout' en CSS es una propiedad para cambiar el color de fondo de un elemento."
+      ]
+    },    
     {
       "id": 146,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué son las animaciones CSS y cómo se definen?",
-      "answer": "Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
-    },
+      "answer": "Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación.",
+      "correctAnswer": "d) Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación.",
+      "allAnswers": [
+        "a) Las animaciones CSS son una función exclusiva de JavaScript para agregar efectos de animación.",
+        "b) Las animaciones CSS son una propiedad de Flash para crear efectos visuales en una página web.",
+        "c) Las animaciones CSS son una propiedad de jQuery para mejorar la interactividad en sitios web.",   
+        "d) Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
+      ]
+    },    
     {
       "id": 147,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es el 'gradients' en CSS y cómo se crea un fondo degradado?",
-      "answer": "Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto."
-    },
+      "answer": "Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto.",
+      "correctAnswer": "c) Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto.",
+      "allAnswers": [
+        "a) Los 'gradients' en CSS son una propiedad para aplicar bordes degradados a los elementos HTML.",
+        "b) Los 'gradients' en CSS son una técnica exclusiva de JavaScript para cambiar dinámicamente el color de fondo de un elemento.",
+        "c) Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto.",
+        "d) Los 'gradients' en CSS son una propiedad de jQuery para crear efectos visuales en el fondo de una página web."
+      ]
+    },    
     {
       "id": 148,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es 'transform' en CSS y cuál es su función?",
-      "answer": "El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."
+      "answer": "El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web.",
+      "correctAnswer": "d) El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web.",
+      "allAnswers": [
+        "a) El 'transform' en CSS es una propiedad exclusiva de JavaScript para manipular elementos HTML.",
+        "b) El 'transform' en CSS es una técnica para aplicar filtros de imágenes a elementos HTML.",
+        "c) El 'transform' en CSS es una propiedad obsoleta que ya no se utiliza en el desarrollo web moderno.",
+        "d) El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."    
+      ]
     },
     {
       "id": 149,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es 'viewport' en CSS y cómo se relaciona con el diseño web responsivo?",
-      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos."
-    },
+      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos.",
+      "correctAnswer": "a) El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos.",
+      "allAnswers": [       
+        "a) El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos.",
+        "b) El 'viewport' en CSS es una propiedad que define la resolución de la pantalla en píxeles.",
+        "c) El 'viewport' en CSS es una técnica para ocultar elementos en dispositivos móviles.",
+        "d) El 'viewport' en CSS es una propiedad obsoleta que ya no se utiliza en el desarrollo web moderno."
+      ]
+    },    
     {
       "id": 150,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué son las variables CSS (variables personalizadas) y cómo se declaran?",
-      "answer": "Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable."
-    },
+      "answer": "Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable.",
+      "correctAnswer": "c) Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable.",
+      "allAnswers": [
+        "a) Las variables CSS son bloques de código que almacenan información reutilizable en el estilo.",
+        "b) Las variables CSS son una forma de almacenar datos en el navegador del usuario.",
+        "c) Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable.",
+        "d) Las variables CSS son solo aplicables a elementos HTML y no se pueden utilizar en estilos globales."
+      ]
+    },    
     {
       "id": 151,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué son las transiciones CSS y cómo se utilizan?",
-      "answer": "Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript."
-    },
+      "answer": "Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript.",
+      "correctAnswer": "b) Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript.",
+      "allAnswers": [
+        "a) Las transiciones CSS son una forma de animación en JavaScript.",
+        "b) Las transiciones CSS permiten controlar cómo se cambian gradualmente los estilos de un elemento en respuesta a eventos como el paso del cursor del mouse sobre el elemento. Se definen utilizando la propiedad 'transition' y se especifican los estilos que deben cambiar y la duración de la transición. Las transiciones CSS son útiles para crear efectos suaves, como cambios de color o movimiento, sin necesidad de JavaScript.",
+        "c) Las transiciones CSS son solo aplicables a elementos de tipo bloque.",
+        "d) Las transiciones CSS solo pueden aplicarse a propiedades de posición y tamaño."
+      ]
+    },    
     {
       "id": 152,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es la 'transformación 3D' en CSS y cuáles son sus aplicaciones?",
-      "answer": "La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado."
-    },
+      "answer": "La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado.",
+      "correctAnswer": "c) La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado.",
+      "allAnswers": [
+        "a) La 'transformación 3D' en CSS solo se aplica a imágenes.",
+        "b) La 'transformación 3D' en CSS solo se utiliza para crear efectos visuales avanzados.",
+        "c) La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado.",
+        "d) La 'transformación 3D' en CSS solo se utiliza en dispositivos con capacidades 3D especiales."
+      ]
+    },    
     {
       "id": 153,
-      "category": "Css",
+      "category": "CSS",
       "level": "Senior",
       "question": "¿Qué es el 'aspect ratio' en CSS y cómo se controla?",
-      "answer": "El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador."
-    },
+      "answer": "El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador.",
+      "correctAnswer": "a) El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador.",
+      "allAnswers": [
+        "a) El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador.",
+        "b) El 'aspect ratio' en CSS se refiere solo al tamaño de la fuente en un elemento.",
+        "c) El 'aspect ratio' en CSS solo se aplica a elementos con dimensiones fijas.",        
+        "d) El 'aspect ratio' en CSS solo se aplica a elementos con contenido de video."
+      ]
+    },    
     {
       "id": 154,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es el 'object-fit' en CSS y para qué se utiliza?",
-      "answer": "El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño."
-    },
+      "answer": "El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño.",
+      "correctAnswer": "c) El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño.",
+      "allAnswers": [
+        "a) El 'object-fit' en CSS solo se aplica a elementos de tipo imagen.",
+        "b) El 'object-fit' en CSS solo se utiliza para ajustar el tamaño de fuentes en un contenedor.",
+        "c) El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño.",
+        "d) El 'object-fit' en CSS solo se aplica a elementos con dimensiones fijas."
+      ]
+    },    
     {
       "id": 155,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es la 'customización de elementos' (Shadow DOM) en CSS y cuál es su propósito?",
-      "answer": "La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
-    },
+      "answer": "La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código.",
+      "correctAnswer": "d) La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código.",
+      "allAnswers": [
+        "a) El Shadow DOM en CSS es solo una característica decorativa sin un propósito específico.",
+        "b) El Shadow DOM en CSS se utiliza solo para aplicar estilos a elementos de la interfaz de usuario.",       
+        "c) El Shadow DOM en CSS solo se utiliza para la creación de efectos visuales en elementos específicos.",
+        "d) La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
+      ]
+    },    
     {
       "id": 156,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es el 'mix-blend-mode' en CSS y cuál es su función?",
-      "answer": "El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes."
-    },
+      "answer": "El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes.",
+      "correctAnswer": "c) El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes.",
+      "allAnswers": [
+        "a) El 'mix-blend-mode' en CSS solo se utiliza para cambiar el color de fondo de un elemento.",
+        "b) El 'mix-blend-mode' en CSS es una propiedad obsoleta y no se recomienda su uso.",
+        "c) El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes.",
+        "d) El 'mix-blend-mode' en CSS solo se utiliza para aplicar efectos de sombra en elementos."
+      ]
+    },    
     {
       "id": 157,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es la 'función calc()' en CSS y cuándo se utiliza?",
-      "answer": "La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible."
-    },
+      "answer": "La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible.",
+      "correctAnswer": "b) La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible.",
+      "allAnswers": [
+        "a) La 'función calc()' en CSS solo se utiliza para definir colores en propiedades.",
+        "b) La 'función calc()' en CSS es una función que permite realizar cálculos matemáticos en propiedades CSS. Se utiliza para definir valores numéricos en propiedades como ancho, alto, margen y más. Por ejemplo, puedes usar 'calc(50% - 20px)' para definir un ancho que sea el 50% del contenedor menos 20 píxeles. Esto es útil para crear diseños flexibles y responsivos que se ajusten automáticamente al contenido y al espacio disponible.",
+        "c) La 'función calc()' en CSS solo se utiliza para crear animaciones en propiedades CSS.",
+        "d) La 'función calc()' en CSS es obsoleta y no se recomienda su uso."
+      ]
+    },    
     {
       "id": 158,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es la 'propiedad clip-path' en CSS y cuál es su propósito?",
-      "answer": "La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos."
-    },
+      "answer": "La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos.",
+      "correctAnswer": "a) La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos.",
+      "allAnswers": [
+        "a) La propiedad 'clip-path' en CSS se utiliza para recortar o enmascarar elementos HTML utilizando una forma definida. Puedes especificar una forma personalizada mediante coordenadas o utilizar formas predefinidas como 'circle()' o 'polygon()'. La propiedad 'clip-path' es útil para crear efectos de recorte y enmascaramiento personalizados en imágenes o elementos, lo que permite crear diseños creativos y llamativos.",
+        "b) La propiedad 'clip-path' en CSS solo se utiliza para cambiar el color de fondo de un elemento.",
+        "c) La propiedad 'clip-path' en CSS determina el espaciado entre elementos en un diseño.",
+        "d) La propiedad 'clip-path' en CSS se utiliza para animar la entrada y salida de elementos en una página web."
+      ]
+    },    
     {
       "id": 159,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es 'object-position' en CSS y cuál es su función?",
-      "answer": "'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño."
-    },
+      "answer": "'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño.",
+      "correctAnswer": "a) 'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño.",
+      "allAnswers": [
+        "a) 'Object-position' en CSS es una propiedad que se utiliza para controlar la posición de un elemento contenido (como una imagen) dentro de su contenedor. Puedes especificar coordenadas para determinar la posición exacta del elemento dentro del contenedor. Esto es útil para ajustar la alineación de imágenes o elementos dentro de un diseño.",
+        "b) 'Object-position' en CSS determina el tamaño de un elemento en un diseño.",
+        "c) 'Object-position' en CSS define el color de fondo de un elemento en una página web.",
+        "d) 'Object-position' en CSS se utiliza para aplicar efectos de animación a elementos HTML."
+      ]
+    },    
     {
       "id": 160,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es la 'variable de entorno' (env-var) en CSS y cómo se utiliza?",
-      "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
-    },
+      "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS.",
+      "correctAnswer": "d) La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS.",
+      "allAnswers": [        
+        "a) La 'variable de entorno' (env-var) en CSS es una propiedad que se utiliza para aplicar estilos diferentes en función del entorno de la aplicación.",
+        "b) La 'variable de entorno' (env-var) en CSS es un término utilizado para describir las variables locales en una hoja de estilo específica.",
+        "c) La 'variable de entorno' (env-var) en CSS es una característica para definir variables en archivos de configuración de servidor.",
+        "d) La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
+      ]
+    },    
     {
       "id": 161,
       "category": "Css",
       "level": "Junior",
-      "question": "Explique la diferencia entre 'display: block;' y 'display: inline;' en CSS.",
-      "answer": "'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos."
-    },
+      "question": "Explique la diferencia entre 'display: block;' y 'display: inline;' en CSS.", 
+      "answer": "'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos.",
+      "correctAnswer": "d) 'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos.",
+      "allAnswers": [
+        "a) 'display: block;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos, mientras que 'display: inline;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea.",
+        "b) 'display: block;' hace que el elemento permanezca en la misma línea que los elementos vecinos y ocupe solo el ancho necesario, mientras que 'display: inline;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea.",
+        "c) 'display: block;' y 'display: inline;' son iguales y pueden usarse indistintamente en cualquier situación.",
+        "d) 'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos."
+      ]
+    },    
     {
       "id": 162,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué significa 'responsive design' en CSS?",
-      "answer": "'Responsive design' en CSS se refiere a la creación de sitios web que se adaptan y responden de manera eficiente a diferentes tamaños de pantalla y dispositivos, utilizando técnicas como 'media queries' y un diseño fluido."
-    },
+      "answer": "'Responsive design' en CSS se refiere a la creación de sitios web que se adaptan y responden de manera eficiente a diferentes tamaños de pantalla y dispositivos, utilizando técnicas como 'media queries' y un diseño fluido.",
+      "correctAnswer": "a) 'Responsive design' en CSS se refiere a la creación de sitios web que se adaptan y responden de manera eficiente a diferentes tamaños de pantalla y dispositivos, utilizando técnicas como 'media queries' y un diseño fluido.",
+      "allAnswers": [
+        "a) 'Responsive design' en CSS se refiere a la creación de sitios web que se adaptan y responden de manera eficiente a diferentes tamaños de pantalla y dispositivos, utilizando técnicas como 'media queries' y un diseño fluido.",
+        "b) 'Responsive design' en CSS se refiere a la creación de sitios web que solo son accesibles desde dispositivos móviles.",
+        "c) 'Responsive design' en CSS es un término utilizado para describir el diseño de sitios web con un solo tamaño fijo que no cambia.",
+        "d) 'Responsive design' en CSS se refiere a la creación de sitios web que solo son accesibles desde dispositivos de escritorio."        
+      ]
+    },    
     {
       "id": 163,
       "category": "Css",
       "level": "Junior",
       "question": "Explica cómo se seleccionan todos los elementos p del documento en CSS.",
-      "answer": "Para seleccionar todos los elementos 'p' del documento en CSS, puedes usar el selector de tipo: 'p { /* estilos */ }'. Esto aplicará los estilos a todos los elementos 'p'."
+      "answer": "Para seleccionar todos los elementos 'p' del documento en CSS, puedes usar el selector de tipo: 'p { /* estilos */ }'. Esto aplicará los estilos a todos los elementos 'p'.",
+      "correctAnswer": "d) Para seleccionar todos los elementos 'p' del documento en CSS, puedes usar el selector de tipo: 'p { /* estilos */ }'. Esto aplicará los estilos a todos los elementos 'p'.",
+      "allAnswers": [
+        "a) Utilizando el selector 'element:p' en CSS.",
+        "b) Usando el selector 'all-p' seguido de los estilos deseados.",
+        "c) Seleccionando todos los elementos 'p' con el selector 'paragraph' en CSS.",
+        "d) Para seleccionar todos los elementos 'p' del documento en CSS, puedes usar el selector de tipo: 'p { /* estilos */ }'. Esto aplicará los estilos a todos los elementos 'p'."
+      ]
     },
     {
       "id": 164,
       "category": "Css",
       "level": "Junior",
       "question": "¿Qué es la pseudo-clase :hover en CSS y cómo se utiliza?",
-      "answer": "La pseudo-clase ':hover' en CSS se utiliza para seleccionar y aplicar estilos a un elemento cuando el usuario pasa el cursor sobre él. Por ejemplo, 'a:hover { color: red; }' cambiará el color del texto a rojo cuando el usuario pase el cursor sobre un enlace."
-    },
+      "answer": "La pseudo-clase ':hover' en CSS se utiliza para seleccionar y aplicar estilos a un elemento cuando el usuario pasa el cursor sobre él. Por ejemplo, 'a:hover { color: red; }' cambiará el color del texto a rojo cuando el usuario pase el cursor sobre un enlace.",
+      "correctAnswer": "c) La pseudo-clase ':hover' en CSS se utiliza para seleccionar y aplicar estilos a un elemento cuando el usuario pasa el cursor sobre él. Por ejemplo, 'a:hover { color: red; }' cambiará el color del texto a rojo cuando el usuario pase el cursor sobre un enlace.",
+      "allAnswers": [
+        "a) La pseudo-clase ':hover' en CSS es utilizada para aplicar estilos a elementos al hacer clic en ellos.",
+        "b) La pseudo-clase ':hover' en CSS se utiliza para seleccionar elementos en la parte superior de una jerarquía.",
+        "c) La pseudo-clase ':hover' en CSS se utiliza para seleccionar y aplicar estilos a un elemento cuando el usuario pasa el cursor sobre él. Por ejemplo, 'a:hover { color: red; }' cambiará el color del texto a rojo cuando el usuario pase el cursor sobre un enlace.",
+        "d) ':hover' es una propiedad de estilo en CSS que se aplica automáticamente a todos los elementos."
+      ]
+    },    
     {
       "id": 165,
       "category": "Css",
       "level": "Middle",
       "question": "¿Cuál es la diferencia entre 'position: relative;' y 'position: fixed;' en CSS?",
-      "answer": "'Position: relative;' posiciona un elemento con respecto a su posición original en el flujo del documento, mientras que 'position: fixed;' lo posiciona en relación con la ventana del navegador, haciendo que permanezca fijo incluso al desplazarse."
-    },
+      "answer": "'Position: relative;' posiciona un elemento con respecto a su posición original en el flujo del documento, mientras que 'position: fixed;' lo posiciona en relación con la ventana del navegador, haciendo que permanezca fijo incluso al desplazarse.",
+      "correctAnswer": "d) 'Position: relative;' posiciona un elemento con respecto a su posición original en el flujo del documento, mientras que 'position: fixed;' lo posiciona en relación con la ventana del navegador, haciendo que permanezca fijo incluso al desplazarse.",
+      "allAnswers": [
+        "a) 'Position: relative;' y 'position: fixed;' son términos intercambiables y se utilizan de manera similar.",
+        "b) 'Position: relative;' y 'position: fixed;' son propiedades que hacen lo mismo y no tienen diferencia.",
+        "c) 'Position: relative;' y 'position: fixed;' son propiedades obsoletas en CSS.",
+        "d) 'Position: relative;' posiciona un elemento con respecto a su posición original en el flujo del documento, mientras que 'position: fixed;' lo posiciona en relación con la ventana del navegador, haciendo que permanezca fijo incluso al desplazarse."
+      ]
+    },    
     {
       "id": 166,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es 'BEM' en CSS y cuál es su propósito?",
-      "answer": "'BEM' (Block, Element, Modifier) es una convención de nomenclatura para clases en CSS que ayuda a organizar y estructurar el código CSS de manera más mantenible y modular. Divide el código en bloques (componentes), elementos y modificadores, facilitando el entendimiento y la colaboración en proyectos grandes."
-    },
+      "answer": "'BEM' (Block, Element, Modifier) es una convención de nomenclatura para clases en CSS que ayuda a organizar y estructurar el código CSS de manera más mantenible y modular. Divide el código en bloques (componentes), elementos y modificadores, facilitando el entendimiento y la colaboración en proyectos grandes.",
+      "correctAnswer": "c) 'BEM' (Block, Element, Modifier) es una convención de nomenclatura para clases en CSS que ayuda a organizar y estructurar el código CSS de manera más mantenible y modular. Divide el código en bloques (componentes), elementos y modificadores, facilitando el entendimiento y la colaboración en proyectos grandes.",
+      "allAnswers": [
+        "a) 'BEM' es un término coloquial sin significado específico en CSS.",
+        "b) 'BEM' (Best Element Method) es una técnica para aplicar estilos solo al mejor elemento de una página.",
+        "d) 'BEM' (Block, Element, Modifier) es una convención de nomenclatura para clases en CSS que ayuda a organizar y estructurar el código CSS de manera más mantenible y modular. Divide el código en bloques (componentes), elementos y modificadores, facilitando el entendimiento y la colaboración en proyectos grandes.",
+        "d) 'BEM' es una propiedad CSS que controla la visualización de elementos en el modo de impresión."        
+      ]
+    },    
     {
       "id": 167,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué es 'Sass' y cuál es su ventaja sobre CSS?",
-      "answer": "'Sass' es un preprocesador de CSS que agrega características como variables, anidamiento, y mixins, facilitando la escritura y el mantenimiento del código CSS. Su ventaja radica en la capacidad de usar funciones y estructuras más avanzadas, lo que mejora la eficiencia y organización del código."
-    },
+      "answer": "'Sass' es un preprocesador de CSS que agrega características como variables, anidamiento, y mixins, facilitando la escritura y el mantenimiento del código CSS. Su ventaja radica en la capacidad de usar funciones y estructuras más avanzadas, lo que mejora la eficiencia y organización del código.",
+      "correctAnswer": "d) 'Sass' es un preprocesador de CSS que agrega características como variables, anidamiento, y mixins, facilitando la escritura y el mantenimiento del código CSS. Su ventaja radica en la capacidad de usar funciones y estructuras más avanzadas, lo que mejora la eficiencia y organización del código.",
+      "allAnswers": [
+        "a) 'Sass' es un lenguaje de programación por sí mismo, independiente de CSS.",
+        "b) 'Sass' es un servicio en línea para probar y validar hojas de estilo CSS.",
+        "c) 'Sass' es un formato de archivo de imagen utilizado en diseño web.",
+        "d) 'Sass' es un preprocesador de CSS que agrega características como variables, anidamiento, y mixins, facilitando la escritura y el mantenimiento del código CSS. Su ventaja radica en la capacidad de usar funciones y estructuras más avanzadas, lo que mejora la eficiencia y organización del código."
+      ]
+    },    
     {
       "id": 168,
       "category": "Css",
       "level": "Middle",
       "question": "¿Qué significa 'mobile-first' en el diseño web y cómo se implementa en CSS?",
-      "answer": "'Mobile-first' en el diseño web significa diseñar y desarrollar primero para dispositivos móviles y luego expandirse a pantallas más grandes. Se implementa utilizando 'media queries' para aplicar estilos específicos a dispositivos más grandes, asegurando una experiencia móvil optimizada como base."
-    },
+      "answer": "'Mobile-first' en el diseño web significa diseñar y desarrollar primero para dispositivos móviles y luego expandirse a pantallas más grandes. Se implementa utilizando 'media queries' para aplicar estilos específicos a dispositivos más grandes, asegurando una experiencia móvil optimizada como base.",
+      "correctAnswer": "b) 'Mobile-first' en el diseño web significa diseñar y desarrollar primero para dispositivos móviles y luego expandirse a pantallas más grandes. Se implementa utilizando 'media queries' para aplicar estilos específicos a dispositivos más grandes, asegurando una experiencia móvil optimizada como base.",
+      "allAnswers": [
+        "a) 'Mobile-first' en el diseño web significa diseñar exclusivamente para dispositivos móviles.",
+        "b) 'Mobile-first' en el diseño web significa diseñar y desarrollar primero para dispositivos móviles y luego expandirse a pantallas más grandes. Se implementa utilizando 'media queries' para aplicar estilos específicos a dispositivos más grandes, asegurando una experiencia móvil optimizada como base.",
+        "c) 'Mobile-first' en el diseño web significa desarrollar solo para dispositivos de pantalla grande.",
+        "d) 'Mobile-first' en el diseño web significa comenzar el desarrollo para dispositivos de pantalla grande y luego adaptarse a dispositivos móviles."
+      ]
+    },    
     {
       "id": 169,
       "category": "Css",
       "level": "Middle",
       "question": "Explique la propiedad 'position: sticky;' en CSS y su uso.",
-      "answer": "'Position: sticky;' en CSS es una propiedad que combina características de 'position: relative;' y 'position: fixed;'. El elemento se comporta como 'relative' hasta que alcanza un punto de desplazamiento específico, momento en el cual se vuelve 'fixed'. Es útil para encabezados que se adhieren en la parte superior de la página al hacer scroll."
-    },
+      "answer": "'Position: sticky;' en CSS es una propiedad que combina características de 'position: relative;' y 'position: fixed;'. El elemento se comporta como 'relative' hasta que alcanza un punto de desplazamiento específico, momento en el cual se vuelve 'fixed'. Es útil para encabezados que se adhieren en la parte superior de la página al hacer scroll.",
+      "correctAnswer": "c) 'Position: sticky;' en CSS es una propiedad que combina características de 'position: relative;' y 'position: fixed;'. El elemento se comporta como 'relative' hasta que alcanza un punto de desplazamiento específico, momento en el cual se vuelve 'fixed'. Es útil para encabezados que se adhieren en la parte superior de la página al hacer scroll.",
+      "allAnswers": [
+        "a) 'Position: sticky;' en CSS siempre se comporta como 'relative'.",
+        "b) 'Position: sticky;' en CSS siempre se comporta como 'fixed'.",
+        "c) 'Position: sticky;' en CSS es una propiedad que combina características de 'position: relative;' y 'position: fixed;'. El elemento se comporta como 'relative' hasta que alcanza un punto de desplazamiento específico, momento en el cual se vuelve 'fixed'. Es útil para encabezados que se adhieren en la parte superior de la página al hacer scroll.",
+        "d) 'Position: sticky;' en CSS no tiene un comportamiento específico."
+      ]
+    },    
     {
       "id": 170,
       "category": "Css",
       "level": "Senior",
       "question": "¿Cuál es la diferencia entre 'em' y 'rem' en CSS?",
-      "answer": "'Em' y 'rem' son unidades de medida en CSS. 'Em' se basa en el tamaño de fuente del elemento padre, mientras que 'rem' se basa en el tamaño de fuente del elemento raíz (generalmente el elemento 'html'). 'Rem' proporciona una forma más predecible de especificar tamaños relativos en relación con el tamaño de fuente de la página."
-    },
+      "answer": "'Em' y 'rem' son unidades de medida en CSS. 'Em' se basa en el tamaño de fuente del elemento padre, mientras que 'rem' se basa en el tamaño de fuente del elemento raíz (generalmente el elemento 'html'). 'Rem' proporciona una forma más predecible de especificar tamaños relativos en relación con el tamaño de fuente de la página.",
+      "correctAnswer": "d) 'Em' y 'rem' son unidades de medida en CSS. 'Em' se basa en el tamaño de fuente del elemento padre, mientras que 'rem' se basa en el tamaño de fuente del elemento raíz (generalmente el elemento 'html'). 'Rem' proporciona una forma más predecible de especificar tamaños relativos en relación con el tamaño de fuente de la página.",
+      "allAnswers": [
+        "a) 'Em' y 'rem' son unidades de medida en CSS que siempre se basan en el tamaño de fuente del elemento padre.",
+        "b) 'Em' y 'rem' son unidades de medida en CSS que siempre se basan en el tamaño de fuente del elemento raíz (html).",        
+        "c) 'Em' y 'rem' son términos equivalentes para describir la misma unidad de medida en CSS.",
+        "d) 'Em' y 'rem' son unidades de medida en CSS. 'Em' se basa en el tamaño de fuente del elemento padre, mientras que 'rem' se basa en el tamaño de fuente del elemento raíz (generalmente el elemento 'html'). 'Rem' proporciona una forma más predecible de especificar tamaños relativos en relación con el tamaño de fuente de la página."
+      ]
+    },    
     {
       "id": 171,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es 'CSS-in-JS' y cuál es su propósito en el desarrollo web?",
-      "answer": "'CSS-in-JS' es una técnica en la que se escriben estilos CSS directamente en archivos JavaScript. Su propósito es mejorar la modularidad y la portabilidad del código, ya que los estilos están acoplados con los componentes de JavaScript. Bibliotecas como 'Styled-components' son ejemplos de implementación de 'CSS-in-JS'."
-    },
+      "answer": "'CSS-in-JS' es una técnica en la que se escriben estilos CSS directamente en archivos JavaScript. Su propósito es mejorar la modularidad y la portabilidad del código, ya que los estilos están acoplados con los componentes de JavaScript. Bibliotecas como 'Styled-components' son ejemplos de implementación de 'CSS-in-JS'.",
+      "correctAnswer": "b) 'CSS-in-JS' es una técnica en la que se escriben estilos CSS directamente en archivos JavaScript. Su propósito es mejorar la modularidad y la portabilidad del código, ya que los estilos están acoplados con los componentes de JavaScript. Bibliotecas como 'Styled-components' son ejemplos de implementación de 'CSS-in-JS'.",
+      "allAnswers": [
+        "a) 'CSS-in-JS' es un término utilizado para describir la vinculación de archivos CSS y JavaScript en el desarrollo web.",
+        "b) 'CSS-in-JS' es una técnica en la que se escriben estilos CSS directamente en archivos JavaScript. Su propósito es mejorar la modularidad y la portabilidad del código, ya que los estilos están acoplados con los componentes de JavaScript. Bibliotecas como 'Styled-components' son ejemplos de implementación de 'CSS-in-JS'.",
+        "c) 'CSS-in-JS' se refiere a la práctica de escribir código CSS dentro de archivos JSON en el desarrollo web.",
+        "d) 'CSS-in-JS' es una convención de nomenclatura para organizar archivos de estilo en proyectos JavaScript."
+      ]
+    },    
     {
       "id": 172,
       "category": "Css",
       "level": "Senior",
-      "question": "¿Cómo funciona la especificidad en CSS y cómo se calcula?",
-      "answer": "La especificidad en CSS determina qué estilo se aplicará cuando haya conflictos. Se calcula asignando valores a los selectores: 1 punto para un tipo de elemento, 10 puntos para un selector de clase, 100 puntos para un selector de ID y se acumulan para formar la especificidad completa. El estilo con la especificidad más alta prevalecerá en caso de conflictos."
-    },
+      "question": "Explica la diferencia entre 'justify-content' y 'align-items' en Flexbox y cómo se aplican.",
+      "answer": "'justify-content' y 'align-items' son propiedades de Flexbox. 'justify-content' controla la alineación de los elementos a lo largo del eje principal (horizontal en el caso de filas y vertical en el caso de columnas), mientras que 'align-items' controla la alineación a lo largo del eje transversal. Por ejemplo, 'justify-content: center;' centrará los elementos horizontalmente, y 'align-items: flex-end;' los alineará en la parte inferior del contenedor.",
+      "correctAnswer": "d) 'justify-content' y 'align-items' son propiedades de Flexbox. 'justify-content' controla la alineación de los elementos a lo largo del eje principal (horizontal en el caso de filas y vertical en el caso de columnas), mientras que 'align-items' controla la alineación a lo largo del eje transversal. Por ejemplo, 'justify-content: center;' centrará los elementos horizontalmente, y 'align-items: flex-end;' los alineará en la parte inferior del contenedor.",
+      "allAnswers": [
+        "a) 'justify-content' y 'align-items' son propiedades de Flexbox que controlan el espaciado entre elementos flexibles.",
+        "b) 'justify-content' y 'align-items' son propiedades de Flexbox que solo afectan a elementos en filas, no en columnas.",
+        "c) 'justify-content' y 'align-items' son términos equivalentes en Flexbox que pueden usarse indistintamente.",
+        "d) 'justify-content' y 'align-items' son propiedades de Flexbox. 'justify-content' controla la alineación de los elementos a lo largo del eje principal (horizontal en el caso de filas y vertical en el caso de columnas), mientras que 'align-items' controla la alineación a lo largo del eje transversal. Por ejemplo, 'justify-content: center;' centrará los elementos horizontalmente, y 'align-items: flex-end;' los alineará en la parte inferior del contenedor."
+      ]
+    },       
     {
       "id": 173,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es 'critical CSS' y por qué es importante para el rendimiento web?",
-      "answer": "'Critical CSS' se refiere a los estilos necesarios para renderizar la parte visible de una página web inicialmente. Es importante para el rendimiento web porque acelera la carga de la página al proporcionar los estilos esenciales primero, permitiendo que la página sea utilizable más rápidamente."
-    },
+      "answer": "'Critical CSS' se refiere a los estilos necesarios para renderizar la parte visible de una página web inicialmente. Es importante para el rendimiento web porque acelera la carga de la página al proporcionar los estilos esenciales primero, permitiendo que la página sea utilizable más rápidamente.",
+      "correctAnswer": "a) 'Critical CSS' se refiere a los estilos necesarios para renderizar la parte visible de una página web inicialmente. Es importante para el rendimiento web porque acelera la carga de la página al proporcionar los estilos esenciales primero, permitiendo que la página sea utilizable más rápidamente.",
+      "allAnswers": [
+        "a) 'Critical CSS' se refiere a los estilos necesarios para renderizar la parte visible de una página web inicialmente. Es importante para el rendimiento web porque acelera la carga de la página al proporcionar los estilos esenciales primero, permitiendo que la página sea utilizable más rápidamente.",
+        "b) 'Critical CSS' es una técnica para optimizar estilos específicos en páginas de comercio electrónico.",
+        "c) 'Critical CSS' es una propiedad de CSS utilizada para aplicar estilos críticos en elementos visibles.",
+        "d) 'Critical CSS' se refiere a los estilos secundarios de una página web y no afecta significativamente al rendimiento."        
+      ]
+    },    
     {
       "id": 174,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es 'CSS normalization' y cuál es su propósito?",
-      "answer": "'CSS normalization' es el proceso de establecer estilos consistentes en diferentes navegadores. Su propósito es crear una base uniforme para el diseño web, asegurando que los elementos HTML tengan estilos predeterminados consistentes en todos los navegadores, evitando problemas de rendimiento y presentación."
-    },
+      "answer": "'CSS normalization' es el proceso de establecer estilos consistentes en diferentes navegadores. Su propósito es crear una base uniforme para el diseño web, asegurando que los elementos HTML tengan estilos predeterminados consistentes en todos los navegadores, evitando problemas de rendimiento y presentación.",
+      "correctAnswer": "b) 'CSS normalization' es el proceso de establecer estilos consistentes en diferentes navegadores. Su propósito es crear una base uniforme para el diseño web, asegurando que los elementos HTML tengan estilos predeterminados consistentes en todos los navegadores, evitando problemas de rendimiento y presentación.",
+      "allAnswers": [
+        "a) 'CSS normalization' es una técnica avanzada para aplicar estilos específicos en páginas web.",
+        "b) 'CSS normalization' es el proceso de establecer estilos consistentes en diferentes navegadores. Su propósito es crear una base uniforme para el diseño web, asegurando que los elementos HTML tengan estilos predeterminados consistentes en todos los navegadores, evitando problemas de rendimiento y presentación.",
+        "c) 'CSS normalization' es un método para normalizar el tamaño de texto en todas las secciones de un sitio web.",
+        "d) 'CSS normalization' es un término que describe la optimización de estilos para un rendimiento máximo."     
+      ]
+    },    
     {
       "id": 175,
       "category": "Css",
       "level": "Middle",
       "question": "¿Cuál es la diferencia entre 'normalize.css' y 'reset.css'?",
-      "answer": "'Normalize.css' y 'reset.css' son ambos estilos utilizados para establecer estilos predeterminados consistentes en diferentes navegadores. La diferencia radica en la filosofía de cada uno: 'reset.css' establece estilos más agresivos para reiniciar completamente los estilos, mientras que 'normalize.css' mantiene algunos estilos predeterminados para elementos comunes y solo normaliza diferencias entre navegadores."
-    },
+      "answer": "'Normalize.css' y 'reset.css' son ambos estilos utilizados para establecer estilos predeterminados consistentes en diferentes navegadores. La diferencia radica en la filosofía de cada uno: 'reset.css' establece estilos más agresivos para reiniciar completamente los estilos, mientras que 'normalize.css' mantiene algunos estilos predeterminados para elementos comunes y solo normaliza diferencias entre navegadores.",
+      "correctAnswer": "d) 'Normalize.css' y 'reset.css' son ambos estilos utilizados para establecer estilos predeterminados consistentes en diferentes navegadores. La diferencia radica en la filosofía de cada uno: 'reset.css' establece estilos más agresivos para reiniciar completamente los estilos, mientras que 'normalize.css' mantiene algunos estilos predeterminados para elementos comunes y solo normaliza diferencias entre navegadores.",
+      "allAnswers": [
+        "a) 'Normalize.css' es una versión mejorada de 'reset.css' que elimina completamente todos los estilos predeterminados.",
+        "b) 'Reset.css' es una alternativa más moderna y completa a 'normalize.css'.",
+        "c) 'Normalize.css' y 'reset.css' son términos intercambiables que describen el mismo concepto de normalización de estilos en CSS.",
+        "d) 'Normalize.css' y 'reset.css' son ambos estilos utilizados para establecer estilos predeterminados consistentes en diferentes navegadores. La diferencia radica en la filosofía de cada uno: 'reset.css' establece estilos más agresivos para reiniciar completamente los estilos, mientras que 'normalize.css' mantiene algunos estilos predeterminados para elementos comunes y solo normaliza diferencias entre navegadores."
+      ]
+    },    
     {
       "id": 176,
       "category": "Css",
       "level": "Middle",
-      "question": "¿Cuál es la diferencia entre 'justify-content' y 'align-items' en flexbox?",
-      "answer": "'justify-content' en flexbox se utiliza para alinear elementos a lo largo del eje principal (horizontal en el caso de una fila, vertical en el caso de una columna). 'align-items' se utiliza para alinear elementos a lo largo del eje transversal. En una fila, 'align-items' afecta la alineación vertical, y en una columna, afecta la alineación horizontal."
-    },
+      "question": "Explica el propósito de 'flex-grow' en flexbox y cómo se utiliza.",
+      "answer": "'flex-grow' en flexbox determina la capacidad de un elemento para crecer en relación con los demás elementos en el contenedor. Si todos los elementos tienen un valor de 'flex-grow' igual a 1, crecerán por igual. Puedes asignar valores mayores a uno de los elementos para que crezca más en comparación con los demás.",
+      "correctAnswer": "b) 'flex-grow' en flexbox determina la capacidad de un elemento para crecer en relación con los demás elementos en el contenedor. Si todos los elementos tienen un valor de 'flex-grow' igual a 1, crecerán por igual. Puedes asignar valores mayores a uno de los elementos para que crezca más en comparación con los demás.",
+      "allAnswers": [
+        "a) 'flex-grow' en flexbox controla la alineación de los elementos en el eje principal.",
+        "b) 'flex-grow' en flexbox determina la capacidad de un elemento para crecer en relación con los demás elementos en el contenedor. Si todos los elementos tienen un valor de 'flex-grow' igual a 1, crecerán por igual. Puedes asignar valores mayores a uno de los elementos para que crezca más en comparación con los demás.",
+        "c) 'flex-grow' solo se aplica a elementos con un 'display' establecido como 'flex'.",
+        "d) 'flex-grow' se utiliza para especificar el tamaño inicial de un elemento flex en el contenedor."
+      ]
+    },    
     {
       "id": 177,
       "category": "Css",
       "level": "Middle",
-      "question": "Explique el concepto de 'viewport' en CSS y su importancia en el diseño web móvil.",
-      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. Es especialmente importante en el diseño web móvil, donde el tamaño de la pantalla varía. Puedes controlar el 'viewport' con la etiqueta meta viewport en HTML, especificando el ancho, la escala y otros atributos para garantizar una presentación adecuada en dispositivos móviles."
-    },
+      "question": "¿Qué es el 'viewport' en CSS y por qué es crucial en el diseño web móvil?",
+      "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el diseño web móvil, donde los tamaños de pantalla varían ampliamente, controlar el 'viewport' es crucial. Se utiliza la etiqueta meta viewport en HTML para especificar atributos como el ancho y la escala, asegurando que la página se presente de manera adecuada en dispositivos móviles.",
+      "correctAnswer": "d) El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el diseño web móvil, donde los tamaños de pantalla varían ampliamente, controlar el 'viewport' es crucial. Se utiliza la etiqueta meta viewport en HTML para especificar atributos como el ancho y la escala, asegurando que la página se presente de manera adecuada en dispositivos móviles.",
+      "allAnswers": [
+        "a) El 'viewport' en CSS es una propiedad que define el tamaño de los elementos visibles.",
+        "b) El 'viewport' solo es relevante en el diseño web de escritorio.",
+        "c) La etiqueta meta viewport en HTML solo se usa en dispositivos de pantalla grande.",
+        "d) El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el diseño web móvil, donde los tamaños de pantalla varían ampliamente, controlar el 'viewport' es crucial. Se utiliza la etiqueta meta viewport en HTML para especificar atributos como el ancho y la escala, asegurando que la página se presente de manera adecuada en dispositivos móviles."
+      ]
+    },    
     {
       "id": 178,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué son las 'CSS Custom Properties' y cuál es su ventaja?",
-      "answer": "Las 'CSS Custom Properties', también conocidas como variables CSS, son variables definidas por el usuario que contienen valores específicos. Su ventaja radica en la capacidad de reutilizar valores en todo el documento y cambiarlos dinámicamente mediante JavaScript. Esto mejora la consistencia y facilita la actualización de estilos en toda la aplicación."
-    },
+      "answer": "Las 'CSS Custom Properties', también conocidas como variables CSS, son variables definidas por el usuario que contienen valores específicos. Su ventaja radica en la capacidad de reutilizar valores en todo el documento y cambiarlos dinámicamente mediante JavaScript. Esto mejora la consistencia y facilita la actualización de estilos en toda la aplicación.",
+      "correctAnswer": "d) Las 'CSS Custom Properties', también conocidas como variables CSS, son variables definidas por el usuario que contienen valores específicos. Su ventaja radica en la capacidad de reutilizar valores en todo el documento y cambiarlos dinámicamente mediante JavaScript. Esto mejora la consistencia y facilita la actualización de estilos en toda la aplicación.",
+      "allAnswers": [
+        "a) Las 'CSS Custom Properties' son propiedades predefinidas en CSS que no se pueden cambiar.",
+        "b) Las 'CSS Custom Properties' se utilizan solo para propósitos de animación en CSS.",
+        "c) Las 'CSS Custom Properties' son un tipo de variables limitadas a ciertos elementos HTML.",
+        "d) Las 'CSS Custom Properties', también conocidas como variables CSS, son variables definidas por el usuario que contienen valores específicos. Su ventaja radica en la capacidad de reutilizar valores en todo el documento y cambiarlos dinámicamente mediante JavaScript. Esto mejora la consistencia y facilita la actualización de estilos en toda la aplicación."
+      ]
+    },    
     {
       "id": 179,
       "category": "Css",
       "level": "Senior",
       "question": "¿Qué es 'CSS Houdini' y cuál es su papel en el desarrollo web?",
-      "answer": "'CSS Houdini' es un conjunto de API que permiten a los desarrolladores extender y mejorar el motor de renderizado CSS del navegador. Su objetivo es dar a los desarrolladores más control sobre el flujo de trabajo de estilo, permitiendo la creación de funciones y mejorando la capacidad de rendimiento del navegador."
-    },
+      "answer": "'CSS Houdini' es un conjunto de API que permiten a los desarrolladores extender y mejorar el motor de renderizado CSS del navegador. Su objetivo es dar a los desarrolladores más control sobre el flujo de trabajo de estilo, permitiendo la creación de funciones y mejorando la capacidad de rendimiento del navegador.",
+      "correctAnswer": "d) 'CSS Houdini' es un conjunto de API que permiten a los desarrolladores extender y mejorar el motor de renderizado CSS del navegador. Su objetivo es dar a los desarrolladores más control sobre el flujo de trabajo de estilo, permitiendo la creación de funciones y mejorando la capacidad de rendimiento del navegador.",
+      "allAnswers": [
+        "a) 'CSS Houdini' es una técnica para ocultar estilos CSS específicos.",
+        "b) 'CSS Houdini' es una biblioteca de estilos predefinidos en CSS.",
+        "c) 'CSS Houdini' es un lenguaje de programación para desarrollo web.",
+        "d) 'CSS Houdini' es un conjunto de API que permiten a los desarrolladores extender y mejorar el motor de renderizado CSS del navegador. Su objetivo es dar a los desarrolladores más control sobre el flujo de trabajo de estilo, permitiendo la creación de funciones y mejorando la capacidad de rendimiento del navegador."
+      ]
+    },    
     {
-      "id": 180,
+      "id": 182,
       "category": "Css",
       "level": "Senior",
       "question": "¿Cuándo es apropiado utilizar 'important' en CSS y cuáles son las consideraciones?",
-      "answer": "La regla '!important' en CSS se utiliza para dar prioridad a una regla específica y anular otras reglas. Se debe usar con precaución, ya que puede dificultar el mantenimiento y la resolución de conflictos. Es apropiado utilizarlo en casos excepcionales donde se necesita asegurar que una regla prevalezca, pero su uso excesivo puede causar problemas de mantenimiento."
+      "answer": "La regla '!important' en CSS se utiliza para dar prioridad a una regla específica y anular otras reglas. Se debe usar con precaución, ya que puede dificultar el mantenimiento y la resolución de conflictos. Es apropiado utilizarlo en casos excepcionales donde se necesita asegurar que una regla prevalezca, pero su uso excesivo puede causar problemas de mantenimiento.",
+      "correctAnswer": "b) La regla '!important' en CSS se utiliza para dar prioridad a una regla específica y anular otras reglas. Se debe usar con precaución, ya que puede dificultar el mantenimiento y la resolución de conflictos. Es apropiado utilizarlo en casos excepcionales donde se necesita asegurar que una regla prevalezca, pero su uso excesivo puede causar problemas de mantenimiento.",
+      "allAnswers": [
+        "a) 'Important' se utiliza en todas las reglas CSS para darles prioridad.",
+        "b) La regla '!important' en CSS se utiliza para dar prioridad a una regla específica y anular otras reglas. Se debe usar con precaución, ya que puede dificultar el mantenimiento y la resolución de conflictos. Es apropiado utilizarlo en casos excepcionales donde se necesita asegurar que una regla prevalezca, pero su uso excesivo puede causar problemas de mantenimiento.",
+        "c) 'Important' se utiliza solo en casos de estilos de texto.",
+        "d) 'Important' se utiliza para indicar que una regla no es relevante."
+      ]
     },    
     {
       "id": 181,

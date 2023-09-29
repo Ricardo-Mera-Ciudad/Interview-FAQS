@@ -3809,421 +3809,841 @@
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es Git y para qué se utiliza en el desarrollo web?",
-      "answer": "Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo."
+      "answer": "Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo.",
+      "correctAnswer": "d) Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo.",
+      "allAnswers": [
+        "a) Git es una herramienta de diseño web.",
+        "b) Git es un servidor web para desarrollo.",
+        "c) Git es un sistema de control de versiones que solo se utiliza en proyectos grandes.",
+        "d) Git es un sistema de control de versiones que se utiliza en el desarrollo web para rastrear y gestionar cambios en el código fuente. Permite a los desarrolladores trabajar en colaboración y realizar un seguimiento de las modificaciones realizadas en un proyecto a lo largo del tiempo."
+      ]
     },
     {
       "id": 362,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre Git y GitHub?",
-      "answer": "Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores."
-    },
+      "answer": "Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores.",
+      "correctAnswer": "b) Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores.",
+      "allAnswers": [
+        "a) Git y GitHub son dos nombres para la misma herramienta.",
+        "b) Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores.",
+        "b) GitHub es un sistema de control de versiones que funciona con Git.",
+        "c) Git es una interfaz gráfica para GitHub."       
+      ]
+    },    
     {
       "id": 363,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué comando se utiliza para iniciar un nuevo repositorio Git en un proyecto?",
-      "answer": "El comando utilizado para iniciar un nuevo repositorio Git en un proyecto es 'git init'."
-    },
+      "answer": "El comando utilizado para iniciar un nuevo repositorio Git en un proyecto es 'git init'.",
+      "correctAnswer": "c) 'git init'",
+      "allAnswers": [
+        "a) 'git create'",
+        "b) 'git start'",
+        "c) 'git init'",
+        "d) 'git new'"
+      ]
+    },    
     {
       "id": 364,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cómo se realiza un commit en Git y por qué es importante?",
-      "answer": "Para realizar un commit en Git, se utiliza el comando 'git commit'. Un commit es importante porque registra un conjunto de cambios en el repositorio, lo que permite realizar un seguimiento de la historia del proyecto y facilita la colaboración en equipo."
-    },
+      "answer": "Para realizar un commit en Git, se utiliza el comando 'git commit'. Un commit es importante porque registra un conjunto de cambios en el repositorio, lo que permite realizar un seguimiento de la historia del proyecto y facilita la colaboración en equipo.",
+      "correctAnswer": "d) 'git commit'",
+      "allAnswers": [
+        "a) 'git save' y es importante para Visual Studio",
+        "b) 'git push' y es importante para el proyecto",
+        "c) 'git update' y es importante por buenas prácticas",
+        "d) 'git commit' y es importante para registrar cambios en el repositorio teniendo así un seguimiento de la historia del proyecto"
+      ]
+    },    
     {
       "id": 365,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es un conflicto de merge en Git y cómo se resuelve?",
-      "answer": "Un conflicto de merge en Git ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Para resolverlo, se debe realizar una revisión manual del conflicto, editar el código para resolver las diferencias y luego realizar un nuevo commit para completar el merge."
-    },
+      "answer": "Un conflicto de merge en Git ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Para resolverlo, se debe realizar una revisión manual del conflicto, editar el código para resolver las diferencias y luego realizar un nuevo commit para completar el merge.",
+      "correctAnswer": "d) Revisión manual del conflicto, edición del código para resolver las diferencias y un nuevo commit.",
+      "allAnswers": [
+        "a) Un conflicto de merge es una tontería.Ignorar el conflicto y continuar con el merge.",
+        "b) Un conflicto de merge es importante para Visual Studio.Eliminar uno de los cambios para evitar el conflicto.",
+        "c) Un conflicto de merge es pan comido.Realizar un nuevo branch para evitar el conflicto.",
+        "d) Un conflicto de merge ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Revisión manual del conflicto, edición del código para resolver las diferencias y un nuevo commit."
+      ]
+    },    
     {
       "id": 366,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
-      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
-    },
+      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina.",
+      "correctAnswer": "a) 'git clone <URL_del_repositorio>'",
+      "allAnswers": [
+        "a) 'git clone <URL_del_repositorio>'",
+        "b) 'git pull <URL_del_repositorio>'",
+        "c) 'git copy <URL_del_repositorio>'",
+        "d) 'git init <URL_del_repositorio>'"
+      ]
+    },    
     {
       "id": 367,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es un commit en Git y por qué es importante?",
-      "answer": "Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos."
-    },
+      "answer": "Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos.",
+      "correctAnswer": "d) Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos.",
+      "allAnswers": [
+        "a) Un commit en Git es una copia de seguridad del repositorio.",
+        "b) Un commit en Git es solo un comentario en el código.",
+        "c) Un commit en Git es una forma de subir archivos al repositorio remoto.",
+        "d) Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos."
+      ]
+    },    
     {
       "id": 368,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el propósito del archivo '.gitignore' en un repositorio Git?",
-      "answer": "El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio."
-    },
+      "answer": "El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio.",
+      "correctAnswer": "d) El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio.",
+      "allAnswers": [
+        "a) El archivo '.gitignore' es necesario para que Git funcione correctamente.",
+        "b) El archivo '.gitignore' se utiliza para almacenar contraseñas de forma segura.",
+        "c) El archivo '.gitignore' es una copia de seguridad automática generada por Git.",
+        "d) El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio."
+      ]
+    },    
     {
       "id": 369,
       "category": "Git",
       "level": "Middle",
       "question": "Explica la diferencia entre 'git pull' y 'git fetch'.",
-      "answer": "'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario."
-    },
+      "answer": "'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario.",
+      "correctAnswer": "c) 'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario.",
+      "allAnswers": [
+        "a) 'Git pull' y 'git fetch' son comandos equivalentes en Git.",
+        "b) 'Git pull' y 'git fetch' realizan la misma operación: descargar cambios remotos.",
+        "c) 'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario.",
+        "d) 'Git pull' descarga los cambios remotos pero no realiza la fusión, mientras que 'git fetch' fusiona automáticamente en la rama actual."
+      ]
+    },    
     {
       "id": 370,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es una rama (branch) en Git y cuál es su propósito?",
-      "answer": "Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración."
-    },
+      "answer": "Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración.",
+      "correctAnswer": "d) Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración.",
+      "allAnswers": [
+        "a) Una rama en Git es un duplicado exacto de la rama principal.Sirve para jugar con el código",
+        "b) Una rama en Git es un contenedor para archivos temporales.Sirve de poco al ser temporal",
+        "c) Una rama en Git solo se utiliza para almacenar archivos de respaldo.Sirve por si se pierde el trabajo",
+        "d) Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración."
+      ]
+    },    
     {
       "id": 371,
       "category": "Git",
       "level": "Middle",
       "question": "¿Cómo se fusiona una rama en Git y cuál es el comando utilizado?",
-      "answer": "Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios."
-    },
+      "answer": "Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios.",
+      "correctAnswer": "d) Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios.",
+      "allAnswers": [
+        "a) 'git join <nombre_de_la_rama>'",
+        "b) 'git branch <nombre_de_la_rama>'",
+        "c) 'git combine <nombre_de_la_rama>'",
+        "d) Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios."
+      ]
+    },    
     {
       "id": 372,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un conflicto de resolución de merge y cómo se soluciona?",
-      "answer": "Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión."
-    },
+      "answer": "Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión.",
+      "correctAnswer": "b) Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión.",
+      "allAnswers": [
+        "a) Un conflicto de resolución de merge ocurre cuando las ramas se fusionan sin problemas.",
+        "b) Un conflicto de resolución de merge ocurre cuando hay conflictos en los cambios entre las ramas fusionadas. Se soluciona manualmente editando los archivos en conflicto, marcándolos como resueltos, y luego realizando un commit para finalizar la fusión.",
+        "c) Se resuelve automáticamente sin intervención del usuario.",
+        "d) Se soluciona mediante el comando 'git resolve'."
+      ]
+    },    
     {
       "id": 373,
       "category": "Git",
       "level": "Junior",
-      "question": "¿Cuál es el comando para clonar un repositorio Git existente?",
-      "answer": "El comando para clonar un repositorio Git existente es 'git clone <URL_del_repositorio>'. Esto crea una copia local del repositorio remoto en tu máquina."
-    },
+      "question": "¿Cuál es la función del comando 'git status' y por qué es útil en el desarrollo con Git?",
+      "answer": "El comando 'git status' muestra el estado actual del repositorio, incluyendo los cambios realizados, archivos añadidos, y archivos que aún no han sido rastreados. Es útil para tener una visión general de las modificaciones pendientes y facilita el seguimiento del progreso del trabajo.",
+      "correctAnswer": "b) El comando 'git status' muestra el estado actual del repositorio, incluyendo los cambios realizados, archivos añadidos, y archivos que aún no han sido rastreados. Es útil para tener una visión general de las modificaciones pendientes y facilita el seguimiento del progreso del trabajo.",
+      "allAnswers": [
+        "a) 'git status' se utiliza para fusionar ramas en Git.",
+        "b) El comando 'git status' muestra el estado actual del repositorio, incluyendo los cambios realizados, archivos añadidos, y archivos que aún no han sido rastreados. Es útil para tener una visión general de las modificaciones pendientes y facilita el seguimiento del progreso del trabajo.",
+        "c) 'git status' se utiliza para revertir cambios en Git.",
+        "d) 'git status' es exclusivamente para mostrar información sobre las ramas en Git."
+      ]
+    },    
     {
       "id": 374,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un repositorio remoto en Git?",
-      "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio."
-    },
+      "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio.",
+      "correctAnswer": "d) Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio.",
+      "allAnswers": [
+        "a) Un repositorio remoto en Git es una copia local de tu proyecto en la máquina de otro desarrollador.",       
+        "b) Un repositorio remoto en Git es una copia de seguridad de tu proyecto almacenada en tu propia máquina.",
+        "c) Un repositorio remoto en Git es una versión sin conexión de tu proyecto.",
+        "d) Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio."
+      ]
+    },    
     {
       "id": 375,
       "category": "Git",
       "level": "Middle",
-      "question": "¿Qué es un conflicto de fusión (merge conflict) en Git y cómo se resuelve?",
-      "answer": "Un conflicto de fusión ocurre cuando dos ramas tienen cambios en las mismas líneas de código. Para resolverlo, debes abrir el archivo en conflicto, editar manualmente las secciones en conflicto para que queden como desees y luego hacer un commit para finalizar la fusión."
+      "question": "¿Qué es un remoto upstream en Git y cuál es su propósito?",
+      "answer": "Un remoto upstream en Git es una referencia a un repositorio remoto que se bifurcó (forked) desde el repositorio original. Su propósito es permitir que el propietario del repositorio original pueda incorporar cambios desde las bifurcaciones (forks) de otros desarrolladores. Esto facilita la colaboración y la integración de cambios en el proyecto principal.",
+      "correctAnswer": "b) Un remoto upstream en Git es una referencia a un repositorio remoto que se bifurcó (forked) desde el repositorio original. Su propósito es permitir que el propietario del repositorio original pueda incorporar cambios desde las bifurcaciones (forks) de otros desarrolladores. Esto facilita la colaboración y la integración de cambios en el proyecto principal.",
+      "allAnswers": [
+        "a) Un remoto upstream en Git es una versión sin conexión de tu proyecto.",
+        "b) Un remoto upstream en Git es una referencia a un repositorio remoto que se bifurcó (forked) desde el repositorio original. Su propósito es permitir que el propietario del repositorio original pueda incorporar cambios desde las bifurcaciones (forks) de otros desarrolladores. Esto facilita la colaboración y la integración de cambios en el proyecto principal.",
+        "c) Un remoto upstream en Git es una copia local de tu proyecto en la máquina de otro desarrollador.",
+        "d) Un remoto upstream en Git es una copia de seguridad de tu proyecto almacenada en tu propia máquina."
+      ]
     },
     {
       "id": 376,
       "category": "Git",
       "level": "Middle",
       "question": "Explica el flujo de trabajo típico de Git para colaborar en un proyecto con otros desarrolladores.",
-      "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos."
-    },
+      "answer": "El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos.",
+      "correctAnswer": "d) El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos.",
+      "allAnswers": [
+        "a) El flujo de trabajo típico de Git implica solo hacer cambios directamente en la rama principal (master o main).",
+        "b) El flujo de trabajo típico de Git no implica fusionar ramas.",
+        "c) El flujo de trabajo típico de Git no incluye realizar commits.",
+        "d) El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos."
+      ]
+    },    
     {
       "id": 377,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es Git rebase y cuál es su propósito?",
-      "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra."
-    },
+      "answer": "'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra.",
+      "correctAnswer": "d) 'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra.",
+      "allAnswers": [
+        "a) 'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra.",
+        "b) 'Git rebase' es una operación que elimina por completo el historial de cambios.",
+        "c) 'Git rebase' es una operación que solo se puede aplicar a la rama principal (master o main).",
+        "d) 'Git rebase' es una operación que no afecta el historial de cambios."     
+      ]
+    },    
     {
       "id": 378,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es un submódulo Git?",
-      "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos."
-    },
+      "answer": "Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos.",
+      "correctAnswer": "d) Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos.",
+      "allAnswers": [
+        "a) Un submódulo Git es una rama adicional en un repositorio Git.",
+        "b) Un submódulo Git es un archivo de configuración para ajustes específicos de Git.",
+        "c) Un submódulo Git es una etiqueta de versión en un repositorio Git.",
+        "d) Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos."
+      ]
+    },    
     {
       "id": 379,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es 'git stash' y cuándo se utiliza?",
-      "answer": "'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales."
-    },
+      "answer": "'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales.",
+      "correctAnswer": "b) 'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales.",
+      "allAnswers": [
+        "a) 'Git stash' se utiliza para eliminar permanentemente cambios no comprometidos.",
+        "b) 'Git stash' se utiliza para guardar temporalmente cambios no comprometidos en una rama en un estado de almacenamiento temporal. Esto es útil cuando deseas cambiar de rama sin realizar un commit de los cambios actuales.",
+        "c) 'Git stash' se utiliza para fusionar cambios entre ramas.",
+        "d) 'Git stash' se utiliza para revertir un commit en Git."
+      ]
+    },    
     {
       "id": 380,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es Git bisect y cómo se utiliza para depurar problemas en el código?",
-      "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático."
-    },  
+      "answer": "'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático.",
+      "correctAnswer": "c) 'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático.",
+      "allAnswers": [
+        "a) 'Git bisect' es una herramienta para fusionar ramas en Git.",
+        "b) 'Git bisect' es una función para revertir cambios en Git.",
+        "c) 'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático.",
+        "d) 'Git bisect' es una herramienta para clonar un repositorio Git."
+      ]
+    },    
     {
       "id": 381,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre un repositorio Git local y un repositorio Git remoto?",
-      "answer": "Un repositorio Git local se encuentra en la máquina del desarrollador y contiene una copia completa del proyecto. Un repositorio Git remoto está alojado en un servidor y permite la colaboración entre varios desarrolladores al compartir y sincronizar cambios."
-    },
+      "answer": "Un repositorio Git local se encuentra en la máquina del desarrollador y contiene una copia completa del proyecto. Un repositorio Git remoto está alojado en un servidor y permite la colaboración entre varios desarrolladores al compartir y sincronizar cambios.",
+      "correctAnswer": "d) Un repositorio Git local se encuentra en la máquina del desarrollador y contiene una copia completa del proyecto. Un repositorio Git remoto está alojado en un servidor y permite la colaboración entre varios desarrolladores al compartir y sincronizar cambios.",
+      "allAnswers": [
+        "a) Un repositorio Git local es una versión reducida del repositorio Git remoto.",
+        "b) Un repositorio Git local se encuentra en un servidor remoto.",
+        "c) Un repositorio Git remoto solo contiene cambios recientes en comparación con el repositorio Git local.",
+        "d) Un repositorio Git local se encuentra en la máquina del desarrollador y contiene una copia completa del proyecto. Un repositorio Git remoto está alojado en un servidor y permite la colaboración entre varios desarrolladores al compartir y sincronizar cambios."
+      ]
+    },    
     {
       "id": 382,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cómo se crea una rama (branch) en Git y cuál es su propósito?",
-      "answer": "Para crear una rama en Git, se utiliza el comando 'git branch <nombre_de_la_rama>'. El propósito de una rama es permitir el desarrollo paralelo de características o correcciones sin afectar la rama principal, lo que facilita la colaboración y la organización del trabajo."
+      "answer": "Para crear una rama en Git, se utiliza el comando 'git branch <nombre_de_la_rama>'. El propósito de una rama es permitir el desarrollo paralelo de características o correcciones sin afectar la rama principal, lo que facilita la colaboración y la organización del trabajo.",
+      "correctAnswer": "d) Para crear una rama en Git, se utiliza el comando 'git branch <nombre_de_la_rama>'. El propósito de una rama es permitir el desarrollo paralelo de características o correcciones sin afectar la rama principal, lo que facilita la colaboración y la organización del trabajo.",
+      "allAnswers": [
+        "a) Una rama en Git se crea automáticamente al iniciar un nuevo proyecto.",
+        "b) Para crear una rama en Git, se utiliza el comando 'git create-branch <nombre_de_la_rama>'.",
+        "c) Las ramas en Git solo se utilizan para corregir errores en el código.",
+        "d) Para crear una rama en Git, se utiliza el comando 'git branch <nombre_de_la_rama>'. El propósito de una rama es permitir el desarrollo paralelo de características o correcciones sin afectar la rama principal, lo que facilita la colaboración y la organización del trabajo."
+      ]
     },
     {
       "id": 383,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el propósito de la herramienta GitKraken?",
-      "answer": "GitKraken es una herramienta de interfaz gráfica para Git que facilita la gestión de repositorios Git. Se utiliza para realizar operaciones Git de manera visual y simplificada."
-    },
+      "answer": "GitKraken es una herramienta de interfaz gráfica para Git que facilita la gestión de repositorios Git. Se utiliza para realizar operaciones Git de manera visual y simplificada.",
+      "correctAnswer": "a) GitKraken es una herramienta de interfaz gráfica para Git que facilita la gestión de repositorios Git. Se utiliza para realizar operaciones Git de manera visual y simplificada.",
+      "allAnswers": [
+        "a) GitKraken es una herramienta de interfaz gráfica para Git que facilita la gestión de repositorios Git. Se utiliza para realizar operaciones Git de manera visual y simplificada.",
+        "b) GitKraken es una herramienta para desinstalar Git en el sistema.",
+        "c) GitKraken es una plataforma de alojamiento de repositorios Git.",
+        "d) GitKraken es una herramienta para clonar repositorios Git."    
+      ]
+    },    
     {
       "id": 384,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cómo se elimina una rama (branch) en Git?",
-      "answer": "Para eliminar una rama en Git, se utiliza el comando 'git branch -d <nombre_de_la_rama>' si la rama ha sido fusionada o 'git branch -D <nombre_de_la_rama>' para forzar la eliminación."
-    },
+      "answer": "Para eliminar una rama en Git, se utiliza el comando 'git branch -d <nombre_de_la_rama>' si la rama ha sido fusionada o 'git branch -D <nombre_de_la_rama>' para forzar la eliminación.",
+      "correctAnswer": "d) Para eliminar una rama en Git, se utiliza el comando 'git branch -d <nombre_de_la_rama>' si la rama ha sido fusionada o 'git branch -D <nombre_de_la_rama>' para forzar la eliminación.",
+      "allAnswers": [
+        "a) Para eliminar una rama en Git, se utiliza el comando 'git remove <nombre_de_la_rama>'.",
+        "b) Para eliminar una rama en Git, se utiliza el comando 'git delete branch <nombre_de_la_rama>'.",
+        "c) Para eliminar una rama en Git, se utiliza el comando 'git branch delete <nombre_de_la_rama>'.",
+        "d) Para eliminar una rama en Git, se utiliza el comando 'git branch -d <nombre_de_la_rama>' si la rama ha sido fusionada o 'git branch -D <nombre_de_la_rama>' para forzar la eliminación."
+      ]
+    },    
     {
       "id": 385,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un pull request en Git y cuál es su función?",
-      "answer": "Un pull request en Git es una solicitud que un desarrollador envía para fusionar sus cambios en una rama con otra, generalmente de una rama de características a una rama principal. Su función es permitir la revisión y aprobación de los cambios antes de la fusión."
-    },
+      "answer": "Un pull request en Git es una solicitud que un desarrollador envía para fusionar sus cambios en una rama con otra, generalmente de una rama de características a una rama principal. Su función es permitir la revisión y aprobación de los cambios antes de la fusión.",
+      "correctAnswer": "c) Un pull request en Git es una solicitud que un desarrollador envía para fusionar sus cambios en una rama con otra, generalmente de una rama de características a una rama principal. Su función es permitir la revisión y aprobación de los cambios antes de la fusión.",
+      "allAnswers": [
+        "a) Un pull request en Git es un comando para extraer cambios desde una rama remota.",
+        "b) Un pull request en Git es una solicitud para clonar un repositorio remoto.",
+        "c) Un pull request en Git es una solicitud que un desarrollador envía para fusionar sus cambios en una rama con otra, generalmente de una rama de características a una rama principal. Su función es permitir la revisión y aprobación de los cambios antes de la fusión.",
+        "d) Un pull request en Git es una acción para revertir cambios en una rama."     
+      ]
+    },    
     {
       "id": 386,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un 'squash commit' en Git y cómo se realiza?",
-      "answer": "Un 'squash commit' en Git es la combinación de varios commits en uno solo para mantener un historial de cambios más ordenado. Se realiza durante un rebase interactivo al especificar 'squash' o 'fixup' en los commits que se desean combinar."
-    },
+      "answer": "Un 'squash commit' en Git es la combinación de varios commits en uno solo para mantener un historial de cambios más ordenado. Se realiza durante un rebase interactivo al especificar 'squash' o 'fixup' en los commits que se desean combinar.",
+      "correctAnswer": "b) Un 'squash commit' en Git es la combinación de varios commits en uno solo para mantener un historial de cambios más ordenado. Se realiza durante un rebase interactivo al especificar 'squash' o 'fixup' en los commits que se desean combinar.",
+      "allAnswers": [
+        "a) Un 'squash commit' en Git es un nuevo tipo de commit sin cambios reales.",
+        "b) Un 'squash commit' en Git es la combinación de varios commits en uno solo para mantener un historial de cambios más ordenado. Se realiza durante un rebase interactivo al especificar 'squash' o 'fixup' en los commits que se desean combinar.",
+        "c) Un 'squash commit' en Git es un commit que introduce conflictos en el código.",
+        "d) Un 'squash commit' en Git es un comando para deshacer cambios en un commit."
+      ]
+    },    
     {
       "id": 387,
       "category": "Git",
       "level": "Senior",
       "question": "Explica el flujo de trabajo de 'git cherry-pick' y cuándo se utiliza.",
-      "answer": "'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama."
-    },
+      "answer": "'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama.",
+      "correctAnswer": "d) 'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama.",
+      "allAnswers": [
+        "a) 'Git cherry-pick' es una operación que fusiona dos ramas automáticamente.",       
+        "b) 'Git cherry-pick' es una operación que revierte un commit en una rama específica.",
+        "c) 'Git cherry-pick' es una operación que solo se puede realizar en repositorios remotos.",
+        "d) 'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama."
+      ]
+    },    
     {
       "id": 388,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es la 'staging area' en Git y cuál es su función?",
-      "answer": "La 'staging area' en Git es una zona intermedia donde se preparan los cambios antes de realizar un commit. Permite revisar y seleccionar los cambios que se incluirán en el próximo commit, lo que brinda mayor control sobre el historial de versiones."
-    },
+      "answer": "La 'staging area' en Git es una zona intermedia donde se preparan los cambios antes de realizar un commit. Permite revisar y seleccionar los cambios que se incluirán en el próximo commit, lo que brinda mayor control sobre el historial de versiones.",
+      "correctAnswer": "d) La 'staging area' en Git es una zona intermedia donde se preparan los cambios antes de realizar un commit. Permite revisar y seleccionar los cambios que se incluirán en el próximo commit, lo que brinda mayor control sobre el historial de versiones.",
+      "allAnswers": [
+        "a) La 'staging area' en Git es una zona donde se almacenan permanentemente los cambios.",
+        "b) La 'staging area' en Git es un lugar donde se almacenan archivos binarios.",
+        "c) La 'staging area' en Git es un espacio de almacenamiento en la nube para proyectos.",
+        "d) La 'staging area' en Git es una zona intermedia donde se preparan los cambios antes de realizar un commit. Permite revisar y seleccionar los cambios que se incluirán en el próximo commit, lo que brinda mayor control sobre el historial de versiones."
+      ]
+    },    
     {
       "id": 389,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el comando para ver el historial de commits en Git?",
-      "answer": "El comando para ver el historial de commits en Git es 'git log'."
-    },
+      "answer": "El comando para ver el historial de commits en Git es 'git log'.",
+      "correctAnswer": "c) El comando para ver el historial de commits en Git es 'git log'.",
+      "allAnswers": [
+        "a) 'git history'",
+        "b) 'git show --commits'",
+        "c) 'git log'",
+        "d) 'git commit --log'"
+      ]
+    },    
     {
       "id": 390,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es la diferencia entre 'git push' y 'git pull'?",
-      "answer": "'Git push' se utiliza para enviar cambios locales a un repositorio remoto. 'Git pull' se utiliza para obtener cambios del repositorio remoto y fusionarlos en la rama local."
+      "answer": "'Git push' se utiliza para enviar cambios locales a un repositorio remoto. 'Git pull' se utiliza para obtener cambios del repositorio remoto y fusionarlos en la rama local.",
+      "correctAnswer": "d) 'Git push' se utiliza para enviar cambios locales a un repositorio remoto. 'Git pull' se utiliza para obtener cambios del repositorio remoto y fusionarlos en la rama local.",
+      "allAnswers": [
+        "a) 'Git push' se utiliza para obtener cambios del repositorio remoto. 'Git pull' se utiliza para enviar cambios locales a un repositorio remoto.",
+        "b) 'Git pull' se utiliza para enviar cambios locales a un repositorio remoto. 'Git push' se utiliza para obtener cambios del repositorio remoto.",
+        "c) 'Git push' y 'Git pull' son intercambiables y realizan la misma operación.",
+        "d) 'Git push' se utiliza para enviar cambios locales a un repositorio remoto. 'Git pull' se utiliza para obtener cambios del repositorio remoto y fusionarlos en la rama local."
+      ]
     },
     {
       "id": 391,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es un 'fork' en Git?",
-      "answer": "Un 'fork' en Git es una copia de un repositorio ajeno en tu propia cuenta de GitHub o GitLab. Se utiliza para contribuir a proyectos de código abierto o trabajar en una copia personal del proyecto original."
-    },
+      "answer": "Un 'fork' en Git es una copia de un repositorio ajeno en tu propia cuenta de GitHub o GitLab. Se utiliza para contribuir a proyectos de código abierto o trabajar en una copia personal del proyecto original.",
+      "correctAnswer": "d) Un 'fork' en Git es una copia de un repositorio ajeno en tu propia cuenta de GitHub o GitLab. Se utiliza para contribuir a proyectos de código abierto o trabajar en una copia personal del proyecto original.",
+      "allAnswers": [
+        "a) Un 'fork' en Git es la acción de bifurcar una rama en dos.",
+        "b) Un 'fork' en Git es una característica experimental para clonar un repositorio.",
+        "c) Un 'fork' en Git es una herramienta para fusionar ramas en un repositorio.",
+        "d) Un 'fork' en Git es una copia de un repositorio ajeno en tu propia cuenta de GitHub o GitLab. Se utiliza para contribuir a proyectos de código abierto o trabajar en una copia personal del proyecto original."
+      ]
+    },    
     {
       "id": 392,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el propósito de la rama 'master' en Git?",
-      "answer": "La rama 'master' en Git suele ser la rama principal que contiene la versión estable del proyecto. Es común utilizarla como base para otras ramas de desarrollo."
-    },
+      "answer": "La rama 'master' en Git suele ser la rama principal que contiene la versión estable del proyecto. Es común utilizarla como base para otras ramas de desarrollo.",
+      "correctAnswer": "b) La rama 'master' en Git suele ser la rama principal que contiene la versión estable del proyecto. Es común utilizarla como base para otras ramas de desarrollo.",
+      "allAnswers": [
+        "a) La rama 'master' en Git es solo una convención de nombre y no tiene un propósito específico.",
+        "b) La rama 'master' en Git suele ser la rama principal que contiene la versión estable del proyecto. Es común utilizarla como base para otras ramas de desarrollo.",
+        "c) La rama 'master' en Git siempre contiene la versión más reciente del proyecto.",
+        "d) La rama 'master' en Git se utiliza solo para propósitos de prueba."
+      ]
+    },    
     {
       "id": 393,
       "category": "Git",
       "level": "Middle",
       "question": "¿Cuál es el propósito de las etiquetas (tags) en Git?",
-      "answer": "Las etiquetas (tags) en Git se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de lanzamiento. Proporcionan un punto de referencia fijo para facilitar la referencia y la recuperación de versiones específicas."
-    },
+      "answer": "Las etiquetas (tags) en Git se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de lanzamiento. Proporcionan un punto de referencia fijo para facilitar la referencia y la recuperación de versiones específicas.",
+      "correctAnswer": "d) Las etiquetas (tags) en Git se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de lanzamiento. Proporcionan un punto de referencia fijo para facilitar la referencia y la recuperación de versiones específicas.",
+      "allAnswers": [
+        "a) Las etiquetas (tags) en Git son solo decorativas y no tienen un propósito real.",
+        "b) Las etiquetas (tags) en Git se utilizan solo para marcar commits importantes.",
+        "c) Las etiquetas (tags) en Git son solo para uso interno y no se comparten con otros desarrolladores.",
+        "d) Las etiquetas (tags) en Git se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de lanzamiento. Proporcionan un punto de referencia fijo para facilitar la referencia y la recuperación de versiones específicas."
+      ]
+    },    
     {
       "id": 394,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es una 'pre-commit hook' en Git y cuál es su función?",
-      "answer": "Una 'pre-commit hook' en Git es un script personalizado que se ejecuta antes de realizar un commit. Su función es realizar comprobaciones o tareas automatizadas, como pruebas, para garantizar que los commits cumplan con los estándares establecidos."
-    },
+      "answer": "Una 'pre-commit hook' en Git es un script personalizado que se ejecuta antes de realizar un commit. Su función es realizar comprobaciones o tareas automatizadas, como pruebas, para garantizar que los commits cumplan con los estándares establecidos.",
+      "correctAnswer": "a) Una 'pre-commit hook' en Git es un script personalizado que se ejecuta antes de realizar un commit. Su función es realizar comprobaciones o tareas automatizadas, como pruebas, para garantizar que los commits cumplan con los estándares establecidos.",
+      "allAnswers": [
+        "a) Una 'pre-commit hook' en Git es un script personalizado que se ejecuta antes de realizar un commit. Su función es realizar comprobaciones o tareas automatizadas, como pruebas, para garantizar que los commits cumplan con los estándares establecidos.",
+        "b) Una 'pre-commit hook' en Git es una tarea manual que el desarrollador realiza antes de cada commit.",
+        "c) Una 'pre-commit hook' en Git es una característica obsoleta y no se recomienda su uso.",
+        "d) Una 'pre-commit hook' en Git es una herramienta gráfica para revisar los cambios antes de hacer un commit."       
+      ]
+    },    
     {
       "id": 395,
       "category": "Git",
       "level": "Middle",
       "question": "¿Cuál es la diferencia entre 'git rebase' y 'git merge'?",
-      "answer": "'Git rebase' cambia la base de una rama al aplicar los cambios de otra rama, lo que puede mantener un historial más limpio y lineal. 'Git merge' fusiona los cambios de una rama en otra sin cambiar la base, lo que puede crear un historial más ramificado."
-    },
+      "answer": "'Git rebase' cambia la base de una rama al aplicar los cambios de otra rama, lo que puede mantener un historial más limpio y lineal. 'Git merge' fusiona los cambios de una rama en otra sin cambiar la base, lo que puede crear un historial más ramificado.",
+      "correctAnswer": "d) 'Git rebase' cambia la base de una rama al aplicar los cambios de otra rama, lo que puede mantener un historial más limpio y lineal. 'Git merge' fusiona los cambios de una rama en otra sin cambiar la base, lo que puede crear un historial más ramificado.",
+      "allAnswers": [
+        "a) 'Git rebase' y 'git merge' son comandos equivalentes y se pueden usar indistintamente.",
+        "b) 'Git rebase' y 'git merge' son comandos obsoletos y no se recomienda su uso.",
+        "c) 'Git rebase' y 'git merge' realizan la misma operación de fusionar cambios de una rama en otra.",
+        "d) 'Git rebase' cambia la base de una rama al aplicar los cambios de otra rama, lo que puede mantener un historial más limpio y lineal. 'Git merge' fusiona los cambios de una rama en otra sin cambiar la base, lo que puede crear un historial más ramificado."
+      ]
+    },    
     {
       "id": 396,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es 'git reflog' y cuál es su propósito?",
-      "answer": "'Git reflog' es un registro que almacena un historial de referencias y acciones realizadas en un repositorio Git. Su propósito es proporcionar una forma de recuperar cambios o referencias perdidas, incluso después de operaciones delicadas."
-    },
+      "answer": "'Git reflog' es un registro que almacena un historial de referencias y acciones realizadas en un repositorio Git. Su propósito es proporcionar una forma de recuperar cambios o referencias perdidas, incluso después de operaciones delicadas.",
+      "correctAnswer": "b) 'Git reflog' es un registro que almacena un historial de referencias y acciones realizadas en un repositorio Git. Su propósito es proporcionar una forma de recuperar cambios o referencias perdidas, incluso después de operaciones delicadas.",
+      "allAnswers": [
+        "a) 'Git reflog' es un comando para realizar la fusión de ramas en Git.",
+        "b) 'Git reflog' es un registro que almacena un historial de referencias y acciones realizadas en un repositorio Git. Su propósito es proporcionar una forma de recuperar cambios o referencias perdidas, incluso después de operaciones delicadas.",
+        "c) 'Git reflog' es un comando para eliminar permanentemente referencias en Git.",
+        "d) 'Git reflog' es un comando para revertir cambios específicos en Git."
+      ]
+    },    
     {
       "id": 397,
       "category": "Git",
       "level": "Senior",
       "question": "Explica la diferencia entre 'git cherry-pick' y 'git rebase'.",
-      "answer": "'Git cherry-pick' se utiliza para aplicar un commit específico de una rama a otra, mientras que 'git rebase' permite cambiar la base de una rama aplicando cambios de otra rama. 'Cherry-pick' es selectivo, mientras que 'rebase' cambia la historia completa de una rama."
-    },
+      "answer": "'Git cherry-pick' se utiliza para aplicar un commit específico de una rama a otra, mientras que 'git rebase' permite cambiar la base de una rama aplicando cambios de otra rama. 'Cherry-pick' es selectivo, mientras que 'rebase' cambia la historia completa de una rama.",
+      "correctAnswer": "b) 'Git cherry-pick' se utiliza para aplicar un commit específico de una rama a otra, mientras que 'git rebase' permite cambiar la base de una rama aplicando cambios de otra rama. 'Cherry-pick' es selectivo, mientras que 'rebase' cambia la historia completa de una rama.",
+      "allAnswers": [
+        "a) 'Git cherry-pick' y 'git rebase' son comandos equivalentes en Git.",
+        "b) 'Git cherry-pick' se utiliza para aplicar un commit específico de una rama a otra, mientras que 'git rebase' permite cambiar la base de una rama aplicando cambios de otra rama. 'Cherry-pick' es selectivo, mientras que 'rebase' cambia la historia completa de una rama.",
+        "c) 'Git cherry-pick' y 'git rebase' son términos intercambiables en Git.",
+        "d) 'Git cherry-pick' se utiliza para revertir cambios en una rama, mientras que 'git rebase' se utiliza para fusionar ramas en Git."
+      ]
+    },    
     {
       "id": 398,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es 'git worktree' y cómo se utiliza?",
-      "answer": "'Git worktree' permite trabajar en múltiples ramas simultáneamente en el mismo repositorio. Se utiliza para crear directorios de trabajo adicionales para diferentes ramas o commits, lo que facilita la colaboración en proyectos paralelos."
-    },
+      "answer": "'Git worktree' permite trabajar en múltiples ramas simultáneamente en el mismo repositorio. Se utiliza para crear directorios de trabajo adicionales para diferentes ramas o commits, lo que facilita la colaboración en proyectos paralelos.",
+      "correctAnswer": "d) 'Git worktree' permite trabajar en múltiples ramas simultáneamente en el mismo repositorio. Se utiliza para crear directorios de trabajo adicionales para diferentes ramas o commits, lo que facilita la colaboración en proyectos paralelos.",
+      "allAnswers": [
+        "a) 'Git worktree' es un comando para eliminar ramas en Git.",
+        "b) 'Git worktree' es una herramienta para visualizar el historial de cambios en Git.",
+        "c) 'Git worktree' es una característica para deshacer commits en Git.",
+        "d) 'Git worktree' permite trabajar en múltiples ramas simultáneamente en el mismo repositorio. Se utiliza para crear directorios de trabajo adicionales para diferentes ramas o commits, lo que facilita la colaboración en proyectos paralelos."
+      ]
+    },    
     {
       "id": 399,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué son los 'hooks' en Git y cuáles son algunos ejemplos de ellos?",
-      "answer": "Los 'hooks' en Git son scripts personalizables que se ejecutan automáticamente en ciertos eventos, como antes o después de realizar un commit o recibir un 'push'. Algunos ejemplos incluyen 'pre-commit', 'post-commit', 'pre-receive' y 'post-receive' hooks."
-    },
+      "answer": "Los 'hooks' en Git son scripts personalizables que se ejecutan automáticamente en ciertos eventos, como antes o después de realizar un commit o recibir un 'push'. Algunos ejemplos incluyen 'pre-commit', 'post-commit', 'pre-receive' y 'post-receive' hooks.",
+      "correctAnswer": "d) Los 'hooks' en Git son scripts personalizables que se ejecutan automáticamente en ciertos eventos, como antes o después de realizar un commit o recibir un 'push'. Algunos ejemplos incluyen 'pre-commit', 'post-commit', 'pre-receive' y 'post-receive' hooks.",
+      "allAnswers": [
+        "a) Los 'hooks' en Git son extensiones para agregar nuevas características.",
+        "b) Los 'hooks' en Git son comandos para revertir cambios en un repositorio.",
+        "c) Los 'hooks' en Git son herramientas para gestionar conflictos de fusión.",
+        "d) Los 'hooks' en Git son scripts personalizables que se ejecutan automáticamente en ciertos eventos, como antes o después de realizar un commit o recibir un 'push'. Algunos ejemplos incluyen 'pre-commit', 'post-commit', 'pre-receive' y 'post-receive' hooks."
+      ]
+    },    
     {
       "id": 400,
       "category": "Git",
       "level": "Senior",
       "question": "¿Cuál es la diferencia entre 'git revert' y 'git reset'?",
-      "answer": "'Git revert' crea un nuevo commit que deshace los cambios de un commit anterior, mientras que 'git reset' modifica la historia del repositorio eliminando commits. 'Revert' es más seguro para colaboraciones, mientras que 'reset' es más drástico y se usa localmente."
-    },
+      "answer": "'Git revert' crea un nuevo commit que deshace los cambios de un commit anterior, mientras que 'git reset' modifica la historia del repositorio eliminando commits. 'Revert' es más seguro para colaboraciones, mientras que 'reset' es más drástico y se usa localmente.",
+      "correctAnswer": "c) 'Git revert' crea un nuevo commit que deshace los cambios de un commit anterior, mientras que 'git reset' modifica la historia del repositorio eliminando commits. 'Revert' es más seguro para colaboraciones, mientras que 'reset' es más drástico y se usa localmente.",
+      "allAnswers": [
+        "a) 'Git revert' y 'git reset' son comandos equivalentes y pueden usarse indistintamente.",
+        "b) 'Git revert' se utiliza para deshacer cambios locales, mientras que 'git reset' deshace cambios en el repositorio remoto.",
+        "c) 'Git revert' crea un nuevo commit que deshace los cambios de un commit anterior, mientras que 'git reset' modifica la historia del repositorio eliminando commits. 'Revert' es más seguro para colaboraciones, mientras que 'reset' es más drástico y se usa localmente.",
+        "d) 'Git revert' modifica la historia del repositorio eliminando commits, mientras que 'git reset' crea un nuevo commit que deshace los cambios de un commit anterior."      
+      ]
+    },    
     {
       "id": 401,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cómo se crea una etiqueta (tag) en Git?",
-      "answer": "Para crear una etiqueta en Git, puedes utilizar el comando 'git tag <nombre_de_la_etiqueta>'. Luego, puedes asociar la etiqueta con un commit específico."
-    },
+      "answer": "Para crear una etiqueta en Git, puedes utilizar el comando 'git tag <nombre_de_la_etiqueta>'. Luego, puedes asociar la etiqueta con un commit específico.",
+      "correctAnswer": "a) Para crear una etiqueta en Git, puedes utilizar el comando 'git tag <nombre_de_la_etiqueta>'. Luego, puedes asociar la etiqueta con un commit específico.",
+      "allAnswers": [
+        "a) Para crear una etiqueta en Git, puedes utilizar el comando 'git tag <nombre_de_la_etiqueta>'. Luego, puedes asociar la etiqueta con un commit específico.",
+        "b) Las etiquetas en Git se crean automáticamente para cada commit.",
+        "c) El comando 'git create-tag' se utiliza para crear etiquetas en Git.",
+        "d) Las etiquetas en Git solo se pueden crear en ramas principales."
+      ]
+    },    
     {
       "id": 402,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es un repositorio Git bare?",
-      "answer": "Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo."
-    },
+      "answer": "Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo.",
+      "correctAnswer": "d) Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo.",
+      "allAnswers": [      
+        "a) Un repositorio Git bare es un repositorio con múltiples copias de trabajo.",
+        "b) Un repositorio Git bare es un repositorio local en la máquina de un desarrollador.",
+        "c) Un repositorio Git bare es un repositorio con una estructura de directorios de trabajo, pero sin historial de cambios.",
+        "d) Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo."
+      ]
+    },    
     {
       "id": 403,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es 'git squash' y cuál es su utilidad?",
-      "answer": "'Git squash' es una operación que combina múltiples commits en uno solo. Se utiliza para mantener un historial de commits más limpio y comprensible al agrupar cambios relacionados en un solo commit."
+      "answer": "'Git squash' es una operación que combina múltiples commits en uno solo. Se utiliza para mantener un historial de commits más limpio y comprensible al agrupar cambios relacionados en un solo commit.",
+      "correctAnswer": "c) 'Git squash' es una operación que combina múltiples commits en uno solo. Se utiliza para mantener un historial de commits más limpio y comprensible al agrupar cambios relacionados en un solo commit.",
+      "allAnswers": [
+        "a) 'Git squash' es una operación que divide un commit en varios.",
+        "b) 'Git squash' es una operación que deshace el último commit.",
+        "c) 'Git squash' es una operación que combina múltiples commits en uno solo. Se utiliza para mantener un historial de commits más limpio y comprensible al agrupar cambios relacionados en un solo commit.",
+        "d) 'Git squash' es una operación que renombra un commit."
+      ]
     },
     {
       "id": 404,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es 'git blame' y cómo se utiliza?",
-      "answer": "'Git blame' es un comando que muestra quién modificó cada línea de un archivo y en qué commit se realizó la modificación. Se utiliza para rastrear la autoría de cambios en un archivo."
+      "answer": "'Git blame' es un comando que muestra quién modificó cada línea de un archivo y en qué commit se realizó la modificación. Se utiliza para rastrear la autoría de cambios en un archivo.",
+      "correctAnswer": "d) 'Git blame' es un comando que muestra quién modificó cada línea de un archivo y en qué commit se realizó la modificación. Se utiliza para rastrear la autoría de cambios en un archivo.",
+      "allAnswers": [
+        "a) 'Git blame' es un comando que revierte cambios en un archivo.",
+        "b) 'Git blame' es un comando que fusiona ramas en Git.",
+        "c) 'Git blame' es un comando que lista todos los commits en un repositorio.",
+        "d) 'Git blame' es un comando que muestra quién modificó cada línea de un archivo y en qué commit se realizó la modificación. Se utiliza para rastrear la autoría de cambios en un archivo."
+      ]
     },
     {
       "id": 405,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es 'git filter-branch' y cuándo se utiliza?",
-      "answer": "'Git filter-branch' es una herramienta avanzada para reescribir la historia de un repositorio. Se utiliza en situaciones específicas, como eliminar archivos confidenciales de la historia o cambiar nombres de archivos en commits antiguos."
-    },
+      "answer": "'Git filter-branch' es una herramienta avanzada para reescribir la historia de un repositorio. Se utiliza en situaciones específicas, como eliminar archivos confidenciales de la historia o cambiar nombres de archivos en commits antiguos.",
+      "correctAnswer": "d) 'Git filter-branch' es una herramienta avanzada para reescribir la historia de un repositorio. Se utiliza en situaciones específicas, como eliminar archivos confidenciales de la historia o cambiar nombres de archivos en commits antiguos.",
+      "allAnswers": [
+        "a) 'Git filter-branch' es una herramienta para fusionar ramas en Git.",
+        "b) 'Git filter-branch' es una herramienta para crear repositorios remotos.",
+        "c) 'Git filter-branch' es una herramienta para clonar un repositorio en Git.",
+        "d) 'Git filter-branch' es una herramienta avanzada para reescribir la historia de un repositorio. Se utiliza en situaciones específicas, como eliminar archivos confidenciales de la historia o cambiar nombres de archivos en commits antiguos."
+      ]
+    },    
     {
       "id": 406,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cómo se revierten cambios en Git?",
-      "answer": "Los cambios en Git se pueden revertir de diferentes maneras, pero una común es utilizando 'git revert' para crear un nuevo commit que deshaga los cambios de un commit anterior: se utiliza el comando 'git revert <hash_del_commit>'. Esto crea un nuevo commit que deshace los cambios introducidos por el commit especificado"
-    },
+      "answer": "Los cambios en Git se pueden revertir de diferentes maneras, pero una común es utilizando 'git revert' para crear un nuevo commit que deshaga los cambios de un commit anterior. Se utiliza el comando 'git revert <hash_del_commit>'. Esto crea un nuevo commit que deshace los cambios introducidos por el commit especificado.",
+      "correctAnswer": "c) Los cambios en Git se pueden revertir de diferentes maneras, pero una común es utilizando 'git revert' para crear un nuevo commit que deshaga los cambios de un commit anterior. Se utiliza el comando 'git revert <hash_del_commit>'. Esto crea un nuevo commit que deshace los cambios introducidos por el commit especificado.",
+      "allAnswers": [
+        "a) Utilizando 'git remove'.",
+        "b) Eliminando manualmente los archivos modificados.",
+        "c) Los cambios en Git se pueden revertir de diferentes maneras, pero una común es utilizando 'git revert' para crear un nuevo commit que deshaga los cambios de un commit anterior. Se utiliza el comando 'git revert <hash_del_commit>'. Esto crea un nuevo commit que deshace los cambios introducidos por el commit especificado.",
+        "d) Utilizando 'git undo'."
+      ]
+    },    
     {
       "id": 407,
       "category": "Git",
       "level": "Junior",
       "question": "¿Cuál es el propósito de 'git checkout' en Git?",
-      "answer": "'Git checkout' se utiliza para cambiar entre ramas y commits en un repositorio Git. También se utiliza para crear ramas nuevas: puedes utilizar el comando 'git checkout -b <nombre_de_la_rama>'. Con esto la creas y también te mueves a ella sin usar otro comando de git"
-    },
+      "answer": "'Git checkout' se utiliza para cambiar entre ramas y commits en un repositorio Git. También se utiliza para crear ramas nuevas: puedes utilizar el comando 'git checkout -b <nombre_de_la_rama>'. Con esto, la creas y también te mueves a ella sin usar otro comando de git.",
+      "correctAnswer": "b) 'Git checkout' se utiliza para cambiar entre ramas y commits en un repositorio Git. También se utiliza para crear ramas nuevas: puedes utilizar el comando 'git checkout -b <nombre_de_la_rama>'. Con esto, la creas y también te mueves a ella sin usar otro comando de git.",
+      "allAnswers": [
+        "a) 'Git checkout' se utiliza solo para cambiar entre commits en un repositorio Git.",
+        "b) 'Git checkout' se utiliza para cambiar entre ramas y commits en un repositorio Git. También se utiliza para crear ramas nuevas: puedes utilizar el comando 'git checkout -b <nombre_de_la_rama>'. Con esto, la creas y también te mueves a ella sin usar otro comando de git.",
+        "c) 'Git checkout' se utiliza solo para crear nuevas ramas en un repositorio Git.",
+        "d) 'Git checkout' se utiliza solo para cambiar entre ramas en un repositorio Git."
+      ]
+    },    
     {
       "id": 408,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es la rama (branch) 'master' en Git y cómo ha evolucionado su uso?",
-      "answer": "La rama 'master' solía ser la rama principal en Git, pero su uso está evolucionando hacia nombres como 'main' o 'mainline' para evitar connotaciones negativas asociadas con 'master'."
-    },
+      "answer": "La rama 'master' solía ser la rama principal en Git, pero su uso está evolucionando hacia nombres como 'main' o 'mainline' para evitar connotaciones negativas asociadas con 'master'.",
+      "correctAnswer": "b) La rama 'master' solía ser la rama principal en Git, pero su uso está evolucionando hacia nombres como 'main' o 'mainline' para evitar connotaciones negativas asociadas con 'master'.",
+      "allAnswers": [
+        "a) La rama 'master' es la única rama permitida en Git.",
+        "b) La rama 'master' solía ser la rama principal en Git, pero su uso está evolucionando hacia nombres como 'main' o 'mainline' para evitar connotaciones negativas asociadas con 'master'.",
+        "c) La rama 'master' es obsoleta y no se utiliza más en Git.",
+        "d) La rama 'master' es la única rama permitida para colaboración en Git."
+      ]
+    },    
     {
       "id": 409,
       "category": "Git",
       "level": "Middle",
-      "question": "¿Qué es 'git rebase -i' y cómo se utiliza?",
-      "answer": "'Git rebase -i' permite realizar una reescritura interactiva del historial de commits. Se utiliza para editar, combinar o reordenar commits en un proceso interactivo antes de aplicarlos."
-    },
+      "question": "¿Cuál es el propósito de 'git rebase -i' y cómo se utiliza?",
+      "answer": "'Git rebase -i' tiene como propósito permitir una reescritura interactiva del historial de commits en Git. Se utiliza ejecutando el comando 'git rebase -i <base>', donde '<base>' es el commit hasta el cual se realizará el rebase. Este comando abrirá un editor interactivo que te permite editar, combinar o reorganizar commits antes de aplicarlos.",
+      "correctAnswer": "b) 'Git rebase -i' tiene como propósito permitir una reescritura interactiva del historial de commits en Git. Se utiliza ejecutando el comando 'git rebase -i <base>', donde '<base>' es el commit hasta el cual se realizará el rebase. Este comando abrirá un editor interactivo que te permite editar, combinar o reorganizar commits antes de aplicarlos.",
+      "allAnswers": [
+        "a) 'Git rebase -i' es un comando para deshacer los cambios en Git.",
+        "b) 'Git rebase -i' tiene como propósito permitir una reescritura interactiva del historial de commits en Git. Se utiliza ejecutando el comando 'git rebase -i <base>', donde '<base>' es el commit hasta el cual se realizará el rebase. Este comando abrirá un editor interactivo que te permite editar, combinar o reorganizar commits antes de aplicarlos.",
+        "c) 'Git rebase -i' es utilizado para crear nuevas ramas en Git.",
+        "d) 'Git rebase -i' es un comando para fusionar ramas en Git."
+      ]
+    },    
     {
       "id": 410,
       "category": "Git",
       "level": "Senior",
-      "question": "¿Qué son los hooks de cliente en Git?",
-      "answer": "Los hooks de cliente en Git son scripts personalizados que se ejecutan en las máquinas locales de los desarrolladores en respuesta a eventos de Git. Se utilizan para implementar acciones personalizadas en el lado del cliente, como comprobaciones de pre-commit."
-    },
+      "question": "¿Qué son los hooks de cliente en Git y cuál es su propósito?",
+      "answer": "Los hooks de cliente en Git son scripts personalizados que se ejecutan en las máquinas locales de los desarrolladores en respuesta a eventos de Git. Su propósito es implementar acciones personalizadas en el lado del cliente, como comprobaciones de pre-commit, que ayudan a mantener la calidad y consistencia del código antes de que se realice un commit.",
+      "correctAnswer": "b) Los hooks de cliente en Git son scripts personalizados que se ejecutan en las máquinas locales de los desarrolladores en respuesta a eventos de Git. Su propósito es implementar acciones personalizadas en el lado del cliente, como comprobaciones de pre-commit, que ayudan a mantener la calidad y consistencia del código antes de que se realice un commit.",
+      "allAnswers": [
+        "a) Los hooks de cliente en Git son scripts que se ejecutan en el servidor de Git.",
+        "b) Los hooks de cliente en Git son scripts personalizados que se ejecutan en las máquinas locales de los desarrolladores en respuesta a eventos de Git. Su propósito es implementar acciones personalizadas en el lado del cliente, como comprobaciones de pre-commit, que ayudan a mantener la calidad y consistencia del código antes de que se realice un commit.",
+        "c) Los hooks de cliente en Git son funciones integradas en el núcleo de Git.",
+        "d) Los hooks de cliente en Git son scripts utilizados exclusivamente para la fase de 'push'."
+      ]
+    },    
     {
       "id": 411,
       "category": "Git",
       "level": "Middle",
       "question": "Explica el concepto de 'rebasing' en Git y cuándo es útil.",
-      "answer": "'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión."
-    },
+      "answer": "'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión.",
+      "correctAnswer": "d) 'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión.",
+      "allAnswers": [
+        "a) 'Rebasing' en Git es un proceso que crea commits adicionales para fusionar ramas.",       
+        "b) 'Rebasing' en Git solo se utiliza en proyectos pequeños.",
+        "c) 'Rebasing' en Git es equivalente a realizar un 'merge'.",
+        "d) 'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión."
+      ]
+    },    
     {
       "id": 412,
       "category": "Git",
       "level": "Middle",
       "question": "¿Cuál es el propósito de 'git submodules' en Git?",
-      "answer": "'Git submodules' permite incluir un repositorio Git dentro de otro repositorio Git como una dependencia. Esto es útil para gestionar proyectos grandes o incorporar bibliotecas externas."
-    },
+      "answer": "'Git submodules' permite incluir un repositorio Git dentro de otro repositorio Git como una dependencia. Esto es útil para gestionar proyectos grandes o incorporar bibliotecas externas.",
+      "correctAnswer": "b) 'Git submodules' permite incluir un repositorio Git dentro de otro repositorio Git como una dependencia. Esto es útil para gestionar proyectos grandes o incorporar bibliotecas externas.",
+      "allAnswers": [
+        "a) 'Git submodules' es una herramienta para fusionar ramas en Git.",
+        "b) 'Git submodules' permite incluir un repositorio Git dentro de otro repositorio Git como una dependencia. Esto es útil para gestionar proyectos grandes o incorporar bibliotecas externas.",
+        "c) 'Git submodules' se utiliza para eliminar ramas obsoletas en Git.",
+        "d) 'Git submodules' es una característica obsoleta de Git."
+      ]
+    },    
     {
       "id": 413,
       "category": "Git",
       "level": "Middle",
       "question": "¿Cuál es la diferencia entre un 'pull request' y un 'push' en Git?",
-      "answer": "Un 'pull request' es una solicitud para fusionar cambios de una rama a otra en un repositorio remoto, generalmente en una plataforma como GitHub. Un 'push' es una acción que envía cambios locales a un repositorio remoto sin solicitar una fusión."
-    },
+      "answer": "Un 'pull request' es una solicitud para fusionar cambios de una rama a otra en un repositorio remoto, generalmente en una plataforma como GitHub. Un 'push' es una acción que envía cambios locales a un repositorio remoto sin solicitar una fusión.",
+      "correctAnswer": "b) Un 'pull request' es una solicitud para fusionar cambios de una rama a otra en un repositorio remoto, generalmente en una plataforma como GitHub. Un 'push' es una acción que envía cambios locales a un repositorio remoto sin solicitar una fusión.",
+      "allAnswers": [
+        "a) Un 'pull request' y un 'push' son términos intercambiables en Git.",
+        "b) Un 'pull request' es una solicitud para fusionar cambios de una rama a otra en un repositorio remoto, generalmente en una plataforma como GitHub. Un 'push' es una acción que envía cambios locales a un repositorio remoto sin solicitar una fusión.",
+        "c) Un 'push request' es una solicitud para enviar cambios locales a un repositorio remoto.",
+        "d) Un 'push' y un 'pull request' significan lo mismo en Git."
+      ]
+    },    
     {
       "id": 414,
       "category": "Git",
       "level": "Middle",
       "question": "¿Cómo se cambia el mensaje de un commit en Git?",
-      "answer": "Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente."
-    },
+      "answer": "Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente.",
+      "correctAnswer": "c) Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente.",
+      "allAnswers": [
+        "a) Se utiliza 'git commit --modify-message 'nuevo_mensaje'' para cambiar el mensaje de un commit.",      
+        "b) No es posible cambiar el mensaje de un commit después de realizarlo.",
+        "c) Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente.",
+        "d) Se utiliza 'git commit --edit-message 'nuevo_mensaje'' para cambiar el mensaje de un commit."
+      ]
+    },    
     {
       "id": 415,
       "category": "Git",
       "level": "Middle",
-      "question": "¿Qué es 'git rebase' interactivo y cuándo se utiliza?",
-      "answer": "'Git rebase' interactivo es una forma avanzada de reorganizar y modificar la historia de los commits en una rama. Se utiliza para combinar, editar y eliminar commits, y es útil para mantener un historial limpio y ordenado."
-    },
+      "question": "¿Qué es 'git switch' y cómo se utiliza?",
+      "answer": "'Git switch' es un comando que se utiliza para cambiar entre ramas en un repositorio Git. Se utiliza de la siguiente manera: 'git switch <nombre_de_la_rama>'. Este comando te permite cambiar rápidamente entre ramas sin necesidad de crear una nueva.",
+      "correctAnswer": "b) 'Git switch' es un comando que se utiliza para cambiar entre ramas en un repositorio Git. Se utiliza de la siguiente manera: 'git switch <nombre_de_la_rama>'. Este comando te permite cambiar rápidamente entre ramas sin necesidad de crear una nueva.",
+      "allAnswers": [
+        "a) 'Git switch' es un comando para fusionar ramas en Git.",
+        "b) 'Git switch' es un comando que se utiliza para cambiar entre ramas en un repositorio Git. Se utiliza de la siguiente manera: 'git switch <nombre_de_la_rama>'. Este comando te permite cambiar rápidamente entre ramas sin necesidad de crear una nueva.",
+        "c) 'Git switch' es una herramienta gráfica para gestionar repositorios Git.",
+        "d) 'Git switch' se utiliza para crear una nueva rama en Git."
+      ]
+    },    
     {
       "id": 416,
       "category": "Git",
       "level": "Senior",
       "question": "¿Qué es el 'gitflow workflow' y cuál es su utilidad?",
-      "answer": "El 'gitflow workflow' es un modelo de colaboración y gestión de ramas en Git que define reglas claras para el uso de diferentes tipos de ramas (por ejemplo, 'feature', 'release', 'hotfix'). Su utilidad radica en mantener un flujo de trabajo organizado y escalable."
+      "answer": "El 'gitflow workflow' es un modelo de colaboración y gestión de ramas en Git que define reglas claras para el uso de diferentes tipos de ramas (por ejemplo, 'feature', 'release', 'hotfix'). Su utilidad radica en mantener un flujo de trabajo organizado y escalable.",
+      "correctAnswer": "b) El 'gitflow workflow' es un modelo de colaboración y gestión de ramas en Git que define reglas claras para el uso de diferentes tipos de ramas (por ejemplo, 'feature', 'release', 'hotfix'). Su utilidad radica en mantener un flujo de trabajo organizado y escalable.",
+      "allAnswers": [
+        "a) El 'gitflow workflow' es un conjunto de comandos específicos en Git para realizar operaciones avanzadas.",
+        "b) El 'gitflow workflow' es un modelo de colaboración y gestión de ramas en Git que define reglas claras para el uso de diferentes tipos de ramas (por ejemplo, 'feature', 'release', 'hotfix'). Su utilidad radica en mantener un flujo de trabajo organizado y escalable.",
+        "c) El 'gitflow workflow' es una interfaz gráfica para Git.",
+        "d) El 'gitflow workflow' es una herramienta de respaldo para recuperar ramas perdidas."
+      ]
     },
     {
       "id": 417,
       "category": "Git",
       "level": "Senior",
       "question": "Explica 'git restore' y cómo se utiliza para deshacer cambios en Git.",
-      "answer": "'Git restore' es un comando que se utiliza para deshacer cambios en Git al restaurar un archivo o una rama a un estado anterior. Puedes usar 'git restore' con opciones específicas para revertir cambios no deseados en archivos o para restaurar una rama a una revisión anterior."
-    },
+      "answer": "'Git restore' es un comando que se utiliza para deshacer cambios en Git al restaurar un archivo o una rama a un estado anterior. Puedes usar 'git restore' con opciones específicas para revertir cambios no deseados en archivos o para restaurar una rama a una revisión anterior.",
+      "correctAnswer": "b) 'Git restore' es un comando que se utiliza para deshacer cambios en Git al restaurar un archivo o una rama a un estado anterior. Puedes usar 'git restore' con opciones específicas para revertir cambios no deseados en archivos o para restaurar una rama a una revisión anterior.",
+      "allAnswers": [
+        "a) 'Git restore' es un comando que se utiliza para eliminar permanentemente un archivo del historial de Git.",
+        "b) 'Git restore' es un comando que se utiliza para deshacer cambios en Git al restaurar un archivo o una rama a un estado anterior. Puedes usar 'git restore' con opciones específicas para revertir cambios no deseados en archivos o para restaurar una rama a una revisión anterior.",
+        "c) 'Git restore' es un comando que fusiona cambios de una rama a otra en Git.",
+        "d) 'Git restore' es un comando que se utiliza para crear un nuevo repositorio Git."
+      ]
+    },    
     {
       "id": 418,
       "category": "Git",
       "level": "Middle",
       "question": "¿Qué es un flujo de trabajo 'fork and pull' en Git y cuándo se utiliza?",
-      "answer": "El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales."
-    },
+      "answer": "El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales.",
+      "correctAnswer": "d) El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales.",
+      "allAnswers": [
+        "a) El flujo de trabajo 'fork and pull' se utiliza solo en proyectos privados.",      
+        "b) El flujo de trabajo 'fork and pull' implica realizar cambios directamente en el repositorio original.",
+        "c) 'Fork and pull' es un término obsoleto en Git y ya no se utiliza.",
+        "d) El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales."
+      ]
+    },    
     {
       "id": 419,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es Git Bash y cuál es su función en Git?",
-      "answer": "Git Bash es una interfaz de línea de comandos que proporciona una terminal interactiva para ejecutar comandos Git en sistemas Windows. Facilita el uso de Git en entornos que no son nativos de Unix."
-    },
+      "answer": "Git Bash es una interfaz de línea de comandos que proporciona una terminal interactiva para ejecutar comandos Git en sistemas Windows. Facilita el uso de Git en entornos que no son nativos de Unix.",
+      "correctAnswer": "b) Git Bash es una interfaz de línea de comandos que proporciona una terminal interactiva para ejecutar comandos Git en sistemas Windows. Facilita el uso de Git en entornos que no son nativos de Unix.",
+      "allAnswers": [
+        "a) Git Bash es una herramienta de interfaz gráfica para Git.",
+        "b) Git Bash es una interfaz de línea de comandos que proporciona una terminal interactiva para ejecutar comandos Git en sistemas Windows. Facilita el uso de Git en entornos que no son nativos de Unix.",
+        "c) Git Bash es exclusivo de sistemas Unix y no está disponible para Windows.",
+        "d) Git Bash es una función de Git que permite el intercambio de archivos binarios."
+      ]
+    },    
     {
-      "id": 420,
+      "id": 421,
       "category": "Git",
       "level": "Junior",
       "question": "¿Qué es Git Pull y cuál es su propósito?",
-      "answer": "Git Pull es un comando que se utiliza para descargar cambios desde un repositorio remoto y fusionarlos automáticamente en la rama actual. Su propósito es mantener tu copia local actualizada con los cambios remotos."
-    }
+      "answer": "Git Pull es un comando que se utiliza para descargar cambios desde un repositorio remoto y fusionarlos automáticamente en la rama actual. Su propósito es mantener tu copia local actualizada con los cambios remotos.",
+      "correctAnswer": "a) Git Pull es un comando que se utiliza para descargar cambios desde un repositorio remoto y fusionarlos automáticamente en la rama actual. Su propósito es mantener tu copia local actualizada con los cambios remotos.",
+      "allAnswers": [
+        "a) Git Pull es un comando que se utiliza para descargar cambios desde un repositorio remoto y fusionarlos automáticamente en la rama actual. Su propósito es mantener tu copia local actualizada con los cambios remotos.",
+        "b) Git Pull es un comando que se utiliza para subir cambios locales a un repositorio remoto.",
+        "c) Git Pull es un comando que elimina todos los cambios locales y sincroniza el repositorio local con el remoto.",
+        "d) Git Pull es un comando específico de Git Bash y no está disponible en otras interfaces de línea de comandos."
+      ]
+    }    
   ],
   "weblinks": [
     {

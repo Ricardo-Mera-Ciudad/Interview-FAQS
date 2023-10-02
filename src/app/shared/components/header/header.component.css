@@ -105,7 +105,7 @@
   padding-left: 15px;
 
   @media (min-width: 768px) {
-    padding-left: 35px;
+    padding-left: 30px;
   }
 
   @media (min-width: 1024px) {
@@ -132,15 +132,18 @@
 
 .header-container__navbar-items-menu-list-icon,
 .header-container__navbar-items-menu-list-icon svg {
-  fill: #0f213B;
   width: 20px;
   height: 18px;
 }
 
-.header-container__navbar-items-menu-list-icon:hover,
-.header-container__navbar-items-menu-list-icon:hover svg {
+.header-container__navbar-items-menu-list-item:hover .header-container__navbar-items-menu-list-icon svg {
   fill: #fcfcfc;
 }
+
+.header-container__navbar-items-menu-list-icon svg {
+  fill: #0f213B;
+}
+
 
 .header-container__navbar-items-logo {
   display: flex;
@@ -170,14 +173,12 @@
 
   @media (min-width: 768px) {  
     display: block;
-    margin-left: 90px;
     width: 400px;
     height: auto; 
   }
 
   @media (min-width: 1024px) {
     display: block;
-    margin-left: 90px;
     width: 500px;
     height: auto; 
   }

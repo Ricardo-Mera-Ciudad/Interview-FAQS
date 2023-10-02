@@ -1,5 +1,5 @@
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-   <img style="width:1000px; height:500px; margin:12px" src="https://github.com/LolaGM/Interview-FAQS/assets/images/banner-IF.png">
+   <img style="width:1000px; height:500px; margin:12px" src="https://github.com/LolaGM/Interview-FAQS/blob/main/src/assets/images/banner-IF.png">
 </div>
 
 # INTERVIEW FAQs

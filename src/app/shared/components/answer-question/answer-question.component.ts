@@ -27,7 +27,6 @@ export class AnswerQuestionComponent {
   public level: string | null = null;
   public isLoading: boolean = true;
   public isLoggedIn: boolean = false;
-  public isLink: { [key: number]: boolean } = {};
   private unsubscribe$ = new Subject<void>();
 
 
@@ -64,7 +63,6 @@ export class AnswerQuestionComponent {
         this.questions = questions;
         this.isLoading = false;
         this.questions.forEach((question) => {
-          this.isLink[question.id] = question.answer.startsWith('https://');
           this.answerVisibility[question.id] = false;
           this.borderRadiusState[question.id] = false;
         });
@@ -162,9 +160,6 @@ export class AnswerQuestionComponent {
         break;
       case 'Git':
         imgUrl = '../../../../assets/images/git-icon.png';
-        break;
-      case 'Weblinks':
-        imgUrl = '../../../../assets/images/weblinks-icon.png';
         break;
     }
     return imgUrl;

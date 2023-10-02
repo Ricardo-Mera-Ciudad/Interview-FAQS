@@ -28,8 +28,8 @@
     <app-git-questions-component />
   </div>
 
-  <div class="weblinks-questions" *ngIf="selectedCategory === 'Weblinks'">
-    <app-weblinks-questions-component />
+  <div class="weblinks-questions" [routerLink]="['/weblinks']">
+    <app-weblinks/>
   </div>
   
 </div>

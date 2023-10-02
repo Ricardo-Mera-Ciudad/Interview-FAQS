@@ -58,11 +58,10 @@
       "answer": "Los componentes son los bloques de construcción más básicos para crear la interfaz de usuario de una aplicación de Angular. Estos componentes forman una especie de árbol en la aplicación y siempre tienen una plantilla (o template) con la que podemos formar la vista de nuestra aplicacion.",
       "correctAnswer": "b) Bloques de construcción más básicos para la interfaz de usuario de una aplicación Angular.",
       "allAnswers": [
-
-          "a) Elementos para representar datos en Angular.",
-          "b) Bloques de construcción más básicos para la interfaz de usuario de una aplicación Angular.",
-          "c) Módulos de enrutamiento en Angular.",
-          "d) Bibliotecas de terceros para mejorar el rendimiento de Angular."
+        "a) Elementos para representar datos en Angular.",
+        "b) Bloques de construcción más básicos para la interfaz de usuario de una aplicación Angular.",
+        "c) Módulos de enrutamiento en Angular.",
+        "d) Bibliotecas de terceros para mejorar el rendimiento de Angular."
       ]
     },
     {
@@ -2579,10 +2578,10 @@
       "answer": "JavaScript es un lenguaje de programación interpretado que se utiliza principalmente para agregar interactividad a las páginas web. Su propósito principal es permitir a los desarrolladores crear experiencias interactivas para los usuarios, manipulando el contenido y el comportamiento de las páginas web en el navegador.",
       "correctAnswer": "b) Lenguaje de programación interpretado para agregar interactividad a las páginas web.",
       "allAnswers": [
-      "a) Sistema operativo para el desarrollo web.",
-      "b) Lenguaje de programación interpretado para agregar interactividad a las páginas web.",
-      "c) Herramienta de diseño de bases de datos.",
-      "d) Framework para el desarrollo de aplicaciones móviles."
+        "a) Sistema operativo para el desarrollo web.",
+        "b) Lenguaje de programación interpretado para agregar interactividad a las páginas web.",
+        "c) Herramienta de diseño de bases de datos.",
+        "d) Framework para el desarrollo de aplicaciones móviles."
       ]
     },
     {
@@ -2593,10 +2592,10 @@
       "answer": "Una función en JavaScript se declara utilizando la palabra clave 'function', seguida por el nombre de la función y paréntesis que pueden contener parámetros. El cuerpo de la función está encerrado entre llaves. Por ejemplo, 'function miFuncion() { /* código */ }'.",
       "correctAnswer": "c) Utilizando la palabra clave 'function' seguida por el nombre y paréntesis con parámetros opcionales.",
       "allAnswers": [
-      "a) Con la palabra clave 'define' y un nombre.",
-      "b) Mediante la etiqueta <function> en el HTML.",
-      "c) Utilizando la palabra clave 'function' seguida por el nombre y paréntesis con parámetros opcionales.",
-      "d) Con la instrucción 'new Function()'."
+        "a) Con la palabra clave 'define' y un nombre.",
+        "b) Mediante la etiqueta <function> en el HTML.",
+        "c) Utilizando la palabra clave 'function' seguida por el nombre y paréntesis con parámetros opcionales.",
+        "d) Con la instrucción 'new Function()'."
       ]
     },
     {
@@ -2607,10 +2606,10 @@
       "answer": "En JavaScript, las variables se utilizan para almacenar y representar datos. Se declaran con 'var', 'let' o 'const' y pueden contener diferentes tipos de datos, como números, cadenas de texto o booleanos. Las variables permiten a los desarrolladores almacenar información y manipularla durante la ejecución del programa.",
       "correctAnswer": "a) Almacenan y representan datos en JavaScript.",
       "allAnswers": [
-      "a) Almacenan y representan datos en JavaScript.",
-      "b) Definen la estructura de una página web.",
-      "c) Controlan el flujo de ejecución de un programa.",
-      "d) Se utilizan para estilizar elementos HTML."
+        "a) Almacenan y representan datos en JavaScript.",
+        "b) Definen la estructura de una página web.",
+        "c) Controlan el flujo de ejecución de un programa.",
+        "d) Se utilizan para estilizar elementos HTML."
       ]
     },
     {
@@ -2621,10 +2620,10 @@
       "answer": "El DOM (Document Object Model) en JavaScript es una representación en forma de árbol de la estructura de un documento HTML. Permite a los desarrolladores acceder y manipular los elementos de una página web de manera dinámica. JavaScript utiliza el DOM para interactuar con la estructura y contenido de la página.",
       "correctAnswer": "b) Representación en forma de árbol de la estructura de un documento HTML.",
       "allAnswers": [
-      "a) Estilo de codificación para documentos JavaScript.",
-      "b) Representación en forma de árbol de la estructura de un documento HTML.",
-      "c) Método de encriptación para datos sensibles.",
-      "d) Herramienta para la creación de gráficos en 3D."
+        "a) Estilo de codificación para documentos JavaScript.",
+        "b) Representación en forma de árbol de la estructura de un documento HTML.",
+        "c) Método de encriptación para datos sensibles.",
+        "d) Herramienta para la creación de gráficos en 3D."
       ]
     },
     {
@@ -2635,10 +2634,10 @@
       "answer": "La instrucción 'if' en JavaScript se utiliza para realizar una comprobación condicional. Si la condición especificada es verdadera, se ejecuta un bloque de código. Si es falsa, se puede proporcionar un bloque 'else' opcional que se ejecutará en su lugar. Por ejemplo, 'if (edad >= 18) { /* código para adultos / } else { / código para menores */ }'.",
       "correctAnswer": "a) Realizar una comprobación condicional y ejecutar un bloque de código según el resultado.",
       "allAnswers": [
-      "a) Realizar una comprobación condicional y ejecutar un bloque de código según el resultado.",
-      "b) Definir una nueva función en JavaScript.",
-      "c) Crear un bucle para iterar sobre una lista.",
-      "d) Establecer estilos para un elemento HTML."
+        "a) Realizar una comprobación condicional y ejecutar un bloque de código según el resultado.",
+        "b) Definir una nueva función en JavaScript.",
+        "c) Crear un bucle para iterar sobre una lista.",
+        "d) Establecer estilos para un elemento HTML."
       ]
     },
     {
@@ -2649,10 +2648,10 @@
       "answer": "Una cadena de caracteres en JavaScript es una secuencia de caracteres alfanuméricos encerrados entre comillas simples, dobles, de vuelta ( backticks). Las cadenas son utilizadas para representar texto en un programa y admiten operaciones como concatenación y manipulación de caracteres.",
       "correctAnswer": "c) Una secuencia de caracteres alfanuméricos encerrados entre comillas simples, dobles o de vuelta.",
       "allAnswers": [
-      "a) Un tipo de variable numérica en JavaScript.",
-      "b) Un identificador único para un elemento en el DOM.",
-      "c) Una secuencia de caracteres alfanuméricos encerrados entre comillas simples, dobles o de vuelta.",
-      "d) Un operador para comparar dos valores en JavaScript."
+        "a) Un tipo de variable numérica en JavaScript.",
+        "b) Un identificador único para un elemento en el DOM.",
+        "c) Una secuencia de caracteres alfanuméricos encerrados entre comillas simples, dobles o de vuelta.",
+        "d) Un operador para comparar dos valores en JavaScript."
       ]
     },
     {
@@ -2663,10 +2662,10 @@
       "answer": "Una variable se declara en JavaScript utilizando la palabra clave 'let', seguida por el nombre de la variable. Por ejemplo, 'let miVariable;'.",
       "correctAnswer": "a) Utilizando la palabra clave 'let' seguida por el nombre de la variable.",
       "allAnswers": [
-      "a) Utilizando la palabra clave 'let' seguida por el nombre de la variable.",
-      "b) Con la palabra clave 'var' y un nombre.",
-      "c) Mediante la etiqueta <variable> en el HTML.",
-      "d) Utilizando la palabra clave 'const' seguida por el nombre de la variable."
+        "a) Utilizando la palabra clave 'let' seguida por el nombre de la variable.",
+        "b) Con la palabra clave 'var' y un nombre.",
+        "c) Mediante la etiqueta <variable> en el HTML.",
+        "d) Utilizando la palabra clave 'const' seguida por el nombre de la variable."
       ]
     },
     {
@@ -2677,10 +2676,10 @@
       "answer": "El bucle 'for' en JavaScript se utiliza para iterar sobre una secuencia de código varias veces. Se compone de tres partes: la inicialización, la condición y la expresión de iteración. Por ejemplo, 'for (let i = 0; i < 5; i++) { /* código a repetir */ }'.",
       "correctAnswer": "a) Estructura utilizada para iterar sobre una secuencia de código varias veces.",
       "allAnswers": [
-      "a) Estructura utilizada para iterar sobre una secuencia de código varias veces.",
-      "b) Función para declarar una variable.",
-      "c) Método para añadir elementos a un array.",
-      "d) Etiqueta HTML para crear tablas."
+        "a) Estructura utilizada para iterar sobre una secuencia de código varias veces.",
+        "b) Función para declarar una variable.",
+        "c) Método para añadir elementos a un array.",
+        "d) Etiqueta HTML para crear tablas."
       ]
     },
     {
@@ -2691,10 +2690,10 @@
       "answer": "Un array en JavaScript es una estructura de datos que permite almacenar múltiples valores en una sola variable. Se declara utilizando corchetes y los valores se separan por comas. Por ejemplo, 'let miArray = [1, 2, 3, 4];'.",
       "correctAnswer": "b) Estructura de datos que permite almacenar múltiples valores en una sola variable.",
       "allAnswers": [
-      "a) Función para realizar operaciones matemáticas.",
-      "b) Estructura de datos que permite almacenar múltiples valores en una sola variable.",
-      "c) Método para seleccionar un elemento del DOM.",
-      "d) Sintaxis para comentar el código en JavaScript."
+        "a) Función para realizar operaciones matemáticas.",
+        "b) Estructura de datos que permite almacenar múltiples valores en una sola variable.",
+        "c) Método para seleccionar un elemento del DOM.",
+        "d) Sintaxis para comentar el código en JavaScript."
       ]
     },
     {
@@ -2705,10 +2704,10 @@
       "answer": "Un 'callback' en JavaScript es una función que se pasa como argumento a otra función y se ejecuta después de que se complete una operación, como una solicitud de red o una operación asíncrona. Se utiliza para manejar operaciones asíncronas y asegurar que el código se ejecute en el momento adecuado.",
       "correctAnswer": "c) Función que se pasa como argumento y se ejecuta después de completar una operación.",
       "allAnswers": [
-      "a) Método para agregar estilos a un elemento HTML.",
-      "b) Declaración de una variable con alcance global.",
-      "c) Función que se pasa como argumento y se ejecuta después de completar una operación.",
-      "d) Operador para realizar comparaciones estrictas en JavaScript."
+        "a) Método para agregar estilos a un elemento HTML.",
+        "b) Declaración de una variable con alcance global.",
+        "c) Función que se pasa como argumento y se ejecuta después de completar una operación.",
+        "d) Operador para realizar comparaciones estrictas en JavaScript."
       ]
     },
     {
@@ -2719,10 +2718,10 @@
       "answer": "El 'hoisting' en JavaScript es un comportamiento en el cual las declaraciones de variables y funciones son movidas al inicio de su ámbito antes de que se ejecute el código. Esto significa que puedes utilizar una variable o función antes de haberlas declarado. Sin embargo, solo la declaración se mueve, no la asignación de valor.",
       "correctAnswer": "a) Comportamiento en el cual las declaraciones de variables y funciones se mueven al inicio de su ámbito.",
       "allAnswers": [
-      "a) Comportamiento en el cual las declaraciones de variables y funciones se mueven al inicio de su ámbito.",
-      "b) Técnica para evitar el 'callback hell' en JavaScript.",
-      "c) Método para elevar un elemento en la interfaz de usuario.",
-      "d) Técnica para la creación de animaciones en JavaScript."
+        "a) Comportamiento en el cual las declaraciones de variables y funciones se mueven al inicio de su ámbito.",
+        "b) Técnica para evitar el 'callback hell' en JavaScript.",
+        "c) Método para elevar un elemento en la interfaz de usuario.",
+        "d) Técnica para la creación de animaciones en JavaScript."
       ]
     },
     {
@@ -2733,10 +2732,10 @@
       "answer": "'let', 'const' y 'var' son palabras clave para declarar variables en JavaScript. La diferencia principal es el alcance y la capacidad de reasignación. 'let' y 'const' tienen un alcance de bloque y no pueden ser redeclaradas en el mismo ámbito, mientras que 'var' tiene un alcance de función y puede ser redeclarada.",
       "correctAnswer": "a) Palabras clave para declarar variables con diferencias en alcance y reasignación.",
       "allAnswers": [
-      "a) Palabras clave para declarar variables con diferencias en alcance y reasignación.",
-      "b) Métodos para crear funciones en JavaScript.",
-      "c) Técnicas para crear animaciones en una página web.",
-      "d) Elementos para definir estilos en una hoja de estilo CSS."
+        "a) Palabras clave para declarar variables con diferencias en alcance y reasignación.",
+        "b) Métodos para crear funciones en JavaScript.",
+        "c) Técnicas para crear animaciones en una página web.",
+        "d) Elementos para definir estilos en una hoja de estilo CSS."
       ]
     },
     {
@@ -2747,10 +2746,10 @@
       "answer": "'JSON' (JavaScript Object Notation) es un formato de intercambio de datos ligero que se utiliza para transmitir datos estructurados entre un servidor y un cliente. Su sintaxis es similar a la notación de objetos en JavaScript, lo que facilita su uso con el lenguaje. 'JSON' es comúnmente utilizado en aplicaciones web para el intercambio de datos.",
       "correctAnswer": "c) Formato de intercambio de datos ligero con una sintaxis similar a la notación de objetos en JavaScript.",
       "allAnswers": [
-      "a) Técnica para ejecutar código de forma asíncrona en JavaScript.",
-      "b) Framework para el desarrollo de interfaces de usuario en JavaScript.",
-      "c) Formato de intercambio de datos ligero con una sintaxis similar a la notación de objetos en JavaScript.",
-      "d) Método para realizar animaciones en el navegador."
+        "a) Técnica para ejecutar código de forma asíncrona en JavaScript.",
+        "b) Framework para el desarrollo de interfaces de usuario en JavaScript.",
+        "c) Formato de intercambio de datos ligero con una sintaxis similar a la notación de objetos en JavaScript.",
+        "d) Método para realizar animaciones en el navegador."
       ]
     },
     {
@@ -2761,10 +2760,10 @@
       "answer": "El 'scope' en JavaScript se refiere al alcance o contexto en el cual las variables y funciones son accesibles. Existen dos tipos principales de 'scope': el 'scope global' y el 'scope local'. Las variables declaradas fuera de una función tienen un 'scope global', mientras que las declaradas dentro de una función tienen un 'scope local'.",
       "correctAnswer": "b) El 'scope' se refiere al alcance o contexto en el cual las variables y funciones son accesibles.",
       "allAnswers": [
-      "a) El 'scope' se refiere a la velocidad de ejecución de un programa en JavaScript.",
-      "b) El 'scope' se refiere al alcance o contexto en el cual las variables y funciones son accesibles.",
-      "c) El 'scope' es una función específica de JavaScript para crear animaciones.",
-      "d) El 'scope' se refiere a la resolución de conflictos en la nomenclatura de variables."
+        "a) El 'scope' se refiere a la velocidad de ejecución de un programa en JavaScript.",
+        "b) El 'scope' se refiere al alcance o contexto en el cual las variables y funciones son accesibles.",
+        "c) El 'scope' es una función específica de JavaScript para crear animaciones.",
+        "d) El 'scope' se refiere a la resolución de conflictos en la nomenclatura de variables."
       ]
     },
     {
@@ -2775,10 +2774,10 @@
       "answer": "La estructura 'if-else' en JavaScript se utiliza para realizar una comprobación condicional. Si la condición es verdadera, se ejecuta el bloque de código dentro del 'if'. Si es falsa, se ejecuta el bloque 'else'. Por ejemplo, 'if (temperatura > 30) { /* código para calor / } else { / código para frío */ }'.",
       "correctAnswer": "b) Estructura para realizar una comprobación condicional con bloques 'if' y 'else'.",
       "allAnswers": [
-      "a) Método para declarar una función en JavaScript.",
-      "b) Estructura para realizar una comprobación condicional con bloques 'if' y 'else'.",
-      "c) Método para sumar dos números en JavaScript.",
-      "d) Etiqueta HTML para crear enlaces."
+        "a) Método para declarar una función en JavaScript.",
+        "b) Estructura para realizar una comprobación condicional con bloques 'if' y 'else'.",
+        "c) Método para sumar dos números en JavaScript.",
+        "d) Etiqueta HTML para crear enlaces."
       ]
     },
     {
@@ -2789,10 +2788,10 @@
       "answer": "Un bucle 'while' en JavaScript se utiliza para repetir un bloque de código mientras una condición especificada sea verdadera. La condición se evalúa antes de ejecutar el bloque de código en cada iteración. Por ejemplo, 'let i = 0; while (i < 5) { /* código a repetir */ i++; }'.",
       "correctAnswer": "c) Estructura para repetir un bloque de código mientras una condición sea verdadera.",
       "allAnswers": [
-      "a) Método para agregar estilos a un elemento HTML.",
-      "b) Declaración de una variable con alcance global.",
-      "c) Estructura para repetir un bloque de código mientras una condición sea verdadera.",
-      "d) Operador para realizar comparaciones estrictas en JavaScript."
+        "a) Método para agregar estilos a un elemento HTML.",
+        "b) Declaración de una variable con alcance global.",
+        "c) Estructura para repetir un bloque de código mientras una condición sea verdadera.",
+        "d) Operador para realizar comparaciones estrictas en JavaScript."
       ]
     },
     {
@@ -2803,10 +2802,10 @@
       "answer": "Para agregar un elemento al final de un array en JavaScript, puedes utilizar el método 'push()'. Por ejemplo, 'miArray.push(nuevoElemento);' añadirá 'nuevoElemento' al final de 'miArray'.",
       "correctAnswer": "a) Utilizando el método 'push()' para agregar un elemento al final del array.",
       "allAnswers": [
-      "a) Utilizando el método 'push()' para agregar un elemento al final del array.",
-      "b) Con el método 'pop()' para eliminar el último elemento del array.",
-      "c) Utilizando el método 'shift()' para agregar un elemento al principio del array.",
-      "d) Con el método 'unshift()' para eliminar el primer elemento del array."
+        "a) Utilizando el método 'push()' para agregar un elemento al final del array.",
+        "b) Con el método 'pop()' para eliminar el último elemento del array.",
+        "c) Utilizando el método 'shift()' para agregar un elemento al principio del array.",
+        "d) Con el método 'unshift()' para eliminar el primer elemento del array."
       ]
     },
     {
@@ -2817,10 +2816,10 @@
       "answer": "Una comparación estricta en JavaScript se realiza utilizando el operador '===' (triple igual). Este operador compara tanto el valor como el tipo de dos operandos. Por ejemplo, '5 === '5'' sería falso debido a la diferencia en el tipo de datos.",
       "correctAnswer": "c) Utilizando el operador '===' que compara tanto el valor como el tipo de los operandos.",
       "allAnswers": [
-      "a) Con el operador '==' que compara solo el valor de los operandos.",
-      "b) Utilizando el operador '=' para asignar valores.",
-      "c) Utilizando el operador '===' que compara tanto el valor como el tipo de los operandos.",
-      "d) Con el operador '!=' que verifica la desigualdad de valor sin considerar el tipo."
+        "a) Con el operador '==' que compara solo el valor de los operandos.",
+        "b) Utilizando el operador '=' para asignar valores.",
+        "c) Utilizando el operador '===' que compara tanto el valor como el tipo de los operandos.",
+        "d) Con el operador '!=' que verifica la desigualdad de valor sin considerar el tipo."
       ]
     },
     {
@@ -2831,10 +2830,10 @@
       "answer": "'null' y 'undefined' en JavaScript son valores que indican la ausencia de un valor. 'null' es asignado por el programador para indicar la ausencia intencional de un objeto o valor, mientras que 'undefined' indica que una variable no ha sido inicializada o que una propiedad de un objeto no existe. En términos de tipo, 'null' es un objeto, mientras que 'undefined' es de tipo 'undefined'.",
       "correctAnswer": "c) 'null' es asignado por el programador para indicar la ausencia intencional, mientras que 'undefined' indica que una variable no ha sido inicializada o que una propiedad de un objeto no existe en JavaScript.",
       "allAnswers": [
-      "a) 'null' indica la ausencia de un valor, y 'undefined' es asignado por el programador.",
-      "b) 'null' y 'undefined' son lo mismo y se pueden usar indistintamente.",
-      "c) 'null' es asignado por el programador para indicar la ausencia intencional, mientras que 'undefined' indica que una variable no ha sido inicializada o que una propiedad de un objeto no existe en JavaScript.",
-      "d) 'null' es de tipo 'undefined' en JavaScript."
+        "a) 'null' indica la ausencia de un valor, y 'undefined' es asignado por el programador.",
+        "b) 'null' y 'undefined' son lo mismo y se pueden usar indistintamente.",
+        "c) 'null' es asignado por el programador para indicar la ausencia intencional, mientras que 'undefined' indica que una variable no ha sido inicializada o que una propiedad de un objeto no existe en JavaScript.",
+        "d) 'null' es de tipo 'undefined' en JavaScript."
       ]
     },
     {
@@ -2845,10 +2844,10 @@
       "answer": "Una función de flecha en JavaScript es una forma más concisa de escribir funciones. Se introdujo en ECMAScript 6. La sintaxis de una función de flecha es más corta y no vincula su propio 'this'. Se utiliza cuando se desea una función anónima o cuando se quiere preservar el valor de 'this' desde el ámbito circundante.",
       "correctAnswer": "a) Una forma más concisa de escribir funciones en JavaScript, introducida en ECMAScript 6.",
       "allAnswers": [
-      "a) Una forma más concisa de escribir funciones en JavaScript, introducida en ECMAScript 6.",
-      "b) Un tipo de función que solo puede ser llamada desde otras funciones.",
-      "c) Una función que siempre vincula su propio 'this'.",
-      "d) Un tipo de función obsoleta en JavaScript."
+        "a) Una forma más concisa de escribir funciones en JavaScript, introducida en ECMAScript 6.",
+        "b) Un tipo de función que solo puede ser llamada desde otras funciones.",
+        "c) Una función que siempre vincula su propio 'this'.",
+        "d) Un tipo de función obsoleta en JavaScript."
       ]
     },
     {
@@ -2859,10 +2858,10 @@
       "answer": "Una 'closure' en JavaScript es una función que tiene acceso a variables fuera de su propio ámbito léxico, incluso después de que la función ha terminado de ejecutarse. Esto se logra capturando las variables en el momento de la creación de la 'closure'. Las 'closures' son útiles para crear funciones que mantienen estado o para implementar conceptos como datos privados.",
       "correctAnswer": "b) Función que tiene acceso a variables fuera de su propio ámbito léxico.",
       "allAnswers": [
-      "a) Función que cierra el programa después de ejecutarse.",
-      "b) Función que tiene acceso a variables fuera de su propio ámbito léxico.",
-      "c) Función que se utiliza para cerrar la conexión de red.",
-      "d) Tipo de dato para almacenar valores numéricos con decimales."
+        "a) Función que cierra el programa después de ejecutarse.",
+        "b) Función que tiene acceso a variables fuera de su propio ámbito léxico.",
+        "c) Función que se utiliza para cerrar la conexión de red.",
+        "d) Tipo de dato para almacenar valores numéricos con decimales."
       ]
     },
     {
@@ -2873,10 +2872,10 @@
       "answer": "Una 'Promise' en JavaScript es un objeto que representa el resultado eventual de una operación asíncrona. Puede estar en uno de los tres estados: pendiente, resuelto (cumplido) o rechazado. Las 'Promise' permiten manejar operaciones asíncronas de manera más estructurada, evitando el anidamiento excesivo de 'callbacks'.",
       "correctAnswer": "c) Objeto que representa el resultado eventual de una operación asíncrona.",
       "allAnswers": [
-      "a) Función para declarar variables en JavaScript.",
-      "b) Método para gestionar eventos de clic en elementos HTML.",
-      "c) Objeto que representa el resultado eventual de una operación asíncrona.",
-      "d) Técnica para realizar animaciones suaves en la interfaz de usuario."
+        "a) Función para declarar variables en JavaScript.",
+        "b) Método para gestionar eventos de clic en elementos HTML.",
+        "c) Objeto que representa el resultado eventual de una operación asíncrona.",
+        "d) Técnica para realizar animaciones suaves en la interfaz de usuario."
       ]
     },
     {
@@ -2887,10 +2886,10 @@
       "answer": "El 'Event Bubbling' es un mecanismo en el cual un evento se propaga desde el elemento que lo desencadenó hasta la raíz del documento. Puedes manejar el 'Event Bubbling' utilizando 'event.stopPropagation()', que detiene la propagación del evento. Esto permite controlar qué elementos capturan y responden a un evento específico.",
       "correctAnswer": "a) Mecanismo en el cual un evento se propaga desde el elemento que lo desencadenó hasta la raíz del documento, y se maneja con 'event.stopPropagation()'.",
       "allAnswers": [
-      "a) Mecanismo en el cual un evento se propaga desde el elemento que lo desencadenó hasta la raíz del documento, y se maneja con 'event.stopPropagation()'.",
-      "b) Técnica para animar elementos en una página web.",
-      "c) Método para capturar eventos en la fase de burbujeo.",
-      "d) Estrategia para gestionar la concurrencia en JavaScript."
+        "a) Mecanismo en el cual un evento se propaga desde el elemento que lo desencadenó hasta la raíz del documento, y se maneja con 'event.stopPropagation()'.",
+        "b) Técnica para animar elementos en una página web.",
+        "c) Método para capturar eventos en la fase de burbujeo.",
+        "d) Estrategia para gestionar la concurrencia en JavaScript."
       ]
     },
     {
@@ -2901,10 +2900,10 @@
       "answer": "El operador 'typeof' en JavaScript se utiliza para obtener el tipo de datos de una variable u expresión. Puedes usarlo de la siguiente manera: 'typeof miVariable;' devolverá una cadena que indica el tipo de 'miVariable', ya sea 'number', 'string', 'object', entre otros.",
       "correctAnswer": "d) Se utiliza para obtener el tipo de datos de una variable u expresión en JavaScript.",
       "allAnswers": [
-      "a) Operador para comparar el tipo y el valor de dos variables.",
-      "b) Sintaxis para declarar variables en JavaScript.",
-      "c) Método para realizar operaciones matemáticas en JavaScript.",
-      "d) Se utiliza para obtener el tipo de datos de una variable u expresión en JavaScript."
+        "a) Operador para comparar el tipo y el valor de dos variables.",
+        "b) Sintaxis para declarar variables en JavaScript.",
+        "c) Método para realizar operaciones matemáticas en JavaScript.",
+        "d) Se utiliza para obtener el tipo de datos de una variable u expresión en JavaScript."
       ]
     },
     {
@@ -2915,10 +2914,10 @@
       "answer": "En JavaScript, 'this' se refiere al objeto al cual pertenece la función que está siendo ejecutada. El valor de 'this' puede cambiar dependiendo de cómo se llama la función: en el contexto global, 'this' se refiere al objeto global (por ejemplo, 'window' en un navegador), mientras que dentro de un objeto, 'this' se refiere al objeto que contiene la función.",
       "correctAnswer": "d) Se refiere al objeto al cual pertenece la función en ejecución y su valor puede cambiar dependiendo del contexto de la llamada.",
       "allAnswers": [
-      "a) Palabra clave para declarar variables en JavaScript.",
-      "b) Valor nulo que indica la ausencia de un objeto.",
-      "c) Operador utilizado para comparar valores en JavaScript.",
-      "d) Se refiere al objeto al cual pertenece la función en ejecución y su valor puede cambiar dependiendo del contexto de la llamada."
+        "a) Palabra clave para declarar variables en JavaScript.",
+        "b) Valor nulo que indica la ausencia de un objeto.",
+        "c) Operador utilizado para comparar valores en JavaScript.",
+        "d) Se refiere al objeto al cual pertenece la función en ejecución y su valor puede cambiar dependiendo del contexto de la llamada."
       ]
     },
     {
@@ -2929,10 +2928,10 @@
       "answer": "'async/await' es una característica de JavaScript que simplifica el manejo de operaciones asíncronas. Permite escribir código asíncrono de manera síncrona, haciéndolo más legible y mantenible. 'async' se utiliza en la definición de funciones, y 'await' se utiliza para esperar la resolución de una 'Promise' dentro de una función asíncrona. Su ventaja sobre las 'Promises' es una sintaxis más limpia y un código más fácil de entender.",
       "correctAnswer": "b) Característica que simplifica el manejo de operaciones asíncronas en JavaScript, con una sintaxis más limpia y legible que las 'Promises'.",
       "allAnswers": [
-      "a) Método para declarar variables de manera asíncrona.",
-      "b) Característica que simplifica el manejo de operaciones asíncronas en JavaScript, con una sintaxis más limpia y legible que las 'Promises'.",
-      "c) Método para ejecutar funciones en paralelo.",
-      "d) Técnica para crear animaciones avanzadas en la interfaz de usuario."
+        "a) Método para declarar variables de manera asíncrona.",
+        "b) Característica que simplifica el manejo de operaciones asíncronas en JavaScript, con una sintaxis más limpia y legible que las 'Promises'.",
+        "c) Método para ejecutar funciones en paralelo.",
+        "d) Técnica para crear animaciones avanzadas en la interfaz de usuario."
       ]
     },
     {
@@ -2943,10 +2942,10 @@
       "answer": "'NaN' significa 'Not a Number' y representa un valor no numérico. Puedes verificar si un valor es 'NaN' utilizando la función 'isNaN(valor)'. Retorna verdadero si el valor no es un número. Por ejemplo, 'isNaN('abc')' retorna verdadero.",
       "correctAnswer": "c) 'NaN' representa un valor no numérico y se verifica con la función 'isNaN(valor)'.",
       "allAnswers": [
-      "a) Valor que indica la ausencia de un objeto en JavaScript.",
-      "b) Método para realizar operaciones matemáticas en JavaScript.",
-      "c) 'NaN' representa un valor no numérico y se verifica con la función 'isNaN(valor)'.",
-      "d) Palabra clave para declarar variables constantes en JavaScript."
+        "a) Valor que indica la ausencia de un objeto en JavaScript.",
+        "b) Método para realizar operaciones matemáticas en JavaScript.",
+        "c) 'NaN' representa un valor no numérico y se verifica con la función 'isNaN(valor)'.",
+        "d) Palabra clave para declarar variables constantes en JavaScript."
       ]
     },
     {
@@ -2957,10 +2956,10 @@
       "answer": "'Destructuring' en JavaScript es una forma de extraer valores de arrays o propiedades de objetos y asignarlos a variables. Con arrays, puedes hacer 'const [a, b] = miArray;' para asignar el primer y segundo elemento de 'miArray' a las variables 'a' y 'b', respectivamente.",
       "correctAnswer": "c) Forma de extraer valores de arrays u objetos y asignarlos a variables, y con arrays se realiza con 'const [a, b] = miArray;'.",
       "allAnswers": [
-      "a) Método para destruir un objeto en JavaScript.",
-      "b) Técnica para evitar la propagación de eventos en JavaScript.",
-      "c) Forma de extraer valores de arrays u objetos y asignarlos a variables, y con arrays se realiza con 'const [a, b] = miArray;'.",
-      "d) Método para realizar operaciones matemáticas en arrays de JavaScript."
+        "a) Método para destruir un objeto en JavaScript.",
+        "b) Técnica para evitar la propagación de eventos en JavaScript.",
+        "c) Forma de extraer valores de arrays u objetos y asignarlos a variables, y con arrays se realiza con 'const [a, b] = miArray;'.",
+        "d) Método para realizar operaciones matemáticas en arrays de JavaScript."
       ]
     },
     {
@@ -2971,10 +2970,10 @@
       "answer": "'AJAX' (Asynchronous JavaScript and XML) es una tecnología que permite realizar solicitudes asíncronas al servidor desde una página web sin tener que recargarla. Su papel en el desarrollo web es mejorar la experiencia del usuario al permitir la actualización de contenido sin recargar la página completa, lo que hace que las aplicaciones sean más rápidas y dinámicas.",
       "correctAnswer": "c) Tecnología que permite realizar solicitudes asíncronas al servidor para actualizar contenido en una página web sin recargarla.",
       "allAnswers": [
-      "a) Estándar para el diseño de hojas de estilo en una página web.",
-      "b) Método para cifrar datos transmitidos entre un cliente y un servidor.",
-      "c) Tecnología que permite realizar solicitudes asíncronas al servidor para actualizar contenido en una página web sin recargarla.",
-      "d) Framework para la creación de animaciones en JavaScript."
+        "a) Estándar para el diseño de hojas de estilo en una página web.",
+        "b) Método para cifrar datos transmitidos entre un cliente y un servidor.",
+        "c) Tecnología que permite realizar solicitudes asíncronas al servidor para actualizar contenido en una página web sin recargarla.",
+        "d) Framework para la creación de animaciones en JavaScript."
       ]
     },
     {
@@ -2985,10 +2984,10 @@
       "answer": "En JavaScript, los errores se manejan mediante bloques 'try...catch'. Puedes colocar el código que puede generar un error dentro del bloque 'try', y si se produce un error, se captura y se maneja en el bloque 'catch'. Esto ayuda a evitar que los errores detengan la ejecución del programa.",
       "correctAnswer": "d) Mediante bloques 'try...catch' que permiten capturar y manejar errores durante la ejecución del código.",
       "allAnswers": [
-      "a) A través de la palabra clave 'error' que detiene la ejecución del programa.",
-      "b) Con el operador 'throw' que lanza un error en cualquier punto del código.",
-      "c) Utilizando funciones de retorno de errores en JavaScript.",
-      "d) Mediante bloques 'try...catch' que permiten capturar y manejar errores durante la ejecución del código."
+        "a) A través de la palabra clave 'error' que detiene la ejecución del programa.",
+        "b) Con el operador 'throw' que lanza un error en cualquier punto del código.",
+        "c) Utilizando funciones de retorno de errores en JavaScript.",
+        "d) Mediante bloques 'try...catch' que permiten capturar y manejar errores durante la ejecución del código."
       ]
     },
     {
@@ -2999,10 +2998,10 @@
       "answer": "En JavaScript, un objeto mutable es aquel cuyos valores pueden ser modificados después de su creación. Esto significa que puedes cambiar las propiedades de un objeto mutable, lo que lo diferencia de los objetos inmutables cuyos valores no pueden ser alterados una vez que han sido asignados.",
       "correctAnswer": "a) Un objeto mutable permite modificar sus valores después de su creación.",
       "allAnswers": [
-      "a) Un objeto mutable permite modificar sus valores después de su creación.",
-      "b) Un objeto mutable es aquel que no puede ser modificado.",
-      "c) Un objeto mutable solo permite cambios en sus propiedades numéricas.",
-      "d) Un objeto mutable no puede contener funciones."
+        "a) Un objeto mutable permite modificar sus valores después de su creación.",
+        "b) Un objeto mutable es aquel que no puede ser modificado.",
+        "c) Un objeto mutable solo permite cambios en sus propiedades numéricas.",
+        "d) Un objeto mutable no puede contener funciones."
       ]
     },
     {
@@ -3013,10 +3012,10 @@
       "answer": "'forEach()' y 'map()' son métodos en JavaScript utilizados con arrays. La diferencia principal es que 'forEach()' no devuelve un nuevo array, mientras que 'map()' devuelve un nuevo array con los resultados de llamar a una función proporcionada para cada elemento del array original.",
       "correctAnswer": "c) 'forEach()' no devuelve un nuevo array, mientras que 'map()' devuelve un nuevo array con los resultados de la función aplicada a cada elemento.",
       "allAnswers": [
-      "a) 'forEach()' y 'map()' son sinónimos y pueden usarse indistintamente.",
-      "b) 'forEach()' y 'map()' devuelven nuevos arrays con el mismo contenido.",
-      "c) 'forEach()' no devuelve un nuevo array, mientras que 'map()' devuelve un nuevo array con los resultados de la función aplicada a cada elemento.",
-      "d) 'forEach()' y 'map()' son métodos obsoletos en JavaScript."
+        "a) 'forEach()' y 'map()' son sinónimos y pueden usarse indistintamente.",
+        "b) 'forEach()' y 'map()' devuelven nuevos arrays con el mismo contenido.",
+        "c) 'forEach()' no devuelve un nuevo array, mientras que 'map()' devuelve un nuevo array con los resultados de la función aplicada a cada elemento.",
+        "d) 'forEach()' y 'map()' son métodos obsoletos en JavaScript."
       ]
     },
     {
@@ -3027,10 +3026,10 @@
       "answer": "ECMAScript, abreviado como ES, es la especificación estándar en la que se basa JavaScript. Define las características del lenguaje, incluidos los elementos como tipos de datos, operadores y estructuras de control. JavaScript implementa ECMAScript y puede incluir características adicionales no definidas en la especificación.",
       "correctAnswer": "a) Especificación estándar en la que se basa JavaScript, define las características del lenguaje como tipos de datos y operadores.",
       "allAnswers": [
-      "a) Especificación estándar en la que se basa JavaScript, define las características del lenguaje como tipos de datos y operadores.",
-      "b) Biblioteca de funciones adicionales para JavaScript.",
-      "c) Herramienta de desarrollo web para depurar código JavaScript.",
-      "d) Estilo de codificación recomendado para proyectos JavaScript."
+        "a) Especificación estándar en la que se basa JavaScript, define las características del lenguaje como tipos de datos y operadores.",
+        "b) Biblioteca de funciones adicionales para JavaScript.",
+        "c) Herramienta de desarrollo web para depurar código JavaScript.",
+        "d) Estilo de codificación recomendado para proyectos JavaScript."
       ]
     },
     {
@@ -3041,10 +3040,10 @@
       "answer": "El método 'reduce()' en JavaScript se utiliza en arrays para reducir los elementos a un único valor. Toma una función de devolución de llamada y un valor inicial. La función se ejecuta en cada elemento del array, acumulando un resultado que se devuelve al final. Es útil para sumar elementos, concatenar cadenas, entre otros.",
       "correctAnswer": "c) Se utiliza en arrays para reducir los elementos a un único valor mediante una función de devolución de llamada.",
       "allAnswers": [
-      "a) Se utiliza para duplicar todos los elementos de un array.",
-      "b) Ordena los elementos de un array en orden descendente.",
-      "c) Se utiliza en arrays para reducir los elementos a un único valor mediante una función de devolución de llamada.",
-      "d) Filtra los elementos de un array según una condición dada."
+        "a) Se utiliza para duplicar todos los elementos de un array.",
+        "b) Ordena los elementos de un array en orden descendente.",
+        "c) Se utiliza en arrays para reducir los elementos a un único valor mediante una función de devolución de llamada.",
+        "d) Filtra los elementos de un array según una condición dada."
       ]
     },
     {
@@ -3055,10 +3054,10 @@
       "answer": "El método 'filter()' en JavaScript se utiliza en arrays para crear un nuevo array con elementos que cumplen una condición específica. Filtra los elementos según la función de devolución de llamada proporcionada, que debe devolver verdadero o falso. Los elementos que devuelven verdadero se incluyen en el nuevo array.",
       "correctAnswer": "b) Crear un nuevo array con elementos que cumplen una condición específica.",
       "allAnswers": [
-      "a) Modificar directamente los elementos de un array.",
-      "b) Crear un nuevo array con elementos que cumplen una condición específica.",
-      "c) Ordenar los elementos de un array alfabéticamente.",
-      "d) Convertir todos los elementos de un array a cadenas de texto."
+        "a) Modificar directamente los elementos de un array.",
+        "b) Crear un nuevo array con elementos que cumplen una condición específica.",
+        "c) Ordenar los elementos de un array alfabéticamente.",
+        "d) Convertir todos los elementos de un array a cadenas de texto."
       ]
     },
     {
@@ -3069,10 +3068,10 @@
       "answer": "La diferencia entre 'let' y 'const' en JavaScript es que 'let' permite la reasignación de variables, mientras que 'const' no lo permite. Una vez que se asigna un valor a una constante ('const'), no se puede cambiar ese valor. En cambio, con 'let', puedes asignar un nuevo valor a la variable en cualquier momento.",
       "correctAnswer": "a) 'let' permite la reasignación de variables, mientras que 'const' no lo permite.",
       "allAnswers": [
-      "a) 'let' permite la reasignación de variables, mientras que 'const' no lo permite.",
-      "b) 'let' y 'const' tienen el mismo comportamiento en cuanto a la reasignación de variables.",
-      "c) 'let' solo puede ser utilizado en bucles, mientras que 'const' se utiliza en funciones.",
-      "d) 'const' permite la reasignación solo en funciones declaradas con la palabra clave 'function'."
+        "a) 'let' permite la reasignación de variables, mientras que 'const' no lo permite.",
+        "b) 'let' y 'const' tienen el mismo comportamiento en cuanto a la reasignación de variables.",
+        "c) 'let' solo puede ser utilizado en bucles, mientras que 'const' se utiliza en funciones.",
+        "d) 'const' permite la reasignación solo en funciones declaradas con la palabra clave 'function'."
       ]
     },
     {
@@ -3083,10 +3082,10 @@
       "answer": "El operador ternario en JavaScript es una forma abreviada de escribir una estructura 'if-else'. Tiene la forma 'condición ? expresión1 : expresión2'. Si la condición es verdadera, se devuelve expresión1; de lo contrario, se devuelve expresión2. Por ejemplo, 'let resultado = (edad >= 18) ? 'Mayor de edad' : 'Menor de edad';'.",
       "correctAnswer": "b) Forma abreviada de la estructura 'if-else' con la sintaxis 'condición ? expresión1 : expresión2'.",
       "allAnswers": [
-      "a) Método para declarar funciones en JavaScript.",
-      "b) Forma abreviada de la estructura 'if-else' con la sintaxis 'condición ? expresión1 : expresión2'.",
-      "c) Operador para realizar operaciones matemáticas en JavaScript.",
-      "d) Sintaxis para comentarios de varias líneas en JavaScript."
+        "a) Método para declarar funciones en JavaScript.",
+        "b) Forma abreviada de la estructura 'if-else' con la sintaxis 'condición ? expresión1 : expresión2'.",
+        "c) Operador para realizar operaciones matemáticas en JavaScript.",
+        "d) Sintaxis para comentarios de varias líneas en JavaScript."
       ]
     },
     {
@@ -3097,10 +3096,10 @@
       "answer": "'fetch()' es una función en JavaScript utilizada para realizar solicitudes HTTP. Proporciona una interfaz más moderna y flexible en comparación con 'XMLHttpRequest'. 'fetch()' devuelve una Promesa que resuelve en la respuesta a la solicitud, y se puede encadenar con métodos como 'then()' para procesar la respuesta.",
       "correctAnswer": "b) Función utilizada para realizar solicitudes HTTP en JavaScript, devuelve una Promesa que resuelve en la respuesta.",
       "allAnswers": [
-      "a) Función para la creación de animaciones en JavaScript.",
-      "b) Función utilizada para realizar solicitudes HTTP en JavaScript, devuelve una Promesa que resuelve en la respuesta.",
-      "c) Método para la manipulación de bases de datos en JavaScript.",
-      "d) Técnica para el manejo de eventos de clic en elementos HTML."
+        "a) Función para la creación de animaciones en JavaScript.",
+        "b) Función utilizada para realizar solicitudes HTTP en JavaScript, devuelve una Promesa que resuelve en la respuesta.",
+        "c) Método para la manipulación de bases de datos en JavaScript.",
+        "d) Técnica para el manejo de eventos de clic en elementos HTML."
       ]
     },
     {
@@ -3111,10 +3110,10 @@
       "answer": "Las 'funciones puras' en JavaScript son funciones que, dado el mismo conjunto de entradas, siempre producirán la misma salida sin causar efectos secundarios. No modifican variables fuera de su alcance y no tienen efectos colaterales. Son importantes porque facilitan el razonamiento sobre el código, mejoran la testabilidad y contribuyen a la previsibilidad del programa.",
       "correctAnswer": "a) Funciones que, dado el mismo conjunto de entradas, siempre producirán la misma salida sin causar efectos secundarios.",
       "allAnswers": [
-      "a) Funciones que, dado el mismo conjunto de entradas, siempre producirán la misma salida sin causar efectos secundarios.",
-      "b) Funciones que siempre modifican variables fuera de su alcance.",
-      "c) Funciones que solo producen salidas diferentes con entradas diferentes.",
-      "d) Funciones que siempre causan efectos secundarios en el ámbito global."
+        "a) Funciones que, dado el mismo conjunto de entradas, siempre producirán la misma salida sin causar efectos secundarios.",
+        "b) Funciones que siempre modifican variables fuera de su alcance.",
+        "c) Funciones que solo producen salidas diferentes con entradas diferentes.",
+        "d) Funciones que siempre causan efectos secundarios en el ámbito global."
       ]
     },
     {
@@ -3125,10 +3124,10 @@
       "answer": "El patrón 'Singleton' en JavaScript es un patrón de diseño que garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a ella. Se implementa utilizando una clase con un método estático que devuelve la única instancia de la clase, creándola si aún no existe. Esto es útil cuando se desea tener una única instancia compartida en todo el programa.",
       "correctAnswer": "b) Patrón de diseño que garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a ella.",
       "allAnswers": [
-      "a) Patrón de diseño que permite tener múltiples instancias de una clase.",
-      "b) Patrón de diseño que garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a ella.",
-      "c) Patrón de diseño solo aplicable a funciones en JavaScript.",
-      "d) Patrón de diseño utilizado exclusivamente en el desarrollo de interfaces de usuario."
+        "a) Patrón de diseño que permite tener múltiples instancias de una clase.",
+        "b) Patrón de diseño que garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a ella.",
+        "c) Patrón de diseño solo aplicable a funciones en JavaScript.",
+        "d) Patrón de diseño utilizado exclusivamente en el desarrollo de interfaces de usuario."
       ]
     },
     {
@@ -3139,10 +3138,10 @@
       "answer": "La 'programación reactiva' en JavaScript es un paradigma de programación que se centra en la propagación de cambios y la reacción a ellos. Se implementa utilizando bibliotecas como RxJS, que proporciona observables y operadores para gestionar secuencias de eventos asíncronos. Los observables representan secuencias de datos y permiten la composición y transformación de estas secuencias de manera declarativa.",
       "correctAnswer": "c) Paradigma de programación que se centra en la propagación de cambios y la reacción a ellos, se implementa utilizando bibliotecas como RxJS.",
       "allAnswers": [
-      "a) Paradigma de programación que utiliza exclusivamente bucles 'for' para controlar el flujo.",
-      "b) Paradigma de programación que evita completamente el uso de funciones asíncronas.",
-      "c) Paradigma de programación que se centra en la propagación de cambios y la reacción a ellos, se implementa utilizando bibliotecas como RxJS.",
-      "d) Paradigma de programación que se basa únicamente en funciones puras."
+        "a) Paradigma de programación que utiliza exclusivamente bucles 'for' para controlar el flujo.",
+        "b) Paradigma de programación que evita completamente el uso de funciones asíncronas.",
+        "c) Paradigma de programación que se centra en la propagación de cambios y la reacción a ellos, se implementa utilizando bibliotecas como RxJS.",
+        "d) Paradigma de programación que se basa únicamente en funciones puras."
       ]
     },
     {
@@ -3153,10 +3152,10 @@
       "answer": "'TypeScript' es un lenguaje de programación que extiende JavaScript añadiendo tipos estáticos opcionales. Los archivos escritos en TypeScript tienen la extensión '.ts' y deben ser transpilados a JavaScript para su ejecución en el navegador. TypeScript mejora la mantenibilidad y escalabilidad del código al proporcionar un sistema de tipos robusto.",
       "correctAnswer": "a) Lenguaje de programación que extiende JavaScript añadiendo tipos estáticos opcionales.",
       "allAnswers": [
-      "a) Lenguaje de programación que extiende JavaScript añadiendo tipos estáticos opcionales.",
-      "b) Herramienta de empaquetado de módulos en JavaScript.",
-      "c) Framework para el desarrollo de aplicaciones móviles en JavaScript.",
-      "d) Versión mejorada de JavaScript con cambios significativos en la sintaxis."
+        "a) Lenguaje de programación que extiende JavaScript añadiendo tipos estáticos opcionales.",
+        "b) Herramienta de empaquetado de módulos en JavaScript.",
+        "c) Framework para el desarrollo de aplicaciones móviles en JavaScript.",
+        "d) Versión mejorada de JavaScript con cambios significativos en la sintaxis."
       ]
     },
     {
@@ -3167,10 +3166,10 @@
       "answer": "El 'currying' en programación funcional es una técnica que consiste en transformar una función que toma múltiples argumentos en una secuencia de funciones que toman un solo argumento. La ventaja es que permite la aplicación parcial de la función, lo que facilita la creación de funciones especializadas y la composición de funciones de manera más flexible.",
       "correctAnswer": "b) Técnica que consiste en transformar una función que toma múltiples argumentos en una secuencia de funciones que toman un solo argumento.",
       "allAnswers": [
-      "a) Técnica para acelerar la ejecución de funciones en programación funcional.",
-      "b) Técnica que consiste en transformar una función que toma múltiples argumentos en una secuencia de funciones que toman un solo argumento.",
-      "c) Estrategia para evitar el uso de funciones anónimas en programación funcional.",
-      "d) Técnica para limitar el alcance de las variables en programación funcional."
+        "a) Técnica para acelerar la ejecución de funciones en programación funcional.",
+        "b) Técnica que consiste en transformar una función que toma múltiples argumentos en una secuencia de funciones que toman un solo argumento.",
+        "c) Estrategia para evitar el uso de funciones anónimas en programación funcional.",
+        "d) Técnica para limitar el alcance de las variables en programación funcional."
       ]
     },
     {
@@ -3181,10 +3180,10 @@
       "answer": "En JavaScript, la herencia se implementa mediante prototipos. Cada objeto tiene un prototipo del cual hereda propiedades y métodos. 'Prototypal inheritance' es inherente al lenguaje y se basa en la cadena de prototipos. 'Classical inheritance' simula la herencia de clases de otros lenguajes y fue introducida en ECMAScript 6 con la introducción de las clases.",
       "correctAnswer": "a) Mediante prototipos, diferenciándose de 'prototypal inheritance' y 'classical inheritance'.",
       "allAnswers": [
-      "a) Mediante prototipos, diferenciándose de 'prototypal inheritance' y 'classical inheritance'.",
-      "b) Utilizando exclusivamente 'classical inheritance' en JavaScript.",
-      "c) Implementando interfaces en JavaScript para lograr la herencia.",
-      "d) Aplicando únicamente 'prototypal inheritance' en JavaScript."
+        "a) Mediante prototipos, diferenciándose de 'prototypal inheritance' y 'classical inheritance'.",
+        "b) Utilizando exclusivamente 'classical inheritance' en JavaScript.",
+        "c) Implementando interfaces en JavaScript para lograr la herencia.",
+        "d) Aplicando únicamente 'prototypal inheritance' en JavaScript."
       ]
     },
     {
@@ -3195,10 +3194,10 @@
       "answer": "El 'event delegation' en JavaScript es una técnica donde un solo controlador de eventos se coloca en un ancestro común de varios elementos. En lugar de asignar un controlador a cada elemento individual, se utiliza un único controlador en el ancestro y se determina el objetivo del evento en función de la propagación del evento. Esto mejora la eficiencia y reduce la complejidad del código.",
       "correctAnswer": "a) Técnica donde un solo controlador de eventos se coloca en un ancestro común de varios elementos en JavaScript.",
       "allAnswers": [
-      "a) Técnica donde un solo controlador de eventos se coloca en un ancestro común de varios elementos en JavaScript.",
-      "b) Método para evitar el uso de eventos en JavaScript.",
-      "c) Estrategia que asigna un controlador de eventos a cada elemento individualmente.",
-      "d) Técnica que solo se aplica a eventos síncronos en JavaScript."
+        "a) Técnica donde un solo controlador de eventos se coloca en un ancestro común de varios elementos en JavaScript.",
+        "b) Método para evitar el uso de eventos en JavaScript.",
+        "c) Estrategia que asigna un controlador de eventos a cada elemento individualmente.",
+        "d) Técnica que solo se aplica a eventos síncronos en JavaScript."
       ]
     },
     {
@@ -3209,10 +3208,10 @@
       "answer": "Una 'cookie' en JavaScript es una pequeña cantidad de datos que se almacena en el navegador del usuario. Se utiliza para recordar información específica sobre el usuario, como preferencias o estado de inicio de sesión. Las 'cookies' tienen un límite de tamaño y caducan después de un tiempo especificado. Se pueden utilizar para el seguimiento del usuario y para personalizar la experiencia del usuario.",
       "correctAnswer": "a) Pequeña cantidad de datos almacenados en el navegador del usuario para recordar información específica en JavaScript.",
       "allAnswers": [
-      "a) Pequeña cantidad de datos almacenados en el navegador del usuario para recordar información específica en JavaScript.",
-      "b) Herramienta exclusiva para la manipulación de estilos en JavaScript.",
-      "c) Variable que almacena datos constantes en JavaScript.",
-      "d) Método para el almacenamiento permanente de datos en el navegador."
+        "a) Pequeña cantidad de datos almacenados en el navegador del usuario para recordar información específica en JavaScript.",
+        "b) Herramienta exclusiva para la manipulación de estilos en JavaScript.",
+        "c) Variable que almacena datos constantes en JavaScript.",
+        "d) Método para el almacenamiento permanente de datos en el navegador."
       ]
     },
     {
@@ -3223,10 +3222,10 @@
       "answer": "'JSON Web Token (JWT)' en JavaScript es un estándar abierto que define una forma compacta y autónoma de representar información entre dos partes. Se utiliza para la autenticación y transmisión segura de información entre el cliente y el servidor. Un JWT consta de tres partes: encabezado, carga útil y firma. Puede ser incluido en las solicitudes HTTP y verificar la identidad del usuario.",
       "correctAnswer": "c) Estándar que representa información de forma compacta y autónoma, utilizado para la autenticación en aplicaciones web en JavaScript.",
       "allAnswers": [
-      "a) Método exclusivo para la manipulación de archivos en JavaScript.",
-      "b) Herramienta que solo se aplica a la manipulación de estilos en JavaScript.",
-      "c) Estándar que representa información de forma compacta y autónoma, utilizado para la autenticación en aplicaciones web en JavaScript.",
-      "d) Técnica que solo se aplica a solicitudes asíncronas en JavaScript."
+        "a) Método exclusivo para la manipulación de archivos en JavaScript.",
+        "b) Herramienta que solo se aplica a la manipulación de estilos en JavaScript.",
+        "c) Estándar que representa información de forma compacta y autónoma, utilizado para la autenticación en aplicaciones web en JavaScript.",
+        "d) Técnica que solo se aplica a solicitudes asíncronas en JavaScript."
       ]
     },
     {
@@ -3237,10 +3236,10 @@
       "answer": "'localStorage' en JavaScript es un mecanismo de almacenamiento de clave-valor en el navegador que permite a las aplicaciones web almacenar datos de manera persistente. A diferencia de las 'cookies', 'localStorage' tiene un límite de almacenamiento más grande y no se transmite con cada solicitud HTTP, lo que lo hace adecuado para almacenar datos locales en el lado del cliente.",
       "correctAnswer": "a) Mecanismo de almacenamiento de clave-valor en el navegador para la persistencia de datos en JavaScript.",
       "allAnswers": [
-      "a) Mecanismo de almacenamiento de clave-valor en el navegador para la persistencia de datos en JavaScript.",
-      "b) Herramienta exclusiva para la manipulación de estilos en JavaScript.",
-      "c) Variable que almacena datos constantes en JavaScript.",
-      "d) Método para el almacenamiento temporal de datos en el navegador."
+        "a) Mecanismo de almacenamiento de clave-valor en el navegador para la persistencia de datos en JavaScript.",
+        "b) Herramienta exclusiva para la manipulación de estilos en JavaScript.",
+        "c) Variable que almacena datos constantes en JavaScript.",
+        "d) Método para el almacenamiento temporal de datos en el navegador."
       ]
     },
     {
@@ -3251,10 +3250,10 @@
       "answer": "'Cross-Origin Resource Sharing (CORS)' en JavaScript es un mecanismo que permite o restringe las solicitudes de recursos en una página web desde otro dominio diferente al dominio que sirvió la página original. Esto se implementa mediante encabezados HTTP que indican si un recurso puede ser compartido. CORS es fundamental para la seguridad del navegador al prevenir solicitudes no autorizadas.",
       "correctAnswer": "b) Mecanismo que permite o restringe las solicitudes de recursos entre diferentes dominios en JavaScript.",
       "allAnswers": [
-      "a) Técnica que evita completamente la interacción entre recursos de diferentes dominios en JavaScript.",
-      "b) Mecanismo que permite o restringe las solicitudes de recursos entre diferentes dominios en JavaScript.",
-      "c) Herramienta exclusiva para la manipulación de estilos en JavaScript.",
-      "d) Método que solo se aplica a solicitudes síncronas en JavaScript."
+        "a) Técnica que evita completamente la interacción entre recursos de diferentes dominios en JavaScript.",
+        "b) Mecanismo que permite o restringe las solicitudes de recursos entre diferentes dominios en JavaScript.",
+        "c) Herramienta exclusiva para la manipulación de estilos en JavaScript.",
+        "d) Método que solo se aplica a solicitudes síncronas en JavaScript."
       ]
     },
     {
@@ -3265,10 +3264,10 @@
       "answer": "Una 'Progressive Web App (PWA)' en JavaScript es una aplicación web que utiliza las últimas tecnologías para proporcionar una experiencia similar a la de una aplicación nativa. Sus características incluyen la capacidad de trabajar sin conexión, la capacidad de ser instalada en la pantalla de inicio del dispositivo, y la capacidad de recibir notificaciones push. Las PWA buscan combinar lo mejor de las aplicaciones web y nativas.",
       "correctAnswer": "c) Aplicación web que proporciona una experiencia similar a una aplicación nativa, con características como trabajo sin conexión e instalación en la pantalla de inicio.",
       "allAnswers": [
-      "a) Técnica exclusiva para la manipulación de estilos en JavaScript.",
-      "b) Herramienta que solo se aplica a la manipulación de archivos en JavaScript.",
-      "c) Aplicación web que proporciona una experiencia similar a una aplicación nativa, con características como trabajo sin conexión e instalación en la pantalla de inicio.",
-      "d) Método que solo se aplica a solicitudes síncronas en JavaScript."
+        "a) Técnica exclusiva para la manipulación de estilos en JavaScript.",
+        "b) Herramienta que solo se aplica a la manipulación de archivos en JavaScript.",
+        "c) Aplicación web que proporciona una experiencia similar a una aplicación nativa, con características como trabajo sin conexión e instalación en la pantalla de inicio.",
+        "d) Método que solo se aplica a solicitudes síncronas en JavaScript."
       ]
     },
     {
@@ -3279,10 +3278,10 @@
       "answer": "'Strict mode' en JavaScript es una característica que te permite escribir un código más seguro al lanzar errores para prácticas que de otra manera pasarían desapercibidas. Evita el uso de variables no declaradas, elimina ambigüedades en la sintaxis y prohíbe ciertas prácticas propensas a errores. Se activa escribiendo 'use strict' al principio de un script o una función.",
       "correctAnswer": "c) Característica que mejora la seguridad y calidad del código en JavaScript.",
       "allAnswers": [
-      "a) Técnica exclusiva para la manipulación de archivos en JavaScript.",
-      "b) Herramienta que solo se aplica a la manipulación de estilos en JavaScript.",
-      "c) Característica que mejora la seguridad y calidad del código en JavaScript.",
-      "d) Estrategia que solo se aplica a funciones asíncronas en JavaScript."
+        "a) Técnica exclusiva para la manipulación de archivos en JavaScript.",
+        "b) Herramienta que solo se aplica a la manipulación de estilos en JavaScript.",
+        "c) Característica que mejora la seguridad y calidad del código en JavaScript.",
+        "d) Estrategia que solo se aplica a funciones asíncronas en JavaScript."
       ]
     },
     {
@@ -3293,10 +3292,10 @@
       "answer": "'Tree Shaking' en JavaScript es una técnica de optimización que elimina el código no utilizado (dead code) durante la fase de construcción. Se utiliza comúnmente con módulos ES6, donde el bundler puede eliminar las exportaciones que no se utilizan. Esto ayuda a reducir el tamaño de los archivos finales, mejorando así el rendimiento de la aplicación.",
       "correctAnswer": "b) Técnica de optimización que elimina el código no utilizado durante la fase de construcción en JavaScript.",
       "allAnswers": [
-      "a) Estrategia diseñada exclusivamente para la creación de interfaces de usuario en JavaScript.",
-      "b) Técnica de optimización que elimina el código no utilizado durante la fase de construcción en JavaScript.",
-      "c) Herramienta que solo se aplica a la manipulación de archivos en JavaScript.",
-      "d) Método que solo se aplica a funciones asíncronas en JavaScript."
+        "a) Estrategia diseñada exclusivamente para la creación de interfaces de usuario en JavaScript.",
+        "b) Técnica de optimización que elimina el código no utilizado durante la fase de construcción en JavaScript.",
+        "c) Herramienta que solo se aplica a la manipulación de archivos en JavaScript.",
+        "d) Método que solo se aplica a funciones asíncronas en JavaScript."
       ]
     },
     {
@@ -3307,10 +3306,10 @@
       "answer": "'GraphQL' en JavaScript es un lenguaje de consulta para APIs que proporciona una manera más eficiente y poderosa de obtener y enviar datos a través de HTTP. A diferencia de las REST APIs, en las que se obtiene un conjunto fijo de datos, con GraphQL, el cliente especifica exactamente qué datos necesita. Esto evita la sobre-solicitud o la falta de información en las respuestas de la API.",
       "correctAnswer": "c) Lenguaje de consulta para APIs que permite obtener y enviar datos de manera eficiente en el desarrollo web junto con JavaScript.",
       "allAnswers": [
-      "a) Técnica exclusiva para la manipulación de estilos en JavaScript.",
-      "b) Herramienta que solo se aplica a la manipulación de archivos en JavaScript.",
-      "c) Lenguaje de consulta para APIs que permite obtener y enviar datos de manera eficiente en el desarrollo web junto con JavaScript.",
-      "d) Estrategia que solo se aplica a funciones asíncronas en JavaScript."
+        "a) Técnica exclusiva para la manipulación de estilos en JavaScript.",
+        "b) Herramienta que solo se aplica a la manipulación de archivos en JavaScript.",
+        "c) Lenguaje de consulta para APIs que permite obtener y enviar datos de manera eficiente en el desarrollo web junto con JavaScript.",
+        "d) Estrategia que solo se aplica a funciones asíncronas en JavaScript."
       ]
     },
     {
@@ -3321,10 +3320,10 @@
       "answer": "'WebAssembly' es un estándar web que permite ejecutar código de bajo nivel en navegadores web de manera eficiente. Proporciona un formato binario compacto y de alto rendimiento que puede ser ejecutado en entornos virtuales. Su propósito es mejorar el rendimiento de las aplicaciones web al permitir la ejecución de código de manera más eficiente que JavaScript.",
       "correctAnswer": "a) Estándar web que permite ejecutar código de bajo nivel en navegadores para mejorar el rendimiento de las aplicaciones web.",
       "allAnswers": [
-      "a) Estándar web que permite ejecutar código de bajo nivel en navegadores para mejorar el rendimiento de las aplicaciones web.",
-      "b) Herramienta para la creación de animaciones en JavaScript.",
-      "c) Biblioteca para el desarrollo de interfaces de usuario en JavaScript.",
-      "d) Método para la creación de servidores web en JavaScript."
+        "a) Estándar web que permite ejecutar código de bajo nivel en navegadores para mejorar el rendimiento de las aplicaciones web.",
+        "b) Herramienta para la creación de animaciones en JavaScript.",
+        "c) Biblioteca para el desarrollo de interfaces de usuario en JavaScript.",
+        "d) Método para la creación de servidores web en JavaScript."
       ]
     },
     {
@@ -3335,10 +3334,10 @@
       "answer": "'Service Worker' es un script que se ejecuta en segundo plano en el navegador y actúa como un intermediario entre la aplicación web y la red. Su propósito es permitir funciones como notificaciones push, actualizaciones de contenido en segundo plano y el manejo de solicitudes de red. Se utiliza registrándolo en la página web y respondiendo a eventos como 'install' y 'fetch'.",
       "correctAnswer": "b) Actuar como intermediario entre la aplicación web y la red, permitiendo funciones como notificaciones push y actualizaciones de contenido en segundo plano.",
       "allAnswers": [
-      "a) Controlar la interfaz de usuario de una aplicación web.",
-      "b) Actuar como intermediario entre la aplicación web y la red, permitiendo funciones como notificaciones push y actualizaciones de contenido en segundo plano.",
-      "c) Mejorar el rendimiento de funciones asíncronas en JavaScript.",
-      "d) Servir como base de datos local en el navegador para aplicaciones web."
+        "a) Controlar la interfaz de usuario de una aplicación web.",
+        "b) Actuar como intermediario entre la aplicación web y la red, permitiendo funciones como notificaciones push y actualizaciones de contenido en segundo plano.",
+        "c) Mejorar el rendimiento de funciones asíncronas en JavaScript.",
+        "d) Servir como base de datos local en el navegador para aplicaciones web."
       ]
     },
     {
@@ -3349,10 +3348,10 @@
       "answer": "El 'debounce' es una técnica en JavaScript que limita la frecuencia con la que se ejecuta una función. Se utiliza comúnmente en situaciones como la gestión de eventos de desplazamiento o redimensionamiento para mejorar el rendimiento. La implementación típica implica establecer un tiempo de espera después de la última vez que se ejecutó la función antes de permitir que se ejecute nuevamente.",
       "correctAnswer": "c) Técnica que limita la frecuencia de ejecución de una función, comúnmente utilizada en gestión de eventos para mejorar el rendimiento.",
       "allAnswers": [
-      "a) Método para acelerar la ejecución de funciones en JavaScript.",
-      "b) Técnica que aumenta la frecuencia de ejecución de una función.",
-      "c) Técnica que limita la frecuencia de ejecución de una función, comúnmente utilizada en gestión de eventos para mejorar el rendimiento.",
-      "d) Método para eliminar elementos duplicados de un array en JavaScript."
+        "a) Método para acelerar la ejecución de funciones en JavaScript.",
+        "b) Técnica que aumenta la frecuencia de ejecución de una función.",
+        "c) Técnica que limita la frecuencia de ejecución de una función, comúnmente utilizada en gestión de eventos para mejorar el rendimiento.",
+        "d) Método para eliminar elementos duplicados de un array en JavaScript."
       ]
     },
     {
@@ -3363,10 +3362,10 @@
       "answer": "Los 'WebSockets' son una tecnología que permite la comunicación bidireccional en tiempo real entre un cliente y un servidor a través de un único canal de conexión persistente. Se utilizan en el desarrollo web para aplicaciones que requieren actualizaciones en tiempo real, como chats en línea, juegos multijugador o colaboración en tiempo real.",
       "correctAnswer": "a) Tecnología que permite la comunicación bidireccional en tiempo real entre un cliente y un servidor, utilizada en aplicaciones que requieren actualizaciones en tiempo real.",
       "allAnswers": [
-      "a) Tecnología que permite la comunicación bidireccional en tiempo real entre un cliente y un servidor, utilizada en aplicaciones que requieren actualizaciones en tiempo real.",
-      "b) Método para diseñar interfaces de usuario interactivas en JavaScript.",
-      "c) Herramienta para la optimización de imágenes en una página web.",
-      "d) Técnica para realizar pruebas unitarias en JavaScript."
+        "a) Tecnología que permite la comunicación bidireccional en tiempo real entre un cliente y un servidor, utilizada en aplicaciones que requieren actualizaciones en tiempo real.",
+        "b) Método para diseñar interfaces de usuario interactivas en JavaScript.",
+        "c) Herramienta para la optimización de imágenes en una página web.",
+        "d) Técnica para realizar pruebas unitarias en JavaScript."
       ]
     },
     {
@@ -3377,10 +3376,10 @@
       "answer": "'ESLint' es una herramienta de linting para JavaScript que ayuda a identificar y corregir problemas en el código. Realiza análisis estático del código para encontrar patrones problemáticos o código que no sigue las convenciones definidas. 'ESLint' es ampliamente utilizado en el desarrollo para mantener la calidad y consistencia del código.",
       "correctAnswer": "a) Herramienta de linting para identificar y corregir problemas en el código JavaScript.",
       "allAnswers": [
-      "a) Herramienta de linting para identificar y corregir problemas en el código JavaScript.",
-      "b) Biblioteca para la creación de gráficos en JavaScript.",
-      "c) Framework para el desarrollo de juegos en línea.",
-      "d) Método para realizar operaciones asíncronas en JavaScript."
+        "a) Herramienta de linting para identificar y corregir problemas en el código JavaScript.",
+        "b) Biblioteca para la creación de gráficos en JavaScript.",
+        "c) Framework para el desarrollo de juegos en línea.",
+        "d) Método para realizar operaciones asíncronas en JavaScript."
       ]
     },
     {
@@ -3663,7 +3662,6 @@
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
     },
-
     {
       "id": 301,
       "category": "Softskills",

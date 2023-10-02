@@ -4,7 +4,7 @@
     <h2 class="question-selectors">{{ category }}</h2>
   </div>
 
-  <div class="quiz-button-container">
+  <div class="quiz-button-container" *ngIf="category !== 'Softskills'">
     <div class="quiz-button btn" (click)="playQuiz()">
       <span class="quiz-button-text">Play Quiz </span>
       <svg
@@ -91,16 +91,7 @@
         </div>
       </div>
       <div class="card-question-answer" *ngIf="answerVisibility[question.id]">
-        <a
-          *ngIf="isLink[question.id]"
-          [href]="question.answer"
-          target="_blank"
-          >{{ question.answer }}</a
-        >
-
-        <p *ngIf="!isLink[question.id]" target="_blank">
-          {{ question.answer }}
-        </p>
+        <p>{{ question.answer }}</p>
       </div>
     </div>
   </div>

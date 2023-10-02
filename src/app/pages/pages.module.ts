@@ -18,7 +18,6 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { SoftskillsQuestionsComponentComponent } from './components/softskills-questions-component/softskills-questions-component.component';
 import { TypescriptQuestionsComponentComponent } from './components/typescript-questions-component/typescript-questions-component.component';
 import { UserDataComponent } from './components/user-data/user-data.component';
-import { WeblinksQuestionsComponentComponent } from './components/weblinks-questions-component/weblinks-questions-component.component';
 import { WeblinksComponent } from './weblinks/weblinks.component';
 import { QuizComponent } from './quiz/quiz.component';
 
@@ -39,7 +38,6 @@ import { QuizComponent } from './quiz/quiz.component';
     SoftskillsQuestionsComponentComponent,
     TypescriptQuestionsComponentComponent,
     UserDataComponent,
-    WeblinksQuestionsComponentComponent,
     WeblinksComponent,
     QuizComponent
   ],

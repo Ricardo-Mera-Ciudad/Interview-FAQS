@@ -75,11 +75,11 @@
   cursor: pointer;
   position: absolute;
   overflow: hidden;
-  background-color: black;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.064), transparent);
+  background-color: red;
+  background-image: radial-gradient(rgb(163, 2, 2), transparent);
   background-size: 5px 5px;
-  border: dotted 1px rgba(0, 0, 0, 0.33);
-  box-shadow: 0 0 2px white inset, 0 0 10px rgba(0, 0, 0, 0.665);
+  border: dotted 2px red;
+  box-shadow: 0 0 20px #111 inset, 0 0 10px rgba(255, 0, 0, 0.83);
   opacity: 1;
   display: flex;
   align-items: center;
@@ -99,7 +99,6 @@
 
 .img-circle-item {
   width: 50px;
-
   @media (min-width: 768px) {
     width: 70px;
   }
@@ -139,7 +138,6 @@
   border-top-right-radius: 70px;
   border-bottom-right-radius: 5px;
 }
-
 
 .circle-typescript {
   background-color: rgb(3, 155, 229);
@@ -186,6 +184,9 @@
   color: rgb(0, 0, 0);
 }
 
+.img-circle-item-css{
+  filter: hue-rotate(270deg);
+}
 
 .circle-button:hover,
 .center-circle:hover {
@@ -237,10 +238,19 @@
   }
 }
 
+.circle-button-item:hover{
+  transform: scale(1.1);
+  background-color: #e1effb;
+  color:  #0f213b;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
 
 .circle-button-item {
   background-color: #0f213B;
   color: #FCFCFC;
+  font-weight: bold;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.358),
     4px 4px 3px rgb(0, 0, 0, 0.5);
   width: 250px;

@@ -3,29 +3,19 @@
   position: fixed;
   width: 100%;
   box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.5);
-  z-index: 9999;
+  z-index: 2;
   font-family: 'Open Sans', sans-serif;
   max-width: 1280px;
   margin-bottom: 72px;
-
   @media (min-width:768px) {
     height: 80px;
-    margin-bottom: 72px;
-  }
-
-  @media (min-width: 1024px) {
-    height: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 72px;
-    height: 80px;
-
   }
 }
 
 .header-container__navbar {
   background-color: #0f213B;
   align-items: center;
+  padding: 0 30px;
 }
 
 .header-container__navbar-items {

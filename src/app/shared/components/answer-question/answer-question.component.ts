@@ -5,6 +5,7 @@ import { Subject, combineLatest, of, switchMap, takeUntil } from 'rxjs';
 import { DataService } from 'src/app/pages/services/data.service';
 import { UsersService } from 'src/app/auth/services/users.service';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -17,6 +18,7 @@ export class AnswerQuestionComponent {
   private dataService = inject(DataService);
   private userService = inject(UsersService);
   private router = inject(Router);
+  private modalService = inject(NgbModal);
 
   public questions: Question[] = [];
   public favoriteQuestions: Question[] = [];
@@ -85,6 +87,10 @@ export class AnswerQuestionComponent {
   }
 
   favoriteStatus(questionId: number) {
+    if (!this.isLoggedIn) {
+      return;
+    }
+
     const isFavorited = this.isFavorite(questionId);
     if (isFavorited) {
       this.unmarkAsFavorite(questionId);
@@ -94,6 +100,7 @@ export class AnswerQuestionComponent {
       this.addToLocalFavorites(questionId);
     }
   }
+
 
   addToLocalFavorites(questionId: number) {
     const questionToAdd = this.questions.find(
@@ -112,7 +119,7 @@ export class AnswerQuestionComponent {
   }
 
   markAsFavorite(questionId: number) {
-    this.dataService.markQuestionAsFavorite(questionId);
+    this.dataService.markQuestionAsFavorite(questionId)
   }
 
   unmarkAsFavorite(questionId: number) {

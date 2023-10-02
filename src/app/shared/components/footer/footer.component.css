@@ -10,10 +10,9 @@
   max-height: 50px;
   position: fixed;
   bottom: 0;
-  z-index: 1000;
   @media (min-width: 1024px) {
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
   }
 }
 
@@ -31,19 +30,6 @@
   color: #fcfcfc;
   font-size: smaller;
   cursor: pointer;
-}
-
-.footer-container__info-button {
-  margin: auto 20px auto 0;
-  color: #fcfcfc;
-  font-size: smaller;
-  cursor: pointer;
-  @media (min-width: 768px) {
-    margin: auto 55px auto 0;
-  }
-  @media (min-width: 1024px) {
-    margin: auto 55px auto 0;
-  }
 }
 
 .footer-container__contact-button {
@@ -121,7 +107,16 @@
 }
 
 #whatIsThat {
-  color: #FCFCFC;
+  margin: auto 20px auto 0;
+  color: #fcfcfc;
+  font-size: smaller;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    margin: auto 55px auto 0;
+  }
+  @media (min-width: 1024px) {
+    margin: auto 55px auto 0;
+  }
 }
 
 .modal-header, .modal-footer {

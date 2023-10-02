@@ -22,6 +22,7 @@ export enum Category {
   Angular = "Angular",
   HTML = "Html",
   CSS = "Css",
+  Ts = "Typescript",
   Softskills = "Softskills",
   Git = "Git",
   Weblinks = "Weblinks"

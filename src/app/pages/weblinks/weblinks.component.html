@@ -1,6 +1,6 @@
 <div class="container-main-component general-container">
 
-  <div class=" ">
+    <div class="limiting-div"></div>
     <div class="row row-cols-2 justify-content-center main-card-container">
 
       <div class="col card text-center mb-3 card-container">
@@ -37,7 +37,9 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="limiting-div"></div>
+ 
 
 
   <ng-template #officialDocTemplate let-modal>
@@ -46,13 +48,13 @@
     </div>
     <div class="modal-body">
       <div class="list-group" *ngFor="let documentation of officialDoc">
-        <a [href]=documentation.link class="list-group-item list-group-item-action">
+        <a [href]=documentation.link class="list-group-item list-group-item-action" target="_blank">
           - {{documentation.name}}
         </a>
       </div>
     </div>
     <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn" (click)="modal.close('Close click')">Cerrar</button>
+      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
 
@@ -62,13 +64,13 @@
     </div>
     <div class="modal-body">
       <div class="list-group" *ngFor="let challenge of challenges">
-        <a [href]=challenge.link class="list-group-item list-group-item-action">
+        <a [href]=challenge.link class="list-group-item list-group-item-action" target="_blank">
           - {{challenge.name}}
         </a>
       </div>
     </div>
     <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn" (click)="modal.close('Close click')">Cerrar</button>
+      <button id="whatClose" type="button modal-btn-footer" class="btn" (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
 
@@ -78,13 +80,13 @@
     </div>
     <div class="modal-body">
       <div class="list-group" *ngFor="let course of courses">
-        <a [href]=course.link class="list-group-item list-group-item-action">
+        <a [href]=course.link class="list-group-item list-group-item-action" target="_blank">
           - {{course.name}}
         </a>
       </div>
     </div>
     <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn" (click)="modal.close('Close click')">Cerrar</button>
+      <button id="whatClose" type="button modal-btn-footer" class="btn" (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
 
@@ -94,13 +96,13 @@
     </div>
     <div class="modal-body">
       <div class="list-group" *ngFor="let resource of resources">
-        <a [href]=resource.link class="list-group-item list-group-item-action">
+        <a [href]=resource.link class="list-group-item list-group-item-action" target="_blank">
           - {{resource.name}}
         </a>
       </div>
     </div>
     <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn" (click)="modal.close('Close click')">Cerrar</button>
+      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
 

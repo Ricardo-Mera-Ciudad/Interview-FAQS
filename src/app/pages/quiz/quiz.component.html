@@ -53,15 +53,22 @@
             [(ngModel)]="question.selectedAnswer"
             id="answer-{{ i }}-{{ j }}"
           />
-          <label
-          [ngClass]="{
-            'quiz-correct-answer': isCorrect(question) && answer === question.correctAnswer,
-            'quiz-wrong-answer': this.isSubmitted && answer === question.selectedAnswer && answer !== question.correctAnswer
-          }"
-            class="form-check-label"
-            for="answer-{{ i }}-{{ j }}"
-          >
+          <label class="form-check-label" for="answer-{{ i }}-{{ j }}">
             {{ answer }}
+              <span class="quiz-correct-answer"
+              *ngIf="isCorrect(question) && answer === question.correctAnswer"
+            >
+             <img class="quiz-correct-answer-img" src="../../../assets/images/correct-answer.png" alt="correct-answer">
+            </span>
+            <span class="quiz-wrong-answer"
+              *ngIf="
+                this.isSubmitted &&
+                answer === question.selectedAnswer &&
+                answer !== question.correctAnswer
+              "
+            >
+            <img class="quiz-wrong-answer-img" src="../../../assets/images/wrong-answer.png" alt="wrong-answer">
+            </span>
           </label>
         </div>
       </div>
@@ -75,7 +82,11 @@
 
   <!-- Confirm button -->
   <div class="quiz-confirm-button-container">
-    <button class="quiz-confirm-button btn" (click)="onSubmit()" [disabled]="!areAllQuestionsAnswered()">
+    <button
+      class="quiz-confirm-button btn"
+      (click)="onSubmit()"
+      [disabled]="!areAllQuestionsAnswered()"
+    >
       <span class="quiz-confirm-button-text">Confirmar </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"

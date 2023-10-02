@@ -1170,7 +1170,7 @@
         "c) Estrategia que solo se aplica a funciones asíncronas en HTML.",
         "d) Herramienta que solo se aplica a la manipulación de archivos en HTML."
       ]
-    },    
+    },
     {
       "id": 81,
       "category": "Html",
@@ -1758,7 +1758,7 @@
         "c) 'position: relative' en CSS posiciona un elemento en relación con su posición normal. 'position: absolute' posiciona un elemento en relación con el primer ancestro posicionado (con 'position: relative', 'position: absolute', o 'position: fixed'). Si no hay un ancestro posicionado, se posicionará en relación con el documento HTML. Los elementos con 'position: absolute' son eliminados del flujo normal del documento, por lo que no afectan al diseño original y pueden superponerse a otros elementos.",
         "d) 'position: relative' solo puede usarse en elementos inline, mientras que 'position: absolute' solo puede usarse en elementos block."
       ]
-    },    
+    },
     {
       "id": 123,
       "category": "Css",
@@ -1769,7 +1769,7 @@
       "allAnswers": [
         "a) Para solicitar recursos adicionales en una página web.",
         "b) Un selector de tipo en CSS selecciona todos los elementos de un tipo específico en tu HTML. Por ejemplo, 'p' seleccionaría todos los párrafos en tu página y les aplicaría estilos.",
-        "c) Una técnica para almacenar datos en el cliente de manera persistente.",        
+        "c) Una técnica para almacenar datos en el cliente de manera persistente.",
         "d) Un protocolo de transferencia de archivos en el servidor web."
       ]
     },
@@ -1786,7 +1786,7 @@
         "c) En CSS, 'cascading' se refiere a la forma en que se aplican y priorizan los estilos. La cascada determina cómo los estilos se heredan y sobrescriben entre los diferentes niveles, como el estilo del elemento, las hojas de estilo externas e internas, así como los estilos del usuario. Los estilos más específicos y cercanos al elemento tienen mayor prioridad en la cascada.",
         "d) Es un protocolo para la transmisión segura de datos en la web."
       ]
-    },    
+    },
     {
       "id": 125,
       "category": "Css",
@@ -1800,7 +1800,7 @@
         "c) Solo se puede aplicar a elementos con el atributo 'id'.",
         "d) Sirve para seleccionar elementos basados en su posición en el documento."
       ]
-    },    
+    },
     {
       "id": 126,
       "category": "Css",
@@ -1814,7 +1814,7 @@
         "c) Se utiliza exclusivamente para crear efectos de animación en CSS.",
         "d) Es un concepto fundamental que describe cómo se representa un elemento en una página web. Tiene cuatro componentes principales: el contenido, el padding, el borde y el margen."
       ]
-    },    
+    },
     {
       "id": 127,
       "category": "Css",
@@ -1828,7 +1828,7 @@
         "c) Define la fuente del texto en una página web.",
         "d) Determina el espaciado entre las letras de un texto."
       ]
-    },    
+    },
     {
       "id": 128,
       "category": "Css",
@@ -1842,7 +1842,7 @@
         "c) Determina cómo se calcula el tamaño total de un elemento, incluyendo su contenido, padding y borde. Puede tener dos valores principales: 'content-box' y 'border-box'.",
         "d) Controla el tamaño del elemento en la página."
       ]
-    },    
+    },
     {
       "id": 129,
       "category": "Css",
@@ -1853,10 +1853,10 @@
       "allAnswers": [
         "a) Define el tamaño del texto en un elemento HTML.",
         "b) Se utiliza para colocar elementos en una página web a la izquierda o la derecha de su contenedor, permitiendo que otros elementos fluyan alrededor de él. Es comúnmente utilizado para crear diseños de columnas y diseños de página más complejos.",
-        "c) Controla el espaciado interno de un elemento.",        
+        "c) Controla el espaciado interno de un elemento.",
         "d) Determina la transparencia de un elemento en la página."
       ]
-    },    
+    },
     {
       "id": 130,
       "category": "Css",
@@ -1865,12 +1865,12 @@
       "answer": "Un pseudo-elemento en CSS es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after'). Los pseudo-elementos se utilizan para crear contenido adicional, como elementos de lista o decoraciones, mediante CSS.",
       "correctAnswer": "d) Es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after').",
       "allAnswers": [
-        "a) Define el color de fondo de un elemento HTML.",       
+        "a) Define el color de fondo de un elemento HTML.",
         "b) Controla el espaciado interno de un elemento.",
         "c) Se utiliza para posicionar un elemento en la página.",
         "d) Es un selector que permite seleccionar partes específicas de un elemento y aplicar estilos a esas partes. Se denota utilizando dos puntos dobles '::' seguidos de un nombre (por ejemplo, '::before' o '::after')."
       ]
-    },    
+    },
     {
       "id": 131,
       "category": "Css",
@@ -1884,7 +1884,7 @@
         "c) Determina el espaciado interno del elemento.",
         "d) Es utilizado para establecer la transparencia del elemento."
       ]
-    },    
+    },
     {
       "id": 132,
       "category": "Css",
@@ -1898,7 +1898,7 @@
         "c) Colocando el comentario entre paréntesis '(' y ')'.",
         "d) Incluyendo el comentario entre corchetes '{' y '}'."
       ]
-    },    
+    },
     {
       "id": 133,
       "category": "Css",
@@ -1912,7 +1912,7 @@
         "c) Determina la transparencia de un elemento en la página.",
         "d) Es utilizada para posicionar un elemento en la página."
       ]
-    },    
+    },
     {
       "id": 134,
       "category": "Css",
@@ -1926,7 +1926,7 @@
         "c) 'Margin' es el espacio exterior al borde de un elemento y afecta la distancia entre elementos adyacentes. 'Padding' es el espacio interior al borde y afecta la distancia entre el contenido del elemento y el borde.",
         "d) 'Margin' afecta el espaciado interno de un elemento, mientras que 'padding' afecta el espaciado externo."
       ]
-    },    
+    },
     {
       "id": 135,
       "category": "Css",
@@ -1940,7 +1940,7 @@
         "c) Un tipo de selector que aplica estilos a elementos específicos.",
         "d) Una técnica que permite aplicar estilos diferentes a una página web en función de las características del dispositivo o la ventana del navegador. Se utiliza para crear diseños responsivos y adaptar la presentación de la página a diferentes tamaños de pantalla y dispositivos, como teléfonos móviles y tabletas."
       ]
-    },    
+    },
     {
       "id": 136,
       "category": "Css",
@@ -1954,7 +1954,7 @@
         "c) Centrado horizontal con margen automático:\n\n```css\n.contenedor {\n margin: 0 auto; /* Centrado horizontal */\n width: fit-content; /* Opcional: ajusta el ancho al contenido */\n}```",
         "d) Todas las anteriores son formas válidas de centrar un 'div' en CSS."
       ]
-    },    
+    },
     {
       "id": 137,
       "category": "Css",
@@ -1968,7 +1968,7 @@
         "c) Incluyendo estilos en línea utilizando el atributo 'style' en las etiquetas HTML.",
         "d) Todas las anteriores son formas válidas de aplicar estilos CSS en un documento HTML."
       ]
-    },    
+    },
     {
       "id": 138,
       "category": "Css",
@@ -1982,7 +1982,7 @@
         "c) La especificidad en CSS es un sistema que determina qué estilo se aplicará cuando existan conflictos entre reglas de estilo. Se basa en cuatro niveles de especificidad: elementos, clases y atributos, IDs y pseudo-clases/pseudo-elementos. Cuando hay conflictos, se aplica la regla con la mayor especificidad. Si la especificidad es igual, se utiliza la regla que aparece más tarde en el código CSS.",
         "d) La especificidad en CSS no afecta la resolución de conflictos entre reglas de estilo."
       ]
-    },    
+    },
     {
       "id": 139,
       "category": "Css",
@@ -1996,7 +1996,7 @@
         "c) Un selector de descendiente en CSS solo se puede aplicar a elementos con la misma etiqueta.",
         "d) Un selector de descendiente en CSS permite seleccionar un elemento que es descendiente de otro elemento específico. Su sintaxis implica escribir el nombre del elemento padre seguido de un espacio y luego el nombre del elemento descendiente. Por ejemplo, 'div p' seleccionaría todos los elementos 'p' que son descendientes de un elemento 'div'."
       ]
-    },    
+    },
     {
       "id": 140,
       "category": "Css",
@@ -2010,7 +2010,7 @@
         "c) La propiedad 'position' en CSS se utiliza para controlar la posición de un elemento en la página. Algunos valores principales son 'static' (posición normal de flujo), 'relative' (posición relativa al lugar que ocuparía en el flujo normal), 'absolute' (posición relativa al elemento posicionado más cercano) y 'fixed' (posición fija en relación con la ventana del navegador). Esta propiedad es fundamental para el diseño de diseño y la ubicación de elementos en la página.",
         "d) La propiedad 'position' en CSS solo se aplica a elementos con una clase específica."
       ]
-    },    
+    },
     {
       "id": 141,
       "category": "Css",
@@ -2024,7 +2024,7 @@
         "c) El concepto de 'z-index' en CSS se utiliza para controlar la superposición de elementos en una página. Cada elemento tiene una posición en el eje Z, que determina su profundidad en relación con otros elementos. Un valor mayor de 'z-index' coloca un elemento por encima de otros con un valor menor. Es útil para controlar la superposición de elementos como ventanas emergentes o menús desplegables.",
         "d) 'z-index' en CSS solo afecta la transparencia de los elementos."
       ]
-    },    
+    },
     {
       "id": 142,
       "category": "Css",
@@ -2038,7 +2038,7 @@
         "c) Un 'sprite' en CSS es una imagen que contiene múltiples elementos gráficos (como iconos o botones) combinados en una sola imagen. La ventaja de utilizar sprites es reducir la carga de recursos al cargar una sola imagen en lugar de varias. Esto mejora el rendimiento de la página al reducir el número de solicitudes al servidor y acelerar la carga de la página.",
         "d) Un 'sprite' en CSS es una técnica para aplicar sombras a elementos de la página."
       ]
-    },    
+    },
     {
       "id": 143,
       "category": "Css",
@@ -2050,9 +2050,9 @@
         "a) 'box-shadow' en CSS es una propiedad para cambiar el tamaño de las cajas en la página.",
         "b) 'box-shadow' en CSS es una propiedad para aplicar bordes redondeados a elementos.",
         "c) 'box-shadow' en CSS es una propiedad para cambiar el color de fondo de un elemento.",
-        "d) El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones."       
+        "d) El 'box-shadow' en CSS es una propiedad que permite agregar sombras a elementos en la página. Se utiliza especificando valores para la sombra en términos de desplazamiento horizontal, desplazamiento vertical, desenfoque, propagación y color. Esta propiedad es útil para crear efectos de profundidad y realismo en elementos como cajas y botones."
       ]
-    },    
+    },
     {
       "id": 144,
       "category": "Css",
@@ -2063,10 +2063,10 @@
       "allAnswers": [
         "a) El 'flexbox' en CSS es un modelo de diseño que se utiliza para crear diseños flexibles y alineados en una sola dirección (ya sea horizontal o vertical). Permite que los elementos se distribuyan automáticamente en el espacio disponible, lo que facilita la creación de diseños responsivos y complejos. Es especialmente útil para la alineación y distribución de elementos en contenedores.",
         "b) 'Flexbox' en CSS es una propiedad para cambiar el tamaño de las cajas en la página.",
-        "c) 'Flexbox' en CSS es una propiedad para aplicar bordes redondeados a elementos.",        
+        "c) 'Flexbox' en CSS es una propiedad para aplicar bordes redondeados a elementos.",
         "d) 'Flexbox' en CSS es una propiedad para cambiar el color de fondo de un elemento."
       ]
-    },    
+    },
     {
       "id": 145,
       "category": "Css",
@@ -2080,7 +2080,7 @@
         "c) El 'grid layout' en CSS es un sistema de diseño bidimensional que permite crear diseños complejos y alineados en filas y columnas. Permite dividir el diseño de una página en una cuadrícula y colocar elementos en celdas específicas de esa cuadrícula. La ventaja del 'grid layout' es su capacidad para crear diseños complejos con facilidad, controlar la disposición de elementos y lograr diseños adaptables (responsivos) y equilibrados.",
         "d) 'Grid layout' en CSS es una propiedad para cambiar el color de fondo de un elemento."
       ]
-    },    
+    },
     {
       "id": 146,
       "category": "Css",
@@ -2091,10 +2091,10 @@
       "allAnswers": [
         "a) Las animaciones CSS son una función exclusiva de JavaScript para agregar efectos de animación.",
         "b) Las animaciones CSS son una propiedad de Flash para crear efectos visuales en una página web.",
-        "c) Las animaciones CSS son una propiedad de jQuery para mejorar la interactividad en sitios web.",   
+        "c) Las animaciones CSS son una propiedad de jQuery para mejorar la interactividad en sitios web.",
         "d) Las animaciones CSS son una forma de agregar efectos de animación a elementos HTML utilizando solo CSS, sin necesidad de JavaScript ni Flash. Se definen utilizando la propiedad 'animation' y se pueden personalizar con duración, temporización y otros valores. Las animaciones CSS son útiles para crear efectos de transición suaves y atractivos en elementos como botones y elementos de navegación."
       ]
-    },    
+    },
     {
       "id": 147,
       "category": "Css",
@@ -2108,7 +2108,7 @@
         "c) Los 'gradients' en CSS son una técnica que permite crear fondos degradados, es decir, fondos que cambian gradualmente de un color a otro o de un color a la transparencia. Para crear un fondo degradado, se utiliza la propiedad 'background-image' con el valor 'linear-gradient' o 'radial-gradient'. Puedes especificar los colores y la dirección del degradado para personalizar el efecto.",
         "d) Los 'gradients' en CSS son una propiedad de jQuery para crear efectos visuales en el fondo de una página web."
       ]
-    },    
+    },
     {
       "id": 148,
       "category": "Css",
@@ -2120,7 +2120,7 @@
         "a) El 'transform' en CSS es una propiedad exclusiva de JavaScript para manipular elementos HTML.",
         "b) El 'transform' en CSS es una técnica para aplicar filtros de imágenes a elementos HTML.",
         "c) El 'transform' en CSS es una propiedad obsoleta que ya no se utiliza en el desarrollo web moderno.",
-        "d) El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."    
+        "d) El 'transform' en CSS es una propiedad que permite aplicar transformaciones geométricas a elementos HTML. Puedes utilizar 'transform' para realizar rotaciones, escalas, sesgos, translaciones y más. Esta propiedad es especialmente útil para crear efectos de animación y manipular la apariencia de elementos en una página web."
       ]
     },
     {
@@ -2130,13 +2130,13 @@
       "question": "¿Qué es 'viewport' en CSS y cómo se relaciona con el diseño web responsivo?",
       "answer": "El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos.",
       "correctAnswer": "a) El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos.",
-      "allAnswers": [       
+      "allAnswers": [
         "a) El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el contexto del diseño web responsivo, es fundamental controlar cómo se ajusta y adapta el contenido al tamaño del viewport. Se utiliza la etiqueta 'meta' con el atributo 'viewport' en HTML para definir las propiedades del viewport, como el ancho y la escala. Esto permite que el diseño de la página se adapte a diferentes tamaños de pantalla y dispositivos.",
         "b) El 'viewport' en CSS es una propiedad que define la resolución de la pantalla en píxeles.",
         "c) El 'viewport' en CSS es una técnica para ocultar elementos en dispositivos móviles.",
         "d) El 'viewport' en CSS es una propiedad obsoleta que ya no se utiliza en el desarrollo web moderno."
       ]
-    },    
+    },
     {
       "id": 150,
       "category": "Css",
@@ -2150,7 +2150,7 @@
         "c) Las variables CSS, también conocidas como variables personalizadas, son nombres simbólicos que representan valores en hojas de estilo CSS. Se declaran utilizando la propiedad '--nombre-variable' y se pueden utilizar para almacenar colores, tamaños, márgenes y otros valores. Para utilizar una variable, se utiliza la función 'var(--nombre-variable)' en cualquier propiedad CSS que desees. Las variables CSS son útiles para mantener un código más limpio y reutilizable.",
         "d) Las variables CSS son solo aplicables a elementos HTML y no se pueden utilizar en estilos globales."
       ]
-    },    
+    },
     {
       "id": 151,
       "category": "Css",
@@ -2164,7 +2164,7 @@
         "c) Las transiciones CSS son solo aplicables a elementos de tipo bloque.",
         "d) Las transiciones CSS solo pueden aplicarse a propiedades de posición y tamaño."
       ]
-    },    
+    },
     {
       "id": 152,
       "category": "Css",
@@ -2178,7 +2178,7 @@
         "c) La 'transformación 3D' en CSS es una extensión de las transformaciones 2D que permite realizar transformaciones tridimensionales en elementos HTML. Puedes aplicar rotaciones, escalas y traslaciones en tres dimensiones. Las aplicaciones comunes de las transformaciones 3D incluyen la creación de efectos de rotación en objetos tridimensionales, animaciones de cubos y manipulación de elementos en un espacio 3D simulado.",
         "d) La 'transformación 3D' en CSS solo se utiliza en dispositivos con capacidades 3D especiales."
       ]
-    },    
+    },
     {
       "id": 153,
       "category": "CSS",
@@ -2189,10 +2189,10 @@
       "allAnswers": [
         "a) El 'aspect ratio' en CSS se refiere a la relación entre el ancho y la altura de un elemento, como una imagen o un contenedor. Puedes controlar el 'aspect ratio' utilizando la propiedad 'padding-top' o 'padding-bottom' con un valor expresado como un porcentaje. Esto es útil cuando deseas mantener la proporción de una imagen o un elemento, incluso cuando cambia el tamaño de la ventana del navegador.",
         "b) El 'aspect ratio' en CSS se refiere solo al tamaño de la fuente en un elemento.",
-        "c) El 'aspect ratio' en CSS solo se aplica a elementos con dimensiones fijas.",        
+        "c) El 'aspect ratio' en CSS solo se aplica a elementos con dimensiones fijas.",
         "d) El 'aspect ratio' en CSS solo se aplica a elementos con contenido de video."
       ]
-    },    
+    },
     {
       "id": 154,
       "category": "Css",
@@ -2206,7 +2206,7 @@
         "c) El 'object-fit' en CSS es una propiedad que se utiliza para controlar cómo se ajusta y escala el contenido (como imágenes o videos) dentro de un elemento contenedor. Algunos valores comunes para 'object-fit' son 'contain' (el contenido se ajusta para caber dentro del contenedor sin distorsión) y 'cover' (el contenido se ajusta para cubrir todo el contenedor, recortando si es necesario). Esta propiedad es útil para controlar el comportamiento de imágenes y videos en un diseño.",
         "d) El 'object-fit' en CSS solo se aplica a elementos con dimensiones fijas."
       ]
-    },    
+    },
     {
       "id": 155,
       "category": "Css",
@@ -2216,11 +2216,11 @@
       "correctAnswer": "d) La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código.",
       "allAnswers": [
         "a) El Shadow DOM en CSS es solo una característica decorativa sin un propósito específico.",
-        "b) El Shadow DOM en CSS se utiliza solo para aplicar estilos a elementos de la interfaz de usuario.",       
+        "b) El Shadow DOM en CSS se utiliza solo para aplicar estilos a elementos de la interfaz de usuario.",
         "c) El Shadow DOM en CSS solo se utiliza para la creación de efectos visuales en elementos específicos.",
         "d) La 'customización de elementos' (Shadow DOM) en CSS es una técnica que permite encapsular estilos y comportamientos en elementos HTML personalizados. Se utiliza para crear componentes web reutilizables que no se ven afectados por estilos globales y que evitan conflictos con otros estilos en la página. El Shadow DOM se utiliza en la creación de bibliotecas y frameworks de componentes web, como Polymer y Stencil, para mantener la modularidad y la reutilización del código."
       ]
-    },    
+    },
     {
       "id": 156,
       "category": "Css",
@@ -2234,7 +2234,7 @@
         "c) El 'mix-blend-mode' en CSS es una propiedad que se utiliza para controlar cómo se combinan los colores de un elemento con los colores del elemento subyacente. Puedes utilizar valores como 'multiply', 'screen', 'overlay' y otros para crear efectos de mezcla. Esta propiedad es útil para crear efectos de superposición y fusión de elementos en un diseño, como superposiciones de color y efectos de mezcla de imágenes.",
         "d) El 'mix-blend-mode' en CSS solo se utiliza para aplicar efectos de sombra en elementos."
       ]
-    },    
+    },
     {
       "id": 157,
       "category": "Css",
@@ -2248,7 +2248,7 @@
         "c) La 'función calc()' en CSS solo se utiliza para crear animaciones en propiedades CSS.",
         "d) La 'función calc()' en CSS es obsoleta y no se recomienda su uso."
       ]
-    },    
+    },
     {
       "id": 158,
       "category": "Css",
@@ -2262,7 +2262,7 @@
         "c) La propiedad 'clip-path' en CSS determina el espaciado entre elementos en un diseño.",
         "d) La propiedad 'clip-path' en CSS se utiliza para animar la entrada y salida de elementos en una página web."
       ]
-    },    
+    },
     {
       "id": 159,
       "category": "Css",
@@ -2276,7 +2276,7 @@
         "c) 'Object-position' en CSS define el color de fondo de un elemento en una página web.",
         "d) 'Object-position' en CSS se utiliza para aplicar efectos de animación a elementos HTML."
       ]
-    },    
+    },
     {
       "id": 160,
       "category": "Css",
@@ -2284,18 +2284,18 @@
       "question": "¿Qué es la 'variable de entorno' (env-var) en CSS y cómo se utiliza?",
       "answer": "La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS.",
       "correctAnswer": "d) La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS.",
-      "allAnswers": [        
+      "allAnswers": [
         "a) La 'variable de entorno' (env-var) en CSS es una propiedad que se utiliza para aplicar estilos diferentes en función del entorno de la aplicación.",
         "b) La 'variable de entorno' (env-var) en CSS es un término utilizado para describir las variables locales en una hoja de estilo específica.",
         "c) La 'variable de entorno' (env-var) en CSS es una característica para definir variables en archivos de configuración de servidor.",
         "d) La 'variable de entorno' (env-var) en CSS es una característica experimental que permite definir variables globales que se pueden utilizar en múltiples hojas de estilo. Se definen en el nivel de documento y se pueden acceder desde cualquier hoja de estilo en ese documento. Esto es útil para definir valores compartidos, como colores o tamaños, en un solo lugar y utilizarlos en todo el proyecto CSS."
       ]
-    },    
+    },
     {
       "id": 161,
       "category": "Css",
       "level": "Junior",
-      "question": "Explique la diferencia entre 'display: block;' y 'display: inline;' en CSS.", 
+      "question": "Explique la diferencia entre 'display: block;' y 'display: inline;' en CSS.",
       "answer": "'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos.",
       "correctAnswer": "d) 'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos.",
       "allAnswers": [
@@ -2304,7 +2304,7 @@
         "c) 'display: block;' y 'display: inline;' son iguales y pueden usarse indistintamente en cualquier situación.",
         "d) 'display: block;' hace que el elemento ocupe todo el ancho disponible y comience en una nueva línea, mientras que 'display: inline;' hace que el elemento ocupe solo el ancho necesario y permanezca en la misma línea que los elementos vecinos."
       ]
-    },    
+    },
     {
       "id": 162,
       "category": "Css",
@@ -2316,9 +2316,9 @@
         "a) 'Responsive design' en CSS se refiere a la creación de sitios web que se adaptan y responden de manera eficiente a diferentes tamaños de pantalla y dispositivos, utilizando técnicas como 'media queries' y un diseño fluido.",
         "b) 'Responsive design' en CSS se refiere a la creación de sitios web que solo son accesibles desde dispositivos móviles.",
         "c) 'Responsive design' en CSS es un término utilizado para describir el diseño de sitios web con un solo tamaño fijo que no cambia.",
-        "d) 'Responsive design' en CSS se refiere a la creación de sitios web que solo son accesibles desde dispositivos de escritorio."        
+        "d) 'Responsive design' en CSS se refiere a la creación de sitios web que solo son accesibles desde dispositivos de escritorio."
       ]
-    },    
+    },
     {
       "id": 163,
       "category": "Css",
@@ -2346,7 +2346,7 @@
         "c) La pseudo-clase ':hover' en CSS se utiliza para seleccionar y aplicar estilos a un elemento cuando el usuario pasa el cursor sobre él. Por ejemplo, 'a:hover { color: red; }' cambiará el color del texto a rojo cuando el usuario pase el cursor sobre un enlace.",
         "d) ':hover' es una propiedad de estilo en CSS que se aplica automáticamente a todos los elementos."
       ]
-    },    
+    },
     {
       "id": 165,
       "category": "Css",
@@ -2360,7 +2360,7 @@
         "c) 'Position: relative;' y 'position: fixed;' son propiedades obsoletas en CSS.",
         "d) 'Position: relative;' posiciona un elemento con respecto a su posición original en el flujo del documento, mientras que 'position: fixed;' lo posiciona en relación con la ventana del navegador, haciendo que permanezca fijo incluso al desplazarse."
       ]
-    },    
+    },
     {
       "id": 166,
       "category": "Css",
@@ -2372,9 +2372,9 @@
         "a) 'BEM' es un término coloquial sin significado específico en CSS.",
         "b) 'BEM' (Best Element Method) es una técnica para aplicar estilos solo al mejor elemento de una página.",
         "d) 'BEM' (Block, Element, Modifier) es una convención de nomenclatura para clases en CSS que ayuda a organizar y estructurar el código CSS de manera más mantenible y modular. Divide el código en bloques (componentes), elementos y modificadores, facilitando el entendimiento y la colaboración en proyectos grandes.",
-        "d) 'BEM' es una propiedad CSS que controla la visualización de elementos en el modo de impresión."        
+        "d) 'BEM' es una propiedad CSS que controla la visualización de elementos en el modo de impresión."
       ]
-    },    
+    },
     {
       "id": 167,
       "category": "Css",
@@ -2388,7 +2388,7 @@
         "c) 'Sass' es un formato de archivo de imagen utilizado en diseño web.",
         "d) 'Sass' es un preprocesador de CSS que agrega características como variables, anidamiento, y mixins, facilitando la escritura y el mantenimiento del código CSS. Su ventaja radica en la capacidad de usar funciones y estructuras más avanzadas, lo que mejora la eficiencia y organización del código."
       ]
-    },    
+    },
     {
       "id": 168,
       "category": "Css",
@@ -2402,7 +2402,7 @@
         "c) 'Mobile-first' en el diseño web significa desarrollar solo para dispositivos de pantalla grande.",
         "d) 'Mobile-first' en el diseño web significa comenzar el desarrollo para dispositivos de pantalla grande y luego adaptarse a dispositivos móviles."
       ]
-    },    
+    },
     {
       "id": 169,
       "category": "Css",
@@ -2416,7 +2416,7 @@
         "c) 'Position: sticky;' en CSS es una propiedad que combina características de 'position: relative;' y 'position: fixed;'. El elemento se comporta como 'relative' hasta que alcanza un punto de desplazamiento específico, momento en el cual se vuelve 'fixed'. Es útil para encabezados que se adhieren en la parte superior de la página al hacer scroll.",
         "d) 'Position: sticky;' en CSS no tiene un comportamiento específico."
       ]
-    },    
+    },
     {
       "id": 170,
       "category": "Css",
@@ -2426,11 +2426,11 @@
       "correctAnswer": "d) 'Em' y 'rem' son unidades de medida en CSS. 'Em' se basa en el tamaño de fuente del elemento padre, mientras que 'rem' se basa en el tamaño de fuente del elemento raíz (generalmente el elemento 'html'). 'Rem' proporciona una forma más predecible de especificar tamaños relativos en relación con el tamaño de fuente de la página.",
       "allAnswers": [
         "a) 'Em' y 'rem' son unidades de medida en CSS que siempre se basan en el tamaño de fuente del elemento padre.",
-        "b) 'Em' y 'rem' son unidades de medida en CSS que siempre se basan en el tamaño de fuente del elemento raíz (html).",        
+        "b) 'Em' y 'rem' son unidades de medida en CSS que siempre se basan en el tamaño de fuente del elemento raíz (html).",
         "c) 'Em' y 'rem' son términos equivalentes para describir la misma unidad de medida en CSS.",
         "d) 'Em' y 'rem' son unidades de medida en CSS. 'Em' se basa en el tamaño de fuente del elemento padre, mientras que 'rem' se basa en el tamaño de fuente del elemento raíz (generalmente el elemento 'html'). 'Rem' proporciona una forma más predecible de especificar tamaños relativos en relación con el tamaño de fuente de la página."
       ]
-    },    
+    },
     {
       "id": 171,
       "category": "Css",
@@ -2444,7 +2444,7 @@
         "c) 'CSS-in-JS' se refiere a la práctica de escribir código CSS dentro de archivos JSON en el desarrollo web.",
         "d) 'CSS-in-JS' es una convención de nomenclatura para organizar archivos de estilo en proyectos JavaScript."
       ]
-    },    
+    },
     {
       "id": 172,
       "category": "Css",
@@ -2458,7 +2458,7 @@
         "c) 'justify-content' y 'align-items' son términos equivalentes en Flexbox que pueden usarse indistintamente.",
         "d) 'justify-content' y 'align-items' son propiedades de Flexbox. 'justify-content' controla la alineación de los elementos a lo largo del eje principal (horizontal en el caso de filas y vertical en el caso de columnas), mientras que 'align-items' controla la alineación a lo largo del eje transversal. Por ejemplo, 'justify-content: center;' centrará los elementos horizontalmente, y 'align-items: flex-end;' los alineará en la parte inferior del contenedor."
       ]
-    },       
+    },
     {
       "id": 173,
       "category": "Css",
@@ -2470,9 +2470,9 @@
         "a) 'Critical CSS' se refiere a los estilos necesarios para renderizar la parte visible de una página web inicialmente. Es importante para el rendimiento web porque acelera la carga de la página al proporcionar los estilos esenciales primero, permitiendo que la página sea utilizable más rápidamente.",
         "b) 'Critical CSS' es una técnica para optimizar estilos específicos en páginas de comercio electrónico.",
         "c) 'Critical CSS' es una propiedad de CSS utilizada para aplicar estilos críticos en elementos visibles.",
-        "d) 'Critical CSS' se refiere a los estilos secundarios de una página web y no afecta significativamente al rendimiento."        
+        "d) 'Critical CSS' se refiere a los estilos secundarios de una página web y no afecta significativamente al rendimiento."
       ]
-    },    
+    },
     {
       "id": 174,
       "category": "Css",
@@ -2484,9 +2484,9 @@
         "a) 'CSS normalization' es una técnica avanzada para aplicar estilos específicos en páginas web.",
         "b) 'CSS normalization' es el proceso de establecer estilos consistentes en diferentes navegadores. Su propósito es crear una base uniforme para el diseño web, asegurando que los elementos HTML tengan estilos predeterminados consistentes en todos los navegadores, evitando problemas de rendimiento y presentación.",
         "c) 'CSS normalization' es un método para normalizar el tamaño de texto en todas las secciones de un sitio web.",
-        "d) 'CSS normalization' es un término que describe la optimización de estilos para un rendimiento máximo."     
+        "d) 'CSS normalization' es un término que describe la optimización de estilos para un rendimiento máximo."
       ]
-    },    
+    },
     {
       "id": 175,
       "category": "Css",
@@ -2500,7 +2500,7 @@
         "c) 'Normalize.css' y 'reset.css' son términos intercambiables que describen el mismo concepto de normalización de estilos en CSS.",
         "d) 'Normalize.css' y 'reset.css' son ambos estilos utilizados para establecer estilos predeterminados consistentes en diferentes navegadores. La diferencia radica en la filosofía de cada uno: 'reset.css' establece estilos más agresivos para reiniciar completamente los estilos, mientras que 'normalize.css' mantiene algunos estilos predeterminados para elementos comunes y solo normaliza diferencias entre navegadores."
       ]
-    },    
+    },
     {
       "id": 176,
       "category": "Css",
@@ -2514,7 +2514,7 @@
         "c) 'flex-grow' solo se aplica a elementos con un 'display' establecido como 'flex'.",
         "d) 'flex-grow' se utiliza para especificar el tamaño inicial de un elemento flex en el contenedor."
       ]
-    },    
+    },
     {
       "id": 177,
       "category": "Css",
@@ -2528,7 +2528,7 @@
         "c) La etiqueta meta viewport en HTML solo se usa en dispositivos de pantalla grande.",
         "d) El 'viewport' en CSS se refiere al área visible de una página web en el navegador. En el diseño web móvil, donde los tamaños de pantalla varían ampliamente, controlar el 'viewport' es crucial. Se utiliza la etiqueta meta viewport en HTML para especificar atributos como el ancho y la escala, asegurando que la página se presente de manera adecuada en dispositivos móviles."
       ]
-    },    
+    },
     {
       "id": 178,
       "category": "Css",
@@ -2542,7 +2542,7 @@
         "c) Las 'CSS Custom Properties' son un tipo de variables limitadas a ciertos elementos HTML.",
         "d) Las 'CSS Custom Properties', también conocidas como variables CSS, son variables definidas por el usuario que contienen valores específicos. Su ventaja radica en la capacidad de reutilizar valores en todo el documento y cambiarlos dinámicamente mediante JavaScript. Esto mejora la consistencia y facilita la actualización de estilos en toda la aplicación."
       ]
-    },    
+    },
     {
       "id": 179,
       "category": "Css",
@@ -2556,7 +2556,7 @@
         "c) 'CSS Houdini' es un lenguaje de programación para desarrollo web.",
         "d) 'CSS Houdini' es un conjunto de API que permiten a los desarrolladores extender y mejorar el motor de renderizado CSS del navegador. Su objetivo es dar a los desarrolladores más control sobre el flujo de trabajo de estilo, permitiendo la creación de funciones y mejorando la capacidad de rendimiento del navegador."
       ]
-    },    
+    },
     {
       "id": 182,
       "category": "Css",
@@ -2570,7 +2570,7 @@
         "c) 'Important' se utiliza solo en casos de estilos de texto.",
         "d) 'Important' se utiliza para indicar que una regla no es relevante."
       ]
-    },    
+    },
     {
       "id": 181,
       "category": "Javascript",
@@ -3144,7 +3144,7 @@
       "c) Paradigma de programación que se centra en la propagación de cambios y la reacción a ellos, se implementa utilizando bibliotecas como RxJS.",
       "d) Paradigma de programación que se basa únicamente en funciones puras."
       ]
-    },    
+    },
     {
       "id": 224,
       "category": "Javascript",
@@ -3158,7 +3158,7 @@
       "c) Framework para el desarrollo de aplicaciones móviles en JavaScript.",
       "d) Versión mejorada de JavaScript con cambios significativos en la sintaxis."
       ]
-    },    
+    },
     {
       "id": 225,
       "category": "Javascript",
@@ -3382,7 +3382,7 @@
       "c) Framework para el desarrollo de juegos en línea.",
       "d) Método para realizar operaciones asíncronas en JavaScript."
       ]
-    },    
+    },
     {
       "id": 241,
       "category": "Typescript",
@@ -3396,7 +3396,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 242,
       "category": "Typescript",
@@ -3410,7 +3410,7 @@
         "c) .txt",
         "d) .html"
       ]
-    },    
+    },
     {
       "id": 243,
       "category": "Typescript",
@@ -3424,7 +3424,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 244,
       "category": "Typescript",
@@ -3466,7 +3466,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 247,
       "category": "Typescript",
@@ -3480,7 +3480,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 248,
       "category": "Typescript",
@@ -3494,7 +3494,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 249,
       "category": "Typescript",
@@ -3508,7 +3508,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 250,
       "category": "Typescript",
@@ -3522,7 +3522,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 251,
       "category": "Typescript",
@@ -3536,7 +3536,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 252,
       "category": "Typescript",
@@ -3550,7 +3550,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 253,
       "category": "Typescript",
@@ -3564,7 +3564,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 254,
       "category": "Typescript",
@@ -3578,7 +3578,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 255,
       "category": "Typescript",
@@ -3606,7 +3606,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 257,
       "category": "Typescript",
@@ -3648,7 +3648,7 @@
         "c) Herramienta para la optimización de imágenes en una página web.",
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
-    },    
+    },
     {
       "id": 260,
       "category": "Typescript",
@@ -3663,7 +3663,7 @@
         "d) Técnica para realizar pruebas unitarias en TypeScript."
       ]
     },
-    
+
     {
       "id": 301,
       "category": "Softskills",
@@ -3829,9 +3829,9 @@
         "a) Git y GitHub son dos nombres para la misma herramienta.",
         "b) Git es un sistema de control de versiones, mientras que GitHub es una plataforma en línea que proporciona servicios de alojamiento de repositorios Git. Git se utiliza para rastrear cambios a nivel local, mientras que GitHub permite almacenar y colaborar en repositorios de Git en la nube, facilitando la colaboración entre desarrolladores.",
         "b) GitHub es un sistema de control de versiones que funciona con Git.",
-        "c) Git es una interfaz gráfica para GitHub."       
+        "c) Git es una interfaz gráfica para GitHub."
       ]
-    },    
+    },
     {
       "id": 363,
       "category": "Git",
@@ -3845,7 +3845,7 @@
         "c) 'git init'",
         "d) 'git new'"
       ]
-    },    
+    },
     {
       "id": 364,
       "category": "Git",
@@ -3859,7 +3859,7 @@
         "c) 'git update' y es importante por buenas prácticas",
         "d) 'git commit' y es importante para registrar cambios en el repositorio teniendo así un seguimiento de la historia del proyecto"
       ]
-    },    
+    },
     {
       "id": 365,
       "category": "Git",
@@ -3873,7 +3873,7 @@
         "c) Un conflicto de merge es pan comido.Realizar un nuevo branch para evitar el conflicto.",
         "d) Un conflicto de merge ocurre cuando dos ramas diferentes contienen cambios conflictivos en la misma parte del código. Revisión manual del conflicto, edición del código para resolver las diferencias y un nuevo commit."
       ]
-    },    
+    },
     {
       "id": 366,
       "category": "Git",
@@ -3887,7 +3887,7 @@
         "c) 'git copy <URL_del_repositorio>'",
         "d) 'git init <URL_del_repositorio>'"
       ]
-    },    
+    },
     {
       "id": 367,
       "category": "Git",
@@ -3901,7 +3901,7 @@
         "c) Un commit en Git es una forma de subir archivos al repositorio remoto.",
         "d) Un commit en Git es una instantánea de los cambios en el código. Es importante porque permite realizar un seguimiento del historial de cambios, volver a versiones anteriores y colaborar de manera efectiva en proyectos."
       ]
-    },    
+    },
     {
       "id": 368,
       "category": "Git",
@@ -3915,7 +3915,7 @@
         "c) El archivo '.gitignore' es una copia de seguridad automática generada por Git.",
         "d) El archivo '.gitignore' se utiliza para especificar archivos y directorios que Git debe ignorar y no rastrear en el control de versiones. Esto es útil para evitar que archivos irrelevantes o sensibles se incluyan en el repositorio."
       ]
-    },    
+    },
     {
       "id": 369,
       "category": "Git",
@@ -3929,7 +3929,7 @@
         "c) 'Git pull' descarga los cambios remotos y fusiona automáticamente en la rama actual. 'Git fetch' descarga los cambios remotos pero no realiza la fusión, por lo que debes fusionarlos manualmente si es necesario.",
         "d) 'Git pull' descarga los cambios remotos pero no realiza la fusión, mientras que 'git fetch' fusiona automáticamente en la rama actual."
       ]
-    },    
+    },
     {
       "id": 370,
       "category": "Git",
@@ -3943,7 +3943,7 @@
         "c) Una rama en Git solo se utiliza para almacenar archivos de respaldo.Sirve por si se pierde el trabajo",
         "d) Una rama en Git es una línea de desarrollo independiente que permite trabajar en nuevas características o correcciones sin afectar la rama principal. Se utilizan para mantener un historial de cambios organizado y facilitar la colaboración."
       ]
-    },    
+    },
     {
       "id": 371,
       "category": "Git",
@@ -3957,7 +3957,7 @@
         "c) 'git combine <nombre_de_la_rama>'",
         "d) Para fusionar una rama en Git, se utiliza el comando 'git merge <nombre_de_la_rama>' mientras se encuentra en la rama en la que deseas fusionar los cambios."
       ]
-    },    
+    },
     {
       "id": 372,
       "category": "Git",
@@ -3971,7 +3971,7 @@
         "c) Se resuelve automáticamente sin intervención del usuario.",
         "d) Se soluciona mediante el comando 'git resolve'."
       ]
-    },    
+    },
     {
       "id": 373,
       "category": "Git",
@@ -3985,7 +3985,7 @@
         "c) 'git status' se utiliza para revertir cambios en Git.",
         "d) 'git status' es exclusivamente para mostrar información sobre las ramas en Git."
       ]
-    },    
+    },
     {
       "id": 374,
       "category": "Git",
@@ -3994,12 +3994,12 @@
       "answer": "Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio.",
       "correctAnswer": "d) Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio.",
       "allAnswers": [
-        "a) Un repositorio remoto en Git es una copia local de tu proyecto en la máquina de otro desarrollador.",       
+        "a) Un repositorio remoto en Git es una copia local de tu proyecto en la máquina de otro desarrollador.",
         "b) Un repositorio remoto en Git es una copia de seguridad de tu proyecto almacenada en tu propia máquina.",
         "c) Un repositorio remoto en Git es una versión sin conexión de tu proyecto.",
         "d) Un repositorio remoto en Git es una versión de tu proyecto alojada en un servidor o en la nube. Permite colaborar con otros desarrolladores y sincronizar los cambios entre diferentes copias del repositorio."
       ]
-    },    
+    },
     {
       "id": 375,
       "category": "Git",
@@ -4027,7 +4027,7 @@
         "c) El flujo de trabajo típico de Git no incluye realizar commits.",
         "d) El flujo de trabajo típico de Git involucra clonar un repositorio, crear una rama para tu trabajo, realizar cambios y commits en esa rama, luego fusionar la rama de vuelta a la rama principal (como 'master' o 'main') y finalmente hacer 'push' de tus cambios al repositorio remoto para que otros desarrolladores puedan acceder a ellos."
       ]
-    },    
+    },
     {
       "id": 377,
       "category": "Git",
@@ -4039,9 +4039,9 @@
         "a) 'Git rebase' es una operación que permite cambiar la base de una rama. Su propósito es mantener un historial de cambios más limpio y lineal al aplicar los cambios de una rama sobre otra.",
         "b) 'Git rebase' es una operación que elimina por completo el historial de cambios.",
         "c) 'Git rebase' es una operación que solo se puede aplicar a la rama principal (master o main).",
-        "d) 'Git rebase' es una operación que no afecta el historial de cambios."     
+        "d) 'Git rebase' es una operación que no afecta el historial de cambios."
       ]
-    },    
+    },
     {
       "id": 378,
       "category": "Git",
@@ -4055,7 +4055,7 @@
         "c) Un submódulo Git es una etiqueta de versión en un repositorio Git.",
         "d) Un submódulo Git es un repositorio Git dentro de otro repositorio Git. Permite incluir un proyecto dentro de otro como una dependencia, lo que facilita la gestión de proyectos grandes y la colaboración en equipos."
       ]
-    },    
+    },
     {
       "id": 379,
       "category": "Git",
@@ -4069,7 +4069,7 @@
         "c) 'Git stash' se utiliza para fusionar cambios entre ramas.",
         "d) 'Git stash' se utiliza para revertir un commit en Git."
       ]
-    },    
+    },
     {
       "id": 380,
       "category": "Git",
@@ -4083,7 +4083,7 @@
         "c) 'Git bisect' es una herramienta que ayuda a encontrar el commit que introdujo un problema en el código. Se utiliza ejecutando 'git bisect start', marcando un commit bueno y malo, y Git automáticamente selecciona un commit intermedio para revisar. Continúas marcando bueno o malo hasta encontrar el commit problemático.",
         "d) 'Git bisect' es una herramienta para clonar un repositorio Git."
       ]
-    },    
+    },
     {
       "id": 381,
       "category": "Git",
@@ -4097,7 +4097,7 @@
         "c) Un repositorio Git remoto solo contiene cambios recientes en comparación con el repositorio Git local.",
         "d) Un repositorio Git local se encuentra en la máquina del desarrollador y contiene una copia completa del proyecto. Un repositorio Git remoto está alojado en un servidor y permite la colaboración entre varios desarrolladores al compartir y sincronizar cambios."
       ]
-    },    
+    },
     {
       "id": 382,
       "category": "Git",
@@ -4123,9 +4123,9 @@
         "a) GitKraken es una herramienta de interfaz gráfica para Git que facilita la gestión de repositorios Git. Se utiliza para realizar operaciones Git de manera visual y simplificada.",
         "b) GitKraken es una herramienta para desinstalar Git en el sistema.",
         "c) GitKraken es una plataforma de alojamiento de repositorios Git.",
-        "d) GitKraken es una herramienta para clonar repositorios Git."    
+        "d) GitKraken es una herramienta para clonar repositorios Git."
       ]
-    },    
+    },
     {
       "id": 384,
       "category": "Git",
@@ -4139,7 +4139,7 @@
         "c) Para eliminar una rama en Git, se utiliza el comando 'git branch delete <nombre_de_la_rama>'.",
         "d) Para eliminar una rama en Git, se utiliza el comando 'git branch -d <nombre_de_la_rama>' si la rama ha sido fusionada o 'git branch -D <nombre_de_la_rama>' para forzar la eliminación."
       ]
-    },    
+    },
     {
       "id": 385,
       "category": "Git",
@@ -4151,9 +4151,9 @@
         "a) Un pull request en Git es un comando para extraer cambios desde una rama remota.",
         "b) Un pull request en Git es una solicitud para clonar un repositorio remoto.",
         "c) Un pull request en Git es una solicitud que un desarrollador envía para fusionar sus cambios en una rama con otra, generalmente de una rama de características a una rama principal. Su función es permitir la revisión y aprobación de los cambios antes de la fusión.",
-        "d) Un pull request en Git es una acción para revertir cambios en una rama."     
+        "d) Un pull request en Git es una acción para revertir cambios en una rama."
       ]
-    },    
+    },
     {
       "id": 386,
       "category": "Git",
@@ -4167,7 +4167,7 @@
         "c) Un 'squash commit' en Git es un commit que introduce conflictos en el código.",
         "d) Un 'squash commit' en Git es un comando para deshacer cambios en un commit."
       ]
-    },    
+    },
     {
       "id": 387,
       "category": "Git",
@@ -4176,12 +4176,12 @@
       "answer": "'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama.",
       "correctAnswer": "d) 'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama.",
       "allAnswers": [
-        "a) 'Git cherry-pick' es una operación que fusiona dos ramas automáticamente.",       
+        "a) 'Git cherry-pick' es una operación que fusiona dos ramas automáticamente.",
         "b) 'Git cherry-pick' es una operación que revierte un commit en una rama específica.",
         "c) 'Git cherry-pick' es una operación que solo se puede realizar en repositorios remotos.",
         "d) 'Git cherry-pick' es una operación que permite aplicar un commit específico de una rama a otra. Se utiliza cuando se desea incorporar cambios selectivos de una rama en otra sin fusionar toda la rama."
       ]
-    },    
+    },
     {
       "id": 388,
       "category": "Git",
@@ -4195,7 +4195,7 @@
         "c) La 'staging area' en Git es un espacio de almacenamiento en la nube para proyectos.",
         "d) La 'staging area' en Git es una zona intermedia donde se preparan los cambios antes de realizar un commit. Permite revisar y seleccionar los cambios que se incluirán en el próximo commit, lo que brinda mayor control sobre el historial de versiones."
       ]
-    },    
+    },
     {
       "id": 389,
       "category": "Git",
@@ -4209,7 +4209,7 @@
         "c) 'git log'",
         "d) 'git commit --log'"
       ]
-    },    
+    },
     {
       "id": 390,
       "category": "Git",
@@ -4237,7 +4237,7 @@
         "c) Un 'fork' en Git es una herramienta para fusionar ramas en un repositorio.",
         "d) Un 'fork' en Git es una copia de un repositorio ajeno en tu propia cuenta de GitHub o GitLab. Se utiliza para contribuir a proyectos de código abierto o trabajar en una copia personal del proyecto original."
       ]
-    },    
+    },
     {
       "id": 392,
       "category": "Git",
@@ -4251,7 +4251,7 @@
         "c) La rama 'master' en Git siempre contiene la versión más reciente del proyecto.",
         "d) La rama 'master' en Git se utiliza solo para propósitos de prueba."
       ]
-    },    
+    },
     {
       "id": 393,
       "category": "Git",
@@ -4265,7 +4265,7 @@
         "c) Las etiquetas (tags) en Git son solo para uso interno y no se comparten con otros desarrolladores.",
         "d) Las etiquetas (tags) en Git se utilizan para marcar puntos específicos en la historia del repositorio, como versiones de lanzamiento. Proporcionan un punto de referencia fijo para facilitar la referencia y la recuperación de versiones específicas."
       ]
-    },    
+    },
     {
       "id": 394,
       "category": "Git",
@@ -4277,9 +4277,9 @@
         "a) Una 'pre-commit hook' en Git es un script personalizado que se ejecuta antes de realizar un commit. Su función es realizar comprobaciones o tareas automatizadas, como pruebas, para garantizar que los commits cumplan con los estándares establecidos.",
         "b) Una 'pre-commit hook' en Git es una tarea manual que el desarrollador realiza antes de cada commit.",
         "c) Una 'pre-commit hook' en Git es una característica obsoleta y no se recomienda su uso.",
-        "d) Una 'pre-commit hook' en Git es una herramienta gráfica para revisar los cambios antes de hacer un commit."       
+        "d) Una 'pre-commit hook' en Git es una herramienta gráfica para revisar los cambios antes de hacer un commit."
       ]
-    },    
+    },
     {
       "id": 395,
       "category": "Git",
@@ -4293,7 +4293,7 @@
         "c) 'Git rebase' y 'git merge' realizan la misma operación de fusionar cambios de una rama en otra.",
         "d) 'Git rebase' cambia la base de una rama al aplicar los cambios de otra rama, lo que puede mantener un historial más limpio y lineal. 'Git merge' fusiona los cambios de una rama en otra sin cambiar la base, lo que puede crear un historial más ramificado."
       ]
-    },    
+    },
     {
       "id": 396,
       "category": "Git",
@@ -4307,7 +4307,7 @@
         "c) 'Git reflog' es un comando para eliminar permanentemente referencias en Git.",
         "d) 'Git reflog' es un comando para revertir cambios específicos en Git."
       ]
-    },    
+    },
     {
       "id": 397,
       "category": "Git",
@@ -4321,7 +4321,7 @@
         "c) 'Git cherry-pick' y 'git rebase' son términos intercambiables en Git.",
         "d) 'Git cherry-pick' se utiliza para revertir cambios en una rama, mientras que 'git rebase' se utiliza para fusionar ramas en Git."
       ]
-    },    
+    },
     {
       "id": 398,
       "category": "Git",
@@ -4335,7 +4335,7 @@
         "c) 'Git worktree' es una característica para deshacer commits en Git.",
         "d) 'Git worktree' permite trabajar en múltiples ramas simultáneamente en el mismo repositorio. Se utiliza para crear directorios de trabajo adicionales para diferentes ramas o commits, lo que facilita la colaboración en proyectos paralelos."
       ]
-    },    
+    },
     {
       "id": 399,
       "category": "Git",
@@ -4349,7 +4349,7 @@
         "c) Los 'hooks' en Git son herramientas para gestionar conflictos de fusión.",
         "d) Los 'hooks' en Git son scripts personalizables que se ejecutan automáticamente en ciertos eventos, como antes o después de realizar un commit o recibir un 'push'. Algunos ejemplos incluyen 'pre-commit', 'post-commit', 'pre-receive' y 'post-receive' hooks."
       ]
-    },    
+    },
     {
       "id": 400,
       "category": "Git",
@@ -4361,9 +4361,9 @@
         "a) 'Git revert' y 'git reset' son comandos equivalentes y pueden usarse indistintamente.",
         "b) 'Git revert' se utiliza para deshacer cambios locales, mientras que 'git reset' deshace cambios en el repositorio remoto.",
         "c) 'Git revert' crea un nuevo commit que deshace los cambios de un commit anterior, mientras que 'git reset' modifica la historia del repositorio eliminando commits. 'Revert' es más seguro para colaboraciones, mientras que 'reset' es más drástico y se usa localmente.",
-        "d) 'Git revert' modifica la historia del repositorio eliminando commits, mientras que 'git reset' crea un nuevo commit que deshace los cambios de un commit anterior."      
+        "d) 'Git revert' modifica la historia del repositorio eliminando commits, mientras que 'git reset' crea un nuevo commit que deshace los cambios de un commit anterior."
       ]
-    },    
+    },
     {
       "id": 401,
       "category": "Git",
@@ -4377,7 +4377,7 @@
         "c) El comando 'git create-tag' se utiliza para crear etiquetas en Git.",
         "d) Las etiquetas en Git solo se pueden crear en ramas principales."
       ]
-    },    
+    },
     {
       "id": 402,
       "category": "Git",
@@ -4385,13 +4385,13 @@
       "question": "¿Qué es un repositorio Git bare?",
       "answer": "Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo.",
       "correctAnswer": "d) Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo.",
-      "allAnswers": [      
+      "allAnswers": [
         "a) Un repositorio Git bare es un repositorio con múltiples copias de trabajo.",
         "b) Un repositorio Git bare es un repositorio local en la máquina de un desarrollador.",
         "c) Un repositorio Git bare es un repositorio con una estructura de directorios de trabajo, pero sin historial de cambios.",
         "d) Un repositorio Git bare es un repositorio sin una copia de trabajo. Se utiliza como repositorio central compartido para colaboración entre desarrolladores y no tiene una estructura de directorios de trabajo."
       ]
-    },    
+    },
     {
       "id": 403,
       "category": "Git",
@@ -4433,7 +4433,7 @@
         "c) 'Git filter-branch' es una herramienta para clonar un repositorio en Git.",
         "d) 'Git filter-branch' es una herramienta avanzada para reescribir la historia de un repositorio. Se utiliza en situaciones específicas, como eliminar archivos confidenciales de la historia o cambiar nombres de archivos en commits antiguos."
       ]
-    },    
+    },
     {
       "id": 406,
       "category": "Git",
@@ -4447,7 +4447,7 @@
         "c) Los cambios en Git se pueden revertir de diferentes maneras, pero una común es utilizando 'git revert' para crear un nuevo commit que deshaga los cambios de un commit anterior. Se utiliza el comando 'git revert <hash_del_commit>'. Esto crea un nuevo commit que deshace los cambios introducidos por el commit especificado.",
         "d) Utilizando 'git undo'."
       ]
-    },    
+    },
     {
       "id": 407,
       "category": "Git",
@@ -4461,7 +4461,7 @@
         "c) 'Git checkout' se utiliza solo para crear nuevas ramas en un repositorio Git.",
         "d) 'Git checkout' se utiliza solo para cambiar entre ramas en un repositorio Git."
       ]
-    },    
+    },
     {
       "id": 408,
       "category": "Git",
@@ -4475,7 +4475,7 @@
         "c) La rama 'master' es obsoleta y no se utiliza más en Git.",
         "d) La rama 'master' es la única rama permitida para colaboración en Git."
       ]
-    },    
+    },
     {
       "id": 409,
       "category": "Git",
@@ -4489,7 +4489,7 @@
         "c) 'Git rebase -i' es utilizado para crear nuevas ramas en Git.",
         "d) 'Git rebase -i' es un comando para fusionar ramas en Git."
       ]
-    },    
+    },
     {
       "id": 410,
       "category": "Git",
@@ -4503,7 +4503,7 @@
         "c) Los hooks de cliente en Git son funciones integradas en el núcleo de Git.",
         "d) Los hooks de cliente en Git son scripts utilizados exclusivamente para la fase de 'push'."
       ]
-    },    
+    },
     {
       "id": 411,
       "category": "Git",
@@ -4512,12 +4512,12 @@
       "answer": "'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión.",
       "correctAnswer": "d) 'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión.",
       "allAnswers": [
-        "a) 'Rebasing' en Git es un proceso que crea commits adicionales para fusionar ramas.",       
+        "a) 'Rebasing' en Git es un proceso que crea commits adicionales para fusionar ramas.",
         "b) 'Rebasing' en Git solo se utiliza en proyectos pequeños.",
         "c) 'Rebasing' en Git es equivalente a realizar un 'merge'.",
         "d) 'Rebasing' en Git es el proceso de mover o combinar una rama con otra base, generalmente una rama principal. Es útil para mantener un historial de commits más limpio y lineal en lugar de tener múltiples commits de fusión."
       ]
-    },    
+    },
     {
       "id": 412,
       "category": "Git",
@@ -4531,7 +4531,7 @@
         "c) 'Git submodules' se utiliza para eliminar ramas obsoletas en Git.",
         "d) 'Git submodules' es una característica obsoleta de Git."
       ]
-    },    
+    },
     {
       "id": 413,
       "category": "Git",
@@ -4545,7 +4545,7 @@
         "c) Un 'push request' es una solicitud para enviar cambios locales a un repositorio remoto.",
         "d) Un 'push' y un 'pull request' significan lo mismo en Git."
       ]
-    },    
+    },
     {
       "id": 414,
       "category": "Git",
@@ -4554,12 +4554,12 @@
       "answer": "Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente.",
       "correctAnswer": "c) Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente.",
       "allAnswers": [
-        "a) Se utiliza 'git commit --modify-message 'nuevo_mensaje'' para cambiar el mensaje de un commit.",      
+        "a) Se utiliza 'git commit --modify-message 'nuevo_mensaje'' para cambiar el mensaje de un commit.",
         "b) No es posible cambiar el mensaje de un commit después de realizarlo.",
         "c) Para cambiar el mensaje de un commit en Git, se utiliza el comando 'git commit --amend -m 'nuevo_mensaje''. Esto permite editar el mensaje del commit más reciente.",
         "d) Se utiliza 'git commit --edit-message 'nuevo_mensaje'' para cambiar el mensaje de un commit."
       ]
-    },    
+    },
     {
       "id": 415,
       "category": "Git",
@@ -4573,7 +4573,7 @@
         "c) 'Git switch' es una herramienta gráfica para gestionar repositorios Git.",
         "d) 'Git switch' se utiliza para crear una nueva rama en Git."
       ]
-    },    
+    },
     {
       "id": 416,
       "category": "Git",
@@ -4601,7 +4601,7 @@
         "c) 'Git restore' es un comando que fusiona cambios de una rama a otra en Git.",
         "d) 'Git restore' es un comando que se utiliza para crear un nuevo repositorio Git."
       ]
-    },    
+    },
     {
       "id": 418,
       "category": "Git",
@@ -4610,12 +4610,12 @@
       "answer": "El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales.",
       "correctAnswer": "d) El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales.",
       "allAnswers": [
-        "a) El flujo de trabajo 'fork and pull' se utiliza solo en proyectos privados.",      
+        "a) El flujo de trabajo 'fork and pull' se utiliza solo en proyectos privados.",
         "b) El flujo de trabajo 'fork and pull' implica realizar cambios directamente en el repositorio original.",
         "c) 'Fork and pull' es un término obsoleto en Git y ya no se utiliza.",
         "d) El flujo de trabajo 'fork and pull' se utiliza comúnmente en proyectos de código abierto. Implica bifurcar (fork) un repositorio público en tu propia cuenta de GitHub, realizar cambios en tu bifurcación y luego enviar una solicitud de extracción (pull request) al repositorio original para que los cambios sean considerados por los colaboradores principales."
       ]
-    },    
+    },
     {
       "id": 419,
       "category": "Git",
@@ -4629,7 +4629,7 @@
         "c) Git Bash es exclusivo de sistemas Unix y no está disponible para Windows.",
         "d) Git Bash es una función de Git que permite el intercambio de archivos binarios."
       ]
-    },    
+    },
     {
       "id": 421,
       "category": "Git",
@@ -4643,7 +4643,7 @@
         "c) Git Pull es un comando que elimina todos los cambios locales y sincroniza el repositorio local con el remoto.",
         "d) Git Pull es un comando específico de Git Bash y no está disponible en otras interfaces de línea de comandos."
       ]
-    }    
+    }
   ],
   "weblinks": [
     {

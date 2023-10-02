@@ -6,7 +6,10 @@
       "password": "12345678",
       "confirmPassword": "12345678",
       "email": "jesus@google.com",
-      "favoriteQuestions": []
+      "favoriteQuestions": [
+        121,
+        122
+      ]
     },
     {
       "name": "Lola",

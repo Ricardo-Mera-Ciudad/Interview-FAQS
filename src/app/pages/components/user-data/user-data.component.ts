@@ -32,11 +32,10 @@ export class UserDataComponent implements OnInit, OnDestroy {
         takeUntil(this.unsubscribe$)
       )
       .subscribe((user) => {
-        console.log(user);
         this.userData = user;
       });
   };
-  
+
 
   getUpdatedUser(): void {
     this.usersService.getUpdatedUserSubject()

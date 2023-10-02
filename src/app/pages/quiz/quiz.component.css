@@ -4,7 +4,12 @@
   min-height: 100vh;
   color:#fcfcfc;
   font-size: 15px;
+  padding: 0 14px;
+  @media (min-width: 768px){
+    padding: 0 20px;
+  }
   @media (min-width: 1024px){
+    padding: 0 30px;
     font-size: 16px;
   }
 }

@@ -43,7 +43,7 @@
       >
         <div class="card-question-head-text">
           <h6 class="card-question-head-text-title">
-            {{ question.id }}.{{ question.question }}
+            {{ question.id }}. {{ question.question }}
           </h6>
         </div>
         <div class="card-question-head-icons">
@@ -51,7 +51,8 @@
           <button
             class="star-icon-container"
             (click)="favoriteStatus(question.id)"
-            [disabled]="!isLoggedIn"
+            data-bs-toggle="modal"
+            data-bs-target="#notLoggedModal"
           >
             <svg
               [ngClass]="{
@@ -70,7 +71,6 @@
               />
             </svg>
           </button>
-
           <!-- FLECHA -->
           <span class="row-icon-container">
             <svg
@@ -92,6 +92,30 @@
       </div>
       <div class="card-question-answer" *ngIf="answerVisibility[question.id]">
         <p>{{ question.answer }}</p>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div
+  *ngIf="!isLoggedIn"
+    class="modal fade"
+    id="notLoggedModal"
+    tabindex="-1"
+    aria-labelledby="notLoggedModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">Inicia sesión para agregar preguntas a favoritos.</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn modal-button"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+        </div>
       </div>
     </div>
   </div>

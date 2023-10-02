@@ -126,3 +126,28 @@
     38.2% 38.2%
   );
 }
+#notLoggedModal{
+  margin-top: 100px;
+  padding: 10px;
+  font-weight: 500;
+  color:#0f213b;
+  color: #FCFCFC;
+}
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-button{
+  background-color: #e1effb;
+  color:#0f213b;
+  font-weight: bold;
+}
+.modal-content{
+  background-color: #0f213b;
+}
+.modal-footer{
+  padding: 8px;
+}

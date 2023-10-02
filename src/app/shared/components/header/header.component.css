@@ -3,29 +3,19 @@
   position: fixed;
   width: 100%;
   box-shadow: 2px 4px 6px rgb(0, 0, 0, 0.5);
-  z-index: 9999;
+  z-index: 2;
   font-family: 'Open Sans', sans-serif;
   max-width: 1280px;
   margin-bottom: 72px;
-
   @media (min-width:768px) {
-    height: 80px;  
-    margin-bottom: 72px;  
-  }
-
-  @media (min-width: 1024px) {
-    height: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 72px;
     height: 80px;
-
   }
 }
 
 .header-container__navbar {
   background-color: #0f213B;
   align-items: center;
+  padding: 0 30px;
 }
 
 .header-container__navbar-items {
@@ -37,14 +27,14 @@
   font-family: 'Open Sans', sans-serif;
   height: 55px;
   cursor: pointer;
-  
 
-  @media(min-width: 768px) {  
-    width: 100%; 
+
+  @media(min-width: 768px) {
+    width: 100%;
     height: 80px;
   }
 
-  @media (min-width: 1024px) {    
+  @media (min-width: 1024px) {
     width: 100%;
     height: 80px;
   }
@@ -89,18 +79,18 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 
-  @media (min-width: 768px) {   
+  @media (min-width: 768px) {
     position: relative;
-    line-height: 3; 
+    line-height: 3;
   }
 
   @media (min-width: 1024px) {
     position: relative;
-    line-height: 3;  
+    line-height: 3;
   }
 }
 
-.header-container__navbar-items-menu-list-item {  
+.header-container__navbar-items-menu-list-item {
   cursor: pointer;
   padding-left: 15px;
 
@@ -125,7 +115,7 @@
   @media (min-width: 768px) {
     font-size: 0.8em;
     cursor: pointer;
-    
+
 
   }
 }
@@ -150,12 +140,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;  
+  cursor: pointer;
   margin-left: 10px;
 }
 
 .header-container__navbar-items-logo-img-faqs{
-  cursor: pointer; 
+  cursor: pointer;
   width: 150px;
   height: 45px;
 
@@ -171,16 +161,16 @@
 .header-container__navbar-items-logo-img-full{
   display:none;
 
-  @media (min-width: 768px) {  
+  @media (min-width: 768px) {
     display: block;
     width: 400px;
-    height: auto; 
+    height: auto;
   }
 
   @media (min-width: 1024px) {
     display: block;
     width: 500px;
-    height: auto; 
+    height: auto;
   }
 }
 
@@ -190,17 +180,17 @@
   font-size: 0.8em;
   cursor:pointer;
   display: flex;
-  vertical-align: center;  
+  vertical-align: center;
   align-items: center;
 
   @media  (min-width: 768px) {
-    font-size: 0.8em;    
+    font-size: 0.8em;
   }
 
   @media  (min-width: 1024px) {
-    font-size: 0.9em;    
+    font-size: 0.9em;
   }
-  
+
 }
 
 .header-container__navbar-items-login-text{
@@ -209,11 +199,11 @@
   display:none;
 
   @media  (min-width: 768px) {
-    display:contents;  
+    display:contents;
   }
 
   @media (min-width: 1024px) {
-    display:contents;  
+    display:contents;
   }
 }
 
@@ -266,7 +256,7 @@
   text-decoration: none;
   color: #FCFCFC;
   cursor: pointer;
-  position: relative; 
+  position: relative;
 }
 
 .header-container__navbar-items-menu-list-item .header-container__navbar-items-menu-list-item-link {
@@ -302,7 +292,7 @@
   color: #FCFCFC;
   font-family: 'Open Sans', sans-serif;
   top: 55px;
-  
+
 
 
   @media (min-width: 768px) {
@@ -332,17 +322,17 @@
   line-height: 3.5;
 
 
-  @media (min-width: 768px) {   
+  @media (min-width: 768px) {
     position: relative;
   }
 
   @media (min-width: 1024px) {
     position: relative;
-    line-height: 3;  
+    line-height: 3;
   }
 }
 
-.header-container__navbar-items-login-user-menu-list-item {  
+.header-container__navbar-items-login-user-menu-list-item {
   cursor: pointer;
   padding-right: 5px;
   align-items:center;
@@ -398,14 +388,14 @@
 .header-container__navbar-items-login-user-menu-list .header-container__navbar-items-login-user-menu-list-item:hover .header-container__navbar-items-login-user-img{
   fill:#FCFCFC;
   margin-left: 10px
-} 
+}
 
 
 .header-container__navbar-items-login-user-menu-list .header-container__navbar-items-login-user-menu-list-item:hover .header-container__navbar-items-login-user-menu-list-item-link {
   text-decoration: none;
   color: #FCFCFC;
   cursor: pointer;
-  position: relative; 
+  position: relative;
 }
 
 .header-container__navbar-items-login-user-menu-list-item .header-container__navbar-items-login-user-menu-list-item-link {

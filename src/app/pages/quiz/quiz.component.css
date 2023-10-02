@@ -4,6 +4,9 @@
   min-height: 100vh;
   color:#fcfcfc;
   font-size: 15px;
+  @media (min-width: 1024px){
+    font-size: 16px;
+  }
 }
 .quiz-button-container{
   display: flex;
@@ -21,6 +24,9 @@
   height: 100%;
   padding: 10px;
   margin: 90px 0 20px 0;
+  @media (min-width: 768px){
+    margin: 110px 0 30px 0;
+  }
 }
 
 .quiz-button:hover{
@@ -70,6 +76,7 @@ margin-right: 5px;
   height: 100%;
   padding: 10px;
   margin-bottom: 80px ;
+
 }
 
 .quiz-result-container{
@@ -81,10 +88,15 @@ margin-right: 5px;
 }
 
 
-.quiz-correct-answer {
-  color: green;
+.quiz-correct-answer-img {
+  /* color: green; */
+  margin-left: 5px;
+  width: 25px;
 }
 
-.quiz-wrong-answer {
-  color: red;
+
+.quiz-wrong-answer-img {
+  /* color: red; */
+  margin-left: 5px;
+  width: 25px;
 }

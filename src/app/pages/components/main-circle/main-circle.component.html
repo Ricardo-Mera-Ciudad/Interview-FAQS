@@ -2,7 +2,7 @@
 
   <div class="circle-container">
 
-    <div class="center-circle bg-dark" [routerLink]="['/content-page']" (click)="chooseCategory('Angular')">
+    <div class="center-circle" [routerLink]="['/content-page']" (click)="chooseCategory('Angular')">
       <img class="img-circle-item" src="../../../../assets/images/angular.png" alt="">
       <div class="label-layer-circle">
         <span class="circle-hover-text">Angular</span>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="circle-button circle-css" [routerLink]="['/content-page']" (click)="chooseCategory('Css')">
-        <img class="img-circle-item" src="../../../../assets/images/css.png" alt="">
+        <img class="img-circle-item img-circle-item-css" src="../../../../assets/images/css.png" alt="">
         <div class="label-layer-circle">
           <span class="circle-hover-text">CSS</span>
         </div>
@@ -51,5 +51,5 @@
     <button class="btn py-3 circle-button-item" [routerLink]="['/weblinks']"
       (click)="chooseCategory('Weblinks')">Weblinks</button>
   </div>
-  
+
 </div>

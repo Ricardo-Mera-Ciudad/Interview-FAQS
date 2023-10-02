@@ -42,6 +42,7 @@ export class DataService {
     )
   }
 
+
   markQuestionAsFavorite(questionId: number) {
     this.usersService.getAuthenticatedUserSubject().subscribe((user) => {
       if (!user) {

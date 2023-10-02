@@ -36,6 +36,7 @@ export class QuizComponent implements OnInit{
     });
   }
 
+
   goBack() {
     this.router.navigate(['/content-page']);
   }

@@ -1,6 +1,10 @@
 <div class="container-main-component general-container">
 
     <div class="limiting-div"></div>
+    <div class="title-content">
+      <img class="title-icon" src="../../../../assets/images/weblinks-icon.png" alt="" />
+      <h2 class="title">Weblinks</h2>
+    </div>
     <div class="row row-cols-2 justify-content-center main-card-container">
 
       <div class="col card text-center mb-3 card-container">
@@ -41,7 +45,6 @@
     <div class="limiting-div"></div>
  
 
-
   <ng-template #officialDocTemplate let-modal>
     <div class="modal-header">
       <h4 class="modal-title">Documentación Oficial</h4>
@@ -70,7 +73,7 @@
       </div>
     </div>
     <div class="modal-footer">
-      <button id="whatClose" type="button modal-btn-footer" class="btn" (click)="modal.close('Close click')">Cerrar</button>
+      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
 
@@ -86,7 +89,7 @@
       </div>
     </div>
     <div class="modal-footer">
-      <button id="whatClose" type="button modal-btn-footer" class="btn" (click)="modal.close('Close click')">Cerrar</button>
+      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
 
@@ -105,8 +108,6 @@
       <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
-
-
 
 
 </div>

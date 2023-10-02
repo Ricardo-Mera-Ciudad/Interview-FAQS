@@ -1,5 +1,5 @@
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-   <img style="width:1000px; height:500px; margin:12px" src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/assets/116545851/a435e806-7b0d-49b8-af01-98dc0b59f0a2">
+   <img style="width:1000px; height:500px; margin:12px" src="https://github.com/LolaGM/Interview-FAQS/blob/main/src/assets/images/banner-IF.png">
 </div>
 
 # INTERVIEW FAQs

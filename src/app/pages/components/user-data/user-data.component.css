@@ -45,6 +45,8 @@
     color: #0f213B;
     padding: 5px 15px;
     font-size: 14px;
+    font-weight: bold;
+
 
     @media(min-width: 768px) {
         padding: 10px 30px;
@@ -61,6 +63,8 @@
     background-color: indianred;
     padding: 5px 15px;
     font-size: 14px;
+    font-weight: bold;
+
 
     @media(min-width: 768px) {
         padding: 10px 30px;

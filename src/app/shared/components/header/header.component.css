@@ -101,11 +101,11 @@
   padding-left: 15px;
 
   @media (min-width: 768px) {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   @media (min-width: 1024px) {
-    padding-left: 40px;
+    padding-left: 20px;
   }
 }
 
@@ -121,25 +121,29 @@
   @media (min-width: 768px) {
     font-size: 0.8em;
     cursor: pointer;
-
-
   }
+
+  @media (min-width: 768px) {
+    font-size: 0.8em;
+    cursor: pointer;
+  }
+
+
 }
 
 .header-container__navbar-items-menu-list-icon{
-  
+  width: 20px;
+  margin-left: 5px;
+
+  @media (min-width: 768px) {
+    width: 25px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30px;
+  }
+
 }
-
-.header-container__navbar-items-menu-list-item:hover 
-.header-container__navbar-items-menu-list-icon {
-  fill: #fcfcfc;
-}
-
-
-.header-container__navbar-items-menu-list-icon {
-  fill: #0f213B;
-}
-
 
 .header-container__navbar-items-logo {
   display: flex;
@@ -181,6 +185,22 @@
     margin: 0 0 0 70px;
 
   }
+}
+
+.header-container__navbar-items-logo-img-full-user-not-auth{
+  display:none;
+  @media (min-width: 768px) {
+    display: block;
+    width: 400px;
+    height: auto;
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
+    width: 500px;
+    height: auto;
+  }  
+
 }
 
 .header-container__navbar-items-login {
@@ -252,11 +272,11 @@
   border-bottom-right-radius: 8px;
 
   @media (min-width: 768px) {
-    padding-left: 35px;
+    padding-left: 20px;
   }
 
   @media (min-width: 1024px) {
-    padding-left: 40px;
+    padding-left: 20px;
   }
 }
 
@@ -351,15 +371,14 @@
   cursor: pointer;
   padding-right: 5px;
   align-items: center;
-  gap: 5px;
 
 
   @media (min-width: 768px) {
-    padding-right: 35px;
+    padding-right: 20px;
   }
 
   @media (min-width: 1024px) {
-    padding-right: 40px;
+    padding-right: 20px;
   }
 }
 
@@ -370,10 +389,15 @@
   cursor: pointer;
   z-index: 9999;
   gap: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
 
   @media (min-width: 768px) {
     font-size: 1em;
+    cursor: pointer;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 0.9em;
     cursor: pointer;
   }
 }
@@ -396,14 +420,19 @@
   }
 }
 
-.header-container__navbar-items-login-user-img {
-  fill: #0f213B;
-  margin-left: 10px
+.header-container__navbar-items-login-user-icon {
+  width: 20px;
+  margin-left: 15px;
+
+  @media (min-width: 768px) {
+    width: 25px;
+  }
+
 }
 
 .header-container__navbar-items-login-user-menu-list 
 .header-container__navbar-items-login-user-menu-list-item:hover 
-.header-container__navbar-items-login-user-img {
+.header-container__navbar-items-login-user-icon {
   fill: #FCFCFC;
   margin-left: 10px
 }

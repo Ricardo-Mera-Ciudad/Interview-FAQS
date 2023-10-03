@@ -1,5 +1,5 @@
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-   <img style="width:1000px; height:500px; margin:12px" src="https://github.com/LolaGM/Interview-FAQS/blob/main/src/assets/images/banner-IF.png">
+   <img style="width:1000px; height:550px; margin:12px" src="https://github.com/LolaGM/Interview-FAQS/blob/main/src/assets/images/banner-IF.png">
 </div>
 
 # INTERVIEW FAQs
@@ -16,7 +16,7 @@ INTERVIEW FAQs is a responsive platform (mobile, tablet and desktop version) des
 The project's design is inspired by the "Simon memory game," making it both fun and educational.
 
 <div align="center">
-  <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/assets/116545851/bc7d7f16-0872-4761-ab00-1f7e9685501f" alt="Interview FAQs logo game" width="500" height="500">
+  <img src="https://github.com/LolaGM/Interview-FAQS/blob/main/src/assets/images/new-design-demo-IF.gif" alt="Interview FAQs logo game gif" width="500" height="500">
 </div>
 
 ## Technologies and skills Used

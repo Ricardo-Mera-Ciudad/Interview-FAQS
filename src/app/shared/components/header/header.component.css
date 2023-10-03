@@ -7,6 +7,7 @@
   font-family: 'Open Sans', sans-serif;
   max-width: 1280px;
   margin-bottom: 72px;
+
   @media (min-width:768px) {
     height: 80px;
   }
@@ -121,16 +122,18 @@
 }
 
 .header-container__navbar-items-menu-list-icon,
-.header-container__navbar-items-menu-list-icon svg {
+.header-container__navbar-items-menu-list-icon {
   width: 20px;
   height: 18px;
 }
 
-.header-container__navbar-items-menu-list-item:hover .header-container__navbar-items-menu-list-icon svg {
+.header-container__navbar-items-menu-list 
+.header-container__navbar-items-menu-list-item:hover 
+.header-container__navbar-items-menu-list-icon {
   fill: #fcfcfc;
 }
 
-.header-container__navbar-items-menu-list-icon svg {
+.header-container__navbar-items-menu-list-icon {
   fill: #0f213B;
 }
 
@@ -144,7 +147,7 @@
   margin-left: 10px;
 }
 
-.header-container__navbar-items-logo-img-faqs{
+.header-container__navbar-items-logo-img-faqs {
   cursor: pointer;
   width: 150px;
   height: 45px;
@@ -158,8 +161,8 @@
   }
 }
 
-.header-container__navbar-items-logo-img-full{
-  display:none;
+.header-container__navbar-items-logo-img-full {
+  display: none;
 
   @media (min-width: 768px) {
     display: block;
@@ -178,32 +181,32 @@
   color: #FCFCFC;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
-  cursor:pointer;
+  cursor: pointer;
   display: flex;
   vertical-align: center;
   align-items: center;
 
-  @media  (min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 0.8em;
   }
 
-  @media  (min-width: 1024px) {
+  @media (min-width: 1024px) {
     font-size: 0.9em;
   }
 
 }
 
-.header-container__navbar-items-login-text{
+.header-container__navbar-items-login-text {
   display: flex;
   flex-direction: column;
-  display:none;
+  display: none;
 
-  @media  (min-width: 768px) {
-    display:contents;
+  @media (min-width: 768px) {
+    display: contents;
   }
 
   @media (min-width: 1024px) {
-    display:contents;
+    display: contents;
   }
 }
 
@@ -234,7 +237,8 @@
   }
 }
 
-.header-container__navbar-items-menu-list .header-container__navbar-items-menu-list-item:hover {
+.header-container__navbar-items-menu-list 
+.header-container__navbar-items-menu-list-item:hover {
   background-color: #0f213B;
   width: 100%;
   padding-left: 15px;
@@ -252,20 +256,24 @@
 
 
 
-.header-container__navbar-items-menu-list .header-container__navbar-items-menu-list-item:hover .header-container__navbar-items-menu-list-item-link  {
+.header-container__navbar-items-menu-list 
+.header-container__navbar-items-menu-list-item:hover 
+.header-container__navbar-items-menu-list-item-link {
   text-decoration: none;
   color: #FCFCFC;
   cursor: pointer;
   position: relative;
 }
 
-.header-container__navbar-items-menu-list-item .header-container__navbar-items-menu-list-item-link {
+.header-container__navbar-items-menu-list-item 
+.header-container__navbar-items-menu-list-item-link {
   position: relative;
   text-decoration: none;
   color: #0f213B;
 }
 
-.header-container__navbar-items-menu-list-item .header-container__navbar-items-menu-list-item-link::after {
+.header-container__navbar-items-menu-list-item 
+.header-container__navbar-items-menu-list-item-link::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -278,7 +286,8 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.header-container__navbar-items-menu-list-item .header-container__navbar-items-menu-list-item-link:hover::after {
+.header-container__navbar-items-menu-list-item 
+.header-container__navbar-items-menu-list-item-link:hover::after {
   transform: scaleX(1);
 }
 
@@ -335,8 +344,8 @@
 .header-container__navbar-items-login-user-menu-list-item {
   cursor: pointer;
   padding-right: 5px;
-  align-items:center;
-  gap:5px;
+  align-items: center;
+  gap: 5px;
 
 
   @media (min-width: 768px) {
@@ -354,8 +363,8 @@
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
   z-index: 9999;
-  gap:5px;
-  margin-left:20px;
+  gap: 5px;
+  margin-left: 20px;
 
   @media (min-width: 768px) {
     font-size: 1em;
@@ -364,7 +373,8 @@
 }
 
 
-.header-container__navbar-items-login-user-menu-list .header-container__navbar-items-login-user-menu-list-item:hover {
+.header-container__navbar-items-login-user-menu-list 
+.header-container__navbar-items-login-user-menu-list-item:hover {
   background-color: #0f213B;
   width: 100%;
   padding-right: 15px;
@@ -381,31 +391,37 @@
 }
 
 .header-container__navbar-items-login-user-img {
-  fill:#0f213B;
+  fill: #0f213B;
   margin-left: 10px
 }
 
-.header-container__navbar-items-login-user-menu-list .header-container__navbar-items-login-user-menu-list-item:hover .header-container__navbar-items-login-user-img{
-  fill:#FCFCFC;
+.header-container__navbar-items-login-user-menu-list 
+.header-container__navbar-items-login-user-menu-list-item:hover 
+.header-container__navbar-items-login-user-img {
+  fill: #FCFCFC;
   margin-left: 10px
 }
 
 
-.header-container__navbar-items-login-user-menu-list .header-container__navbar-items-login-user-menu-list-item:hover .header-container__navbar-items-login-user-menu-list-item-link {
+.header-container__navbar-items-login-user-menu-list 
+.header-container__navbar-items-login-user-menu-list-item:hover 
+.header-container__navbar-items-login-user-menu-list-item-link {
   text-decoration: none;
   color: #FCFCFC;
   cursor: pointer;
   position: relative;
 }
 
-.header-container__navbar-items-login-user-menu-list-item .header-container__navbar-items-login-user-menu-list-item-link {
+.header-container__navbar-items-login-user-menu-list-item 
+.header-container__navbar-items-login-user-menu-list-item-link {
   position: relative;
   text-decoration: none;
   color: #0f213B;
 }
 
 
-.header-container__navbar-items-login-user-menu-list-item .header-container__navbar-items-login-user-menu-list-item-link::after {
+.header-container__navbar-items-login-user-menu-list-item 
+.header-container__navbar-items-login-user-menu-list-item-link::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -418,7 +434,8 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.header-container__navbar-items-login-user-menu-list-item .header-container__navbar-items-login-user-menu-list-item-link:hover::after {
+.header-container__navbar-items-login-user-menu-list-item 
+.header-container__navbar-items-login-user-menu-list-item-link:hover::after {
   transform: scaleX(1);
 }
 

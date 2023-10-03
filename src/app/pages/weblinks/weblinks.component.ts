@@ -1,7 +1,8 @@
-import { Component, inject, OnInit, TemplateRef } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit, TemplateRef } from '@angular/core';
 import { WeblinksService } from '../services/weblinks.service';
 import { Weblinks } from 'src/app/shared/interfaces/weblinks.interface';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Subject, takeUntil } from 'rxjs';
 
 
 @Component({
@@ -9,15 +10,15 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './weblinks.component.html',
   styleUrls: ['./weblinks.component.css']
 })
-export class WeblinksComponent implements OnInit {
+export class WeblinksComponent implements OnInit, OnDestroy {
 
   private weblinksService = inject(WeblinksService);
   private modalService = inject(NgbModal);
   public links!: Weblinks[];
-  public officialDoc!: Weblinks[]
-  public challenges!: Weblinks[]
-  public courses!: Weblinks[]
-  public resources!: Weblinks[]
+  public modalTitle: string = '';
+  public currentLinks!: Weblinks[];
+  public categorizedLinks: { [category: string]: Weblinks[] } = {};
+  private unsubscribe$ = new Subject<void>();
 
 
   ngOnInit(): void {
@@ -25,33 +26,36 @@ export class WeblinksComponent implements OnInit {
   }
 
 
-  getAllLinks() {
-    return this.weblinksService.getAllWeblinks()
+  getAllLinks(): void {
+    this.weblinksService.getAllWeblinks()
+      .pipe(
+        takeUntil(this.unsubscribe$)
+      )
       .subscribe(data => {
-    
-        const categorizedLinks: any = {};
-
         data.forEach(link => {
           const category = link.category;
 
-          if (!categorizedLinks[category]) {
-            categorizedLinks[category] = [];
+          if (!this.categorizedLinks[category]) {
+            this.categorizedLinks[category] = [];
           }
 
-          categorizedLinks[category].push(link);
-
-          this.officialDoc = categorizedLinks.officialDoc;
-          this.challenges = categorizedLinks.challenges;
-          this.courses = categorizedLinks.courses;
-          this.resources = categorizedLinks.resources;
+          this.categorizedLinks[category].push(link);
         });
-      })
+      });
   }
 
 
-  openVerticallyCentered(content: TemplateRef<Weblinks[]>):void {
-		this.modalService.open(content, { centered: true });
-	}
+  openMainModal(template: TemplateRef<Weblinks[]>, title: string, links: string): void {
+    this.modalService.open(template, { centered: true });
+    this.modalTitle = title;
+    this.currentLinks = this.categorizedLinks[links];
+  }
+
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
 
 
 }

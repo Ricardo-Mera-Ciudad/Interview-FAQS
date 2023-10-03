@@ -1,113 +1,72 @@
 <div class="container-main-component general-container">
 
-    <div class="limiting-div"></div>
-    <div class="title-content">
-      <img class="title-icon" src="../../../../assets/images/weblinks-icon.png" alt="" />
-      <h2 class="title">Weblinks</h2>
-    </div>
-    <div class="row row-cols-2 justify-content-center main-card-container">
+  <div class="limiting-div"></div>
 
-      <div class="col card text-center mb-3 card-container">
-        <div class="card-body card-container-body">
-          <h5 class="card-title">📚 Documentaciones</h5>
-          <p class="card-text">Documentación de lenguajes oficiales</p>
-          <a class="btn card-button" (click)="openVerticallyCentered(officialDocTemplate)">Ver Enlaces</a>
-        </div>
-      </div>
+  <div class="title-content">
+    <img class="title-icon" src="../../../../assets/images/weblinks-icon.png" alt="" />
+    <h2 class="title">Weblinks</h2>
+  </div>
 
-      <div class="col card text-center mb-3 card-container">
-        <div class="card-body card-container-body">
-          <h5 class="card-title">🏅 Desafíos</h5>
-          <p class="card-text">¿Necesitas mejorar tu código? Ponte a prueba</p>
-          <a class="btn card-button" (click)="openVerticallyCentered(challengesTemplate)">Ver Enlaces</a>
-        </div>
-      </div>
-    </div>
-    <div class="row row-cols-2 justify-content-center second-row-container">
 
-      <div class="col card text-center mb-3 card-container">
-        <div class="card-body card-container-body">
-          <h5 class="card-title">👨‍🎓 Cursos</h5>
-          <p class="card-text">Sigue aprendiendo con formaciones gratuitas</p>
-          <a class="btn card-button" (click)="openVerticallyCentered(coursesTemplate)">Ver enlaces</a>
-        </div>
-      </div>
+  <div class="row row-cols-2 justify-content-center main-card-container">
 
-      <div class="col card text-center mb-3 card-container">
-        <div class="card-body card-container-body">
-          <h5 class="card-title">🛠 Recursos</h5>
-          <p class="card-text">Descubre herramientas para programar</p>
-          <a class="btn card-button" (click)="openVerticallyCentered(resourcesTemplate)">Ver enlaces</a>
-        </div>
+    <div class="col card text-center mb-3 card-container">
+      <div class="card-body card-container-body">
+        <h5 class="card-title">📚 Documentaciones</h5>
+        <p class="card-text">Documentación de lenguajes oficiales</p>
+        <a class="btn card-button" (click)="openMainModal(mainModal, 'Documentación Oficial', 'officialDoc')">Ver
+          Enlaces</a>
       </div>
     </div>
 
-    <div class="limiting-div"></div>
- 
+    <div class="col card text-center mb-3 card-container">
+      <div class="card-body card-container-body">
+        <h5 class="card-title">🏅 Desafíos</h5>
+        <p class="card-text">¿Necesitas mejorar tu código? Ponte a prueba</p>
+        <a class="btn card-button" (click)="openMainModal(mainModal, 'Desafíos', 'challenges')">Ver Enlaces</a>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-2 justify-content-center second-row-container">
 
-  <ng-template #officialDocTemplate let-modal>
+    <div class="col card text-center mb-3 card-container">
+      <div class="card-body card-container-body">
+        <h5 class="card-title">👨‍🎓 Cursos</h5>
+        <p class="card-text">Sigue aprendiendo con formaciones gratuitas</p>
+        <a class="btn card-button" (click)="openMainModal(mainModal, 'Cursos', 'courses')">Ver enlaces</a>
+      </div>
+    </div>
+
+    <div class="col card text-center mb-3 card-container">
+      <div class="card-body card-container-body">
+        <h5 class="card-title">🛠 Recursos</h5>
+        <p class="card-text">Descubre herramientas para programar</p>
+        <a class="btn card-button" (click)="openMainModal(mainModal, 'Recursos', 'resources')">Ver enlaces</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="limiting-div"></div>
+
+
+  <ng-template #mainModal let-modal>
     <div class="modal-header">
-      <h4 class="modal-title">Documentación Oficial</h4>
+      <h4 class="modal-title">{{ modalTitle }}</h4>
     </div>
     <div class="modal-body">
-      <div class="list-group" *ngFor="let documentation of officialDoc">
-        <a [href]=documentation.link class="list-group-item list-group-item-action" target="_blank">
-          - {{documentation.name}}
+      <div class="list-group">
+        <a *ngFor="let link of currentLinks" [href]="link.link" class="list-group-item list-group-item-action"
+          target="_blank">
+          - {{ link.name }}
         </a>
       </div>
     </div>
     <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
+      <button id="whatClose" type="button" class="btn modal-btn-footer"
+        (click)="modal.close('Close click')">Cerrar</button>
     </div>
   </ng-template>
 
-  <ng-template #challengesTemplate let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title">Desafíos</h4>
-    </div>
-    <div class="modal-body">
-      <div class="list-group" *ngFor="let challenge of challenges">
-        <a [href]=challenge.link class="list-group-item list-group-item-action" target="_blank">
-          - {{challenge.name}}
-        </a>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
-    </div>
-  </ng-template>
-
-  <ng-template #coursesTemplate let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title">Cursos</h4>
-    </div>
-    <div class="modal-body">
-      <div class="list-group" *ngFor="let course of courses">
-        <a [href]=course.link class="list-group-item list-group-item-action" target="_blank">
-          - {{course.name}}
-        </a>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
-    </div>
-  </ng-template>
-
-  <ng-template #resourcesTemplate let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title">Cursos</h4>
-    </div>
-    <div class="modal-body">
-      <div class="list-group" *ngFor="let resource of resources">
-        <a [href]=resource.link class="list-group-item list-group-item-action" target="_blank">
-          - {{resource.name}}
-        </a>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button id="whatClose" type="button" class="btn modal-btn-footer" (click)="modal.close('Close click')">Cerrar</button>
-    </div>
-  </ng-template>
-
-
+  
 </div>

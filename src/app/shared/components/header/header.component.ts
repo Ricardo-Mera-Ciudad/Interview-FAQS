@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   public isUserLoggedIn: boolean = false;
   public isUserAuthenticated: boolean = false;
   public userData!: string;
+  public userPhoto!: number;
 
   private unsubscribe$ = new Subject<void>();
 
@@ -80,6 +81,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
       .subscribe((user) => {
         if (user) {
           this.userData = user.name;
+          this.userPhoto = user.id;
           this.isUserAuthenticated = true;
         } else {
           this.userData = "";

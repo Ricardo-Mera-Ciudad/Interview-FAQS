@@ -80,6 +80,7 @@ Our future plans for INTERVIEW FAQs include:
 - Add external images to answers to make the explanation more graphical.
 - Save test results in the user's profile.
 - Test the code using libraries such as Jest or Jasmine
+- Give the user the option to upload their profile image
 
 ## Steps followed when installing the project and recommendations 
 
@@ -178,6 +179,7 @@ Nuestros planes futuros para INTERVIEW FAQs incluyen:
 - Añadir imágentes externas a las respuestas para hacer que la explicación sea más gráfica.
 - Guardar los resultados en el perfil de usuario.
 - Testear el código usando librerías como Jest o Jasmine.
+- Dar al usuario la posibilidad de subir su foto de perfil
 
 ## Pasos seguidos al instalar el proyecto y recomendaciones
 

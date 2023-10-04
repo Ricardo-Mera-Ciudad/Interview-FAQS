@@ -9,7 +9,7 @@ import { LoginPageComponent } from './auth/pages/login/login-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { RegisterComponent } from './auth/pages/register/register.component';
 import { UserDataComponent } from './pages/components/user-data/user-data.component';
-import { WeblinksComponent } from './pages/weblinks/weblinks.component';
+import { WeblinksComponent } from './pages/weblinks-page/weblinks-page.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
 
 const routes: Routes = [

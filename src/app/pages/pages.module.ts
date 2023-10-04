@@ -18,8 +18,9 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { SoftskillsQuestionsComponentComponent } from './components/softskills-questions-component/softskills-questions-component.component';
 import { TypescriptQuestionsComponentComponent } from './components/typescript-questions-component/typescript-questions-component.component';
 import { UserDataComponent } from './components/user-data/user-data.component';
-import { WeblinksComponent } from './weblinks/weblinks.component';
+import { WeblinksComponent } from './weblinks-page/weblinks-page.component';
 import { QuizComponent } from './quiz/quiz.component';
+
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { QuizComponent } from './quiz/quiz.component';
     SoftskillsQuestionsComponentComponent,
     TypescriptQuestionsComponentComponent,
     UserDataComponent,
-    WeblinksComponent,
+   WeblinksComponent,
     QuizComponent
   ],
   imports: [

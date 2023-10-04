@@ -6,9 +6,9 @@ import { Subject, takeUntil } from 'rxjs';
 
 
 @Component({
-  selector: 'app-weblinks',
-  templateUrl: './weblinks.component.html',
-  styleUrls: ['./weblinks.component.css']
+  selector: 'app-weblinks-page',
+  templateUrl: './weblinks-page.component.html',
+  styleUrls: ['./weblinks-page.component.css']
 })
 export class WeblinksComponent implements OnInit, OnDestroy {
 

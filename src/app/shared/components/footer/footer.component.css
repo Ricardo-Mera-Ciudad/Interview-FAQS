@@ -5,14 +5,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #0f213b;
+  background: rgb(15,33,59);
+  background: linear-gradient(0deg, rgba(15,33,59,1) 40%,  rgba(119,136,153,1) 100%);
   height: 50px;
   max-height: 50px;
   position: fixed;
   bottom: 0;
-  @media (min-width: 1024px) {
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+  @media (min-width: 1280px) {
+    margin: 0 auto;
+    max-width: 1280px;
   }
 }
 
@@ -119,19 +120,20 @@
   }
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
   background-color: #0f213b;
-  color: #FCFCFC;
+  color: #fcfcfc;
   border: none;
 }
 
 .modal-body {
-  background-color: #E1EFFB;
+  background-color: #e1effb;
   color: #0f213b;
 }
 
 #whatClose {
-  background-color: #E1EFFB;
+  background-color: #e1effb;
   border: none;
   font-weight: bold;
   color: #091b35;
@@ -157,24 +159,22 @@
   }
 }
 
-  @keyframes slidein-medium {
-    from {
-      margin-left: 30%;
-    }
-
-    to {
-      margin-left: 0%;
-    }
+@keyframes slidein-medium {
+  from {
+    margin-left: 30%;
   }
 
+  to {
+    margin-left: 0%;
+  }
+}
 
-  @keyframes slidein-large {
-    from {
-      margin-left: 40%;
-    }
-
-    to {
-      margin-left: 0%;
-    }
+@keyframes slidein-large {
+  from {
+    margin-left: 40%;
   }
 
+  to {
+    margin-left: 0%;
+  }
+}

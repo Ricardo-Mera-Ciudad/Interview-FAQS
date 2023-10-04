@@ -2,7 +2,8 @@ import { Component, inject, OnDestroy, OnInit, TemplateRef } from '@angular/core
 import { WeblinksService } from '../services/weblinks.service';
 import { Weblinks } from 'src/app/shared/interfaces/weblinks.interface';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 
 @Component({

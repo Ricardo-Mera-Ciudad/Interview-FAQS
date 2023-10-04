@@ -1,7 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from '../services/data.service';
-import { Question, QuestionWithAnswer } from 'src/app/shared/interfaces/answerQuestion.interface';
+import { QuestionWithAnswer } from 'src/app/shared/interfaces/answerQuestion.interface';
 import { PagesService } from '../services/pages.service';
 
 @Component({

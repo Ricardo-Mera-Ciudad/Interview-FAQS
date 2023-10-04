@@ -1,9 +1,9 @@
 <div class="general-container">
   <app-header />
 
-<div class="main-content" [ngClass]="{'blur-content': isBlurred}">
-  <router-outlet></router-outlet>
-</div>
+  <div class="main-content" [ngClass]="{'blur-content': isBlurred}">
+    <router-outlet></router-outlet>
+  </div>
 
-<app-footer (blurEffectToggled)="toggleBlurEffect($event)" />
+  <app-footer (blurEffectToggled)="toggleBlurEffect($event)" />
 </div>

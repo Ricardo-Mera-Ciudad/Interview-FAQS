@@ -1,9 +1,11 @@
 import { Component, OnDestroy, OnInit, inject } from '@angular/core';
-import { Subject, switchMap, takeUntil } from 'rxjs';
+import { Subject } from 'rxjs';
+import { switchMap, takeUntil } from 'rxjs/operators';
+
 import { DataService } from 'src/app/pages/services/data.service';
 import { PagesService } from 'src/app/pages/services/pages.service';
+
 import { Question } from '../../interfaces/answerQuestion.interface';
-import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'levelcards',

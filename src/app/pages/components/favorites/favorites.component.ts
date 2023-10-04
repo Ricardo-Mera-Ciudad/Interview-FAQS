@@ -3,7 +3,8 @@ import { Question } from 'src/app/shared/interfaces/answerQuestion.interface';
 import { DataService } from '../../services/data.service';
 import { PagesService } from '../../services/pages.service';
 import { UsersService } from 'src/app/auth/services/users.service';
-import { Subject, combineLatest, switchMap, takeUntil } from 'rxjs';
+import { Subject, combineLatest} from 'rxjs';
+import { switchMap, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-favorites',
@@ -11,6 +12,7 @@ import { Subject, combineLatest, switchMap, takeUntil } from 'rxjs';
   styleUrls: ['./favorites.component.css'],
 })
 export class FavoritesComponent {
+  
   private dataService = inject(DataService);
   private pagesService = inject(PagesService);
   private userService = inject(UsersService);

@@ -7,9 +7,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LevelcardsComponent } from './components/levelcards/levelcards.component';
 
-
-
-
 @NgModule({
     declarations: [
         AnswerQuestionComponent,

@@ -2,7 +2,8 @@ import { Component, EventEmitter, Input, OnDestroy, OnInit, Output, inject } fro
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 import { UsersService } from 'src/app/auth/services/users.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-edit-user',

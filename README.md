@@ -54,11 +54,11 @@ This project has been developed using the following technologies:
 
 To install and run the project in your local environment, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/yourusername/INTERVIEW-FAQs.git`
-2. Navigate to the project directory: `cd INTERVIEW-FAQs`
+1. Clone this repository: `git clone https://github.com/LolaGM/Interview-FAQS.git`
+2. Navigate to the project directory if you have created one: `cd INTERVIEW-FAQs`
 3. Install dependencies: `npm install`
-4. Start the application and the JSON server: `ng serve`
-5. Make surte that JSON server is running for data persistence. `npm run backend`
+4. Start the application: `ng serve -o` or `npm start`. 
+5. Make sure that JSON server is running for data persistence. `npm run backend`
 
 ## Contributors 
 
@@ -75,10 +75,11 @@ To install and run the project in your local environment, follow these steps:
 
 Our future plans for INTERVIEW FAQs include:
 
-- Adding more questions related to other frameworks like React and Vue.
-- Implementing random tests to assess acquired knowledge.
-- Including technical tests related
-- Testing code 
+- Add sections and more questions related to other frameworks like React and Vue.
+- Implement more tests to assess acquired knowledge.
+- Add external images to answers to make the explanation more graphical.
+- Save test results in the user's profile.
+- Test the code using libraries such as Jest or Jasmine
 
 ## Steps followed when installing the project and recommendations 
 
@@ -112,7 +113,7 @@ INTERVIEW FAQs es una plataforma adaptada a varios dispositivos (móvil, tablet 
 El diseño del proyecto está inspirado en el juego "Simón de memoria", lo que lo hace divertido y educativo al mismo tiempo.
 
 <div align="center">
-  <img src="https://github.com/Ricardo-Mera-Ciudad/Interview-FAQS/assets/116545851/bc7d7f16-0872-4761-ab00-1f7e9685501f" alt="Interview FAQs logo game" width="500" height="500">
+  <img src="https://github.com/LolaGM/Interview-FAQS/blob/main/src/assets/images/new-design-demo-IF.gif" alt="Interview FAQs logo game gif" width="500" height="500">
 </div>
 
 ## Tecnologías y lenguajes usados
@@ -151,10 +152,10 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 Para instalar y ejecutar el proyecto en tu entorno local, sigue estos pasos:
 
-1. Clona este repositorio: `git clone https://github.com/tuusuario/INTERVIEW-FAQs.git`
-2. Navega al directorio del proyecto: `cd INTERVIEW-FAQs`
+1. Clona este repositorio: `git clone https://github.com/LolaGM/Interview-FAQS.git`
+2. Navega al directorio del proyecto si lo has creado: `cd INTERVIEW-FAQs`
 3. Instala las dependencias: `npm install`
-4. Inicia la aplicación y el servidor JSON: `ng serve`
+4. Inicia la aplicación: `ng serve -o` o `npm start`. 
 5. Asegúrate de tener el servidor JSON ejecutándose para la persistencia de datos: `npm run backend`
 
 ## Colaboradores
@@ -172,9 +173,11 @@ Para instalar y ejecutar el proyecto en tu entorno local, sigue estos pasos:
 
 Nuestros planes futuros para INTERVIEW FAQs incluyen:
 
-- Agregar más preguntas relacionadas con otros frameworks como React y Vue.
-- Implementar pruebas aleatorias para evaluar los conocimientos adquiridos.
-- Incluir pruebas técnicas
+- Agregar más secciones y preguntas relacionadas con otros frameworks como React y Vue.
+- Implementar más pruebas aleatorias para evaluar los conocimientos adquiridos.
+- Añadir imágentes externas a las respuestas para hacer que la explicación sea más gráfica.
+- Guardar los resultados en el perfil de usuario.
+- Testear el código usando librerías como Jest o Jasmine.
 
 ## Pasos seguidos al instalar el proyecto y recomendaciones
 

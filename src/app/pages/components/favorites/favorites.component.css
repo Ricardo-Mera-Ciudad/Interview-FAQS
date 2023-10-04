@@ -28,10 +28,12 @@
 .no-question{
   font-size: 14px;
 }
+
 .question-selectors {
   color: #0f213b;
   margin-top: 10px;
 }
+
 .question-card-set {
   width: 100%;
   display: flex;
@@ -44,10 +46,12 @@
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
 }
+
 .card-full-question {
   margin: auto;
   width: 100%;
 }
+
 .card-question-head {
   background-color: #e1effb;
   color: #0f213b;
@@ -59,6 +63,7 @@
   border-radius: 6px;
   padding: 10px;
 }
+
 .apply-border-radius {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -69,41 +74,49 @@
 .card-question-head-text {
   margin: 7px 0 2.5px 5px;
 }
+
 .card-question-head-text-title {
   height: 100%;
   display: flex;
   align-items: center;
   font-weight: bold;
 }
+
 .card-question-head-icons {
   display: flex;
   margin-bottom: 8px;
 }
+
 .row-icon {
   margin: 3px 5px 0 5px;
   cursor: pointer;
 }
+
 .card-question-answer {
   background-color: #0f213b;
   color: #fcfcfc;
   padding: 15px;
 }
+
 .category-container {
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 10px 0;
 }
+
 .questions-icon {
   width: 30px;
   height: 30px;
 }
+
 .star-icon-container{
   background-color: transparent;
   border: none;
   color: #0f213b;
   cursor: pointer;
 }
+
 .star-icon-favorite{
   width: 16px;
   height: 16px;

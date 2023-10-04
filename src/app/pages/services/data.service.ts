@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, Subject, map, of, switchMap } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
+
 import { UsersService } from 'src/app/auth/services/users.service';
 import { Question } from 'src/app/shared/interfaces/answerQuestion.interface';
 import { environments } from 'src/environment/environment';

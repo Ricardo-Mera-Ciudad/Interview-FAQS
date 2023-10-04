@@ -14,7 +14,7 @@
           <li class="header-container__navbar-items-menu-list-item" [routerLink]="['/content-page']"
             (click)="chooseCategory('Html')">
             <img class="header-container__navbar-items-menu-list-icon" src="../../../../assets/images/html.png" alt="html logo">
-            <a class="header-container__navbar-items-menu-list-item-link">Html</a>
+            <a class="header-container__navbar-items-menu-list-item-link menu-link">Html</a>
           </li>
 
           <li class="header-container__navbar-items-menu-list-item" [routerLink]="['/content-page']"
@@ -30,7 +30,7 @@
           </li>
 
           <li class="header-container__navbar-items-menu-list-item" [routerLink]="['/content-page']"
-            (click)="chooseCategory('Typescript')">             
+            (click)="chooseCategory('Typescript')">
             <img class="header-container__navbar-items-menu-list-icon" src="../../../../assets/images/typescript.png" alt="typescript logo">
             <a class="header-container__navbar-items-menu-list-item-link">TypeScript</a>
           </li>
@@ -65,7 +65,7 @@
         <img [routerLink]="['/home-page']" src="../../../assets/images/logo-faqs.png" alt="Interview FAQS logo"
           class="header-container__navbar-items-logo-img-faqs" />
         <img [routerLink]="['/home-page']" src="../../../assets/images/logo.png" alt="Interview FAQS logo"
-          class="header-container__navbar-items-logo-img-full" 
+          class="header-container__navbar-items-logo-img-full"
           [ngClass]="{'header-container__navbar-items-logo-img-full': isUserAuthenticated,
           'header-container__navbar-items-logo-img-full-user-not-auth': !isUserAuthenticated }"/>
       </div>

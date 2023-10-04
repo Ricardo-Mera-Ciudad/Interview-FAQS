@@ -56,13 +56,13 @@
   color: #FCFCFC;
   font-family: 'Open Sans', sans-serif;
   top: 55px;
+  
 
   @media (min-width: 768px) {
     top: 80px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 1em;
     top: 80px;
   }
   @media (min-width: 1280px){
@@ -85,6 +85,7 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 
+
   @media (min-width: 768px) {
     position: relative;
     line-height: 3;
@@ -93,6 +94,10 @@
   @media (min-width: 1024px) {
     position: relative;
     line-height: 3;
+  }
+
+  @media (min-width: 1280px) {
+    width:200px;
   }
 }
 
@@ -104,9 +109,11 @@
     padding-left: 20px;
   }
 
-  @media (min-width: 1024px) {
-    padding-left: 20px;
-  }
+  
+  
+
+
+
 }
 
 .header-container__navbar-items-menu-list-item-link {
@@ -114,21 +121,15 @@
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 14px;
   z-index: 9999;
-  margin-left: 20px;
+  margin-left: 10px; 
 
-  @media (min-width: 768px) {
-    font-size: 0.8em;
-    cursor: pointer;
+  @media (min-width: 1280px) {
+    font-size: 18px;
+    margin-right: 20px;  
+    
   }
-
-  @media (min-width: 768px) {
-    font-size: 0.8em;
-    cursor: pointer;
-  }
-
-
 }
 
 .header-container__navbar-items-menu-list-icon{
@@ -338,7 +339,7 @@
   }
   @media (min-width: 1280px){
     right: calc((100vw - 1280px) / 2);
-    }
+  }
 }
 
 
@@ -347,30 +348,35 @@
   list-style-type: none;
   background-color: #FCFCFC;
   white-space: nowrap;
+  line-height: 3;
   width: 150px;
   z-index: 9999;
   transition: background-color 0.3s, text-decoration 0.3s;
+  padding: 0;
+  text-align: left;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  font-size: 1em;
-  padding: 0;
-  line-height: 3.5;
 
 
   @media (min-width: 768px) {
     position: relative;
+    line-height: 3;
   }
 
   @media (min-width: 1024px) {
     position: relative;
     line-height: 3;
   }
+
+  @media (min-width: 1280px) {
+    width:180px; 
+  }
 }
 
 .header-container__navbar-items-login-user-menu-list-item {
   cursor: pointer;
   padding-right: 5px;
-  align-items: center;
+  align-items: center; 
 
 
   @media (min-width: 768px) {
@@ -390,15 +396,11 @@
   z-index: 9999;
   gap: 5px;
   margin-left: 10px;
+  font-size:14px;
 
-  @media (min-width: 768px) {
-    font-size: 1em;
-    cursor: pointer;
-  }
+  @media (min-width: 1280px) {
+    font-size: 18px;
 
-  @media (min-width: 1024px) {
-    font-size: 0.9em;
-    cursor: pointer;
   }
 }
 
@@ -421,11 +423,10 @@
 }
 
 .header-container__navbar-items-login-user-icon {
-  width: 20px;
+  width: 18px;
   margin-left: 15px;
 
   @media (min-width: 768px) {
-    width: 25px;
   }
 
 }

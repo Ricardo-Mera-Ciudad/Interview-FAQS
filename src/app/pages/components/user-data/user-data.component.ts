@@ -1,8 +1,11 @@
-import { Component, OnDestroy, OnInit, inject } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
 import { Router } from '@angular/router';
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+
 import { UsersService } from 'src/app/auth/services/users.service';
 import { UserData } from 'src/app/shared/interfaces/user-data.interface';
+
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-user-data',
@@ -67,7 +70,7 @@ export class UserDataComponent implements OnInit, OnDestroy {
 
   onConfirmDelete() {
     if (this.userData) {
-      const confirmation = confirm(`¿Estás seguro de que deseas eliminar tu cuenta ${this.userData.name}? Esta acción no se puede deshacer.`);
+      const confirmation = confirm(`¿Estás seguro de que deseas eliminar tu perfil ${this.userData.name}? Esta acción no se puede deshacer.`);
 
       if (confirmation) {
         localStorage.removeItem('authToken');

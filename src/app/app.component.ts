@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+
 import { UsersService } from './auth/services/users.service';
-import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-root',

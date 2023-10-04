@@ -9,8 +9,6 @@ import { UserData } from 'src/app/shared/interfaces/user-data.interface';
 })
 export class UsersService {
 
-  // private http = inject(HttpClient);
-
   private baseUrl: string = environments.baseUrl;
   private user?: UserData | null;
 

@@ -1,5 +1,5 @@
 <div class="quiz-container general-container">
-  <!-- Go back button -->
+
   <div class="quiz-button-container">
     <div class="quiz-button btn" (click)="goBack()">
       <span class="quiz-button-text">Volver </span>
@@ -19,7 +19,6 @@
     </div>
   </div>
 
-  <!-- Quiz questions -->
   <div class="main-quiz-questions-container">
     <div
       class="quiz-questions-container"
@@ -58,7 +57,7 @@
               <span class="quiz-correct-answer"
               *ngIf="isCorrect(question) && answer === question.correctAnswer"
             >
-             <img class="quiz-correct-answer-img" src="../../../assets/images/correct-answer.png" alt="correct-answer">
+              <img class="quiz-correct-answer-img" src="../../../assets/images/correct-answer.png" alt="correct-answer">
             </span>
             <span class="quiz-wrong-answer"
               *ngIf="
@@ -75,12 +74,10 @@
     </div>
   </div>
 
-  <!-- Quiz result -->
   <div class="quiz-result-container" *ngIf="isSubmitted">
     <p class="quiz-result">{{ result }} preguntas acertadas.</p>
   </div>
 
-  <!-- Confirm button -->
   <div class="quiz-confirm-button-container">
     <button
       class="quiz-confirm-button btn"

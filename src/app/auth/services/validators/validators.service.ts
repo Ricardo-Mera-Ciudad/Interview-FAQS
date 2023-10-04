@@ -25,7 +25,6 @@ export class ValidatorsService implements AsyncValidator {
   };
 
 
-  // Verificamos si ambas contraseñas son iguales.
   public isConfirmedPassword(password1: string, password2: string) {
     return (formGroup: AbstractControl): ValidationErrors | null => {
       const passwordValue1 = formGroup.get(password1)?.value;

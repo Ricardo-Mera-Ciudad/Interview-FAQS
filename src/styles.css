@@ -1,5 +1,6 @@
 .general-container {
-  background-color: #778899;
+  background: rgb(15,33,59);
+  background: linear-gradient(0deg, rgba(15,33,59,1) 0%, rgba(119,136,153,1) 100%);
   flex: 1;
   box-sizing: border-box;
 }

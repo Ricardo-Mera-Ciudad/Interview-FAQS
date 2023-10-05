@@ -1,4 +1,5 @@
 .container-main-component {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,19 +8,25 @@
 }
 
 
+
+.main-card-container{
+  width: 100%;
+}
+
+
 .title-content{
   display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 10px 0;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
 
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
       margin-top: 50px ;
-    }
+  } 
 
-    @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
       margin-top: 30px ;
-    }
+  }
 }
 
 
@@ -35,7 +42,6 @@
   color: #0f213b;
 }
 
-
 .card-container {
   background-color: #e1effb;
   width: 18rem;
@@ -45,7 +51,7 @@
   border: 0.1px #0f213b solid;
   display: flex;
   padding: 10px 0;
-  margin: 20px 20px 0 20px;
+  margin: 20px 20px 0 20px; 
 
   @media (min-width: 768px) {
     padding: 0px 0;
@@ -61,15 +67,14 @@
   flex-direction: column;
 }
 
-
 .card-title {
   border-bottom: 1px solid #0f213b;
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-
 .card-button {
+
   background-color: #0f213B;
   color: #FCFCFC;
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.358), 4px 4px 3px rgb(0, 0, 0, 0.5);
@@ -78,7 +83,7 @@
   @media (min-width: 768px) {
     padding: 10px 20px;
   }
-}
+} 
 
 .card-button:hover{
   transform: scale(1.1);
@@ -87,11 +92,12 @@
 
 
 .second-row-container {
+  width: 100%;
+
   @media (min-width: 768px) {
     margin-bottom: 0px;
   }
 }
-
 
 .limiting-div {
   height: 60px;
@@ -100,7 +106,7 @@
 
 .modal-header{
   background-color: #0f213B;
-  color:#FCFCFC
+  color:#FCFCFC;
 }
 
 
@@ -114,12 +120,10 @@
   border: 0;
 }
 
-
 .list-group-item-action:hover{
- background-color: #0f213B;
- color: #FCFCFC;
+  background-color: #0f213B;
+  color: #FCFCFC;
 }
-
 
 .modal-footer{
   background-color: #0f213B;
@@ -128,7 +132,7 @@
 
 .modal-btn-footer{
   color: #FCFCFC;
-  background-color:#e1effb ;
+  background-color:#e1effb;
   color: #0f213B;
   font-weight: bold;
 }

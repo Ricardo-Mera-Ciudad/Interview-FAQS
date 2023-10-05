@@ -10,16 +10,17 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class FooterComponent implements OnInit {
 
-  private renderer = inject(Renderer2);
-  private elementRef = inject(ElementRef);
+  // private renderer = inject(Renderer2);
+  // private elementRef = inject(ElementRef);
 
-  public hideWhat: boolean = false;
-  public whatDo: string = '';
-  public isModalShown:boolean = true;
-  public isBlurred: boolean = false;
+  // public hideWhat: boolean = false;
+  // public whatDo: string = '';
+  // public isModalShown:boolean = true;
+  // public isBlurred: boolean = false;
+  private modalService = inject(NgbModal);
   public isContributorListShown: boolean = false;
   public selectedArray: Contributor[] = [];
-  public contributorsArray: Contributor[] = [
+  public contributors: Contributor[] = [
     {
       image: '../../../../assets/images/lola-garcia.jpg',
       contributor: 'Lola García Morcillo',
@@ -57,48 +58,46 @@ export class FooterComponent implements OnInit {
     },
   ];
 
-  @Output() blurEffectToggled = new EventEmitter<boolean>();
-
-  constructor(private modalService: NgbModal) {}
+  // @Output() blurEffectToggled = new EventEmitter<boolean>();
 
   ngOnInit(): void {
-    this.renderer.listen('document', 'click', (event: Event) => {
-      if (!this.elementRef.nativeElement.contains(event.target)) {
-        this.closeMenu();
-        this.isBlurred = false;
-        this.blurEffectToggled.emit(this.isBlurred);
-      }
-    });
+    // this.renderer.listen('document', 'click', (event: Event) => {
+    //   if (!this.elementRef.nativeElement.contains(event.target)) {
+    //     this.closeMenu();
+        // this.isBlurred = false;
+        // this.blurEffectToggled.emit(this.isBlurred);
+    //   }
+    // });
   }
 
-  toggledBlurEffect() {
-    this.isBlurred = !this.isBlurred
-    this.blurEffectToggled.emit(this.isBlurred);
-  }
+  // toggledBlurEffect() {
+  //   this.isBlurred = !this.isBlurred
+  //   this.blurEffectToggled.emit(this.isBlurred);
+  // }
 
   closeMenu() {
-    this.isContributorListShown = false;
+    // this.isContributorListShown = false;
     this.selectedArray = [];
   }
 
-  showContributorsList() {
-    this.toggledBlurEffect()
-    if (this.isContributorListShown) {
-      this.selectedArray = [];
-      this.isContributorListShown = false;
-    } else {
-      let index = 0;
-      const intervalId = setInterval(() => {
-        if (index === this.contributorsArray.length) {
-          clearInterval(intervalId);
-          this.isContributorListShown = true;
-        } else {
-          this.selectedArray.push(this.contributorsArray[index]);
-          index++;
-        }
-      }, 200);
-    }
-  }
+  // showContributorsList() {
+  //   this.toggledBlurEffect()
+  //   if (this.isContributorListShown) {
+  //     this.selectedArray = [];
+  //     this.isContributorListShown = false;
+  //   } else {
+  //     let index = 0;
+  //     const intervalId = setInterval(() => {
+  //       if (index === this.contributorsArray.length) {
+  //         clearInterval(intervalId);
+  //         this.isContributorListShown = true;
+  //       } else {
+  //         this.selectedArray.push(this.contributorsArray[index]);
+  //         index++;
+  //       }
+  //     }, 200);
+  //   }
+  // }
 
   openVerticallyCentered(content: TemplateRef<any>) {
 		this.modalService.open(content, { centered: true });

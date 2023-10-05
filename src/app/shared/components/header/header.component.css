@@ -263,19 +263,14 @@
 
 
 .header-container__navbar-items-login-photo{
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #778899;
 
   @media (min-width: 768) {
-    width: 50px;
-    height: 50px;
-  }
-
-  @media (min-width: 1024) {
-    width: 100px;
-    height: 100px;
+    width: 35px;
+    height: 35px;
   }
   
 }

@@ -34,6 +34,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     gap: 5px;
+    font-size: 13px;
   }
 }
 
@@ -43,6 +44,15 @@
   font-size: smaller;
   cursor: pointer;
 }
+
+.modal-body-contributors {
+  background: linear-gradient(
+  0deg,
+  rgba(15, 33, 59, 1) 0%,
+  rgba(119, 136, 153, 1) 100%
+);
+}
+
 
 /* .footer-container__contributors-container {
   margin: auto;
@@ -62,6 +72,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: 1px solid #0f213b;
   object-fit: cover;
 }
 
@@ -78,22 +89,19 @@
 }
 
 .footer-container__contributors-list {
-  /* position: relative; */
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
   padding: 15px;
-  /* top: -550px; */
   gap: 15px;
-  /* z-index: 2; */
 }
 
 .footer-container__contributors-list-item {
   width: 320px;
   height: 60px;
-  /* margin: auto; */
+  color: #0f213b;
   padding: 3px 15px;
   border: solid 1px black;
   display: flex;
@@ -101,28 +109,24 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
-  background-color: whitesmoke;
-  /* animation: 0.5s alternate slidein; */
+  background-color: #FCFCFC;
   box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.5);
-  /* @media (min-width: 768px) {
-    animation-name: slidein-medium;
-  }
-  @media (min-width: 1024px) {
-    animation-name: slidein-large;
-  } */
 }
 
-#whatIsThat, #rrss{
+#whatIsThat {
   color: #fcfcfc;
   font-size: smaller;
   cursor: pointer;
 
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) {
     margin: auto 55px auto 0;
   }
-  @media (min-width: 1024px) {
-    margin: auto 55px auto 0;
-  } */
+}
+
+#rrss{
+  color: #fcfcfc;
+  font-size: smaller;
+  cursor: pointer;
 }
 
 .modal-header, .modal-footer {
@@ -137,49 +141,24 @@
   color: #0f213b;
 }
 
-#whatClose {
+.modal-footer {
+  box-shadow: 0px -1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.whatClose {
   background-color: #e1effb;
   border: none;
   font-weight: bold;
-  color: #091b35;
+  color: #0f213b;
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (min-width: 1024px) {
   .footer-container__contributors-list-item {
-    width: 530px;
+    width: 400px;
   }
   .footer-container__contributors-list {
-    width: 530px;
+    width: 400px;
   }
 }
 
-/* @keyframes slidein {
-  from {
-    margin-left: 5%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes slidein-medium {
-  from {
-    margin-left: 30%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes slidein-large {
-  from {
-    margin-left: 40%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-} */

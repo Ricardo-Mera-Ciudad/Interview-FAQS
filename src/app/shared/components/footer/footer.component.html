@@ -14,21 +14,21 @@
 	<div class="modal-header">
 		<h4 class="modal-title">Desarrolladores</h4>
 	</div>
-	<div class="modal-body">
+	<div class="modal-body-contributors">
 		<div class="footer-container__contributors">
       <ul class="footer-container__contributors-list">
         <li class="footer-container__contributors-list-item" *ngFor="let x of contributors">
-          <img [src]="x.image" alt="" class="footer-container__profile-image" />
+          <img [src]="x.image" [alt]="x.contributor" class="footer-container__profile-image" />
           <p class="footer-container__link-title">{{ x.contributor }}</p>
           <a [href]="x.link" target="_blank">
-            <img src="../../../../assets/images/linkedin-icon.png" class="footer-container__link-image" alt=" " />
+            <img src="../../../../assets/images/linkedin-icon.png" class="footer-container__link-image" alt="Linkedin" />
           </a>
         </li>
       </ul>
     </div>
 	</div>
 	<div class="modal-footer">
-		<button type="button" class="btn btn-light" (click)="modal.close('Close click')">Cerrar</button>
+		<button type="button" class="btn whatClose" (click)="modal.close('Close click')">Cerrar</button>
 	</div>
 </ng-template>
 
@@ -43,14 +43,14 @@
       prepararse para la parte teórica de las entrevistas en procesos de selección.</p>
   </div>
   <div class="modal-footer">
-    <button id="whatClose" type="button" class="btn" (click)="modal.close('Close click')">Cerrar</button>
+    <button class="btn whatClose" type="button" (click)="modal.close('Close click')">Cerrar</button>
   </div>
 </ng-template>
 
 <footer>
   <div class="footer-container ">
     <div class="footer-container__name">
-      <a href="" target="_self" class="footer-container__name-button">
+      <a [routerLink]="['/home-page']" class="footer-container__name-button">
         <p class="footer-container__name-button">Interview</p>
         <p class="footer-container__name-button">FAQS</p>
       </a>

@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 14px 14px;
-  /* background: rgb(15,33,59); */
   background: linear-gradient(0deg, rgba(15,33,59,1) 40%,  rgba(119,136,153,1) 100%);
   height: 50px;
   max-height: 50px;
@@ -52,21 +51,6 @@
   rgba(119, 136, 153, 1) 100%
 );
 }
-
-
-/* .footer-container__contributors-container {
-  margin: auto;
-  max-height: 1px;
-  position: absolute;
-  top: 82%;
-  left: 50%;
-  z-index: 2;
-   transform: translate(-50%, -50%);
-}
-
-.footer-container__contributors-container.active {
-  display: block;
-} */
 
 .footer-container__profile-image {
   width: 40px;
